@@ -2,13 +2,14 @@
 
 void main (void)
 {
-  SMS_setSpritePaletteColor(0, RGB(1,1,3));
-  SMS_displayOn();
-  for (;;)
-  {
-    SMS_waitForVBlank();
-  }
+	SMS_init();
+	SMS_setSpritePaletteColor(0, RGB(1,1,1));
+	SMS_displayOn();
+	for (;;)
+	{
+		SMS_waitForVBlank();
+	}
 }
 
 SMS_EMBED_SEGA_ROM_HEADER(9999, 0);
-SMS_EMBED_SDSC_HEADER(1, 0, 2017, 9, 15, "StevePro Studios", "Astro Force", "Convert to example as scalable SMS projec");
+SMS_EMBED_SDSC_HEADER(1, 0, 2017, 9, 15, "StevePro Studios", "Astro Force", "Convert example as scalable SMS projec");
