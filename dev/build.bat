@@ -36,10 +36,10 @@ REM copy output.sms ..\AstroForce.sms
 
 REM echo Delete
 cd Banks
-rem del *.asm > nul
-rem del *.lst > nul
-rem del *.rel > nul
-rem del *.sym > nul
+del *.asm > nul
+del *.lst > nul
+del *.rel > nul
+del *.sym > nul
 cd ..
 
 del *.asm > nul
