@@ -180,6 +180,30 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<Filter
+				Name="Fortresses"
+				>
+			</Filter>
+			<Filter
+				Name="Intros"
+				>
+			</Filter>
+			<Filter
+				Name="Monsters"
+				>
+			</Filter>
+			<Filter
+				Name="Players"
+				>
+			</Filter>
+			<Filter
+				Name="Stages"
+				>
+			</Filter>
+			<Filter
+				Name="Vulcans"
+				>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Resource Files"
