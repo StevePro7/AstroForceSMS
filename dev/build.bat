@@ -75,16 +75,22 @@ ihx2sms output.ihx output.sms
 
 
 REM echo Copy output
-REM copy output.sms ..\asm
-REM copy output.sms ..\AstroForce.sms
+copy output.sms ..\asm
+copy output.sms ..\AstroForce.sms
+
+
+REM echo Disassemble output
+cd ..\asm
+smsexamine output.sms
+cd ..\dev
 
 
 REM echo Delete
 cd Banks
-del *.asm > nul
-del *.lst > nul
+rem del *.asm > nul
+rem del *.lst > nul
 REM del *.rel > nul
-del *.sym > nul
+rem del *.sym > nul
 cd ..
 
 del *.asm > nul
