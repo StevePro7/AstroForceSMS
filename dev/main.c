@@ -3,8 +3,8 @@
 void main (void)
 {
 	SMS_init();
-	SMS_setSpritePaletteColor(0, RGB(0,0,0));
-	//SMS_setSpritePaletteColor(0, RGB(3,3,3));
+	//SMS_setSpritePaletteColor(0, RGB(0,0,0));
+	SMS_setSpritePaletteColor(0, RGB(2,1,0));
 	SMS_displayOn();
 	for (;;)
 	{
