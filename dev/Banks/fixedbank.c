@@ -1,4 +1,4 @@
-#include "defines.h"
+#include "..\defines.h"
 #include "bank15.c"
 
 // Player shoots speeds

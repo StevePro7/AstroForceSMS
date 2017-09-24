@@ -171,10 +171,6 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\fixedbank.c"
-				>
-			</File>
-			<File
 				RelativePath=".\main.c"
 				>
 			</File>
@@ -237,6 +233,10 @@
 					RelativePath=".\Banks\bank9.c"
 					>
 				</File>
+				<File
+					RelativePath=".\Banks\fixedbank.c"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -249,11 +249,15 @@
 				>
 			</File>
 			<File
-				RelativePath=".\fixedbank.h"
+				RelativePath=".\funcs.h"
 				>
 			</File>
 			<File
-				RelativePath=".\funcs.h"
+				RelativePath=".\main.h"
+				>
+			</File>
+			<File
+				RelativePath=".\vars.h"
 				>
 			</File>
 			<Filter
@@ -313,6 +317,10 @@
 				</File>
 				<File
 					RelativePath=".\Banks\bank9.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Banks\fixedbank.h"
 					>
 				</File>
 			</Filter>
@@ -391,6 +399,54 @@
 					RelativePath=".\General\mikgamesstage.h"
 					>
 				</File>
+				<File
+					RelativePath=".\General\powerup.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\rectship.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\rsgthing.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\scripter.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\scroller.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\selectorstage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\skullbone.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\spreadship.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\timeredlabel.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\turnship.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\warning.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\waveship.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="Intros"
@@ -447,10 +503,6 @@
 					RelativePath=".\Spaces\spacestation.h"
 					>
 				</File>
-				<File
-					RelativePath=".\Spaces\spreadship.h"
-					>
-				</File>
 			</Filter>
 			<Filter
 				Name="Monsters"
@@ -477,6 +529,10 @@
 				</File>
 				<File
 					RelativePath=".\Players\playershoot.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Players\playstage.h"
 					>
 				</File>
 			</Filter>

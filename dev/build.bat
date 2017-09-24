@@ -32,7 +32,7 @@ rem sdcc -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK11 bank
 rem sdcc -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK12 bank12.c
 rem sdcc -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK13 bank13.c
 rem sdcc -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK14 bank14.c
-REM sdcc -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK15 fixedbank.c
+rem sdcc -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK15 fixedbank.c
 cd ..
 
 REM Build main
@@ -53,6 +53,7 @@ sdcc -o output.ihx --Werror --opt-code-speed -mz80 --no-std-crt0 --data-loc 0xC0
 -Wl-b_BANK12=0x8000 ^
 -Wl-b_BANK13=0x8000 ^
 -Wl-b_BANK14=0x8000 ^
+-Wl-b_BANK15=0x8000 ^
 ..\crt0\crt0_sms.rel main.rel ^
 ..\lib\SMSlib.lib ^
 ..\lib\PSGlib.rel ^
@@ -68,7 +69,8 @@ Banks\bank10.rel ^
 Banks\bank11.rel ^
 Banks\bank12.rel ^
 Banks\bank13.rel ^
-Banks\bank14.rel
+Banks\bank14.rel ^
+Banks\fixedbank.rel
 
 REM Binary output
 ihx2sms output.ihx output.sms
