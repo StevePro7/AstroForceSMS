@@ -171,6 +171,10 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\fixedbank.c"
+				>
+			</File>
+			<File
 				RelativePath=".\main.c"
 				>
 			</File>
@@ -240,6 +244,18 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\defines.h"
+				>
+			</File>
+			<File
+				RelativePath=".\fixedbank.h"
+				>
+			</File>
+			<File
+				RelativePath=".\funcs.h"
+				>
+			</File>
 			<Filter
 				Name="Banks"
 				>
@@ -301,6 +317,18 @@
 				</File>
 			</Filter>
 			<Filter
+				Name="Enemies"
+				>
+				<File
+					RelativePath=".\Enemies\enemy.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Enemies\enemyshoot.h"
+					>
+				</File>
+			</Filter>
+			<Filter
 				Name="Fortresses"
 				>
 				<File
@@ -321,6 +349,46 @@
 				</File>
 				<File
 					RelativePath=".\Fortresses\fortresswave.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="General"
+				>
+				<File
+					RelativePath=".\General\barrom.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\bombship.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\explosion.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\finishstage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\gameoverstage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\jukeboxstage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\logostage.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\map.h"
+					>
+				</File>
+				<File
+					RelativePath=".\General\mikgamesstage.h"
 					>
 				</File>
 			</Filter>
@@ -361,6 +429,26 @@
 				</File>
 				<File
 					RelativePath=".\Intros\introstar.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Spaces"
+				>
+				<File
+					RelativePath=".\Spaces\spaceasteroid.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Spaces\spaceshooter.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Spaces\spacestation.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Spaces\spreadship.h"
 					>
 				</File>
 			</Filter>
@@ -553,6 +641,26 @@
 				</File>
 				<File
 					RelativePath=".\Vulcans\vulcanvulcan.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Wars"
+				>
+				<File
+					RelativePath=".\Wars\ww2plane.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Wars\ww2planeb.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Wars\ww2ship.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Wars\ww2zeppelin.h"
 					>
 				</File>
 			</Filter>
