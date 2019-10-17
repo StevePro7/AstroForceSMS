@@ -1,61 +1,14 @@
-#include "main.h"
+#include "SMSlib.h"
 
-void main(void)
+void main( void )
 {
-	// Global variables.
-	static bool global_pause;
-	unsigned char open_screen_type;
-
-	engine_asm_manager_clear_VRAM();
-	devkit_SMS_init();
-	devkit_SMS_displayOff();
-
-	devkit_SMS_setSpriteMode( devkit_SPRITEMODE_NORMAL() );
-	devkit_SMS_useFirstHalfTilesforSprites_False();
-	devkit_SMS_VDPturnOnFeature( devkit_VDPFEATURE_HIDEFIRSTCOL() );
-
-	engine_content_manager_load_back_tiles();
-	engine_content_manager_load_sprites();
-
-	open_screen_type = screen_type_splash;
-	//open_screen_type = screen_type_intro;
-	//open_screen_type = screen_type_begin;
-	//open_screen_type = screen_type_init;
-
-	engine_state_manager_init();
-	engine_screen_manager_init( open_screen_type );
-	devkit_SMS_displayOn();
-	for (;;)
+	SMS_setSpritePaletteColor( 0, RGB( 3, 3, 3 ) );
+	SMS_displayOn();
+	for( ;;)
 	{
-		if( devkit_SMS_queryPauseRequested() )
-		{
-			devkit_SMS_resetPauseRequest();
-			global_pause = !global_pause;
-			if( global_pause )
-			{
-				devkit_PSGSilenceChannels();
-			}
-			else
-			{
-				devkit_PSGRestoreVolumes();
-			}
-		}
-
-		if( global_pause )
-		{
-			continue;
-		}
-
-		devkit_SMS_initSprites();
-		engine_input_manager_update();
-
-		engine_screen_manager_update();
-
-		devkit_SMS_finalizeSprites();
-		devkit_SMS_waitForVBlank();
-		devkit_SMS_copySpritestoSAT();
-
-		devkit_PSGFrame();
-		devkit_PSGSFXFrame();
+		SMS_waitForVBlank();
 	}
 }
+
+SMS_EMBED_SEGA_ROM_HEADER( 9999, 0 );
+SMS_EMBED_SDSC_HEADER( 1, 0, 2017, 9, 15, "StevePro Studios", "Hello World", "Simple Sega Master System demo to run on real hardware!" );
