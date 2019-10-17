@@ -89,19 +89,19 @@ cd ..\dev
 
 REM echo Delete
 cd Banks
-rem del *.asm > nul
-rem del *.lst > nul
-REM del *.rel > nul
-rem del *.sym > nul
+if exist "*.asm" del "*.asm" > nul
+if exist "*.lst" del "*.lst" > nul
+if exist "*.rel" del "*.rel" > nul
+if exist "*.sym" del "*.sym" > nul
 cd ..
 
-del *.asm > nul
-del *.ihx > nul
-del *.lk > nul
-del *.lst > nul
-del *.map > nul
-del *.noi > nul
-del *.rel > nul
-del *.sym > nul
+if exist "*.asm" del "*.asm" > nul
+if exist "*.ihx" del "*.ihx" > nul
+if exist "*.lk"  del "*.lk"  > nul
+if exist "*.lst" del "*.lst" > nul
+REM if exist "*.map" del "*.map" > nul
+if exist "*.noi" del "*.noi" > nul
+if exist "*.rel" del "*.rel" > nul
+if exist "*.sym" del "*.sym" > nul
 
-output.sms
+rem output.sms
