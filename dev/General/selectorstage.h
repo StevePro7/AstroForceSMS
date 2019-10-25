@@ -15,8 +15,8 @@ void UpdateSelectorMarks(unsigned char selected_stage)
 		c=(a*6)+1;
 		for(b=0;b<4;b++)
 		{
-			SMS_setNextTileatXY(c+selectormarkx[b],selectormarky[b]);
-			SMS_setTile(a==selected_stage?selectormarkt[b]:0);
+			devkit_SMS_setNextTileatXY(c+selectormarkx[b],selectormarky[b]);
+			devkit_SMS_setTile(a==selected_stage?selectormarkt[b]:0);
 		}
 
 		// Base tiles
@@ -25,9 +25,9 @@ void UpdateSelectorMarks(unsigned char selected_stage)
 		// Images
 		for(b=0;b<4;b++)
 		{
-			SMS_setNextTileatXY(2+a*6,10+b);
+			devkit_SMS_setNextTileatXY(2+a*6,10+b);
 			for(c=0;c<4;c++)
-				SMS_setTile(d++);
+				devkit_SMS_setTile(d++);
 			d+=4;
 		}
 	}

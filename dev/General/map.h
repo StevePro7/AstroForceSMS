@@ -45,15 +45,15 @@ void DrawMap()
 	{
 		c=(b+a)%maplineslength;
 		c=maplines[c];
-		SMS_loadTileMap(0,b,maptiles+(c<<6),64);
+		devkit_SMS_loadTileMap(0,b,maptiles+(c<<6),64);
 	}
 	
 	// Saving old position
 	oldmappositiony=mappositiony;
 	
 	// Reset scroll
-	SMS_setBGScrollX (0);
-	SMS_setBGScrollY (0);
+	devkit_SMS_setBGScrollX (0);
+	devkit_SMS_setBGScrollY (0);
 }
 
 void InitMap(unsigned char mb)
@@ -93,7 +93,7 @@ void MoveMap(signed int mvx,signed int mvy)
 		// Load lines
 		a=(mpy5)%maplineslength;
 		c=maplines[a];
-		SMS_loadTileMap(0,((mpy2)%224)>>3,maptiles+(c<<6),64);
+		devkit_SMS_loadTileMap(0,((mpy2)%224)>>3,maptiles+(c<<6),64);
 		
 		// Change bank if needed
 		changeBank(FIXEDBANKSLOT);

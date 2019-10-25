@@ -20,14 +20,18 @@ void devkit_SMS_displayOff()
 {
 	SMS_displayOff();
 }
-void devkit_SMS_mapROMBank( unsigned char n )
-{
-	SMS_mapROMBank( n );
-}
 
-void devkit_SMS_setSpriteMode( unsigned char mode )
+void devkit_SMS_setBGScrollX( unsigned char scrollX )
 {
-	SMS_setSpriteMode( mode );
+	return SMS_setBGScrollX( scrollX );
+}
+void devkit_SMS_setBGScrollY( unsigned char scrollY )
+{
+	return SMS_setBGScrollY( scrollY );
+}
+void devkit_SMS_setBackdropColor( unsigned char entry )
+{
+	SMS_setBackdropColor( entry );
 }
 void devkit_SMS_useFirstHalfTilesforSprites_False()
 {
@@ -37,9 +41,24 @@ void devkit_SMS_useFirstHalfTilesforSprites_True()
 {
 	SMS_useFirstHalfTilesforSprites( true );
 }
+void devkit_SMS_setSpriteMode( unsigned char mode )
+{
+	SMS_setSpriteMode( mode );
+}
+
+void devkit_SMS_mapROMBank( unsigned char n )
+{
+	SMS_mapROMBank( n );
+}
 void devkit_SMS_VDPturnOnFeature( unsigned int feature )
 {
 	SMS_VDPturnOnFeature( feature );
+}
+
+void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char* src, unsigned char size )
+{
+	return SMS_loadTileMap( x, y, src, size );
+	
 }
 
 void devkit_SMS_loadPSGaidencompressedTiles( void *src, unsigned int tilefrom )
@@ -146,6 +165,19 @@ unsigned int devkit_SMS_getKeysStatus()
 {
 	return SMS_getKeysStatus();
 }
+unsigned int devkit_SMS_getKeysPressed()
+{
+	return SMS_getKeysPressed();
+}
+unsigned int devkit_SMS_getKeysHeld()
+{
+	return SMS_getKeysHeld();
+}
+unsigned int devkit_SMS_getKeysReleased()
+{
+	return SMS_getKeysReleased();
+}
+
 unsigned int devkit_PORT_A_KEY_UP()
 {
 	return PORT_A_KEY_UP;
@@ -169,6 +201,42 @@ unsigned int devkit_PORT_A_KEY_1()
 unsigned int devkit_PORT_A_KEY_2()
 {
 	return PORT_A_KEY_2;
+}
+
+/* low level functions */
+void devkit_SMS_VRAMmemcpy( unsigned int dst, void *src, unsigned int size )
+{
+	return SMS_VRAMmemcpy( dst, src, size );
+}
+void devkit_SMS_VRAMmemcpy_brief( unsigned int dst, void *src, unsigned char size )
+{
+	return SMS_VRAMmemcpy_brief( dst, src, size );
+}
+void devkit_SMS_VRAMmemset( unsigned int dst, unsigned char value, unsigned int size )
+{
+	return SMS_VRAMmemset( dst, value, size );
+}
+void devkit_SMS_VRAMmemsetW( unsigned int dst, unsigned int value, unsigned int size )
+{
+	return SMS_VRAMmemsetW( dst, value, size );
+}
+
+
+void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) )
+{
+	SMS_setLineInterruptHandler( theHandlerFunction );
+}
+void devkit_SMS_setLineCounter( unsigned char count )
+{
+	SMS_setLineCounter( count );
+}
+void devkit_SMS_enableLineInterrupt()
+{
+	SMS_enableLineInterrupt();
+}
+void devkit_SMS_disableLineInterrupt()
+{
+	SMS_disableLineInterrupt();
 }
 
 // #defines

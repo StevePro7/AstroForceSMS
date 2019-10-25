@@ -33,11 +33,11 @@ char UpdateJukeboxInfo()
 		}
 		
 		// Cursors
-		if(keystatusdevkit_PORT_A_KEY_UP())if(jukeboxselectedline>1)(jukeboxselectedline)--;
-		if(keystatusdevkit_PORT_A_KEY_DOWN())if(jukeboxselectedline<4)(jukeboxselectedline)++;
+		if(keystatus&devkit_PORT_A_KEY_UP())if(jukeboxselectedline>1)(jukeboxselectedline)--;
+		if(keystatus&devkit_PORT_A_KEY_DOWN())if(jukeboxselectedline<4)(jukeboxselectedline)++;
 
 		// Pushed
-		if(keystatusdevkit_PORT_A_KEY_1())
+		if(keystatus&devkit_PORT_A_KEY_1())
 		{
 			switch(jukeboxselectedline)
 			{

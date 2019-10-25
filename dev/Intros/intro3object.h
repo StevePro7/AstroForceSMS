@@ -13,9 +13,9 @@ void DrawIntro3Object(unsigned int *d,unsigned char i,unsigned char l)
 	// Images
 	for(b=0;b<6;b++)
 	{
-		SMS_setNextTileatXY(i,b+2);
+		devkit_SMS_setNextTileatXY(i,b+2);
 		for(c=0;c<l;c++)
-			SMS_setTile(*d++);
+			devkit_SMS_setTile(*d++);
 		d+=18-l;
 	}
 	changeBank(FIXEDBANKSLOT);
