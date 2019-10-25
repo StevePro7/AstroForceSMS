@@ -45,7 +45,7 @@ void InitSelectorStage()
 	InitStage();
 
 	// Lo volvemos a apagar
-	&devkit_SMS_displayOff();
+	devkit_SMS_displayOff();
 
 	// Load palette
 	LoadBGPalette(selectorpalette_bin,selectorpalette_bin_bank);
@@ -57,7 +57,7 @@ void InitSelectorStage()
 	WriteText("SELECT INITIAL STAGE",6,6);
 	
 	// Lo volvemos a encender
-	&devkit_SMS_displayOn();
+	devkit_SMS_displayOn();
 
 	// Rom bank
 	PlayMusic(select_psg,select_psg_bank,1);
@@ -72,7 +72,7 @@ void InitSelectorStage()
 		UpdateSelectorMarks(selected_stage);
 		
 		// Selector left
-		if(keystatusdevkit_PORT_A_KEY_LEFT)
+		if(keystatus&devkit_PORT_A_KEY_LEFT())
 		{
 			if(keyfree==1)
 				if(selected_stage>0)
@@ -81,7 +81,7 @@ void InitSelectorStage()
 		}
 
 		// Selector right
-		else if(keystatus&PORT_A_KEY_RIGHT)
+		else if(keystatus&devkit_PORT_A_KEY_RIGHT())
 		{
 			if(keyfree==1)
 				if(selected_stage<4)
@@ -92,7 +92,7 @@ void InitSelectorStage()
 		else keyfree=1;
 		
 		// Play?
-		if(keystatus&devkit_PORT_A_KEY_1)
+		if(keystatus&devkit_PORT_A_KEY_1())
 		{
 			basestage=selected_stage;
 			InitPlayerConstants();

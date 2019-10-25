@@ -148,7 +148,7 @@ void InitPlayStage()
 	InitEnemyshoots();
 	
 	// Lo volvemos a apagar
-	&devkit_SMS_displayOff();
+	devkit_SMS_displayOff();
 
 	// Scroller
 	InitScroller();
@@ -184,7 +184,7 @@ void InitPlayStage()
 	InitPlayer();
 
 	// Lo volvemos a encender
-	&devkit_SMS_displayOn();
+	devkit_SMS_displayOn();
 
 	// Exit stage flag
 	exitplaystage=0;
@@ -234,7 +234,7 @@ void InitPlayStage()
 			UpdatePSG();
 			
 			// Wait
-			SMS_waitForVBlank();
+			devkit_SMS_waitForVBlank();
 		
 			// Reset
 			numinterrupts=0;

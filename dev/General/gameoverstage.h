@@ -26,7 +26,7 @@ void InitGameoverStage()
 		UpdateStage();
 
 		// Play?
-		if(keystatus&devkit_PORT_A_KEY_1)
+		if(keystatus&devkit_PORT_A_KEY_1())
 		{
 			// Init stage and players
 			stagenum=laststagenum;

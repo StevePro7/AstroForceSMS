@@ -4,7 +4,7 @@ void InitLogoStage()
 	InitStage();
 
 	// Lo volvemos a apagar
-	&devkit_SMS_displayOff();
+	devkit_SMS_displayOff();
 
 	// Load palette
 	LoadBGPalette(logopalette_bin,logopalette_bin_bank);
@@ -23,7 +23,7 @@ void InitLogoStage()
 	WriteText("ALL RIGHTS RESERVED",6,22);	
 	
 	// Lo volvemos a encender
-	&devkit_SMS_displayOn();
+	devkit_SMS_displayOn();
 
 	// Rom bank
 	PlayMusic(logo_psg,logo_psg_bank,0);
@@ -43,14 +43,14 @@ void InitLogoStage()
 			WriteText("                ",8,14);
 		
 		// Play?
-		if(keystatus&devkit_PORT_A_KEY_1)
+		if(keystatus&devkit_PORT_A_KEY_1())
 		{
 			dojukebox=0;
 			return;
 		}
 
 		// Jukebox?
-		if(keystatus&devkit_PORT_A_KEY_2)
+		if(keystatus&devkit_PORT_A_KEY_2())
 		{
 			dojukebox=1;
 			return;

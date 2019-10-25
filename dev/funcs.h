@@ -3,6 +3,7 @@
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 #define sign(x) (x > 0) ? 1 : ((x < 0) ? -1 : 0)
 #define sinus(x) (sinustable[(x)%256]-128)
+#include "../tmp/PSGlib.h"
 
 
 // Declarations needed
@@ -51,7 +52,7 @@ void changeBank(unsigned char b)
 {
 	if(b!=lastbank)
 	{
-		&devkit_SMS_mapROMBank(b);
+		devkit_SMS_mapROMBank(b);
 		lastbank=b;
 	}
 }
@@ -82,7 +83,7 @@ void LoadSprite(const unsigned char *psg,unsigned int base,unsigned char b)
 	changeBank(b);
 
 	// Sprite
-	SMS_loadPSGaidencompressedTiles(psg,base);
+	devkit_SMS_loadPSGaidencompressedTiles(psg,base);
 	
 	// Rom bank
 	changeBank(FIXEDBANKSLOT);
@@ -95,7 +96,7 @@ void LoadTiles(unsigned char *psg,char b)
 	changeBank(b);
 
 	// The graphics
-	SMS_loadPSGaidencompressedTiles(psg,0);
+	devkit_SMS_loadPSGaidencompressedTiles(psg,0);
 }
 
 // Carga graficos background
@@ -105,7 +106,7 @@ void LoadGraphics(char *psg,char *bin, int size, char b)
 	LoadTiles(psg,b);
 
 	// The graphics
-	SMS_loadTileMap(0,0,bin,size);
+	devkit_SMS_loadTileMap(0,0,bin,size);
 }
 
 // Carga paleta de fondo
@@ -115,7 +116,7 @@ void LoadBGPalette(char *p,char b)
 	changeBank(b);
 
 	// Palette
-	SMS_loadBGPalette(p);
+	devkit_SMS_loadBGPalette(p);
 }
 
 // Carga paleta por defecto
@@ -125,7 +126,7 @@ void LoadSpritePalette()
 	changeBank(FIXEDBANKSLOT);
 	
 	// Palette
-	SMS_loadSpritePalette(palette_bin);
+	devkit_SMS_loadSpritePalette(palette_bin);
 }
 
 void InterruptHandler(void)
@@ -137,15 +138,15 @@ void InterruptHandler(void)
 void InitConsole()
 {
 	// La consola
-	SMS_init();
+	devkit_SMS_init();
 	
 	// We need this
 	devkit_SMS_getKeysStatus();
 	
 	// Advanced frameskipping
-	SMS_setLineInterruptHandler(&InterruptHandler);
-	SMS_setLineCounter (192);
-	SMS_enableLineInterrupt();
+	devkit_SMS_setLineInterruptHandler(&InterruptHandler);
+	devkit_SMS_setLineCounter (192);
+	devkit_SMS_enableLineInterrupt();
 	
 	// Kagesan asked for this ;)
 	devkit_SMS_VDPturnOnFeature( devkit_VDPFEATURE_LEFTCOLBLANK());
@@ -156,31 +157,31 @@ void fillBackground()
 {
 	unsigned int a;
 	
-	SMS_setNextTileatXY (0,0);
+	devkit_SMS_setNextTileatXY (0,0);
 	for(a=0;a<(32*28);a++)
-		SMS_setTile (0);
+		devkit_SMS_setTile (0);
 }
 
 // Limpia la pantalla
 void ClearScreen()
 {
 	// Los sprites
-	SMS_initSprites(); 
-	SMS_finalizeSprites(); 
-	SMS_copySpritestoSAT(); 
+	devkit_SMS_initSprites(); 
+	devkit_SMS_finalizeSprites(); 
+	devkit_SMS_copySpritestoSAT(); 
 	
 	// Fill background
 	fillBackground();
 	
 	// El background
-	SMS_setBackdropColor(0);
+	devkit_SMS_setBackdropColor(0);
 }
 
 // Update del scroll
 void UpdateScroll(signed int sx,signed int sy)
 {
-	SMS_setBGScrollX(sx);
-	SMS_setBGScrollY(sy);
+	devkit_SMS_setBGScrollX(sx);
+	devkit_SMS_setBGScrollY(sy);
 }
 
 // Dibujamos un texto
@@ -189,11 +190,11 @@ void WriteText(const unsigned char *text,unsigned char x, unsigned char y)
 	int a;
 
 	// Cambiamos el caracter de las letras
-	SMS_setNextTileatXY (x,y);
+	devkit_SMS_setNextTileatXY (x,y);
 	a=0;
 	while(text[a]!=0)
 		if((text[a]>=32)&&(text[a]<96))
-			SMS_setTile (text[a++]+159);
+			devkit_SMS_setTile (text[a++]+159);
 }
 
 // Dibujamos un texto
@@ -205,8 +206,8 @@ void WriteNumber(unsigned int i,unsigned int d,unsigned char x, unsigned char y)
 	// Ponemos todos los dígitos
     while(d--)
 	{ 
-		SMS_setNextTileatXY (x--,y);
-		SMS_setTile((i%10)+48+159);
+		devkit_SMS_setNextTileatXY (x--,y);
+		devkit_SMS_setTile((i%10)+48+159);
         i = i/10;
     }
 }
@@ -214,7 +215,7 @@ void WriteNumber(unsigned int i,unsigned int d,unsigned char x, unsigned char y)
 // Limpia las tiles
 void ClearTiles()
 {
-	SMS_VRAMmemset(0,0,32*256);
+	devkit_SMS_VRAMmemset(0,0,32*256);
 }
 
 // Carga la fuente
@@ -224,7 +225,7 @@ void LoadFont()
 	changeBank(font_psgcompr_bank);
 	
 	// Font
-	SMS_loadPSGaidencompressedTiles(font_psgcompr,192);
+	devkit_SMS_loadPSGaidencompressedTiles(font_psgcompr,192);
 }
 
 // Inicia una stage
@@ -232,11 +233,11 @@ void InitStage()
 {
 	
 	// Sonido quitado
-	PSGStop();
-	PSGSFXStop();
+	devkit_PSGStop();
+	devkit_PSGSFXStop();
 
 	// Reseteamos el estado de pausa
-	SMS_resetPauseRequest();
+	devkit_SMS_resetPauseRequest();
 			
 	// Iniciamos las frames
 	stageframe=0;
@@ -257,7 +258,7 @@ void InitStage()
 	LoadSpritePalette();
 
 	// Enable VDP
-	&devkit_SMS_displayOn();
+	devkit_SMS_displayOn();
 	
 	// Disable playstage update
 	updateplaystage=0;
@@ -268,9 +269,9 @@ void InitStage()
 
 void checkgamepause()
 {
-	if(SMS_queryPauseRequested())
+	if(devkit_SMS_queryPauseRequested())
 	{
-		SMS_resetPauseRequest();
+		devkit_SMS_resetPauseRequest();
 		gamepause=1-gamepause;
 		if(gamepause==1)
 			PlayMusic(pause_psg,pause_psg_bank,0);
@@ -299,19 +300,19 @@ void UpdateStage()
 	if(stageframe2mod==0)
 	{
 		// Wait
-		SMS_waitForVBlank();
+		devkit_SMS_waitForVBlank();
 		
 		// Reset
 		numinterrupts=0;
 	
 		// Los sprites
-		SMS_finalizeSprites(); 
+		devkit_SMS_finalizeSprites(); 
 
 		// Copy sprites
-		UNSAFE_SMS_copySpritestoSAT();
+		devkit_UNSAFE_SMS_copySpritestoSAT();
 
 		// Los sprites
-		SMS_initSprites(); 
+		devkit_SMS_initSprites(); 
 		
 		// Update play stage???
 		if(updateplaystage==1)
@@ -321,19 +322,19 @@ void UpdateStage()
 	{
 		// Interrupts
 		if(numinterrupts==0)
-			SMS_waitForVBlank();
+			devkit_SMS_waitForVBlank();
 	}
 	
 	// Keyboard... always
-	keystatus=SMS_getKeysStatus(); 
+	keystatus=devkit_SMS_getKeysStatus(); 
 }
 
 void PlaySound(char *sound,char priority)
 {
-	if((priority==1)||(!PSGSFXGetStatus()))
+	if((priority==1)||(!devkit_PSGSFXGetStatus()))
 	{
 		changeBank(SOUNDBANK);
-		PSGSFXPlay (sound,SFX_CHANNEL3);
+		devkit_PSGSFXPlay (sound,devkit_SFX_CHANNEL3());
 		changeBank(FIXEDBANKSLOT);
 	}
 }
@@ -373,14 +374,14 @@ void UpdatePSG()
 	if(musicbank!=0)
 	{
 		changeBank(musicbank);
-		PSGFrame();
+		devkit_PSGFrame();
 	}
 
 	// Update sounds
 	if(PSGSFXGetStatus())
 	{
 		changeBank(SOUNDBANK);
-		PSGSFXFrame();
+		devkit_PSGSFXFrame();
 	}
 }
 

@@ -22,7 +22,7 @@ void setIntroStageGraphics()
 	InitTimeredLabels();
 	
 	// Scroll
-	SMS_setBGScrollY(192);
+	devkit_SMS_setBGScrollY(192);
 }
 
 void InitIntroStage(unsigned char intronum)
@@ -31,7 +31,7 @@ void InitIntroStage(unsigned char intronum)
 	InitStage();
 
 	// Lo volvemos a apagar
-	&devkit_SMS_displayOff();
+	devkit_SMS_displayOff();
 
 	// Too big here
 	setIntroStageGraphics();
@@ -47,7 +47,7 @@ void InitIntroStage(unsigned char intronum)
 	}
 	
 	// Lo volvemos a encender
-	&devkit_SMS_displayOn();
+	devkit_SMS_displayOn();
 
 	// Scroller position
 	InitIntroScroll();
@@ -76,7 +76,7 @@ void InitIntroStage(unsigned char intronum)
 		if(intronum==2)DoIntro2Scroll();
 		
 		// Play?
-		if((keystatus&devkit_PORT_A_KEY_1)||(!PSGGetStatus()))
+		if((keystatus&devkit_PORT_A_KEY_1())||(!devkit_PSGGetStatus()))
 			return;
 		
 		// Update psg

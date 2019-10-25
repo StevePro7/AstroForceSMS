@@ -75,7 +75,7 @@ void UpdatePlayerIndicators()
 {
 	unsigned char a;
 	for(a=0;a<numplayers;a++)
-		SMS_addSprite(240-a*8,4,PLAYERINDICATORBASE);
+		devkit_SMS_addSprite(240-a*8,4,PLAYERINDICATORBASE);
 }
 
 // Init a player
@@ -101,29 +101,29 @@ void DrawPlayer()
 	DrawQuadSprite(playerx,playery,PLAYERBASE+playerside);
 
 	// Propulsion
-	SMS_addSprite(playerx+4,playery+16,PLAYERBASE+12+sprite82anim);
+	devkit_SMS_addSprite(playerx+4,playery+16,PLAYERBASE+12+sprite82anim);
 }
 
 // Move the player
 void MovePlayer()
 {
 	// Move
-	if(keystatusdevkit_PORT_A_KEY_LEFT)
+	if(keystatus&devkit_PORT_A_KEY_LEFT())
 	{
 		playerside=4;
 		if(playerx>SPEEDPLAYERSHOOT_SIDE+playerspeed+8)
 			playerx-=playerspeed;
 	}
-	if(keystatus&PORT_A_KEY_RIGHT)
+	if(keystatus&devkit_PORT_A_KEY_RIGHT())
 	{
 		playerside=8;
 		if(playerx<(240-SPEEDPLAYERSHOOT_SIDE-playerspeed))
 			playerx+=(playerspeed);
 	}
-	if(keystatus&PORT_A_KEY_UP)
+	if(keystatus&devkit_PORT_A_KEY_UP())
 		if(playery>24)
 			playery-=playerspeed;
-	if(keystatus&PORT_A_KEY_DOWN)
+	if(keystatus&devkit_PORT_A_KEY_DOWN())
 		if(playery<172)
 			playery+=playerspeed;
 }
@@ -135,7 +135,7 @@ void CheckShootPlayer()
 	playershootcounter++;
 	
 	// Check side
-	if(keystatus&devkit_PORT_A_KEY_2)
+	if(keystatus&devkit_PORT_A_KEY_2())
 	{
 		if(playershootcounter>PLAYERSHOOTINTERVAL_SIDE)
 		{
@@ -148,7 +148,7 @@ void CheckShootPlayer()
 		}
 	}
 	// Check top
-	else if(keystatus&devkit_PORT_A_KEY_1)
+	else if(keystatus&devkit_PORT_A_KEY_1())
 	{
 		if(playershootcounter>PLAYERSHOOTINTERVAL_NORMAL)
 		{
