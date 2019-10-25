@@ -172,13 +172,17 @@ unsigned int devkit_PORT_A_KEY_2()
 }
 
 // #defines
-unsigned char devkit_SPRITEMODE_NORMAL()
-{
-	return SPRITEMODE_NORMAL;
-}
 unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL()
 {
 	return VDPFEATURE_HIDEFIRSTCOL;
+}
+unsigned int devkit_VDPFEATURE_LEFTCOLBLANK()
+{
+	return VDPFEATURE_LEFTCOLBLANK;
+}
+unsigned char devkit_SPRITEMODE_NORMAL()
+{
+	return SPRITEMODE_NORMAL;
 }
 
 // Sega header.

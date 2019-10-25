@@ -51,7 +51,7 @@ void changeBank(unsigned char b)
 {
 	if(b!=lastbank)
 	{
-		SMS_mapROMBank(b);
+		&devkit_SMS_mapROMBank(b);
 		lastbank=b;
 	}
 }
@@ -63,16 +63,16 @@ void DrawSpriteArray(unsigned int s,unsigned char px,unsigned char py,unsigned c
 	unsigned char x, y;
 	for(y = 0; y < ty; y += 8)
 		for(x = 0; x <tx; x +=8)
-			SMS_addSprite(px+x,py+y,s++);
+			devkit_SMS_addSprite(px+x,py+y,s++);
 }
 
 // Dibuja un sprite 16x16
 void DrawQuadSprite(unsigned char x, unsigned char y, unsigned int b)
 {
-	SMS_addSprite(x,y,b);
-	SMS_addSprite(x+8,y,b+1);
-	SMS_addSprite(x,y+8,b+2);
-	SMS_addSprite(x+8,y+8,b+3);
+	devkit_SMS_addSprite(x,y,b);
+	devkit_SMS_addSprite(x+8,y,b+1);
+	devkit_SMS_addSprite(x,y+8,b+2);
+	devkit_SMS_addSprite(x+8,y+8,b+3);
 }
 
 // Carga un sprite
@@ -140,7 +140,7 @@ void InitConsole()
 	SMS_init();
 	
 	// We need this
-	SMS_getKeysStatus();
+	devkit_SMS_getKeysStatus();
 	
 	// Advanced frameskipping
 	SMS_setLineInterruptHandler(&InterruptHandler);
@@ -148,7 +148,7 @@ void InitConsole()
 	SMS_enableLineInterrupt();
 	
 	// Kagesan asked for this ;)
-	SMS_VDPturnOnFeature(VDPFEATURE_LEFTCOLBLANK);
+	devkit_SMS_VDPturnOnFeature( devkit_VDPFEATURE_LEFTCOLBLANK());
 }
 
 // Clear background
@@ -257,7 +257,7 @@ void InitStage()
 	LoadSpritePalette();
 
 	// Enable VDP
-	SMS_displayOn();
+	&devkit_SMS_displayOn();
 	
 	// Disable playstage update
 	updateplaystage=0;

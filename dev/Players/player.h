@@ -108,7 +108,7 @@ void DrawPlayer()
 void MovePlayer()
 {
 	// Move
-	if(keystatus&PORT_A_KEY_LEFT)
+	if(keystatusdevkit_PORT_A_KEY_LEFT)
 	{
 		playerside=4;
 		if(playerx>SPEEDPLAYERSHOOT_SIDE+playerspeed+8)
@@ -135,7 +135,7 @@ void CheckShootPlayer()
 	playershootcounter++;
 	
 	// Check side
-	if(keystatus&PORT_A_KEY_2)
+	if(keystatus&devkit_PORT_A_KEY_2)
 	{
 		if(playershootcounter>PLAYERSHOOTINTERVAL_SIDE)
 		{
@@ -148,7 +148,7 @@ void CheckShootPlayer()
 		}
 	}
 	// Check top
-	else if(keystatus&PORT_A_KEY_1)
+	else if(keystatus&devkit_PORT_A_KEY_1)
 	{
 		if(playershootcounter>PLAYERSHOOTINTERVAL_NORMAL)
 		{
