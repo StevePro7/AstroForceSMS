@@ -13,6 +13,16 @@ REM gfx.bat
 REM psg.bat
 
 
+cd engine
+sdcc -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 _sms_manager.c
+sdcc -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 _snd_manager.c
+cd ..
+
+
+cd source
+REM sdcc -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 info_manager.c
+cd ..
+
 REM echo Build main
 sdcc -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 main.c
 
@@ -34,9 +44,15 @@ echo.
 ::Done at: 12:37:53,70 took: 0:02:03.55
 
 
-
 REM echo Linking
-sdcc -o output.ihx -mz80 --data-loc 0xC000 --no-std-crt0 crt0_sms.rel main.rel SMSlib.lib
+sdcc -o output.ihx --Werror --opt-code-speed -mz80 --no-std-crt0 --data-loc 0xC000 ^
+..\crt0\crt0_sms.rel main.rel ^
+..\lib\SMSlib.lib ^
+..\lib\PSGlib.rel ^
+engine\_sms_manager.rel ^
+engine\_snd_manager.rel
+
+REM echo Binary output
 ihx2sms output.ihx output.sms
 
 
