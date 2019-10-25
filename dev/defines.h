@@ -8,7 +8,7 @@
 #include "Banks\bank9.h"
 #include "Banks\bank10.h"
 #include "Banks\bank11.h"
-#include "FortressesBanks\bank12.h"
+#include "Banks\bank12.h"
 #include "Banks\bank13.h"
 #include "Banks\bank14.h"
 #include "Banks\bank15.h"
