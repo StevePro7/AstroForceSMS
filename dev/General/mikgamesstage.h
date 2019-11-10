@@ -4,7 +4,7 @@ void InitMikGamesStage()
 	InitStage();
 
 	// Lo volvemos a apagar
-	SMS_displayOff();
+	devkit_SMS_displayOff();
 
 	// Load palette
 	LoadBGPalette(logopalette_bin,logopalette_bin_bank);
@@ -13,10 +13,10 @@ void InitMikGamesStage()
 	LoadGraphics(mikgamestiles_psgcompr,mikgamestilemap_bin,mikgamestilemap_bin_size,mikgamestiles_psgcompr_bank);
 
 	// Scroll
-	SMS_setBGScrollY(16);
+	devkit_SMS_setBGScrollY(16);
 		
 	// Lo volvemos a encender
-	SMS_displayOn();
+	devkit_SMS_displayOn();
 
 	// Bucle
 	while(1)
@@ -26,10 +26,10 @@ void InitMikGamesStage()
 
 		// Scroll
 		if(stageframe<30)
-			SMS_setBGScrollY(16+(stageframe<<2));
+			devkit_SMS_setBGScrollY(16+(stageframe<<2));
 		
 		// Play?
-		if(keystatus&PORT_A_KEY_1)
+		if(keystatus&devkit_PORT_A_KEY_1())
 			return;
 		
 		// Done?

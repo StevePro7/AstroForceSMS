@@ -4,7 +4,7 @@ void InitGameoverStage()
 	InitStage();
 
 	// Lo volvemos a apagar
-	SMS_displayOff();
+	devkit_SMS_displayOff();
 
 	// Load palette
 	LoadBGPalette(logopalette_bin,logopalette_bin_bank);
@@ -14,7 +14,7 @@ void InitGameoverStage()
 	WriteText("PRESS FIRE TO CONTINUE",5,14);
 	
 	// Lo volvemos a encender
-	SMS_displayOn();
+	devkit_SMS_displayOn();
 
 	// Rom bank
 	PlayMusic(gameover_psg,gameover_psg_bank,0);
@@ -26,7 +26,7 @@ void InitGameoverStage()
 		UpdateStage();
 
 		// Play?
-		if(keystatus&PORT_A_KEY_1)
+		if(keystatus&devkit_PORT_A_KEY_1())
 		{
 			// Init stage and players
 			stagenum=laststagenum;

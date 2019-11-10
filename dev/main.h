@@ -1,8 +1,19 @@
-#include <stdio.h>
+#ifndef __MAIN__
+#define __MAIN__
+
+#include <stdbool.h>
 #include <stdlib.h>
+
+// LIBRARIES.
+#include "engine\_sms_manager.h"
+#include "engine\_snd_manager.h"
+
+
+#include <stdio.h>
+//#include <stdlib.h>
 #include <string.h>
-#include "..\lib\SMSlib.h"
-#include "..\lib\PSGlib.h"
+//#include "engine\_sms_manager.h"
+//#include "engine\_snd_manager.h"
 #include "defines.h"
 #include "Banks\fixedbank.h"
 #include "vars.h"
@@ -93,3 +104,6 @@
 #include "General\powerup.h"
 #include "Players\player.h"
 #include "Players\playstage.h"
+
+
+#endif//__MAIN__

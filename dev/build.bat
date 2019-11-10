@@ -1,4 +1,4 @@
-@echo off
+rem @echo off
 cls
 
 REM Banks conversion
@@ -89,19 +89,19 @@ cd ..\dev
 
 REM echo Delete
 cd Banks
-if exist "*.asm" del "*.asm" > nul
-if exist "*.lst" del "*.lst" > nul
-if exist "*.rel" del "*.rel" > nul
-if exist "*.sym" del "*.sym" > nul
+del *.asm > nul
+del *.lst > nul
+del *.rel > nul
+del *.sym > nul
 cd ..
 
-if exist "*.asm" del "*.asm" > nul
-if exist "*.ihx" del "*.ihx" > nul
-if exist "*.lk"  del "*.lk"  > nul
-if exist "*.lst" del "*.lst" > nul
-REM if exist "*.map" del "*.map" > nul
-if exist "*.noi" del "*.noi" > nul
-if exist "*.rel" del "*.rel" > nul
-if exist "*.sym" del "*.sym" > nul
+del *.asm > nul
+del *.ihx > nul
+del *.lk > nul
+del *.lst > nul
+del *.map > nul
+del *.noi > nul
+del *.rel > nul
+del *.sym > nul
 
-rem output.sms
+output.sms

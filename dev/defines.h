@@ -37,10 +37,10 @@ typedef struct enemy
 	unsigned char enemywidth;
 	unsigned char enemyheight;
 }enemy;
-typedef void (*MyInitEnemyFunction)( enemy *);
-typedef unsigned char (*MyUpdateEnemyFunction)( enemy *);
-typedef void (*MyKillEnemyFunction)(void);
-typedef unsigned char (*MyCheckCollisionFunction)( unsigned char, unsigned char);
+typedef void( *MyInitEnemyFunction )( enemy * );
+typedef unsigned char( *MyUpdateEnemyFunction )( enemy * );
+typedef void( *MyKillEnemyFunction )( void );
+typedef unsigned char( *MyCheckCollisionFunction )( unsigned char, unsigned char );
 
 // Sound bank
 #define SOUNDBANK 2

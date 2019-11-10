@@ -3,8 +3,8 @@ void ClearTimeredLabelLine(unsigned char y)
 	unsigned char a;
 
 	// Clear line
-	SMS_setNextTileatXY (0,y);
-	for(a=0;a<32;a++)SMS_setTile(0);
+	devkit_SMS_setNextTileatXY (0,y);
+	for(a=0;a<32;a++)devkit_SMS_setTile(0);
 }
 
 // Remove timered label

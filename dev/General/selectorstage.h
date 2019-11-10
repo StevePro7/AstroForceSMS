@@ -15,8 +15,8 @@ void UpdateSelectorMarks(unsigned char selected_stage)
 		c=(a*6)+1;
 		for(b=0;b<4;b++)
 		{
-			SMS_setNextTileatXY(c+selectormarkx[b],selectormarky[b]);
-			SMS_setTile(a==selected_stage?selectormarkt[b]:0);
+			devkit_SMS_setNextTileatXY(c+selectormarkx[b],selectormarky[b]);
+			devkit_SMS_setTile(a==selected_stage?selectormarkt[b]:0);
 		}
 
 		// Base tiles
@@ -25,9 +25,9 @@ void UpdateSelectorMarks(unsigned char selected_stage)
 		// Images
 		for(b=0;b<4;b++)
 		{
-			SMS_setNextTileatXY(2+a*6,10+b);
+			devkit_SMS_setNextTileatXY(2+a*6,10+b);
 			for(c=0;c<4;c++)
-				SMS_setTile(d++);
+				devkit_SMS_setTile(d++);
 			d+=4;
 		}
 	}
@@ -45,7 +45,7 @@ void InitSelectorStage()
 	InitStage();
 
 	// Lo volvemos a apagar
-	SMS_displayOff();
+	devkit_SMS_displayOff();
 
 	// Load palette
 	LoadBGPalette(selectorpalette_bin,selectorpalette_bin_bank);
@@ -57,7 +57,7 @@ void InitSelectorStage()
 	WriteText("SELECT INITIAL STAGE",6,6);
 	
 	// Lo volvemos a encender
-	SMS_displayOn();
+	devkit_SMS_displayOn();
 
 	// Rom bank
 	PlayMusic(select_psg,select_psg_bank,1);
@@ -72,7 +72,7 @@ void InitSelectorStage()
 		UpdateSelectorMarks(selected_stage);
 		
 		// Selector left
-		if(keystatus&PORT_A_KEY_LEFT)
+		if(keystatus&devkit_PORT_A_KEY_LEFT())
 		{
 			if(keyfree==1)
 				if(selected_stage>0)
@@ -81,7 +81,7 @@ void InitSelectorStage()
 		}
 
 		// Selector right
-		else if(keystatus&PORT_A_KEY_RIGHT)
+		else if(keystatus&devkit_PORT_A_KEY_RIGHT())
 		{
 			if(keyfree==1)
 				if(selected_stage<4)
@@ -92,7 +92,7 @@ void InitSelectorStage()
 		else keyfree=1;
 		
 		// Play?
-		if(keystatus&PORT_A_KEY_1)
+		if(keystatus&devkit_PORT_A_KEY_1())
 		{
 			basestage=selected_stage;
 			InitPlayerConstants();

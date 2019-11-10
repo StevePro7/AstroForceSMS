@@ -1,21 +1,21 @@
-void InitStage7EndBossB(enemy *en)
-{
-	// Velocity only
-	en->enemyparama=4;
-	en->enemyparamb=4;
-}
+//void InitStage7EndBossB(enemy *en)
+//{
+//	// Velocity only
+//	en->enemyparama=4;
+//	en->enemyparamb=4;
+//}
 
-void InitStage7EndBoss(enemy *en)
-{
-	unsigned char a;
-	
-	// Init body
-	InitStage7EndBossB(en);
-	
-	// Corps
-	for(a=6;a>=1;a--)
-		InitEnemy(en->enemyposx-(a*12),en->enemyposy-(a*12),STAGE7ENDBOSSB);
-}
+//void InitStage7EndBoss(enemy *en)
+//{
+//	unsigned char a;
+//	
+//	// Init body
+//	//InitStage7EndBossB(en);
+//	
+//	// Corps
+//	for(a=6;a>=1;a--)
+//		InitEnemy(en->enemyposx-(a*12),en->enemyposy-(a*12),STAGE7ENDBOSSB);
+//}
 
 void DoWormMovement(enemy *en)
 {
@@ -45,17 +45,17 @@ unsigned char UpdateStage7EndBoss(enemy *en)
 	return 1;
 }
 
-unsigned char UpdateStage7EndBossB(enemy *en)
-{
-	// This enemy does not die never
-	if(en->enemyenergy<10)en->enemyenergy=10;
-
-	// Do same movement
-	DoWormMovement(en);
-
-	// Sprite
-	DrawQuadSprite(en->enemyposx,en->enemyposy,STAGE7ENDBOSSBASE+8);	
-	
-	// Return
-	return 1;
-}
+//unsigned char UpdateStage7EndBossB(enemy *en)
+//{
+//	// This enemy does not die never
+//	if(en->enemyenergy<10)en->enemyenergy=10;
+//
+//	// Do same movement
+//	DoWormMovement(en);
+//
+//	// Sprite
+//	DrawQuadSprite(en->enemyposx,en->enemyposy,STAGE7ENDBOSSBASE+8);	
+//	
+//	// Return
+//	return 1;
+//}
