@@ -95,7 +95,7 @@ const unsigned char sinustable[]=
 const char *jukebox_songs[]=
 {
 	logo_psg,
-	intro1_psg,
+	intro3_psg,//intro1_psg,
 	intro3_psg,
 	intro2_psg,
 	select_psg,
@@ -122,7 +122,7 @@ const unsigned char jukebox_repeat[]={0,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,0}
 const char jukebox_banks[]=
 {
 	logo_psg_bank,
-	intro1_psg_bank,
+	intro3_psg_bank,//intro1_psg_bank,
 	intro3_psg_bank,
 	intro2_psg_bank,
 	select_psg_bank,
@@ -1963,7 +1963,7 @@ extern void InitWW2Zeppelin(enemy *en);
 extern void InitWW2Plane(enemy *en);
 extern void InitIntro3Object(enemy *en);
 extern void InitMonsterMissilLeft(enemy *en);
-extern void InitStage7MiddleBoss(enemy *en);
+//extern void InitStage7MiddleBoss(enemy *en);
 extern void InitStage7EndBoss(enemy *en);
 extern void InitFortressPhantom(enemy *en);
 extern void InitFortressCannonRight(enemy *en);
@@ -1974,7 +1974,7 @@ extern void InitSpaceAsteroid(enemy *en);
 extern void InitSkullBoneA(enemy *en);
 extern void InitSkullBoneB(enemy *en);
 extern void InitSkullBoneC(enemy *en);
-extern void InitStage7EndBossB(enemy *en);
+//extern void InitStage7EndBossB(enemy *en);
 extern void InitStage4EndBossB(enemy *en);
 extern void InitStage3Laser(enemy *en);
 extern void InitStage1MiddleBossB(enemy *en);
@@ -2018,8 +2018,8 @@ const MyInitEnemyFunction initenemyfunctions[]=
 	0,
 	InitMonsterMissilLeft,
 	0,
-	InitStage7MiddleBoss,
-	InitStage7EndBoss,
+	//InitStage7MiddleBoss,
+	//InitStage7EndBoss,
 	0,
 	0,
 	0,
@@ -2051,7 +2051,7 @@ const MyInitEnemyFunction initenemyfunctions[]=
 	InitSkullBoneB,
 	InitSkullBoneC,
 	0,
-	InitStage7EndBossB,
+	//InitStage7EndBossB,
 	InitStage4EndBossB,
 	0,
 	0,
@@ -2097,7 +2097,7 @@ extern unsigned char UpdateMonsterHead(enemy *en);
 extern unsigned char UpdateMonsterMissil(enemy *en);
 extern unsigned char UpdateStage7MiddleBoss(enemy *en);
 extern unsigned char UpdateStage7EndBoss(enemy *en);
-extern unsigned char UpdateStage7Object(enemy *en);
+//extern unsigned char UpdateStage7Object(enemy *en);
 extern unsigned char UpdateFortressSearcher(enemy *en);
 extern unsigned char UpdateFortressDoor(enemy *en);
 extern unsigned char UpdateFortressWave(enemy *en);
@@ -2124,7 +2124,7 @@ extern unsigned char UpdateStage6EndBoss(enemy *en);
 extern unsigned char UpdateSkullBoneAB(enemy *en);
 extern unsigned char UpdateSkullBoneC(enemy *en);
 extern unsigned char UpdateStage5Missile(enemy *en);
-extern unsigned char UpdateStage7EndBossB(enemy *en);
+//extern unsigned char UpdateStage7EndBossB(enemy *en);
 extern unsigned char UpdateStage4EndBossB(enemy *en);
 extern unsigned char UpdateStage3Laser(enemy *en);
 extern unsigned char UpdateStage1MiddleBossB(enemy *en);
@@ -2170,9 +2170,9 @@ const MyUpdateEnemyFunction updateenemyfunctions[]=
 	UpdateMonsterHead,
 	UpdateMonsterMissil,
 	UpdateMonsterMissil,
-	UpdateStage7MiddleBoss,
-	UpdateStage7EndBoss,
-	UpdateStage7Object,
+	//UpdateStage7MiddleBoss,
+	//UpdateStage7EndBoss,
+	//UpdateStage7Object,
 	UpdateFortressSearcher,
 	UpdateFortressDoor,
 	UpdateFortressWave,
@@ -2203,7 +2203,7 @@ const MyUpdateEnemyFunction updateenemyfunctions[]=
 	UpdateSkullBoneAB,
 	UpdateSkullBoneC,
 	UpdateStage5Missile,
-	UpdateStage7EndBossB,
+//	UpdateStage7EndBossB,
 	UpdateStage4EndBossB,
 	UpdateStage4EndBoss,
 	UpdateStage3EndBoss,
@@ -2274,7 +2274,7 @@ const MyKillEnemyFunction initstagefunctions[]=
 
 extern void FinishStage4MiddleBoss();
 extern void InitAfterBossStage();
-extern void FinishStage7MiddleBoss();
+//extern void FinishStage7MiddleBoss();
 extern void FinishStage1MiddleBoss();
 extern void FinishVulcanStation();
 extern void FinishSpaceStation();
@@ -2314,7 +2314,7 @@ const MyKillEnemyFunction killenemyfunctions[]=
 	0,
 	0,
 	0,
-	FinishStage7MiddleBoss,
+	//FinishStage7MiddleBoss,
 	InitAfterBossStage,
 	0,
 	0,
@@ -2930,16 +2930,16 @@ MyKillEnemyFunction playerupdatefunctions[]=
 };
 
 
-extern void UpdateStage7MiddleBoss0(enemy *en);
-extern void UpdateStage7MiddleBoss1(enemy *en);
-extern void UpdateStage7MiddleBoss2(enemy *en);
+//extern void UpdateStage7MiddleBoss0(enemy *en);
+//extern void UpdateStage7MiddleBoss1(enemy *en);
+//extern void UpdateStage7MiddleBoss2(enemy *en);
 
-const MyInitEnemyFunction updatestage7middlebossfunctions[]=
-{
-	UpdateStage7MiddleBoss0,
-	UpdateStage7MiddleBoss1,
-	UpdateStage7MiddleBoss2
-};
+//const MyInitEnemyFunction updatestage7middlebossfunctions[]=
+//{
+//	//UpdateStage7MiddleBoss0,
+//	//UpdateStage7MiddleBoss1,
+//	//UpdateStage7MiddleBoss2
+//};
 
 extern void UpdateSpaceStation1(enemy *en);
 extern void UpdateSpaceStation2(enemy *en);

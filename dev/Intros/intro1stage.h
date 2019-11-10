@@ -7,7 +7,8 @@ void InitIntro1Stage()
 	LoadSprite(introovni_psgcompr, INTROOVNIBASE,introovni_psgcompr_bank);
 	
 	// Rom bank
-	PlayMusic(intro1_psg,intro1_psg_bank,0);
+	//PlayMusic(intro1_psg,intro1_psg_bank,0);
+	PlayMusic( intro3_psg, intro3_psg_bank, 0 );
 	
 	// Scripter
 	InitScript(intro1script,intro1labels);

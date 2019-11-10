@@ -22,10 +22,10 @@ void UpdateStage3EndBoss2(enemy *en)
 void UpdateStage3EndBoss1(enemy *en)
 {
 	// Do pattern movement
-	if(en->enemytype==STAGE3ENDBOSS)
-		DoAracPatternMovement(en,crossamovingx,crossamovingy,crossamovingt);
-	else
-		DoAracPatternMovement(en,crossbmovingx,crossbmovingy,crossbmovingt);		
+	//if(en->enemytype==STAGE3ENDBOSS)
+	//	DoAracPatternMovement(en,crossamovingx,crossamovingy,crossamovingt);
+	//else
+	//	DoAracPatternMovement(en,crossbmovingx,crossbmovingy,crossbmovingt);
 
 	// Shoot?
 	TestEnemyShootComplex(en,48,12,12);

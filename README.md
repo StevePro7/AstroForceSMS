@@ -14,3 +14,26 @@ operable program or batch file.
 
 Solution
 https://stackoverflow.com/questions/8320648/my-bat-not-recognized-as-an-internal-or-external-command-operable-program-or-ba
+
+
+09/11/2019
+Today I comment out all these functions in order to get the game to build
+intro1_psg
+
+UpdateStage7Object
+
+UpdateStage7MiddleBoss0
+UpdateStage7MiddleBoss1
+UpdateStage7MiddleBoss2
+
+UpdateStage7EndBossB
+
+InitStage7MiddleBoss
+InitStage7EndBossB
+InitStage7EndBoss
+
+FinishStage7MiddleBoss
+DrawAracPatternMovement	UpdateStage3EndBoss1
+
+
+DrawAracMoving
