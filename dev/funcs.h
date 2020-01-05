@@ -379,7 +379,7 @@ void UpdatePSG()
 	}
 
 	// Update sounds
-	if(PSGSFXGetStatus())
+	if(devkit_PSGSFXGetStatus())
 	{
 		changeBank(SOUNDBANK);
 		devkit_PSGSFXFrame();
