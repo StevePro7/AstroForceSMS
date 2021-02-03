@@ -1,5 +1,5 @@
 #include "_sms_manager.h"
-#include "..\source\info_manager.h"
+#include "..\game.h"
 #include <stdbool.h>
 
 #ifdef _CONSOLE
@@ -23,11 +23,11 @@ void devkit_SMS_displayOff()
 
 void devkit_SMS_setBGScrollX( unsigned char scrollX )
 {
-	return SMS_setBGScrollX( scrollX );
+	SMS_setBGScrollX( scrollX );
 }
 void devkit_SMS_setBGScrollY( unsigned char scrollY )
 {
-	return SMS_setBGScrollY( scrollY );
+	SMS_setBGScrollY( scrollY );
 }
 void devkit_SMS_setBackdropColor( unsigned char entry )
 {
@@ -55,10 +55,9 @@ void devkit_SMS_VDPturnOnFeature( unsigned int feature )
 	SMS_VDPturnOnFeature( feature );
 }
 
-void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char* src, unsigned char size )
+void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char* src, unsigned int size )
 {
-	return SMS_loadTileMap( x, y, src, size );
-	
+	SMS_loadTileMap( x, y, src, size );
 }
 
 void devkit_SMS_loadPSGaidencompressedTiles( void *src, unsigned int tilefrom )
@@ -70,6 +69,15 @@ void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsi
 	SMS_loadSTMcompressedTileMap( x, y, src );
 }
 
+void devkit_SMS_setBGPaletteColor( unsigned char entry, unsigned char color )
+{
+	SMS_setBGPaletteColor( entry, color );
+}
+void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	const unsigned char color = RGB( r, g, b );
+	SMS_setSpritePaletteColor( entry, color );
+}
 void devkit_SMS_loadBGPalette( void *palette )
 {
 	SMS_loadBGPalette( palette );
@@ -77,11 +85,6 @@ void devkit_SMS_loadBGPalette( void *palette )
 void devkit_SMS_loadSpritePalette( void *palette )
 {
 	SMS_loadSpritePalette( palette );
-}
-void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b )
-{
-	const unsigned char color = RGB( r, g, b );
-	SMS_setSpritePaletteColor( entry, color );
 }
 
 void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y )
@@ -93,41 +96,9 @@ void devkit_SMS_setTile( const unsigned char tile )
 	SMS_setTile( tile );
 }
 
-void devkit_SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile )
+void devkit_SMS_addSprite( unsigned char x, unsigned char y, unsigned int tile )
 {
 	SMS_addSprite( x, y, tile );
-}
-void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, unsigned char tile )
-{
-	devkit_SMS_addSprite( x + 0, y + 0, tile + 0 );
-	devkit_SMS_addSprite( x + 8, y + 0, tile + 1 );
-
-	devkit_SMS_addSprite( x + 0, y + 8, tile + 2 );
-	devkit_SMS_addSprite( x + 8, y + 8, tile + 3 );
-
-	devkit_SMS_addSprite( x + 0, y + 16, tile + 4 );
-	devkit_SMS_addSprite( x + 8, y + 16, tile + 5 );
-
-	devkit_SMS_addSprite( x + 0, y + 24, tile + 6 );
-	devkit_SMS_addSprite( x + 8, y + 24, tile + 7 );
-}
-void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, unsigned char tile )
-{
-	SMS_addSprite( x + 0, y + 0, tile + 0 );
-	SMS_addSprite( x + 8, y + 0, tile + 1 );
-	SMS_addSprite( x + 16, y + 0, tile + 2 );
-
-	SMS_addSprite( x + 0, y + 8, tile + 3 );
-	SMS_addSprite( x + 8, y + 8, tile + 4 );
-	SMS_addSprite( x + 16, y + 8, tile + 5 );
-
-	SMS_addSprite( x + 0, y + 16, tile + 6 );
-	SMS_addSprite( x + 8, y + 16, tile + 7 );
-	SMS_addSprite( x + 16, y + 16, tile + 8 );
-
-	SMS_addSprite( x + 0, y + 24, tile + 9 );
-	SMS_addSprite( x + 8, y + 24, tile + 10 );
-	SMS_addSprite( x + 16, y + 24, tile + 11 );
 }
 
 void devkit_SMS_initSprites()
@@ -144,11 +115,23 @@ void devkit_SMS_waitForVBlank()
 }
 void devkit_SMS_copySpritestoSAT()
 {
-	UNSAFE_SMS_copySpritestoSAT();
+	SMS_copySpritestoSAT();
 }
 void devkit_UNSAFE_SMS_copySpritestoSAT()
 {
 	UNSAFE_SMS_copySpritestoSAT();
+}
+void devkit_UNSAFE_SMS_VRAMmemcpy32( unsigned int dst, void *src )
+{
+	UNSAFE_SMS_VRAMmemcpy32( dst, src );
+}
+void devkit_UNSAFE_SMS_VRAMmemcpy64( unsigned int dst, void *src )
+{
+	UNSAFE_SMS_VRAMmemcpy64( dst, src );
+}
+void devkit_UNSAFE_SMS_VRAMmemcpy128( unsigned int dst, void *src )
+{
+	UNSAFE_SMS_VRAMmemcpy128( dst, src );
 }
 
 unsigned char devkit_SMS_queryPauseRequested()
@@ -206,19 +189,19 @@ unsigned int devkit_PORT_A_KEY_2()
 /* low level functions */
 void devkit_SMS_VRAMmemcpy( unsigned int dst, void *src, unsigned int size )
 {
-	return SMS_VRAMmemcpy( dst, src, size );
+	SMS_VRAMmemcpy( dst, src, size );
 }
 void devkit_SMS_VRAMmemcpy_brief( unsigned int dst, void *src, unsigned char size )
 {
-	return SMS_VRAMmemcpy_brief( dst, src, size );
+	SMS_VRAMmemcpy_brief( dst, src, size );
 }
 void devkit_SMS_VRAMmemset( unsigned int dst, unsigned char value, unsigned int size )
 {
-	return SMS_VRAMmemset( dst, value, size );
+	SMS_VRAMmemset( dst, value, size );
 }
 void devkit_SMS_VRAMmemsetW( unsigned int dst, unsigned int value, unsigned int size )
 {
-	return SMS_VRAMmemsetW( dst, value, size );
+	SMS_VRAMmemsetW( dst, value, size );
 }
 
 

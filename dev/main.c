@@ -9,15 +9,6 @@ void main()
 
 	while( 1 )
 	{
-		// Testing
-		/*
-		stagenum=8;
-		numplayers=6;
-		InitPlayerConstants();
-		InitPlayer();
-		InitPlayStage();
-		*/
-
 		// Mikgames
 		InitMikGamesStage();
 
@@ -33,15 +24,15 @@ void main()
 		if( dojukebox == 1 )
 			InitJukeboxStage();
 
-		// Selector
-		InitSelectorStage();
-
 		// Init stage and players
 		stagenum = 1;
 		numplayers = gamestock;
 
+		// Selector
+		InitSelectorStage();
+
 		// Stage looping
-		while( stagenum<10 )
+		while( stagenum < 10 )
 		{
 			if( stagenum == 0 )
 				InitGameoverStage();
@@ -54,6 +45,3 @@ void main()
 		}
 	}
 }
-
-//SMS_EMBED_SEGA_ROM_HEADER( 9999, 0 );
-//SMS_EMBED_SDSC_HEADER( 1, 0, 2017, 9, 15, "StevePro Studios", "Astro Force", "Convert example as scalable SMS projec" );
