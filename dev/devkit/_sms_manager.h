@@ -15,27 +15,29 @@ void devkit_SMS_setSpriteMode( unsigned char mode );
 void devkit_SMS_mapROMBank( unsigned char n );
 void devkit_SMS_VDPturnOnFeature( unsigned int feature );
 
-void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char* src, unsigned char size );
+void devkit_SMS_loadTileMap( unsigned char x, unsigned char y, unsigned char* src, unsigned int size );
 
 void devkit_SMS_loadPSGaidencompressedTiles( const void *src, unsigned int tilefrom );
 void devkit_SMS_loadSTMcompressedTileMap( unsigned char x, unsigned char y, unsigned char *src );
 
+void devkit_SMS_setBGPaletteColor(unsigned char entry, unsigned char color);
+void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b );
 void devkit_SMS_loadBGPalette( void *palette );
 void devkit_SMS_loadSpritePalette( void *palette );
-void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned char r, const unsigned char g, const unsigned char b );
 
 void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y );
 void devkit_SMS_setTile( const unsigned char tile );
 
-void devkit_SMS_addSprite( unsigned char x, unsigned char y, unsigned char tile );
-void devkit_SMS_addSprite_bulk8( unsigned char x, unsigned char y, unsigned char tile );
-void devkit_SMS_addSprite_bulk12( unsigned char x, unsigned char y, unsigned char tile );
+void devkit_SMS_addSprite( unsigned char x, unsigned char y, unsigned int tile );
 
 void devkit_SMS_initSprites();
 void devkit_SMS_finalizeSprites();
 void devkit_SMS_waitForVBlank();
 void devkit_SMS_copySpritestoSAT();
 void devkit_UNSAFE_SMS_copySpritestoSAT();
+void devkit_UNSAFE_SMS_VRAMmemcpy32( unsigned int dst, void *src );
+void devkit_UNSAFE_SMS_VRAMmemcpy64( unsigned int dst, void *src );
+void devkit_UNSAFE_SMS_VRAMmemcpy128( unsigned int dst, void *src );
 
 unsigned char devkit_SMS_queryPauseRequested();
 void devkit_SMS_resetPauseRequest();
@@ -66,7 +68,8 @@ void devkit_SMS_enableLineInterrupt();
 void devkit_SMS_disableLineInterrupt();
 
 // #defines
-unsigned char devkit_SPRITEMODE_NORMAL();
 unsigned int devkit_VDPFEATURE_HIDEFIRSTCOL();
+unsigned int devkit_VDPFEATURE_LEFTCOLBLANK();
+unsigned char devkit_SPRITEMODE_NORMAL();
 
 #endif//_SMS_MANAGER_H_
