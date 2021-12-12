@@ -12,12 +12,12 @@ cd banks
 sdcc --debug -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK15 fixedbank.c
 cd ..
 cd devkit
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 _sms_manager.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 _snd_manager.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 _sms_manager.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 _snd_manager.c
 cd ..
 
 cd General
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 mikgamesstage.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 mikgamesstage.c
 cd ..
 
 :: echo Build main
@@ -39,18 +39,18 @@ echo.
 
 :: Link
 sdcc --debug -o output.ihx -mz80 --no-std-crt0 --data-loc 0xC000 ^
-..\crt0\crt0_sms.rel main.rel ^
+../crt0/crt0_sms.rel main.rel ^
 -Wl-b_BANK2=0x8000  -Wl-b_BANK3=0x8000  -Wl-b_BANK4=0x8000  -Wl-b_BANK5=0x8000 ^
 -Wl-b_BANK6=0x8000  -Wl-b_BANK7=0x8000  -Wl-b_BANK8=0x8000  -Wl-b_BANK9=0x8000 ^
 -Wl-b_BANK10=0x8000 -Wl-b_BANK11=0x8000 -Wl-b_BANK12=0x8000 -Wl-b_BANK13=0x8000 ^
 -Wl-b_BANK14=0x8000 -Wl-b_BANK15=0x8000 ^
-..\lib\SMSlib.lib ^
-..\lib\PSGlib.rel ^
-banks\bank2.rel  banks\bank3.rel  banks\bank4.rel  banks\bank5.rel ^
-banks\bank6.rel  banks\bank7.rel  banks\bank8.rel  banks\bank9.rel ^
-banks\bank10.rel banks\bank11.rel banks\bank12.rel banks\bank13.rel ^
-banks\bank14.rel banks\fixedbank.rel ^
-devkit\_sms_manager.rel devkit\_snd_manager.rel ^
+../lib/SMSlib.lib ^
+../lib/PSGlib.rel ^
+banks/bank2.rel  banks/bank3.rel  banks/bank4.rel  banks/bank5.rel ^
+banks/bank6.rel  banks/bank7.rel  banks/bank8.rel  banks/bank9.rel ^
+banks/bank10.rel banks/bank11.rel banks/bank12.rel banks/bank13.rel ^
+banks/bank14.rel banks/fixedbank.rel ^
+devkit/_sms_manager.rel devkit/_snd_manager.rel ^
 General/mikgamesstage.rel ^
 defines.rel funcs.rel vars.rel
 
@@ -60,7 +60,7 @@ ihx2sms output.ihx output.sms
 
 
 :: Output
-::copy output.sms ..\AstroForce2.0.sms
+::copy output.sms ../AstroForce2.0.sms
 
 
 cd banks
@@ -75,6 +75,6 @@ if exist "*.noi" del "*.noi" > nul; if exist "*.sym" del "*.sym" > nul; if exist
 
 
 :: Run
-::java -jar E:\SEGA\Emulicious\Emulicious.jar output.sms
-::C:\SEGA\meka\mekaw.exe output.sms
+::java -jar E:/SEGA/Emulicious/Emulicious.jar output.sms
+::C:/SEGA/meka/mekaw.exe output.sms
 output.sms
