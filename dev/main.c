@@ -9,7 +9,7 @@ void main()
 
 	while( 1 )
 	{
-		//// Mikgames
+		// Mikgames
 		//InitMikGamesStage();
 
 		//// Game intro

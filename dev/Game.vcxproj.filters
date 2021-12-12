@@ -55,6 +55,36 @@
     <Filter Include="Header Files\Wars">
       <UniqueIdentifier>{6d1a199a-94e8-485f-aef5-47cd05d2b59d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Vulcans">
+      <UniqueIdentifier>{3f8efdf5-5326-4f48-a9db-4fc85ccbdb46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wars">
+      <UniqueIdentifier>{a59e240a-30a9-4cb9-8c47-84c43ea995bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stages">
+      <UniqueIdentifier>{c6b1465d-5c93-4f54-b023-52705e04e514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Players">
+      <UniqueIdentifier>{df950287-0e31-4950-b5ec-8073f34378a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemies">
+      <UniqueIdentifier>{7bd8b1dc-be53-464b-8092-87b57a548681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fortresses">
+      <UniqueIdentifier>{5a7c9947-53d8-4c74-8b0e-cd53fd42420e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\General">
+      <UniqueIdentifier>{412e229a-9cf7-4cd7-85b6-96829abde088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monsters">
+      <UniqueIdentifier>{bf380cb9-7eed-4893-afb7-a83cdd4a268e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Intros">
+      <UniqueIdentifier>{cafe0eff-3ad1-4264-85d4-4a9021bab509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Spaces">
+      <UniqueIdentifier>{8f085376-5a7c-413b-962f-c5be0d1059c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
