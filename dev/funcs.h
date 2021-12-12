@@ -1,4 +1,11 @@
+#ifndef _FUNCS_H_
+#define _FUNCS_H_
 
+#include "vars.h"
+#include "devkit/_sms_manager.h"
+#include "devkit/_snd_manager.h"
+#include "banks/bank2.h"
+#include "banks/fixedbank.h"
 
 // Eah que no existen en la libreria
 #define max(x, y) (((x) > (y)) ? (x) : (y))
@@ -8,37 +15,37 @@
 
 
 // Declarations needed
-void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
-void InitEnemyshootLaser( unsigned char x, unsigned char y );
-void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );
-void RemovePlayer();
-void RemovePlayershoot( signed char a );
-void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
-void InitScript( unsigned char *scripter, unsigned char **labels );
-void InitAfterBossStage();
-void GetEnemyDirection( enemy *en );
-void UpdatePlayStage();
-void InitStageSprites( const unsigned char *spl, unsigned char num );
-void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset );
-unsigned char TestSkullOut( enemy *en );
-void SkullAccelX( enemy *en );
-void SkullAccelY( enemy *en );
-void SkullBoneCMove( enemy *en );
-void KillEnemies( unsigned char force );
-void DoCommonBossAppearingFunction( enemy *en );
-void DoEnemyWait( enemy *en, unsigned char nxt );
-void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
-void DoStage1BossDirectionShoots( enemy *en );
-void DoSideShoot( enemy *en, unsigned char freq );
-void KillEnemy( unsigned char a );
-void PlaySound( char *sound, char priority );
-void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
-void TestEnemyShoot( enemy *en, unsigned char freq );
-void TestEnemyShootOne( enemy *en, unsigned char freq );
-void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy );
-void InitPowerup( enemy *en );
-void InitPlayerConstants();
-void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count );
+//void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
+//void InitEnemyshootLaser( unsigned char x, unsigned char y );
+//void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );
+//void RemovePlayer();
+//void RemovePlayershoot( signed char a );
+//void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
+//void InitScript( unsigned char *scripter, unsigned char **labels );
+//void InitAfterBossStage();
+//void GetEnemyDirection( enemy *en );
+//void UpdatePlayStage();
+//void InitStageSprites( const unsigned char *spl, unsigned char num );
+//void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset );
+//unsigned char TestSkullOut( enemy *en );
+//void SkullAccelX( enemy *en );
+//void SkullAccelY( enemy *en );
+//void SkullBoneCMove( enemy *en );
+//void KillEnemies( unsigned char force );
+//void DoCommonBossAppearingFunction( enemy *en );
+//void DoEnemyWait( enemy *en, unsigned char nxt );
+//void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
+//void DoStage1BossDirectionShoots( enemy *en );
+//void DoSideShoot( enemy *en, unsigned char freq );
+//void KillEnemy( unsigned char a );
+//void PlaySound( char *sound, char priority );
+//void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
+//void TestEnemyShoot( enemy *en, unsigned char freq );
+//void TestEnemyShootOne( enemy *en, unsigned char freq );
+//void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy );
+//void InitPowerup( enemy *en );
+//void InitPlayerConstants();
+//void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count );
 
 // Fast random package
 unsigned long state = 777;
@@ -104,10 +111,10 @@ void LoadTiles( unsigned char *psg, char b )
 void LoadGraphics( char *psg, char *bin, int size, char b )
 {
 	// The tiles
-	LoadTiles( psg, b );
+	LoadTiles( (unsigned char*)psg, b );
 
 	// The graphics
-	devkit_SMS_loadTileMap( 0, 0, bin, size );
+	devkit_SMS_loadTileMap( 0, 0, (unsigned char*)bin, size );
 }
 
 // Carga paleta de fondo
@@ -274,10 +281,20 @@ void checkgamepause()
 		devkit_SMS_resetPauseRequest();
 		gamepause = 1 - gamepause;
 		if( gamepause == 1 )
-			PlayMusic( ( unsigned char * ) pause_psg, pause_psg_bank, 0 );
+			PlayMusic( ( char * ) pause_psg, pause_psg_bank, 0 );
 		else
-			PlayMusic( ( unsigned char * ) lastplayedmusic, lastplayedmusicbank, lastplayedmusiclooped );
+			PlayMusic( ( char * ) lastplayedmusic, lastplayedmusicbank, lastplayedmusiclooped );
 	}
+}
+
+// stevepro
+void UpdatePlayStage()
+{
+	// Change bank
+	changeBank( FIXEDBANKSLOT );
+
+	// Custom Update
+	( *( updatestagefunctions[ playstage ] ) )( );
 }
 
 // Update stage and frames
@@ -354,7 +371,7 @@ void PlayMusic( char *music, unsigned char mbank, unsigned char looped )
 	else
 		devkit_PSGPlayNoRepeat( music );
 
-	if( ( music != pause_psg ) && ( mbank != pause_psg_bank ) )
+	if( ( music != (char *)pause_psg ) && ( mbank != pause_psg_bank ) )
 	{
 		lastplayedmusic = music;
 		lastplayedmusicbank = mbank;
@@ -385,3 +402,4 @@ void UpdatePSG()
 	}
 }
 
+#endif//_FUNCS_H_

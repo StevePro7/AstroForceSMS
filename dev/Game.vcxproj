@@ -61,9 +61,11 @@
     <ClCompile Include="banks\bank8.c" />
     <ClCompile Include="banks\bank9.c" />
     <ClCompile Include="banks\fixedbank.c" />
+    <ClCompile Include="defines.c" />
     <ClCompile Include="devkit\_sms_manager.c" />
     <ClCompile Include="devkit\_snd_manager.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="vars.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1B06943A-5988-4DBA-A2D2-8F40F11EF7E6}</ProjectGuid>

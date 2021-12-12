@@ -6,7 +6,7 @@
 #include "devkit\_snd_manager.h"
 
 // LIBRARIES.
-//#include "defines.h"					// DONE
+#include "defines.h"					// DONE
 //#include "Banks\fixedbank.h"			// DONE
 #include "vars.h"						// DONE
 //#include "funcs.h"						// DONE

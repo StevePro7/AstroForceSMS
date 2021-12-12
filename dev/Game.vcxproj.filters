@@ -111,6 +111,12 @@
     <ClCompile Include="banks\bank15.c">
       <Filter>Source Files\banks</Filter>
     </ClCompile>
+    <ClCompile Include="vars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="defines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat">

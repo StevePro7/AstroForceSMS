@@ -1,7 +1,10 @@
-//// Data bank
-//#include "..\defines.h"
-//
-//#define FIXEDBANKSLOT 15
+#ifndef _FIXEDBANK_H_
+#define _FIXEDBANK_H_
+
+// Data bank
+#include "..\defines.h"
+
+#define FIXEDBANKSLOT 15
 //
 //extern signed char playershootspeedsx[];
 //extern signed char playershootspeedsy[];
@@ -28,112 +31,112 @@
 //extern const unsigned char ww2plane_pattern_f[];
 //extern const unsigned char *ww2plane_patterns[];
 //
-//#define intro1script_bank FIXEDBANKSLOT
+#define intro1script_bank FIXEDBANKSLOT
 //extern const unsigned char intro1script[];
 //extern const unsigned char *intro1labels[];
 //
-//#define intro4script_bank FIXEDBANKSLOT
+#define intro4script_bank FIXEDBANKSLOT
 //extern const unsigned char intro4script[];
 //
-//#define intro2script_bank FIXEDBANKSLOT
+#define intro2script_bank FIXEDBANKSLOT
 //extern const unsigned char intro2script[];
 //
-//#define intro3script_bank FIXEDBANKSLOT
+#define intro3script_bank FIXEDBANKSLOT
 //extern const unsigned char intro3script[];
 //extern const unsigned char *intro3labels[];
 //
 //
-//#define finishscript_bank  FIXEDBANKSLOT
+#define finishscript_bank  FIXEDBANKSLOT
 //extern const unsigned char finishscript[];
 //extern const unsigned char *finishlabels[];
 //
 //extern const unsigned char stagedatamarks[];
 //extern const unsigned char *stageinitdata[];
 //
-//#define stage4script_bank  FIXEDBANKSLOT
+#define stage4script_bank  FIXEDBANKSLOT
 //extern const unsigned char stage4script[];
 //
-//#define stage4scriptb_bank  FIXEDBANKSLOT
+#define stage4scriptb_bank  FIXEDBANKSLOT
 //extern const unsigned char stage4scriptb[];
 //
-//#define stage4scriptc_bank  FIXEDBANKSLOT
+#define stage4scriptc_bank  FIXEDBANKSLOT
 //extern const unsigned char stage4scriptc[];
 //
-//#define stage5script_bank  FIXEDBANKSLOT
+#define stage5script_bank  FIXEDBANKSLOT
 //extern const unsigned char stage5script[];
 //
-//#define stage5scriptb_bank  FIXEDBANKSLOT
+#define stage5scriptb_bank  FIXEDBANKSLOT
 //extern const unsigned char stage5scriptb[];
 //
-//#define stage5scriptc_bank  FIXEDBANKSLOT
+#define stage5scriptc_bank  FIXEDBANKSLOT
 //extern const unsigned char stage5scriptc[];
 //
-//#define spawners_bank  FIXEDBANKSLOT
+#define spawners_bank  FIXEDBANKSLOT
 //extern const unsigned char *spawners[];
 //
-//#define stage5_statics_bank  FIXEDBANKSLOT
+#define stage5_statics_bank  FIXEDBANKSLOT
 //extern const unsigned int stage5_statics[];
 //
-//#define stage8_statics_bank  FIXEDBANKSLOT
+#define stage8_statics_bank  FIXEDBANKSLOT
 //extern const unsigned int stage8_statics[];
 //
-//#define stage1_statics_bank  FIXEDBANKSLOT
+#define stage1_statics_bank  FIXEDBANKSLOT
 //extern const unsigned int stage1_statics[];
 //
-//#define stage2_statics_bank  FIXEDBANKSLOT
+#define stage2_statics_bank  FIXEDBANKSLOT
 //extern const unsigned int stage2_statics[];
 //
-//#define stage6script_bank  FIXEDBANKSLOT
+#define stage6script_bank  FIXEDBANKSLOT
 //extern const unsigned char stage6script[];
 //
-//#define stage6scriptb_bank  FIXEDBANKSLOT
+#define stage6scriptb_bank  FIXEDBANKSLOT
 //extern const unsigned char stage6scriptb[];
 //
-//#define stage3script_bank  FIXEDBANKSLOT
+#define stage3script_bank  FIXEDBANKSLOT
 //extern const unsigned char stage3script[];
 //
-//#define stage3scriptb_bank  FIXEDBANKSLOT
+#define stage3scriptb_bank  FIXEDBANKSLOT
 //extern const unsigned char stage3scriptb[];
 //
-//#define stage3_statics_bank  FIXEDBANKSLOT
+#define stage3_statics_bank  FIXEDBANKSLOT
 //extern const unsigned int stage3_statics[];
 //
-//#define stage7_statics_bank  FIXEDBANKSLOT
+#define stage7_statics_bank  FIXEDBANKSLOT
 //extern const unsigned int stage7_statics[];
 //
 //
 //// FUNCTION POInTERS
-//#define initenemyfunctions_bank FIXEDBANKSLOT;
+#define initenemyfunctions_bank FIXEDBANKSLOT;
 //extern const MyInitEnemyFunction initenemyfunctions[];
 //
-//#define updateenemyfunctions_bank FIXEDBANKSLOT;
+#define updateenemyfunctions_bank FIXEDBANKSLOT;
 //extern const MyUpdateEnemyFunction updateenemyfunctions[];
 //
-//#define killenemyfunctions_bank FIXEDBANKSLOT;
+#define killenemyfunctions_bank FIXEDBANKSLOT;
 //extern const MyKillEnemyFunction killenemyfunctions[];
 //
-//#define stage4_scrollers_num 18
+#define stage4_scrollers_num 18
 //extern const signed int stage4_scrollers[];
 //
-//#define stage1_scrollers_num 4
+#define stage1_scrollers_num 4
 //extern const signed int stage1_scrollers[];
 //
-//#define stage2_scrollers_num 3
+#define stage2_scrollers_num 3
 //extern const signed int stage2_scrollers[];
 //
-//#define stage5_scrollers_num 4
+#define stage5_scrollers_num 4
 //extern const signed int stage5_scrollers[];
 //
-//#define stage3_scrollers_num 2
+#define stage3_scrollers_num 2
 //extern const signed int stage3_scrollers[];
 //
-//#define stage7_scrollers_num 2
+#define stage7_scrollers_num 2
 //extern const signed int stage7_scrollers[];
 //
-//#define stage6_scrollers_num 2
+#define stage6_scrollers_num 2
 //extern const signed int stage6_scrollers[];
 //
-//#define stage8_scrollers_num 2
+#define stage8_scrollers_num 2
 //extern const signed int stage8_scrollers[];
 //
 //// Listas de sprites
@@ -157,8 +160,8 @@
 //extern const signed char skullbshootvelx[];
 //extern const signed char skullbshootvely[];
 //
-//// Paleta por defecto
-//extern const unsigned char palette_bin[];
+// Paleta por defecto
+extern const unsigned char palette_bin[];
 //
 //// Stage 4
 //extern const unsigned char stage4_stormpalette[];
@@ -211,7 +214,7 @@
 //
 //// Init and update stage functions
 //extern const MyKillEnemyFunction initstagefunctions[];
-//extern const MyKillEnemyFunction updatestagefunctions[];
+extern const MyKillEnemyFunction updatestagefunctions[];
 //
 //// Bosses
 //extern const MyInitEnemyFunction updatestage6endbossfunctions[];
@@ -247,6 +250,8 @@
 //extern const unsigned char enemiesenergy[];
 //
 //
-//extern const unsigned char	intro1_psg[];
-//#define				intro1_psg_size 2369
-//#define				intro1_psg_bank 15
+extern const unsigned char	intro1_psg[];
+#define				intro1_psg_size 2369
+#define				intro1_psg_bank 15
+
+#endif//_FIXEDBANK_H_
