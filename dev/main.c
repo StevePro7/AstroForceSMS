@@ -2,46 +2,46 @@
 
 void main()
 {
-	InitConsole();
+	//InitConsole();
 
-	gamelevel = 0;
-	gamestock = 3;
+	//gamelevel = 0;
+	//gamestock = 3;
 
 	while( 1 )
 	{
-		// Mikgames
-		InitMikGamesStage();
+		//// Mikgames
+		//InitMikGamesStage();
 
-		// Game intro
-		InitIntroStage( 1 );
-		InitIntroStage( 4 );
-		InitIntroStage( 2 );
+		//// Game intro
+		//InitIntroStage( 1 );
+		//InitIntroStage( 4 );
+		//InitIntroStage( 2 );
 
-		// Logo
-		InitLogoStage();
+		//// Logo
+		//InitLogoStage();
 
-		// If we have jukebox before play
-		if( dojukebox == 1 )
-			InitJukeboxStage();
+		//// If we have jukebox before play
+		//if( dojukebox == 1 )
+		//	InitJukeboxStage();
 
-		// Init stage and players
-		stagenum = 1;
-		numplayers = gamestock;
+		//// Init stage and players
+		//stagenum = 1;
+		//numplayers = gamestock;
 
-		// Selector
-		InitSelectorStage();
+		//// Selector
+		//InitSelectorStage();
 
-		// Stage looping
-		while( stagenum < 10 )
-		{
-			if( stagenum == 0 )
-				InitGameoverStage();
-			else if( stagenum == 9 )
-			{
-				InitIntroStage( 5 );
-				InitIntroStage( 3 );
-			}
-			else InitPlayStage();
-		}
+		//// Stage looping
+		//while( stagenum < 10 )
+		//{
+		//	if( stagenum == 0 )
+		//		InitGameoverStage();
+		//	else if( stagenum == 9 )
+		//	{
+		//		InitIntroStage( 5 );
+		//		InitIntroStage( 3 );
+		//	}
+		//	else InitPlayStage();
+		//}
 	}
 }

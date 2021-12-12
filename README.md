@@ -1,5 +1,10 @@
 # AstroForceSMS
 
+StevePro7	develop
+StevePro8	master
+
+Do work on StevePro8
+
 Assume the following utilities are added to Environment PATH:
 * folder2c
 * bmp2tile

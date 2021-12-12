@@ -9,16 +9,16 @@ set /a _started=_hours*60*60*100+_min*60*100+_sec*100+_cs
 
 :: Compile
 cd banks
-sdcc --debug -c --no-std-crt0 -mz80 --Werror --opt-code-size --constseg BANK15 fixedbank.c
+::sdcc --debug -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK15 fixedbank.c
 cd ..
 cd devkit
-sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 _sms_manager.c
-sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 _snd_manager.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 _sms_manager.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 _snd_manager.c
 cd ..
 
 
 :: echo Build main
-sdcc --debug -c -mz80 --opt-code-size --peep-file peep-rules.txt --std-c99 main.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 main.c
 
 
 :: Time build -END-
