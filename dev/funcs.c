@@ -1,4 +1,9 @@
 ﻿#include "funcs.h"
+#include "vars.h"
+#include "devkit/_sms_manager.h"
+#include "devkit/_snd_manager.h"
+#include "banks/bank2.h"
+
 
 // Eah que no existen en la libreria
 //#define max(x, y) (((x) > (y)) ? (x) : (y))

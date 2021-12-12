@@ -16,6 +16,9 @@ cd devkit
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 _snd_manager.c
 cd ..
 
+cd General
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ..\peep-rules.txt --std-c99 mikgamesstage.c
+cd ..
 
 :: echo Build main
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 defines.c
@@ -49,7 +52,8 @@ banks\bank10.rel banks\bank11.rel banks\bank12.rel banks\bank13.rel ^
 banks\bank14.rel banks\fixedbank.rel ^
 devkit\_sms_manager.rel ^
 devkit\_snd_manager.rel ^
-defines.rel vars.rel
+General/mikgamesstage.rel ^
+defines.rel funcs.rel vars.rel
 
 
 :: Execute

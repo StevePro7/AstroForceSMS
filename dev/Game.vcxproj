@@ -42,6 +42,7 @@
     <ClInclude Include="devkit\_snd_manager.h" />
     <ClInclude Include="funcs.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="General\mikgamesstage.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="vars.h" />
   </ItemGroup>
@@ -65,6 +66,7 @@
     <ClCompile Include="devkit\_sms_manager.c" />
     <ClCompile Include="devkit\_snd_manager.c" />
     <ClCompile Include="funcs.c" />
+    <ClCompile Include="General\mikgamesstage.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="vars.c" />
   </ItemGroup>

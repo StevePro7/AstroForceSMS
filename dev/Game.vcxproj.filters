@@ -150,6 +150,9 @@
     <ClCompile Include="funcs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="General\mikgamesstage.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat">
@@ -222,6 +225,9 @@
     </ClInclude>
     <ClInclude Include="funcs.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="General\mikgamesstage.h">
+      <Filter>Header Files\General</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

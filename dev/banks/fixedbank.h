@@ -15,7 +15,7 @@
 //extern const unsigned char selectormarky[];
 //extern const unsigned char selectormarkt[];
 //
-//extern const unsigned char sinustable[];
+extern const unsigned char sinustable[];
 //extern const char *jukebox_songs[];
 //extern const unsigned char jukebox_repeat[];
 //extern const char jukebox_banks[];
