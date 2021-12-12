@@ -47,7 +47,7 @@ Area                                    Addr        Size        Decimal Bytes (A
      0000017C  l__HOME                         
      00000200  s__CODE                         
      0000024F  l__DATA                         
-     00000953  l__BANK15                       
+     00000A53  l__BANK15                       
      000014CE  l__CODE                         
      000016CE  s__HOME                         
      0000184A  s__INITIALIZER                  
@@ -1209,14 +1209,14 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000A90  C$_snd_manager.c$89$1$67           _snd_manager
      00000A90  XG$devkit_SFX_CHANNELS2AND3$0$0    _snd_manager
      00000A91  A$mikgamesstage$64                 mikgamesstage
-     00000A91  C$mikgamesstage.c$10$1$59          mikgamesstage
-     00000A91  C$mikgamesstage.c$7$0$0            mikgamesstage
+     00000A91  C$mikgamesstage.c$10$0$0           mikgamesstage
+     00000A91  C$mikgamesstage.c$13$1$59          mikgamesstage
      00000A91  G$InitMikGamesStage$0$0            mikgamesstage
      00000A91  _InitMikGamesStage                 mikgamesstage
      00000A94  A$mikgamesstage$68                 mikgamesstage
-     00000A94  C$mikgamesstage.c$13$1$59          mikgamesstage
+     00000A94  C$mikgamesstage.c$16$1$59          mikgamesstage
      00000A97  A$mikgamesstage$72                 mikgamesstage
-     00000A97  C$mikgamesstage.c$16$1$59          mikgamesstage
+     00000A97  C$mikgamesstage.c$19$1$59          mikgamesstage
      00000A99  A$mikgamesstage$73                 mikgamesstage
      00000A9A  A$mikgamesstage$74                 mikgamesstage
      00000A9B  A$mikgamesstage$75                 mikgamesstage
@@ -1225,7 +1225,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000AA2  A$mikgamesstage$78                 mikgamesstage
      00000AA3  A$mikgamesstage$79                 mikgamesstage
      00000AA4  A$mikgamesstage$83                 mikgamesstage
-     00000AA4  C$mikgamesstage.c$19$1$59          mikgamesstage
+     00000AA4  C$mikgamesstage.c$22$1$59          mikgamesstage
      00000AA6  A$mikgamesstage$84                 mikgamesstage
      00000AA7  A$mikgamesstage$85                 mikgamesstage
      00000AA8  A$mikgamesstage$86                 mikgamesstage
@@ -1248,25 +1248,25 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000ABC  C$mikgamesstage.c$22$1$59          mikgamesstage
+     00000ABC  C$mikgamesstage.c$25$1$59          mikgamesstage
      00000ABE  A$mikgamesstage$100                mikgamesstage
      00000ABF  A$mikgamesstage$101                mikgamesstage
      00000AC0  A$mikgamesstage$102                mikgamesstage
      00000AC3  A$mikgamesstage$103                mikgamesstage
      00000AC4  A$mikgamesstage$107                mikgamesstage
-     00000AC4  C$mikgamesstage.c$25$1$59          mikgamesstage
+     00000AC4  C$mikgamesstage.c$28$1$59          mikgamesstage
      00000AC7  A$mikgamesstage$115                mikgamesstage
-     00000AC7  C$mikgamesstage.c$28$1$59          mikgamesstage
-     00000AC7  C$mikgamesstage.c$31$2$60          mikgamesstage
+     00000AC7  C$mikgamesstage.c$31$1$59          mikgamesstage
+     00000AC7  C$mikgamesstage.c$34$2$60          mikgamesstage
      00000ACA  A$mikgamesstage$119                mikgamesstage
-     00000ACA  C$mikgamesstage.c$34$2$60          mikgamesstage
+     00000ACA  C$mikgamesstage.c$37$2$60          mikgamesstage
      00000ACE  A$mikgamesstage$120                mikgamesstage
      00000AD1  A$mikgamesstage$121                mikgamesstage
      00000AD3  A$mikgamesstage$122                mikgamesstage
      00000AD6  A$mikgamesstage$123                mikgamesstage
      00000AD8  A$mikgamesstage$124                mikgamesstage
      00000ADA  A$mikgamesstage$128                mikgamesstage
-     00000ADA  C$mikgamesstage.c$35$2$60          mikgamesstage
+     00000ADA  C$mikgamesstage.c$38$2$60          mikgamesstage
      00000ADD  A$mikgamesstage$129                mikgamesstage
      00000ADE  A$mikgamesstage$130                mikgamesstage
      00000ADF  A$mikgamesstage$131                mikgamesstage
@@ -1276,7 +1276,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000AE4  A$mikgamesstage$135                mikgamesstage
      00000AE7  A$mikgamesstage$136                mikgamesstage
      00000AE8  A$mikgamesstage$141                mikgamesstage
-     00000AE8  C$mikgamesstage.c$38$2$60          mikgamesstage
+     00000AE8  C$mikgamesstage.c$41$2$60          mikgamesstage
      00000AEB  A$mikgamesstage$142                mikgamesstage
      00000AEC  A$mikgamesstage$143                mikgamesstage
      00000AED  A$mikgamesstage$144                mikgamesstage
@@ -1286,18 +1286,18 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000AF6  A$mikgamesstage$148                mikgamesstage
      00000AF9  A$mikgamesstage$149                mikgamesstage
      00000AFA  A$mikgamesstage$153                mikgamesstage
-     00000AFA  C$mikgamesstage.c$39$2$60          mikgamesstage
+     00000AFA  C$mikgamesstage.c$42$2$60          mikgamesstage
      00000AFB  A$mikgamesstage$157                mikgamesstage
-     00000AFB  C$mikgamesstage.c$42$2$60          mikgamesstage
+     00000AFB  C$mikgamesstage.c$45$2$60          mikgamesstage
      00000AFD  A$mikgamesstage$158                mikgamesstage
      00000B01  A$mikgamesstage$159                mikgamesstage
      00000B04  A$mikgamesstage$160                mikgamesstage
      00000B06  A$mikgamesstage$161                mikgamesstage
      00000B09  A$mikgamesstage$162                mikgamesstage
      00000B0A  A$mikgamesstage$166                mikgamesstage
-     00000B0A  C$mikgamesstage.c$45$2$60          mikgamesstage
+     00000B0A  C$mikgamesstage.c$48$2$60          mikgamesstage
      00000B0D  A$mikgamesstage$171                mikgamesstage
-     00000B0D  C$mikgamesstage.c$47$1$59          mikgamesstage
+     00000B0D  C$mikgamesstage.c$50$1$59          mikgamesstage
      00000B0D  XG$InitMikGamesStage$0$0           mikgamesstage
 ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
 Hexadecimal  [32-Bits]
@@ -1309,8 +1309,8 @@ _CODE                               00000200    000014CE =        5326. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00000B0F  A$funcs$119                        funcs
-     00000B0F  C$funcs.c$45$0$0                   funcs
-     00000B0F  C$funcs.c$47$1$59                  funcs
+     00000B0F  C$funcs.c$50$0$0                   funcs
+     00000B0F  C$funcs.c$52$1$59                  funcs
      00000B0F  G$myRand$0$0                       funcs
      00000B0F  _myRand                            funcs
      00000B12  A$funcs$120                        funcs
@@ -1343,14 +1343,14 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000B3B  A$funcs$147                        funcs
      00000B3C  A$funcs$148                        funcs
      00000B3D  A$funcs$152                        funcs
-     00000B3D  C$funcs.c$48$1$59                  funcs
+     00000B3D  C$funcs.c$53$1$59                  funcs
      00000B41  A$funcs$153                        funcs
      00000B44  A$funcs$158                        funcs
-     00000B44  C$funcs.c$49$1$59                  funcs
+     00000B44  C$funcs.c$54$1$59                  funcs
      00000B44  XG$myRand$0$0                      funcs
      00000B45  A$funcs$171                        funcs
-     00000B45  C$funcs.c$52$1$59                  funcs
-     00000B45  C$funcs.c$54$1$61                  funcs
+     00000B45  C$funcs.c$57$1$59                  funcs
+     00000B45  C$funcs.c$59$1$61                  funcs
      00000B45  G$changeBank$0$0                   funcs
      00000B45  _changeBank                        funcs
      00000B48  A$funcs$172                        funcs
@@ -1368,7 +1368,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000B52  C$funcs.c$56$2$62                  funcs
+     00000B52  C$funcs.c$61$2$62                  funcs
      00000B55  A$funcs$181                        funcs
      00000B56  A$funcs$182                        funcs
      00000B57  A$funcs$183                        funcs
@@ -1376,15 +1376,15 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000B59  A$funcs$185                        funcs
      00000B5C  A$funcs$186                        funcs
      00000B5D  A$funcs$190                        funcs
-     00000B5D  C$funcs.c$57$2$62                  funcs
+     00000B5D  C$funcs.c$62$2$62                  funcs
      00000B60  A$funcs$191                        funcs
      00000B61  A$funcs$192                        funcs
      00000B62  A$funcs$193                        funcs
      00000B65  A$funcs$198                        funcs
-     00000B65  C$funcs.c$59$1$61                  funcs
+     00000B65  C$funcs.c$64$1$61                  funcs
      00000B65  XG$changeBank$0$0                  funcs
      00000B66  A$funcs$208                        funcs
-     00000B66  C$funcs.c$63$1$61                  funcs
+     00000B66  C$funcs.c$68$1$61                  funcs
      00000B66  G$DrawSpriteArray$0$0              funcs
      00000B66  _DrawSpriteArray                   funcs
      00000B68  A$funcs$209                        funcs
@@ -1404,7 +1404,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000B87  A$funcs$231                        funcs
      00000B8A  A$funcs$232                        funcs
      00000B8C  A$funcs$236                        funcs
-     00000B8C  C$funcs.c$68$3$66                  funcs
+     00000B8C  C$funcs.c$73$3$66                  funcs
      00000B8D  A$funcs$237                        funcs
      00000B8E  A$funcs$238                        funcs
      00000B8F  A$funcs$239                        funcs
@@ -1431,30 +1431,30 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000BA5  A$funcs$251                        funcs
      00000BA6  A$funcs$252                        funcs
      00000BA7  A$funcs$256                        funcs
-     00000BA7  C$funcs.c$67$3$66                  funcs
+     00000BA7  C$funcs.c$72$3$66                  funcs
      00000BA8  A$funcs$257                        funcs
      00000BAA  A$funcs$258                        funcs
      00000BAB  A$funcs$259                        funcs
      00000BAD  A$funcs$261                        funcs
      00000BB0  A$funcs$262                        funcs
      00000BB3  A$funcs$266                        funcs
-     00000BB3  C$funcs.c$66$2$65                  funcs
+     00000BB3  C$funcs.c$71$2$65                  funcs
      00000BB4  A$funcs$267                        funcs
      00000BB6  A$funcs$268                        funcs
      00000BB7  A$funcs$269                        funcs
      00000BB9  A$funcs$271                        funcs
      00000BBB  A$funcs$272                        funcs
      00000BBD  A$funcs$277                        funcs
-     00000BBD  C$funcs.c$69$2$65                  funcs
+     00000BBD  C$funcs.c$74$2$65                  funcs
      00000BBD  XG$DrawSpriteArray$0$0             funcs
      00000BBE  A$funcs$287                        funcs
-     00000BBE  C$funcs.c$72$2$65                  funcs
+     00000BBE  C$funcs.c$77$2$65                  funcs
      00000BBE  G$DrawQuadSprite$0$0               funcs
      00000BBE  _DrawQuadSprite                    funcs
      00000BC0  A$funcs$288                        funcs
      00000BC4  A$funcs$289                        funcs
      00000BC6  A$funcs$293                        funcs
-     00000BC6  C$funcs.c$74$1$68                  funcs
+     00000BC6  C$funcs.c$79$1$68                  funcs
      00000BC9  A$funcs$294                        funcs
      00000BCC  A$funcs$295                        funcs
      00000BCD  A$funcs$296                        funcs
@@ -1464,7 +1464,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000BD7  A$funcs$300                        funcs
      00000BD8  A$funcs$301                        funcs
      00000BD9  A$funcs$305                        funcs
-     00000BD9  C$funcs.c$75$1$68                  funcs
+     00000BD9  C$funcs.c$80$1$68                  funcs
      00000BDC  A$funcs$306                        funcs
      00000BDF  A$funcs$307                        funcs
      00000BE0  A$funcs$308                        funcs
@@ -1491,7 +1491,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000BF3  A$funcs$320                        funcs
      00000BF4  A$funcs$321                        funcs
      00000BF5  A$funcs$325                        funcs
-     00000BF5  C$funcs.c$76$1$68                  funcs
+     00000BF5  C$funcs.c$81$1$68                  funcs
      00000BF8  A$funcs$326                        funcs
      00000BFB  A$funcs$327                        funcs
      00000BFC  A$funcs$328                        funcs
@@ -1512,7 +1512,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C12  A$funcs$343                        funcs
      00000C13  A$funcs$344                        funcs
      00000C14  A$funcs$348                        funcs
-     00000C14  C$funcs.c$77$1$68                  funcs
+     00000C14  C$funcs.c$82$1$68                  funcs
      00000C17  A$funcs$349                        funcs
      00000C1A  A$funcs$350                        funcs
      00000C1B  A$funcs$351                        funcs
@@ -1525,11 +1525,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C24  A$funcs$358                        funcs
      00000C25  A$funcs$359                        funcs
      00000C27  A$funcs$364                        funcs
-     00000C27  C$funcs.c$78$1$68                  funcs
+     00000C27  C$funcs.c$83$1$68                  funcs
      00000C27  XG$DrawQuadSprite$0$0              funcs
      00000C28  A$funcs$377                        funcs
-     00000C28  C$funcs.c$81$1$68                  funcs
-     00000C28  C$funcs.c$84$1$70                  funcs
+     00000C28  C$funcs.c$86$1$68                  funcs
+     00000C28  C$funcs.c$89$1$70                  funcs
      00000C28  G$LoadSprite$0$0                   funcs
      00000C28  _LoadSprite                        funcs
      00000C2B  A$funcs$378                        funcs
@@ -1548,7 +1548,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000C33  C$funcs.c$87$1$70                  funcs
+     00000C33  C$funcs.c$92$1$70                  funcs
      00000C34  A$funcs$388                        funcs
      00000C35  A$funcs$389                        funcs
      00000C36  A$funcs$390                        funcs
@@ -1563,17 +1563,17 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C41  A$funcs$399                        funcs
      00000C44  A$funcs$400                        funcs
      00000C45  A$funcs$404                        funcs
-     00000C45  C$funcs.c$90$1$70                  funcs
+     00000C45  C$funcs.c$95$1$70                  funcs
      00000C47  A$funcs$405                        funcs
      00000C48  A$funcs$406                        funcs
      00000C49  A$funcs$407                        funcs
      00000C4C  A$funcs$408                        funcs
      00000C4D  A$funcs$413                        funcs
-     00000C4D  C$funcs.c$91$1$70                  funcs
+     00000C4D  C$funcs.c$96$1$70                  funcs
      00000C4D  XG$LoadSprite$0$0                  funcs
      00000C4E  A$funcs$426                        funcs
-     00000C4E  C$funcs.c$94$1$70                  funcs
-     00000C4E  C$funcs.c$97$1$72                  funcs
+     00000C4E  C$funcs.c$102$1$72                 funcs
+     00000C4E  C$funcs.c$99$1$70                  funcs
      00000C4E  G$LoadTiles$0$0                    funcs
      00000C4E  _LoadTiles                         funcs
      00000C51  A$funcs$427                        funcs
@@ -1583,7 +1583,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C55  A$funcs$431                        funcs
      00000C58  A$funcs$432                        funcs
      00000C59  A$funcs$436                        funcs
-     00000C59  C$funcs.c$100$1$72                 funcs
+     00000C59  C$funcs.c$105$1$72                 funcs
      00000C5A  A$funcs$437                        funcs
      00000C5B  A$funcs$438                        funcs
      00000C5C  A$funcs$439                        funcs
@@ -1594,11 +1594,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C65  A$funcs$444                        funcs
      00000C66  A$funcs$445                        funcs
      00000C67  A$funcs$450                        funcs
-     00000C67  C$funcs.c$101$1$72                 funcs
+     00000C67  C$funcs.c$106$1$72                 funcs
      00000C67  XG$LoadTiles$0$0                   funcs
      00000C68  A$funcs$463                        funcs
-     00000C68  C$funcs.c$104$1$72                 funcs
-     00000C68  C$funcs.c$107$1$74                 funcs
+     00000C68  C$funcs.c$109$1$72                 funcs
+     00000C68  C$funcs.c$112$1$74                 funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
 Hexadecimal  [32-Bits]
 
@@ -1624,7 +1624,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C7A  A$funcs$475                        funcs
      00000C7B  A$funcs$476                        funcs
      00000C7C  A$funcs$480                        funcs
-     00000C7C  C$funcs.c$110$1$74                 funcs
+     00000C7C  C$funcs.c$115$1$74                 funcs
      00000C7F  A$funcs$481                        funcs
      00000C80  A$funcs$482                        funcs
      00000C81  A$funcs$483                        funcs
@@ -1643,11 +1643,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C96  A$funcs$496                        funcs
      00000C97  A$funcs$497                        funcs
      00000C98  A$funcs$502                        funcs
-     00000C98  C$funcs.c$111$1$74                 funcs
+     00000C98  C$funcs.c$116$1$74                 funcs
      00000C98  XG$LoadGraphics$0$0                funcs
      00000C99  A$funcs$515                        funcs
-     00000C99  C$funcs.c$114$1$74                 funcs
-     00000C99  C$funcs.c$117$1$76                 funcs
+     00000C99  C$funcs.c$119$1$74                 funcs
+     00000C99  C$funcs.c$122$1$76                 funcs
      00000C99  G$LoadBGPalette$0$0                funcs
      00000C99  _LoadBGPalette                     funcs
      00000C9C  A$funcs$516                        funcs
@@ -1657,7 +1657,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000CA0  A$funcs$520                        funcs
      00000CA3  A$funcs$521                        funcs
      00000CA4  A$funcs$525                        funcs
-     00000CA4  C$funcs.c$120$1$76                 funcs
+     00000CA4  C$funcs.c$125$1$76                 funcs
      00000CA5  A$funcs$526                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
 Hexadecimal  [32-Bits]
@@ -1674,11 +1674,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000CA9  A$funcs$530                        funcs
      00000CAC  A$funcs$531                        funcs
      00000CAD  A$funcs$536                        funcs
-     00000CAD  C$funcs.c$121$1$76                 funcs
+     00000CAD  C$funcs.c$126$1$76                 funcs
      00000CAD  XG$LoadBGPalette$0$0               funcs
      00000CAE  A$funcs$549                        funcs
-     00000CAE  C$funcs.c$124$1$76                 funcs
-     00000CAE  C$funcs.c$127$1$77                 funcs
+     00000CAE  C$funcs.c$129$1$76                 funcs
+     00000CAE  C$funcs.c$132$1$77                 funcs
      00000CAE  G$LoadSpritePalette$0$0            funcs
      00000CAE  _LoadSpritePalette                 funcs
      00000CB0  A$funcs$550                        funcs
@@ -1686,35 +1686,35 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000CB2  A$funcs$552                        funcs
      00000CB5  A$funcs$553                        funcs
      00000CB6  A$funcs$557                        funcs
-     00000CB6  C$funcs.c$130$1$77                 funcs
+     00000CB6  C$funcs.c$135$1$77                 funcs
      00000CB9  A$funcs$558                        funcs
      00000CBA  A$funcs$559                        funcs
      00000CBD  A$funcs$560                        funcs
      00000CBE  A$funcs$565                        funcs
-     00000CBE  C$funcs.c$131$1$77                 funcs
+     00000CBE  C$funcs.c$136$1$77                 funcs
      00000CBE  XG$LoadSpritePalette$0$0           funcs
      00000CBF  A$funcs$578                        funcs
-     00000CBF  C$funcs.c$133$1$77                 funcs
-     00000CBF  C$funcs.c$135$1$79                 funcs
+     00000CBF  C$funcs.c$138$1$77                 funcs
+     00000CBF  C$funcs.c$140$1$79                 funcs
      00000CBF  G$InterruptHandler$0$0             funcs
      00000CBF  _InterruptHandler                  funcs
      00000CC2  A$funcs$579                        funcs
      00000CC3  A$funcs$584                        funcs
-     00000CC3  C$funcs.c$136$1$79                 funcs
+     00000CC3  C$funcs.c$141$1$79                 funcs
      00000CC3  XG$InterruptHandler$0$0            funcs
      00000CC4  A$funcs$597                        funcs
-     00000CC4  C$funcs.c$139$1$79                 funcs
-     00000CC4  C$funcs.c$142$1$80                 funcs
+     00000CC4  C$funcs.c$144$1$79                 funcs
+     00000CC4  C$funcs.c$147$1$80                 funcs
      00000CC4  G$InitConsole$0$0                  funcs
      00000CC4  _InitConsole                       funcs
      00000CC7  A$funcs$601                        funcs
-     00000CC7  C$funcs.c$145$1$80                 funcs
+     00000CC7  C$funcs.c$150$1$80                 funcs
      00000CCA  A$funcs$605                        funcs
-     00000CCA  C$funcs.c$148$1$80                 funcs
+     00000CCA  C$funcs.c$153$1$80                 funcs
      00000CCD  A$funcs$606                        funcs
      00000CCE  A$funcs$607                        funcs
      00000CD1  A$funcs$611                        funcs
-     00000CD1  C$funcs.c$149$1$80                 funcs
+     00000CD1  C$funcs.c$154$1$80                 funcs
      00000CD3  A$funcs$612                        funcs
      00000CD4  A$funcs$613                        funcs
      00000CD5  A$funcs$614                        funcs
@@ -1729,18 +1729,18 @@ _CODE                               00000200    000014CE =        5326. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00000CD9  A$funcs$619                        funcs
-     00000CD9  C$funcs.c$150$1$80                 funcs
+     00000CD9  C$funcs.c$155$1$80                 funcs
      00000CDC  A$funcs$623                        funcs
-     00000CDC  C$funcs.c$153$1$80                 funcs
+     00000CDC  C$funcs.c$158$1$80                 funcs
      00000CDF  A$funcs$624                        funcs
      00000CE0  A$funcs$625                        funcs
      00000CE3  A$funcs$626                        funcs
      00000CE4  A$funcs$631                        funcs
-     00000CE4  C$funcs.c$154$1$80                 funcs
+     00000CE4  C$funcs.c$159$1$80                 funcs
      00000CE4  XG$InitConsole$0$0                 funcs
      00000CE5  A$funcs$644                        funcs
-     00000CE5  C$funcs.c$157$1$80                 funcs
-     00000CE5  C$funcs.c$161$1$81                 funcs
+     00000CE5  C$funcs.c$162$1$80                 funcs
+     00000CE5  C$funcs.c$166$1$81                 funcs
      00000CE5  G$fillBackground$0$0               funcs
      00000CE5  _fillBackground                    funcs
      00000CE8  A$funcs$645                        funcs
@@ -1748,7 +1748,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000CEC  A$funcs$647                        funcs
      00000CED  A$funcs$651                        funcs
      00000CF0  A$funcs$656                        funcs
-     00000CF0  C$funcs.c$163$2$82                 funcs
+     00000CF0  C$funcs.c$168$2$82                 funcs
      00000CF1  A$funcs$657                        funcs
      00000CF2  A$funcs$658                        funcs
      00000CF3  A$funcs$659                        funcs
@@ -1756,28 +1756,28 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000CF7  A$funcs$661                        funcs
      00000CF8  A$funcs$662                        funcs
      00000CF9  A$funcs$666                        funcs
-     00000CF9  C$funcs.c$162$2$82                 funcs
+     00000CF9  C$funcs.c$167$2$82                 funcs
      00000CFA  A$funcs$667                        funcs
      00000CFB  A$funcs$668                        funcs
      00000CFD  A$funcs$669                        funcs
      00000CFE  A$funcs$670                        funcs
      00000D00  A$funcs$671                        funcs
      00000D02  A$funcs$676                        funcs
-     00000D02  C$funcs.c$164$2$82                 funcs
+     00000D02  C$funcs.c$169$2$82                 funcs
      00000D02  XG$fillBackground$0$0              funcs
      00000D03  A$funcs$689                        funcs
-     00000D03  C$funcs.c$167$2$82                 funcs
-     00000D03  C$funcs.c$170$1$83                 funcs
+     00000D03  C$funcs.c$172$2$82                 funcs
+     00000D03  C$funcs.c$175$1$83                 funcs
      00000D03  G$ClearScreen$0$0                  funcs
      00000D03  _ClearScreen                       funcs
      00000D06  A$funcs$693                        funcs
-     00000D06  C$funcs.c$171$1$83                 funcs
+     00000D06  C$funcs.c$176$1$83                 funcs
      00000D09  A$funcs$697                        funcs
-     00000D09  C$funcs.c$172$1$83                 funcs
+     00000D09  C$funcs.c$177$1$83                 funcs
      00000D0C  A$funcs$701                        funcs
-     00000D0C  C$funcs.c$175$1$83                 funcs
+     00000D0C  C$funcs.c$180$1$83                 funcs
      00000D0F  A$funcs$705                        funcs
-     00000D0F  C$funcs.c$178$1$83                 funcs
+     00000D0F  C$funcs.c$183$1$83                 funcs
      00000D10  A$funcs$706                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
 Hexadecimal  [32-Bits]
@@ -1792,11 +1792,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D12  A$funcs$708                        funcs
      00000D15  A$funcs$709                        funcs
      00000D16  A$funcs$714                        funcs
-     00000D16  C$funcs.c$179$1$83                 funcs
+     00000D16  C$funcs.c$184$1$83                 funcs
      00000D16  XG$ClearScreen$0$0                 funcs
      00000D17  A$funcs$727                        funcs
-     00000D17  C$funcs.c$182$1$83                 funcs
-     00000D17  C$funcs.c$184$1$85                 funcs
+     00000D17  C$funcs.c$187$1$83                 funcs
+     00000D17  C$funcs.c$189$1$85                 funcs
      00000D17  G$UpdateScroll$0$0                 funcs
      00000D17  _UpdateScroll                      funcs
      00000D1A  A$funcs$728                        funcs
@@ -1806,7 +1806,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D1E  A$funcs$732                        funcs
      00000D21  A$funcs$733                        funcs
      00000D22  A$funcs$737                        funcs
-     00000D22  C$funcs.c$185$1$85                 funcs
+     00000D22  C$funcs.c$190$1$85                 funcs
      00000D25  A$funcs$738                        funcs
      00000D26  A$funcs$739                        funcs
      00000D27  A$funcs$740                        funcs
@@ -1814,22 +1814,22 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D29  A$funcs$742                        funcs
      00000D2C  A$funcs$743                        funcs
      00000D2D  A$funcs$748                        funcs
-     00000D2D  C$funcs.c$186$1$85                 funcs
+     00000D2D  C$funcs.c$191$1$85                 funcs
      00000D2D  XG$UpdateScroll$0$0                funcs
      00000D2E  A$funcs$758                        funcs
-     00000D2E  C$funcs.c$189$1$85                 funcs
+     00000D2E  C$funcs.c$194$1$85                 funcs
      00000D2E  G$WriteText$0$0                    funcs
      00000D2E  _WriteText                         funcs
      00000D30  A$funcs$759                        funcs
      00000D34  A$funcs$760                        funcs
      00000D36  A$funcs$764                        funcs
-     00000D36  C$funcs.c$194$1$87                 funcs
+     00000D36  C$funcs.c$199$1$87                 funcs
      00000D39  A$funcs$765                        funcs
      00000D3C  A$funcs$766                        funcs
      00000D3D  A$funcs$767                        funcs
      00000D40  A$funcs$768                        funcs
      00000D41  A$funcs$772                        funcs
-     00000D41  C$funcs.c$196$1$87                 funcs
+     00000D41  C$funcs.c$201$1$87                 funcs
      00000D44  A$funcs$774                        funcs
      00000D47  A$funcs$775                        funcs
      00000D4A  A$funcs$776                        funcs
@@ -1838,7 +1838,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D4D  A$funcs$779                        funcs
      00000D4E  A$funcs$780                        funcs
      00000D50  A$funcs$784                        funcs
-     00000D50  C$funcs.c$197$1$87                 funcs
+     00000D50  C$funcs.c$202$1$87                 funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
 Hexadecimal  [32-Bits]
 
@@ -1853,7 +1853,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D55  A$funcs$787                        funcs
      00000D57  A$funcs$788                        funcs
      00000D59  A$funcs$792                        funcs
-     00000D59  C$funcs.c$198$1$87                 funcs
+     00000D59  C$funcs.c$203$1$87                 funcs
      00000D5A  A$funcs$793                        funcs
      00000D5B  A$funcs$794                        funcs
      00000D5C  A$funcs$795                        funcs
@@ -1871,20 +1871,20 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D6F  A$funcs$807                        funcs
      00000D71  A$funcs$809                        funcs
      00000D73  A$funcs$814                        funcs
-     00000D73  C$funcs.c$199$1$87                 funcs
+     00000D73  C$funcs.c$204$1$87                 funcs
      00000D73  XG$WriteText$0$0                   funcs
      00000D74  A$funcs$824                        funcs
-     00000D74  C$funcs.c$202$1$87                 funcs
+     00000D74  C$funcs.c$207$1$87                 funcs
      00000D74  G$WriteNumber$0$0                  funcs
      00000D74  _WriteNumber                       funcs
      00000D76  A$funcs$825                        funcs
      00000D7A  A$funcs$826                        funcs
      00000D7C  A$funcs$830                        funcs
-     00000D7C  C$funcs.c$205$1$89                 funcs
+     00000D7C  C$funcs.c$210$1$89                 funcs
      00000D7F  A$funcs$831                        funcs
      00000D82  A$funcs$832                        funcs
      00000D83  A$funcs$836                        funcs
-     00000D83  C$funcs.c$208$1$89                 funcs
+     00000D83  C$funcs.c$213$1$89                 funcs
      00000D86  A$funcs$837                        funcs
      00000D87  A$funcs$838                        funcs
      00000D8A  A$funcs$839                        funcs
@@ -1895,7 +1895,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D91  A$funcs$845                        funcs
      00000D92  A$funcs$846                        funcs
      00000D94  A$funcs$850                        funcs
-     00000D94  C$funcs.c$210$2$90                 funcs
+     00000D94  C$funcs.c$215$2$90                 funcs
      00000D95  A$funcs$851                        funcs
      00000D96  A$funcs$852                        funcs
      00000D99  A$funcs$853                        funcs
@@ -1948,11 +1948,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000DDA  A$funcs$891                        funcs
      00000DDC  A$funcs$893                        funcs
      00000DDE  A$funcs$898                        funcs
-     00000DDE  C$funcs.c$214$1$89                 funcs
+     00000DDE  C$funcs.c$219$1$89                 funcs
      00000DDE  XG$WriteNumber$0$0                 funcs
      00000DDF  A$funcs$911                        funcs
-     00000DDF  C$funcs.c$217$1$89                 funcs
-     00000DDF  C$funcs.c$219$1$91                 funcs
+     00000DDF  C$funcs.c$222$1$89                 funcs
+     00000DDF  C$funcs.c$224$1$91                 funcs
      00000DDF  G$ClearTiles$0$0                   funcs
      00000DDF  _ClearTiles                        funcs
      00000DE2  A$funcs$912                        funcs
@@ -1975,11 +1975,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000DED  A$funcs$920                        funcs
      00000DEE  A$funcs$921                        funcs
      00000DEF  A$funcs$926                        funcs
-     00000DEF  C$funcs.c$220$1$91                 funcs
+     00000DEF  C$funcs.c$225$1$91                 funcs
      00000DEF  XG$ClearTiles$0$0                  funcs
      00000DF0  A$funcs$939                        funcs
-     00000DF0  C$funcs.c$223$1$91                 funcs
-     00000DF0  C$funcs.c$226$1$92                 funcs
+     00000DF0  C$funcs.c$228$1$91                 funcs
+     00000DF0  C$funcs.c$231$1$92                 funcs
      00000DF0  G$LoadFont$0$0                     funcs
      00000DF0  _LoadFont                          funcs
      00000DF2  A$funcs$940                        funcs
@@ -1987,7 +1987,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000DF4  A$funcs$942                        funcs
      00000DF7  A$funcs$943                        funcs
      00000DF8  A$funcs$947                        funcs
-     00000DF8  C$funcs.c$229$1$92                 funcs
+     00000DF8  C$funcs.c$234$1$92                 funcs
      00000DFB  A$funcs$948                        funcs
      00000DFC  A$funcs$949                        funcs
      00000DFF  A$funcs$950                        funcs
@@ -1995,28 +1995,28 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E03  A$funcs$952                        funcs
      00000E04  A$funcs$953                        funcs
      00000E05  A$funcs$958                        funcs
-     00000E05  C$funcs.c$230$1$92                 funcs
+     00000E05  C$funcs.c$235$1$92                 funcs
      00000E05  XG$LoadFont$0$0                    funcs
      00000E06  A$funcs$971                        funcs
-     00000E06  C$funcs.c$233$1$92                 funcs
-     00000E06  C$funcs.c$236$1$93                 funcs
+     00000E06  C$funcs.c$238$1$92                 funcs
+     00000E06  C$funcs.c$241$1$93                 funcs
      00000E06  G$InitStage$0$0                    funcs
      00000E06  _InitStage                         funcs
      00000E09  A$funcs$975                        funcs
-     00000E09  C$funcs.c$237$1$93                 funcs
+     00000E09  C$funcs.c$242$1$93                 funcs
      00000E0C  A$funcs$979                        funcs
-     00000E0C  C$funcs.c$240$1$93                 funcs
+     00000E0C  C$funcs.c$245$1$93                 funcs
      00000E0F  A$funcs$983                        funcs
-     00000E0F  C$funcs.c$243$1$93                 funcs
+     00000E0F  C$funcs.c$248$1$93                 funcs
      00000E12  A$funcs$984                        funcs
      00000E15  A$funcs$988                        funcs
-     00000E15  C$funcs.c$246$1$93                 funcs
+     00000E15  C$funcs.c$251$1$93                 funcs
      00000E18  A$funcs$992                        funcs
-     00000E18  C$funcs.c$249$1$93                 funcs
+     00000E18  C$funcs.c$254$1$93                 funcs
      00000E1B  A$funcs$996                        funcs
-     00000E1B  C$funcs.c$252$1$93                 funcs
+     00000E1B  C$funcs.c$257$1$93                 funcs
      00000E1E  A$funcs$1000                       funcs
-     00000E1E  C$funcs.c$255$1$93                 funcs
+     00000E1E  C$funcs.c$260$1$93                 funcs
      00000E21  A$funcs$1001                       funcs
      00000E22  A$funcs$1002                       funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
@@ -2033,39 +2033,39 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E28  A$funcs$1005                       funcs
      00000E29  A$funcs$1006                       funcs
      00000E2A  A$funcs$1010                       funcs
-     00000E2A  C$funcs.c$258$1$93                 funcs
+     00000E2A  C$funcs.c$263$1$93                 funcs
      00000E2D  A$funcs$1014                       funcs
-     00000E2D  C$funcs.c$261$1$93                 funcs
+     00000E2D  C$funcs.c$266$1$93                 funcs
      00000E30  A$funcs$1018                       funcs
-     00000E30  C$funcs.c$264$1$93                 funcs
+     00000E30  C$funcs.c$269$1$93                 funcs
      00000E33  A$funcs$1019                       funcs
      00000E35  A$funcs$1023                       funcs
-     00000E35  C$funcs.c$267$1$93                 funcs
+     00000E35  C$funcs.c$272$1$93                 funcs
      00000E38  A$funcs$1024                       funcs
      00000E3A  A$funcs$1029                       funcs
-     00000E3A  C$funcs.c$268$1$93                 funcs
+     00000E3A  C$funcs.c$273$1$93                 funcs
      00000E3A  XG$InitStage$0$0                   funcs
      00000E3B  A$funcs$1042                       funcs
-     00000E3B  C$funcs.c$270$1$93                 funcs
-     00000E3B  C$funcs.c$272$1$94                 funcs
+     00000E3B  C$funcs.c$275$1$93                 funcs
+     00000E3B  C$funcs.c$277$1$94                 funcs
      00000E3B  G$checkgamepause$0$0               funcs
      00000E3B  _checkgamepause                    funcs
      00000E3E  A$funcs$1043                       funcs
      00000E3F  A$funcs$1044                       funcs
      00000E40  A$funcs$1045                       funcs
      00000E41  A$funcs$1049                       funcs
-     00000E41  C$funcs.c$274$2$95                 funcs
+     00000E41  C$funcs.c$279$2$95                 funcs
      00000E44  A$funcs$1053                       funcs
-     00000E44  C$funcs.c$275$2$95                 funcs
+     00000E44  C$funcs.c$280$2$95                 funcs
      00000E47  A$funcs$1054                       funcs
      00000E49  A$funcs$1055                       funcs
      00000E4A  A$funcs$1056                       funcs
      00000E4B  A$funcs$1060                       funcs
-     00000E4B  C$funcs.c$276$2$95                 funcs
+     00000E4B  C$funcs.c$281$2$95                 funcs
      00000E4E  A$funcs$1061                       funcs
      00000E4F  A$funcs$1062                       funcs
      00000E51  A$funcs$1066                       funcs
-     00000E51  C$funcs.c$277$2$95                 funcs
+     00000E51  C$funcs.c$282$2$95                 funcs
      00000E54  A$funcs$1067                       funcs
      00000E55  A$funcs$1068                       funcs
      00000E58  A$funcs$1069                       funcs
@@ -2074,7 +2074,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E5D  A$funcs$1072                       funcs
      00000E5E  A$funcs$1073                       funcs
      00000E5F  A$funcs$1078                       funcs
-     00000E5F  C$funcs.c$279$2$95                 funcs
+     00000E5F  C$funcs.c$284$2$95                 funcs
      00000E62  A$funcs$1079                       funcs
      00000E63  A$funcs$1080                       funcs
      00000E64  A$funcs$1081                       funcs
@@ -2095,11 +2095,11 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E70  A$funcs$1087                       funcs
      00000E71  A$funcs$1088                       funcs
      00000E72  A$funcs$1093                       funcs
-     00000E72  C$funcs.c$281$1$94                 funcs
+     00000E72  C$funcs.c$286$1$94                 funcs
      00000E72  XG$checkgamepause$0$0              funcs
      00000E73  A$funcs$1106                       funcs
-     00000E73  C$funcs.c$284$1$94                 funcs
-     00000E73  C$funcs.c$287$1$96                 funcs
+     00000E73  C$funcs.c$289$1$94                 funcs
+     00000E73  C$funcs.c$292$1$96                 funcs
      00000E73  G$UpdatePlayStage$0$0              funcs
      00000E73  _UpdatePlayStage                   funcs
      00000E75  A$funcs$1107                       funcs
@@ -2107,7 +2107,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E77  A$funcs$1109                       funcs
      00000E7A  A$funcs$1110                       funcs
      00000E7B  A$funcs$1114                       funcs
-     00000E7B  C$funcs.c$290$1$96                 funcs
+     00000E7B  C$funcs.c$295$1$96                 funcs
      00000E7E  A$funcs$1115                       funcs
      00000E82  A$funcs$1116                       funcs
      00000E85  A$funcs$1117                       funcs
@@ -2118,24 +2118,24 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E8B  A$funcs$1122                       funcs
      00000E8C  A$funcs$1123                       funcs
      00000E8D  A$funcs$1128                       funcs
-     00000E8D  C$funcs.c$291$1$96                 funcs
+     00000E8D  C$funcs.c$296$1$96                 funcs
      00000E8D  XG$UpdatePlayStage$0$0             funcs
      00000E90  A$funcs$1141                       funcs
-     00000E90  C$funcs.c$295$1$96                 funcs
-     00000E90  C$funcs.c$298$1$97                 funcs
+     00000E90  C$funcs.c$300$1$96                 funcs
+     00000E90  C$funcs.c$303$1$97                 funcs
      00000E90  G$UpdateStage$0$0                  funcs
      00000E90  _UpdateStage                       funcs
      00000E94  A$funcs$1142                       funcs
      00000E97  A$funcs$1143                       funcs
      00000E99  A$funcs$1144                       funcs
      00000E9C  A$funcs$1149                       funcs
-     00000E9C  C$funcs.c$301$1$97                 funcs
+     00000E9C  C$funcs.c$306$1$97                 funcs
      00000E9F  A$funcs$1150                       funcs
      00000EA1  A$funcs$1151                       funcs
      00000EA2  A$funcs$1152                       funcs
      00000EA5  A$funcs$1153                       funcs
      00000EA6  A$funcs$1157                       funcs
-     00000EA6  C$funcs.c$302$1$97                 funcs
+     00000EA6  C$funcs.c$307$1$97                 funcs
      00000EA9  A$funcs$1158                       funcs
      00000EAB  A$funcs$1159                       funcs
      00000EAC  A$funcs$1160                       funcs
@@ -2150,7 +2150,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
       -----  --------------------------------   ------------------------
      00000EAF  A$funcs$1161                       funcs
      00000EB0  A$funcs$1165                       funcs
-     00000EB0  C$funcs.c$305$1$97                 funcs
+     00000EB0  C$funcs.c$310$1$97                 funcs
      00000EB3  A$funcs$1166                       funcs
      00000EB5  A$funcs$1167                       funcs
      00000EB7  A$funcs$1168                       funcs
@@ -2159,7 +2159,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000EBB  A$funcs$1171                       funcs
      00000EBE  A$funcs$1172                       funcs
      00000EBF  A$funcs$1176                       funcs
-     00000EBF  C$funcs.c$306$1$97                 funcs
+     00000EBF  C$funcs.c$311$1$97                 funcs
      00000EC2  A$funcs$1177                       funcs
      00000EC4  A$funcs$1178                       funcs
      00000EC6  A$funcs$1179                       funcs
@@ -2173,31 +2173,31 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000ED3  A$funcs$1187                       funcs
      00000ED7  A$funcs$1188                       funcs
      00000EDA  A$funcs$1192                       funcs
-     00000EDA  C$funcs.c$307$1$97                 funcs
+     00000EDA  C$funcs.c$312$1$97                 funcs
      00000EDD  A$funcs$1193                       funcs
      00000EDF  A$funcs$1194                       funcs
      00000EE1  A$funcs$1195                       funcs
      00000EE5  A$funcs$1200                       funcs
-     00000EE5  C$funcs.c$311$1$97                 funcs
+     00000EE5  C$funcs.c$316$1$97                 funcs
      00000EE8  A$funcs$1201                       funcs
      00000EE9  A$funcs$1202                       funcs
      00000EEB  A$funcs$1206                       funcs
-     00000EEB  C$funcs.c$314$2$98                 funcs
+     00000EEB  C$funcs.c$319$2$98                 funcs
      00000EEE  A$funcs$1210                       funcs
-     00000EEE  C$funcs.c$317$2$98                 funcs
+     00000EEE  C$funcs.c$322$2$98                 funcs
      00000EF1  A$funcs$1211                       funcs
      00000EF3  A$funcs$1215                       funcs
-     00000EF3  C$funcs.c$320$2$98                 funcs
+     00000EF3  C$funcs.c$325$2$98                 funcs
      00000EF6  A$funcs$1219                       funcs
-     00000EF6  C$funcs.c$323$2$98                 funcs
+     00000EF6  C$funcs.c$328$2$98                 funcs
      00000EF9  A$funcs$1223                       funcs
-     00000EF9  C$funcs.c$326$2$98                 funcs
+     00000EF9  C$funcs.c$331$2$98                 funcs
      00000EFC  A$funcs$1227                       funcs
-     00000EFC  C$funcs.c$329$2$98                 funcs
+     00000EFC  C$funcs.c$334$2$98                 funcs
      00000EFF  A$funcs$1228                       funcs
      00000F00  A$funcs$1229                       funcs
      00000F02  A$funcs$1233                       funcs
-     00000F02  C$funcs.c$330$2$98                 funcs
+     00000F02  C$funcs.c$335$2$98                 funcs
      00000F05  A$funcs$1234                       funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 38.
 Hexadecimal  [32-Bits]
@@ -2209,20 +2209,20 @@ _CODE                               00000200    000014CE =        5326. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00000F07  A$funcs$1239                       funcs
-     00000F07  C$funcs.c$335$2$99                 funcs
+     00000F07  C$funcs.c$340$2$99                 funcs
      00000F0A  A$funcs$1240                       funcs
      00000F0B  A$funcs$1241                       funcs
      00000F0D  A$funcs$1245                       funcs
-     00000F0D  C$funcs.c$336$2$99                 funcs
+     00000F0D  C$funcs.c$341$2$99                 funcs
      00000F10  A$funcs$1250                       funcs
-     00000F10  C$funcs.c$340$1$97                 funcs
+     00000F10  C$funcs.c$345$1$97                 funcs
      00000F13  A$funcs$1251                       funcs
      00000F16  A$funcs$1256                       funcs
-     00000F16  C$funcs.c$341$1$97                 funcs
+     00000F16  C$funcs.c$346$1$97                 funcs
      00000F16  XG$UpdateStage$0$0                 funcs
      00000F17  A$funcs$1269                       funcs
-     00000F17  C$funcs.c$343$1$97                 funcs
-     00000F17  C$funcs.c$345$1$101                funcs
+     00000F17  C$funcs.c$348$1$97                 funcs
+     00000F17  C$funcs.c$350$1$101                funcs
      00000F17  G$PlaySound$0$0                    funcs
      00000F17  _PlaySound                         funcs
      00000F1A  A$funcs$1270                       funcs
@@ -2234,13 +2234,13 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000F23  A$funcs$1276                       funcs
      00000F24  A$funcs$1277                       funcs
      00000F25  A$funcs$1282                       funcs
-     00000F25  C$funcs.c$347$2$102                funcs
+     00000F25  C$funcs.c$352$2$102                funcs
      00000F27  A$funcs$1283                       funcs
      00000F28  A$funcs$1284                       funcs
      00000F29  A$funcs$1285                       funcs
      00000F2C  A$funcs$1286                       funcs
      00000F2D  A$funcs$1290                       funcs
-     00000F2D  C$funcs.c$348$2$102                funcs
+     00000F2D  C$funcs.c$353$2$102                funcs
      00000F30  A$funcs$1291                       funcs
      00000F31  A$funcs$1292                       funcs
      00000F32  A$funcs$1293                       funcs
@@ -2253,7 +2253,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000F3B  A$funcs$1300                       funcs
      00000F3C  A$funcs$1301                       funcs
      00000F3D  A$funcs$1305                       funcs
-     00000F3D  C$funcs.c$349$2$102                funcs
+     00000F3D  C$funcs.c$354$2$102                funcs
      00000F3F  A$funcs$1306                       funcs
      00000F40  A$funcs$1307                       funcs
      00000F41  A$funcs$1308                       funcs
@@ -2268,19 +2268,19 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000F45  C$funcs.c$351$1$101                funcs
+     00000F45  C$funcs.c$356$1$101                funcs
      00000F45  XG$PlaySound$0$0                   funcs
      00000F46  A$funcs$1324                       funcs
-     00000F46  C$funcs.c$354$1$101                funcs
+     00000F46  C$funcs.c$359$1$101                funcs
      00000F46  G$PlayMusic$0$0                    funcs
      00000F46  _PlayMusic                         funcs
      00000F48  A$funcs$1325                       funcs
      00000F4C  A$funcs$1326                       funcs
      00000F4E  A$funcs$1330                       funcs
-     00000F4E  C$funcs.c$357$1$104                funcs
+     00000F4E  C$funcs.c$362$1$104                funcs
      00000F51  A$funcs$1331                       funcs
      00000F54  A$funcs$1335                       funcs
-     00000F54  C$funcs.c$360$1$104                funcs
+     00000F54  C$funcs.c$365$1$104                funcs
      00000F57  A$funcs$1336                       funcs
      00000F58  A$funcs$1337                       funcs
      00000F59  A$funcs$1338                       funcs
@@ -2288,20 +2288,20 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000F5D  A$funcs$1343                       funcs
      00000F60  A$funcs$1344                       funcs
      00000F63  A$funcs$1348                       funcs
-     00000F63  C$funcs.c$363$1$104                funcs
+     00000F63  C$funcs.c$368$1$104                funcs
      00000F66  A$funcs$1349                       funcs
      00000F67  A$funcs$1350                       funcs
      00000F69  A$funcs$1354                       funcs
-     00000F69  C$funcs.c$364$1$104                funcs
+     00000F69  C$funcs.c$369$1$104                funcs
      00000F6A  A$funcs$1355                       funcs
      00000F6D  A$funcs$1356                       funcs
      00000F6E  A$funcs$1357                       funcs
      00000F70  A$funcs$1362                       funcs
-     00000F70  C$funcs.c$366$1$104                funcs
+     00000F70  C$funcs.c$371$1$104                funcs
      00000F71  A$funcs$1363                       funcs
      00000F74  A$funcs$1364                       funcs
      00000F75  A$funcs$1369                       funcs
-     00000F75  C$funcs.c$368$1$104                funcs
+     00000F75  C$funcs.c$373$1$104                funcs
      00000F78  A$funcs$1370                       funcs
      00000F7A  A$funcs$1371                       funcs
      00000F7C  A$funcs$1372                       funcs
@@ -2311,14 +2311,14 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000F86  A$funcs$1377                       funcs
      00000F88  A$funcs$1378                       funcs
      00000F8A  A$funcs$1382                       funcs
-     00000F8A  C$funcs.c$370$2$105                funcs
+     00000F8A  C$funcs.c$375$2$105                funcs
      00000F8D  A$funcs$1383                       funcs
      00000F90  A$funcs$1384                       funcs
      00000F93  A$funcs$1388                       funcs
-     00000F93  C$funcs.c$371$2$105                funcs
+     00000F93  C$funcs.c$376$2$105                funcs
      00000F96  A$funcs$1389                       funcs
      00000F99  A$funcs$1393                       funcs
-     00000F99  C$funcs.c$372$2$105                funcs
+     00000F99  C$funcs.c$377$2$105                funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 40.
 Hexadecimal  [32-Bits]
 
@@ -2330,44 +2330,44 @@ _CODE                               00000200    000014CE =        5326. bytes (R
       -----  --------------------------------   ------------------------
      00000F9C  A$funcs$1394                       funcs
      00000F9F  A$funcs$1399                       funcs
-     00000F9F  C$funcs.c$377$1$104                funcs
+     00000F9F  C$funcs.c$382$1$104                funcs
      00000FA1  A$funcs$1400                       funcs
      00000FA2  A$funcs$1401                       funcs
      00000FA3  A$funcs$1402                       funcs
      00000FA6  A$funcs$1403                       funcs
      00000FA7  A$funcs$1404                       funcs
      00000FA9  A$funcs$1409                       funcs
-     00000FA9  C$funcs.c$378$1$104                funcs
+     00000FA9  C$funcs.c$383$1$104                funcs
      00000FA9  XG$PlayMusic$0$0                   funcs
      00000FAA  A$funcs$1422                       funcs
-     00000FAA  C$funcs.c$382$1$104                funcs
-     00000FAA  C$funcs.c$385$1$106                funcs
+     00000FAA  C$funcs.c$387$1$104                funcs
+     00000FAA  C$funcs.c$390$1$106                funcs
      00000FAA  G$UpdatePSG$0$0                    funcs
      00000FAA  _UpdatePSG                         funcs
      00000FAD  A$funcs$1423                       funcs
      00000FAE  A$funcs$1424                       funcs
      00000FB0  A$funcs$1428                       funcs
-     00000FB0  C$funcs.c$387$2$107                funcs
+     00000FB0  C$funcs.c$392$2$107                funcs
      00000FB3  A$funcs$1429                       funcs
      00000FB4  A$funcs$1430                       funcs
      00000FB5  A$funcs$1431                       funcs
      00000FB8  A$funcs$1432                       funcs
      00000FB9  A$funcs$1436                       funcs
-     00000FB9  C$funcs.c$388$2$107                funcs
+     00000FB9  C$funcs.c$393$2$107                funcs
      00000FBC  A$funcs$1441                       funcs
-     00000FBC  C$funcs.c$392$1$106                funcs
+     00000FBC  C$funcs.c$397$1$106                funcs
      00000FBF  A$funcs$1442                       funcs
      00000FC0  A$funcs$1443                       funcs
      00000FC1  A$funcs$1444                       funcs
      00000FC2  A$funcs$1448                       funcs
-     00000FC2  C$funcs.c$394$2$108                funcs
+     00000FC2  C$funcs.c$399$2$108                funcs
      00000FC4  A$funcs$1449                       funcs
      00000FC5  A$funcs$1450                       funcs
      00000FC6  A$funcs$1451                       funcs
      00000FC9  A$funcs$1452                       funcs
      00000FCA  A$funcs$1460                       funcs
-     00000FCA  C$funcs.c$395$2$108                funcs
-     00000FCA  C$funcs.c$397$1$106                funcs
+     00000FCA  C$funcs.c$400$2$108                funcs
+     00000FCA  C$funcs.c$402$1$106                funcs
      00000FCA  XG$UpdatePSG$0$0                   funcs
      00000FCD  __divuint                          
      00000FD5  __divuchar                         
@@ -3213,16 +3213,19 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    00000953 =        2387. bytes (REL,CON)
+_BANK15                             00008000    00000A53 =        2643. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00008000  G$palette_bin$0$0                  fixedbank
      00008000  _palette_bin                       fixedbank
-     00008010  G$updatestagefunctions$0$0         fixedbank
-     00008010  _updatestagefunctions              fixedbank
-     00008012  G$intro1_psg$0$0                   fixedbank
-     00008012  _intro1_psg                        fixedbank
+     00008010  G$sinustable$0$0                   fixedbank
+     00008010  _sinustable                        fixedbank
+     00008110  G$updatestagefunctions$0$0         fixedbank
+     00008110  _updatestagefunctions              fixedbank
+     00008112  G$intro1_psg$0$0                   fixedbank
+     00008112  _intro1_psg                        fixedbank
+
 ASxxxx Linker V03.00 + NoICE + sdld,  page 71.
 Hexadecimal  [32-Bits]
 
