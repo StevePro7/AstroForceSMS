@@ -2,7 +2,7 @@
 
 void main()
 {
-	//InitConsole();
+	InitConsole();
 
 	gamelevel = 0;
 	gamestock = 3;
