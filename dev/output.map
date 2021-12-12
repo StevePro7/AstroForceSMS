@@ -8,201 +8,6 @@ Area                                    Addr        Size        Decimal Bytes (A
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00000000  .__.ABS.                           SMSlib_PSGaiden
-     00000000  _CheckCollisionStage1           
-     00000000  _CheckCollisionStage2           
-     00000000  _CheckCollisionStage7           
-     00000000  _DoCommonBossAppearingFunction  
-     00000000  _FinishSpaceStation             
-     00000000  _FinishStage1MiddleBoss         
-     00000000  _FinishStage4MiddleBoss         
-     00000000  _FinishStage6EndBoss            
-     00000000  _FinishStage7MiddleBoss         
-     00000000  _FinishStage8BossC              
-     00000000  _FinishVulcanStation            
-     00000000  _InitAfterBossStage             
-     00000000  _InitBombShipLeft               
-     00000000  _InitBombShipRight              
-     00000000  _InitFortressCannonRight        
-     00000000  _InitFortressPhantom            
-     00000000  _InitIntro3Object               
-     00000000  _InitIntroSidePlayer            
-     00000000  _InitIntroStar                  
-     00000000  _InitMonsterMissilLeft          
-     00000000  _InitRSGThing                   
-     00000000  _InitSkullBoneA                 
-     00000000  _InitSkullBoneB                 
-     00000000  _InitSkullBoneC                 
-     00000000  _InitSpaceAsteroid              
-     00000000  _InitSpreadShip                 
-     00000000  _InitStage1                     
-     00000000  _InitStage1MiddleBossB          
-     00000000  _InitStage1MiddleBossC          
-     00000000  _InitStage2                     
-     00000000  _InitStage3                     
-     00000000  _InitStage3Laser                
-     00000000  _InitStage4                     
-     00000000  _InitStage4EndBossB             
-     00000000  _InitStage5                     
-     00000000  _InitStage6                     
-     00000000  _InitStage6EndBossB             
-     00000000  _InitStage7                     
-     00000000  _InitStage7EndBoss              
-     00000000  _InitStage7EndBossB             
-     00000000  _InitStage7MiddleBoss           
-     00000000  _InitStage8                     
-     00000000  _InitStage8BossA                
-     00000000  _InitStage8BossB                
-     00000000  _InitStage8BossC                
-     00000000  _InitStage8Lateral              
-     00000000  _InitTurnShip                   
-     00000000  _InitVulcanBird                 
-     00000000  _InitVulcanLaser                
-ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00000000  _InitVulcanLava                 
-     00000000  _InitWW2Plane                   
-     00000000  _InitWW2Zeppelin                
-     00000000  _InitWarning                    
-     00000000  _InitWaveShip                   
-     00000000  _UpdateBombShip                 
-     00000000  _UpdateFortressCannon           
-     00000000  _UpdateFortressDoor             
-     00000000  _UpdateFortressPhantom          
-     00000000  _UpdateFortressSearcher         
-     00000000  _UpdateFortressWave             
-     00000000  _UpdateIntro3Object             
-     00000000  _UpdateIntro3Object1            
-     00000000  _UpdateIntro3Object2            
-     00000000  _UpdateIntro3Object3            
-     00000000  _UpdateIntroOvni                
-     00000000  _UpdateIntroSidePlayer          
-     00000000  _UpdateIntroStar                
-     00000000  _UpdateMonsterBlob              
-     00000000  _UpdateMonsterHead              
-     00000000  _UpdateMonsterMissil            
-     00000000  _UpdatePlayerState1             
-     00000000  _UpdatePlayerState2             
-     00000000  _UpdatePlayerState3             
-     00000000  _UpdatePlayerState4             
-     00000000  _UpdatePlayerState5             
-     00000000  _UpdatePlayerState6             
-     00000000  _UpdateRSGThing                 
-     00000000  _UpdateRectShip                 
-     00000000  _UpdateSkullBoneAB              
-     00000000  _UpdateSkullBoneC               
-     00000000  _UpdateSpaceAsteroid            
-     00000000  _UpdateSpaceShooter             
-     00000000  _UpdateSpaceStation             
-     00000000  _UpdateSpaceStation1            
-     00000000  _UpdateSpaceStation2            
-     00000000  _UpdateSpreadShip               
-     00000000  _UpdateStage1                   
-     00000000  _UpdateStage1EndBoss            
-     00000000  _UpdateStage1MiddleBoss         
-     00000000  _UpdateStage1MiddleBossB        
-     00000000  _UpdateStage1MiddleBossC        
-     00000000  _UpdateStage2                   
-     00000000  _UpdateStage2EndBoss            
-     00000000  _UpdateStage2EndBoss1           
-     00000000  _UpdateStage2EndBoss2           
-     00000000  _UpdateStage2EndBoss3           
-     00000000  _UpdateStage2Object             
-     00000000  _UpdateStage3                   
-     00000000  _UpdateStage3EndBoss            
-     00000000  _UpdateStage3EndBoss1           
-ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00000000  _UpdateStage3EndBoss2           
-     00000000  _UpdateStage3Laser              
-     00000000  _UpdateStage4                   
-     00000000  _UpdateStage4EndBoss            
-     00000000  _UpdateStage4EndBoss1           
-     00000000  _UpdateStage4EndBoss2           
-     00000000  _UpdateStage4EndBoss3           
-     00000000  _UpdateStage4EndBoss4           
-     00000000  _UpdateStage4EndBoss5           
-     00000000  _UpdateStage4EndBoss6           
-     00000000  _UpdateStage4EndBoss7           
-     00000000  _UpdateStage4EndBossB           
-     00000000  _UpdateStage4MiddleBoss         
-     00000000  _UpdateStage4MiddleBoss1        
-     00000000  _UpdateStage4MiddleBoss2        
-     00000000  _UpdateStage4MiddleBoss3        
-     00000000  _UpdateStage4MiddleBoss4        
-     00000000  _UpdateStage4Object             
-     00000000  _UpdateStage5                   
-     00000000  _UpdateStage5EndBoss            
-     00000000  _UpdateStage5EndBoss0           
-     00000000  _UpdateStage5EndBoss1           
-     00000000  _UpdateStage5EndBoss2           
-     00000000  _UpdateStage5EndBoss3           
-     00000000  _UpdateStage5EndBoss4           
-     00000000  _UpdateStage5Missile            
-     00000000  _UpdateStage6                   
-     00000000  _UpdateStage6EndBoss            
-     00000000  _UpdateStage6EndBoss0           
-     00000000  _UpdateStage6EndBoss1           
-     00000000  _UpdateStage6EndBoss2           
-     00000000  _UpdateStage6EndBoss3           
-     00000000  _UpdateStage6EndBoss3A          
-     00000000  _UpdateStage6EndBoss4           
-     00000000  _UpdateStage6EndBoss5           
-     00000000  _UpdateStage6EndBossB           
-     00000000  _UpdateStage6Object             
-     00000000  _UpdateStage7                   
-     00000000  _UpdateStage7EndBoss            
-     00000000  _UpdateStage7EndBossB           
-     00000000  _UpdateStage7MiddleBoss         
-     00000000  _UpdateStage7MiddleBoss0        
-     00000000  _UpdateStage7MiddleBoss1        
-     00000000  _UpdateStage7MiddleBoss2        
-     00000000  _UpdateStage7Object             
-     00000000  _UpdateStage8                   
-     00000000  _UpdateStage8BossA              
-     00000000  _UpdateStage8BossB              
-     00000000  _UpdateStage8BossB1             
-     00000000  _UpdateStage8BossB2             
-     00000000  _UpdateStage8BossB3             
-ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00000000  _UpdateStage8BossC              
-     00000000  _UpdateStage8Lateral            
-     00000000  _UpdateTurnShip                 
-     00000000  _UpdateVulcanBird               
-     00000000  _UpdateVulcanLaser              
-     00000000  _UpdateVulcanLava               
-     00000000  _UpdateVulcanStation            
-     00000000  _UpdateVulcanTankLeft           
-     00000000  _UpdateVulcanTankRight          
-     00000000  _UpdateVulcanTankStop           
-     00000000  _UpdateVulcanVulcan             
-     00000000  _UpdateWW2Plane                 
-     00000000  _UpdateWW2PlaneB                
-     00000000  _UpdateWW2Ship                  
-     00000000  _UpdateWW2Zeppelin              
-     00000000  _UpdateWarning                  
-     00000000  _UpdateWaveShip                 
      00000000  l__BSEG                         
      00000000  l__BSS                          
      00000000  l__CABS                         
@@ -227,6 +32,8 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000001  l__GSFINAL                      
      00000003  l__HEADER3                      
      00000003  l__HEADER4                      
+     00000004  l__INITIALIZED                  
+     00000004  l__INITIALIZER                  
      00000006  l__HEADER0                      
      00000009  l__HEADER1                      
      0000000A  l__HEADER2                      
@@ -237,7 +44,20 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000010  l__CABS4                        
      00000028  l__CABS3                        
      0000012A  l__HEADER5                      
-ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+     00000200  s__CODE                         
+     0000024F  l__DATA                         
+     00000953  l__BANK15                       
+     00000F1A  l__CODE                         
+     0000111A  s__HOME                         
+     0000111A  s__INITIALIZER                  
+     0000111E  s__GSINIT                       
+     0000112D  s__GSFINAL                      
+     00003C2B  l__BANK11                       
+     00003F51  l__BANK12                       
+     00003F7E  l__BANK9                        
+     00003FA9  l__BANK8                        
+     00003FB1  l__BANK6                        
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -246,21 +66,6 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000200  s__CODE                         
-     0000024A  l__INITIALIZED                  
-     0000024A  l__INITIALIZER                  
-     0000024F  l__DATA                         
-     00000F1A  l__CODE                         
-     0000111A  s__HOME                         
-     0000111A  s__INITIALIZER                  
-     00001364  s__GSINIT                       
-     00001373  s__GSFINAL                      
-     0000396B  l__BANK15                       
-     00003C2B  l__BANK11                       
-     00003F51  l__BANK12                       
-     00003F7E  l__BANK9                        
-     00003FA9  l__BANK8                        
-     00003FB1  l__BANK6                        
      00003FB3  l__BANK14                       
      00003FB5  l__BANK2                        
      00003FBD  l__BANK4                        
@@ -287,15 +92,15 @@ Area                                    Addr        Size        Decimal Bytes (A
      00008000  s__BANK9                        
      0000C000  s__DATA                         
      0000C24F  s__INITIALIZED                  
-     0000C499  s__BSEG                         
-     0000C499  s__BSS                          
-     0000C499  s__HEAP                         
+     0000C253  s__BSEG                         
+     0000C253  s__BSS                          
+     0000C253  s__HEAP                         
      0000FFFC  G$SRAM_bank_to_be_mapped_on_slot   _sms_manager
      0000FFFC  _SRAM_bank_to_be_mapped_on_slot2   SMSlib_PSGaiden
      0000FFFF  G$ROM_bank_to_be_mapped_on_slot2   _sms_manager
      0000FFFF  _ROM_bank_to_be_mapped_on_slot2    SMSlib_PSGaiden
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -354,7 +159,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000750  C$_sms_manager.c$19$1$84           _sms_manager
      00000750  C$_sms_manager.c$21$1$85           _sms_manager
      00000750  G$devkit_SMS_displayOff$0$0        _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -414,7 +219,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000781  C$_sms_manager.c$43$1$93           _sms_manager
      00000781  XG$devkit_SMS_useFirstHalfTilesf   _sms_manager
      00000784  A$_sms_manager$306                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -474,7 +279,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      000007B9  A$_sms_manager$381                 _sms_manager
      000007BA  A$_sms_manager$382                 _sms_manager
      000007BB  A$_sms_manager$383                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -534,7 +339,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      000007F4  G$devkit_SMS_loadSTMcompressedTi   _sms_manager
      000007F4  _devkit_SMS_loadSTMcompressedTil   _sms_manager
      000007F6  A$_sms_manager$454                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -594,7 +399,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      0000082B  A$_sms_manager$523                 _sms_manager
      0000082C  A$_sms_manager$524                 _sms_manager
      0000082D  A$_sms_manager$525                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -654,7 +459,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      0000085B  C$_sms_manager.c$88$1$113          _sms_manager
      0000085B  XG$devkit_SMS_loadSpritePalette$   _sms_manager
      0000085E  A$_sms_manager$609                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -714,7 +519,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000899  A$_sms_manager$677                 _sms_manager
      0000089A  A$_sms_manager$678                 _sms_manager
      0000089B  A$_sms_manager$679                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -774,7 +579,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      000008BC  G$devkit_UNSAFE_SMS_copySpritest   _sms_manager
      000008BC  XG$devkit_UNSAFE_SMS_copySprites   _sms_manager
      000008BC  _devkit_UNSAFE_SMS_copySpritesto   _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -834,7 +639,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      000008EB  _devkit_UNSAFE_SMS_VRAMmemcpy128   _sms_manager
      000008EE  A$_sms_manager$860                 _sms_manager
      000008EF  A$_sms_manager$861                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -894,7 +699,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      0000090D  XG$devkit_SMS_getKeysHeld$0$0      _sms_manager
      0000090D  _devkit_SMS_getKeysHeld            _sms_manager
      00000910  A$_sms_manager$980                 _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -954,7 +759,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000927  C$_sms_manager.c$186$1$142         _sms_manager
      00000927  G$devkit_PORT_A_KEY_2$0$0          _sms_manager
      00000927  _devkit_PORT_A_KEY_2               _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1014,7 +819,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      0000095E  A$_sms_manager$1152                _sms_manager
      0000095F  A$_sms_manager$1153                _sms_manager
      00000960  A$_sms_manager$1154                _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1074,7 +879,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000993  A$_sms_manager$1223                _sms_manager
      00000994  A$_sms_manager$1224                _sms_manager
      00000995  A$_sms_manager$1225                _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1134,7 +939,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      000009C2  A$_sms_manager$1308                _sms_manager
      000009C2  C$_sms_manager.c$219$1$156         _sms_manager
      000009C2  XG$devkit_SMS_enableLineInterrup   _sms_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1194,7 +999,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000A20  XG$devkit_PSGPlay$0$0              _snd_manager
      00000A21  A$_snd_manager$117                 _snd_manager
      00000A21  C$_snd_manager.c$13$1$34           _snd_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1254,7 +1059,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000A3D  A$_snd_manager$209                 _snd_manager
      00000A3E  A$_snd_manager$210                 _snd_manager
      00000A41  A$_snd_manager$211                 _snd_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1314,7 +1119,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000A6D  C$_snd_manager.c$49$1$52           _snd_manager
      00000A6D  G$devkit_PSGSFXCancelLoop$0$0      _snd_manager
      00000A6D  XG$devkit_PSGSFXCancelLoop$0$0     _snd_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1374,7 +1179,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000A84  A$_snd_manager$415                 _snd_manager
      00000A84  C$_snd_manager.c$81$1$65           _snd_manager
      00000A84  XG$devkit_SFX_CHANNEL2$0$0         _snd_manager
-ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1434,7 +1239,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00000D3D  _SMS_VRAMmemset                    SMSlib_VRAMmemset
      00000D62  _SMS_VRAMmemsetW                   SMSlib_VRAMmemset
      00000D92  _SMS_initSprites                   SMSlib_sprite
-ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1452,7 +1257,7 @@ _CODE                               00000200    00000F1A =        3866. bytes (R
      00001038  ___sdcc_call_hl                    
      00001039  _SMS_loadPSGaidencompressedTiles   SMSlib_PSGaiden
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1463,7 +1268,7 @@ _HEADER0                            00000000    00000006 =           6. bytes (A
       -----  --------------------------------   ------------------------
      00000006  _SMS_crt0_RST08                    crt0
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1474,7 +1279,7 @@ _HEADER1                            00000000    00000009 =           9. bytes (A
       -----  --------------------------------   ------------------------
      00000011  _SMS_crt0_RST18                    crt0
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1483,7 +1288,7 @@ _HEADER2                            00000000    0000000A =          10. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1492,7 +1297,7 @@ _HEADER3                            00000000    00000003 =           3. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1501,7 +1306,7 @@ _HEADER4                            00000000    00000003 =           3. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1515,51 +1320,36 @@ _HEADER5                            00000000    0000012A =         298. bytes (A
      00000159  _OUTI32                            crt0
      00000199  _outi_block                        crt0
 
+ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_INITIALIZER                        0000111A    00000004 =           4. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_GSINIT                             0000111E    0000000F =          15. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000111E  gsinit                             crt0
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_GSFINAL                            0000112D    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
 ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_INITIALIZER                        0000111A    0000024A =         586. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     0000111A  Ffixedbank$__xinit_jukebox_songs   fixedbank
-     00001144  Ffixedbank$__xinit_jukebox_names   fixedbank
-     0000116E  Ffixedbank$__xinit_selectornames   fixedbank
-     00001178  Ffixedbank$__xinit_intro1labels$   fixedbank
-     00001184  Ffixedbank$__xinit_intro3labels$   fixedbank
-     0000119A  Ffixedbank$__xinit_finishlabels$   fixedbank
-     000011C2  Ffixedbank$__xinit_stagedatamark   fixedbank
-     000011CA  Ffixedbank$__xinit_stageinitdata   fixedbank
-     0000124A  Ffixedbank$__xinit_ww2plane_patt   fixedbank
-     00001256  Ffixedbank$__xinit_spawners$0$0    fixedbank
-     00001282  Ffixedbank$__xinit_imagepointers   fixedbank
-     0000132E  Ffixedbank$__xinit_monsterheadsh   fixedbank
-     0000133E  Ffixedbank$__xinit_monsterheadsh   fixedbank
-     0000134E  Ffixedbank$__xinit_difficultlabe   fixedbank
-     00001352  Ffixedbank$__xinit_playerupdatef   fixedbank
-ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_GSINIT                             00001364    0000000F =          15. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00001364  gsinit                             crt0
-
-ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_GSFINAL                            00001373    00000001 =           1. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1618,7 +1408,7 @@ _DATA                               0000C000    0000024F =         591. bytes (R
      0000C030  G$stagenum$0$0                     vars
      0000C030  _stagenum                          vars
      0000C031  G$laststagenum$0$0                 vars
-ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1678,7 +1468,7 @@ _DATA                               0000C000    0000024F =         591. bytes (R
      0000C0AF  _enemies                           vars
      0000C109  G$maplines$0$0                     vars
      0000C109  _maplines                          vars
-ASxxxx Linker V03.00 + NoICE + sdld,  page 37.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1738,7 +1528,7 @@ _DATA                               0000C000    0000024F =         591. bytes (R
      0000C151  G$introstagevelx$0$0               vars
      0000C151  _introstagevelx                    vars
      0000C153  G$dojukebox$0$0                    vars
-ASxxxx Linker V03.00 + NoICE + sdld,  page 38.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1790,49 +1580,19 @@ _DATA                               0000C000    0000024F =         591. bytes (R
      0000C22E  _SpriteNextFree                    SMSlib_sprite
      0000C22F  _decompBuffer                      SMSlib_PSGaiden
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 39.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_INITIALIZED                        0000C24F    0000024A =         586. bytes (REL,CON)
+_INITIALIZED                        0000C24F    00000004 =           4. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0000C24F  G$jukebox_songs$0$0                fixedbank
-     0000C24F  _jukebox_songs                     fixedbank
-     0000C279  G$jukebox_names$0$0                fixedbank
-     0000C279  _jukebox_names                     fixedbank
-     0000C2A3  G$selectornamestage$0$0            fixedbank
-     0000C2A3  _selectornamestage                 fixedbank
-     0000C2AD  G$intro1labels$0$0                 fixedbank
-     0000C2AD  _intro1labels                      fixedbank
-     0000C2B9  G$intro3labels$0$0                 fixedbank
-     0000C2B9  _intro3labels                      fixedbank
-     0000C2CF  G$finishlabels$0$0                 fixedbank
-     0000C2CF  _finishlabels                      fixedbank
-     0000C2F7  G$stagedatamarks$0$0               fixedbank
-     0000C2F7  _stagedatamarks                    fixedbank
-     0000C2FF  G$stageinitdata$0$0                fixedbank
-     0000C2FF  _stageinitdata                     fixedbank
-     0000C37F  G$ww2plane_patterns$0$0            fixedbank
-     0000C37F  _ww2plane_patterns                 fixedbank
-     0000C38B  G$spawners$0$0                     fixedbank
-     0000C38B  _spawners                          fixedbank
-     0000C3B7  G$imagepointers$0$0                fixedbank
-     0000C3B7  _imagepointers                     fixedbank
-     0000C463  G$monsterheadshootdirecionsx$0$0   fixedbank
-     0000C463  _monsterheadshootdirecionsx        fixedbank
-     0000C473  G$monsterheadshootdirecionsy$0$0   fixedbank
-     0000C473  _monsterheadshootdirecionsy        fixedbank
-     0000C483  G$difficultlabels$0$0              fixedbank
-     0000C483  _difficultlabels                   fixedbank
-     0000C487  G$playerupdatefunctions$0$0        fixedbank
-     0000C487  _playerupdatefunctions             fixedbank
-     0000C495  _VDPReg                            SMSlib
-     0000C497  _spritesHeight                     SMSlib
-     0000C498  _spritesWidth                      SMSlib
-ASxxxx Linker V03.00 + NoICE + sdld,  page 40.
+     0000C24F  _VDPReg                            SMSlib
+     0000C251  _spritesHeight                     SMSlib
+     0000C252  _spritesWidth                      SMSlib
+ASxxxx Linker V03.00 + NoICE + sdld,  page 37.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1880,7 +1640,7 @@ _BANK2                              00008000    00003FB5 =       16309. bytes (R
      0000BF84  G$silence_psg$0$0                  bank2
      0000BF84  _silence_psg                       bank2
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 41.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 38.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1912,7 +1672,7 @@ _BANK3                              00008000    00003FED =       16365. bytes (R
      0000BF8D  G$ww2ship_psgcompr$0$0             bank3
      0000BF8D  _ww2ship_psgcompr                  bank3
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 42.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 39.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1960,7 +1720,7 @@ _BANK4                              00008000    00003FBD =       16317. bytes (R
      0000BE9C  G$waveship_psgcompr$0$0            bank4
      0000BE9C  _waveship_psgcompr                 bank4
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 43.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 40.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1992,7 +1752,7 @@ _BANK5                              00008000    00003FDB =       16347. bytes (R
      0000BEFC  G$ww2zeppelin_psgcompr$0$0         bank5
      0000BEFC  _ww2zeppelin_psgcompr              bank5
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 44.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 41.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2031,7 +1791,7 @@ _BANK6                              00008000    00003FB1 =       16305. bytes (R
      0000BE74  _watertiles_bin                    bank6
      0000BF74  G$ww2cloud_psgcompr$0$0            bank6
      0000BF74  _ww2cloud_psgcompr                 bank6
-ASxxxx Linker V03.00 + NoICE + sdld,  page 45.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 42.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2073,7 +1833,7 @@ _BANK7                              00008000    00003FD0 =       16336. bytes (R
      0000BE7E  G$ww2tank_psgcompr$0$0             bank7
      0000BE7E  _ww2tank_psgcompr                  bank7
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 46.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 43.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2099,7 +1859,7 @@ _BANK8                              00008000    00003FA9 =       16297. bytes (R
      0000B9D0  G$stage7a_psg$0$0                  bank8
      0000B9D0  _stage7a_psg                       bank8
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 47.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 44.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2132,7 +1892,7 @@ _BANK9                              00008000    00003F7E =       16254. bytes (R
      00009835  _stage7tilemap_m                   bank9
      0000BAF5  G$stage7tiles_psgcompr$0$0         bank9
      0000BAF5  _stage7tiles_psgcompr              bank9
-ASxxxx Linker V03.00 + NoICE + sdld,  page 48.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 45.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2174,7 +1934,7 @@ _BANK10                             00008000    00003FE2 =       16354. bytes (R
      0000BEE0  G$stage8lateral_psgcompr$0$0       bank10
      0000BEE0  _stage8lateral_psgcompr            bank10
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 49.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 46.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2189,7 +1949,7 @@ _BANK11                             00008000    00003C2B =       15403. bytes (R
      00008144  _stage5_psg                        bank11
      00009E0B  G$stage7_psg$0$0                   bank11
      00009E0B  _stage7_psg                        bank11
-ASxxxx Linker V03.00 + NoICE + sdld,  page 50.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 47.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2209,7 +1969,7 @@ _BANK12                             00008000    00003F51 =       16209. bytes (R
      0000BC9E  G$introstage3tiles_psgcompr$0$0    bank12
      0000BC9E  _introstage3tiles_psgcompr         bank12
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 51.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 48.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2235,7 +1995,7 @@ _BANK13                             00008000    00003FEA =       16362. bytes (R
      0000BECA  G$stage8bossc_psgcompr$0$0         bank13
      0000BECA  _stage8bossc_psgcompr              bank13
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 52.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 49.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2259,388 +2019,22 @@ _BANK14                             00008000    00003FB3 =       16307. bytes (R
      0000BD91  G$vulcanstation_psgcompr$0$0       bank14
      0000BD91  _vulcanstation_psgcompr            bank14
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 53.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 50.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    0000396B =       14699. bytes (REL,CON)
+_BANK15                             00008000    00000953 =        2387. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00008000  G$playershootspeedsx$0$0           fixedbank
-     00008000  _playershootspeedsx                fixedbank
-     00008004  G$playershootspeedsy$0$0           fixedbank
-     00008004  _playershootspeedsy                fixedbank
-     00008008  G$stage6_fade_pink$0$0             fixedbank
-     00008008  _stage6_fade_pink                  fixedbank
-     00008010  G$stage6_fade_blue$0$0             fixedbank
-     00008010  _stage6_fade_blue                  fixedbank
-     00008018  G$skullshootvelx$0$0               fixedbank
-     00008018  _skullshootvelx                    fixedbank
-     0000801F  G$skullshootvely$0$0               fixedbank
-     0000801F  _skullshootvely                    fixedbank
-     00008026  G$skullbshootvelx$0$0              fixedbank
-     00008026  _skullbshootvelx                   fixedbank
-     00008036  G$skullbshootvely$0$0              fixedbank
-     00008036  _skullbshootvely                   fixedbank
-     00008046  G$palette_bin$0$0                  fixedbank
-     00008046  _palette_bin                       fixedbank
-     00008056  G$stage4_stormpalette$0$0          fixedbank
-     00008056  _stage4_stormpalette               fixedbank
-     00008066  G$stage4_seapalette$0$0            fixedbank
-     00008066  _stage4_seapalette                 fixedbank
-     0000806A  G$stage1_flashpalette$0$0          fixedbank
-     0000806A  _stage1_flashpalette               fixedbank
-     00008072  G$aracmovingx$0$0                  fixedbank
-     00008072  _aracmovingx                       fixedbank
-     0000807A  G$aracmovingy$0$0                  fixedbank
-     0000807A  _aracmovingy                       fixedbank
-     00008082  G$aracmovingt$0$0                  fixedbank
-     00008082  _aracmovingt                       fixedbank
-     00008092  G$crossamovingx$0$0                fixedbank
-     00008092  _crossamovingx                     fixedbank
-     0000809A  G$crossamovingy$0$0                fixedbank
-     0000809A  _crossamovingy                     fixedbank
-     000080A2  G$crossamovingt$0$0                fixedbank
-     000080A2  _crossamovingt                     fixedbank
-     000080B2  G$crossbmovingx$0$0                fixedbank
-     000080B2  _crossbmovingx                     fixedbank
-     000080BA  G$crossbmovingy$0$0                fixedbank
-     000080BA  _crossbmovingy                     fixedbank
-     000080C2  G$crossbmovingt$0$0                fixedbank
-     000080C2  _crossbmovingt                     fixedbank
-     000080D2  G$stage2endbossshootpatternx$0$0   fixedbank
-     000080D2  _stage2endbossshootpatternx        fixedbank
-     000080D8  G$stage2endbossshootpatterny$0$0   fixedbank
-     000080D8  _stage2endbossshootpatterny        fixedbank
-     000080DE  G$stage3enemylaserposx$0$0         fixedbank
-     000080DE  _stage3enemylaserposx              fixedbank
-     000080E6  G$stage3enemylaserposy$0$0         fixedbank
-     000080E6  _stage3enemylaserposy              fixedbank
-ASxxxx Linker V03.00 + NoICE + sdld,  page 54.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    0000396B =       14699. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     000080EE  G$stage3laservelx$0$0              fixedbank
-     000080EE  _stage3laservelx                   fixedbank
-     000080F6  G$stage3laservely$0$0              fixedbank
-     000080F6  _stage3laservely                   fixedbank
-     000080FE  G$Stage1MiddleBossBPatternX$0$0    fixedbank
-     000080FE  _Stage1MiddleBossBPatternX         fixedbank
-     00008106  G$Stage1MiddleBossBPatternY$0$0    fixedbank
-     00008106  _Stage1MiddleBossBPatternY         fixedbank
-     0000810E  G$sinustable$0$0                   fixedbank
-     0000810E  _sinustable                        fixedbank
-     0000820E  G$jukebox_repeat$0$0               fixedbank
-     0000820E  _jukebox_repeat                    fixedbank
-     00008223  G$jukebox_banks$0$0                fixedbank
-     00008223  _jukebox_banks                     fixedbank
-     00008238  G$selectorstatebasetiles$0$0       fixedbank
-     00008238  _selectorstatebasetiles            fixedbank
-     0000823D  G$selectormarkx$0$0                fixedbank
-     0000823D  _selectormarkx                     fixedbank
-     00008241  G$selectormarky$0$0                fixedbank
-     00008241  _selectormarky                     fixedbank
-     00008245  G$selectormarkt$0$0                fixedbank
-     00008245  _selectormarkt                     fixedbank
-     00008249  G$intro4script$0$0                 fixedbank
-     00008249  _intro4script                      fixedbank
-     00008375  G$intro1script$0$0                 fixedbank
-     00008375  _intro1script                      fixedbank
-     0000846F  G$intro2script$0$0                 fixedbank
-     0000846F  _intro2script                      fixedbank
-     0000850A  G$intro3script$0$0                 fixedbank
-     0000850A  _intro3script                      fixedbank
-     00008550  G$finishscript$0$0                 fixedbank
-     00008550  _finishscript                      fixedbank
-     00008654  G$ww2planemovementy$0$0            fixedbank
-     00008654  _ww2planemovementy                 fixedbank
-     0000865C  G$ww2planemovementx$0$0            fixedbank
-     0000865C  _ww2planemovementx                 fixedbank
-     00008664  G$ww2plane_pattern_a$0$0           fixedbank
-     00008664  _ww2plane_pattern_a                fixedbank
-     00008672  G$ww2plane_pattern_b$0$0           fixedbank
-     00008672  _ww2plane_pattern_b                fixedbank
-     00008680  G$ww2plane_pattern_c$0$0           fixedbank
-     00008680  _ww2plane_pattern_c                fixedbank
-     00008692  G$ww2plane_pattern_d$0$0           fixedbank
-     00008692  _ww2plane_pattern_d                fixedbank
-     000086A4  G$ww2plane_pattern_e$0$0           fixedbank
-     000086A4  _ww2plane_pattern_e                fixedbank
-     000086C2  G$ww2plane_pattern_f$0$0           fixedbank
-     000086C2  _ww2plane_pattern_f                fixedbank
-     000086E0  G$span_waveship80_script$0$0       fixedbank
-     000086E0  _span_waveship80_script            fixedbank
-     000086EF  G$span_waveship160_script$0$0      fixedbank
-ASxxxx Linker V03.00 + NoICE + sdld,  page 55.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    0000396B =       14699. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     000086EF  _span_waveship160_script           fixedbank
-     000086FE  G$span_randomrectship_script$0$0   fixedbank
-     000086FE  _span_randomrectship_script        fixedbank
-     00008720  G$span_rectshiplateral_script$0$   fixedbank
-     00008720  _span_rectshiplateral_script       fixedbank
-     00008742  G$span_bombships_script$0$0        fixedbank
-     00008742  _span_bombships_script             fixedbank
-     00008755  G$span_randomwaveship_script$0$0   fixedbank
-     00008755  _span_randomwaveship_script        fixedbank
-     0000876D  G$span_turnships_script$0$0        fixedbank
-     0000876D  _span_turnships_script             fixedbank
-     0000879E  G$span_spreadships_script$0$0      fixedbank
-     0000879E  _span_spreadships_script           fixedbank
-     000087AC  G$stage4scriptc$0$0                fixedbank
-     000087AC  _stage4scriptc                     fixedbank
-     000087C0  G$stage4scriptb$0$0                fixedbank
-     000087C0  _stage4scriptb                     fixedbank
-     0000880B  G$stage4script$0$0                 fixedbank
-     0000880B  _stage4script                      fixedbank
-     00008842  G$span_ww2planea_script$0$0        fixedbank
-     00008842  _span_ww2planea_script             fixedbank
-     00008864  G$span_ww2planeb_script$0$0        fixedbank
-     00008864  _span_ww2planeb_script             fixedbank
-     00008886  G$span_ww2planec_script$0$0        fixedbank
-     00008886  _span_ww2planec_script             fixedbank
-     000088A8  G$span_ww2zeppelina_script$0$0     fixedbank
-     000088A8  _span_ww2zeppelina_script          fixedbank
-     000088BB  G$stage5scriptc$0$0                fixedbank
-     000088BB  _stage5scriptc                     fixedbank
-     000088CA  G$stage5scriptb$0$0                fixedbank
-     000088CA  _stage5scriptb                     fixedbank
-     000089B0  G$stage5script$0$0                 fixedbank
-     000089B0  _stage5script                      fixedbank
-     00008AB3  G$stage5_statics$0$0               fixedbank
-     00008AB3  _stage5_statics                    fixedbank
-     00008BED  G$stage1_statics$0$0               fixedbank
-     00008BED  _stage1_statics                    fixedbank
-     0000921F  G$stage2_statics$0$0               fixedbank
-     0000921F  _stage2_statics                    fixedbank
-     0000981F  G$span_asteroids_full_script$0$0   fixedbank
-     0000981F  _span_asteroids_full_script        fixedbank
-     00009850  G$span_asteroids_little_script$0   fixedbank
-     00009850  _span_asteroids_little_script      fixedbank
-     00009872  G$stage3scriptb$0$0                fixedbank
-     00009872  _stage3scriptb                     fixedbank
-     0000988B  G$stage3script$0$0                 fixedbank
-     0000988B  _stage3script                      fixedbank
-     000098B8  G$stage3_statics$0$0               fixedbank
-     000098B8  _stage3_statics                    fixedbank
-     00009B30  G$stage7_statics$0$0               fixedbank
-     00009B30  _stage7_statics                    fixedbank
-ASxxxx Linker V03.00 + NoICE + sdld,  page 56.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    0000396B =       14699. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00009EF0  G$initenemyfunctions$0$0           fixedbank
-     00009EF0  _initenemyfunctions                fixedbank
-     00009F9C  G$updateenemyfunctions$0$0         fixedbank
-     00009F9C  _updateenemyfunctions              fixedbank
-     0000A048  G$updatestagefunctions$0$0         fixedbank
-     0000A048  _updatestagefunctions              fixedbank
-     0000A05A  G$initstagefunctions$0$0           fixedbank
-     0000A05A  _initstagefunctions                fixedbank
-     0000A06C  G$killenemyfunctions$0$0           fixedbank
-     0000A06C  _killenemyfunctions                fixedbank
-     0000A118  G$stage4_scrollers$0$0             fixedbank
-     0000A118  _stage4_scrollers                  fixedbank
-     0000A1B8  G$stage1_scrollers$0$0             fixedbank
-     0000A1B8  _stage1_scrollers                  fixedbank
-     0000A1E0  G$stage2_scrollers$0$0             fixedbank
-     0000A1E0  _stage2_scrollers                  fixedbank
-     0000A1FE  G$stage5_scrollers$0$0             fixedbank
-     0000A1FE  _stage5_scrollers                  fixedbank
-     0000A226  G$stage3_scrollers$0$0             fixedbank
-     0000A226  _stage3_scrollers                  fixedbank
-     0000A23A  G$stage7_scrollers$0$0             fixedbank
-     0000A23A  _stage7_scrollers                  fixedbank
-     0000A24E  G$stage6_scrollers$0$0             fixedbank
-     0000A24E  _stage6_scrollers                  fixedbank
-     0000A262  G$imagebases$0$0                   fixedbank
-     0000A262  _imagebases                        fixedbank
-     0000A30E  G$imagebanks$0$0                   fixedbank
-     0000A30E  _imagebanks                        fixedbank
-     0000A364  G$stage3spriteslist$0$0            fixedbank
-     0000A364  _stage3spriteslist                 fixedbank
-     0000A370  G$stage1spriteslist$0$0            fixedbank
-     0000A370  _stage1spriteslist                 fixedbank
-     0000A378  G$stage2spriteslist$0$0            fixedbank
-     0000A378  _stage2spriteslist                 fixedbank
-     0000A380  G$stage7spriteslist$0$0            fixedbank
-     0000A380  _stage7spriteslist                 fixedbank
-     0000A386  G$stage5spriteslist$0$0            fixedbank
-     0000A386  _stage5spriteslist                 fixedbank
-     0000A38C  G$stage4spriteslist$0$0            fixedbank
-     0000A38C  _stage4spriteslist                 fixedbank
-     0000A396  G$stage6spriteslist$0$0            fixedbank
-     0000A396  _stage6spriteslist                 fixedbank
-     0000A399  G$stage6script$0$0                 fixedbank
-     0000A399  _stage6script                      fixedbank
-     0000A3A3  G$stage6scriptb$0$0                fixedbank
-     0000A3A3  _stage6scriptb                     fixedbank
-     0000A3AD  G$updatestage6endbossfunctions$0   fixedbank
-     0000A3AD  _updatestage6endbossfunctions      fixedbank
-     0000A3BB  G$updatestage5endbossfunctions$0   fixedbank
-     0000A3BB  _updatestage5endbossfunctions      fixedbank
-     0000A3C5  G$updatestage3endbossfunctions$0   fixedbank
-ASxxxx Linker V03.00 + NoICE + sdld,  page 57.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    0000396B =       14699. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     0000A3C5  _updatestage3endbossfunctions      fixedbank
-     0000A3CF  G$updatestage4middlebossfunction   fixedbank
-     0000A3CF  _updatestage4middlebossfunctions   fixedbank
-     0000A3D9  G$updatestage4endbossfunctions$0   fixedbank
-     0000A3D9  _updatestage4endbossfunctions      fixedbank
-     0000A3E9  G$vulcantankshootspeedx$0$0        fixedbank
-     0000A3E9  _vulcantankshootspeedx             fixedbank
-     0000A3EC  G$vulcantankshootspeedy$0$0        fixedbank
-     0000A3EC  _vulcantankshootspeedy             fixedbank
-     0000A3EF  G$vulcanstationshootspeedx$0$0     fixedbank
-     0000A3EF  _vulcanstationshootspeedx          fixedbank
-     0000A3F2  G$vulcanstationshootspeedy$0$0     fixedbank
-     0000A3F2  _vulcanstationshootspeedy          fixedbank
-     0000A3F5  G$stage8bosscshootspeedx$0$0       fixedbank
-     0000A3F5  _stage8bosscshootspeedx            fixedbank
-     0000A405  G$stage8bosscshootspeedy$0$0       fixedbank
-     0000A405  _stage8bosscshootspeedy            fixedbank
-     0000A414  G$stage8bossbshootspeedx$0$0       fixedbank
-     0000A414  _stage8bossbshootspeedx            fixedbank
-     0000A424  G$stage8bossbshootspeedy$0$0       fixedbank
-     0000A424  _stage8bossbshootspeedy            fixedbank
-     0000A434  G$updatestage7middlebossfunction   fixedbank
-     0000A434  _updatestage7middlebossfunctions   fixedbank
-     0000A43A  G$updatespacestationfunctions$0$   fixedbank
-     0000A43A  _updatespacestationfunctions       fixedbank
-     0000A440  G$updatestage2endbossfunctions$0   fixedbank
-     0000A440  _updatestage2endbossfunctions      fixedbank
-     0000A448  G$checkcollisionfunctions$0$0      fixedbank
-     0000A448  _checkcollisionfunctions           fixedbank
-     0000A45A  G$updateintro3objectfunctions$0$   fixedbank
-     0000A45A  _updateintro3objectfunctions       fixedbank
-     0000A460  G$stage8spriteslist$0$0            fixedbank
-     0000A460  _stage8spriteslist                 fixedbank
-     0000A467  G$stage8_statics$0$0               fixedbank
-     0000A467  _stage8_statics                    fixedbank
-     0000AAA1  G$stage8_scrollers$0$0             fixedbank
-     0000AAA1  _stage8_scrollers                  fixedbank
-     0000AAAB  G$updatestage8bossbfunctions$0$0   fixedbank
-     0000AAAB  _updatestage8bossbfunctions        fixedbank
-     0000AAB3  G$stage8animpalette$0$0            fixedbank
-     0000AAB3  _stage8animpalette                 fixedbank
-     0000AAC1  G$enemieswidth$0$0                 fixedbank
-     0000AAC1  _enemieswidth                      fixedbank
-     0000AB17  G$enemiesheight$0$0                fixedbank
-     0000AB17  _enemiesheight                     fixedbank
-     0000AB6D  G$enemiesenergy$0$0                fixedbank
-     0000AB6D  _enemiesenergy                     fixedbank
-     0000ABC3  G$intro1_psg$0$0                   fixedbank
-     0000ABC3  _intro1_psg                        fixedbank
-     0000B504  Ffixedbank$__str_0$0$0             fixedbank
-     0000B512  Ffixedbank$__str_1$0$0             fixedbank
-ASxxxx Linker V03.00 + NoICE + sdld,  page 58.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    0000396B =       14699. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     0000B520  Ffixedbank$__str_2$0$0             fixedbank
-     0000B52E  Ffixedbank$__str_3$0$0             fixedbank
-     0000B53C  Ffixedbank$__str_4$0$0             fixedbank
-     0000B54A  Ffixedbank$__str_5$0$0             fixedbank
-     0000B558  Ffixedbank$__str_6$0$0             fixedbank
-     0000B566  Ffixedbank$__str_7$0$0             fixedbank
-     0000B574  Ffixedbank$__str_8$0$0             fixedbank
-     0000B582  Ffixedbank$__str_9$0$0             fixedbank
-     0000B590  Ffixedbank$__str_10$0$0            fixedbank
-     0000B59E  Ffixedbank$__str_11$0$0            fixedbank
-     0000B5AC  Ffixedbank$__str_12$0$0            fixedbank
-     0000B5BA  Ffixedbank$__str_13$0$0            fixedbank
-     0000B5C8  Ffixedbank$__str_14$0$0            fixedbank
-     0000B5D6  Ffixedbank$__str_15$0$0            fixedbank
-     0000B5E4  Ffixedbank$__str_16$0$0            fixedbank
-     0000B5F2  Ffixedbank$__str_17$0$0            fixedbank
-     0000B600  Ffixedbank$__str_18$0$0            fixedbank
-     0000B60E  Ffixedbank$__str_19$0$0            fixedbank
-     0000B61C  Ffixedbank$__str_20$0$0            fixedbank
-     0000B62A  Ffixedbank$__str_21$0$0            fixedbank
-     0000B633  Ffixedbank$__str_22$0$0            fixedbank
-     0000B63C  Ffixedbank$__str_23$0$0            fixedbank
-     0000B645  Ffixedbank$__str_24$0$0            fixedbank
-     0000B64D  Ffixedbank$__str_25$0$0            fixedbank
-     0000B656  Ffixedbank$__str_26$0$0            fixedbank
-     0000B663  Ffixedbank$__str_27$0$0            fixedbank
-     0000B677  Ffixedbank$__str_28$0$0            fixedbank
-     0000B68E  Ffixedbank$__str_29$0$0            fixedbank
-     0000B69F  Ffixedbank$__str_30$0$0            fixedbank
-     0000B6B4  Ffixedbank$__str_31$0$0            fixedbank
-     0000B6CA  Ffixedbank$__str_32$0$0            fixedbank
-     0000B6DF  Ffixedbank$__str_33$0$0            fixedbank
-     0000B6F9  Ffixedbank$__str_34$0$0            fixedbank
-     0000B70F  Ffixedbank$__str_35$0$0            fixedbank
-     0000B722  Ffixedbank$__str_36$0$0            fixedbank
-     0000B732  Ffixedbank$__str_37$0$0            fixedbank
-     0000B745  Ffixedbank$__str_38$0$0            fixedbank
-     0000B759  Ffixedbank$__str_39$0$0            fixedbank
-     0000B773  Ffixedbank$__str_40$0$0            fixedbank
-     0000B789  Ffixedbank$__str_41$0$0            fixedbank
-     0000B7A7  Ffixedbank$__str_42$0$0            fixedbank
-     0000B7B1  Ffixedbank$__str_43$0$0            fixedbank
-     0000B7BB  Ffixedbank$__str_44$0$0            fixedbank
-     0000B7CD  Ffixedbank$__str_45$0$0            fixedbank
-     0000B7DA  Ffixedbank$__str_46$0$0            fixedbank
-     0000B7F0  Ffixedbank$__str_47$0$0            fixedbank
-     0000B804  Ffixedbank$__str_48$0$0            fixedbank
-     0000B81E  Ffixedbank$__str_49$0$0            fixedbank
-     0000B835  Ffixedbank$__str_50$0$0            fixedbank
-     0000B853  Ffixedbank$__str_51$0$0            fixedbank
-     0000B86B  Ffixedbank$__str_52$0$0            fixedbank
-ASxxxx Linker V03.00 + NoICE + sdld,  page 59.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    0000396B =       14699. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     0000B886  Ffixedbank$__str_53$0$0            fixedbank
-     0000B89B  Ffixedbank$__str_54$0$0            fixedbank
-     0000B8A3  Ffixedbank$__str_55$0$0            fixedbank
-     0000B8BB  Ffixedbank$__str_56$0$0            fixedbank
-     0000B8D5  Ffixedbank$__str_57$0$0            fixedbank
-     0000B8F2  Ffixedbank$__str_58$0$0            fixedbank
-     0000B908  Ffixedbank$__str_59$0$0            fixedbank
-     0000B91C  Ffixedbank$__str_60$0$0            fixedbank
-     0000B939  Ffixedbank$__str_61$0$0            fixedbank
-     0000B94E  Ffixedbank$__str_62$0$0            fixedbank
-     0000B961  Ffixedbank$__str_63$0$0            fixedbank
-     0000B966  Ffixedbank$__str_64$0$0            fixedbank
-
-ASxxxx Linker V03.00 + NoICE + sdld,  page 60.
+     00008000  G$palette_bin$0$0                  fixedbank
+     00008000  _palette_bin                       fixedbank
+     00008010  G$updatestagefunctions$0$0         fixedbank
+     00008010  _updatestagefunctions              fixedbank
+     00008012  G$intro1_psg$0$0                   fixedbank
+     00008012  _intro1_psg                        fixedbank
+ASxxxx Linker V03.00 + NoICE + sdld,  page 51.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2652,7 +2046,7 @@ _CABS0                              00000000    00000010 =          16. bytes (A
      00007FF0  G$__SMS__SEGA_signature$0$0        _sms_manager
      00007FF0  ___SMS__SEGA_signature             _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 61.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 52.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2664,7 +2058,7 @@ _CABS1                              00000000    0000000E =          14. bytes (A
      00007FD2  G$__SMS__SDSC_author$0$0           _sms_manager
      00007FD2  ___SMS__SDSC_author                _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 62.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 53.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2676,7 +2070,7 @@ _CABS2                              00000000    0000000B =          11. bytes (A
      00007FC7  G$__SMS__SDSC_name$0$0             _sms_manager
      00007FC7  ___SMS__SDSC_name                  _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 63.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 54.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2688,7 +2082,7 @@ _CABS3                              00000000    00000028 =          40. bytes (A
      00007F9F  G$__SMS__SDSC_descr$0$0            _sms_manager
      00007F9F  ___SMS__SDSC_descr                 _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 64.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 55.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2700,7 +2094,7 @@ _CABS4                              00000000    00000010 =          16. bytes (A
      00007FE0  G$__SMS__SDSC_signature$0$0        _sms_manager
      00007FE0  ___SMS__SDSC_signature             _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 65.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 56.
 
 Files Linked                              [ module(s) ]
 
@@ -2739,7 +2133,7 @@ C:\Program Files\SDCC\bin\..\lib\z80/z80.lib
                                           [ __sdcc_call_hl.rel ]
 ..\lib\SMSlib.lib                         [ SMSlib_PSGaiden.rel ]
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 66.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 57.
 
 User Base Address Definitions
 
@@ -2761,338 +2155,3 @@ _BANK14=0x8000
 _BANK15=0x8000
 
 
-?ASlink-Warning-Undefined Global '_InitStage1MiddleBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateIntroSidePlayer' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage1MiddleBossC' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4Object' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5Missile' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4MiddleBoss1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSpaceStation1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4MiddleBoss2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSpaceStation2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitWW2Plane' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitSkullBoneA' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6Object' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4MiddleBoss3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7MiddleBoss0' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage7MiddleBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitSkullBoneB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanTankLeft' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7Object' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4MiddleBoss4' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7MiddleBoss1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitBombShipRight' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitSkullBoneC' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7MiddleBoss2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8BossA' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_FinishStage8BossC' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateFortressSearcher' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8BossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage2EndBoss1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8BossC' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage3EndBoss1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage2EndBoss2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitWarning' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitIntro3Object' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5EndBoss0' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage3EndBoss2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage2EndBoss3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateIntro3Object1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss0' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5EndBoss1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateIntro3Object2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage4EndBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_FinishStage1MiddleBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_FinishVulcanStation' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5EndBoss2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateIntro3Object3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage7EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5EndBoss3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss4' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage6EndBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage1MiddleBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanStation' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5EndBoss4' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss5' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage7EndBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_FinishStage4MiddleBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_FinishSpaceStation' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss4' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss3A' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss6' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_CheckCollisionStage1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage1MiddleBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss5' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss7' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_CheckCollisionStage2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4MiddleBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSpaceStation' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage1MiddleBossC' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage3Laser' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_FinishStage7MiddleBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitBombShipLeft' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateWW2Plane' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSpaceShooter' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitVulcanLaser' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7MiddleBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanVulcan' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSkullBoneAB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSkullBoneC' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateWW2PlaneB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_CheckCollisionStage7' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage1EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateBombShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage2EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitMonsterMissilLeft' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage3EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateWarning' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateIntro3Object' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_FinishStage6EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitIntroStar' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitRSGThing' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitWaveShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitWW2Zeppelin' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitSpaceAsteroid' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4EndBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateMonsterMissil' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7EndBoss' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage4' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateMonsterHead' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6EndBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage5' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitVulcanBird' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7EndBossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage6' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage7' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanTankStop' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage8' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitVulcanLava' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage3Laser' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdatePlayerState1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitFortressPhantom' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanLaser' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdatePlayerState2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdatePlayerState3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage8Lateral' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateRectShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdatePlayerState4' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdatePlayerState5' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitSpreadShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitFortressCannonRight' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdatePlayerState6' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateIntroStar' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateRSGThing' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateWaveShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateWW2Zeppelin' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateMonsterBlob' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSpaceAsteroid' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateIntroOvni' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage4' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage5' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanBird' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage6' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateFortressWave' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage7' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateFortressDoor' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanLava' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_DoCommonBossAppearingFunction' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitTurnShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitAfterBossStage' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitIntroSidePlayer' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateFortressPhantom' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8Lateral' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateSpreadShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateWW2Ship' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage8BossA' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateVulcanTankRight' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateFortressCannon' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage8BossB' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8BossB1' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_InitStage8BossC' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8BossB2' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage8BossB3' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateTurnShip' referenced by module 'fixedbank'
-
-?ASlink-Warning-Undefined Global '_UpdateStage2Object' referenced by module 'fixedbank'

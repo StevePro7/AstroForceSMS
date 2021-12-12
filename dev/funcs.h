@@ -48,358 +48,76 @@
 //void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count );
 
 // Fast random package
-unsigned long state = 777;
-char myRand()
-{
-	state = state * 1664525 + 1013904223;
-	return state >> 24;
-}
+//unsigned long state = 777;
+char myRand();
 
 // Change bank
-void changeBank( unsigned char b )
-{
-	if( b != lastbank )
-	{
-		devkit_SMS_mapROMBank( b );
-		lastbank = b;
-	}
-}
-
+void changeBank( unsigned char b );
 
 // Dibuja un array de sprites
-void DrawSpriteArray( unsigned int s, unsigned char px, unsigned char py, unsigned char tx, unsigned char ty )
-{
-	unsigned char x, y;
-	for( y = 0; y < ty; y += 8 )
-		for( x = 0; x < tx; x += 8 )
-			devkit_SMS_addSprite( px + x, py + y, s++ );
-}
+void DrawSpriteArray( unsigned int s, unsigned char px, unsigned char py, unsigned char tx, unsigned char ty );
 
 // Dibuja un sprite 16x16
-void DrawQuadSprite( unsigned char x, unsigned char y, unsigned int b )
-{
-	devkit_SMS_addSprite( x, y, b );
-	devkit_SMS_addSprite( x + 8, y, b + 1 );
-	devkit_SMS_addSprite( x, y + 8, b + 2 );
-	devkit_SMS_addSprite( x + 8, y + 8, b + 3 );
-}
+void DrawQuadSprite( unsigned char x, unsigned char y, unsigned int b );
 
 // Carga un sprite
-void LoadSprite( const unsigned char *psg, unsigned int base, unsigned char b )
-{
-	// Rom bank
-	changeBank( b );
-
-	// Sprite
-	devkit_SMS_loadPSGaidencompressedTiles( psg, base );
-
-	// Rom bank
-	changeBank( FIXEDBANKSLOT );
-}
+void LoadSprite( const unsigned char *psg, unsigned int base, unsigned char b );
 
 // Carga tiles
-void LoadTiles( unsigned char *psg, char b )
-{
-	// Rom bank
-	changeBank( b );
-
-	// The graphics
-	devkit_SMS_loadPSGaidencompressedTiles( psg, 0 );
-}
+void LoadTiles( unsigned char *psg, char b );
 
 // Carga graficos background
-void LoadGraphics( char *psg, char *bin, int size, char b )
-{
-	// The tiles
-	LoadTiles( (unsigned char*)psg, b );
-
-	// The graphics
-	devkit_SMS_loadTileMap( 0, 0, (unsigned char*)bin, size );
-}
+void LoadGraphics( char *psg, char *bin, int size, char b );
 
 // Carga paleta de fondo
-void LoadBGPalette( char *p, char b )
-{
-	// Rom bank
-	changeBank( b );
-
-	// Palette
-	devkit_SMS_loadBGPalette( p );
-}
+void LoadBGPalette( char *p, char b );
 
 // Carga paleta por defecto
-void LoadSpritePalette()
-{
-	// Rom bank
-	changeBank( FIXEDBANKSLOT );
+void LoadSpritePalette();
 
-	// Palette
-	devkit_SMS_loadSpritePalette( ( unsigned char * ) palette_bin );
-}
-
-void InterruptHandler( void )
-{
-	numinterrupts++;
-}
+void InterruptHandler( void );
 
 // Inicia la consola
-void InitConsole()
-{
-	// La consola
-	devkit_SMS_init();
-
-	// We need this
-	devkit_SMS_getKeysStatus();
-
-	// Advanced frameskipping
-	devkit_SMS_setLineInterruptHandler( &InterruptHandler );
-	devkit_SMS_setLineCounter( 192 );
-	devkit_SMS_enableLineInterrupt();
-
-	// Kagesan asked for this ;)
-	devkit_SMS_VDPturnOnFeature( devkit_VDPFEATURE_LEFTCOLBLANK() );
-}
+void InitConsole();
 
 // Clear background
-void fillBackground()
-{
-	unsigned int a;
-
-	devkit_SMS_setNextTileatXY( 0, 0 );
-	for( a = 0; a < ( 32 * 28 ); a++ )
-		devkit_SMS_setTile( 0 );
-}
+void fillBackground();
 
 // Limpia la pantalla
-void ClearScreen()
-{
-	// Los sprites
-	devkit_SMS_initSprites();
-	devkit_SMS_finalizeSprites();
-	devkit_SMS_copySpritestoSAT();
-
-	// Fill background
-	fillBackground();
-
-	// El background
-	devkit_SMS_setBackdropColor( 0 );
-}
+void ClearScreen();
 
 // Update del scroll
-void UpdateScroll( signed int sx, signed int sy )
-{
-	devkit_SMS_setBGScrollX( sx );
-	devkit_SMS_setBGScrollY( sy );
-}
+void UpdateScroll( signed int sx, signed int sy );
 
 // Dibujamos un texto
-void WriteText( const unsigned char *text, unsigned char x, unsigned char y )
-{
-	int a;
-
-	// Cambiamos el caracter de las letras
-	devkit_SMS_setNextTileatXY( x, y );
-	a = 0;
-	while( text[ a ] != 0 )
-		if( ( text[ a ] >= 32 ) && ( text[ a ] < 96 ) )
-			devkit_SMS_setTile( text[ a++ ] + 159 );
-}
+void WriteText( const unsigned char *text, unsigned char x, unsigned char y );
 
 // Dibujamos un texto
-void WriteNumber( unsigned int i, unsigned int d, unsigned char x, unsigned char y )
-{
-	// Añadimos a x
-	x += d;
-
-	// Ponemos todos los dígitos
-	while( d-- )
-	{
-		devkit_SMS_setNextTileatXY( x--, y );
-		devkit_SMS_setTile( ( i % 10 ) + 48 + 159 );
-		i = i / 10;
-	}
-}
+void WriteNumber( unsigned int i, unsigned int d, unsigned char x, unsigned char y );
 
 // Limpia las tiles
-void ClearTiles()
-{
-	devkit_SMS_VRAMmemset( 0, 0, 32 * 256 );
-}
+void ClearTiles();
 
 // Carga la fuente
-void LoadFont()
-{
-	// Rom bank
-	changeBank( font_psgcompr_bank );
-
-	// Font
-	devkit_SMS_loadPSGaidencompressedTiles( font_psgcompr, 192 );
-}
+void LoadFont();
 
 // Inicia una stage
-void InitStage()
-{
-	// Sonido quitado
-	devkit_PSGStop();
-	devkit_PSGSFXStop();
+void InitStage();
 
-	// Reseteamos el estado de pausa
-	devkit_SMS_resetPauseRequest();
-
-	// Iniciamos las frames
-	stageframe = 0;
-
-	// Clear screen
-	ClearScreen();
-
-	// Fill all tiles
-	ClearTiles();
-
-	// The font
-	LoadFont();
-
-	// El valor del scroll
-	UpdateScroll( 0, 0 );
-
-	// Default palettes
-	LoadSpritePalette();
-
-	// Enable VDP
-	devkit_SMS_displayOn();
-
-	// Disable playstage update
-	updateplaystage = 0;
-
-	// Init magic
-	numinterrupts = 0;
-}
-
-void checkgamepause()
-{
-	if( devkit_SMS_queryPauseRequested() )
-	{
-		devkit_SMS_resetPauseRequest();
-		gamepause = 1 - gamepause;
-		if( gamepause == 1 )
-			PlayMusic( ( char * ) pause_psg, pause_psg_bank, 0 );
-		else
-			PlayMusic( ( char * ) lastplayedmusic, lastplayedmusicbank, lastplayedmusiclooped );
-	}
-}
+void checkgamepause();
 
 // stevepro
-void UpdatePlayStage()
-{
-	// Change bank
-	changeBank( FIXEDBANKSLOT );
-
-	// Custom Update
-	( *( updatestagefunctions[ playstage ] ) )( );
-}
+void UpdatePlayStage();
 
 // Update stage and frames
-void UpdateStage()
-{
-	// Increase frames
-	stageframe++;
+void UpdateStage();
 
-	// Caching calcs
-	stageframe2mod = stageframe % 2;
-	stageframe4mod = stageframe % 4;
-
-	// Chaching b
-	sprite82anim = ( stageframe >> 1 ) % 2;
-	sprite164anim = ( ( stageframe >> 3 ) % 4 ) << 2;
-	if( sprite164anim == 12 )sprite164anim = 4;
-
-	// Finally the most simple... better
-
-	if( stageframe2mod == 0 )
-	{
-		// Wait
-		devkit_SMS_waitForVBlank();
-
-		// Reset
-		numinterrupts = 0;
-
-		// Los sprites
-		devkit_SMS_finalizeSprites();
-
-		// Copy sprites
-		devkit_UNSAFE_SMS_copySpritestoSAT();
-
-		// Los sprites
-		devkit_SMS_initSprites();
-
-		// Update play stage???
-		if( updateplaystage == 1 )
-			UpdatePlayStage();
-	}
-	else
-	{
-		// Interrupts
-		if( numinterrupts == 0 )
-			devkit_SMS_waitForVBlank();
-	}
-
-	// Keyboard... always
-	keystatus = devkit_SMS_getKeysStatus();
-}
-
-void PlaySound( char *sound, char priority )
-{
-	if( ( priority == 1 ) || ( !devkit_PSGSFXGetStatus() ) )
-	{
-		changeBank( SOUNDBANK );
-		devkit_PSGSFXPlay( sound, devkit_SFX_CHANNEL3() );
-		changeBank( FIXEDBANKSLOT );
-	}
-}
+void PlaySound( char *sound, char priority );
 
 // Prepare stage for music!!!
-void PlayMusic( char *music, unsigned char mbank, unsigned char looped )
-{
-	// Save banks
-	musicbank = mbank;
-
-	// Init Music
-	changeBank( musicbank );
-
-	// Loop???
-	if( looped == 1 )
-		devkit_PSGPlay( music );
-	else
-		devkit_PSGPlayNoRepeat( music );
-
-	if( ( music != (char *)pause_psg ) && ( mbank != pause_psg_bank ) )
-	{
-		lastplayedmusic = music;
-		lastplayedmusicbank = mbank;
-		lastplayedmusiclooped = looped;
-	}
-
-
-	// Back to routine
-	changeBank( FIXEDBANKSLOT );
-}
-
+void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
 
 // Update sound
-void UpdatePSG()
-{
-	// Update music
-	if( musicbank != 0 )
-	{
-		changeBank( musicbank );
-		devkit_PSGFrame();
-	}
-
-	// Update sounds
-	if( devkit_PSGSFXGetStatus() )
-	{
-		changeBank( SOUNDBANK );
-		devkit_PSGSFXFrame();
-	}
-}
+void UpdatePSG();
 
 #endif//_FUNCS_H_

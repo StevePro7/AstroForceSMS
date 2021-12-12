@@ -189,7 +189,7 @@ signed char powerupv;
 unsigned int powerupcounter;
 
 // Pause music system
-extern char *lastplayedmusic;
+char *lastplayedmusic;
 unsigned char lastplayedmusicbank;
 unsigned char lastplayedmusiclooped;
 

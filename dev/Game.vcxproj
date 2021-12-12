@@ -64,6 +64,7 @@
     <ClCompile Include="defines.c" />
     <ClCompile Include="devkit\_sms_manager.c" />
     <ClCompile Include="devkit\_snd_manager.c" />
+    <ClCompile Include="funcs.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="vars.c" />
   </ItemGroup>
