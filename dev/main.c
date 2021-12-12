@@ -4,8 +4,8 @@ void main()
 {
 	//InitConsole();
 
-	//gamelevel = 0;
-	//gamestock = 3;
+	gamelevel = 0;
+	gamestock = 3;
 
 	while( 1 )
 	{

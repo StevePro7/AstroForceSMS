@@ -8,7 +8,7 @@
 // LIBRARIES.
 //#include "defines.h"					// DONE
 //#include "Banks\fixedbank.h"			// DONE
-//#include "vars.h"						// DONE
+#include "vars.h"						// DONE
 //#include "funcs.h"						// DONE
 //#include "General\timeredlabel.h"		// DONE
 //#include "General\map.h"				// DONE
