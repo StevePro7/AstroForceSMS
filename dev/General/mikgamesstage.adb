@@ -7,6 +7,9 @@ T:Fmikgamesstage$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$scripter
 T:Fmikgamesstage$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fmikgamesstage$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fmikgamesstage$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
+S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
+S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
+S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$keystatus$0$0({2}SI:U),E,0,0
 S:G$stageframe$0$0({2}SI:U),E,0,0
 S:G$stageframe2mod$0$0({1}SC:U),E,0,0
@@ -81,9 +84,6 @@ S:G$powerupy$0$0({1}SC:U),E,0,0
 S:G$powerupt$0$0({1}SC:U),E,0,0
 S:G$powerupv$0$0({1}SC:S),E,0,0
 S:G$powerupcounter$0$0({2}SI:U),E,0,0
-S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
-S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
-S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOn$0$0({2}DF,SV:S),C,0,0

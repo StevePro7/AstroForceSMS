@@ -116,4 +116,9 @@ void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
 // Update sound
 void UpdatePSG();
 
+// Pause music system
+extern char *lastplayedmusic;
+extern unsigned char lastplayedmusicbank;
+extern unsigned char lastplayedmusiclooped;
+
 #endif//_FUNCS_H_

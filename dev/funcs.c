@@ -401,3 +401,7 @@ void UpdatePSG()
 	}
 }
 
+// Pause music system
+char *lastplayedmusic;
+unsigned char lastplayedmusicbank;
+unsigned char lastplayedmusiclooped;

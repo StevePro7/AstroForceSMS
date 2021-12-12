@@ -1,17 +1,16 @@
 XL2
-H 9 areas 9B global symbols
+H 9 areas 97 global symbols
 M vars
 O -mz80
 S .__.ABS. Def0000
 A _CODE size 0 flags 0 addr 0
-A _DATA size 13F flags 0 addr 0
+A _DATA size 13D flags 0 addr 0
 S G$numtimeredlabels$0$0 Def0123
 S G$playershoots$0$0 Def001C
 S G$keystatus$0$0 Def0000
 S _mapstaticscount Def00F3
 S G$basestage$0$0 Def0008
 S _disablescroll Def00FF
-S G$lastplayedmusicbank$0$0 Def013C
 S G$numinterrupts$0$0 Def0135
 S _stagenum Def000B
 S _numexplosions Def0060
@@ -34,7 +33,6 @@ S _numtimeredlabels Def0123
 S G$playershootcounter$0$0 Def0016
 S _basestage Def0008
 S _numinterrupts Def0135
-S _lastplayedmusicbank Def013C
 S G$stage4playrays$0$0 Def0134
 S G$musicbank$0$0 Def00F6
 S G$numplayershoots$0$0 Def001B
@@ -102,7 +100,6 @@ S G$shootcount$0$0 Def002B
 S _playstage Def0009
 S _introstageposx Def012A
 S _powerupx Def0136
-S G$lastplayedmusiclooped$0$0 Def013D
 S G$sprite164anim$0$0 Def0007
 S _dojukebox Def012E
 S _powerupy Def0137
@@ -119,7 +116,7 @@ S _playertype Def0014
 S _numplayers Def000D
 S _lastbank Def00F0
 S _scrollactspeedx Def00FB
-S G$stage8phase$0$0 Def013E
+S G$stage8phase$0$0 Def013C
 S G$spawnedexplosionposx$0$0 Def012F
 S G$timeredlabels$0$0 Def0124
 S _stageframe2mod Def0004
@@ -138,7 +135,6 @@ S G$mapstaticscount$0$0 Def00F3
 S _shootcount Def002B
 S G$disablescroll$0$0 Def00FF
 S _sprite164anim Def0007
-S _lastplayedmusiclooped Def013D
 S G$numexplosions$0$0 Def0060
 S G$stagenum$0$0 Def000B
 S _laststagenum Def000C
@@ -151,7 +147,7 @@ S _mapbank Def00F7
 S _maplineslength Def00E6
 S _timeredlabels Def0124
 S _spawnedexplosionposx Def012F
-S _stage8phase Def013E
+S _stage8phase Def013C
 S _playerspeed Def0018
 S _spawnedexplosionposy Def0130
 S G$oldmappositiony$0$0 Def00EE
@@ -465,12 +461,4 @@ R 00 00 01 00
 T 3C 01
 R 00 00 01 00
 T 3C 01
-R 00 00 01 00
-T 3D 01
-R 00 00 01 00
-T 3D 01
-R 00 00 01 00
-T 3E 01
-R 00 00 01 00
-T 3E 01
 R 00 00 01 00

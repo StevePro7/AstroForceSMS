@@ -190,10 +190,10 @@ extern unsigned char powerupt;
 extern signed char powerupv;
 extern unsigned int powerupcounter;
 
-// Pause music system
-extern char *lastplayedmusic;
-extern unsigned char lastplayedmusicbank;
-extern unsigned char lastplayedmusiclooped;
+//// Pause music system
+//extern char *lastplayedmusic;
+//extern unsigned char lastplayedmusicbank;
+//extern unsigned char lastplayedmusiclooped;
 
 // Needed in stage 8
 extern unsigned char stage8phase;
