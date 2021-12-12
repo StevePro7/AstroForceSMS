@@ -57,7 +57,7 @@ ihx2sms output.ihx output.sms
 
 
 :: Output
-copy output.sms ..\AstroForce2.0.sms
+::copy output.sms ..\AstroForce2.0.sms
 
 
 cd banks
