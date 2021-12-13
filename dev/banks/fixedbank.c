@@ -2,6 +2,19 @@
 #define _FIXEDBANK_H_
 
 #include "fixedbank.h"
+#include "bank2.h"
+#include "bank3.h"
+#include "bank4.h"
+#include "bank5.h"
+#include "bank6.h"
+#include "bank7.h"
+#include "bank8.h"
+#include "bank9.h"
+#include "bank10.h"
+#include "bank11.h"
+#include "bank12.h"
+#include "bank13.h"
+#include "bank14.h"
 #include "..\defines.h"
 
 #ifdef _CONSOLE
@@ -97,33 +110,33 @@ const unsigned char sinustable[] =
 79,82,85,88,91,94,97,100,
 103,106,109,112,115,119,122,125 };
 
-////////////////////////////////////////////////////
-//// JUKEBOX
-//
-//const char *jukebox_songs[] =
-//{
-//	logo_psg,
-//	intro3_psg,//intro1_psg,
-//	intro3_psg,
-//	intro2_psg,
-//	select_psg,
-//	stage1_psg,
-//	stage2_psg,
-//	stage3_psg,
-//	stage4_psg,
-//	stage8_psg,
-//	stage5_psg,
-//	flight_psg,
-//	stage7a_psg,
-//	stage7_psg,
-//	stage6_psg,
-//	escape_psg,
-//	norefuge_psg,
-//	boss_psg,
-//	boss2_psg,
-//	ending_psg,
-//	gameover_psg
-//};
+//////////////////////////////////////////////////
+// JUKEBOX
+
+const char *jukebox_songs[] =
+{
+	logo_psg,
+	intro3_psg,//intro1_psg,
+	intro3_psg,
+	intro2_psg,
+	select_psg,
+	stage1_psg,
+	stage2_psg,
+	stage3_psg,
+	stage4_psg,
+	stage8_psg,
+	stage5_psg,
+	flight_psg,
+	stage7a_psg,
+	stage7_psg,
+	stage6_psg,
+	escape_psg,
+	norefuge_psg,
+	boss_psg,
+	boss2_psg,
+	ending_psg,
+	gameover_psg
+};
 
 const unsigned char jukebox_repeat[] = { 0,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,0 };
 
