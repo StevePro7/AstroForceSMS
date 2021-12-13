@@ -66,14 +66,14 @@ void InitIntroStage( unsigned char intronum )
 	
 	// Scroller position
 	InitIntroScroll();
-//
-//	while( 1 )
-//	{
-//		// The stage
-//		UpdateStage();
-//
-//		// Timered labels
-//		UpdateTimeredLabels();
+
+	while( 1 )
+	{
+		// The stage
+		UpdateStage();
+
+		// Timered labels
+		UpdateTimeredLabels();
 //
 //		// Script
 //		if( ( stageframe % 8 ) == 0 )
@@ -95,5 +95,5 @@ void InitIntroStage( unsigned char intronum )
 
 		// Update psg
 		UpdatePSG();
-//	}
+	}
 }

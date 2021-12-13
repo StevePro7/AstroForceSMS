@@ -82,6 +82,7 @@ S:G$powerupt$0$0({1}SC:U),E,0,0
 S:G$powerupv$0$0({1}SC:S),E,0,0
 S:G$powerupcounter$0$0({2}SI:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
+S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0

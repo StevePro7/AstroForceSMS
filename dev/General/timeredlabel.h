@@ -4,10 +4,10 @@
 void timeredlabel_foo();
 
 //void ClearTimeredLabelLine( unsigned char y );
-//void RemoveTimeredLabel( signed char a );
-//void UpdateTimeredLabel( signed char a );
-//void UpdateTimeredLabels();
-//void InitTimeredLabel( unsigned char *s, unsigned char y, signed int t );
+void RemoveTimeredLabel( signed char a );
+void UpdateTimeredLabel( signed char a );
+void UpdateTimeredLabels();
+void InitTimeredLabel( unsigned char *s, unsigned char y, signed int t );
 void InitTimeredLabels();
 
 #endif//_TIMEREDLABEL_H_

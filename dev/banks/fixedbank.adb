@@ -1,6 +1,14 @@
 M:fixedbank
 T:Ffixedbank$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
+S:G$intro1labels$0$0({12}DA6d,DG,SC:U),E,0,0
 S:G$palette_bin$0$0({16}DA16d,SC:U),D,0,0
 S:G$sinustable$0$0({256}DA256d,SC:U),D,0,0
+S:G$intro1script$0$0({250}DA250d,SC:U),D,0,0
 S:G$updatestagefunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
 S:G$intro1_psg$0$0({2369}DA2369d,SC:U),D,0,0
+S:Ffixedbank$__str_0$0$0({13}DA13d,SC:S),D,0,0
+S:Ffixedbank$__str_1$0$0({20}DA20d,SC:S),D,0,0
+S:Ffixedbank$__str_2$0$0({23}DA23d,SC:S),D,0,0
+S:Ffixedbank$__str_3$0$0({17}DA17d,SC:S),D,0,0
+S:Ffixedbank$__str_4$0$0({21}DA21d,SC:S),D,0,0
+S:Ffixedbank$__str_5$0$0({22}DA22d,SC:S),D,0,0

@@ -1,26 +1,245 @@
 ;!FILE timeredlabel.asm
 XL2
-H 9 areas 11 global symbols
+H 9 areas EC global symbols
 M timeredlabel
 O -mz80
 S _numtimeredlabels Ref0000
+S _WriteText Ref0000
+S _devkit_SMS_setNextTileatXY Ref0000
 S .__.ABS. Def0000
-A _CODE size 7 flags 0 addr 0
-S G$InitTimeredLabels$0$0 Def0001
-S _InitTimeredLabels Def0001
-S A$timeredlabel$60 Def0000
-S XG$InitTimeredLabels$0$0 Def0006
-S A$timeredlabel$73 Def0001
-S C$timeredlabel.c$90$1$5 Def0001
-S A$timeredlabel$74 Def0004
-S C$timeredlabel.c$91$1$5 Def0006
-S C$timeredlabel.c$88$0$0 Def0001
+S _devkit_SMS_setTile Ref0000
+S _strlen Ref0000
+S _timeredlabels Ref0000
+A _CODE size 11D flags 0 addr 0
+S XG$RemoveTimeredLabel$0$0 Def0078
+S A$timeredlabel$100 Def0011
+S G$InitTimeredLabels$0$0 Def0117
+S XG$ClearTimeredLabelLine$0$0 Def0020
+S A$timeredlabel$110 Def001A
+S A$timeredlabel$101 Def0012
+S A$timeredlabel$210 Def0078
+S A$timeredlabel$111 Def001B
+S A$timeredlabel$102 Def0013
+S A$timeredlabel$220 Def0079
+S A$timeredlabel$130 Def0027
+S A$timeredlabel$112 Def001C
+S A$timeredlabel$103 Def0014
+S A$timeredlabel$320 Def00CA
+S A$timeredlabel$230 Def0089
+S A$timeredlabel$221 Def007B
+S A$timeredlabel$203 Def0072
+S A$timeredlabel$140 Def0033
+S A$timeredlabel$113 Def001E
+S A$timeredlabel$104 Def0015
+S A$timeredlabel$402 Def011C
+S A$timeredlabel$330 Def00DA
+S A$timeredlabel$321 Def00CD
+S A$timeredlabel$303 Def00BC
+S A$timeredlabel$240 Def0092
+S A$timeredlabel$231 Def008A
+S A$timeredlabel$222 Def007F
+S A$timeredlabel$204 Def0075
+S A$timeredlabel$150 Def003C
+S A$timeredlabel$141 Def0034
+S A$timeredlabel$105 Def0018
+S A$timeredlabel$340 Def00E0
+S A$timeredlabel$322 Def00CF
+S A$timeredlabel$313 Def00BE
+S A$timeredlabel$250 Def0097
+S A$timeredlabel$232 Def008B
+S A$timeredlabel$205 Def0076
+S A$timeredlabel$151 Def003D
+S A$timeredlabel$142 Def0035
+S A$timeredlabel$106 Def0019
+S C$timeredlabel.c$30$1$71 Def003B
+S A$timeredlabel$350 Def00EA
+S A$timeredlabel$341 Def00E3
+S A$timeredlabel$314 Def00C0
+S A$timeredlabel$251 Def009A
+S A$timeredlabel$233 Def008E
+S A$timeredlabel$170 Def0055
+S A$timeredlabel$152 Def003E
+S A$timeredlabel$143 Def0038
+S A$timeredlabel$134 Def0029
+S A$timeredlabel$360 Def00F7
+S A$timeredlabel$351 Def00EB
+S A$timeredlabel$315 Def00C4
+S A$timeredlabel$261 Def00A2
+S A$timeredlabel$252 Def009B
+S A$timeredlabel$180 Def0062
+S A$timeredlabel$171 Def0058
+S A$timeredlabel$162 Def0047
+S A$timeredlabel$153 Def003F
+S A$timeredlabel$144 Def0039
+S A$timeredlabel$135 Def002C
+S A$timeredlabel$370 Def0107
+S A$timeredlabel$361 Def00FA
+S A$timeredlabel$352 Def00EC
+S A$timeredlabel$334 Def00DB
+S A$timeredlabel$253 Def009C
+S A$timeredlabel$244 Def0093
+S A$timeredlabel$226 Def0081
+S A$timeredlabel$190 Def006C
+S A$timeredlabel$181 Def0063
+S A$timeredlabel$163 Def004B
+S A$timeredlabel$154 Def0040
+S A$timeredlabel$145 Def003A
+S A$timeredlabel$136 Def002F
+S A$timeredlabel$118 Def0020
+S C$timeredlabel.c$42$1$71 Def0072
+S C$timeredlabel.c$33$1$71 Def0047
+S A$timeredlabel$371 Def0108
+S A$timeredlabel$362 Def00FB
+S A$timeredlabel$353 Def00EF
+S A$timeredlabel$335 Def00DE
+S A$timeredlabel$326 Def00D1
+S A$timeredlabel$290 Def00B4
+S A$timeredlabel$281 Def00AC
+S A$timeredlabel$254 Def009F
+S A$timeredlabel$245 Def0094
+S A$timeredlabel$227 Def0084
+S A$timeredlabel$182 Def0065
+S A$timeredlabel$173 Def005A
+S A$timeredlabel$164 Def004E
+S A$timeredlabel$155 Def0041
+S A$timeredlabel$137 Def0030
+S A$timeredlabel$128 Def0021
+S C$timeredlabel.c$43$1$71 Def0078
+S A$timeredlabel$372 Def010B
+S A$timeredlabel$363 Def00FD
+S A$timeredlabel$345 Def00E4
+S A$timeredlabel$327 Def00D4
+S A$timeredlabel$291 Def00B5
+S A$timeredlabel$282 Def00AF
+S A$timeredlabel$246 Def0095
+S A$timeredlabel$237 Def008F
+S A$timeredlabel$228 Def0087
+S A$timeredlabel$183 Def0066
+S A$timeredlabel$165 Def0050
+S A$timeredlabel$156 Def0044
+S A$timeredlabel$138 Def0031
+S A$timeredlabel$129 Def0023
+S C$timeredlabel.c$50$1$74 Def0081
+S A$timeredlabel$373 Def010E
+S A$timeredlabel$364 Def00FF
+S A$timeredlabel$328 Def00D7
+S A$timeredlabel$319 Def00C6
+S A$timeredlabel$292 Def00B6
+S A$timeredlabel$274 Def00A3
+S A$timeredlabel$256 Def00A0
+S A$timeredlabel$238 Def0090
+S A$timeredlabel$229 Def0088
+S A$timeredlabel$184 Def0069
+S A$timeredlabel$166 Def0051
+S A$timeredlabel$157 Def0045
+S A$timeredlabel$139 Def0032
+S C$timeredlabel.c$27$1$71 Def0029
+S C$timeredlabel.c$11$0$0 Def0001
+S _InitTimeredLabels Def0117
+S A$timeredlabel$383 Def0116
+S A$timeredlabel$374 Def010F
+S A$timeredlabel$365 Def0100
+S A$timeredlabel$329 Def00D9
+S A$timeredlabel$293 Def00B9
+S A$timeredlabel$284 Def00B0
+S A$timeredlabel$275 Def00A7
+S A$timeredlabel$239 Def0091
+S A$timeredlabel$194 Def006D
+S A$timeredlabel$185 Def006A
+S A$timeredlabel$167 Def0052
+S A$timeredlabel$158 Def0046
+S A$timeredlabel$149 Def003B
+S G$InitTimeredLabel$0$0 Def00BE
+S C$timeredlabel.c$52$1$74 Def008F
+S C$timeredlabel.c$46$1$71 Def0079
+S A$timeredlabel$375 Def0112
+S A$timeredlabel$366 Def0101
+S A$timeredlabel$357 Def00F0
+S A$timeredlabel$339 Def00DF
+S A$timeredlabel$294 Def00BA
+S A$timeredlabel$285 Def00B2
+S A$timeredlabel$276 Def00AA
+S A$timeredlabel$195 Def006E
+S A$timeredlabel$177 Def005D
+S A$timeredlabel$168 Def0053
+S C$timeredlabel.c$61$1$75 Def00A3
+S C$timeredlabel.c$53$1$74 Def0093
+S C$timeredlabel.c$36$2$72 Def005D
+S A$timeredlabel$376 Def0113
+S A$timeredlabel$367 Def0104
+S A$timeredlabel$358 Def00F3
+S A$timeredlabel$349 Def00E7
+S A$timeredlabel$277 Def00AB
+S A$timeredlabel$196 Def006F
+S A$timeredlabel$178 Def0060
+S A$timeredlabel$169 Def0054
+S C$timeredlabel.c$93$1$80 Def0117
+S G$UpdateTimeredLabels$0$0 Def00A3
+S C$timeredlabel.c$54$1$74 Def0097
+S C$timeredlabel.c$22$2$69 Def0021
+S A$timeredlabel$368 Def0105
+S A$timeredlabel$359 Def00F6
+S A$timeredlabel$197 Def0070
+S A$timeredlabel$179 Def0061
+S C$timeredlabel.c$94$1$80 Def011C
+S C$timeredlabel.c$55$1$74 Def00A2
+S C$timeredlabel.c$38$2$72 Def006B
+S C$timeredlabel.c$16$1$68 Def0001
+S A$timeredlabel$396 Def0117
+S A$timeredlabel$378 Def0114
+S A$timeredlabel$369 Def0106
+S A$timeredlabel$198 Def0071
+S A$timeredlabel$189 Def006B
+S C$timeredlabel.c$70$1$78 Def00C6
+S C$timeredlabel.c$64$1$75 Def00BC
+S C$timeredlabel.c$62$2$76 Def00BB
+S C$timeredlabel.c$39$2$72 Def006D
+S A$timeredlabel$397 Def011A
+S A$timeredlabel$298 Def00BB
+S A$timeredlabel$289 Def00B3
+S C$timeredlabel.c$63$2$76 Def00B3
+S C$timeredlabel.c$66$1$75 Def00BE
+S C$timeredlabel.c$58$1$74 Def00A3
+S C$timeredlabel.c$17$2$69 Def001A
+S C$timeredlabel.c$91$1$78 Def0117
+S C$timeredlabel.c$80$2$79 Def00E4
+S C$timeredlabel.c$18$2$69 Def0011
+S C$timeredlabel.c$19$2$69 Def0020
+S C$timeredlabel.c$73$2$79 Def00D1
+S C$timeredlabel.c$83$2$79 Def00E7
+S A$timeredlabel$90 Def000B
+S XG$InitTimeredLabels$0$0 Def011C
+S A$timeredlabel$91 Def000E
+S A$timeredlabel$82 Def0001
+S C$timeredlabel.c$76$2$79 Def00DB
+S _InitTimeredLabel Def00BE
+S A$timeredlabel$83 Def0004
+S C$timeredlabel.c$88$1$78 Def0116
+S C$timeredlabel.c$86$2$79 Def00F0
+S C$timeredlabel.c$77$2$79 Def00DF
+S A$timeredlabel$84 Def0005
+S _UpdateTimeredLabels Def00A3
+S A$timeredlabel$85 Def0006
+S G$UpdateTimeredLabel$0$0 Def0079
 S G$timeredlabel_foo$0$0 Def0000
-S C$timeredlabel.c$4$0$0 Def0000
-S A$timeredlabel$79 Def0006
-S C$timeredlabel.c$6$0$0 Def0000
+S A$timeredlabel$95 Def000F
+S A$timeredlabel$86 Def0007
+S A$timeredlabel$87 Def0008
+S A$timeredlabel$69 Def0000
+S A$timeredlabel$88 Def0009
+S A$timeredlabel$89 Def000A
+S C$timeredlabel.c$7$0$0 Def0000
+S C$timeredlabel.c$9$0$0 Def0000
+S XG$InitTimeredLabel$0$0 Def0116
+S XG$UpdateTimeredLabels$0$0 Def00BC
+S G$RemoveTimeredLabel$0$0 Def0021
+S G$ClearTimeredLabelLine$0$0 Def0001
+S _UpdateTimeredLabel Def0079
 S _timeredlabel_foo Def0000
+S _RemoveTimeredLabel Def0021
+S XG$UpdateTimeredLabel$0$0 Def00A2
 S XG$timeredlabel_foo$0$0 Def0000
+S _ClearTimeredLabelLine Def0001
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -35,5 +254,79 @@ T 00 00 C9
 R 00 00 00 00
 T 01 00
 R 00 00 00 00
-T 01 00 21 00 00 36 00 C9
+T 01 00 21 02 00 39 7E F5 33 AF F5 33 CD 00 00 F1
+R 00 00 00 00 02 0D 02 00
+T 0F 00 0E 00
+R 00 00 00 00
+T 11 00
+R 00 00 00 00
+T 11 00 C5 AF F5 33 CD 00 00 33 C1 0C 79 D6 20 38
+R 00 00 00 00 02 07 04 00
+T 1F 00 F1 C9
+R 00 00 00 00
+T 21 00
+R 00 00 00 00
+T 21 00 DD E5 DD 21 00 00 DD 39 DD 5E 04 DD 7E 04
+R 00 00 00 00
+T 2F 00 17 9F 57 6B 62 29 01 00 00 09 4D 44 0A 67
+R 00 00 00 00 02 09 06 00
+T 3D 00 C5 D5 E5 33 CD 01 00 33 D1 C1 FD 21 00 00
+R 00 00 00 00 00 07 00 00 02 0E 00 00
+T 4B 00 FD 6E 00 26 00 2B 7B 95 7A 9C E2 5A 00 EE
+R 00 00 00 00 00 0D 00 00
+T 59 00 80
+R 00 00 00 00
+T 5A 00
+R 00 00 00 00
+T 5A 00 F2 72 00 21 00 00 5E 1D 6B 26 00 29 11
+R 00 00 00 00 00 03 00 00 02 06 00 00
+T 67 00 00 00 19 EB 1A 02 03 EB 23 7E 02
+R 00 00 00 00 02 02 06 00
+T 72 00
+R 00 00 00 00
+T 72 00 21 00 00 35 DD E1 C9
+R 00 00 00 00 02 03 00 00
+T 79 00
+R 00 00 00 00
+T 79 00 DD E5 DD 21 00 00 DD 39 DD 6E 04 DD 7E 04
+R 00 00 00 00
+T 87 00 17 9F 67 29 11 00 00 19 23 4E 0D 71 79 B7
+R 00 00 00 00 02 07 06 00
+T 95 00 20 09 DD 7E 04 F5 33 CD 21 00 33
+R 00 00 00 00 00 0A 00 00
+T A0 00
+R 00 00 00 00
+T A0 00 DD E1 C9
+R 00 00 00 00
+T A3 00
+R 00 00 00 00
+T A3 00 FD 21 00 00 FD 7E 00 B7 C8 FD 46 00 05
+R 00 00 00 00 02 04 00 00
+T B0 00
+R 00 00 00 00
+T B0 00 CB 78 C0 C5 C5 33 CD 79 00 33 C1 05 18 F2
+R 00 00 00 00 00 09 00 00
+T BE 00
+R 00 00 00 00
+T BE 00 DD E5 DD 21 00 00 DD 39 FD 21 00 00 FD 7E
+R 00 00 00 00 02 0C 00 00
+T CC 00 00 D6 03 30 43 01 00 00 FD 6E 00 26 00 29
+R 00 00 00 00 02 08 06 00
+T DA 00 09 DD 7E 06 77 23 DD 4E 07 71 FD 34 00 DD
+R 00 00 00 00
+T E8 00 7E 06 F5 33 CD 01 00 33 DD 6E 04 DD 66 05
+R 00 00 00 00 00 07 00 00
+T F6 00 E5 CD 00 00 F1 CB 3D 3E 10 95 47 DD 7E 06
+R 00 00 00 00 02 04 05 00
+T 04 01 F5 33 C5 33 DD 6E 04 DD 66 05 E5 CD 00 00
+R 00 00 00 00 02 0E 01 00
+T 12 01 F1 F1
+R 00 00 00 00
+T 14 01
+R 00 00 00 00
+T 14 01 DD E1 C9
+R 00 00 00 00
+T 17 01
+R 00 00 00 00
+T 17 01 21 00 00 36 00 C9
 R 00 00 00 00 02 03 00 00

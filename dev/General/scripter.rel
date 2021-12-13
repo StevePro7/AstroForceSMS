@@ -1,25 +1,84 @@
 ;!FILE scripter.asm
 XL2
-H 9 areas 11 global symbols
+H 9 areas 4C global symbols
 M scripter
 O -mz80
 S .__.ABS. Def0000
+S _scripts Ref0000
 S _numscripts Ref0000
-A _CODE size 7 flags 0 addr 0
+A _CODE size 59 flags 0 addr 0
+S A$scripter$110 Def0028
+S A$scripter$120 Def002F
+S A$scripter$111 Def0029
+S A$scripter$130 Def0036
+S A$scripter$103 Def001A
+S A$scripter$131 Def0037
+S A$scripter$104 Def001D
+S A$scripter$132 Def0038
+S A$scripter$105 Def0020
+S A$scripter$142 Def0043
+S A$scripter$133 Def0039
+S A$scripter$124 Def0030
+S A$scripter$115 Def002A
+S A$scripter$106 Def0023
+S A$scripter$161 Def0058
+S A$scripter$152 Def0050
+S A$scripter$143 Def0046
+S A$scripter$134 Def003A
+S A$scripter$125 Def0033
+S A$scripter$116 Def002B
+S A$scripter$107 Def0025
+S A$scripter$153 Def0053
+S A$scripter$144 Def0047
+S A$scripter$135 Def003D
+S A$scripter$126 Def0034
+S A$scripter$117 Def002C
+S A$scripter$108 Def0026
+S A$scripter$154 Def0054
+S A$scripter$145 Def004A
+S A$scripter$136 Def003E
+S A$scripter$118 Def002D
+S A$scripter$109 Def0027
 S G$InitScripts$0$0 Def0001
-S C$scripter.c$10$1$5 Def0001
-S C$scripter.c$11$1$5 Def0006
-S A$scripter$60 Def0000
+S A$scripter$146 Def004B
+S A$scripter$137 Def003F
+S A$scripter$119 Def002E
+S A$scripter$156 Def0056
+S A$scripter$147 Def004C
+S A$scripter$138 Def0042
+S A$scripter$148 Def004F
+S C$scripter.c$10$1$6 Def0001
+S C$scripter.c$11$1$6 Def0006
+S C$scripter.c$13$1$6 Def0007
 S _InitScripts Def0001
-S A$scripter$73 Def0001
-S A$scripter$74 Def0004
+S A$scripter$61 Def0000
+S G$InitScript$0$0 Def0007
+S A$scripter$80 Def0006
+S C$scripter.c$20$2$9 Def001A
+S A$scripter$90 Def0007
+S A$scripter$91 Def0009
+S A$scripter$92 Def000D
+S A$scripter$74 Def0001
+S C$scripter.c$23$2$9 Def002A
+S A$scripter$75 Def0004
+S C$scripter.c$24$2$9 Def0030
+S C$scripter.c$17$1$8 Def000F
+S C$scripter.c$25$2$9 Def0036
 S G$scripter_foo$0$0 Def0000
+S C$scripter.c$26$2$9 Def0043
+S A$scripter$96 Def000F
+S C$scripter.c$29$1$8 Def0058
+S C$scripter.c$27$2$9 Def0050
 S C$scripter.c$4$0$0 Def0000
-S A$scripter$79 Def0006
+S A$scripter$97 Def0013
+S A$scripter$98 Def0016
 S C$scripter.c$6$0$0 Def0000
+S A$scripter$99 Def0018
 S XG$InitScripts$0$0 Def0006
 S C$scripter.c$8$0$0 Def0001
+S _InitScript Def0007
 S _scripter_foo Def0000
+S XG$InitScript$0$0 Def0058
 S XG$scripter_foo$0$0 Def0000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
@@ -36,4 +95,22 @@ R 00 00 00 00
 T 01 00
 R 00 00 00 00
 T 01 00 21 00 00 36 00 C9
-R 00 00 00 00 02 03 01 00
+R 00 00 00 00 02 03 02 00
+T 07 00
+R 00 00 00 00
+T 07 00 DD E5 DD 21 00 00 DD 39 FD 21 00 00 FD 7E
+R 00 00 00 00 02 0C 02 00
+T 15 00 00 D6 04 30 3C 01 00 00 FD 5E 00 FD 34 00
+R 00 00 00 00 02 08 01 00
+T 23 00 26 00 6B 29 29 29 09 4D 44 AF 77 23 77 21
+R 00 00 00 00
+T 31 00 06 00 09 36 00 59 50 13 13 DD 7E 04 12 13
+R 00 00 00 00
+T 3F 00 DD 7E 05 12 21 04 00 09 DD 7E 06 77 23 DD
+R 00 00 00 00
+T 4D 00 7E 07 77 21 07 00 09 36 FF
+R 00 00 00 00
+T 56 00
+R 00 00 00 00
+T 56 00 DD E1 C9
+R 00 00 00 00
