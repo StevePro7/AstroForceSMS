@@ -4,7 +4,12 @@ S:G$intro1labels$0$0({12}DA6d,DG,SC:U),E,0,0
 S:G$palette_bin$0$0({16}DA16d,SC:U),D,0,0
 S:G$sinustable$0$0({256}DA256d,SC:U),D,0,0
 S:G$intro1script$0$0({250}DA250d,SC:U),D,0,0
+S:G$initenemyfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
 S:G$updatestagefunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
+S:G$stage8animpalette$0$0({14}DA14d,SC:U),D,0,0
+S:G$enemieswidth$0$0({86}DA86d,SC:U),D,0,0
+S:G$enemiesheight$0$0({86}DA86d,SC:U),D,0,0
+S:G$enemiesenergy$0$0({86}DA86d,SC:U),D,0,0
 S:G$intro1_psg$0$0({2369}DA2369d,SC:U),D,0,0
 S:Ffixedbank$__str_0$0$0({13}DA13d,SC:S),D,0,0
 S:Ffixedbank$__str_1$0$0({20}DA20d,SC:S),D,0,0

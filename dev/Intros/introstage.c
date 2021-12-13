@@ -22,7 +22,7 @@ void InitIntroScroll()
 void setIntroStageGraphics()
 {
 	// Load palette
-	LoadBGPalette( ( unsigned char * ) logopalette_bin, logopalette_bin_bank );
+	LoadBGPalette((unsigned char *)logopalette_bin, logopalette_bin_bank);
 
 	// Init script
 	InitScripts();
@@ -37,10 +37,10 @@ void setIntroStageGraphics()
 	InitTimeredLabels();
 
 	// Scroll
-	devkit_SMS_setBGScrollY( 192 );
+	devkit_SMS_setBGScrollY(192);
 }
 
-void InitIntroStage( unsigned char intronum )
+void InitIntroStage(unsigned char intronum)
 {
 	// General init
 	InitStage();
@@ -52,31 +52,33 @@ void InitIntroStage( unsigned char intronum )
 	setIntroStageGraphics();
 
 	// Too big here
-	switch( intronum )
+	switch (intronum)
 	{
-	case 1:InitIntro1Stage(); break;
-//	case 2:InitIntro2Stage(); break;
-//	case 3:InitFinishStage(); break;
-//	case 4:InitIntro3Stage(); break;
-//	case 5:InitIntro4Stage(); break;
+	case 1:
+		InitIntro1Stage();
+		break;
+		//	case 2:InitIntro2Stage(); break;
+		//	case 3:InitFinishStage(); break;
+		//	case 4:InitIntro3Stage(); break;
+		//	case 5:InitIntro4Stage(); break;
 	}
 
 	// Lo volvemos a encender
 	devkit_SMS_displayOn();
-	
+
 	// Scroller position
 	InitIntroScroll();
 
-	while( 1 )
+	while (1)
 	{
 		// The stage
 		UpdateStage();
 
 		// Timered labels
 		UpdateTimeredLabels();
-//
-//		// Script
-//		if( ( stageframe % 8 ) == 0 )
+
+		// Script
+		if( ( stageframe % 8 ) == 0 )
 //			UpdateScripts();
 //
 //		// Update stage, explosions, enemies
@@ -86,7 +88,7 @@ void InitIntroStage( unsigned char intronum )
 //			UpdateEnemies();
 //		}
 //
-//		// Only for stage 2 
+//		// Only for stage 2
 //		if( intronum == 2 )DoIntro2Scroll();
 //
 //		// Play?

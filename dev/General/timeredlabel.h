@@ -1,9 +1,8 @@
 #ifndef _TIMEREDLABEL_H_
 #define _TIMEREDLABEL_H_
 
-void timeredlabel_foo();
-
-//void ClearTimeredLabelLine( unsigned char y );
+// ADRIANA
+void ClearTimeredLabelLine( unsigned char y );
 void RemoveTimeredLabel( signed char a );
 void UpdateTimeredLabel( signed char a );
 void UpdateTimeredLabels();

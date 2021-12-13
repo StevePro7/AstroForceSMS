@@ -1,4 +1,9 @@
 #include "map.h"
+#include "../Enemies/enemy.h"
+#include "../devkit/_sms_manager.h"
+#include "../banks/fixedbank.h"
+#include "../funcs.h"
+#include "../vars.h"
 
 void map_foo()
 {
@@ -70,57 +75,57 @@ void map_foo()
 //	mapstatics = 0;
 //	DrawMap();
 //}
-//
-//void MoveMap( signed int mvx, signed int mvy )
-//{
-//	int a, c;
-//	unsigned int mpy2, mpy5;
-//
-//	// Movement
-//	mappositionx += mvx;
-//	mappositiony += mvy;
-//
-//	// Cache
-//	mpy2 = mappositiony >> 2;
-//	mpy5 = mpy2 >> 3;
-//
-//	// Update scroll
-//	UpdateScroll( ( mappositionx >> 2 ) % 256, mpy2 % 224 );
-//
-//	// Have to refill???
-//	if( mpy5 != oldmappositiony >> 5 )
-//	{
-//		// Change the bank
-//		changeBank( mapbank );
-//
-//		// Load lines
-//		a = mpy5%maplineslength;
-//
-//		// Load lines
-//		a = ( mpy5 ) % maplineslength;
-//		c = maplines[ a ];
-//		devkit_SMS_loadTileMap( 0, ( ( mpy2 ) % 224 ) >> 3, maptiles + ( c << 6 ), 64 );
-//
-//		// Change bank if needed
-//		changeBank( FIXEDBANKSLOT );
-//
-//		//OPTIMIZED TEST
-//		//UNSAFE_SMS_VRAMmemcpy64 (SMS_PNTAddress|((unsigned int)((mpy2%224)>>3)<<6), maptiles+(maplines[a]<<6));
-//
-//		// Put enemies if needed
-//		if( mapstatics != 0 )
-//		{
-//			// Put all enemies
-//			while( mapstatics[ mapstaticscount ] == a )
-//			{
-//				InitEnemy( mapstatics[ mapstaticscount + 2 ],
-//					mapstatics[ mapstaticscount + 3 ],
-//					mapstatics[ mapstaticscount + 1 ] );
-//				mapstaticscount += 4;
-//			}
-//		}
-//	}
-//
-//	// Save last position
-//	oldmappositiony = mappositiony;
-//}
+
+void MoveMap( signed int mvx, signed int mvy )
+{
+	int a, c;
+	unsigned int mpy2, mpy5;
+
+	// Movement
+	mappositionx += mvx;
+	mappositiony += mvy;
+
+	// Cache
+	mpy2 = mappositiony >> 2;
+	mpy5 = mpy2 >> 3;
+
+	// Update scroll
+	UpdateScroll( ( mappositionx >> 2 ) % 256, mpy2 % 224 );
+
+	// Have to refill???
+	if( mpy5 != oldmappositiony >> 5 )
+	{
+		// Change the bank
+		changeBank( mapbank );
+
+		// Load lines
+		a = mpy5%maplineslength;
+
+		// Load lines
+		a = ( mpy5 ) % maplineslength;
+		c = maplines[ a ];
+		devkit_SMS_loadTileMap( 0, ( ( mpy2 ) % 224 ) >> 3, maptiles + ( c << 6 ), 64 );
+
+		// Change bank if needed
+		changeBank( FIXEDBANKSLOT );
+
+		//OPTIMIZED TEST
+		//UNSAFE_SMS_VRAMmemcpy64 (SMS_PNTAddress|((unsigned int)((mpy2%224)>>3)<<6), maptiles+(maplines[a]<<6));
+
+		// Put enemies if needed
+		if( mapstatics != 0 )
+		{
+			// Put all enemies
+			while( mapstatics[ mapstaticscount ] == a )
+			{
+				InitEnemy( mapstatics[ mapstaticscount + 2 ],
+					mapstatics[ mapstaticscount + 3 ],
+					mapstatics[ mapstaticscount + 1 ] );
+				mapstaticscount += 4;
+			}
+		}
+	}
+
+	// Save last position
+	oldmappositiony = mappositiony;
+}

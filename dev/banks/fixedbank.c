@@ -1990,10 +1990,10 @@ const unsigned char *intro1labels[] =
 //extern void InitStage8BossC( enemy *en );
 //extern void InitRSGThing( enemy *en );
 //extern void InitStage8Lateral( enemy *en );
-//
-//const MyInitEnemyFunction initenemyfunctions[] =
-//{
-//	0,
+
+const MyInitEnemyFunction initenemyfunctions[] =
+{
+	0,
 //	InitWarning,
 //	0,
 //	0,
@@ -2079,8 +2079,8 @@ const unsigned char *intro1labels[] =
 //	InitRSGThing,
 //	0,
 //	InitStage8Lateral,
-//};
-//
+};
+
 //extern unsigned char UpdateWarning( enemy *en );
 //extern unsigned char UpdateIntroSidePlayer( enemy *en );
 //extern unsigned char UpdateIntroOvni( enemy *en );
@@ -3285,283 +3285,283 @@ const MyKillEnemyFunction updatestagefunctions[] =
 //	UpdateStage8BossB2,
 //	UpdateStage8BossB3
 //};
-//
-//// Palette changes for stage 8
-//const unsigned char stage8animpalette[] = { 0x3f,0x1f,0x0f,0x07,0x03,0x01,0x00,0x00,0x01,0x03,0x07,0x0f,0x1f,0x3f };
-//
-//
-//// New! presets for enemies
-//const unsigned char enemieswidth[] =
-//{
-//	0,
-//	0,	// 1-Warning
-//	0,	// 2-Intro ovni left
-//	0,	// 3-Intro ovni right
-//	0,	// 4-Intro side player
-//	0,	// 5-Intro star
-//	16,	// 6-Wave ship
-//	16, // 7-Rect ship
-//	16, // 8-Turn ship
-//	16, // 9-Bomb ship left
-//	16, // 10-Bomb ship right
-//	16, // 11-Spread ship
-//	40,	// 12-Stage 4 middle boss
-//	24, // 13-Stage 4 end boss
-//	16, // 14-WW2 Zeppelin
-//	16, // 15-WW2 Ship
-//	16, // 16-WW2PLANE_TYPE_A
-//	16, // 17-WW2PLANE_TYPE_B
-//	16, // 18-WW2PLANE_TYPE_C
-//	16, // 19-WW2PLANE_TYPE_D
-//	16, // 20-WW2PLANE_TYPE_E
-//	16, // 21-WW2PLANE_TYPE_F
-//	16, // 22-WW2TANKLEFT
-//	16, // 23-WW2TANKRIGHT
-//	40,	// 24-STAGE5ENDBOSS
-//	0,  // 25-INTRO3OBJECT
-//	16,	// 26-MONSTERBLOB
-//	24, // 27-MONSTERHEAD
-//	16, // 28-MONSTERMISSILLEFT
-//	16, // 29-MONSTERMISSILRIGHT
-//	48, // 30-STAGE7MIDDLEBOSS
-//	17,	// 31-STAGE7ENDBOSS
-//	0,	// 32-STAGE7OBJECT
-//	16,	// 33-FORTRESSSEARCHER
-//	16,	// 34-FORTRESSDOOR
-//	16,	// 35-FORTRESSWAVE
-//	16,	// 36-FORTRESSPHANTOM
-//	16, // 37-FORTRESSCANNONLEFT
-//	16, // 38-FORTRESSCANNONRIGHT
-//	40,	// 39-STAGE1MIDDLEBOSS
-//	40,	// 40-STAGE1ENDBOSS
-//	0,	// 41-STAGE4OBJECT
-//	40,	// 42-VULCANSTATION
-//	17,	// 43-VULCANVULCAN
-//	16, // 44-VULCANBIRD
-//	8,	// 45-VULCANLASER
-//	8, 	// 46-VULCANLAVA
-//	16,	// 47-VULCANTANKLEFT
-//	16,	// 48-VULCANTANKRIGHT
-//	16,	// 49-VULCANTANKTOP	
-//	48, // 50-STAGE2ENDBOSS	
-//	0,	// 51-STAGE2OBJECT
-//	24, // 52-SPACEASTEROIDBIG
-//	16, // 53-SPACEASTEROIDBIG
-//	8,	// 54-SPACEASTEROIDBIG
-//	24, // 55-SPACESTATION
-//	16,	// 56-SPACESHOOTER
-//	32,	// 57-STAGE3ENDBOSS
-//	40,	// 58-STAGE6ENDBOSS
-//	16, // 59-SKULLBONEA
-//	16, // 60-SKULLBONEB
-//	16, // 61-SKULLBONEC
-//	8,	// 62-STAGE5MISSILE
-//	17,	// 63-STAGE7ENDBOSSB
-//	16,	// 64-STAGE4ENDBOSSB
-//	24,	// 65-Stage 4 end boss C
-//	32,	// 66-STAGE3ENDBOSSB
-//	8,	// 67-STAGE3LASER
-//	8,	// 68-STAGE3LASER
-//	8,	// 69-STAGE3LASER
-//	8,	// 70-STAGE3LASER
-//	8,	// 71-STAGE3LASER
-//	8,	// 72-STAGE3LASER
-//	8,	// 73-STAGE3LASER
-//	8,	// 74-STAGE3LASER
-//	16,	// 75-STAGE1MIDDLEBOSSB	
-//	16,	// 76-STAGE1MIDDLEBOSSC
-//	40,	// 77-STAGE6ENDBOSSB
-//	0,  // 78-STAGE6OBJECT
-//	17,	// 79-STAGE8BOSSA
-//	32,	// 80-STAGE8BOSSB
-//	32,	// 81-STAGE8BOSSC
-//	16,	// 82-STAGE8SHOOTER
-//	16,	// 83-RSGTHING
-//	16,	// 84-WW2PLANEB
-//	16,	// 85-STAGE8LATERAL
-//};
-//
-//const unsigned char enemiesheight[] =
-//{
-//	0,
-//	0,	// 1-Warning
-//	0,	// 2-Intro ovni left
-//	0,	// 3-Intro ovni right
-//	0,	// 4-Intro side player
-//	0,	// 5-Intro star
-//	16,	// 6-Wave ship
-//	16,	// 7-Rect ship
-//	16,	// 8-Turn ship
-//	16,	// 9-Bomb ship left
-//	16,	// 10-Bomb ship right
-//	16,	// 11-Spread ship
-//	40,	// 12-Stage 4 middle boss
-//	48,	// 13-Stage 4 end boss
-//	24,	// 14-WW2 Zeppelin
-//	16,	// 15-WW2 Ship
-//	16,	// 16-WW2PLANE_TYPE_A
-//	16,	// 17-WW2PLANE_TYPE_B
-//	16,	// 18-WW2PLANE_TYPE_C
-//	16,	// 19-WW2PLANE_TYPE_D
-//	16,	// 20-WW2PLANE_TYPE_E
-//	16,	// 21-WW2PLANE_TYPE_F
-//	16, // 22-WW2TANKLEFT
-//	16, // 23-WW2TANKRIGHT	
-//	56, // 24-STAGE5ENDBOSS
-//	0,  // 25-INTRO3OBJECT
-//	16,	// 26-MONSTERBLOB
-//	24, // 27-MONSTERHEAD
-//	16, // 28-MONSTERMISSILLEFT
-//	16, // 29-MONSTERMISSILRIGHT
-//	32, // 30-STAGE7MIDDLEBOSS	
-//	17,	// 31-STAGE7ENDBOSS
-//	0,	// 32-STAGE7OBJECT
-//	16,	// 33-FORTRESSSEARCHER
-//	16,	// 34-FORTRESSDOOR
-//	16,	// 35-FORTRESSWAVE
-//	16,	// 36-FORTRESSPHANTOM
-//	16, // 37-FORTRESSCANNONLEFT
-//	16, // 38-FORTRESSCANNONRIGHT
-//	32,	// 39-STAGE1MIDDLEBOSS
-//	48,	// 40-STAGE1ENDBOSS
-//	0,	// 41-STAGE4OBJECT
-//	32,	// 42-VULCANSTATION
-//	17,	// 43-VULCANVULCAN
-//	16, // 44-VULCANBIRD
-//	48,	// 45-VULCANLASER
-//	8, 	// 46-VULCANLAVA
-//	16,	// 47-VULCANTANKLEFT
-//	16,	// 48-VULCANTANKRIGHT
-//	16,	// 49-VULCANTANKTOP	
-//	48, // 50-STAGE2ENDBOSS	
-//	0,	// 51-STAGE2OBJECT
-//	24, // 52-SPACEASTEROIDBIG
-//	16, // 53-SPACEASTEROIDBIG
-//	12,	// 54-SPACEASTEROIDBIG	
-//	24, // 55-SPACESTATION
-//	16,	// 56-SPACESHOOTER
-//	32,	// 57-STAGE3ENDBOSS
-//	56,	// 58-STAGE6ENDBOSS
-//	16, // 59-SKULLBONEA
-//	16, // 60-SKULLBONEB
-//	16, // 61-SKULLBONEC
-//	16,	// 62-STAGE5MISSILE
-//	17,	// 63-STAGE7ENDBOSSB
-//	8,	// 64-STAGE4ENDBOSSB
-//	48,	// 65-Stage 4 end boss C
-//	32,	// 66-STAGE3ENDBOSSB
-//	8,	// 67-STAGE3LASER
-//	8,	// 68-STAGE3LASER
-//	8,	// 69-STAGE3LASER
-//	8,	// 70-STAGE3LASER
-//	8,	// 71-STAGE3LASER
-//	8,	// 72-STAGE3LASER
-//	8,	// 73-STAGE3LASER
-//	8,	// 74-STAGE3LASER	
-//	16,	// 75-STAGE1MIDDLEBOSSB	
-//	16,	// 76-STAGE1MIDDLEBOSSC
-//	56,	// 77-STAGE6ENDBOSSB
-//	0,  // 78-STAGE6OBJECT
-//	0,	// 79-STAGE8BOSSA
-//	24,	// 80-STAGE8BOSSB
-//	32,	// 81-STAGE8BOSSC
-//	16,	// 82-STAGE8SHOOTER
-//	16,	// 83-RSGTHING
-//	16,	// 84-WW2PLANEB
-//	16,	// 85-STAGE8LATERAL
-//};
-//
-//const unsigned char enemiesenergy[] =
-//{
-//	0,
-//	255,	// 1-Warning
-//	0,		// 2-Intro ovni left
-//	0,		// 3-Intro ovni right
-//	0,		// 4-Intro side player
-//	0,		// 5-Intro star
-//	1,		// 6-Wave ship
-//	1,		// 7-Rect ship
-//	1,		// 8-Turn ship
-//	4,		// 9-Bomb ship left
-//	4,		// 10-Bomb ship right
-//	4,		// 11-Spread ship
-//	180,	// 12-Stage 4 middle boss
-//	200,	// 13-Stage 4 end boss
-//	8,		// 14-WW2 Zeppelin
-//	4,		// 15-WW2 Ship
-//	1,		// 16-WW2PLANE_TYPE_A
-//	1,		// 17-WW2PLANE_TYPE_B
-//	1,		// 18-WW2PLANE_TYPE_C
-//	1,		// 19-WW2PLANE_TYPE_D
-//	1,		// 20-WW2PLANE_TYPE_E
-//	1,		// 21-WW2PLANE_TYPE_F
-//	3, 		// 22-WW2TANKLEFT
-//	3, 		// 23-WW2TANKRIGHT	
-//	190,	// 24-STAGE5ENDBOSS
-//	255,  	// 25-INTRO3OBJECT
-//	2,		// 26-MONSTERBLOB
-//	16, 	// 27-MONSTERHEAD
-//	2, 		// 28-MONSTERMISSILLEFT
-//	2, 		// 29-MONSTERMISSILRIGHT	
-//	180, 	// 30-STAGE7MIDDLEBOSS
-//	150,	// 31-STAGE7ENDBOSS
-//	255,	// 32-STAGE7OBJECT
-//	1,		// 33-FORTRESSSEARCHER
-//	12,		// 34-FORTRESSDOOR
-//	255,	// 35-FORTRESSWAVE
-//	1,		// 36-FORTRESSPHANTOM
-//	2, 		// 37-FORTRESSCANNONLEFT
-//	2, 		// 38-FORTRESSCANNONRIGHT
-//	180,	// 39-STAGE1MIDDLEBOSS
-//	200,	// 40-STAGE1ENDBOSS
-//	255,	// 41-STAGE4OBJECT
-//	100,	// 42-VULCANSTATION
-//	255, 	// 43-VULCANVULCAN
-//	1, 		// 44-VULCANBIRD
-//	255,	// 45-VULCANLASER
-//	1,	 	// 46-VULCANLAVA
-//	3, 		// 47-VULCANTANKLEFT
-//	3, 		// 48-VULCANTANKRIGHT
-//	3, 		// 49-VULCANTANKTOP
-//	200, 	// 50-STAGE2ENDBOSS	
-//	255,	// 51-STAGE2OBJECT
-//	4, 		// 52-SPACEASTEROIDBIG
-//	2, 		// 53-SPACEASTEROIDBIG
-//	1,		// 54-SPACEASTEROIDBIG	
-//	140, 	// 55-SPACESTATION
-//	4, 		// 56-SPACESHOOTER
-//	160,	// 57-STAGE3ENDBOSS
-//	160,	// 58-STAGE6ENDBOSS
-//	2, 		// 59-SKULLBONEA
-//	2, 		// 60-SKULLBONEB
-//	2, 		// 61-SKULLBONEC
-//	255,	// 62-STAGE5MISSILE
-//	200,	// 63-STAGE7ENDBOSSB
-//	200,	// 64-STAGE4ENDBOSSB
-//	200,	// 65-Stage 4 end boss C
-//	160,	// 66-STAGE3ENDBOSSB
-//	255,	// 67-STAGE3LASER
-//	255,	// 68-STAGE3LASER
-//	255,	// 69-STAGE3LASER
-//	255,	// 70-STAGE3LASER
-//	255,	// 71-STAGE3LASER
-//	255,	// 72-STAGE3LASER
-//	255,	// 73-STAGE3LASER
-//	255,	// 74-STAGE3LASER
-//	4,		// 75-STAGE1MIDDLEBOSSB	
-//	4,		// 76-STAGE1MIDDLEBOSSC
-//	220,	// 77-STAGE6ENDBOSSB
-//	255,  	// 78-STAGE6OBJECT
-//	160,	// 79-STAGE8BOSSA
-//	160,	// 80-STAGE8BOSSB
-//	50,		// 81-STAGE8BOSSC
-//	4,		// 82-STAGE8SHOOTER
-//	3,		// 83-RSGTHING
-//	1,		// 84-WW2PLANEB
-//	1, 		// 85-STAGE8LATERAL
-//};
-//
-//
+
+// Palette changes for stage 8
+const unsigned char stage8animpalette[] = { 0x3f,0x1f,0x0f,0x07,0x03,0x01,0x00,0x00,0x01,0x03,0x07,0x0f,0x1f,0x3f };
+
+
+// New! presets for enemies
+const unsigned char enemieswidth[] =
+{
+	0,
+	0,	// 1-Warning
+	0,	// 2-Intro ovni left
+	0,	// 3-Intro ovni right
+	0,	// 4-Intro side player
+	0,	// 5-Intro star
+	16,	// 6-Wave ship
+	16, // 7-Rect ship
+	16, // 8-Turn ship
+	16, // 9-Bomb ship left
+	16, // 10-Bomb ship right
+	16, // 11-Spread ship
+	40,	// 12-Stage 4 middle boss
+	24, // 13-Stage 4 end boss
+	16, // 14-WW2 Zeppelin
+	16, // 15-WW2 Ship
+	16, // 16-WW2PLANE_TYPE_A
+	16, // 17-WW2PLANE_TYPE_B
+	16, // 18-WW2PLANE_TYPE_C
+	16, // 19-WW2PLANE_TYPE_D
+	16, // 20-WW2PLANE_TYPE_E
+	16, // 21-WW2PLANE_TYPE_F
+	16, // 22-WW2TANKLEFT
+	16, // 23-WW2TANKRIGHT
+	40,	// 24-STAGE5ENDBOSS
+	0,  // 25-INTRO3OBJECT
+	16,	// 26-MONSTERBLOB
+	24, // 27-MONSTERHEAD
+	16, // 28-MONSTERMISSILLEFT
+	16, // 29-MONSTERMISSILRIGHT
+	48, // 30-STAGE7MIDDLEBOSS
+	17,	// 31-STAGE7ENDBOSS
+	0,	// 32-STAGE7OBJECT
+	16,	// 33-FORTRESSSEARCHER
+	16,	// 34-FORTRESSDOOR
+	16,	// 35-FORTRESSWAVE
+	16,	// 36-FORTRESSPHANTOM
+	16, // 37-FORTRESSCANNONLEFT
+	16, // 38-FORTRESSCANNONRIGHT
+	40,	// 39-STAGE1MIDDLEBOSS
+	40,	// 40-STAGE1ENDBOSS
+	0,	// 41-STAGE4OBJECT
+	40,	// 42-VULCANSTATION
+	17,	// 43-VULCANVULCAN
+	16, // 44-VULCANBIRD
+	8,	// 45-VULCANLASER
+	8, 	// 46-VULCANLAVA
+	16,	// 47-VULCANTANKLEFT
+	16,	// 48-VULCANTANKRIGHT
+	16,	// 49-VULCANTANKTOP	
+	48, // 50-STAGE2ENDBOSS	
+	0,	// 51-STAGE2OBJECT
+	24, // 52-SPACEASTEROIDBIG
+	16, // 53-SPACEASTEROIDBIG
+	8,	// 54-SPACEASTEROIDBIG
+	24, // 55-SPACESTATION
+	16,	// 56-SPACESHOOTER
+	32,	// 57-STAGE3ENDBOSS
+	40,	// 58-STAGE6ENDBOSS
+	16, // 59-SKULLBONEA
+	16, // 60-SKULLBONEB
+	16, // 61-SKULLBONEC
+	8,	// 62-STAGE5MISSILE
+	17,	// 63-STAGE7ENDBOSSB
+	16,	// 64-STAGE4ENDBOSSB
+	24,	// 65-Stage 4 end boss C
+	32,	// 66-STAGE3ENDBOSSB
+	8,	// 67-STAGE3LASER
+	8,	// 68-STAGE3LASER
+	8,	// 69-STAGE3LASER
+	8,	// 70-STAGE3LASER
+	8,	// 71-STAGE3LASER
+	8,	// 72-STAGE3LASER
+	8,	// 73-STAGE3LASER
+	8,	// 74-STAGE3LASER
+	16,	// 75-STAGE1MIDDLEBOSSB	
+	16,	// 76-STAGE1MIDDLEBOSSC
+	40,	// 77-STAGE6ENDBOSSB
+	0,  // 78-STAGE6OBJECT
+	17,	// 79-STAGE8BOSSA
+	32,	// 80-STAGE8BOSSB
+	32,	// 81-STAGE8BOSSC
+	16,	// 82-STAGE8SHOOTER
+	16,	// 83-RSGTHING
+	16,	// 84-WW2PLANEB
+	16,	// 85-STAGE8LATERAL
+};
+
+const unsigned char enemiesheight[] =
+{
+	0,
+	0,	// 1-Warning
+	0,	// 2-Intro ovni left
+	0,	// 3-Intro ovni right
+	0,	// 4-Intro side player
+	0,	// 5-Intro star
+	16,	// 6-Wave ship
+	16,	// 7-Rect ship
+	16,	// 8-Turn ship
+	16,	// 9-Bomb ship left
+	16,	// 10-Bomb ship right
+	16,	// 11-Spread ship
+	40,	// 12-Stage 4 middle boss
+	48,	// 13-Stage 4 end boss
+	24,	// 14-WW2 Zeppelin
+	16,	// 15-WW2 Ship
+	16,	// 16-WW2PLANE_TYPE_A
+	16,	// 17-WW2PLANE_TYPE_B
+	16,	// 18-WW2PLANE_TYPE_C
+	16,	// 19-WW2PLANE_TYPE_D
+	16,	// 20-WW2PLANE_TYPE_E
+	16,	// 21-WW2PLANE_TYPE_F
+	16, // 22-WW2TANKLEFT
+	16, // 23-WW2TANKRIGHT	
+	56, // 24-STAGE5ENDBOSS
+	0,  // 25-INTRO3OBJECT
+	16,	// 26-MONSTERBLOB
+	24, // 27-MONSTERHEAD
+	16, // 28-MONSTERMISSILLEFT
+	16, // 29-MONSTERMISSILRIGHT
+	32, // 30-STAGE7MIDDLEBOSS	
+	17,	// 31-STAGE7ENDBOSS
+	0,	// 32-STAGE7OBJECT
+	16,	// 33-FORTRESSSEARCHER
+	16,	// 34-FORTRESSDOOR
+	16,	// 35-FORTRESSWAVE
+	16,	// 36-FORTRESSPHANTOM
+	16, // 37-FORTRESSCANNONLEFT
+	16, // 38-FORTRESSCANNONRIGHT
+	32,	// 39-STAGE1MIDDLEBOSS
+	48,	// 40-STAGE1ENDBOSS
+	0,	// 41-STAGE4OBJECT
+	32,	// 42-VULCANSTATION
+	17,	// 43-VULCANVULCAN
+	16, // 44-VULCANBIRD
+	48,	// 45-VULCANLASER
+	8, 	// 46-VULCANLAVA
+	16,	// 47-VULCANTANKLEFT
+	16,	// 48-VULCANTANKRIGHT
+	16,	// 49-VULCANTANKTOP	
+	48, // 50-STAGE2ENDBOSS	
+	0,	// 51-STAGE2OBJECT
+	24, // 52-SPACEASTEROIDBIG
+	16, // 53-SPACEASTEROIDBIG
+	12,	// 54-SPACEASTEROIDBIG	
+	24, // 55-SPACESTATION
+	16,	// 56-SPACESHOOTER
+	32,	// 57-STAGE3ENDBOSS
+	56,	// 58-STAGE6ENDBOSS
+	16, // 59-SKULLBONEA
+	16, // 60-SKULLBONEB
+	16, // 61-SKULLBONEC
+	16,	// 62-STAGE5MISSILE
+	17,	// 63-STAGE7ENDBOSSB
+	8,	// 64-STAGE4ENDBOSSB
+	48,	// 65-Stage 4 end boss C
+	32,	// 66-STAGE3ENDBOSSB
+	8,	// 67-STAGE3LASER
+	8,	// 68-STAGE3LASER
+	8,	// 69-STAGE3LASER
+	8,	// 70-STAGE3LASER
+	8,	// 71-STAGE3LASER
+	8,	// 72-STAGE3LASER
+	8,	// 73-STAGE3LASER
+	8,	// 74-STAGE3LASER	
+	16,	// 75-STAGE1MIDDLEBOSSB	
+	16,	// 76-STAGE1MIDDLEBOSSC
+	56,	// 77-STAGE6ENDBOSSB
+	0,  // 78-STAGE6OBJECT
+	0,	// 79-STAGE8BOSSA
+	24,	// 80-STAGE8BOSSB
+	32,	// 81-STAGE8BOSSC
+	16,	// 82-STAGE8SHOOTER
+	16,	// 83-RSGTHING
+	16,	// 84-WW2PLANEB
+	16,	// 85-STAGE8LATERAL
+};
+
+const unsigned char enemiesenergy[] =
+{
+	0,
+	255,	// 1-Warning
+	0,		// 2-Intro ovni left
+	0,		// 3-Intro ovni right
+	0,		// 4-Intro side player
+	0,		// 5-Intro star
+	1,		// 6-Wave ship
+	1,		// 7-Rect ship
+	1,		// 8-Turn ship
+	4,		// 9-Bomb ship left
+	4,		// 10-Bomb ship right
+	4,		// 11-Spread ship
+	180,	// 12-Stage 4 middle boss
+	200,	// 13-Stage 4 end boss
+	8,		// 14-WW2 Zeppelin
+	4,		// 15-WW2 Ship
+	1,		// 16-WW2PLANE_TYPE_A
+	1,		// 17-WW2PLANE_TYPE_B
+	1,		// 18-WW2PLANE_TYPE_C
+	1,		// 19-WW2PLANE_TYPE_D
+	1,		// 20-WW2PLANE_TYPE_E
+	1,		// 21-WW2PLANE_TYPE_F
+	3, 		// 22-WW2TANKLEFT
+	3, 		// 23-WW2TANKRIGHT	
+	190,	// 24-STAGE5ENDBOSS
+	255,  	// 25-INTRO3OBJECT
+	2,		// 26-MONSTERBLOB
+	16, 	// 27-MONSTERHEAD
+	2, 		// 28-MONSTERMISSILLEFT
+	2, 		// 29-MONSTERMISSILRIGHT	
+	180, 	// 30-STAGE7MIDDLEBOSS
+	150,	// 31-STAGE7ENDBOSS
+	255,	// 32-STAGE7OBJECT
+	1,		// 33-FORTRESSSEARCHER
+	12,		// 34-FORTRESSDOOR
+	255,	// 35-FORTRESSWAVE
+	1,		// 36-FORTRESSPHANTOM
+	2, 		// 37-FORTRESSCANNONLEFT
+	2, 		// 38-FORTRESSCANNONRIGHT
+	180,	// 39-STAGE1MIDDLEBOSS
+	200,	// 40-STAGE1ENDBOSS
+	255,	// 41-STAGE4OBJECT
+	100,	// 42-VULCANSTATION
+	255, 	// 43-VULCANVULCAN
+	1, 		// 44-VULCANBIRD
+	255,	// 45-VULCANLASER
+	1,	 	// 46-VULCANLAVA
+	3, 		// 47-VULCANTANKLEFT
+	3, 		// 48-VULCANTANKRIGHT
+	3, 		// 49-VULCANTANKTOP
+	200, 	// 50-STAGE2ENDBOSS	
+	255,	// 51-STAGE2OBJECT
+	4, 		// 52-SPACEASTEROIDBIG
+	2, 		// 53-SPACEASTEROIDBIG
+	1,		// 54-SPACEASTEROIDBIG	
+	140, 	// 55-SPACESTATION
+	4, 		// 56-SPACESHOOTER
+	160,	// 57-STAGE3ENDBOSS
+	160,	// 58-STAGE6ENDBOSS
+	2, 		// 59-SKULLBONEA
+	2, 		// 60-SKULLBONEB
+	2, 		// 61-SKULLBONEC
+	255,	// 62-STAGE5MISSILE
+	200,	// 63-STAGE7ENDBOSSB
+	200,	// 64-STAGE4ENDBOSSB
+	200,	// 65-Stage 4 end boss C
+	160,	// 66-STAGE3ENDBOSSB
+	255,	// 67-STAGE3LASER
+	255,	// 68-STAGE3LASER
+	255,	// 69-STAGE3LASER
+	255,	// 70-STAGE3LASER
+	255,	// 71-STAGE3LASER
+	255,	// 72-STAGE3LASER
+	255,	// 73-STAGE3LASER
+	255,	// 74-STAGE3LASER
+	4,		// 75-STAGE1MIDDLEBOSSB	
+	4,		// 76-STAGE1MIDDLEBOSSC
+	220,	// 77-STAGE6ENDBOSSB
+	255,  	// 78-STAGE6OBJECT
+	160,	// 79-STAGE8BOSSA
+	160,	// 80-STAGE8BOSSB
+	50,		// 81-STAGE8BOSSC
+	4,		// 82-STAGE8SHOOTER
+	3,		// 83-RSGTHING
+	1,		// 84-WW2PLANEB
+	1, 		// 85-STAGE8LATERAL
+};
+
+
 const unsigned char intro1_psg[] = {
 	0x8c,0x5f,0x90,0xa0,0x40,0xbf,0xc0,0x40,0xdf,0xe2,0xf0,0x39,0x91,0xf1,0x39,0x92,
 	0xf2,0x38,0x93,0xf3,0x39,0x94,0xf4,0x38,0x95,0xf5,0x39,0x96,0xf6,0x39,0x97,0xf7,

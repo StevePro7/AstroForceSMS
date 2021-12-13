@@ -8,6 +8,6 @@ void map_foo();
 //void SetStaticEnemies( unsigned int *p, unsigned char b );
 //void DrawMap();
 //void InitMap( unsigned char mb );
-//void MoveMap( signed int mvx, signed int mvy );
+void MoveMap( signed int mvx, signed int mvy );
 
 #endif//_MAP_H_

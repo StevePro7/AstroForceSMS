@@ -107,8 +107,8 @@ extern const unsigned char *intro1labels[];
 //
 //// FUNCTION POInTERS
 #define initenemyfunctions_bank FIXEDBANKSLOT;
-//extern const MyInitEnemyFunction initenemyfunctions[];
-//
+extern const MyInitEnemyFunction initenemyfunctions[];
+
 #define updateenemyfunctions_bank FIXEDBANKSLOT;
 //extern const MyUpdateEnemyFunction updateenemyfunctions[];
 //
@@ -166,10 +166,10 @@ extern const unsigned char palette_bin[];
 //// Stage 4
 //extern const unsigned char stage4_stormpalette[];
 //extern const unsigned char stage4_seapalette[];
-//
-//// Stage 8
-//extern const unsigned char stage8animpalette[];
-//
+
+// Stage 8
+extern const unsigned char stage8animpalette[];
+
 //// Stage 1
 //extern const unsigned char stage1_flashpalette[];
 //
@@ -244,12 +244,12 @@ extern const MyKillEnemyFunction updatestagefunctions[];
 //extern const signed char stage8bosscshootspeedy[];
 //extern const signed char stage8bossbshootspeedx[];
 //extern const signed char stage8bossbshootspeedy[];
-//
-//extern const unsigned char enemieswidth[];
-//extern const unsigned char enemiesheight[];
-//extern const unsigned char enemiesenergy[];
-//
-//
+
+extern const unsigned char enemieswidth[];
+extern const unsigned char enemiesheight[];
+extern const unsigned char enemiesenergy[];
+
+
 extern const unsigned char	intro1_psg[];
 #define				intro1_psg_size 2369
 #define				intro1_psg_bank 15

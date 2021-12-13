@@ -1,4 +1,7 @@
 #include "scripter.h"
+#include "../devkit/_sms_manager.h"
+#include "../banks/fixedbank.h"
+#include "../funcs.h"
 #include "../vars.h"
 
 void scripter_foo()
@@ -27,7 +30,7 @@ void InitScript( unsigned char *scripter, unsigned char **labels )
 		sc->scripterloop = -1;
 	}
 }
-
+//
 //// Remove enemy
 //void RemoveScript( signed char a )
 //{
@@ -81,7 +84,7 @@ void InitScript( unsigned char *scripter, unsigned char **labels )
 //			updatescrollact();
 //			break;
 //		case SCRIPT_INITSCRIPT:
-//			InitScript( ( unsigned char * ) spawners[ sa ], 0 );
+//			//InitScript( ( unsigned char * ) spawners[ sa ], 0 );
 //			break;
 //		case SCRIPT_SETLABEL:
 //			InitTimeredLabel( scr->scripterlabels[ sa ], sb, sc );

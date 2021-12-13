@@ -3,9 +3,9 @@
 
 void scroller_foo();
 
-//void InitScroller();
-//void AddScrollers( signed int *scr, unsigned char num );
-//void UpdateScroller();
-//void updatescrollact();
+void InitScroller();
+void AddScrollers( signed int *scr, unsigned char num );
+void UpdateScroller();
+void updatescrollact();
 
 #endif//_SCROLLER_H_

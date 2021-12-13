@@ -4,10 +4,6 @@
 #include "../vars.h"
 #include <string.h>
 
-void timeredlabel_foo()
-{
-}
-
 void ClearTimeredLabelLine( unsigned char y )
 {
 	unsigned char a;
