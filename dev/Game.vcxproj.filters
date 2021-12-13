@@ -153,6 +153,90 @@
     <ClCompile Include="General\mikgamesstage.c">
       <Filter>Source Files\General</Filter>
     </ClCompile>
+    <ClCompile Include="Intros\introstage.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemies\enemy.c">
+      <Filter>Source Files\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemies\enemyshoot.c">
+      <Filter>Source Files\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Fortresses\fortresscannon.c">
+      <Filter>Source Files\Fortresses</Filter>
+    </ClCompile>
+    <ClCompile Include="Fortresses\fortressdoor.c">
+      <Filter>Source Files\Fortresses</Filter>
+    </ClCompile>
+    <ClCompile Include="Fortresses\fortressphantom.c">
+      <Filter>Source Files\Fortresses</Filter>
+    </ClCompile>
+    <ClCompile Include="Fortresses\fortresssearcher.c">
+      <Filter>Source Files\Fortresses</Filter>
+    </ClCompile>
+    <ClCompile Include="Fortresses\fortresswave.c">
+      <Filter>Source Files\Fortresses</Filter>
+    </ClCompile>
+    <ClCompile Include="General\barrom.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\bombship.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\explosion.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\finishstage.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\gameoverstage.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\jukeboxstage.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\logostage.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\map.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\powerup.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\rectship.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\rsgthing.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\scripter.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\scroller.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\selectorstage.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\skullbone.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\spreadship.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\timeredlabel.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\turnship.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\warning.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="General\waveship.c">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat">
@@ -227,6 +311,90 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="General\mikgamesstage.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\introstage.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemies\enemy.h">
+      <Filter>Header Files\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemies\enemyshoot.h">
+      <Filter>Header Files\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Fortresses\fortresscannon.h">
+      <Filter>Header Files\Fortresses</Filter>
+    </ClInclude>
+    <ClInclude Include="Fortresses\fortressdoor.h">
+      <Filter>Header Files\Fortresses</Filter>
+    </ClInclude>
+    <ClInclude Include="Fortresses\fortressphantom.h">
+      <Filter>Header Files\Fortresses</Filter>
+    </ClInclude>
+    <ClInclude Include="Fortresses\fortresssearcher.h">
+      <Filter>Header Files\Fortresses</Filter>
+    </ClInclude>
+    <ClInclude Include="Fortresses\fortresswave.h">
+      <Filter>Header Files\Fortresses</Filter>
+    </ClInclude>
+    <ClInclude Include="General\barrom.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\bombship.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\explosion.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\finishstage.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\gameoverstage.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\jukeboxstage.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\logostage.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\map.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\powerup.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\rectship.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\rsgthing.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\scripter.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\scroller.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\selectorstage.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\skullbone.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\spreadship.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\timeredlabel.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\turnship.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\warning.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="General\waveship.h">
       <Filter>Header Files\General</Filter>
     </ClInclude>
   </ItemGroup>
