@@ -1,6 +1,6 @@
 ;!FILE mikgamesstage.asm
 XL2
-H 9 areas 61 global symbols
+H 9 areas 62 global symbols
 M mikgamesstage
 O -mz80
 S _devkit_PORT_A_KEY_1 Ref0000
@@ -35,37 +35,38 @@ S A$mikgamesstage$143 Def005B
 S A$mikgamesstage$134 Def0052
 S A$mikgamesstage$107 Def0033
 S C$mikgamesstage.c$41$2$60 Def0057
-S A$mikgamesstage$171 Def007C
-S A$mikgamesstage$162 Def0078
 S A$mikgamesstage$153 Def0069
 S A$mikgamesstage$144 Def005C
 S A$mikgamesstage$135 Def0053
-S C$mikgamesstage.c$42$2$60 Def0069
 S A$mikgamesstage$145 Def0060
 S A$mikgamesstage$136 Def0056
 S C$mikgamesstage.c$34$2$60 Def0036
 S A$mikgamesstage$146 Def0063
 S A$mikgamesstage$128 Def0049
 S A$mikgamesstage$119 Def0039
+S C$mikgamesstage.c$53$2$60 Def0079
+S A$mikgamesstage$174 Def007C
+S A$mikgamesstage$165 Def0078
 S A$mikgamesstage$147 Def0064
 S A$mikgamesstage$129 Def004C
-S C$mikgamesstage.c$45$2$60 Def006A
+S C$mikgamesstage.c$43$3$61 Def0069
 S C$mikgamesstage.c$10$0$0 Def0000
-S A$mikgamesstage$166 Def0079
 S A$mikgamesstage$157 Def006A
 S A$mikgamesstage$148 Def0065
 S C$mikgamesstage.c$37$2$60 Def0039
 S A$mikgamesstage$158 Def006C
 S A$mikgamesstage$149 Def0068
+S C$mikgamesstage.c$47$2$60 Def006A
 S C$mikgamesstage.c$38$2$60 Def0049
 S C$mikgamesstage.c$31$1$59 Def0036
 S C$mikgamesstage.c$22$1$59 Def0013
 S C$mikgamesstage.c$13$1$59 Def0000
 S A$mikgamesstage$159 Def0070
-S C$mikgamesstage.c$50$1$59 Def007C
-S C$mikgamesstage.c$48$2$60 Def0079
+S A$mikgamesstage$169 Def0079
 S C$mikgamesstage.c$25$1$59 Def002B
 S C$mikgamesstage.c$16$1$59 Def0003
+S C$mikgamesstage.c$49$3$62 Def0078
+S C$mikgamesstage.c$55$1$59 Def007C
 S C$mikgamesstage.c$28$1$59 Def0033
 S C$mikgamesstage.c$19$1$59 Def0006
 S A$mikgamesstage$90 Def001F

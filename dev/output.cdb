@@ -1485,10 +1485,11 @@ L:C$mikgamesstage.c$34$2$60:AC7
 L:C$mikgamesstage.c$37$2$60:ACA
 L:C$mikgamesstage.c$38$2$60:ADA
 L:C$mikgamesstage.c$41$2$60:AE8
-L:C$mikgamesstage.c$42$2$60:AFA
-L:C$mikgamesstage.c$45$2$60:AFB
-L:C$mikgamesstage.c$48$2$60:B0A
-L:C$mikgamesstage.c$50$1$59:B0D
+L:C$mikgamesstage.c$43$3$61:AFA
+L:C$mikgamesstage.c$47$2$60:AFB
+L:C$mikgamesstage.c$49$3$62:B09
+L:C$mikgamesstage.c$53$2$60:B0A
+L:C$mikgamesstage.c$55$1$59:B0D
 L:XG$InitMikGamesStage$0$0:B0D
 L:C$funcs.c$50$0$0:B0F
 L:C$funcs.c$52$1$59:B0F

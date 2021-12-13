@@ -1286,19 +1286,19 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000AF6  A$mikgamesstage$148                mikgamesstage
      00000AF9  A$mikgamesstage$149                mikgamesstage
      00000AFA  A$mikgamesstage$153                mikgamesstage
-     00000AFA  C$mikgamesstage.c$42$2$60          mikgamesstage
+     00000AFA  C$mikgamesstage.c$43$3$61          mikgamesstage
      00000AFB  A$mikgamesstage$157                mikgamesstage
-     00000AFB  C$mikgamesstage.c$45$2$60          mikgamesstage
+     00000AFB  C$mikgamesstage.c$47$2$60          mikgamesstage
      00000AFD  A$mikgamesstage$158                mikgamesstage
      00000B01  A$mikgamesstage$159                mikgamesstage
      00000B04  A$mikgamesstage$160                mikgamesstage
      00000B06  A$mikgamesstage$161                mikgamesstage
-     00000B09  A$mikgamesstage$162                mikgamesstage
-     00000B0A  A$mikgamesstage$166                mikgamesstage
-     00000B0A  C$mikgamesstage.c$48$2$60          mikgamesstage
-     00000B0D  A$mikgamesstage$171                mikgamesstage
-     00000B0D  C$mikgamesstage.c$50$1$59          mikgamesstage
-     00000B0D  XG$InitMikGamesStage$0$0           mikgamesstage
+     00000B09  A$mikgamesstage$165                mikgamesstage
+     00000B09  C$mikgamesstage.c$49$3$62          mikgamesstage
+     00000B0A  A$mikgamesstage$169                mikgamesstage
+     00000B0A  C$mikgamesstage.c$53$2$60          mikgamesstage
+     00000B0D  A$mikgamesstage$174                mikgamesstage
+     00000B0D  C$mikgamesstage.c$55$1$59          mikgamesstage
 ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
 Hexadecimal  [32-Bits]
 
@@ -1308,6 +1308,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000B0D  XG$InitMikGamesStage$0$0           mikgamesstage
      00000B0F  A$funcs$131                        funcs
      00000B0F  C$funcs.c$50$0$0                   funcs
      00000B0F  C$funcs.c$52$1$59                  funcs
@@ -1358,7 +1359,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000B4A  A$funcs$186                        funcs
      00000B4E  A$funcs$187                        funcs
      00000B51  A$funcs$188                        funcs
-     00000B52  A$funcs$192                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
 Hexadecimal  [32-Bits]
 
@@ -1368,6 +1368,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000B52  A$funcs$192                        funcs
      00000B52  C$funcs.c$61$2$62                  funcs
      00000B55  A$funcs$193                        funcs
      00000B56  A$funcs$194                        funcs
@@ -1418,7 +1419,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000B9F  A$funcs$259                        funcs
      00000BA0  A$funcs$260                        funcs
      00000BA3  A$funcs$261                        funcs
-     00000BA4  A$funcs$262                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
 Hexadecimal  [32-Bits]
 
@@ -1428,6 +1428,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000BA4  A$funcs$262                        funcs
      00000BA5  A$funcs$263                        funcs
      00000BA6  A$funcs$264                        funcs
      00000BA7  A$funcs$268                        funcs
@@ -1478,7 +1479,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000BED  A$funcs$328                        funcs
      00000BEE  A$funcs$329                        funcs
      00000BEF  A$funcs$330                        funcs
-     00000BF2  A$funcs$331                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
 Hexadecimal  [32-Bits]
 
@@ -1488,6 +1488,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000BF2  A$funcs$331                        funcs
      00000BF3  A$funcs$332                        funcs
      00000BF4  A$funcs$333                        funcs
      00000BF5  A$funcs$337                        funcs
@@ -1538,7 +1539,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C2E  A$funcs$393                        funcs
      00000C2F  A$funcs$394                        funcs
      00000C32  A$funcs$395                        funcs
-     00000C33  A$funcs$399                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
 Hexadecimal  [32-Bits]
 
@@ -1548,6 +1548,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000C33  A$funcs$399                        funcs
      00000C33  C$funcs.c$92$1$70                  funcs
      00000C34  A$funcs$400                        funcs
      00000C35  A$funcs$401                        funcs
@@ -1598,7 +1599,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000C67  XG$LoadTiles$0$0                   funcs
      00000C68  A$funcs$475                        funcs
      00000C68  C$funcs.c$109$1$72                 funcs
-     00000C68  C$funcs.c$112$1$74                 funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
 Hexadecimal  [32-Bits]
 
@@ -1608,6 +1608,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000C68  C$funcs.c$112$1$74                 funcs
      00000C68  G$LoadGraphics$0$0                 funcs
      00000C68  _LoadGraphics                      funcs
      00000C6B  A$funcs$476                        funcs
@@ -1658,7 +1659,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000CA3  A$funcs$533                        funcs
      00000CA4  A$funcs$537                        funcs
      00000CA4  C$funcs.c$125$1$76                 funcs
-     00000CA5  A$funcs$538                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
 Hexadecimal  [32-Bits]
 
@@ -1668,6 +1668,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000CA5  A$funcs$538                        funcs
      00000CA6  A$funcs$539                        funcs
      00000CA7  A$funcs$540                        funcs
      00000CA8  A$funcs$541                        funcs
@@ -1718,7 +1719,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000CD3  A$funcs$624                        funcs
      00000CD4  A$funcs$625                        funcs
      00000CD5  A$funcs$626                        funcs
-     00000CD8  A$funcs$627                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
 Hexadecimal  [32-Bits]
 
@@ -1728,6 +1728,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000CD8  A$funcs$627                        funcs
      00000CD9  A$funcs$631                        funcs
      00000CD9  C$funcs.c$155$1$80                 funcs
      00000CDC  A$funcs$635                        funcs
@@ -1778,7 +1779,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D0C  C$funcs.c$180$1$83                 funcs
      00000D0F  A$funcs$717                        funcs
      00000D0F  C$funcs.c$183$1$83                 funcs
-     00000D10  A$funcs$718                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
 Hexadecimal  [32-Bits]
 
@@ -1788,6 +1788,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000D10  A$funcs$718                        funcs
      00000D11  A$funcs$719                        funcs
      00000D12  A$funcs$720                        funcs
      00000D15  A$funcs$721                        funcs
@@ -1838,7 +1839,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D4D  A$funcs$791                        funcs
      00000D4E  A$funcs$792                        funcs
      00000D50  A$funcs$796                        funcs
-     00000D50  C$funcs.c$202$1$87                 funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
 Hexadecimal  [32-Bits]
 
@@ -1848,6 +1848,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000D50  C$funcs.c$202$1$87                 funcs
      00000D51  A$funcs$797                        funcs
      00000D53  A$funcs$798                        funcs
      00000D55  A$funcs$799                        funcs
@@ -1898,7 +1899,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000D94  C$funcs.c$215$2$90                 funcs
      00000D95  A$funcs$863                        funcs
      00000D96  A$funcs$864                        funcs
-     00000D99  A$funcs$865                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
 Hexadecimal  [32-Bits]
 
@@ -1908,6 +1908,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000D99  A$funcs$865                        funcs
      00000D9A  A$funcs$866                        funcs
      00000D9B  A$funcs$867                        funcs
      00000D9E  A$funcs$868                        funcs
@@ -1958,7 +1959,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000DE2  A$funcs$924                        funcs
      00000DE3  A$funcs$925                        funcs
      00000DE4  A$funcs$926                        funcs
-     00000DE5  A$funcs$927                        funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
 Hexadecimal  [32-Bits]
 
@@ -1968,6 +1968,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000DE5  A$funcs$927                        funcs
      00000DE6  A$funcs$928                        funcs
      00000DE8  A$funcs$929                        funcs
      00000DE9  A$funcs$930                        funcs
@@ -2018,7 +2019,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E1E  A$funcs$1012                       funcs
      00000E1E  C$funcs.c$260$1$93                 funcs
      00000E21  A$funcs$1013                       funcs
-     00000E22  A$funcs$1014                       funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
 Hexadecimal  [32-Bits]
 
@@ -2028,6 +2028,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000E22  A$funcs$1014                       funcs
      00000E24  A$funcs$1015                       funcs
      00000E25  A$funcs$1016                       funcs
      00000E28  A$funcs$1017                       funcs
@@ -2078,7 +2079,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000E62  A$funcs$1091                       funcs
      00000E63  A$funcs$1092                       funcs
      00000E64  A$funcs$1093                       funcs
-     00000E67  A$funcs$1094                       funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
 Hexadecimal  [32-Bits]
 
@@ -2088,6 +2088,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000E67  A$funcs$1094                       funcs
      00000E68  A$funcs$1095                       funcs
      00000E69  A$funcs$1096                       funcs
      00000E6C  A$funcs$1097                       funcs
@@ -2138,7 +2139,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000EA6  C$funcs.c$307$1$97                 funcs
      00000EA9  A$funcs$1170                       funcs
      00000EAB  A$funcs$1171                       funcs
-     00000EAC  A$funcs$1172                       funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 37.
 Hexadecimal  [32-Bits]
 
@@ -2148,6 +2148,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000EAC  A$funcs$1172                       funcs
      00000EAF  A$funcs$1173                       funcs
      00000EB0  A$funcs$1177                       funcs
      00000EB0  C$funcs.c$310$1$97                 funcs
@@ -2198,7 +2199,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000F00  A$funcs$1241                       funcs
      00000F02  A$funcs$1245                       funcs
      00000F02  C$funcs.c$335$2$98                 funcs
-     00000F05  A$funcs$1246                       funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 38.
 Hexadecimal  [32-Bits]
 
@@ -2208,6 +2208,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000F05  A$funcs$1246                       funcs
      00000F07  A$funcs$1251                       funcs
      00000F07  C$funcs.c$340$2$99                 funcs
      00000F0A  A$funcs$1252                       funcs
@@ -2258,7 +2259,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000F40  A$funcs$1319                       funcs
      00000F41  A$funcs$1320                       funcs
      00000F44  A$funcs$1321                       funcs
-     00000F45  A$funcs$1326                       funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 39.
 Hexadecimal  [32-Bits]
 
@@ -2268,6 +2268,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000F45  A$funcs$1326                       funcs
      00000F45  C$funcs.c$356$1$101                funcs
      00000F45  XG$PlaySound$0$0                   funcs
      00000F46  A$funcs$1336                       funcs
@@ -2318,7 +2319,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00000F93  C$funcs.c$376$2$105                funcs
      00000F96  A$funcs$1401                       funcs
      00000F99  A$funcs$1405                       funcs
-     00000F99  C$funcs.c$377$2$105                funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 40.
 Hexadecimal  [32-Bits]
 
@@ -2328,6 +2328,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00000F99  C$funcs.c$377$2$105                funcs
      00000F9C  A$funcs$1406                       funcs
      00000F9F  A$funcs$1411                       funcs
      00000F9F  C$funcs.c$382$1$104                funcs
@@ -2378,7 +2379,6 @@ _CODE                               00000200    000014CE =        5326. bytes (R
      00001043  _UNSAFE_SMS_VRAMmemcpy64           SMSlib_UNSAFE
      00001060  _UNSAFE_SMS_VRAMmemcpy128          SMSlib_UNSAFE
      0000107D  _SMS_init                          SMSlib
-     000010D1  _VDPReg_init                       SMSlib
 ASxxxx Linker V03.00 + NoICE + sdld,  page 41.
 Hexadecimal  [32-Bits]
 
@@ -2388,6 +2388,7 @@ _CODE                               00000200    000014CE =        5326. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     000010D1  _VDPReg_init                       SMSlib
      000010DC  _SMS_VDPType                       SMSlib
      000010E4  _SMS_VDPturnOnFeature              SMSlib
      000010FB  _SMS_VDPturnOffFeature             SMSlib
