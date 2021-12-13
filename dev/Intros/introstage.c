@@ -3,6 +3,7 @@
 #include "../General/explosion.h"
 #include "../General/scripter.h"
 #include "../General/timeredlabel.h"
+#include "../Intros/intro1stage.h"
 #include "../devkit/_sms_manager.h"
 #include "../banks/bank3.h"
 #include "../funcs.h"
@@ -53,7 +54,7 @@ void InitIntroStage( unsigned char intronum )
 	// Too big here
 	switch( intronum )
 	{
-//	case 1:InitIntro1Stage(); break;
+	case 1:InitIntro1Stage(); break;
 //	case 2:InitIntro2Stage(); break;
 //	case 3:InitFinishStage(); break;
 //	case 4:InitIntro3Stage(); break;
@@ -63,8 +64,8 @@ void InitIntroStage( unsigned char intronum )
 	// Lo volvemos a encender
 	devkit_SMS_displayOn();
 	
-//	// Scroller position
-//	InitIntroScroll();
+	// Scroller position
+	InitIntroScroll();
 //
 //	while( 1 )
 //	{

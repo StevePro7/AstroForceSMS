@@ -32,8 +32,8 @@ extern const unsigned char sinustable[];
 //extern const unsigned char *ww2plane_patterns[];
 //
 #define intro1script_bank FIXEDBANKSLOT
-//extern const unsigned char intro1script[];
-//extern const unsigned char *intro1labels[];
+extern const unsigned char intro1script[];
+extern const unsigned char *intro1labels[];
 //
 #define intro4script_bank FIXEDBANKSLOT
 //extern const unsigned char intro4script[];
