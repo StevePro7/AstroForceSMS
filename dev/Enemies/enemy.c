@@ -1,4 +1,6 @@
 #include "enemy.h"
+#include "../vars.h"
+#include "../vars.h"
 
 void enemy_foo()
 {
@@ -210,10 +212,10 @@ void enemy_foo()
 //			( *( initenemyfunctions[ t ] ) )( en );
 //	}
 //}
-//
-//// Init all enemys
-//void InitEnemies()
-//{
-//	numenemies = 0;
-//}
-//
+
+// Init all enemys
+void InitEnemies()
+{
+	numenemies = 0;
+}
+

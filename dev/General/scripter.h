@@ -3,7 +3,7 @@
 
 void scripter_foo();
 
-//void InitScripts();
+void InitScripts();
 //void InitScript( unsigned char *scripter, unsigned char **labels );
 //void RemoveScript( signed char a );
 //void UpdateScript( unsigned char a );

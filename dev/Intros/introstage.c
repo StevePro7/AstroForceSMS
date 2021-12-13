@@ -1,43 +1,49 @@
 #include "introstage.h"
+#include "../Enemies/enemy.h"
+#include "../General/scripter.h"
+#include "../devkit/_sms_manager.h"
+#include "../banks/bank3.h"
+#include "../funcs.h"
+#include "../vars.h"
 
 void introstage_foo()
 {
 }
 
-//void InitIntroScroll()
-//{
-//	introstageposx = 0;
-//	introstagevelx = 0;
-//}
-//
-//void setIntroStageGraphics()
-//{
-//	// Load palette
-//	LoadBGPalette( ( unsigned char * ) logopalette_bin, logopalette_bin_bank );
-//
-//	// Init script
-//	InitScripts();
-//
-//	// Init enemies
-//	InitEnemies();
-//
-//	// Init explosions
-//	InitExplosions();
-//
-//	// Labels
-//	InitTimeredLabels();
-//
-//	// Scroll
-//	devkit_SMS_setBGScrollY( 192 );
-//}
-//
-//void InitIntroStage( unsigned char intronum )
-//{
-//	// General init
-//	InitStage();
-//
-//	// Lo volvemos a apagar
-//	devkit_SMS_displayOff();
+void InitIntroScroll()
+{
+	introstageposx = 0;
+	introstagevelx = 0;
+}
+
+void setIntroStageGraphics()
+{
+	// Load palette
+	LoadBGPalette( ( unsigned char * ) logopalette_bin, logopalette_bin_bank );
+
+	// Init script
+	InitScripts();
+
+	// Init enemies
+	InitEnemies();
+
+	//// Init explosions
+	//InitExplosions();
+
+	//// Labels
+	//InitTimeredLabels();
+
+	// Scroll
+	devkit_SMS_setBGScrollY( 192 );
+}
+
+void InitIntroStage( unsigned char intronum )
+{
+	// General init
+	InitStage();
+
+	// Lo volvemos a apagar
+	devkit_SMS_displayOff();
 //
 //	// Too big here
 //	setIntroStageGraphics();
@@ -51,10 +57,10 @@ void introstage_foo()
 //	case 4:InitIntro3Stage(); break;
 //	case 5:InitIntro4Stage(); break;
 //	}
-//
-//	// Lo volvemos a encender
-//	devkit_SMS_displayOn();
-//	
+
+	// Lo volvemos a encender
+	devkit_SMS_displayOn();
+	
 //	// Scroller position
 //	InitIntroScroll();
 //
@@ -83,8 +89,8 @@ void introstage_foo()
 //		// Play?
 //		if( ( keystatus&devkit_PORT_A_KEY_1() ) || ( !devkit_PSGGetStatus() ) )
 //			return;
-//
-//		// Update psg
-//		UpdatePSG();
+
+		// Update psg
+		UpdatePSG();
 //	}
-//}
+}

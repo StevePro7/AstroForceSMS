@@ -11,6 +11,6 @@ void enemy_foo();
 //void UpdateEnemy( unsigned char a );
 //void UpdateEnemies();
 //void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
-//void InitEnemies();
+void InitEnemies();
 
 #endif//_ENEMY_H_

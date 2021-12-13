@@ -1,14 +1,15 @@
 #include "scripter.h"
+#include "../vars.h"
 
 void scripter_foo()
 {
 }
 
-//void InitScripts()
-//{
-//	numscripts = 0;
-//}
-//
+void InitScripts()
+{
+	numscripts = 0;
+}
+
 //void InitScript( unsigned char *scripter, unsigned char **labels )
 //{
 //	script *sc;
