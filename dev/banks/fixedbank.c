@@ -1,3 +1,6 @@
+#ifndef _FIXEDBANK_H_
+#define _FIXEDBANK_H_
+
 #include "fixedbank.h"
 #include "..\defines.h"
 
@@ -5,59 +8,59 @@
 #pragma warning(disable: 4047)
 #else
 #endif
-//
-//// Player shoots speeds
-//const signed char playershootspeedsx[] = { -SPEEDPLAYERSHOOT_SIDE,0,0,SPEEDPLAYERSHOOT_SIDE };
-//const signed char playershootspeedsy[] = { SPEEDPLAYERSHOOT_SIDE_VERTICAL,SPEEDPLAYERSHOOT_NORMAL,0,SPEEDPLAYERSHOOT_SIDE_VERTICAL };
-//
-//// Final stage effects
-//const unsigned char stage6_fade_pink[] = { 0x22,0x12,0x11,0x01,0x00,0x01,0x11,0x12 };
-//const unsigned char stage6_fade_blue[] = { 0x20,0x10,0x00,0x00,0x00,0x00,0x10,0x20 };
-//
-//// Skull shooting patterns
-//const signed char skullshootvelx[] = { -3,-2,-1,0,1,2,3 };
-//const signed char skullshootvely[] = { 1,2,3,4,3,2,1 };
-//const signed char skullbshootvelx[] = { 4,3,2,1,0,-1,-2,-3,-4,-3,-2,-1,0,1,2,3 };
-//const signed char skullbshootvely[] = { 0,1,2,3,4,3,2,1,0,-1,-2,-3,-4,-3,-2,-1 };
-//
+
+// Player shoots speeds
+const signed char playershootspeedsx[] = { -SPEEDPLAYERSHOOT_SIDE,0,0,SPEEDPLAYERSHOOT_SIDE };
+const signed char playershootspeedsy[] = { SPEEDPLAYERSHOOT_SIDE_VERTICAL,SPEEDPLAYERSHOOT_NORMAL,0,SPEEDPLAYERSHOOT_SIDE_VERTICAL };
+
+// Final stage effects
+const unsigned char stage6_fade_pink[] = { 0x22,0x12,0x11,0x01,0x00,0x01,0x11,0x12 };
+const unsigned char stage6_fade_blue[] = { 0x20,0x10,0x00,0x00,0x00,0x00,0x10,0x20 };
+
+// Skull shooting patterns
+const signed char skullshootvelx[] = { -3,-2,-1,0,1,2,3 };
+const signed char skullshootvely[] = { 1,2,3,4,3,2,1 };
+const signed char skullbshootvelx[] = { 4,3,2,1,0,-1,-2,-3,-4,-3,-2,-1,0,1,2,3 };
+const signed char skullbshootvely[] = { 0,1,2,3,4,3,2,1,0,-1,-2,-3,-4,-3,-2,-1 };
+
 // Paleta por defecto
 const unsigned char palette_bin[] = { 0x00,0x3F,0x00,0x10,0x3A,0x38,0x3E,0x0C,0x08,0x04,0x1F,0x2F,0x1B,0x07,0x02,0x16 };
-//
-//// Stage 4
-//const unsigned char stage4_stormpalette[] = { 0x02,0x02,0x02,0x02,0x3f,0x28,0x14,0x02,0x02,0x02,0x02,0x02,0x3f,0x28,0x14,0x02 };
-//const unsigned char stage4_seapalette[] = { 0x38,0x28,0x20,0x28 };
-//
-//// Stage 1
-//const unsigned char stage1_flashpalette[] = { 0x21,0x20,0x10,0x00,0x00,0x10,0x20,0x21 };
-//
-//// Arac moving
-//const unsigned char aracmovingx[] = { 2,6,7,3,2,6,1,5 };
-//const unsigned char aracmovingy[] = { 5,5,2,6,3,5,2,4 };
-//const unsigned int aracmovingt[] = { 45,20,40,30,45,60,30,20 };
-//
-//// Cross A moving
-//const unsigned char crossamovingx[] = { 4,6,2,5,6,4,2,3 };
-//const unsigned char crossamovingy[] = { 6,3,4,6,4,1,3,4 };
-//const unsigned int crossamovingt[] = { 60,80,70,30,50,20,40,70 };
-//
-//// Cross B moving
-//const unsigned char crossbmovingx[] = { 4,2,4,6,3,6,5,5 };
-//const unsigned char crossbmovingy[] = { 6,4,3,2,6,5,3,3 };
-//const unsigned int crossbmovingt[] = { 60,80,70,30,50,20,40,70 };
-//
-//// Fire end boss pattern
-//const signed char stage2endbossshootpatternx[] = { -5,-3,-1,1,3,5 };
-//const signed char stage2endbossshootpatterny[] = { 1,3,5,5,3,1 };
-//
-//// Lasers for enemy of stage 3
-//const unsigned char stage3enemylaserposx[] = { 20,40,40,40,20,0,0,0 };
-//const unsigned char stage3enemylaserposy[] = { 0,0,20,40,40,40,20,0 };
-//const unsigned char stage3laservelx[] = { 8,12,14,12,8,4,2,4 };
-//const unsigned char stage3laservely[] = { 2,4,8,12,14,12,8,4 };
-//
-//// Balls
-//const unsigned char Stage1MiddleBossBPatternX[] = { 1,3,5,7,9,11,13,15 };
-//const unsigned char Stage1MiddleBossBPatternY[] = { 2,3,4,5,5,4,3,2 };
+
+// Stage 4
+const unsigned char stage4_stormpalette[] = { 0x02,0x02,0x02,0x02,0x3f,0x28,0x14,0x02,0x02,0x02,0x02,0x02,0x3f,0x28,0x14,0x02 };
+const unsigned char stage4_seapalette[] = { 0x38,0x28,0x20,0x28 };
+
+// Stage 1
+const unsigned char stage1_flashpalette[] = { 0x21,0x20,0x10,0x00,0x00,0x10,0x20,0x21 };
+
+// Arac moving
+const unsigned char aracmovingx[] = { 2,6,7,3,2,6,1,5 };
+const unsigned char aracmovingy[] = { 5,5,2,6,3,5,2,4 };
+const unsigned int aracmovingt[] = { 45,20,40,30,45,60,30,20 };
+
+// Cross A moving
+const unsigned char crossamovingx[] = { 4,6,2,5,6,4,2,3 };
+const unsigned char crossamovingy[] = { 6,3,4,6,4,1,3,4 };
+const unsigned int crossamovingt[] = { 60,80,70,30,50,20,40,70 };
+
+// Cross B moving
+const unsigned char crossbmovingx[] = { 4,2,4,6,3,6,5,5 };
+const unsigned char crossbmovingy[] = { 6,4,3,2,6,5,3,3 };
+const unsigned int crossbmovingt[] = { 60,80,70,30,50,20,40,70 };
+
+// Fire end boss pattern
+const signed char stage2endbossshootpatternx[] = { -5,-3,-1,1,3,5 };
+const signed char stage2endbossshootpatterny[] = { 1,3,5,5,3,1 };
+
+// Lasers for enemy of stage 3
+const unsigned char stage3enemylaserposx[] = { 20,40,40,40,20,0,0,0 };
+const unsigned char stage3enemylaserposy[] = { 0,0,20,40,40,40,20,0 };
+const unsigned char stage3laservelx[] = { 8,12,14,12,8,4,2,4 };
+const unsigned char stage3laservely[] = { 2,4,8,12,14,12,8,4 };
+
+// Balls
+const unsigned char Stage1MiddleBossBPatternX[] = { 1,3,5,7,9,11,13,15 };
+const unsigned char Stage1MiddleBossBPatternY[] = { 2,3,4,5,5,4,3,2 };
 
 // 0 to 32, 32 amplitude
 const unsigned char sinustable[] =
@@ -121,9 +124,9 @@ const unsigned char sinustable[] =
 //	ending_psg,
 //	gameover_psg
 //};
-//
-//const unsigned char jukebox_repeat[] = { 0,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,0 };
-//
+
+const unsigned char jukebox_repeat[] = { 0,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,0 };
+
 //const char jukebox_banks[] =
 //{
 //	logo_psg_bank,
@@ -148,103 +151,103 @@ const unsigned char sinustable[] =
 //	ending_psg_bank,
 //	gameover_psg_bank
 //};
-//
-//const unsigned char *jukebox_names[] =
-//{
-//	"TITLE SCREEN ",
-//	"INTRO PART 1 ",
-//	"INTRO PART 2 ",
-//	"INTRO PART 3 ",
-//	"SELECT STAGE ",
-//	"SWEET FIELDS ",
-//	"VOLCANO FURY ",
-//	"JUNGLE WAVES ",
-//	"CLOUDY CITY  ",
-//	"AIR ASSAULT  ",
-//	"TOKAI FOREVER",
-//	"SPACE STATION",
-//	"INTO FORTRESS",
-//	"REAL DEAL    ",
-//	"ALIEN TRAP   ",
-//	"ESCAPE       ",
-//	"NO REFUGE    ",
-//	"ODD BOSS     ",
-//	"EVEN BOSS    ",
-//	"GOOD ENDING  ",
-//	"BAD ENDING   "
-//};
-//
-//const unsigned char selectorstatebasetiles[] = { 4,32,36,64,68 };
-//const unsigned char *selectornamestage[] = { " JUNGLE ","  CITY  "," VULCAN ","AIRBASE","  CAVE  ", };
-//const unsigned char selectormarkx[] = { 0,5,0,5 };
-//const unsigned char selectormarky[] = { 14,14,9,9 };
-//const unsigned char selectormarkt[] = { 17,25,9,1 };
-//
-////////////////////////////////////////////////////
-//// INTRO 4 SCRIPT
-//
-//const unsigned char intro4script[] =
-//{
-//	10,SCRIPT_SETEXPLOSION,100,45,1,
-//	11,SCRIPT_SETEXPLOSION,100,85,1,
-//	12,SCRIPT_SETEXPLOSION,120,65,1,
-//	13,SCRIPT_SETEXPLOSION,140,45,1,
-//	14,SCRIPT_SETEXPLOSION,100,45,1,
-//	15,SCRIPT_SETEXPLOSION,120,85,1,
-//	16,SCRIPT_SETEXPLOSION,140,65,1,
-//	17,SCRIPT_SETEXPLOSION,100,85,1,
-//	18,SCRIPT_SETEXPLOSION,120,65,1,
-//	19,SCRIPT_SETEXPLOSION,140,45,1,
-//	20,SCRIPT_SETEXPLOSION,100,45,1,
-//	21,SCRIPT_SETEXPLOSION,120,85,1,
-//	22,SCRIPT_SETEXPLOSION,140,65,1,
-//	23,SCRIPT_SETEXPLOSION,100,85,1,
-//	24,SCRIPT_SETEXPLOSION,120,65,1,
-//	25,SCRIPT_SETEXPLOSION,140,45,1,
-//	26,SCRIPT_SETEXPLOSION,100,45,1,
-//	27,SCRIPT_SETEXPLOSION,120,85,1,
-//	28,SCRIPT_SETEXPLOSION,140,65,1,
-//	29,SCRIPT_SETEXPLOSION,100,85,1,
-//	30,SCRIPT_SETEXPLOSION,120,65,1,
-//	31,SCRIPT_SETEXPLOSION,140,45,1,
-//	32,SCRIPT_SETEXPLOSION,100,45,1,
-//	33,SCRIPT_SETEXPLOSION,120,85,1,
-//	34,SCRIPT_SETEXPLOSION,140,65,1,
-//	35,SCRIPT_SETEXPLOSION,100,85,1,
-//	36,SCRIPT_SETEXPLOSION,120,65,1,
-//	37,SCRIPT_SETEXPLOSION,140,45,1,
-//	38,SCRIPT_SETEXPLOSION,100,45,1,
-//	39,SCRIPT_SETEXPLOSION,120,85,1,
-//	40,SCRIPT_SETEXPLOSION,140,65,1,
-//	41,SCRIPT_SETPALETTE,3,0x34,0,
-//	41,SCRIPT_SETPALETTE,9,0x3e,0,
-//	41,SCRIPT_SETPALETTE,2,0x39,0,
-//	41,SCRIPT_SETPALETTE,7,0x15,0,
-//	41,SCRIPT_SETPALETTE,8,0x15,0,
-//	41,SCRIPT_SETPALETTE,12,0x15,0,
-//	41,SCRIPT_SETPALETTE,15,0x15,0,
-//	41,SCRIPT_SETPALETTE,0,0x15,0,
-//	42,SCRIPT_SETPALETTE,3,0x39,0,
-//	42,SCRIPT_SETPALETTE,9,0x3f,0,
-//	42,SCRIPT_SETPALETTE,2,0x3e,0,
-//	42,SCRIPT_SETPALETTE,7,0x3e,0,
-//	42,SCRIPT_SETPALETTE,8,0x3e,0,
-//	42,SCRIPT_SETPALETTE,12,0x3e,0,
-//	42,SCRIPT_SETPALETTE,15,0x3e,0,
-//	42,SCRIPT_SETPALETTE,0,0x3e,0,
-//	43,SCRIPT_SETPALETTE,3,0x3f,0,
-//	43,SCRIPT_SETPALETTE,9,0x3f,0,
-//	43,SCRIPT_SETPALETTE,2,0x3f,0,
-//	43,SCRIPT_SETPALETTE,7,0x3f,0,
-//	43,SCRIPT_SETPALETTE,8,0x3f,0,
-//	43,SCRIPT_SETPALETTE,12,0x3f,0,
-//	43,SCRIPT_SETPALETTE,15,0x3f,0,
-//	43,SCRIPT_SETPALETTE,0,0x3f,0,
-//	44,SCRIPT_FILLBACKGROUND,0,0,0,
-//	45,SCRIPT_SETPALETTE,0,0x39,0,
-//	45,SCRIPT_SETPALETTE,0,0x15,0,
-//	45,SCRIPT_SETPALETTE,0,0x00,0,
-//	46,SCRIPT_END,0,0,0 };
+
+const unsigned char *jukebox_names[] =
+{
+	"TITLE SCREEN ",
+	"INTRO PART 1 ",
+	"INTRO PART 2 ",
+	"INTRO PART 3 ",
+	"SELECT STAGE ",
+	"SWEET FIELDS ",
+	"VOLCANO FURY ",
+	"JUNGLE WAVES ",
+	"CLOUDY CITY  ",
+	"AIR ASSAULT  ",
+	"TOKAI FOREVER",
+	"SPACE STATION",
+	"INTO FORTRESS",
+	"REAL DEAL    ",
+	"ALIEN TRAP   ",
+	"ESCAPE       ",
+	"NO REFUGE    ",
+	"ODD BOSS     ",
+	"EVEN BOSS    ",
+	"GOOD ENDING  ",
+	"BAD ENDING   "
+};
+
+const unsigned char selectorstatebasetiles[] = { 4,32,36,64,68 };
+const unsigned char *selectornamestage[] = { " JUNGLE ","  CITY  "," VULCAN ","AIRBASE","  CAVE  ", };
+const unsigned char selectormarkx[] = { 0,5,0,5 };
+const unsigned char selectormarky[] = { 14,14,9,9 };
+const unsigned char selectormarkt[] = { 17,25,9,1 };
+
+//////////////////////////////////////////////////
+// INTRO 4 SCRIPT
+
+const unsigned char intro4script[] =
+{
+	10,SCRIPT_SETEXPLOSION,100,45,1,
+	11,SCRIPT_SETEXPLOSION,100,85,1,
+	12,SCRIPT_SETEXPLOSION,120,65,1,
+	13,SCRIPT_SETEXPLOSION,140,45,1,
+	14,SCRIPT_SETEXPLOSION,100,45,1,
+	15,SCRIPT_SETEXPLOSION,120,85,1,
+	16,SCRIPT_SETEXPLOSION,140,65,1,
+	17,SCRIPT_SETEXPLOSION,100,85,1,
+	18,SCRIPT_SETEXPLOSION,120,65,1,
+	19,SCRIPT_SETEXPLOSION,140,45,1,
+	20,SCRIPT_SETEXPLOSION,100,45,1,
+	21,SCRIPT_SETEXPLOSION,120,85,1,
+	22,SCRIPT_SETEXPLOSION,140,65,1,
+	23,SCRIPT_SETEXPLOSION,100,85,1,
+	24,SCRIPT_SETEXPLOSION,120,65,1,
+	25,SCRIPT_SETEXPLOSION,140,45,1,
+	26,SCRIPT_SETEXPLOSION,100,45,1,
+	27,SCRIPT_SETEXPLOSION,120,85,1,
+	28,SCRIPT_SETEXPLOSION,140,65,1,
+	29,SCRIPT_SETEXPLOSION,100,85,1,
+	30,SCRIPT_SETEXPLOSION,120,65,1,
+	31,SCRIPT_SETEXPLOSION,140,45,1,
+	32,SCRIPT_SETEXPLOSION,100,45,1,
+	33,SCRIPT_SETEXPLOSION,120,85,1,
+	34,SCRIPT_SETEXPLOSION,140,65,1,
+	35,SCRIPT_SETEXPLOSION,100,85,1,
+	36,SCRIPT_SETEXPLOSION,120,65,1,
+	37,SCRIPT_SETEXPLOSION,140,45,1,
+	38,SCRIPT_SETEXPLOSION,100,45,1,
+	39,SCRIPT_SETEXPLOSION,120,85,1,
+	40,SCRIPT_SETEXPLOSION,140,65,1,
+	41,SCRIPT_SETPALETTE,3,0x34,0,
+	41,SCRIPT_SETPALETTE,9,0x3e,0,
+	41,SCRIPT_SETPALETTE,2,0x39,0,
+	41,SCRIPT_SETPALETTE,7,0x15,0,
+	41,SCRIPT_SETPALETTE,8,0x15,0,
+	41,SCRIPT_SETPALETTE,12,0x15,0,
+	41,SCRIPT_SETPALETTE,15,0x15,0,
+	41,SCRIPT_SETPALETTE,0,0x15,0,
+	42,SCRIPT_SETPALETTE,3,0x39,0,
+	42,SCRIPT_SETPALETTE,9,0x3f,0,
+	42,SCRIPT_SETPALETTE,2,0x3e,0,
+	42,SCRIPT_SETPALETTE,7,0x3e,0,
+	42,SCRIPT_SETPALETTE,8,0x3e,0,
+	42,SCRIPT_SETPALETTE,12,0x3e,0,
+	42,SCRIPT_SETPALETTE,15,0x3e,0,
+	42,SCRIPT_SETPALETTE,0,0x3e,0,
+	43,SCRIPT_SETPALETTE,3,0x3f,0,
+	43,SCRIPT_SETPALETTE,9,0x3f,0,
+	43,SCRIPT_SETPALETTE,2,0x3f,0,
+	43,SCRIPT_SETPALETTE,7,0x3f,0,
+	43,SCRIPT_SETPALETTE,8,0x3f,0,
+	43,SCRIPT_SETPALETTE,12,0x3f,0,
+	43,SCRIPT_SETPALETTE,15,0x3f,0,
+	43,SCRIPT_SETPALETTE,0,0x3f,0,
+	44,SCRIPT_FILLBACKGROUND,0,0,0,
+	45,SCRIPT_SETPALETTE,0,0x39,0,
+	45,SCRIPT_SETPALETTE,0,0x15,0,
+	45,SCRIPT_SETPALETTE,0,0x00,0,
+	46,SCRIPT_END,0,0,0 };
 
 
 //////////////////////////////////////////////////
@@ -3712,3 +3715,5 @@ const unsigned char intro1_psg[] = {
 	0x09,0x00,0x8c,0x5f,0x90,0x26,0x09,0x00,0x26,0x09,0x00,0x19,0x09,0x00,0x09,0x4b,
 	0x02,0x17,0x0b,0x00,0x8c,0x5f,0x90,0x19,0x09,0x00,0x09,0x4b,0x02,0x17,0x0b,0x00,
 	0x00 };
+
+#endif//_FIXEDBANK_H_

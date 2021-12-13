@@ -5,10 +5,10 @@
 #include "..\defines.h"
 
 #define FIXEDBANKSLOT 15
-//
-//extern signed char playershootspeedsx[];
-//extern signed char playershootspeedsy[];
-//
+
+extern signed char playershootspeedsx[];
+extern signed char playershootspeedsy[];
+
 //extern const unsigned char selectorstatebasetiles[];
 //extern const unsigned char *selectornamestage[];
 //extern const unsigned char selectormarkx[];
@@ -17,7 +17,7 @@
 //
 extern const unsigned char sinustable[];
 //extern const char *jukebox_songs[];
-//extern const unsigned char jukebox_repeat[];
+extern const unsigned char jukebox_repeat[];
 //extern const char jukebox_banks[];
 //extern const unsigned char *jukebox_names[];
 //
@@ -162,17 +162,17 @@ extern const MyInitEnemyFunction initenemyfunctions[];
 //
 // Paleta por defecto
 extern const unsigned char palette_bin[];
-//
-//// Stage 4
-//extern const unsigned char stage4_stormpalette[];
-//extern const unsigned char stage4_seapalette[];
+
+// Stage 4
+extern const unsigned char stage4_stormpalette[];
+extern const unsigned char stage4_seapalette[];
 
 // Stage 8
 extern const unsigned char stage8animpalette[];
 
-//// Stage 1
-//extern const unsigned char stage1_flashpalette[];
-//
+// Stage 1
+extern const unsigned char stage1_flashpalette[];
+
 //// Arac moving
 //extern const unsigned char aracmovingx[];
 //extern const unsigned char aracmovingy[];
