@@ -237,6 +237,186 @@
     <ClCompile Include="General\waveship.c">
       <Filter>Source Files\General</Filter>
     </ClCompile>
+    <ClCompile Include="Intros\intro1stage.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Intros\intro2stage.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Intros\intro3object.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Intros\intro3stage.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Intros\intro4stage.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Intros\introovni.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Intros\introsideplayer.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Intros\introstar.c">
+      <Filter>Source Files\Intros</Filter>
+    </ClCompile>
+    <ClCompile Include="Monsters\monsterblob.c">
+      <Filter>Source Files\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Monsters\monsterhead.c">
+      <Filter>Source Files\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Monsters\monstermissil.c">
+      <Filter>Source Files\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Players\player.c">
+      <Filter>Source Files\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="Players\playershoot.c">
+      <Filter>Source Files\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="Players\playstage.c">
+      <Filter>Source Files\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="Spaces\spaceasteroid.c">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Spaces\spaceshooter.c">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Spaces\spacestation.c">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage1.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage1endboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage1middleboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage1middlebossb.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage1middlebossc.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage2.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage2endboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage2object.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage3.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage3endboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage3laser.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage3star.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage4.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage4endboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage4endbossb.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage4middleboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage4object.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage5.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage5endboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage5missile.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage6.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage6endboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage6endbossb.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage6object.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage7.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage7endboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage7middleboss.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage7object.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage8.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage8bossa.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage8bossb.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage8bossc.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Stages\stage8lateral.c">
+      <Filter>Source Files\Stages</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulcans\vulcanbird.c">
+      <Filter>Source Files\Vulcans</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulcans\vulcanlaser.c">
+      <Filter>Source Files\Vulcans</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulcans\vulcanlava.c">
+      <Filter>Source Files\Vulcans</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulcans\vulcanstation.c">
+      <Filter>Source Files\Vulcans</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulcans\vulcantank.c">
+      <Filter>Source Files\Vulcans</Filter>
+    </ClCompile>
+    <ClCompile Include="Vulcans\vulcanvulcan.c">
+      <Filter>Source Files\Vulcans</Filter>
+    </ClCompile>
+    <ClCompile Include="Wars\ww2plane.c">
+      <Filter>Source Files\Wars</Filter>
+    </ClCompile>
+    <ClCompile Include="Wars\ww2planeb.c">
+      <Filter>Source Files\Wars</Filter>
+    </ClCompile>
+    <ClCompile Include="Wars\ww2ship.c">
+      <Filter>Source Files\Wars</Filter>
+    </ClCompile>
+    <ClCompile Include="Wars\ww2zeppelin.c">
+      <Filter>Source Files\Wars</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat">
@@ -396,6 +576,186 @@
     </ClInclude>
     <ClInclude Include="General\waveship.h">
       <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\intro1stage.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\intro2stage.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\intro3object.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\intro3stage.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\intro4stage.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\introovni.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\introsideplayer.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Intros\introstar.h">
+      <Filter>Header Files\Intros</Filter>
+    </ClInclude>
+    <ClInclude Include="Monsters\monsterblob.h">
+      <Filter>Header Files\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Monsters\monsterhead.h">
+      <Filter>Header Files\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Monsters\monstermissil.h">
+      <Filter>Header Files\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="Players\player.h">
+      <Filter>Header Files\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="Players\playershoot.h">
+      <Filter>Header Files\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="Players\playstage.h">
+      <Filter>Header Files\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="Spaces\spaceasteroid.h">
+      <Filter>Header Files\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Spaces\spaceshooter.h">
+      <Filter>Header Files\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Spaces\spacestation.h">
+      <Filter>Header Files\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage1.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage1endboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage1middleboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage1middlebossb.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage1middlebossc.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage2.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage2endboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage2object.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage3.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage3endboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage3laser.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage3star.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage4.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage4endboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage4endbossb.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage4middleboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage4object.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage5.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage5endboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage5missile.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage6.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage6endboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage6endbossb.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage6object.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage7.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage7endboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage7middleboss.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage7object.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage8.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage8bossa.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage8bossb.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage8bossc.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Stages\stage8lateral.h">
+      <Filter>Header Files\Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulcans\vulcanbird.h">
+      <Filter>Header Files\Vulcans</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulcans\vulcanlaser.h">
+      <Filter>Header Files\Vulcans</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulcans\vulcanlava.h">
+      <Filter>Header Files\Vulcans</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulcans\vulcanstation.h">
+      <Filter>Header Files\Vulcans</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulcans\vulcantank.h">
+      <Filter>Header Files\Vulcans</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulcans\vulcanvulcan.h">
+      <Filter>Header Files\Vulcans</Filter>
+    </ClInclude>
+    <ClInclude Include="Wars\ww2plane.h">
+      <Filter>Header Files\Wars</Filter>
+    </ClInclude>
+    <ClInclude Include="Wars\ww2planeb.h">
+      <Filter>Header Files\Wars</Filter>
+    </ClInclude>
+    <ClInclude Include="Wars\ww2ship.h">
+      <Filter>Header Files\Wars</Filter>
+    </ClInclude>
+    <ClInclude Include="Wars\ww2zeppelin.h">
+      <Filter>Header Files\Wars</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
