@@ -1,4 +1,9 @@
 #include "explosion.h"
+#include "../banks/bank2.h"
+#include "../banks/bank5.h"
+#include "../defines.h"
+#include "../funcs.h"
+#include "../vars.h"
 
 void explosion_foo()
 {
@@ -98,22 +103,22 @@ void explosion_foo()
 //	}
 //}
 //
-//// Init explosion sprite
-//void InitExplosionSprite()
-//{
-//	// Explosion sprite
-//	LoadSprite( littleexplosion_psgcompr, LITTLEEXPLOSIONBASE, littleexplosion_psgcompr_bank );
-//	LoadSprite( bigexplosion_psgcompr, BIGEXPLOSIONBASE, bigexplosion_psgcompr_bank );
-//}
-//
-//// Init all explosions
-//void InitExplosions()
-//{
-//	InitExplosionSprite();
-//	numexplosions = 0;
-//	spawnedexplosiontime = 0;
-//}
-//
+// Init explosion sprite
+void InitExplosionSprite()
+{
+	// Explosion sprite
+	LoadSprite( littleexplosion_psgcompr, LITTLEEXPLOSIONBASE, littleexplosion_psgcompr_bank );
+	LoadSprite( bigexplosion_psgcompr, BIGEXPLOSIONBASE, bigexplosion_psgcompr_bank );
+}
+
+// Init all explosions
+void InitExplosions()
+{
+	InitExplosionSprite();
+	numexplosions = 0;
+	spawnedexplosiontime = 0;
+}
+
 //void InitSpawnedExplosion( unsigned char x, unsigned char y, unsigned char w, unsigned char h )
 //{
 //	spawnedexplosionposx = x;

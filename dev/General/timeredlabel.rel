@@ -1,14 +1,24 @@
 ;!FILE timeredlabel.asm
 XL2
-H 9 areas 7 global symbols
+H 9 areas 11 global symbols
 M timeredlabel
 O -mz80
+S _numtimeredlabels Ref0000
 S .__.ABS. Def0000
-A _CODE size 1 flags 0 addr 0
+A _CODE size 7 flags 0 addr 0
+S G$InitTimeredLabels$0$0 Def0001
+S _InitTimeredLabels Def0001
+S A$timeredlabel$60 Def0000
+S XG$InitTimeredLabels$0$0 Def0006
+S A$timeredlabel$73 Def0001
+S C$timeredlabel.c$90$1$5 Def0001
+S A$timeredlabel$74 Def0004
+S C$timeredlabel.c$91$1$5 Def0006
+S C$timeredlabel.c$88$0$0 Def0001
 S G$timeredlabel_foo$0$0 Def0000
-S A$timeredlabel$59 Def0000
-S C$timeredlabel.c$3$0$0 Def0000
-S C$timeredlabel.c$5$0$0 Def0000
+S C$timeredlabel.c$4$0$0 Def0000
+S A$timeredlabel$79 Def0006
+S C$timeredlabel.c$6$0$0 Def0000
 S _timeredlabel_foo Def0000
 S XG$timeredlabel_foo$0$0 Def0000
 A _DATA size 0 flags 0 addr 0
@@ -23,3 +33,7 @@ T 00 00
 R 00 00 00 00
 T 00 00 C9
 R 00 00 00 00
+T 01 00
+R 00 00 00 00
+T 01 00 21 00 00 36 00 C9
+R 00 00 00 00 02 03 00 00

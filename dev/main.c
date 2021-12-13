@@ -10,7 +10,7 @@ void main()
 	while( 1 )
 	{
 		// Mikgames
-		InitMikGamesStage();
+		//InitMikGamesStage();		// TODO uncomment
 
 		// Game intro
 		InitIntroStage( 1 );

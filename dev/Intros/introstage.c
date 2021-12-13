@@ -1,6 +1,8 @@
 #include "introstage.h"
 #include "../Enemies/enemy.h"
+#include "../General/explosion.h"
 #include "../General/scripter.h"
+#include "../General/timeredlabel.h"
 #include "../devkit/_sms_manager.h"
 #include "../banks/bank3.h"
 #include "../funcs.h"
@@ -27,11 +29,11 @@ void setIntroStageGraphics()
 	// Init enemies
 	InitEnemies();
 
-	//// Init explosions
-	//InitExplosions();
+	// Init explosions
+	InitExplosions();
 
-	//// Labels
-	//InitTimeredLabels();
+	// Labels
+	InitTimeredLabels();
 
 	// Scroll
 	devkit_SMS_setBGScrollY( 192 );
@@ -44,19 +46,19 @@ void InitIntroStage( unsigned char intronum )
 
 	// Lo volvemos a apagar
 	devkit_SMS_displayOff();
-//
-//	// Too big here
-//	setIntroStageGraphics();
-//
-//	// Too big here
-//	switch( intronum )
-//	{
+
+	// Too big here
+	setIntroStageGraphics();
+
+	// Too big here
+	switch( intronum )
+	{
 //	case 1:InitIntro1Stage(); break;
 //	case 2:InitIntro2Stage(); break;
 //	case 3:InitFinishStage(); break;
 //	case 4:InitIntro3Stage(); break;
 //	case 5:InitIntro4Stage(); break;
-//	}
+	}
 
 	// Lo volvemos a encender
 	devkit_SMS_displayOn();

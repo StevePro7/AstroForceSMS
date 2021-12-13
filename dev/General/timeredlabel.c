@@ -1,4 +1,5 @@
 #include "timeredlabel.h"
+#include "../vars.h"
 
 void timeredlabel_foo()
 {
@@ -82,9 +83,9 @@ void timeredlabel_foo()
 //		WriteText( s, 16 - ( ( unsigned char ) strlen( s ) >> 1 ), y );
 //	}
 //}
-//
-//// Init all enemys
-//void InitTimeredLabels()
-//{
-//	numtimeredlabels = 0;
-//}
+
+// Init all enemys
+void InitTimeredLabels()
+{
+	numtimeredlabels = 0;
+}

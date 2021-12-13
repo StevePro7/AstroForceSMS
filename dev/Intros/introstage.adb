@@ -91,8 +91,12 @@ S:G$powerupcounter$0$0({2}SI:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
 S:G$enemy_foo$0$0({2}DF,SV:S),C,0,0
 S:G$InitEnemies$0$0({2}DF,SV:S),C,0,0
+S:G$explosion_foo$0$0({2}DF,SV:S),C,0,0
+S:G$InitExplosions$0$0({2}DF,SV:S),C,0,0
 S:G$scripter_foo$0$0({2}DF,SV:S),C,0,0
 S:G$InitScripts$0$0({2}DF,SV:S),C,0,0
+S:G$timeredlabel_foo$0$0({2}DF,SV:S),C,0,0
+S:G$InitTimeredLabels$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOn$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOff$0$0({2}DF,SV:S),C,0,0

@@ -8,6 +8,6 @@ void timeredlabel_foo();
 //void UpdateTimeredLabel( signed char a );
 //void UpdateTimeredLabels();
 //void InitTimeredLabel( unsigned char *s, unsigned char y, signed int t );
-//void InitTimeredLabels();
+void InitTimeredLabels();
 
 #endif//_TIMEREDLABEL_H_

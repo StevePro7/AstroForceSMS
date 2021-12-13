@@ -32,7 +32,7 @@ cd ..
 cd General
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 barrom.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 bombship.c
-::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 explosion.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 explosion.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 finishstage.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 gameoverstage.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 jukeboxstage.c
@@ -47,7 +47,7 @@ cd General
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 selectorstage.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 skullbone.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 spreadship.c
-::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 timeredlabel.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 timeredlabel.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 turnship.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 warning.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 waveship.c
@@ -61,7 +61,7 @@ cd Intros
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 intro4stage.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 introovni.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 introsideplayer.c
-::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 introstage.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 introstage.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 introstar.c
 cd ..
 

@@ -8,7 +8,7 @@ void explosion_foo();
 //void InitExplosion( unsigned char x, unsigned char y, unsigned char t );
 //void UpdateExplosions();
 //void InitExplosionSprite();
-//void InitExplosions();
+void InitExplosions();
 //void InitSpawnedExplosion( unsigned char x, unsigned char y, unsigned char w, unsigned char h );
 
 #endif//_EXPLOSION_H_
