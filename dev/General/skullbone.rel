@@ -1,0 +1,25 @@
+;!FILE skullbone.asm
+XL2
+H 9 areas 7 global symbols
+M skullbone
+O -mz80
+S .__.ABS. Def0000
+A _CODE size 1 flags 0 addr 0
+S G$skullbone_foo$0$0 Def0000
+S A$skullbone$59 Def0000
+S C$skullbone.c$3$0$0 Def0000
+S C$skullbone.c$5$0$0 Def0000
+S _skullbone_foo Def0000
+S XG$skullbone_foo$0$0 Def0000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00

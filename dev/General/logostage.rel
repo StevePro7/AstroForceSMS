@@ -1,0 +1,25 @@
+;!FILE logostage.asm
+XL2
+H 9 areas 7 global symbols
+M logostage
+O -mz80
+S .__.ABS. Def0000
+A _CODE size 1 flags 0 addr 0
+S _logostage_foo Def0000
+S XG$logostage_foo$0$0 Def0000
+S G$logostage_foo$0$0 Def0000
+S A$logostage$59 Def0000
+S C$logostage.c$3$0$0 Def0000
+S C$logostage.c$5$0$0 Def0000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00

@@ -1,0 +1,25 @@
+;!FILE introsideplayer.asm
+XL2
+H 9 areas 7 global symbols
+M introsideplayer
+O -mz80
+S .__.ABS. Def0000
+A _CODE size 1 flags 0 addr 0
+S G$introsideplayer_foo$0$0 Def0000
+S A$introsideplayer$59 Def0000
+S C$introsideplayer.c$3$0$0 Def0000
+S C$introsideplayer.c$5$0$0 Def0000
+S _introsideplayer_foo Def0000
+S XG$introsideplayer_foo$0$0 Def0000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00

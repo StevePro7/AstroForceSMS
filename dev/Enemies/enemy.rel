@@ -1,0 +1,39 @@
+;!FILE enemy.asm
+XL2
+H 9 areas 11 global symbols
+M enemy
+O -mz80
+S _numenemies Ref0000
+S .__.ABS. Def0000
+A _CODE size 7 flags 0 addr 0
+S C$enemy.c$219$1$5 Def0001
+S XG$InitEnemies$0$0 Def0006
+S A$enemy$60 Def0000
+S A$enemy$73 Def0001
+S A$enemy$74 Def0004
+S G$enemy_foo$0$0 Def0000
+S A$enemy$79 Def0006
+S C$enemy.c$5$0$0 Def0000
+S C$enemy.c$7$0$0 Def0000
+S _enemy_foo Def0000
+S XG$enemy_foo$0$0 Def0000
+S G$InitEnemies$0$0 Def0001
+S _InitEnemies Def0001
+S C$enemy.c$220$1$5 Def0006
+S C$enemy.c$217$0$0 Def0001
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00
+T 01 00
+R 00 00 00 00
+T 01 00 21 00 00 36 00 C9
+R 00 00 00 00 02 03 00 00

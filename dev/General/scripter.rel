@@ -1,0 +1,39 @@
+;!FILE scripter.asm
+XL2
+H 9 areas 11 global symbols
+M scripter
+O -mz80
+S .__.ABS. Def0000
+S _numscripts Ref0000
+A _CODE size 7 flags 0 addr 0
+S G$InitScripts$0$0 Def0001
+S C$scripter.c$10$1$5 Def0001
+S C$scripter.c$11$1$5 Def0006
+S A$scripter$60 Def0000
+S _InitScripts Def0001
+S A$scripter$73 Def0001
+S A$scripter$74 Def0004
+S G$scripter_foo$0$0 Def0000
+S C$scripter.c$4$0$0 Def0000
+S A$scripter$79 Def0006
+S C$scripter.c$6$0$0 Def0000
+S XG$InitScripts$0$0 Def0006
+S C$scripter.c$8$0$0 Def0001
+S _scripter_foo Def0000
+S XG$scripter_foo$0$0 Def0000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00
+T 01 00
+R 00 00 00 00
+T 01 00 21 00 00 36 00 C9
+R 00 00 00 00 02 03 01 00

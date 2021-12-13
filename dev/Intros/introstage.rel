@@ -1,0 +1,102 @@
+;!FILE introstage.asm
+XL2
+H 9 areas 44 global symbols
+M introstage
+O -mz80
+S _devkit_SMS_displayOn Ref0000
+S _logopalette_bin Ref0000
+S _InitScripts Ref0000
+S _introstagevelx Ref0000
+S .__.ABS. Def0000
+S _InitStage Ref0000
+S _devkit_SMS_displayOff Ref0000
+S _introstageposx Ref0000
+S _UpdatePSG Ref0000
+S _devkit_SMS_setBGScrollY Ref0000
+S _LoadBGPalette Ref0000
+S _InitEnemies Ref0000
+A _CODE size 35 flags 0 addr 0
+S _introstage_foo Def0000
+S XG$introstage_foo$0$0 Def0000
+S G$setIntroStageGraphics$0$0 Def000D
+S A$introstage$110 Def0011
+S A$introstage$111 Def0014
+S _setIntroStageGraphics Def000D
+S A$introstage$130 Def0027
+S A$introstage$112 Def0015
+S A$introstage$122 Def001D
+S A$introstage$113 Def0018
+S A$introstage$114 Def0019
+S A$introstage$152 Def002C
+S A$introstage$107 Def000D
+S A$introstage$135 Def0028
+S A$introstage$126 Def0020
+S A$introstage$108 Def000F
+S G$InitIntroScroll$0$0 Def0001
+S A$introstage$127 Def0022
+S A$introstage$118 Def001A
+S A$introstage$109 Def0010
+S C$introstage.c$40$1$46 Def0029
+S C$introstage.c$22$1$46 Def000D
+S A$introstage$164 Def0032
+S A$introstage$128 Def0023
+S C$introstage.c$15$1$45 Def0001
+S A$introstage$156 Def002F
+S A$introstage$129 Def0024
+S C$introstage.c$16$1$45 Def0007
+S A$introstage$148 Def0029
+S C$introstage.c$25$1$46 Def001A
+S C$introstage.c$17$1$45 Def000C
+S C$introstage.c$11$0$0 Def0000
+S G$InitIntroStage$0$0 Def0029
+S C$introstage.c$43$1$48 Def0029
+S XG$setIntroStageGraphics$0$0 Def0028
+S C$introstage.c$19$1$45 Def000D
+S C$introstage.c$13$0$0 Def0001
+S C$introstage.c$62$1$48 Def002F
+S C$introstage.c$37$1$46 Def0020
+S C$introstage.c$28$1$46 Def001D
+S C$introstage.c$38$1$46 Def0028
+S C$introstage.c$46$1$48 Def002C
+S C$introstage.c$94$1$48 Def0032
+S _InitIntroScroll Def0001
+S A$introstage$70 Def0000
+S C$introstage.c$96$1$48 Def0032
+S _InitIntroStage Def0029
+S A$introstage$83 Def0001
+S A$introstage$84 Def0004
+S A$introstage$94 Def000C
+S G$introstage_foo$0$0 Def0000
+S A$introstage$88 Def0007
+S A$introstage$89 Def0009
+S XG$InitIntroScroll$0$0 Def000C
+S C$introstage.c$9$0$0 Def0000
+S XG$InitIntroStage$0$0 Def0032
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00
+T 01 00
+R 00 00 00 00
+T 01 00 21 00 00 22 00 00 2E 00 22 00 00 C9
+R 00 00 00 00 02 06 07 00 02 0B 03 00
+T 0D 00
+R 00 00 00 00
+T 0D 00 3E 03 F5 33 21 00 00 E5 CD 00 00 F1 33 CD
+R 00 00 00 00 02 07 01 00 02 0B 0A 00
+T 1B 00 00 00 CD 00 00 3E C0 F5 33 CD 00 00 33 C9
+R 00 00 00 00 02 02 02 00 02 05 0B 00 02 0C 09 00
+T 29 00
+R 00 00 00 00
+T 29 00 CD 00 00 CD 00 00 CD 00 00 C3
+R 00 00 00 00 02 03 05 00 02 06 06 00 02 09 00 00
+T 33 00 00 00
+R 00 00 00 00 02 02 08 00

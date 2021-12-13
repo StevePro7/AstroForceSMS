@@ -10,8 +10,8 @@ S:Lfuncs.DrawSpriteArray$tx$1$63({1}SC:U),B,1,8
 S:Lfuncs.DrawSpriteArray$ty$1$63({1}SC:U),B,1,9
 S:Lfuncs.DrawSpriteArray$x$1$64({1}SC:U),R,0,0,[b]
 S:Lfuncs.DrawSpriteArray$y$1$64({1}SC:U),R,0,0,[c]
-S:Lfuncs.DrawSpriteArray$sloc0$1$0({1}SC:U),B,1,-2
-S:Lfuncs.DrawSpriteArray$sloc1$1$0({1}SC:U),B,1,-1
+S:Lfuncs.DrawSpriteArray$sloc0$1$0({1}SC:U),B,1,-1
+S:Lfuncs.DrawSpriteArray$sloc1$1$0({1}SC:U),B,1,-2
 F:G$DrawQuadSprite$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lfuncs.DrawQuadSprite$x$1$67({1}SC:U),B,1,4
 S:Lfuncs.DrawQuadSprite$y$1$67({1}SC:U),B,1,5

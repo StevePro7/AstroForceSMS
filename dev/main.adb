@@ -232,4 +232,8 @@ S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$InitMikGamesStage$0$0({2}DF,SV:S),C,0,0
+S:G$introstage_foo$0$0({2}DF,SV:S),C,0,0
+S:G$InitIntroScroll$0$0({2}DF,SV:S),C,0,0
+S:G$setIntroStageGraphics$0$0({2}DF,SV:S),C,0,0
+S:G$InitIntroStage$0$0({2}DF,SV:S),C,0,0
 S:G$main$0$0({2}DF,SV:S),C,0,0
