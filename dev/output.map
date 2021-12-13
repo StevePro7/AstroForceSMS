@@ -39,19 +39,19 @@ Area                                    Addr        Size        Decimal Bytes (A
      0000000F  l__GSINIT                       
      00000010  l__CABS0                        
      00000010  l__CABS4                        
-     00000014  l__INITIALIZED                  
-     00000014  l__INITIALIZER                  
      00000028  l__CABS3                        
      0000012A  l__HEADER5                      
      0000017C  l__HOME                         
      00000200  s__CODE                         
+     00000240  l__INITIALIZED                  
+     00000240  l__INITIALIZER                  
      00000251  l__DATA                         
-     00000CD3  l__BANK15                       
      00001B5F  l__CODE                         
      00001D5F  s__HOME                         
      00001EDB  s__INITIALIZER                  
-     00001EEF  s__GSINIT                       
-     00001EFE  s__GSFINAL                      
+     0000211B  s__GSINIT                       
+     0000212A  s__GSFINAL                      
+     000036D7  l__BANK15                       
      00003C2B  l__BANK11                       
      00003F51  l__BANK12                       
      00003F7E  l__BANK9                        
@@ -92,9 +92,9 @@ Area                                    Addr        Size        Decimal Bytes (A
      00008000  s__BANK9                        
      0000C000  s__DATA                         
      0000C251  s__INITIALIZED                  
-     0000C265  s__BSEG                         
-     0000C265  s__BSS                          
-     0000C265  s__HEAP                         
+     0000C491  s__BSEG                         
+     0000C491  s__BSS                          
+     0000C491  s__HEAP                         
      0000FFFC  G$SRAM_bank_to_be_mapped_on_slot   _sms_manager
      0000FFFC  _SRAM_bank_to_be_mapped_on_slot2   SMSlib_PSGaiden
      0000FFFF  G$ROM_bank_to_be_mapped_on_slot2   _sms_manager
@@ -4427,30 +4427,42 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_INITIALIZER                        00001EDB    00000014 =          20. bytes (REL,CON)
+_INITIALIZER                        00001EDB    00000240 =         576. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00001EDB  Ffixedbank$__xinit_intro1labels$   fixedbank
-     00001EE7  Ffuncs$__xinit_state$0$0           funcs
-
+     00001EDB  Ffixedbank$__xinit_jukebox_songs   fixedbank
+     00001F05  Ffixedbank$__xinit_jukebox_names   fixedbank
+     00001F2F  Ffixedbank$__xinit_selectornames   fixedbank
+     00001F39  Ffixedbank$__xinit_intro1labels$   fixedbank
+     00001F45  Ffixedbank$__xinit_intro3labels$   fixedbank
+     00001F5B  Ffixedbank$__xinit_finishlabels$   fixedbank
+     00001F83  Ffixedbank$__xinit_stagedatamark   fixedbank
+     00001F8B  Ffixedbank$__xinit_stageinitdata   fixedbank
+     0000200B  Ffixedbank$__xinit_ww2plane_patt   fixedbank
+     00002017  Ffixedbank$__xinit_spawners$0$0    fixedbank
+     00002043  Ffixedbank$__xinit_imagepointers   fixedbank
+     000020EF  Ffixedbank$__xinit_monsterheadsh   fixedbank
+     000020FF  Ffixedbank$__xinit_monsterheadsh   fixedbank
+     0000210F  Ffixedbank$__xinit_difficultlabe   fixedbank
+     00002113  Ffuncs$__xinit_state$0$0           funcs
 ASxxxx Linker V03.00 + NoICE + sdld,  page 82.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSINIT                             00001EEF    0000000F =          15. bytes (REL,CON)
+_GSINIT                             0000211B    0000000F =          15. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00001EEF  gsinit                             crt0
+     0000211B  gsinit                             crt0
 
 ASxxxx Linker V03.00 + NoICE + sdld,  page 83.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSFINAL                            00001EFE    00000001 =           1. bytes (REL,CON)
+_GSFINAL                            0000212A    00000001 =           1. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -4692,18 +4704,43 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_INITIALIZED                        0000C251    00000014 =          20. bytes (REL,CON)
+_INITIALIZED                        0000C251    00000240 =         576. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0000C251  G$intro1labels$0$0                 fixedbank
-     0000C251  _intro1labels                      fixedbank
-     0000C25D  G$state$0$0                        funcs
-     0000C25D  _state                             funcs
-     0000C261  _VDPReg                            SMSlib
-     0000C263  _spritesHeight                     SMSlib
-     0000C264  _spritesWidth                      SMSlib
-
+     0000C251  G$jukebox_songs$0$0                fixedbank
+     0000C251  _jukebox_songs                     fixedbank
+     0000C27B  G$jukebox_names$0$0                fixedbank
+     0000C27B  _jukebox_names                     fixedbank
+     0000C2A5  G$selectornamestage$0$0            fixedbank
+     0000C2A5  _selectornamestage                 fixedbank
+     0000C2AF  G$intro1labels$0$0                 fixedbank
+     0000C2AF  _intro1labels                      fixedbank
+     0000C2BB  G$intro3labels$0$0                 fixedbank
+     0000C2BB  _intro3labels                      fixedbank
+     0000C2D1  G$finishlabels$0$0                 fixedbank
+     0000C2D1  _finishlabels                      fixedbank
+     0000C2F9  G$stagedatamarks$0$0               fixedbank
+     0000C2F9  _stagedatamarks                    fixedbank
+     0000C301  G$stageinitdata$0$0                fixedbank
+     0000C301  _stageinitdata                     fixedbank
+     0000C381  G$ww2plane_patterns$0$0            fixedbank
+     0000C381  _ww2plane_patterns                 fixedbank
+     0000C38D  G$spawners$0$0                     fixedbank
+     0000C38D  _spawners                          fixedbank
+     0000C3B9  G$imagepointers$0$0                fixedbank
+     0000C3B9  _imagepointers                     fixedbank
+     0000C465  G$monsterheadshootdirecionsx$0$0   fixedbank
+     0000C465  _monsterheadshootdirecionsx        fixedbank
+     0000C475  G$monsterheadshootdirecionsy$0$0   fixedbank
+     0000C475  _monsterheadshootdirecionsy        fixedbank
+     0000C485  G$difficultlabels$0$0              fixedbank
+     0000C485  _difficultlabels                   fixedbank
+     0000C489  G$state$0$0                        funcs
+     0000C489  _state                             funcs
+     0000C48D  _VDPReg                            SMSlib
+     0000C48F  _spritesHeight                     SMSlib
+     0000C490  _spritesWidth                      SMSlib
 ASxxxx Linker V03.00 + NoICE + sdld,  page 89.
 Hexadecimal  [32-Bits]
 
@@ -5136,38 +5173,346 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    00000CD3 =        3283. bytes (REL,CON)
+_BANK15                             00008000    000036D7 =       14039. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00008000  G$palette_bin$0$0                  fixedbank
-     00008000  _palette_bin                       fixedbank
-     00008010  G$sinustable$0$0                   fixedbank
-     00008010  _sinustable                        fixedbank
-     00008110  G$intro1script$0$0                 fixedbank
-     00008110  _intro1script                      fixedbank
-     0000820A  G$initenemyfunctions$0$0           fixedbank
-     0000820A  _initenemyfunctions                fixedbank
-     0000820C  G$updatestagefunctions$0$0         fixedbank
-     0000820C  _updatestagefunctions              fixedbank
-     0000820E  G$stage8animpalette$0$0            fixedbank
-     0000820E  _stage8animpalette                 fixedbank
-     0000821C  G$enemieswidth$0$0                 fixedbank
-     0000821C  _enemieswidth                      fixedbank
-     00008272  G$enemiesheight$0$0                fixedbank
-     00008272  _enemiesheight                     fixedbank
-     000082C8  G$enemiesenergy$0$0                fixedbank
-     000082C8  _enemiesenergy                     fixedbank
-     0000831E  G$intro1_psg$0$0                   fixedbank
-     0000831E  _intro1_psg                        fixedbank
-     00008C5F  Ffixedbank$__str_0$0$0             fixedbank
-     00008C6C  Ffixedbank$__str_1$0$0             fixedbank
-     00008C80  Ffixedbank$__str_2$0$0             fixedbank
-     00008C97  Ffixedbank$__str_3$0$0             fixedbank
-     00008CA8  Ffixedbank$__str_4$0$0             fixedbank
-     00008CBD  Ffixedbank$__str_5$0$0             fixedbank
-
+     00008000  G$playershootspeedsx$0$0           fixedbank
+     00008000  _playershootspeedsx                fixedbank
+     00008004  G$playershootspeedsy$0$0           fixedbank
+     00008004  _playershootspeedsy                fixedbank
+     00008008  G$stage6_fade_pink$0$0             fixedbank
+     00008008  _stage6_fade_pink                  fixedbank
+     00008010  G$stage6_fade_blue$0$0             fixedbank
+     00008010  _stage6_fade_blue                  fixedbank
+     00008018  G$skullshootvelx$0$0               fixedbank
+     00008018  _skullshootvelx                    fixedbank
+     0000801F  G$skullshootvely$0$0               fixedbank
+     0000801F  _skullshootvely                    fixedbank
+     00008026  G$skullbshootvelx$0$0              fixedbank
+     00008026  _skullbshootvelx                   fixedbank
+     00008036  G$skullbshootvely$0$0              fixedbank
+     00008036  _skullbshootvely                   fixedbank
+     00008046  G$palette_bin$0$0                  fixedbank
+     00008046  _palette_bin                       fixedbank
+     00008056  G$stage4_stormpalette$0$0          fixedbank
+     00008056  _stage4_stormpalette               fixedbank
+     00008066  G$stage4_seapalette$0$0            fixedbank
+     00008066  _stage4_seapalette                 fixedbank
+     0000806A  G$stage1_flashpalette$0$0          fixedbank
+     0000806A  _stage1_flashpalette               fixedbank
+     00008072  G$aracmovingx$0$0                  fixedbank
+     00008072  _aracmovingx                       fixedbank
+     0000807A  G$aracmovingy$0$0                  fixedbank
+     0000807A  _aracmovingy                       fixedbank
+     00008082  G$aracmovingt$0$0                  fixedbank
+     00008082  _aracmovingt                       fixedbank
+     00008092  G$crossamovingx$0$0                fixedbank
+     00008092  _crossamovingx                     fixedbank
+     0000809A  G$crossamovingy$0$0                fixedbank
+     0000809A  _crossamovingy                     fixedbank
+     000080A2  G$crossamovingt$0$0                fixedbank
+     000080A2  _crossamovingt                     fixedbank
+     000080B2  G$crossbmovingx$0$0                fixedbank
+     000080B2  _crossbmovingx                     fixedbank
+     000080BA  G$crossbmovingy$0$0                fixedbank
+     000080BA  _crossbmovingy                     fixedbank
+     000080C2  G$crossbmovingt$0$0                fixedbank
+     000080C2  _crossbmovingt                     fixedbank
+     000080D2  G$stage2endbossshootpatternx$0$0   fixedbank
+     000080D2  _stage2endbossshootpatternx        fixedbank
+     000080D8  G$stage2endbossshootpatterny$0$0   fixedbank
+     000080D8  _stage2endbossshootpatterny        fixedbank
+     000080DE  G$stage3enemylaserposx$0$0         fixedbank
+     000080DE  _stage3enemylaserposx              fixedbank
+     000080E6  G$stage3enemylaserposy$0$0         fixedbank
+     000080E6  _stage3enemylaserposy              fixedbank
 ASxxxx Linker V03.00 + NoICE + sdld,  page 103.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_BANK15                             00008000    000036D7 =       14039. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000080EE  G$stage3laservelx$0$0              fixedbank
+     000080EE  _stage3laservelx                   fixedbank
+     000080F6  G$stage3laservely$0$0              fixedbank
+     000080F6  _stage3laservely                   fixedbank
+     000080FE  G$Stage1MiddleBossBPatternX$0$0    fixedbank
+     000080FE  _Stage1MiddleBossBPatternX         fixedbank
+     00008106  G$Stage1MiddleBossBPatternY$0$0    fixedbank
+     00008106  _Stage1MiddleBossBPatternY         fixedbank
+     0000810E  G$sinustable$0$0                   fixedbank
+     0000810E  _sinustable                        fixedbank
+     0000820E  G$jukebox_repeat$0$0               fixedbank
+     0000820E  _jukebox_repeat                    fixedbank
+     00008223  G$jukebox_banks$0$0                fixedbank
+     00008223  _jukebox_banks                     fixedbank
+     00008238  G$selectorstatebasetiles$0$0       fixedbank
+     00008238  _selectorstatebasetiles            fixedbank
+     0000823D  G$selectormarkx$0$0                fixedbank
+     0000823D  _selectormarkx                     fixedbank
+     00008241  G$selectormarky$0$0                fixedbank
+     00008241  _selectormarky                     fixedbank
+     00008245  G$selectormarkt$0$0                fixedbank
+     00008245  _selectormarkt                     fixedbank
+     00008249  G$intro4script$0$0                 fixedbank
+     00008249  _intro4script                      fixedbank
+     00008375  G$intro1script$0$0                 fixedbank
+     00008375  _intro1script                      fixedbank
+     0000846F  G$intro2script$0$0                 fixedbank
+     0000846F  _intro2script                      fixedbank
+     0000850A  G$intro3script$0$0                 fixedbank
+     0000850A  _intro3script                      fixedbank
+     00008550  G$finishscript$0$0                 fixedbank
+     00008550  _finishscript                      fixedbank
+     00008654  G$ww2planemovementy$0$0            fixedbank
+     00008654  _ww2planemovementy                 fixedbank
+     0000865C  G$ww2planemovementx$0$0            fixedbank
+     0000865C  _ww2planemovementx                 fixedbank
+     00008664  G$ww2plane_pattern_a$0$0           fixedbank
+     00008664  _ww2plane_pattern_a                fixedbank
+     00008672  G$ww2plane_pattern_b$0$0           fixedbank
+     00008672  _ww2plane_pattern_b                fixedbank
+     00008680  G$ww2plane_pattern_c$0$0           fixedbank
+     00008680  _ww2plane_pattern_c                fixedbank
+     00008692  G$ww2plane_pattern_d$0$0           fixedbank
+     00008692  _ww2plane_pattern_d                fixedbank
+     000086A4  G$ww2plane_pattern_e$0$0           fixedbank
+     000086A4  _ww2plane_pattern_e                fixedbank
+     000086C2  G$ww2plane_pattern_f$0$0           fixedbank
+     000086C2  _ww2plane_pattern_f                fixedbank
+     000086E0  G$span_waveship80_script$0$0       fixedbank
+     000086E0  _span_waveship80_script            fixedbank
+     000086EF  G$span_waveship160_script$0$0      fixedbank
+ASxxxx Linker V03.00 + NoICE + sdld,  page 104.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_BANK15                             00008000    000036D7 =       14039. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000086EF  _span_waveship160_script           fixedbank
+     000086FE  G$span_randomrectship_script$0$0   fixedbank
+     000086FE  _span_randomrectship_script        fixedbank
+     00008720  G$span_rectshiplateral_script$0$   fixedbank
+     00008720  _span_rectshiplateral_script       fixedbank
+     00008742  G$span_bombships_script$0$0        fixedbank
+     00008742  _span_bombships_script             fixedbank
+     00008755  G$span_randomwaveship_script$0$0   fixedbank
+     00008755  _span_randomwaveship_script        fixedbank
+     0000876D  G$span_turnships_script$0$0        fixedbank
+     0000876D  _span_turnships_script             fixedbank
+     0000879E  G$span_spreadships_script$0$0      fixedbank
+     0000879E  _span_spreadships_script           fixedbank
+     000087AC  G$stage4scriptc$0$0                fixedbank
+     000087AC  _stage4scriptc                     fixedbank
+     000087C0  G$stage4scriptb$0$0                fixedbank
+     000087C0  _stage4scriptb                     fixedbank
+     0000880B  G$stage4script$0$0                 fixedbank
+     0000880B  _stage4script                      fixedbank
+     00008842  G$span_ww2planea_script$0$0        fixedbank
+     00008842  _span_ww2planea_script             fixedbank
+     00008864  G$span_ww2planeb_script$0$0        fixedbank
+     00008864  _span_ww2planeb_script             fixedbank
+     00008886  G$span_ww2planec_script$0$0        fixedbank
+     00008886  _span_ww2planec_script             fixedbank
+     000088A8  G$span_ww2zeppelina_script$0$0     fixedbank
+     000088A8  _span_ww2zeppelina_script          fixedbank
+     000088BB  G$stage5scriptc$0$0                fixedbank
+     000088BB  _stage5scriptc                     fixedbank
+     000088CA  G$stage5scriptb$0$0                fixedbank
+     000088CA  _stage5scriptb                     fixedbank
+     000089B0  G$stage5script$0$0                 fixedbank
+     000089B0  _stage5script                      fixedbank
+     00008AB3  G$stage5_statics$0$0               fixedbank
+     00008AB3  _stage5_statics                    fixedbank
+     00008BED  G$stage1_statics$0$0               fixedbank
+     00008BED  _stage1_statics                    fixedbank
+     0000921F  G$stage2_statics$0$0               fixedbank
+     0000921F  _stage2_statics                    fixedbank
+     0000981F  G$span_asteroids_full_script$0$0   fixedbank
+     0000981F  _span_asteroids_full_script        fixedbank
+     00009850  G$span_asteroids_little_script$0   fixedbank
+     00009850  _span_asteroids_little_script      fixedbank
+     00009872  G$stage3scriptb$0$0                fixedbank
+     00009872  _stage3scriptb                     fixedbank
+     0000988B  G$stage3script$0$0                 fixedbank
+     0000988B  _stage3script                      fixedbank
+     000098B8  G$stage3_statics$0$0               fixedbank
+     000098B8  _stage3_statics                    fixedbank
+     00009B30  G$stage7_statics$0$0               fixedbank
+     00009B30  _stage7_statics                    fixedbank
+ASxxxx Linker V03.00 + NoICE + sdld,  page 105.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_BANK15                             00008000    000036D7 =       14039. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00009EF0  G$initenemyfunctions$0$0           fixedbank
+     00009EF0  _initenemyfunctions                fixedbank
+     00009EF2  G$updatestagefunctions$0$0         fixedbank
+     00009EF2  _updatestagefunctions              fixedbank
+     00009EF4  G$stage4_scrollers$0$0             fixedbank
+     00009EF4  _stage4_scrollers                  fixedbank
+     00009F94  G$stage1_scrollers$0$0             fixedbank
+     00009F94  _stage1_scrollers                  fixedbank
+     00009FBC  G$stage2_scrollers$0$0             fixedbank
+     00009FBC  _stage2_scrollers                  fixedbank
+     00009FDA  G$stage5_scrollers$0$0             fixedbank
+     00009FDA  _stage5_scrollers                  fixedbank
+     0000A002  G$stage3_scrollers$0$0             fixedbank
+     0000A002  _stage3_scrollers                  fixedbank
+     0000A016  G$stage7_scrollers$0$0             fixedbank
+     0000A016  _stage7_scrollers                  fixedbank
+     0000A02A  G$stage6_scrollers$0$0             fixedbank
+     0000A02A  _stage6_scrollers                  fixedbank
+     0000A03E  G$imagebases$0$0                   fixedbank
+     0000A03E  _imagebases                        fixedbank
+     0000A0EA  G$imagebanks$0$0                   fixedbank
+     0000A0EA  _imagebanks                        fixedbank
+     0000A140  G$stage3spriteslist$0$0            fixedbank
+     0000A140  _stage3spriteslist                 fixedbank
+     0000A14C  G$stage1spriteslist$0$0            fixedbank
+     0000A14C  _stage1spriteslist                 fixedbank
+     0000A154  G$stage2spriteslist$0$0            fixedbank
+     0000A154  _stage2spriteslist                 fixedbank
+     0000A15C  G$stage7spriteslist$0$0            fixedbank
+     0000A15C  _stage7spriteslist                 fixedbank
+     0000A162  G$stage5spriteslist$0$0            fixedbank
+     0000A162  _stage5spriteslist                 fixedbank
+     0000A168  G$stage4spriteslist$0$0            fixedbank
+     0000A168  _stage4spriteslist                 fixedbank
+     0000A172  G$stage6spriteslist$0$0            fixedbank
+     0000A172  _stage6spriteslist                 fixedbank
+     0000A175  G$stage6script$0$0                 fixedbank
+     0000A175  _stage6script                      fixedbank
+     0000A17F  G$stage6scriptb$0$0                fixedbank
+     0000A17F  _stage6scriptb                     fixedbank
+     0000A189  G$vulcantankshootspeedx$0$0        fixedbank
+     0000A189  _vulcantankshootspeedx             fixedbank
+     0000A18C  G$vulcantankshootspeedy$0$0        fixedbank
+     0000A18C  _vulcantankshootspeedy             fixedbank
+     0000A18F  G$vulcanstationshootspeedx$0$0     fixedbank
+     0000A18F  _vulcanstationshootspeedx          fixedbank
+     0000A192  G$vulcanstationshootspeedy$0$0     fixedbank
+     0000A192  _vulcanstationshootspeedy          fixedbank
+     0000A195  G$stage8bosscshootspeedx$0$0       fixedbank
+     0000A195  _stage8bosscshootspeedx            fixedbank
+     0000A1A5  G$stage8bosscshootspeedy$0$0       fixedbank
+ASxxxx Linker V03.00 + NoICE + sdld,  page 106.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_BANK15                             00008000    000036D7 =       14039. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000A1A5  _stage8bosscshootspeedy            fixedbank
+     0000A1B4  G$stage8bossbshootspeedx$0$0       fixedbank
+     0000A1B4  _stage8bossbshootspeedx            fixedbank
+     0000A1C4  G$stage8bossbshootspeedy$0$0       fixedbank
+     0000A1C4  _stage8bossbshootspeedy            fixedbank
+     0000A1D4  G$stage8spriteslist$0$0            fixedbank
+     0000A1D4  _stage8spriteslist                 fixedbank
+     0000A1DB  G$stage8_statics$0$0               fixedbank
+     0000A1DB  _stage8_statics                    fixedbank
+     0000A815  G$stage8_scrollers$0$0             fixedbank
+     0000A815  _stage8_scrollers                  fixedbank
+     0000A81F  G$stage8animpalette$0$0            fixedbank
+     0000A81F  _stage8animpalette                 fixedbank
+     0000A82D  G$enemieswidth$0$0                 fixedbank
+     0000A82D  _enemieswidth                      fixedbank
+     0000A883  G$enemiesheight$0$0                fixedbank
+     0000A883  _enemiesheight                     fixedbank
+     0000A8D9  G$enemiesenergy$0$0                fixedbank
+     0000A8D9  _enemiesenergy                     fixedbank
+     0000A92F  G$intro1_psg$0$0                   fixedbank
+     0000A92F  _intro1_psg                        fixedbank
+     0000B270  Ffixedbank$__str_0$0$0             fixedbank
+     0000B27E  Ffixedbank$__str_1$0$0             fixedbank
+     0000B28C  Ffixedbank$__str_2$0$0             fixedbank
+     0000B29A  Ffixedbank$__str_3$0$0             fixedbank
+     0000B2A8  Ffixedbank$__str_4$0$0             fixedbank
+     0000B2B6  Ffixedbank$__str_5$0$0             fixedbank
+     0000B2C4  Ffixedbank$__str_6$0$0             fixedbank
+     0000B2D2  Ffixedbank$__str_7$0$0             fixedbank
+     0000B2E0  Ffixedbank$__str_8$0$0             fixedbank
+     0000B2EE  Ffixedbank$__str_9$0$0             fixedbank
+     0000B2FC  Ffixedbank$__str_10$0$0            fixedbank
+     0000B30A  Ffixedbank$__str_11$0$0            fixedbank
+     0000B318  Ffixedbank$__str_12$0$0            fixedbank
+     0000B326  Ffixedbank$__str_13$0$0            fixedbank
+     0000B334  Ffixedbank$__str_14$0$0            fixedbank
+     0000B342  Ffixedbank$__str_15$0$0            fixedbank
+     0000B350  Ffixedbank$__str_16$0$0            fixedbank
+     0000B35E  Ffixedbank$__str_17$0$0            fixedbank
+     0000B36C  Ffixedbank$__str_18$0$0            fixedbank
+     0000B37A  Ffixedbank$__str_19$0$0            fixedbank
+     0000B388  Ffixedbank$__str_20$0$0            fixedbank
+     0000B396  Ffixedbank$__str_21$0$0            fixedbank
+     0000B39F  Ffixedbank$__str_22$0$0            fixedbank
+     0000B3A8  Ffixedbank$__str_23$0$0            fixedbank
+     0000B3B1  Ffixedbank$__str_24$0$0            fixedbank
+     0000B3B9  Ffixedbank$__str_25$0$0            fixedbank
+     0000B3C2  Ffixedbank$__str_26$0$0            fixedbank
+     0000B3CF  Ffixedbank$__str_27$0$0            fixedbank
+     0000B3E3  Ffixedbank$__str_28$0$0            fixedbank
+     0000B3FA  Ffixedbank$__str_29$0$0            fixedbank
+ASxxxx Linker V03.00 + NoICE + sdld,  page 107.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_BANK15                             00008000    000036D7 =       14039. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000B40B  Ffixedbank$__str_30$0$0            fixedbank
+     0000B420  Ffixedbank$__str_31$0$0            fixedbank
+     0000B436  Ffixedbank$__str_32$0$0            fixedbank
+     0000B44B  Ffixedbank$__str_33$0$0            fixedbank
+     0000B465  Ffixedbank$__str_34$0$0            fixedbank
+     0000B47B  Ffixedbank$__str_35$0$0            fixedbank
+     0000B48E  Ffixedbank$__str_36$0$0            fixedbank
+     0000B49E  Ffixedbank$__str_37$0$0            fixedbank
+     0000B4B1  Ffixedbank$__str_38$0$0            fixedbank
+     0000B4C5  Ffixedbank$__str_39$0$0            fixedbank
+     0000B4DF  Ffixedbank$__str_40$0$0            fixedbank
+     0000B4F5  Ffixedbank$__str_41$0$0            fixedbank
+     0000B513  Ffixedbank$__str_42$0$0            fixedbank
+     0000B51D  Ffixedbank$__str_43$0$0            fixedbank
+     0000B527  Ffixedbank$__str_44$0$0            fixedbank
+     0000B539  Ffixedbank$__str_45$0$0            fixedbank
+     0000B546  Ffixedbank$__str_46$0$0            fixedbank
+     0000B55C  Ffixedbank$__str_47$0$0            fixedbank
+     0000B570  Ffixedbank$__str_48$0$0            fixedbank
+     0000B58A  Ffixedbank$__str_49$0$0            fixedbank
+     0000B5A1  Ffixedbank$__str_50$0$0            fixedbank
+     0000B5BF  Ffixedbank$__str_51$0$0            fixedbank
+     0000B5D7  Ffixedbank$__str_52$0$0            fixedbank
+     0000B5F2  Ffixedbank$__str_53$0$0            fixedbank
+     0000B607  Ffixedbank$__str_54$0$0            fixedbank
+     0000B60F  Ffixedbank$__str_55$0$0            fixedbank
+     0000B627  Ffixedbank$__str_56$0$0            fixedbank
+     0000B641  Ffixedbank$__str_57$0$0            fixedbank
+     0000B65E  Ffixedbank$__str_58$0$0            fixedbank
+     0000B674  Ffixedbank$__str_59$0$0            fixedbank
+     0000B688  Ffixedbank$__str_60$0$0            fixedbank
+     0000B6A5  Ffixedbank$__str_61$0$0            fixedbank
+     0000B6BA  Ffixedbank$__str_62$0$0            fixedbank
+     0000B6CD  Ffixedbank$__str_63$0$0            fixedbank
+     0000B6D2  Ffixedbank$__str_64$0$0            fixedbank
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 108.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -5179,7 +5524,7 @@ _CABS0                              00000000    00000010 =          16. bytes (A
      00007FF0  G$__SMS__SEGA_signature$0$0        _sms_manager
      00007FF0  ___SMS__SEGA_signature             _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 104.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 109.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -5191,7 +5536,7 @@ _CABS1                              00000000    0000000E =          14. bytes (A
      00007FD2  G$__SMS__SDSC_author$0$0           _sms_manager
      00007FD2  ___SMS__SDSC_author                _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 105.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 110.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -5203,7 +5548,7 @@ _CABS2                              00000000    0000000B =          11. bytes (A
      00007FC7  G$__SMS__SDSC_name$0$0             _sms_manager
      00007FC7  ___SMS__SDSC_name                  _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 106.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 111.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -5215,7 +5560,7 @@ _CABS3                              00000000    00000028 =          40. bytes (A
      00007F9F  G$__SMS__SDSC_descr$0$0            _sms_manager
      00007F9F  ___SMS__SDSC_descr                 _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 107.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 112.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -5227,7 +5572,7 @@ _CABS4                              00000000    00000010 =          16. bytes (A
      00007FE0  G$__SMS__SDSC_signature$0$0        _sms_manager
      00007FE0  ___SMS__SDSC_signature             _sms_manager
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 108.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 113.
 
 Files Linked                              [ module(s) ]
 
@@ -5366,7 +5711,7 @@ C:\Program Files\SDCC\bin\..\lib\z80/z80.lib
 C:\Program Files\SDCC\bin\..\lib\z80/z80.lib
                                           [ mul.rel ]
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 109.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 114.
 
 User Base Address Definitions
 
