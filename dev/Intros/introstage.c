@@ -79,7 +79,9 @@ void InitIntroStage(unsigned char intronum)
 
 		// Script
 		if( ( stageframe % 8 ) == 0 )
-//			UpdateScripts();
+		{
+			UpdateScripts();
+		}
 //
 //		// Update stage, explosions, enemies
 //		if( stageframe2mod == 0 )

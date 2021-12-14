@@ -1,8 +1,7 @@
 #ifndef _SCROLLER_H_
 #define _SCROLLER_H_
 
-void scroller_foo();
-
+// ADRIANA
 void InitScroller();
 void AddScrollers( signed int *scr, unsigned char num );
 void UpdateScroller();

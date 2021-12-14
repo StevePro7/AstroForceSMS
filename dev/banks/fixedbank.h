@@ -72,8 +72,8 @@ extern const unsigned char *intro1labels[];
 //extern const unsigned char stage5scriptc[];
 //
 #define spawners_bank  FIXEDBANKSLOT
-//extern const unsigned char *spawners[];
-//
+extern const unsigned char *spawners[];
+
 #define stage5_statics_bank  FIXEDBANKSLOT
 //extern const unsigned int stage5_statics[];
 //

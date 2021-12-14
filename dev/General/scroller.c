@@ -4,10 +4,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-void scroller_foo()
-{
-}
-
 void InitScroller()
 {
 	numscrolls = 0;

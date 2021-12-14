@@ -55,32 +55,34 @@ void explosion_foo()
 //		}
 //	}
 //}
-//
-//// Create a explosion
-//void InitExplosion( unsigned char x, unsigned char y, unsigned char t )
-//{
-//	explosion *ex;
-//
-//	if( numexplosions < MAXEXPLOSIONS )
-//	{
-//		// Get
-//		ex = &explosions[ numexplosions ];
-//
-//		// Data
-//		ex->explosionposx = x;
-//		ex->explosionposy = y;
-//		ex->explosionsprite = 0;
-//		ex->explosiontype = t;
-//
-//		// Increase
-//		numexplosions++;
-//
-//		// Sound
-//		if( t != 0 )
-//			PlaySound( ( unsigned char * ) explosion_psg, 1 );
-//	}
-//}
-//
+
+// Create a explosion
+void InitExplosion( unsigned char x, unsigned char y, unsigned char t )
+{
+	explosion *ex;
+
+	if( numexplosions < MAXEXPLOSIONS )
+	{
+		// Get
+		ex = &explosions[ numexplosions ];
+
+		// Data
+		ex->explosionposx = x;
+		ex->explosionposy = y;
+		ex->explosionsprite = 0;
+		ex->explosiontype = t;
+
+		// Increase
+		numexplosions++;
+
+		// Sound
+		if( t != 0 )
+		{
+			PlaySound( ( unsigned char * ) explosion_psg, 1 );
+		}
+	}
+}
+
 //// Update all explosions
 //void UpdateExplosions()
 //{

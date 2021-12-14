@@ -5,7 +5,7 @@ void explosion_foo();
 
 //void RemoveExplosion( signed char a );
 //void UpdateExplosion( unsigned int a );
-//void InitExplosion( unsigned char x, unsigned char y, unsigned char t );
+void InitExplosion( unsigned char x, unsigned char y, unsigned char t );
 //void UpdateExplosions();
 //void InitExplosionSprite();
 void InitExplosions();
