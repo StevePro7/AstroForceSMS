@@ -1,6 +1,6 @@
 ;!FILE explosion.asm
 XL2
-H 9 areas 38 global symbols
+H 9 areas 7A global symbols
 M explosion
 O -mz80
 S _numexplosions Ref0000
@@ -8,58 +8,124 @@ S _LoadSprite Ref0000
 S _littleexplosion_psgcompr Ref0000
 S .__.ABS. Def0000
 S _spawnedexplosiontime Ref0000
+S _explosion_psg Ref0000
+S _explosions Ref0000
 S _bigexplosion_psgcompr Ref0000
-A _CODE size 34 flags 0 addr 0
-S A$explosion$132 Def0033
-S A$explosion$126 Def002E
-S A$explosion$117 Def0026
-S A$explosion$127 Def0031
+S _PlaySound Ref0000
+A _CODE size 87 flags 0 addr 0
+S A$explosion$213 Def007C
+S A$explosion$141 Def0046
+S A$explosion$123 Def0035
+S A$explosion$114 Def002F
+S A$explosion$105 Def0027
+S XG$InitExplosion$0$0 Def0053
+S A$explosion$214 Def007F
+S A$explosion$142 Def0047
+S A$explosion$124 Def0036
+S A$explosion$115 Def0030
+S A$explosion$106 Def0028
+S C$explosion.c$70$2$21 Def0021
+S A$explosion$224 Def0086
+S A$explosion$170 Def0058
+S A$explosion$143 Def0048
+S A$explosion$134 Def003E
+S A$explosion$125 Def0037
+S A$explosion$116 Def0031
+S A$explosion$107 Def002B
+S C$explosion.c$71$2$21 Def0025
+S C$explosion.c$64$1$20 Def0009
+S A$explosion$171 Def005B
+S A$explosion$144 Def004B
+S A$explosion$135 Def0041
+S A$explosion$126 Def003A
+S C$explosion.c$72$2$21 Def002C
+S A$explosion$190 Def0076
+S A$explosion$181 Def0066
+S A$explosion$172 Def005C
+S A$explosion$154 Def0053
+S A$explosion$145 Def004C
+S A$explosion$136 Def0042
+S C$explosion.c$84$1$20 Def0053
+S C$explosion.c$73$2$21 Def0032
+S A$explosion$218 Def0081
+S A$explosion$209 Def0079
+S A$explosion$191 Def0077
+S A$explosion$182 Def0068
+S A$explosion$173 Def005F
+S A$explosion$146 Def004F
+S C$explosion.c$81$3$22 Def0044
+S A$explosion$219 Def0084
+S A$explosion$183 Def0069
+S A$explosion$174 Def0060
+S A$explosion$147 Def0050
 S C$explosion.c$10$0$0 Def0000
+S A$explosion$184 Def006A
+S A$explosion$175 Def0063
+S C$explosion.c$76$2$21 Def003B
+S C$explosion.c$67$2$21 Def0014
+S A$explosion$185 Def006D
+S A$explosion$176 Def0064
+S A$explosion$167 Def0054
+S A$explosion$149 Def0051
+S A$explosion$186 Def006E
+S A$explosion$177 Def0065
+S A$explosion$168 Def0056
+S A$explosion$196 Def0078
+S A$explosion$187 Def0071
+S A$explosion$169 Def0057
+S C$explosion.c$79$2$21 Def003E
+S A$explosion$188 Def0072
+S C$explosion.c$60$0$0 Def0001
+S A$explosion$189 Def0075
 S A$explosion$80 Def0009
-S A$explosion$62 Def0000
-S A$explosion$90 Def0015
-S A$explosion$81 Def000C
-S A$explosion$91 Def0016
-S A$explosion$82 Def000D
-S A$explosion$92 Def0017
-S A$explosion$83 Def0010
-S A$explosion$93 Def001A
-S A$explosion$84 Def0011
-S A$explosion$75 Def0001
-S A$explosion$94 Def001B
-S A$explosion$85 Def0012
-S A$explosion$76 Def0003
+S A$explosion$90 Def001C
+S A$explosion$81 Def000D
+S A$explosion$91 Def001D
+S A$explosion$82 Def0010
+S A$explosion$64 Def0000
+S A$explosion$92 Def001E
+S A$explosion$83 Def0012
+S A$explosion$74 Def0001
+S A$explosion$93 Def001F
+S A$explosion$75 Def0003
+S A$explosion$94 Def0020
+S A$explosion$76 Def0007
 S G$explosion_foo$0$0 Def0000
-S A$explosion$95 Def001E
-S A$explosion$77 Def0004
-S A$explosion$96 Def001F
-S A$explosion$78 Def0005
-S A$explosion$97 Def0022
-S A$explosion$79 Def0008
-S A$explosion$98 Def0023
-S A$explosion$89 Def0013
-S G$InitExplosions$0$0 Def0026
+S A$explosion$87 Def0014
+S A$explosion$88 Def0017
+S A$explosion$98 Def0021
+S A$explosion$89 Def001A
+S G$InitExplosions$0$0 Def0079
 S A$explosion$99 Def0024
 S C$explosion.c$8$0$0 Def0000
-S G$InitExplosionSprite$0$0 Def0001
+S G$InitExplosionSprite$0$0 Def0054
 S _explosion_foo Def0000
-S _InitExplosions Def0026
-S _InitExplosionSprite Def0001
+S _InitExplosions Def0079
+S G$InitExplosion$0$0 Def0001
+S _InitExplosionSprite Def0054
+S C$explosion.c$120$1$24 Def007C
+S C$explosion.c$112$1$23 Def0054
 S XG$explosion_foo$0$0 Def0000
-S C$explosion.c$110$1$18 Def0001
-S C$explosion.c$111$1$18 Def0013
-S XG$InitExplosions$0$0 Def0033
-S C$explosion.c$120$1$19 Def0033
-S C$explosion.c$112$1$18 Def0025
-S C$explosion.c$115$1$18 Def0026
-S XG$InitExplosionSprite$0$0 Def0025
-S C$explosion.c$117$1$19 Def0026
-S C$explosion.c$118$1$19 Def0029
-S C$explosion.c$119$1$19 Def002E
-S C$explosion.c$107$0$0 Def0001
-S A$explosion$121 Def0029
-S A$explosion$122 Def002C
-S A$explosion$104 Def0025
+S C$explosion.c$121$1$24 Def0081
+S C$explosion.c$113$1$23 Def0066
+S C$explosion.c$122$1$24 Def0086
+S C$explosion.c$114$1$23 Def0078
+S C$explosion.c$109$1$20 Def0054
+S XG$InitExplosions$0$0 Def0086
+S C$explosion.c$117$1$23 Def0079
+S _InitExplosion Def0001
+S C$explosion.c$119$1$24 Def0079
+S XG$InitExplosionSprite$0$0 Def0078
+S A$explosion$120 Def0032
+S A$explosion$111 Def002C
+S A$explosion$130 Def003B
+S A$explosion$121 Def0033
+S A$explosion$112 Def002D
+S A$explosion$103 Def0025
+S A$explosion$140 Def0044
+S A$explosion$122 Def0034
+S A$explosion$113 Def002E
+S A$explosion$104 Def0026
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -74,13 +140,31 @@ T 00 00 C9
 R 00 00 00 00
 T 01 00
 R 00 00 00 00
-T 01 00 3E 05 F5 33 21 1A 01 E5 21 00 00 E5 CD
-R 00 00 00 00 02 0B 02 00
-T 0E 00 00 00 F1 F1 33 3E 02 F5 33 21 1D 01 E5 21
-R 00 00 00 00 02 02 01 00
-T 1C 00 00 00 E5 CD 00 00 F1 F1 33 C9
-R 00 00 00 00 02 02 05 00 02 06 01 00
-T 26 00
+T 01 00 DD E5 DD 21 00 00 DD 39 FD 21 00 00 FD 7E
+R 00 00 00 00 02 0C 00 00
+T 0F 00 00 D6 0A 30 3D 01 00 00 FD 6E 00 26 00 29
+R 00 00 00 00 02 08 06 00
+T 1D 00 29 09 4D 44 DD 7E 04 02 59 50 13 DD 7E 05
 R 00 00 00 00
-T 26 00 CD 01 00 21 00 00 36 00 21 00 00 36 00 C9
+T 2B 00 12 59 50 13 13 AF 12 03 03 03 60 69 DD 7E
+R 00 00 00 00
+T 39 00 06 77 FD 34 00 DD 7E 06 B7 28 0D 3E 01 F5
+R 00 00 00 00
+T 47 00 33 21 00 00 E5 CD 00 00 F1 33
+R 00 00 00 00 02 04 05 00 02 08 08 00
+T 51 00
+R 00 00 00 00
+T 51 00 DD E1 C9
+R 00 00 00 00
+T 54 00
+R 00 00 00 00
+T 54 00 3E 05 F5 33 21 1A 01 E5 21 00 00 E5 CD
+R 00 00 00 00 02 0B 02 00
+T 61 00 00 00 F1 F1 33 3E 02 F5 33 21 1D 01 E5 21
+R 00 00 00 00 02 02 01 00
+T 6F 00 00 00 E5 CD 00 00 F1 F1 33 C9
+R 00 00 00 00 02 02 07 00 02 06 01 00
+T 79 00
+R 00 00 00 00
+T 79 00 CD 54 00 21 00 00 36 00 21 00 00 36 00 C9
 R 00 00 00 00 00 03 00 00 02 06 00 00 02 0B 04 00

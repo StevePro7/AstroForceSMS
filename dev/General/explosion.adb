@@ -1,5 +1,10 @@
 M:explosion
 F:G$explosion_foo$0$0({2}DF,SV:S),Z,0,0,0,0,0
+F:G$InitExplosion$0$0({2}DF,SV:S),Z,0,0,0,0,0
+S:Lexplosion.InitExplosion$x$1$19({1}SC:U),B,1,4
+S:Lexplosion.InitExplosion$y$1$19({1}SC:U),B,1,5
+S:Lexplosion.InitExplosion$t$1$19({1}SC:U),B,1,6
+S:Lexplosion.InitExplosion$ex$1$20({2}DG,STexplosion:S),R,0,0,[c,b]
 F:G$InitExplosionSprite$0$0({2}DF,SV:S),C,0,0,0,0,0
 F:G$InitExplosions$0$0({2}DF,SV:S),Z,0,0,0,0,0
 T:Fexplosion$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
@@ -10,6 +15,7 @@ T:Fexplosion$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$players
 T:Fexplosion$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fexplosion$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
