@@ -2154,10 +2154,10 @@ const MyInitEnemyFunction initenemyfunctions[] =
 //extern unsigned char UpdateRSGThing( enemy *en );
 //extern unsigned char UpdateWW2PlaneB( enemy *en );
 //extern unsigned char UpdateStage8Lateral( enemy *en );
-//
-//const MyUpdateEnemyFunction updateenemyfunctions[] =
-//{
-//	0,
+
+const MyUpdateEnemyFunction updateenemyfunctions[] =
+{
+	0,
 //	UpdateWarning,
 //	UpdateIntroOvni,
 //	UpdateIntroOvni,
@@ -2243,8 +2243,8 @@ const MyInitEnemyFunction initenemyfunctions[] =
 //	UpdateRSGThing,
 //	UpdateWW2PlaneB,
 //	UpdateStage8Lateral
-//};
-//
+};
+
 //extern void UpdateStage1();
 //extern void UpdateStage2();
 //extern void UpdateStage3();

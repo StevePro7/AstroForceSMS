@@ -87,7 +87,7 @@ void InitIntroStage(unsigned char intronum)
 		if( stageframe2mod == 0 )
 		{
 			UpdateExplosions();
-			//UpdateEnemies();
+			UpdateEnemies();
 		}
 
 //		// Only for stage 2

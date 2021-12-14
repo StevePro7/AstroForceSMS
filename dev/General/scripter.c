@@ -8,10 +8,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-void scripter_foo()
-{
-}
-
 void InitScripts()
 {
 	numscripts = 0;

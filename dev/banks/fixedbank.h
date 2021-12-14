@@ -110,8 +110,8 @@ extern const unsigned char *spawners[];
 extern const MyInitEnemyFunction initenemyfunctions[];
 
 #define updateenemyfunctions_bank FIXEDBANKSLOT;
-//extern const MyUpdateEnemyFunction updateenemyfunctions[];
-//
+extern const MyUpdateEnemyFunction updateenemyfunctions[];
+
 #define killenemyfunctions_bank FIXEDBANKSLOT;
 //extern const MyKillEnemyFunction killenemyfunctions[];
 //

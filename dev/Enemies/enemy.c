@@ -1,5 +1,6 @@
 #include "enemy.h"
 #include "../banks/fixedbank.h"
+#include "../funcs.h"
 #include "../vars.h"
 
 void enemy_foo()
@@ -34,32 +35,32 @@ void enemy_foo()
 //	en->enemyparama = dx;
 //	en->enemyparamb = dy;
 //}
-//
-//// Remove enemy
-//void RemoveEnemy( signed char a )
-//{
-//	enemy *ea, *eb;
-//
-//	// Remove list of sprites
-//	if( a<numenemies - 1 )
-//	{
-//		ea = &enemies[ a ];
-//		eb = &enemies[ numenemies - 1 ];
-//
-//		ea->enemyposx = eb->enemyposx;
-//		ea->enemyposy = eb->enemyposy;
-//		ea->enemytype = eb->enemytype;
-//		ea->enemyframe = eb->enemyframe;
-//		ea->enemyparama = eb->enemyparama;
-//		ea->enemyparamb = eb->enemyparamb;
-//		ea->enemyenergy = eb->enemyenergy;
-//		ea->enemywidth = eb->enemywidth;
-//		ea->enemyheight = eb->enemyheight;
-//	}
-//	// Bajamos el numero de enemys
-//	if( numenemies>0 )numenemies--;
-//}
-//
+
+// Remove enemy
+void RemoveEnemy( signed char a )
+{
+	enemy *ea, *eb;
+
+	// Remove list of sprites
+	if( a<numenemies - 1 )
+	{
+		ea = &enemies[ a ];
+		eb = &enemies[ numenemies - 1 ];
+
+		ea->enemyposx = eb->enemyposx;
+		ea->enemyposy = eb->enemyposy;
+		ea->enemytype = eb->enemytype;
+		ea->enemyframe = eb->enemyframe;
+		ea->enemyparama = eb->enemyparama;
+		ea->enemyparamb = eb->enemyparamb;
+		ea->enemyenergy = eb->enemyenergy;
+		ea->enemywidth = eb->enemywidth;
+		ea->enemyheight = eb->enemyheight;
+	}
+	// Bajamos el numero de enemys
+	if( numenemies>0 )numenemies--;
+}
+
 //void KillEnemy( unsigned char a )
 //{
 //	enemy *en;
@@ -103,82 +104,84 @@ void enemy_foo()
 //			if( ( force == 1 ) || ( enemies[ a ].enemywidth <= 16 ) )
 //				KillEnemy( a );
 //}
-//
-//
-//
-//// Update enemy
-//void UpdateEnemy( unsigned char a )
-//{
-//	unsigned char erase;
-//	enemy *en;
-//	//playershoot *ps;
-//
-//	// Security check
-//	if( a >= numenemies )return;
-//
-//	// Get enemy
-//	en = &enemies[ a ];
-//
-//	// By defect
-//	erase = 1;
-//
-//	// Update
-//	if( updateenemyfunctions[ en->enemytype ] != 0 )
-//		erase = ( *( updateenemyfunctions[ en->enemytype ] ) )( en );
-//
-//	// View if have to erase
-//	if( erase == 0 )
-//		RemoveEnemy( a );
-//	else
-//	{
-//		// Increase counter
-//		en->enemyframe++;
-//
-//		/*
-//		// Collision with player shoot
-//		if(a%2==stageframe2mod)
-//		{
-//		if(numplayershoots>0)
-//		{
-//		for(signed char b=numplayershoots-1;b>=0;b--)
-//		{
-//		ps=&playershoots[b];
-//		if(checkEnemyPlayerShoot(en,ps)==1)
-//		{
-//		if(en->enemyenergy<=1+playershootlevel)
-//		KillEnemy(a);
-//		else
-//		{
-//		en->enemyenergy-=(1+playershootlevel);
-//		InitExplosion(ps->playershootx+4,ps->playershooty+4,0);
-//		}
-//
-//		// Remove in all cases
-//		RemovePlayershoot(b);
-//
-//		// No more collisions
-//		return;
-//		}
-//		}
-//		}
-//		}
-//		*/
-//	}
-//}
-//
-//// Update all enemys
-//void UpdateEnemies()
-//{
-//	signed char q;
-//
-//	// Need change here, by consensus
-//	changeBank( FIXEDBANKSLOT );
-//
-//	// For each enemy
-//	if( numenemies>0 )
-//		for( q = numenemies - 1; q >= 0; q-- )
-//			UpdateEnemy( q );
-//}
+
+
+
+// Update enemy
+void UpdateEnemy( unsigned char a )
+{
+	unsigned char erase;
+	enemy *en;
+	//playershoot *ps;
+
+	// Security check
+	if( a >= numenemies )return;
+
+	// Get enemy
+	en = &enemies[ a ];
+
+	// By defect
+	erase = 1;
+
+	// Update
+	if( updateenemyfunctions[ en->enemytype ] != 0 )
+		erase = ( *( updateenemyfunctions[ en->enemytype ] ) )( en );
+
+	// View if have to erase
+	if( erase == 0 )
+		RemoveEnemy( a );
+	else
+	{
+		// Increase counter
+		en->enemyframe++;
+
+		/*
+		// Collision with player shoot
+		if(a%2==stageframe2mod)
+		{
+		if(numplayershoots>0)
+		{
+		for(signed char b=numplayershoots-1;b>=0;b--)
+		{
+		ps=&playershoots[b];
+		if(checkEnemyPlayerShoot(en,ps)==1)
+		{
+		if(en->enemyenergy<=1+playershootlevel)
+		KillEnemy(a);
+		else
+		{
+		en->enemyenergy-=(1+playershootlevel);
+		InitExplosion(ps->playershootx+4,ps->playershooty+4,0);
+		}
+
+		// Remove in all cases
+		RemovePlayershoot(b);
+
+		// No more collisions
+		return;
+		}
+		}
+		}
+		}
+		*/
+	}
+}
+
+// Update all enemys
+void UpdateEnemies()
+{
+	signed char q;
+
+	// Need change here, by consensus
+	changeBank( FIXEDBANKSLOT );
+
+	// For each enemy
+	if( numenemies>0 )
+		for( q = numenemies - 1; q >= 0; q-- )
+		{
+			UpdateEnemy( q );
+		}
+}
 
 // Create a enemy
 void InitEnemy( unsigned char x, unsigned char y, unsigned char t )
