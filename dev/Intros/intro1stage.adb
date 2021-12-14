@@ -3,12 +3,15 @@ F:G$intro1stage_foo$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitIntro1Stage$0$0({2}DF,SV:S),Z,0,0,0,0,0
 T:Fintro1stage$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
-S:G$scripter_foo$0$0({2}DF,SV:S),C,0,0
 S:G$InitScripts$0$0({2}DF,SV:S),C,0,0
 S:G$InitScript$0$0({2}DF,SV:S),C,0,0
+S:G$RemoveScript$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateScript$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateScripts$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0
 S:G$DrawSpriteArray$0$0({2}DF,SV:S),C,0,0

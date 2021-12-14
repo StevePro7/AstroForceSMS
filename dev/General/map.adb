@@ -1,12 +1,12 @@
 M:map
 F:G$map_foo$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$MoveMap$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lmap.MoveMap$mvx$1$46({2}SI:S),B,1,4
-S:Lmap.MoveMap$mvy$1$46({2}SI:S),B,1,6
-S:Lmap.MoveMap$a$1$47({2}SI:S),R,0,0,[c,b]
-S:Lmap.MoveMap$c$1$47({2}SI:S),R,0,0,[l,h]
-S:Lmap.MoveMap$mpy2$1$47({2}SI:U),R,0,0,[l,h]
-S:Lmap.MoveMap$mpy5$1$47({2}SI:U),R,0,0,[c,b]
+S:Lmap.MoveMap$mvx$1$48({2}SI:S),B,1,4
+S:Lmap.MoveMap$mvy$1$48({2}SI:S),B,1,6
+S:Lmap.MoveMap$a$1$49({2}SI:S),R,0,0,[c,b]
+S:Lmap.MoveMap$c$1$49({2}SI:S),R,0,0,[l,h]
+S:Lmap.MoveMap$mpy2$1$49({2}SI:U),R,0,0,[l,h]
+S:Lmap.MoveMap$mpy5$1$49({2}SI:U),R,0,0,[c,b]
 S:Lmap.MoveMap$sloc0$1$0({2}SI:U),B,1,-3
 S:Lmap.MoveMap$sloc1$1$0({1}SC:U),B,1,-1
 T:Fmap$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
@@ -17,6 +17,7 @@ T:Fmap$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$
 T:Fmap$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fmap$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
@@ -96,6 +97,9 @@ S:G$powerupv$0$0({1}SC:S),E,0,0
 S:G$powerupcounter$0$0({2}SI:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
 S:G$enemy_foo$0$0({2}DF,SV:S),C,0,0
+S:G$RemoveEnemy$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateEnemy$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateEnemies$0$0({2}DF,SV:S),C,0,0
 S:G$InitEnemy$0$0({2}DF,SV:S),C,0,0
 S:G$InitEnemies$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
