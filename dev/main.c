@@ -13,8 +13,8 @@ void main()
 		//InitMikGamesStage();		// TODO uncomment
 
 		// Game intro
-		InitIntroStage( 1 );
-		//InitIntroStage( 4 );
+		//InitIntroStage( 1 );
+		InitIntroStage( 4 );
 		//InitIntroStage( 2 );
 
 		// Logo

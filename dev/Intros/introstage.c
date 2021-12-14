@@ -5,6 +5,7 @@
 #include "../General/timeredlabel.h"
 #include "../Intros/intro1stage.h"
 #include "../Intros/intro2stage.h"
+#include "../Intros/intro3stage.h"
 #include "../devkit/_sms_manager.h"
 #include "../devkit/_snd_manager.h"
 #include "../banks/bank3.h"
@@ -61,7 +62,9 @@ void InitIntroStage(unsigned char intronum)
 		break;
 		//	case 2:InitIntro2Stage(); break;
 		//	case 3:InitFinishStage(); break;
-		//	case 4:InitIntro3Stage(); break;
+	case 4:
+		InitIntro3Stage(); 
+		break;
 		//	case 5:InitIntro4Stage(); break;
 	}
 
