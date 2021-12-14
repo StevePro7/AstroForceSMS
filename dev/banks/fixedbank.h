@@ -16,11 +16,11 @@ extern const signed char playershootspeedsy[];
 //extern const unsigned char selectormarkt[];
 //
 extern const unsigned char sinustable[];
-//extern const char *jukebox_songs[];
+extern const char *jukebox_songs[];
 extern const unsigned char jukebox_repeat[];
-//extern const char jukebox_banks[];
-//extern const unsigned char *jukebox_names[];
-//
+extern const char jukebox_banks[];
+extern const unsigned char *jukebox_names[];
+
 //extern const signed char ww2planemovementy[];
 //extern const signed char ww2planemovementx[];
 //extern const unsigned char ww2plane_pattern_a[];
@@ -30,82 +30,82 @@ extern const unsigned char jukebox_repeat[];
 //extern const unsigned char ww2plane_pattern_e[];
 //extern const unsigned char ww2plane_pattern_f[];
 //extern const unsigned char *ww2plane_patterns[];
-//
+
 #define intro1script_bank FIXEDBANKSLOT
 extern const unsigned char intro1script[];
 extern const unsigned char *intro1labels[];
-//
+
 #define intro4script_bank FIXEDBANKSLOT
-//extern const unsigned char intro4script[];
-//
+extern const unsigned char intro4script[];
+
 #define intro2script_bank FIXEDBANKSLOT
-//extern const unsigned char intro2script[];
-//
+extern const unsigned char intro2script[];
+
 #define intro3script_bank FIXEDBANKSLOT
-//extern const unsigned char intro3script[];
-//extern const unsigned char *intro3labels[];
-//
-//
+extern const unsigned char intro3script[];
+extern const unsigned char *intro3labels[];
+
+
 #define finishscript_bank  FIXEDBANKSLOT
-//extern const unsigned char finishscript[];
-//extern const unsigned char *finishlabels[];
-//
-//extern const unsigned char stagedatamarks[];
-//extern const unsigned char *stageinitdata[];
-//
+extern const unsigned char finishscript[];
+extern const unsigned char *finishlabels[];
+
+extern const unsigned char stagedatamarks[];
+extern const unsigned char *stageinitdata[];
+
 #define stage4script_bank  FIXEDBANKSLOT
-//extern const unsigned char stage4script[];
-//
+extern const unsigned char stage4script[];
+
 #define stage4scriptb_bank  FIXEDBANKSLOT
-//extern const unsigned char stage4scriptb[];
-//
+extern const unsigned char stage4scriptb[];
+
 #define stage4scriptc_bank  FIXEDBANKSLOT
-//extern const unsigned char stage4scriptc[];
-//
+extern const unsigned char stage4scriptc[];
+
 #define stage5script_bank  FIXEDBANKSLOT
-//extern const unsigned char stage5script[];
-//
+extern const unsigned char stage5script[];
+
 #define stage5scriptb_bank  FIXEDBANKSLOT
-//extern const unsigned char stage5scriptb[];
-//
+extern const unsigned char stage5scriptb[];
+
 #define stage5scriptc_bank  FIXEDBANKSLOT
-//extern const unsigned char stage5scriptc[];
-//
+extern const unsigned char stage5scriptc[];
+
 #define spawners_bank  FIXEDBANKSLOT
 extern const unsigned char *spawners[];
 
 #define stage5_statics_bank  FIXEDBANKSLOT
-//extern const unsigned int stage5_statics[];
-//
+extern const unsigned int stage5_statics[];
+
 #define stage8_statics_bank  FIXEDBANKSLOT
-//extern const unsigned int stage8_statics[];
-//
+extern const unsigned int stage8_statics[];
+
 #define stage1_statics_bank  FIXEDBANKSLOT
-//extern const unsigned int stage1_statics[];
-//
+extern const unsigned int stage1_statics[];
+
 #define stage2_statics_bank  FIXEDBANKSLOT
-//extern const unsigned int stage2_statics[];
-//
+extern const unsigned int stage2_statics[];
+
 #define stage6script_bank  FIXEDBANKSLOT
-//extern const unsigned char stage6script[];
-//
+extern const unsigned char stage6script[];
+
 #define stage6scriptb_bank  FIXEDBANKSLOT
-//extern const unsigned char stage6scriptb[];
-//
+extern const unsigned char stage6scriptb[];
+
 #define stage3script_bank  FIXEDBANKSLOT
-//extern const unsigned char stage3script[];
-//
+extern const unsigned char stage3script[];
+
 #define stage3scriptb_bank  FIXEDBANKSLOT
-//extern const unsigned char stage3scriptb[];
-//
+extern const unsigned char stage3scriptb[];
+
 #define stage3_statics_bank  FIXEDBANKSLOT
-//extern const unsigned int stage3_statics[];
-//
+extern const unsigned int stage3_statics[];
+
 #define stage7_statics_bank  FIXEDBANKSLOT
-//extern const unsigned int stage7_statics[];
-//
-//
-//// FUNCTION POInTERS
+extern const unsigned int stage7_statics[];
+
+
+// FUNCTION POInTERS
 #define initenemyfunctions_bank FIXEDBANKSLOT;
 extern const MyInitEnemyFunction initenemyfunctions[];
 

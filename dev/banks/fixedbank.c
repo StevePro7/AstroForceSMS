@@ -494,7 +494,7 @@ const unsigned char finishscript[] =
 //////////////////////////////////////////////////
 // STAGES INIT INFO
 
-unsigned char stagedatamarks[] = { 6,4,3,1,7,2,0,5 };
+const unsigned char stagedatamarks[] = { 6,4,3,1,7,2,0,5 };
 
 const unsigned char *stageinitdata[] =
 {

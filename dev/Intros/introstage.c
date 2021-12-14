@@ -4,7 +4,9 @@
 #include "../General/scripter.h"
 #include "../General/timeredlabel.h"
 #include "../Intros/intro1stage.h"
+#include "../Intros/intro2stage.h"
 #include "../devkit/_sms_manager.h"
+#include "../devkit/_snd_manager.h"
 #include "../banks/bank3.h"
 #include "../funcs.h"
 #include "../vars.h"
@@ -90,12 +92,17 @@ void InitIntroStage(unsigned char intronum)
 			UpdateEnemies();
 		}
 
-//		// Only for stage 2
-//		if( intronum == 2 )DoIntro2Scroll();
-//
-//		// Play?
-//		if( ( keystatus&devkit_PORT_A_KEY_1() ) || ( !devkit_PSGGetStatus() ) )
-//			return;
+		// Only for stage 2
+		if( intronum == 2 )
+		{
+			DoIntro2Scroll();
+		}
+
+		// Play?
+		if( ( keystatus&devkit_PORT_A_KEY_1() ) || ( !devkit_PSGGetStatus() ) )
+		{
+			return;
+		}
 
 		// Update psg
 		UpdatePSG();
