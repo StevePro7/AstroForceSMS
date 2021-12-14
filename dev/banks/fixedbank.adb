@@ -6,7 +6,6 @@ S:G$selectornamestage$0$0({10}DA5d,DG,SC:U),E,0,0
 S:G$intro1labels$0$0({12}DA6d,DG,SC:U),E,0,0
 S:G$intro3labels$0$0({22}DA11d,DG,SC:U),E,0,0
 S:G$finishlabels$0$0({40}DA20d,DG,SC:U),E,0,0
-S:G$stagedatamarks$0$0({8}DA8d,SC:U),E,0,0
 S:G$stageinitdata$0$0({128}DA64d,DG,SC:U),E,0,0
 S:G$ww2plane_patterns$0$0({12}DA6d,DG,SC:U),E,0,0
 S:G$spawners$0$0({44}DA22d,DG,SC:U),E,0,0
@@ -14,6 +13,8 @@ S:G$imagepointers$0$0({172}DA86d,DG,SC:U),E,0,0
 S:G$monsterheadshootdirecionsx$0$0({16}DA16d,SC:S),E,0,0
 S:G$monsterheadshootdirecionsy$0$0({16}DA16d,SC:S),E,0,0
 S:G$difficultlabels$0$0({4}DA2d,DG,SC:U),E,0,0
+S:G$InitWarning$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateWarning$0$0({2}DF,SC:U),C,0,0
 S:G$bigexplosion_psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$ending_psg$0$0({0}DA0d,SC:U),D,0,0
 S:G$enemybomb_psg$0$0({0}DA0d,SC:U),D,0,0
@@ -205,6 +206,7 @@ S:G$intro1script$0$0({250}DA250d,SC:U),D,0,0
 S:G$intro2script$0$0({155}DA155d,SC:U),D,0,0
 S:G$intro3script$0$0({70}DA70d,SC:U),D,0,0
 S:G$finishscript$0$0({260}DA260d,SC:U),D,0,0
+S:G$stagedatamarks$0$0({8}DA8d,SC:U),D,0,0
 S:G$ww2planemovementy$0$0({8}DA8d,SC:S),D,0,0
 S:G$ww2planemovementx$0$0({8}DA8d,SC:S),D,0,0
 S:G$ww2plane_pattern_a$0$0({14}DA14d,SC:U),D,0,0
@@ -240,8 +242,8 @@ S:G$stage3scriptb$0$0({25}DA25d,SC:U),D,0,0
 S:G$stage3script$0$0({45}DA45d,SC:U),D,0,0
 S:G$stage3_statics$0$0({632}DA316d,SI:U),D,0,0
 S:G$stage7_statics$0$0({960}DA480d,SI:U),D,0,0
-S:G$initenemyfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
-S:G$updateenemyfunctions$0$0({2}DA1d,DC,DF,SC:U),D,0,0
+S:G$initenemyfunctions$0$0({4}DA2d,DC,DF,SV:S),D,0,0
+S:G$updateenemyfunctions$0$0({4}DA2d,DC,DF,SC:U),D,0,0
 S:G$updatestagefunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
 S:G$stage4_scrollers$0$0({160}DA80d,SI:S),D,0,0
 S:G$stage1_scrollers$0$0({40}DA20d,SI:S),D,0,0

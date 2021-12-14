@@ -12,6 +12,7 @@
 #include "bank12.h"
 #include "bank13.h"
 #include "bank14.h"
+#include "../General/warning.h"
 
 #ifdef _CONSOLE
 #pragma warning(disable: 4047)
@@ -2006,7 +2007,7 @@ const unsigned char *spawners[] =
 const MyInitEnemyFunction initenemyfunctions[] =
 {
 	0,
-//	InitWarning,
+	InitWarning,
 //	0,
 //	0,
 //	InitIntroSidePlayer,
@@ -2158,7 +2159,7 @@ const MyInitEnemyFunction initenemyfunctions[] =
 const MyUpdateEnemyFunction updateenemyfunctions[] =
 {
 	0,
-//	UpdateWarning,
+	UpdateWarning,
 //	UpdateIntroOvni,
 //	UpdateIntroOvni,
 //	UpdateIntroSidePlayer,
