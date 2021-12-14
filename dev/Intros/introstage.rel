@@ -1,6 +1,6 @@
 ;!FILE introstage.asm
 XL2
-H 9 areas 68 global symbols
+H 9 areas 70 global symbols
 M introstage
 O -mz80
 S _devkit_SMS_displayOn Ref0000
@@ -17,97 +17,105 @@ S _devkit_SMS_displayOff Ref0000
 S _introstageposx Ref0000
 S _UpdateScripts Ref0000
 S _UpdatePSG Ref0000
+S _stageframe2mod Ref0000
 S _devkit_SMS_setBGScrollY Ref0000
+S _UpdateExplosions Ref0000
 S _UpdateStage Ref0000
 S _LoadBGPalette Ref0000
 S _InitEnemies Ref0000
 S _stageframe Ref0000
-A _CODE size 5E flags 0 addr 0
+A _CODE size 67 flags 0 addr 0
 S _introstage_foo Def0000
 S XG$introstage_foo$0$0 Def0000
+S C$introstage.c$101$2$61 Def0062
 S G$setIntroStageGraphics$0$0 Def000D
-S C$introstage.c$103$1$56 Def005C
-S C$introstage.c$101$2$58 Def0059
-S A$introstage$100 Def000C
-S A$introstage$210 Def004F
-S A$introstage$120 Def0019
+S C$introstage.c$103$1$59 Def0065
+S A$introstage$101 Def000C
+S A$introstage$120 Def0018
 S _setIntroStageGraphics Def000D
-S A$introstage$211 Def0052
-S A$introstage$202 Def0049
-S A$introstage$221 Def0059
-S A$introstage$212 Def0054
-S A$introstage$140 Def0026
-S A$introstage$113 Def000D
-S A$introstage$141 Def0028
-S A$introstage$132 Def0020
-S A$introstage$114 Def000F
-S C$introstage.c$20$1$53 Def000C
-S A$introstage$142 Def0029
-S A$introstage$124 Def001A
-S A$introstage$115 Def0010
-S A$introstage$206 Def004C
-S A$introstage$170 Def0035
-S A$introstage$143 Def002A
-S A$introstage$116 Def0011
-S C$introstage.c$22$1$53 Def000D
-S A$introstage$216 Def0056
-S A$introstage$162 Def002F
-S A$introstage$144 Def002D
-S A$introstage$117 Def0014
-S C$introstage.c$40$1$54 Def0026
-S C$introstage.c$31$1$54 Def001D
+S A$introstage$211 Def004F
+S A$introstage$121 Def0019
+S A$introstage$212 Def0052
+S A$introstage$203 Def0049
+S A$introstage$222 Def0059
+S A$introstage$213 Def0054
+S A$introstage$150 Def002E
+S A$introstage$141 Def0026
+S A$introstage$114 Def000D
+S A$introstage$223 Def005C
+S A$introstage$142 Def0028
+S A$introstage$133 Def0020
+S A$introstage$115 Def000F
+S A$introstage$233 Def0062
+S A$introstage$224 Def005D
+S A$introstage$143 Def0029
+S A$introstage$125 Def001A
+S A$introstage$116 Def0010
+S A$introstage$207 Def004C
+S A$introstage$171 Def0035
+S A$introstage$144 Def002A
+S A$introstage$117 Def0011
+S C$introstage.c$20$1$56 Def000C
 S G$InitIntroScroll$0$0 Def0001
-S A$introstage$226 Def005C
-S A$introstage$190 Def0043
-S A$introstage$136 Def0023
-S A$introstage$118 Def0015
-S C$introstage.c$41$1$54 Def002E
-S A$introstage$182 Def0040
-S A$introstage$128 Def001D
-S A$introstage$119 Def0018
-S A$introstage$174 Def0038
-S C$introstage.c$43$1$54 Def002F
-S C$introstage.c$34$1$54 Def0020
-S C$introstage.c$25$1$54 Def000D
-S A$introstage$175 Def003B
-S A$introstage$166 Def0032
-S C$introstage.c$18$1$53 Def0001
-S A$introstage$194 Def0046
-S A$introstage$176 Def003C
-S A$introstage$149 Def002E
-S C$introstage.c$70$1$56 Def0046
-S C$introstage.c$52$1$56 Def0035
+S A$introstage$217 Def0056
+S A$introstage$163 Def002F
+S A$introstage$145 Def002D
+S A$introstage$118 Def0014
+S A$introstage$191 Def0043
+S A$introstage$137 Def0023
+S A$introstage$119 Def0015
+S C$introstage.c$22$1$56 Def000D
+S A$introstage$228 Def005F
+S A$introstage$183 Def0040
+S A$introstage$129 Def001D
+S C$introstage.c$40$1$57 Def0026
+S C$introstage.c$31$1$57 Def001D
+S A$introstage$238 Def0065
+S A$introstage$175 Def0038
+S C$introstage.c$81$2$61 Def004F
+S C$introstage.c$41$1$57 Def002E
+S A$introstage$176 Def003B
+S A$introstage$167 Def0032
 S G$InitIntroStage$0$0 Def002F
-S C$introstage.c$19$1$53 Def0007
 S C$introstage.c$12$0$0 Def0000
-S A$introstage$177 Def003D
+S A$introstage$195 Def0046
+S A$introstage$177 Def003C
+S C$introstage.c$43$1$57 Def002F
 S XG$setIntroStageGraphics$0$0 Def002E
-S C$introstage.c$37$1$54 Def0023
-S C$introstage.c$28$1$54 Def001A
-S A$introstage$178 Def003E
-S C$introstage.c$72$1$56 Def0049
+S C$introstage.c$34$1$57 Def0020
+S C$introstage.c$25$1$57 Def000D
+S A$introstage$178 Def003D
+S C$introstage.c$75$2$61 Def0049
+S C$introstage.c$58$2$60 Def0040
+S C$introstage.c$18$1$56 Def0001
 S C$introstage.c$14$0$0 Def0000
-S C$introstage.c$64$1$56 Def0043
-S C$introstage.c$55$1$56 Def0038
-S C$introstage.c$46$1$56 Def002F
+S A$introstage$179 Def003E
+S C$introstage.c$83$3$62 Def0056
+S C$introstage.c$70$1$59 Def0046
+S C$introstage.c$52$1$59 Def0035
+S C$introstage.c$19$1$56 Def0007
+S C$introstage.c$37$1$57 Def0023
+S C$introstage.c$28$1$57 Def001A
 S C$introstage.c$16$0$0 Def0001
-S C$introstage.c$81$2$58 Def004F
-S C$introstage.c$67$1$56 Def0043
-S C$introstage.c$49$1$56 Def0032
+S C$introstage.c$87$2$61 Def0059
+S C$introstage.c$78$2$61 Def004C
+S C$introstage.c$72$1$59 Def0049
+S C$introstage.c$64$1$59 Def0043
+S C$introstage.c$55$1$59 Def0038
+S C$introstage.c$46$1$59 Def002F
 S _InitIntroScroll Def0001
-S C$introstage.c$75$2$58 Def0049
-S C$introstage.c$58$2$57 Def0040
-S C$introstage.c$83$3$59 Def0056
-S A$introstage$90 Def0004
-S C$introstage.c$78$2$58 Def004C
+S C$introstage.c$67$1$59 Def0043
+S C$introstage.c$49$1$59 Def0032
+S C$introstage.c$89$3$63 Def005F
+S A$introstage$90 Def0001
+S A$introstage$91 Def0004
 S _InitIntroStage Def002F
-S A$introstage$94 Def0007
-S A$introstage$76 Def0000
 S G$introstage_foo$0$0 Def0000
-S A$introstage$95 Def0009
-S A$introstage$89 Def0001
+S A$introstage$95 Def0007
+S A$introstage$77 Def0000
+S A$introstage$96 Def0009
 S XG$InitIntroScroll$0$0 Def000C
-S XG$InitIntroStage$0$0 Def005C
+S XG$InitIntroStage$0$0 Def0065
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -127,11 +135,11 @@ R 00 00 00 00 02 06 0B 00 02 0B 04 00
 T 0D 00
 R 00 00 00 00
 T 0D 00 3E 03 F5 33 21 00 00 E5 CD 00 00 F1 33 CD
-R 00 00 00 00 02 07 02 00 02 0B 10 00
+R 00 00 00 00 02 07 02 00 02 0B 12 00
 T 1B 00 00 00 CD 00 00 CD 00 00 CD
-R 00 00 00 00 02 02 03 00 02 05 11 00 02 08 08 00
+R 00 00 00 00 02 02 03 00 02 05 13 00 02 08 08 00
 T 24 00 00 00 3E C0 F5 33 CD 00 00 33 C9
-R 00 00 00 00 02 02 01 00 02 09 0E 00
+R 00 00 00 00 02 02 01 00 02 09 0F 00
 T 2F 00
 R 00 00 00 00
 T 2F 00 CD 00 00 CD 00 00 CD 0D 00 21 02 00 39 7E
@@ -145,10 +153,14 @@ R 00 00 00 00 02 03 00 00 00 06 00 00
 T 49 00
 R 00 00 00 00
 T 49 00 CD 00 00 CD 00 00 3A 00 00 E6 07 20 03 CD
-R 00 00 00 00 02 03 0F 00 02 06 06 00 02 09 12 00
+R 00 00 00 00 02 03 11 00 02 06 06 00 02 09 14 00
 T 57 00 00 00
 R 00 00 00 00 02 02 0C 00
 T 59 00
 R 00 00 00 00
-T 59 00 CD 00 00 18 EB
+T 59 00 3A 00 00 B7 20 03 CD 00 00
+R 00 00 00 00 02 03 0E 00 02 09 10 00
+T 62 00
+R 00 00 00 00
+T 62 00 CD 00 00 18 E2
 R 00 00 00 00 02 03 0D 00

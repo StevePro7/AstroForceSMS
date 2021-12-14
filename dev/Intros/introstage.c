@@ -82,14 +82,14 @@ void InitIntroStage(unsigned char intronum)
 		{
 			UpdateScripts();
 		}
-//
-//		// Update stage, explosions, enemies
-//		if( stageframe2mod == 0 )
-//		{
-//			UpdateExplosions();
-//			UpdateEnemies();
-//		}
-//
+
+		// Update stage, explosions, enemies
+		if( stageframe2mod == 0 )
+		{
+			UpdateExplosions();
+			//UpdateEnemies();
+		}
+
 //		// Only for stage 2
 //		if( intronum == 2 )DoIntro2Scroll();
 //
