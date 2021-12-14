@@ -13,9 +13,9 @@ void main()
 		//InitMikGamesStage();		// TODO uncomment
 
 		// Game intro
-		//InitIntroStage( 1 );
-		InitIntroStage( 4 );
-		//InitIntroStage( 2 );
+		//InitIntroStage( 1 );		// TODO updateenemy function
+		//InitIntroStage( 4 );
+		InitIntroStage( 2 );
 
 		// Logo
 		//InitLogoStage();

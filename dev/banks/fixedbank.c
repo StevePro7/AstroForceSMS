@@ -13,6 +13,7 @@
 #include "bank13.h"
 #include "bank14.h"
 #include "../General/warning.h"
+#include "../Intros/introsideplayer.h"
 
 #ifdef _CONSOLE
 #pragma warning(disable: 4047)
@@ -2008,9 +2009,9 @@ const MyInitEnemyFunction initenemyfunctions[] =
 {
 	0,
 	InitWarning,
-//	0,
-//	0,
-//	InitIntroSidePlayer,
+	0,
+	0,
+	InitIntroSidePlayer,
 //	InitIntroStar,
 //	InitWaveShip,
 //	0,
@@ -2160,9 +2161,9 @@ const MyUpdateEnemyFunction updateenemyfunctions[] =
 {
 	0,
 	UpdateWarning,
-//	UpdateIntroOvni,
-//	UpdateIntroOvni,
-//	UpdateIntroSidePlayer,
+	0,//	UpdateIntroOvni,
+	0, //	UpdateIntroOvni,
+	UpdateIntroSidePlayer,
 //	UpdateIntroStar,
 //	UpdateWaveShip,
 //	UpdateRectShip,

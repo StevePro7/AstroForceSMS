@@ -60,7 +60,9 @@ void InitIntroStage(unsigned char intronum)
 	case 1:
 		InitIntro1Stage();
 		break;
-		//	case 2:InitIntro2Stage(); break;
+	case 2:
+		InitIntro2Stage(); 
+		break;
 		//	case 3:InitFinishStage(); break;
 	case 4:
 		InitIntro3Stage(); 
