@@ -1,9 +1,8 @@
 #ifndef _WARNING_H_
 #define _WARNING_H_
 
+// ADRIANA
 #include "../defines.h"
-
-void warning_foo();
 
 void InitWarning( enemy *en );
 unsigned char UpdateWarning( enemy *en );

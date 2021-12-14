@@ -7,10 +7,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-void warning_foo()
-{
-}
-
 void InitWarning( enemy *en )
 {
 	en->enemyframe = en->enemyframe;
