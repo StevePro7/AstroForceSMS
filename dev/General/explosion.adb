@@ -31,7 +31,12 @@ T:Fexplosion$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timer
 S:G$barromx$0$0({0}DA0d,SC:S),E,0,0
 S:G$barromy$0$0({0}DA0d,SC:S),E,0,0
 S:G$barromtime$0$0({1}SC:U),E,0,0
+S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$intro3labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$finishlabels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$stageinitdata$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0

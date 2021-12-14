@@ -2,7 +2,12 @@ M:intro1stage
 F:G$intro1stage_foo$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitIntro1Stage$0$0({2}DF,SV:S),Z,0,0,0,0,0
 T:Fintro1stage$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
+S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$intro3labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$finishlabels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$stageinitdata$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0

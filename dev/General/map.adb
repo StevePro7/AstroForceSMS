@@ -7,8 +7,8 @@ S:Lmap.MoveMap$a$1$49({2}SI:S),R,0,0,[c,b]
 S:Lmap.MoveMap$c$1$49({2}SI:S),R,0,0,[l,h]
 S:Lmap.MoveMap$mpy2$1$49({2}SI:U),R,0,0,[l,h]
 S:Lmap.MoveMap$mpy5$1$49({2}SI:U),R,0,0,[c,b]
-S:Lmap.MoveMap$sloc0$1$0({2}SI:U),B,1,-3
-S:Lmap.MoveMap$sloc1$1$0({1}SC:U),B,1,-1
+S:Lmap.MoveMap$sloc0$1$0({2}SI:U),B,1,-2
+S:Lmap.MoveMap$sloc1$1$0({1}SC:U),B,1,-3
 T:Fmap$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fmap$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
 T:Fmap$scroll[({0}S:S$scrolllock$0$0({2}SI:S),Z,0,0)({2}S:S$scrolltimes$0$0({2}SI:S),Z,0,0)({4}S:S$scrolljump$0$0({2}SI:S),Z,0,0)({6}S:S$scrollspeedx$0$0({2}SI:S),Z,0,0)({8}S:S$scrollspeedy$0$0({2}SI:S),Z,0,0)]
@@ -16,7 +16,12 @@ T:Fmap$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$scripterscript$0$0
 T:Fmap$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fmap$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fmap$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
+S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$intro3labels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$finishlabels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$stageinitdata$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
