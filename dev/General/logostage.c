@@ -6,10 +6,7 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-void logostage_foo()
-{
-}
-
+// ADRIANA
 void InitLogoStage()
 {
 	// General init

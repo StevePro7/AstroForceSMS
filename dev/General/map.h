@@ -1,8 +1,7 @@
 #ifndef _MAP_H_
 #define _MAP_H_
 
-void map_foo();
-
+// ADRIANA
 unsigned char getTileAt( unsigned char x, unsigned char y );
 void SetMapLines( unsigned char *lines, unsigned int lsize, unsigned char *tiles );
 void SetStaticEnemies( unsigned int *p, unsigned char b );
