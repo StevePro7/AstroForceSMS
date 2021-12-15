@@ -18,7 +18,7 @@ void main()
 		//InitIntroStage( 2 );
 
 		// Logo
-		//InitLogoStage();
+		InitLogoStage();
 
 		// If we have jukebox before play
 		if( dojukebox == 1 )

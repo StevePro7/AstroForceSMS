@@ -92,7 +92,10 @@ S:G$finishlabels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$stageinitdata$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$imagepointers$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$monsterheadshootdirecionsx$0$0({0}DA0d,SC:S),E,0,0
+S:G$monsterheadshootdirecionsy$0$0({0}DA0d,SC:S),E,0,0
 S:G$difficultlabels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$playerupdatefunctions$0$0({0}DA0d,DC,DF,SV:S),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0

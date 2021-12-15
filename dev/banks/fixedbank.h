@@ -212,8 +212,8 @@ extern signed char monsterheadshootdirecionsy[];
 
 extern unsigned char *difficultlabels[];
 
-//// Init and update stage functions
-//extern const MyKillEnemyFunction initstagefunctions[];
+// Init and update stage functions
+extern const MyKillEnemyFunction initstagefunctions[];
 extern const MyKillEnemyFunction updatestagefunctions[];
 //
 //// Bosses
@@ -225,25 +225,24 @@ extern const MyKillEnemyFunction updatestagefunctions[];
 //extern const MyInitEnemyFunction updatestage7middlebossfunctions[];
 //extern const MyInitEnemyFunction updatespacestationfunctions[];
 //extern const MyInitEnemyFunction updatestage2endbossfunctions[];
-//
-//extern const signed char vulcantankshootspeedx[];
-//extern const signed char vulcantankshootspeedy[];
-//extern const signed char vulcanstationshootspeedx[];
-//extern const signed char vulcanstationshootspeedy[];
-//
-//extern MyKillEnemyFunction playerupdatefunctions[];
-//
-//extern const MyCheckCollisionFunction checkcollisionfunctions[];
-//
+
+extern const signed char vulcantankshootspeedx[];
+extern const signed char vulcantankshootspeedy[];
+extern const signed char vulcanstationshootspeedx[];
+extern const signed char vulcanstationshootspeedy[];
+
+extern MyKillEnemyFunction playerupdatefunctions[];
+
+extern const MyCheckCollisionFunction checkcollisionfunctions[];
+//TODO 
 //extern const MyInitEnemyFunction updateintro3objectfunctions[];
-//
-//extern const MyInitEnemyFunction updatestage8bossafunctions[];
+//TODO 
 //extern const MyInitEnemyFunction updatestage8bossbfunctions[];
-//
-//extern const signed char stage8bosscshootspeedx[];
-//extern const signed char stage8bosscshootspeedy[];
-//extern const signed char stage8bossbshootspeedx[];
-//extern const signed char stage8bossbshootspeedy[];
+
+extern const signed char stage8bosscshootspeedx[];
+extern const signed char stage8bosscshootspeedy[];
+extern const signed char stage8bossbshootspeedx[];
+extern const signed char stage8bossbshootspeedy[];
 
 extern const unsigned char enemieswidth[];
 extern const unsigned char enemiesheight[];

@@ -2277,10 +2277,10 @@ const MyKillEnemyFunction updatestagefunctions[] =
 //extern void InitStage3();
 //extern void InitStage1();
 //extern void InitStage6();
-//
-//const MyKillEnemyFunction initstagefunctions[] =
-//{
-//	0,
+
+const MyKillEnemyFunction initstagefunctions[] =
+{
+	0,
 //	InitStage7,
 //	InitStage5,
 //	InitStage4,
@@ -2289,7 +2289,7 @@ const MyKillEnemyFunction updatestagefunctions[] =
 //	InitStage3,
 //	InitStage1,
 //	InitStage6,
-//};
+};
 //
 //extern void FinishStage4MiddleBoss();
 //extern void InitAfterBossStage();
@@ -2937,18 +2937,18 @@ const signed char stage8bossbshootspeedy[] = { 0,1,3,5,7,5,3,1,0,1,3,5,7,5,3,1 }
 //extern void UpdatePlayerState6();
 
 
-//MyKillEnemyFunction playerupdatefunctions[] =
-//{
-//	0,
-//	UpdatePlayerState1,
-//	UpdatePlayerState2,
-//	UpdatePlayerState3,
-//	UpdatePlayerState4,
-//	UpdatePlayerState5,
-//	UpdatePlayerState6
-//};
-//
-//
+MyKillEnemyFunction playerupdatefunctions[] =
+{
+	0,
+	//UpdatePlayerState1,
+	//UpdatePlayerState2,
+	//UpdatePlayerState3,
+	//UpdatePlayerState4,
+	//UpdatePlayerState5,
+	//UpdatePlayerState6
+};
+
+
 //extern void UpdateStage7MiddleBoss0( enemy *en );
 //extern void UpdateStage7MiddleBoss1( enemy *en );
 //extern void UpdateStage7MiddleBoss2( enemy *en );
@@ -2987,9 +2987,9 @@ const signed char stage8bossbshootspeedy[] = { 0,1,3,5,7,5,3,1,0,1,3,5,7,5,3,1 }
 //unsigned char CheckCollisionStage1( unsigned char x, unsigned char y );
 
 
-//const MyCheckCollisionFunction checkcollisionfunctions[] =
-//{
-//	0,
+const MyCheckCollisionFunction checkcollisionfunctions[] =
+{
+	0,
 //	CheckCollisionStage7,
 //	0,
 //	0,
@@ -2998,8 +2998,8 @@ const signed char stage8bossbshootspeedy[] = { 0,1,3,5,7,5,3,1,0,1,3,5,7,5,3,1 }
 //	0,
 //	CheckCollisionStage1,
 //	0
-//};
-//
+};
+
 //void UpdateIntro3Object1( enemy *en );
 //void UpdateIntro3Object2( enemy *en );
 //void UpdateIntro3Object3( enemy *en );
