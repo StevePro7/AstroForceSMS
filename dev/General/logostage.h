@@ -3,6 +3,6 @@
 
 void logostage_foo();
 
-//void InitLogoStage();
+void InitLogoStage();
 
 #endif//_LOGOSTAGE_H_

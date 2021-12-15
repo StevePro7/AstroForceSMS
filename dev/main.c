@@ -15,10 +15,10 @@ void main()
 		// Game intro
 		//InitIntroStage( 1 );		// TODO updateenemy function
 		//InitIntroStage( 4 );
-		InitIntroStage( 2 );
+		//InitIntroStage( 2 );
 
 		// Logo
-		//InitLogoStage();
+		InitLogoStage();
 
 		//// If we have jukebox before play
 		//if( dojukebox == 1 )
