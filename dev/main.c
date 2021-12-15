@@ -16,7 +16,7 @@ void main()
 		//InitIntroStage( 1 );		// TODO updateenemy function
 		//InitIntroStage( 4 );
 		//InitIntroStage( 2 );
-		InitIntroStage( 3 );
+		InitIntroStage( 5 );
 
 		// Logo
 		//InitLogoStage();
