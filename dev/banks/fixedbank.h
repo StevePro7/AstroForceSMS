@@ -21,15 +21,15 @@ extern const unsigned char jukebox_repeat[];
 extern const char jukebox_banks[];
 extern const unsigned char *jukebox_names[];
 
-//extern const signed char ww2planemovementy[];
-//extern const signed char ww2planemovementx[];
-//extern const unsigned char ww2plane_pattern_a[];
-//extern const unsigned char ww2plane_pattern_b[];
-//extern const unsigned char ww2plane_pattern_c[];
-//extern const unsigned char ww2plane_pattern_d[];
-//extern const unsigned char ww2plane_pattern_e[];
-//extern const unsigned char ww2plane_pattern_f[];
-//extern const unsigned char *ww2plane_patterns[];
+extern const signed char ww2planemovementy[];
+extern const signed char ww2planemovementx[];
+extern const unsigned char ww2plane_pattern_a[];
+extern const unsigned char ww2plane_pattern_b[];
+extern const unsigned char ww2plane_pattern_c[];
+extern const unsigned char ww2plane_pattern_d[];
+extern const unsigned char ww2plane_pattern_e[];
+extern const unsigned char ww2plane_pattern_f[];
+extern const unsigned char *ww2plane_patterns[];
 
 #define intro1script_bank FIXEDBANKSLOT
 extern const unsigned char intro1script[];
@@ -113,48 +113,48 @@ extern const MyInitEnemyFunction initenemyfunctions[];
 extern const MyUpdateEnemyFunction updateenemyfunctions[];
 
 #define killenemyfunctions_bank FIXEDBANKSLOT;
-//extern const MyKillEnemyFunction killenemyfunctions[];
-//
+extern const MyKillEnemyFunction killenemyfunctions[];
+
 #define stage4_scrollers_num 18
-//extern const signed int stage4_scrollers[];
-//
+extern const signed int stage4_scrollers[];
+
 #define stage1_scrollers_num 4
-//extern const signed int stage1_scrollers[];
-//
+extern const signed int stage1_scrollers[];
+
 #define stage2_scrollers_num 3
-//extern const signed int stage2_scrollers[];
-//
+extern const signed int stage2_scrollers[];
+
 #define stage5_scrollers_num 4
-//extern const signed int stage5_scrollers[];
-//
+extern const signed int stage5_scrollers[];
+
 #define stage3_scrollers_num 2
-//extern const signed int stage3_scrollers[];
-//
+extern const signed int stage3_scrollers[];
+
 #define stage7_scrollers_num 2
-//extern const signed int stage7_scrollers[];
-//
+extern const signed int stage7_scrollers[];
+
 #define stage6_scrollers_num 2
-//extern const signed int stage6_scrollers[];
-//
+extern const signed int stage6_scrollers[];
+
 #define stage8_scrollers_num 2
-//extern const signed int stage8_scrollers[];
-//
-//// Listas de sprites
-//extern const unsigned char *imagepointers[];
-//extern const int imagebases[];
-//extern const char imagebanks[];
-//
-//// By stage
-//extern const unsigned char stage3spriteslist[];
-//extern const unsigned char stage1spriteslist[];
-//extern const unsigned char stage2spriteslist[];
-//extern const unsigned char stage7spriteslist[];
-//extern const unsigned char stage6spriteslist[];
-//extern const unsigned char stage5spriteslist[];
-//extern const unsigned char stage4spriteslist[];
-//extern const unsigned char stage8spriteslist[];
-//
-//// Skull
+extern const signed int stage8_scrollers[];
+
+// Listas de sprites
+extern const unsigned char *imagepointers[];
+extern const int imagebases[];
+extern const unsigned char imagebanks[];
+
+// By stage
+extern const unsigned char stage3spriteslist[];
+extern const unsigned char stage1spriteslist[];
+extern const unsigned char stage2spriteslist[];
+extern const unsigned char stage7spriteslist[];
+extern const unsigned char stage6spriteslist[];
+extern const unsigned char stage5spriteslist[];
+extern const unsigned char stage4spriteslist[];
+extern const unsigned char stage8spriteslist[];
+
+// Skull
 //extern const signed char skullshootvelx[];
 //extern const signed char skullshootvely[];
 //extern const signed char skullbshootvelx[];

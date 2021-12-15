@@ -22,26 +22,33 @@ void main()
 
 		// If we have jukebox before play
 		if( dojukebox == 1 )
+		{
 			InitJukeboxStage();
+		}
 
 		// Init stage and players
 		stagenum = 1;
 		numplayers = gamestock;
 
 		// Selector
-		InitSelectorStage();
+		//InitSelectorStage();
 
-		//// Stage looping
-		//while( stagenum < 10 )
-		//{
-		//	if( stagenum == 0 )
+		// Stage looping
+		while( stagenum < 10 )
+		{
+			if( stagenum == 0 )
+			{
 		//		InitGameoverStage();
-		//	else if( stagenum == 9 )
-		//	{
+			}
+			else if( stagenum == 9 )
+			{
 		//		InitIntroStage( 5 );
 		//		InitIntroStage( 3 );
-		//	}
-		//	else InitPlayStage();
-		//}
+			}
+			else
+			{
+		//		InitPlayStage();
+			}
+		}
 	}
 }
