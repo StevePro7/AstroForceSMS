@@ -7,15 +7,12 @@
 #include "../Intros/intro1stage.h"
 #include "../Intros/intro2stage.h"
 #include "../Intros/intro3stage.h"
+#include "../Intros/intro4stage.h"
 #include "../devkit/_sms_manager.h"
 #include "../devkit/_snd_manager.h"
 #include "../banks/bank3.h"
 #include "../funcs.h"
 #include "../vars.h"
-
-void introstage_foo()
-{
-}
 
 void InitIntroScroll()
 {
@@ -70,7 +67,9 @@ void InitIntroStage(unsigned char intronum)
 	case 4:
 		InitIntro3Stage(); 
 		break;
-		//	case 5:InitIntro4Stage(); break;
+	case 5:
+		InitIntro4Stage(); 
+		break;
 	}
 
 	// Lo volvemos a encender
