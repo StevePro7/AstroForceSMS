@@ -8,10 +8,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-void finishstage_foo()
-{
-}
-
 void InitFinishStage()
 {
 	// Cargamos los graficos a la pantalla

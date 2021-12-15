@@ -243,7 +243,6 @@ S:G$InitMikGamesStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitLogoStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateJukeboxInfo$0$0({2}DF,SC:U),C,0,0
 S:G$InitJukeboxStage$0$0({2}DF,SV:S),C,0,0
-S:G$finishstage_foo$0$0({2}DF,SV:S),C,0,0
 S:G$InitFinishStage$0$0({2}DF,SV:S),C,0,0
 S:G$introstage_foo$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroScroll$0$0({2}DF,SV:S),C,0,0
