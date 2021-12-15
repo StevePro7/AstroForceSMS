@@ -16,7 +16,6 @@ void main()
 		//InitIntroStage( 1 );		// TODO updateenemy function
 		//InitIntroStage( 4 );
 		//InitIntroStage( 2 );
-		InitIntroStage( 5 );
 
 		// Logo
 		//InitLogoStage();
@@ -30,7 +29,7 @@ void main()
 		numplayers = gamestock;
 
 		// Selector
-		//InitSelectorStage();
+		InitSelectorStage();
 
 		//// Stage looping
 		//while( stagenum < 10 )

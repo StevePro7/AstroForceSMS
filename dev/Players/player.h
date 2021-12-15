@@ -19,6 +19,6 @@ void player_foo();
 //void UpdatePlayerState2();
 //void UpdatePlayerState1();
 //void UpdatePlayer();
-//void InitPlayerConstants();
+void InitPlayerConstants();
 
 #endif//_PLAYER_H_

@@ -1,4 +1,5 @@
 #include "player.h"
+#include "../vars.h"
 
 void player_foo()
 {
@@ -280,12 +281,12 @@ void player_foo()
 //	if( 0 != playerupdatefunctions[ playertype ] )
 //		( *( playerupdatefunctions[ playertype ] ) )( );
 //}
-//
-//void InitPlayerConstants()
-//{
-//	playerspeed = DEFAULTPLAYERSPEED;
-//	playershootlevel = 0;
-//	playershootmax = MAXPLAYERSHOOTS - 1;
-//	playercounter = 0;
-//	playershootcounter = 0;
-//}
+
+void InitPlayerConstants()
+{
+	playerspeed = DEFAULTPLAYERSPEED;
+	playershootlevel = 0;
+	playershootmax = MAXPLAYERSHOOTS - 1;
+	playercounter = 0;
+	playershootcounter = 0;
+}

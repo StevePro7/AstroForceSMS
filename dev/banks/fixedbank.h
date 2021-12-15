@@ -9,12 +9,12 @@
 extern const signed char playershootspeedsx[];
 extern const signed char playershootspeedsy[];
 
-//extern const unsigned char selectorstatebasetiles[];
-//extern const unsigned char *selectornamestage[];
-//extern const unsigned char selectormarkx[];
-//extern const unsigned char selectormarky[];
-//extern const unsigned char selectormarkt[];
-//
+extern const unsigned char selectorstatebasetiles[];
+extern const unsigned char *selectornamestage[];
+extern const unsigned char selectormarkx[];
+extern const unsigned char selectormarky[];
+extern const unsigned char selectormarkt[];
+
 extern const unsigned char sinustable[];
 extern const char *jukebox_songs[];
 extern const unsigned char jukebox_repeat[];

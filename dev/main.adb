@@ -82,6 +82,7 @@ S:G$powerupt$0$0({1}SC:U),E,0,0
 S:G$powerupv$0$0({1}SC:S),E,0,0
 S:G$powerupcounter$0$0({2}SI:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
+S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
@@ -247,4 +248,7 @@ S:G$InitFinishStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroScroll$0$0({2}DF,SV:S),C,0,0
 S:G$setIntroStageGraphics$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroStage$0$0({2}DF,SV:S),C,0,0
+S:G$selectorstage_foo$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateSelectorMarks$0$0({2}DF,SV:S),C,0,0
+S:G$InitSelectorStage$0$0({2}DF,SV:S),C,0,0
 S:G$main$0$0({2}DF,SV:S),C,0,0
