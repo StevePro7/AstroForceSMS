@@ -15,6 +15,7 @@
 #include "../General/warning.h"
 #include "../Intros/introsideplayer.h"
 #include "../Intros/intro3object.h"
+#include "../funcs.h"
 
 #ifdef _CONSOLE
 #pragma warning(disable: 4047)
@@ -3293,13 +3294,13 @@ const signed int stage8_scrollers[] =
 //extern void UpdateStage8BossB2( enemy *en );
 //extern void UpdateStage8BossB3( enemy *en );
 //
-//const MyInitEnemyFunction updatestage8bossbfunctions[] =
-//{
-//	DoCommonBossAppearingFunction,
+const MyInitEnemyFunction updatestage8bossbfunctions[] =
+{
+	DoCommonBossAppearingFunction,
 //	UpdateStage8BossB1,
 //	UpdateStage8BossB2,
 //	UpdateStage8BossB3
-//};
+};
 
 // Palette changes for stage 8
 const unsigned char stage8animpalette[] = { 0x3f,0x1f,0x0f,0x07,0x03,0x01,0x00,0x00,0x01,0x03,0x07,0x0f,0x1f,0x3f };

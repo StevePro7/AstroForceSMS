@@ -10,12 +10,11 @@ S .__.ABS. Def0000
 S _devkit_SMS_setTile Ref0000
 A _CODE size B1 flags 0 addr 0
 S A$intro3object$197 Def007C
-S C$intro3object.c$38$1$46 Def0073
+S C$intro3object.c$37$1$47 Def0069
 S A$intro3object$198 Def007F
-S C$intro3object.c$35$3$48 Def004C
-S C$intro3object.c$33$4$49 Def0049
+S C$intro3object.c$38$1$47 Def0073
 S A$intro3object$199 Def0082
-S C$intro3object.c$34$4$49 Def0031
+S C$intro3object.c$35$3$49 Def004C
 S _DrawIntro3Object Def0001
 S A$intro3object$80 Def0009
 S A$intro3object$81 Def000B
@@ -92,7 +91,6 @@ S A$intro3object$206 Def008A
 S A$intro3object$152 Def0055
 S A$intro3object$134 Def0043
 S A$intro3object$125 Def0038
-S C$intro3object.c$42$1$51 Def007C
 S G$DrawIntro3Object$0$0 Def0001
 S A$intro3object$243 Def00AE
 S A$intro3object$234 Def00A9
@@ -103,7 +101,7 @@ S A$intro3object$153 Def0057
 S A$intro3object$135 Def0046
 S A$intro3object$126 Def003A
 S A$intro3object$108 Def0023
-S C$intro3object.c$30$1$46 Def0011
+S C$intro3object.c$42$1$52 Def007C
 S A$intro3object$235 Def00AA
 S A$intro3object$226 Def00A4
 S A$intro3object$217 Def0096
@@ -114,7 +112,8 @@ S A$intro3object$136 Def0047
 S A$intro3object$127 Def003B
 S A$intro3object$118 Def0031
 S A$intro3object$109 Def0026
-S C$intro3object.c$40$1$46 Def0074
+S C$intro3object.c$33$4$50 Def0049
+S C$intro3object.c$30$1$47 Def0011
 S A$intro3object$236 Def00AB
 S A$intro3object$218 Def0097
 S A$intro3object$191 Def0074
@@ -124,7 +123,8 @@ S A$intro3object$155 Def0059
 S A$intro3object$137 Def0048
 S A$intro3object$128 Def003C
 S A$intro3object$119 Def0032
-S C$intro3object.c$30$2$47 Def0063
+S C$intro3object.c$40$1$47 Def0074
+S C$intro3object.c$34$4$50 Def0031
 S A$intro3object$219 Def0098
 S A$intro3object$192 Def0076
 S A$intro3object$174 Def006D
@@ -132,27 +132,27 @@ S A$intro3object$165 Def0064
 S A$intro3object$156 Def005A
 S A$intro3object$147 Def004C
 S A$intro3object$129 Def003E
-S C$intro3object.c$44$2$52 Def008C
-S C$intro3object.c$33$1$46 Def0023
+S C$intro3object.c$30$2$48 Def0063
 S A$intro3object$193 Def007A
 S A$intro3object$175 Def0070
 S A$intro3object$166 Def0065
 S A$intro3object$157 Def005B
 S A$intro3object$148 Def004F
-S C$intro3object.c$45$2$52 Def00A5
+S C$intro3object.c$44$2$53 Def008C
+S C$intro3object.c$33$1$47 Def0023
 S A$intro3object$248 Def00B0
 S A$intro3object$176 Def0071
 S A$intro3object$167 Def0067
 S A$intro3object$158 Def005C
 S A$intro3object$149 Def0051
-S C$intro3object.c$48$1$51 Def00B0
-S C$intro3object.c$46$2$52 Def00AC
+S C$intro3object.c$45$2$53 Def00A5
 S G$UpdateIntro3Object1$0$0 Def0074
 S A$intro3object$159 Def005D
-S C$intro3object.c$32$3$48 Def0013
-S C$intro3object.c$27$1$46 Def0009
+S C$intro3object.c$48$1$52 Def00B0
+S C$intro3object.c$46$2$53 Def00AC
 S C$intro3object.c$22$0$0 Def0001
-S C$intro3object.c$37$1$46 Def0069
+S C$intro3object.c$32$3$49 Def0013
+S C$intro3object.c$27$1$47 Def0009
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

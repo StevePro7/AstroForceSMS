@@ -234,10 +234,9 @@ extern const signed char vulcanstationshootspeedy[];
 extern MyKillEnemyFunction playerupdatefunctions[];
 
 extern const MyCheckCollisionFunction checkcollisionfunctions[];
-//TODO 
-//extern const MyInitEnemyFunction updateintro3objectfunctions[];
-//TODO 
-//extern const MyInitEnemyFunction updatestage8bossbfunctions[];
+
+extern const MyInitEnemyFunction updateintro3objectfunctions[];
+extern const MyInitEnemyFunction updatestage8bossbfunctions[];
 
 extern const signed char stage8bosscshootspeedx[];
 extern const signed char stage8bosscshootspeedy[];

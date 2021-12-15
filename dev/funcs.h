@@ -28,7 +28,7 @@
 //void SkullAccelY( enemy *en );
 //void SkullBoneCMove( enemy *en );
 //void KillEnemies( unsigned char force );
-//void DoCommonBossAppearingFunction( enemy *en );
+void DoCommonBossAppearingFunction( enemy *en );
 //void DoEnemyWait( enemy *en, unsigned char nxt );
 //void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
 //void DoStage1BossDirectionShoots( enemy *en );

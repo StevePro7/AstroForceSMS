@@ -1,13 +1,13 @@
 M:intro3object
 F:G$intro3object_foo$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$DrawIntro3Object$0$0({2}DF,SV:S),C,0,0,0,0,0
-S:Lintro3object.DrawIntro3Object$d$1$45({2}DG,SI:U),B,1,4
-S:Lintro3object.DrawIntro3Object$i$1$45({1}SC:U),B,1,6
-S:Lintro3object.DrawIntro3Object$l$1$45({1}SC:U),B,1,7
-S:Lintro3object.DrawIntro3Object$b$1$46({1}SC:U),R,0,0,[c]
-S:Lintro3object.DrawIntro3Object$c$1$46({1}SC:U),R,0,0,[d]
+S:Lintro3object.DrawIntro3Object$d$1$46({2}DG,SI:U),B,1,4
+S:Lintro3object.DrawIntro3Object$i$1$46({1}SC:U),B,1,6
+S:Lintro3object.DrawIntro3Object$l$1$46({1}SC:U),B,1,7
+S:Lintro3object.DrawIntro3Object$b$1$47({1}SC:U),R,0,0,[c]
+S:Lintro3object.DrawIntro3Object$c$1$47({1}SC:U),R,0,0,[d]
 F:G$UpdateIntro3Object1$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lintro3object.UpdateIntro3Object1$en$1$50({2}DG,STenemy:S),B,1,4
+S:Lintro3object.UpdateIntro3Object1$en$1$51({2}DG,STenemy:S),B,1,4
 T:Fintro3object$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
@@ -78,6 +78,7 @@ S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_VDPFEATURE_LEFTCOLBLANK$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
+S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0
 S:G$DrawSpriteArray$0$0({2}DF,SV:S),C,0,0

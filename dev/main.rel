@@ -1,6 +1,6 @@
 ;!FILE main.asm
 XL2
-H 9 areas 27 global symbols
+H 9 areas 21 global symbols
 M main
 O -mz80
 S _stagenum Ref0000
@@ -8,41 +8,35 @@ S _InitConsole Ref0000
 S _gamelevel Ref0000
 S _gamestock Ref0000
 S .__.ABS. Def0000
-S _dojukebox Ref0000
+S _InitSelectorStage Ref0000
 S _numplayers Ref0000
-S _InitLogoStage Ref0000
 S _InitJukeboxStage Ref0000
-A _CODE size 26 flags 0 addr 0
-S C$main.c$5$1$112 Def0000
-S A$main$105 Def0024
+A _CODE size 20 flags 0 addr 0
+S C$main.c$5$1$113 Def0000
 S _main Def0000
-S C$main.c$7$1$112 Def0003
-S C$main.c$8$1$112 Def0008
-S XG$main$0$0 Def0024
+S C$main.c$7$1$113 Def0003
+S C$main.c$8$1$113 Def0008
+S XG$main$0$0 Def001E
+S A$main$80 Def0010
 S A$main$62 Def0003
-S A$main$72 Def000D
+S A$main$90 Def001B
+S A$main$81 Def0013
 S A$main$63 Def0006
-S A$main$82 Def0016
-S A$main$92 Def001E
-S A$main$93 Def0021
-S A$main$76 Def0010
+S A$main$85 Def0015
+S A$main$76 Def000D
 S A$main$67 Def0008
 S A$main$58 Def0000
-S A$main$77 Def0013
+S A$main$95 Def001E
+S A$main$86 Def0018
 S A$main$68 Def000B
 S C$main.c$3$0$0 Def0000
-S A$main$87 Def0019
-S A$main$78 Def0014
-S A$main$88 Def001C
-S C$main.c$30$2$113 Def0019
-S C$main.c$21$2$113 Def000D
-S C$main.c$31$2$113 Def001E
-S C$main.c$24$2$113 Def0010
-S C$main.c$54$1$112 Def0024
-S C$main.c$43$2$113 Def0024
+S C$main.c$10$1$113 Def000D
+S C$main.c$30$2$114 Def0010
+S C$main.c$31$2$114 Def0015
+S C$main.c$54$1$113 Def001E
+S C$main.c$34$2$114 Def001B
 S G$main$0$0 Def0000
-S C$main.c$37$2$113 Def0024
-S C$main.c$26$3$114 Def0016
+S C$main.c$26$3$115 Def000D
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -53,15 +47,11 @@ A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
-T 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03 CD
+T 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03
 R 00 00 00 00 02 03 01 00 02 06 02 00 02 0B 03 00
-T 0E 00 00 00 3A 00 00 3D 20 03 CD 00 00
-R 00 00 00 00 02 02 07 00 02 05 05 00 02 0B 08 00
-T 19 00
+T 0D 00
 R 00 00 00 00
-T 19 00 21 00 00 36 01 3A 00 00 32 00 00
-R 00 00 00 00 02 03 00 00 02 08 03 00 02 0B 06 00
-T 24 00
-R 00 00 00 00
-T 24 00 18 FE
-R 00 00 00 00
+T 0D 00 CD 00 00 21 00 00 36 01 3A 00 00 32
+R 00 00 00 00 02 03 07 00 02 06 00 00 02 0B 03 00
+T 19 00 00 00 CD 00 00 18 ED
+R 00 00 00 00 02 02 06 00 02 05 05 00
