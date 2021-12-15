@@ -155,11 +155,11 @@ extern const unsigned char stage4spriteslist[];
 extern const unsigned char stage8spriteslist[];
 
 // Skull
-//extern const signed char skullshootvelx[];
-//extern const signed char skullshootvely[];
-//extern const signed char skullbshootvelx[];
-//extern const signed char skullbshootvely[];
-//
+extern const signed char skullshootvelx[];
+extern const signed char skullshootvely[];
+extern const signed char skullbshootvelx[];
+extern const signed char skullbshootvely[];
+
 // Paleta por defecto
 extern const unsigned char palette_bin[];
 
@@ -173,42 +173,42 @@ extern const unsigned char stage8animpalette[];
 // Stage 1
 extern const unsigned char stage1_flashpalette[];
 
-//// Arac moving
-//extern const unsigned char aracmovingx[];
-//extern const unsigned char aracmovingy[];
-//extern const unsigned int aracmovingt[];
-//
-//// Cross A moving
-//extern const unsigned char crossamovingx[];
-//extern const unsigned char crossamovingy[];
-//extern const unsigned int crossamovingt[];
-//
-//// Cross B moving
-//extern const unsigned char crossbmovingx[];
-//extern const unsigned char crossbmovingy[];
-//extern const unsigned int crossbmovingt[];
-//
-//// Shoot patterns
-//extern const signed char stage2endbossshootpatternx[];
-//extern const signed char stage2endbossshootpatterny[];
-//
-//// Lasers for enemy of stage 3
-//extern const unsigned char stage3enemylaserposx[];
-//extern const unsigned char stage3enemylaserposy[];
-//extern const unsigned char stage3laservelx[];
-//extern const unsigned char stage3laservely[];
-//
-//// Final stage effects 
-//extern const unsigned char stage6_fade_pink[];
-//extern const unsigned char stage6_fade_blue[];
-//
-//// Balls
-//extern const unsigned char Stage1MiddleBossBPatternX[];
-//extern const unsigned char Stage1MiddleBossBPatternY[];
-//
-//// Monster head
-//extern signed char monsterheadshootdirecionsx[];
-//extern signed char monsterheadshootdirecionsy[];
+// Arac moving
+extern const unsigned char aracmovingx[];
+extern const unsigned char aracmovingy[];
+extern const unsigned int aracmovingt[];
+
+// Cross A moving
+extern const unsigned char crossamovingx[];
+extern const unsigned char crossamovingy[];
+extern const unsigned int crossamovingt[];
+
+// Cross B moving
+extern const unsigned char crossbmovingx[];
+extern const unsigned char crossbmovingy[];
+extern const unsigned int crossbmovingt[];
+
+// Shoot patterns
+extern const signed char stage2endbossshootpatternx[];
+extern const signed char stage2endbossshootpatterny[];
+
+// Lasers for enemy of stage 3
+extern const unsigned char stage3enemylaserposx[];
+extern const unsigned char stage3enemylaserposy[];
+extern const unsigned char stage3laservelx[];
+extern const unsigned char stage3laservely[];
+
+// Final stage effects 
+extern const unsigned char stage6_fade_pink[];
+extern const unsigned char stage6_fade_blue[];
+
+// Balls
+extern const unsigned char Stage1MiddleBossBPatternX[];
+extern const unsigned char Stage1MiddleBossBPatternY[];
+
+// Monster head
+extern signed char monsterheadshootdirecionsx[];
+extern signed char monsterheadshootdirecionsy[];
 
 extern unsigned char *difficultlabels[];
 

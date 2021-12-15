@@ -51,7 +51,7 @@ Area                                    Addr        Size        Decimal Bytes (A
      00003068  s__INITIALIZER                  
      000032B8  s__GSINIT                       
      000032C7  s__GSFINAL                      
-     000036F1  l__BANK15                       
+     000036F3  l__BANK15                       
      00003C2B  l__BANK11                       
      00003F51  l__BANK12                       
      00003F7E  l__BANK9                        
@@ -8563,7 +8563,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    000036F1 =       14065. bytes (REL,CON)
+_BANK15                             00008000    000036F3 =       14067. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -8622,7 +8622,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    000036F1 =       14065. bytes (REL,CON)
+_BANK15                             00008000    000036F3 =       14067. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -8682,7 +8682,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    000036F1 =       14065. bytes (REL,CON)
+_BANK15                             00008000    000036F3 =       14067. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -8742,7 +8742,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    000036F1 =       14065. bytes (REL,CON)
+_BANK15                             00008000    000036F3 =       14067. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -8754,157 +8754,159 @@ _BANK15                             00008000    000036F1 =       14065. bytes (R
      00009F02  _updateenemyfunctions              fixedbank
      00009F0C  G$updatestagefunctions$0$0         fixedbank
      00009F0C  _updatestagefunctions              fixedbank
-     00009F0E  G$stage4_scrollers$0$0             fixedbank
-     00009F0E  _stage4_scrollers                  fixedbank
-     00009FAE  G$stage1_scrollers$0$0             fixedbank
-     00009FAE  _stage1_scrollers                  fixedbank
-     00009FD6  G$stage2_scrollers$0$0             fixedbank
-     00009FD6  _stage2_scrollers                  fixedbank
-     00009FF4  G$stage5_scrollers$0$0             fixedbank
-     00009FF4  _stage5_scrollers                  fixedbank
-     0000A01C  G$stage3_scrollers$0$0             fixedbank
-     0000A01C  _stage3_scrollers                  fixedbank
-     0000A030  G$stage7_scrollers$0$0             fixedbank
-     0000A030  _stage7_scrollers                  fixedbank
-     0000A044  G$stage6_scrollers$0$0             fixedbank
-     0000A044  _stage6_scrollers                  fixedbank
-     0000A058  G$imagebases$0$0                   fixedbank
-     0000A058  _imagebases                        fixedbank
-     0000A104  G$imagebanks$0$0                   fixedbank
-     0000A104  _imagebanks                        fixedbank
-     0000A15A  G$stage3spriteslist$0$0            fixedbank
-     0000A15A  _stage3spriteslist                 fixedbank
-     0000A166  G$stage1spriteslist$0$0            fixedbank
-     0000A166  _stage1spriteslist                 fixedbank
-     0000A16E  G$stage2spriteslist$0$0            fixedbank
-     0000A16E  _stage2spriteslist                 fixedbank
-     0000A176  G$stage7spriteslist$0$0            fixedbank
-     0000A176  _stage7spriteslist                 fixedbank
-     0000A17C  G$stage5spriteslist$0$0            fixedbank
-     0000A17C  _stage5spriteslist                 fixedbank
-     0000A182  G$stage4spriteslist$0$0            fixedbank
-     0000A182  _stage4spriteslist                 fixedbank
-     0000A18C  G$stage6spriteslist$0$0            fixedbank
-     0000A18C  _stage6spriteslist                 fixedbank
-     0000A18F  G$stage6script$0$0                 fixedbank
-     0000A18F  _stage6script                      fixedbank
-     0000A199  G$stage6scriptb$0$0                fixedbank
-     0000A199  _stage6scriptb                     fixedbank
-     0000A1A3  G$vulcantankshootspeedx$0$0        fixedbank
-     0000A1A3  _vulcantankshootspeedx             fixedbank
-     0000A1A6  G$vulcantankshootspeedy$0$0        fixedbank
-     0000A1A6  _vulcantankshootspeedy             fixedbank
-     0000A1A9  G$vulcanstationshootspeedx$0$0     fixedbank
-     0000A1A9  _vulcanstationshootspeedx          fixedbank
-     0000A1AC  G$vulcanstationshootspeedy$0$0     fixedbank
+     00009F0E  G$killenemyfunctions$0$0           fixedbank
+     00009F0E  _killenemyfunctions                fixedbank
+     00009F10  G$stage4_scrollers$0$0             fixedbank
+     00009F10  _stage4_scrollers                  fixedbank
+     00009FB0  G$stage1_scrollers$0$0             fixedbank
+     00009FB0  _stage1_scrollers                  fixedbank
+     00009FD8  G$stage2_scrollers$0$0             fixedbank
+     00009FD8  _stage2_scrollers                  fixedbank
+     00009FF6  G$stage5_scrollers$0$0             fixedbank
+     00009FF6  _stage5_scrollers                  fixedbank
+     0000A01E  G$stage3_scrollers$0$0             fixedbank
+     0000A01E  _stage3_scrollers                  fixedbank
+     0000A032  G$stage7_scrollers$0$0             fixedbank
+     0000A032  _stage7_scrollers                  fixedbank
+     0000A046  G$stage6_scrollers$0$0             fixedbank
+     0000A046  _stage6_scrollers                  fixedbank
+     0000A05A  G$imagebases$0$0                   fixedbank
+     0000A05A  _imagebases                        fixedbank
+     0000A106  G$imagebanks$0$0                   fixedbank
+     0000A106  _imagebanks                        fixedbank
+     0000A15C  G$stage3spriteslist$0$0            fixedbank
+     0000A15C  _stage3spriteslist                 fixedbank
+     0000A168  G$stage1spriteslist$0$0            fixedbank
+     0000A168  _stage1spriteslist                 fixedbank
+     0000A170  G$stage2spriteslist$0$0            fixedbank
+     0000A170  _stage2spriteslist                 fixedbank
+     0000A178  G$stage7spriteslist$0$0            fixedbank
+     0000A178  _stage7spriteslist                 fixedbank
+     0000A17E  G$stage5spriteslist$0$0            fixedbank
+     0000A17E  _stage5spriteslist                 fixedbank
+     0000A184  G$stage4spriteslist$0$0            fixedbank
+     0000A184  _stage4spriteslist                 fixedbank
+     0000A18E  G$stage6spriteslist$0$0            fixedbank
+     0000A18E  _stage6spriteslist                 fixedbank
+     0000A191  G$stage6script$0$0                 fixedbank
+     0000A191  _stage6script                      fixedbank
+     0000A19B  G$stage6scriptb$0$0                fixedbank
+     0000A19B  _stage6scriptb                     fixedbank
+     0000A1A5  G$vulcantankshootspeedx$0$0        fixedbank
+     0000A1A5  _vulcantankshootspeedx             fixedbank
+     0000A1A8  G$vulcantankshootspeedy$0$0        fixedbank
+     0000A1A8  _vulcantankshootspeedy             fixedbank
+     0000A1AB  G$vulcanstationshootspeedx$0$0     fixedbank
 ASxxxx Linker V03.00 + NoICE + sdld,  page 163.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    000036F1 =       14065. bytes (REL,CON)
+_BANK15                             00008000    000036F3 =       14067. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0000A1AC  _vulcanstationshootspeedy          fixedbank
-     0000A1AF  G$stage8bosscshootspeedx$0$0       fixedbank
-     0000A1AF  _stage8bosscshootspeedx            fixedbank
-     0000A1BF  G$stage8bosscshootspeedy$0$0       fixedbank
-     0000A1BF  _stage8bosscshootspeedy            fixedbank
-     0000A1CE  G$stage8bossbshootspeedx$0$0       fixedbank
-     0000A1CE  _stage8bossbshootspeedx            fixedbank
-     0000A1DE  G$stage8bossbshootspeedy$0$0       fixedbank
-     0000A1DE  _stage8bossbshootspeedy            fixedbank
-     0000A1EE  G$stage8spriteslist$0$0            fixedbank
-     0000A1EE  _stage8spriteslist                 fixedbank
-     0000A1F5  G$stage8_statics$0$0               fixedbank
-     0000A1F5  _stage8_statics                    fixedbank
-     0000A82F  G$stage8_scrollers$0$0             fixedbank
-     0000A82F  _stage8_scrollers                  fixedbank
-     0000A839  G$stage8animpalette$0$0            fixedbank
-     0000A839  _stage8animpalette                 fixedbank
-     0000A847  G$enemieswidth$0$0                 fixedbank
-     0000A847  _enemieswidth                      fixedbank
-     0000A89D  G$enemiesheight$0$0                fixedbank
-     0000A89D  _enemiesheight                     fixedbank
-     0000A8F3  G$enemiesenergy$0$0                fixedbank
-     0000A8F3  _enemiesenergy                     fixedbank
-     0000A949  G$intro1_psg$0$0                   fixedbank
-     0000A949  _intro1_psg                        fixedbank
-     0000B28A  Ffixedbank$__str_0$0$0             fixedbank
-     0000B298  Ffixedbank$__str_1$0$0             fixedbank
-     0000B2A6  Ffixedbank$__str_2$0$0             fixedbank
-     0000B2B4  Ffixedbank$__str_3$0$0             fixedbank
-     0000B2C2  Ffixedbank$__str_4$0$0             fixedbank
-     0000B2D0  Ffixedbank$__str_5$0$0             fixedbank
-     0000B2DE  Ffixedbank$__str_6$0$0             fixedbank
-     0000B2EC  Ffixedbank$__str_7$0$0             fixedbank
-     0000B2FA  Ffixedbank$__str_8$0$0             fixedbank
-     0000B308  Ffixedbank$__str_9$0$0             fixedbank
-     0000B316  Ffixedbank$__str_10$0$0            fixedbank
-     0000B324  Ffixedbank$__str_11$0$0            fixedbank
-     0000B332  Ffixedbank$__str_12$0$0            fixedbank
-     0000B340  Ffixedbank$__str_13$0$0            fixedbank
-     0000B34E  Ffixedbank$__str_14$0$0            fixedbank
-     0000B35C  Ffixedbank$__str_15$0$0            fixedbank
-     0000B36A  Ffixedbank$__str_16$0$0            fixedbank
-     0000B378  Ffixedbank$__str_17$0$0            fixedbank
-     0000B386  Ffixedbank$__str_18$0$0            fixedbank
-     0000B394  Ffixedbank$__str_19$0$0            fixedbank
-     0000B3A2  Ffixedbank$__str_20$0$0            fixedbank
-     0000B3B0  Ffixedbank$__str_21$0$0            fixedbank
-     0000B3B9  Ffixedbank$__str_22$0$0            fixedbank
-     0000B3C2  Ffixedbank$__str_23$0$0            fixedbank
-     0000B3CB  Ffixedbank$__str_24$0$0            fixedbank
-     0000B3D3  Ffixedbank$__str_25$0$0            fixedbank
+     0000A1AB  _vulcanstationshootspeedx          fixedbank
+     0000A1AE  G$vulcanstationshootspeedy$0$0     fixedbank
+     0000A1AE  _vulcanstationshootspeedy          fixedbank
+     0000A1B1  G$stage8bosscshootspeedx$0$0       fixedbank
+     0000A1B1  _stage8bosscshootspeedx            fixedbank
+     0000A1C1  G$stage8bosscshootspeedy$0$0       fixedbank
+     0000A1C1  _stage8bosscshootspeedy            fixedbank
+     0000A1D0  G$stage8bossbshootspeedx$0$0       fixedbank
+     0000A1D0  _stage8bossbshootspeedx            fixedbank
+     0000A1E0  G$stage8bossbshootspeedy$0$0       fixedbank
+     0000A1E0  _stage8bossbshootspeedy            fixedbank
+     0000A1F0  G$stage8spriteslist$0$0            fixedbank
+     0000A1F0  _stage8spriteslist                 fixedbank
+     0000A1F7  G$stage8_statics$0$0               fixedbank
+     0000A1F7  _stage8_statics                    fixedbank
+     0000A831  G$stage8_scrollers$0$0             fixedbank
+     0000A831  _stage8_scrollers                  fixedbank
+     0000A83B  G$stage8animpalette$0$0            fixedbank
+     0000A83B  _stage8animpalette                 fixedbank
+     0000A849  G$enemieswidth$0$0                 fixedbank
+     0000A849  _enemieswidth                      fixedbank
+     0000A89F  G$enemiesheight$0$0                fixedbank
+     0000A89F  _enemiesheight                     fixedbank
+     0000A8F5  G$enemiesenergy$0$0                fixedbank
+     0000A8F5  _enemiesenergy                     fixedbank
+     0000A94B  G$intro1_psg$0$0                   fixedbank
+     0000A94B  _intro1_psg                        fixedbank
+     0000B28C  Ffixedbank$__str_0$0$0             fixedbank
+     0000B29A  Ffixedbank$__str_1$0$0             fixedbank
+     0000B2A8  Ffixedbank$__str_2$0$0             fixedbank
+     0000B2B6  Ffixedbank$__str_3$0$0             fixedbank
+     0000B2C4  Ffixedbank$__str_4$0$0             fixedbank
+     0000B2D2  Ffixedbank$__str_5$0$0             fixedbank
+     0000B2E0  Ffixedbank$__str_6$0$0             fixedbank
+     0000B2EE  Ffixedbank$__str_7$0$0             fixedbank
+     0000B2FC  Ffixedbank$__str_8$0$0             fixedbank
+     0000B30A  Ffixedbank$__str_9$0$0             fixedbank
+     0000B318  Ffixedbank$__str_10$0$0            fixedbank
+     0000B326  Ffixedbank$__str_11$0$0            fixedbank
+     0000B334  Ffixedbank$__str_12$0$0            fixedbank
+     0000B342  Ffixedbank$__str_13$0$0            fixedbank
+     0000B350  Ffixedbank$__str_14$0$0            fixedbank
+     0000B35E  Ffixedbank$__str_15$0$0            fixedbank
+     0000B36C  Ffixedbank$__str_16$0$0            fixedbank
+     0000B37A  Ffixedbank$__str_17$0$0            fixedbank
+     0000B388  Ffixedbank$__str_18$0$0            fixedbank
+     0000B396  Ffixedbank$__str_19$0$0            fixedbank
+     0000B3A4  Ffixedbank$__str_20$0$0            fixedbank
+     0000B3B2  Ffixedbank$__str_21$0$0            fixedbank
+     0000B3BB  Ffixedbank$__str_22$0$0            fixedbank
+     0000B3C4  Ffixedbank$__str_23$0$0            fixedbank
 ASxxxx Linker V03.00 + NoICE + sdld,  page 164.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_BANK15                             00008000    000036F1 =       14065. bytes (REL,CON)
+_BANK15                             00008000    000036F3 =       14067. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0000B3DC  Ffixedbank$__str_26$0$0            fixedbank
-     0000B3E9  Ffixedbank$__str_27$0$0            fixedbank
-     0000B3FD  Ffixedbank$__str_28$0$0            fixedbank
-     0000B414  Ffixedbank$__str_29$0$0            fixedbank
-     0000B425  Ffixedbank$__str_30$0$0            fixedbank
-     0000B43A  Ffixedbank$__str_31$0$0            fixedbank
-     0000B450  Ffixedbank$__str_32$0$0            fixedbank
-     0000B465  Ffixedbank$__str_33$0$0            fixedbank
-     0000B47F  Ffixedbank$__str_34$0$0            fixedbank
-     0000B495  Ffixedbank$__str_35$0$0            fixedbank
-     0000B4A8  Ffixedbank$__str_36$0$0            fixedbank
-     0000B4B8  Ffixedbank$__str_37$0$0            fixedbank
-     0000B4CB  Ffixedbank$__str_38$0$0            fixedbank
-     0000B4DF  Ffixedbank$__str_39$0$0            fixedbank
-     0000B4F9  Ffixedbank$__str_40$0$0            fixedbank
-     0000B50F  Ffixedbank$__str_41$0$0            fixedbank
-     0000B52D  Ffixedbank$__str_42$0$0            fixedbank
-     0000B537  Ffixedbank$__str_43$0$0            fixedbank
-     0000B541  Ffixedbank$__str_44$0$0            fixedbank
-     0000B553  Ffixedbank$__str_45$0$0            fixedbank
-     0000B560  Ffixedbank$__str_46$0$0            fixedbank
-     0000B576  Ffixedbank$__str_47$0$0            fixedbank
-     0000B58A  Ffixedbank$__str_48$0$0            fixedbank
-     0000B5A4  Ffixedbank$__str_49$0$0            fixedbank
-     0000B5BB  Ffixedbank$__str_50$0$0            fixedbank
-     0000B5D9  Ffixedbank$__str_51$0$0            fixedbank
-     0000B5F1  Ffixedbank$__str_52$0$0            fixedbank
-     0000B60C  Ffixedbank$__str_53$0$0            fixedbank
-     0000B621  Ffixedbank$__str_54$0$0            fixedbank
-     0000B629  Ffixedbank$__str_55$0$0            fixedbank
-     0000B641  Ffixedbank$__str_56$0$0            fixedbank
-     0000B65B  Ffixedbank$__str_57$0$0            fixedbank
-     0000B678  Ffixedbank$__str_58$0$0            fixedbank
-     0000B68E  Ffixedbank$__str_59$0$0            fixedbank
-     0000B6A2  Ffixedbank$__str_60$0$0            fixedbank
-     0000B6BF  Ffixedbank$__str_61$0$0            fixedbank
-     0000B6D4  Ffixedbank$__str_62$0$0            fixedbank
-     0000B6E7  Ffixedbank$__str_63$0$0            fixedbank
-     0000B6EC  Ffixedbank$__str_64$0$0            fixedbank
+     0000B3CD  Ffixedbank$__str_24$0$0            fixedbank
+     0000B3D5  Ffixedbank$__str_25$0$0            fixedbank
+     0000B3DE  Ffixedbank$__str_26$0$0            fixedbank
+     0000B3EB  Ffixedbank$__str_27$0$0            fixedbank
+     0000B3FF  Ffixedbank$__str_28$0$0            fixedbank
+     0000B416  Ffixedbank$__str_29$0$0            fixedbank
+     0000B427  Ffixedbank$__str_30$0$0            fixedbank
+     0000B43C  Ffixedbank$__str_31$0$0            fixedbank
+     0000B452  Ffixedbank$__str_32$0$0            fixedbank
+     0000B467  Ffixedbank$__str_33$0$0            fixedbank
+     0000B481  Ffixedbank$__str_34$0$0            fixedbank
+     0000B497  Ffixedbank$__str_35$0$0            fixedbank
+     0000B4AA  Ffixedbank$__str_36$0$0            fixedbank
+     0000B4BA  Ffixedbank$__str_37$0$0            fixedbank
+     0000B4CD  Ffixedbank$__str_38$0$0            fixedbank
+     0000B4E1  Ffixedbank$__str_39$0$0            fixedbank
+     0000B4FB  Ffixedbank$__str_40$0$0            fixedbank
+     0000B511  Ffixedbank$__str_41$0$0            fixedbank
+     0000B52F  Ffixedbank$__str_42$0$0            fixedbank
+     0000B539  Ffixedbank$__str_43$0$0            fixedbank
+     0000B543  Ffixedbank$__str_44$0$0            fixedbank
+     0000B555  Ffixedbank$__str_45$0$0            fixedbank
+     0000B562  Ffixedbank$__str_46$0$0            fixedbank
+     0000B578  Ffixedbank$__str_47$0$0            fixedbank
+     0000B58C  Ffixedbank$__str_48$0$0            fixedbank
+     0000B5A6  Ffixedbank$__str_49$0$0            fixedbank
+     0000B5BD  Ffixedbank$__str_50$0$0            fixedbank
+     0000B5DB  Ffixedbank$__str_51$0$0            fixedbank
+     0000B5F3  Ffixedbank$__str_52$0$0            fixedbank
+     0000B60E  Ffixedbank$__str_53$0$0            fixedbank
+     0000B623  Ffixedbank$__str_54$0$0            fixedbank
+     0000B62B  Ffixedbank$__str_55$0$0            fixedbank
+     0000B643  Ffixedbank$__str_56$0$0            fixedbank
+     0000B65D  Ffixedbank$__str_57$0$0            fixedbank
+     0000B67A  Ffixedbank$__str_58$0$0            fixedbank
+     0000B690  Ffixedbank$__str_59$0$0            fixedbank
+     0000B6A4  Ffixedbank$__str_60$0$0            fixedbank
+     0000B6C1  Ffixedbank$__str_61$0$0            fixedbank
+     0000B6D6  Ffixedbank$__str_62$0$0            fixedbank
+     0000B6E9  Ffixedbank$__str_63$0$0            fixedbank
+     0000B6EE  Ffixedbank$__str_64$0$0            fixedbank
 
 ASxxxx Linker V03.00 + NoICE + sdld,  page 165.
 Hexadecimal  [32-Bits]

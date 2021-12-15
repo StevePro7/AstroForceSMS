@@ -247,6 +247,7 @@ S:G$stage7_statics$0$0({960}DA480d,SI:U),D,0,0
 S:G$initenemyfunctions$0$0({10}DA5d,DC,DF,SV:S),D,0,0
 S:G$updateenemyfunctions$0$0({10}DA5d,DC,DF,SC:U),D,0,0
 S:G$updatestagefunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
+S:G$killenemyfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
 S:G$stage4_scrollers$0$0({160}DA80d,SI:S),D,0,0
 S:G$stage1_scrollers$0$0({40}DA20d,SI:S),D,0,0
 S:G$stage2_scrollers$0$0({30}DA15d,SI:S),D,0,0
