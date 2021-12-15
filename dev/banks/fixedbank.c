@@ -14,6 +14,7 @@
 #include "bank14.h"
 #include "../General/warning.h"
 #include "../Intros/introsideplayer.h"
+#include "../Intros/intro3object.h"
 
 #ifdef _CONSOLE
 #pragma warning(disable: 4047)
@@ -3003,13 +3004,13 @@ const MyCheckCollisionFunction checkcollisionfunctions[] =
 //void UpdateIntro3Object1( enemy *en );
 //void UpdateIntro3Object2( enemy *en );
 //void UpdateIntro3Object3( enemy *en );
-//
-//const MyInitEnemyFunction updateintro3objectfunctions[] =
-//{
-//	UpdateIntro3Object1,
+
+const MyInitEnemyFunction updateintro3objectfunctions[] =
+{
+	UpdateIntro3Object1,
 //	UpdateIntro3Object2,
 //	UpdateIntro3Object3
-//};
+};
 
 ////////////////////////////////////////////////////
 

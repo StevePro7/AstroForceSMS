@@ -215,7 +215,7 @@ extern unsigned char *difficultlabels[];
 // Init and update stage functions
 extern const MyKillEnemyFunction initstagefunctions[];
 extern const MyKillEnemyFunction updatestagefunctions[];
-//
+
 //// Bosses
 //extern const MyInitEnemyFunction updatestage6endbossfunctions[];
 //extern const MyInitEnemyFunction updatestage5endbossfunctions[];

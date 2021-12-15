@@ -18,6 +18,8 @@ S:G$InitWarning$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateWarning$0$0({2}DF,SC:U),C,0,0
 S:G$InitIntroSidePlayer$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateIntroSidePlayer$0$0({2}DF,SC:U),C,0,0
+S:G$intro3object_foo$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateIntro3Object1$0$0({2}DF,SV:S),C,0,0
 S:G$bigexplosion_psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$ending_psg$0$0({0}DA0d,SC:U),D,0,0
 S:G$enemybomb_psg$0$0({0}DA0d,SC:U),D,0,0
@@ -277,6 +279,7 @@ S:G$stage8bosscshootspeedy$0$0({15}DA15d,SC:S),D,0,0
 S:G$stage8bossbshootspeedx$0$0({16}DA16d,SC:S),D,0,0
 S:G$stage8bossbshootspeedy$0$0({16}DA16d,SC:S),D,0,0
 S:G$checkcollisionfunctions$0$0({2}DA1d,DC,DF,SC:U),D,0,0
+S:G$updateintro3objectfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
 S:G$stage8spriteslist$0$0({7}DA7d,SC:U),D,0,0
 S:G$stage8_statics$0$0({1594}DA797d,SI:U),D,0,0
 S:G$stage8_scrollers$0$0({10}DA5d,SI:S),D,0,0
