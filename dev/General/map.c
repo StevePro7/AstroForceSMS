@@ -9,23 +9,23 @@ void map_foo()
 {
 }
 
-//unsigned char getTileAt( unsigned char x, unsigned char y )
-//{
-//	unsigned int nl;
-//	unsigned char t;
-//
-//	// The bank!!!
-//	changeBank( mapbank );
-//
-//	// The collision
-//	nl = maplines[ ( ( mappositiony >> 2 ) + y ) >> 3 ];
-//	nl = ( nl << 6 ) + ( ( x >> 3 ) << 1 );
-//	t = maptiles[ nl ];
-//
-//	changeBank( FIXEDBANKSLOT );
-//
-//	return t;
-//}
+unsigned char getTileAt( unsigned char x, unsigned char y )
+{
+	unsigned int nl;
+	unsigned char t;
+
+	// The bank!!!
+	changeBank( mapbank );
+
+	// The collision
+	nl = maplines[ ( ( mappositiony >> 2 ) + y ) >> 3 ];
+	nl = ( nl << 6 ) + ( ( x >> 3 ) << 1 );
+	t = maptiles[ nl ];
+
+	changeBank( FIXEDBANKSLOT );
+
+	return t;
+}
 
 void SetMapLines( unsigned char *lines, unsigned int lsize, unsigned char *tiles )
 {
