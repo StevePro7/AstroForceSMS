@@ -9,7 +9,7 @@ set /a _started=_hours*60*60*100+_min*60*100+_sec*100+_cs
 
 :: Compile
 cd banks
-::sdcc --debug -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK15 fixedbank.c
+sdcc --debug -c --no-std-crt0 -mz80 --Werror --opt-code-speed --constseg BANK15 fixedbank.c
 cd ..
 cd devkit
 ::::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 _sms_manager.c
@@ -35,7 +35,7 @@ cd General
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 explosion.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 finishstage.c
 ::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 gameoverstage.c
-::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 jukeboxstage.c
+sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 jukeboxstage.c
 ::::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 logostage.c
 ::::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 map.c
 :::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 mikgamesstage.c

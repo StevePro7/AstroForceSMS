@@ -18,11 +18,11 @@ void main()
 		//InitIntroStage( 2 );
 
 		// Logo
-		InitLogoStage();
+		//InitLogoStage();
 
-		//// If we have jukebox before play
-		//if( dojukebox == 1 )
-		//	InitJukeboxStage();
+		// If we have jukebox before play
+		if( dojukebox == 1 )
+			InitJukeboxStage();
 
 		//// Init stage and players
 		//stagenum = 1;

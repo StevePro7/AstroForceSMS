@@ -209,9 +209,9 @@ extern const unsigned char stage1_flashpalette[];
 //// Monster head
 //extern signed char monsterheadshootdirecionsx[];
 //extern signed char monsterheadshootdirecionsy[];
-//
-//extern unsigned char *difficultlabels[];
-//
+
+extern unsigned char *difficultlabels[];
+
 //// Init and update stage functions
 //extern const MyKillEnemyFunction initstagefunctions[];
 extern const MyKillEnemyFunction updatestagefunctions[];

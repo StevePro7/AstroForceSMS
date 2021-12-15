@@ -1,30 +1,35 @@
 ;!FILE main.asm
 XL2
-H 9 areas 16 global symbols
+H 9 areas 1B global symbols
 M main
 O -mz80
 S _InitConsole Ref0000
 S _gamelevel Ref0000
 S _gamestock Ref0000
 S .__.ABS. Def0000
-S _InitLogoStage Ref0000
-A _CODE size 12 flags 0 addr 0
+S _dojukebox Ref0000
+S _InitJukeboxStage Ref0000
+A _CODE size 18 flags 0 addr 0
 S C$main.c$5$1$111 Def0000
 S C$main.c$7$1$111 Def0003
 S _main Def0000
 S C$main.c$8$1$111 Def0008
-S XG$main$0$0 Def0010
+S XG$main$0$0 Def0016
 S A$main$61 Def0003
-S A$main$80 Def0010
 S A$main$62 Def0006
+S A$main$81 Def0013
 S A$main$75 Def000D
 S A$main$66 Def0008
 S A$main$57 Def0000
+S A$main$76 Def0010
 S A$main$67 Def000B
+S A$main$86 Def0016
+S A$main$77 Def0011
 S C$main.c$3$0$0 Def0000
 S C$main.c$10$1$111 Def000D
-S C$main.c$21$2$112 Def000D
-S C$main.c$47$1$111 Def0010
+S C$main.c$24$2$112 Def000D
+S C$main.c$25$2$112 Def0013
+S C$main.c$47$1$111 Def0016
 S G$main$0$0 Def0000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
@@ -40,5 +45,5 @@ T 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03
 R 00 00 00 00 02 03 00 00 02 06 01 00 02 0B 02 00
 T 0D 00
 R 00 00 00 00
-T 0D 00 CD 00 00 18 FB
-R 00 00 00 00 02 03 04 00
+T 0D 00 3A 00 00 3D 20 FA CD 00 00 18 F5
+R 00 00 00 00 02 03 04 00 02 09 05 00

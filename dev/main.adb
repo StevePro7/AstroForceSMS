@@ -89,6 +89,7 @@ S:G$intro3labels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$finishlabels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$stageinitdata$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$difficultlabels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
@@ -240,6 +241,8 @@ S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$InitMikGamesStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitLogoStage$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateJukeboxInfo$0$0({2}DF,SC:U),C,0,0
+S:G$InitJukeboxStage$0$0({2}DF,SV:S),C,0,0
 S:G$introstage_foo$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroScroll$0$0({2}DF,SV:S),C,0,0
 S:G$setIntroStageGraphics$0$0({2}DF,SV:S),C,0,0
