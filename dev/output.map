@@ -3109,14 +3109,14 @@ _CODE                               00000200    00002811 =       10257. bytes (R
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00001390  A$mikgamesstage$64                 mikgamesstage
-     00001390  C$mikgamesstage.c$12$1$43          mikgamesstage
-     00001390  C$mikgamesstage.c$9$0$0            mikgamesstage
+     00001390  C$mikgamesstage.c$11$1$43          mikgamesstage
+     00001390  C$mikgamesstage.c$8$0$0            mikgamesstage
      00001390  G$InitMikGamesStage$0$0            mikgamesstage
      00001390  _InitMikGamesStage                 mikgamesstage
      00001393  A$mikgamesstage$68                 mikgamesstage
-     00001393  C$mikgamesstage.c$15$1$43          mikgamesstage
+     00001393  C$mikgamesstage.c$14$1$43          mikgamesstage
      00001396  A$mikgamesstage$72                 mikgamesstage
-     00001396  C$mikgamesstage.c$18$1$43          mikgamesstage
+     00001396  C$mikgamesstage.c$17$1$43          mikgamesstage
      00001398  A$mikgamesstage$73                 mikgamesstage
      00001399  A$mikgamesstage$74                 mikgamesstage
      0000139A  A$mikgamesstage$75                 mikgamesstage
@@ -3125,7 +3125,7 @@ _CODE                               00000200    00002811 =       10257. bytes (R
      000013A1  A$mikgamesstage$78                 mikgamesstage
      000013A2  A$mikgamesstage$79                 mikgamesstage
      000013A3  A$mikgamesstage$83                 mikgamesstage
-     000013A3  C$mikgamesstage.c$21$1$43          mikgamesstage
+     000013A3  C$mikgamesstage.c$20$1$43          mikgamesstage
      000013A5  A$mikgamesstage$84                 mikgamesstage
      000013A6  A$mikgamesstage$85                 mikgamesstage
      000013A7  A$mikgamesstage$86                 mikgamesstage
@@ -3139,25 +3139,25 @@ _CODE                               00000200    00002811 =       10257. bytes (R
      000013B9  A$mikgamesstage$94                 mikgamesstage
      000013BA  A$mikgamesstage$95                 mikgamesstage
      000013BB  A$mikgamesstage$99                 mikgamesstage
-     000013BB  C$mikgamesstage.c$24$1$43          mikgamesstage
+     000013BB  C$mikgamesstage.c$23$1$43          mikgamesstage
      000013BD  A$mikgamesstage$100                mikgamesstage
      000013BE  A$mikgamesstage$101                mikgamesstage
      000013BF  A$mikgamesstage$102                mikgamesstage
      000013C2  A$mikgamesstage$103                mikgamesstage
      000013C3  A$mikgamesstage$107                mikgamesstage
-     000013C3  C$mikgamesstage.c$27$1$43          mikgamesstage
+     000013C3  C$mikgamesstage.c$26$1$43          mikgamesstage
      000013C6  A$mikgamesstage$115                mikgamesstage
-     000013C6  C$mikgamesstage.c$30$1$43          mikgamesstage
-     000013C6  C$mikgamesstage.c$33$2$44          mikgamesstage
+     000013C6  C$mikgamesstage.c$29$1$43          mikgamesstage
+     000013C6  C$mikgamesstage.c$32$2$44          mikgamesstage
      000013C9  A$mikgamesstage$119                mikgamesstage
-     000013C9  C$mikgamesstage.c$36$2$44          mikgamesstage
+     000013C9  C$mikgamesstage.c$35$2$44          mikgamesstage
      000013CD  A$mikgamesstage$120                mikgamesstage
      000013D0  A$mikgamesstage$121                mikgamesstage
      000013D2  A$mikgamesstage$122                mikgamesstage
      000013D5  A$mikgamesstage$123                mikgamesstage
      000013D7  A$mikgamesstage$124                mikgamesstage
      000013D9  A$mikgamesstage$128                mikgamesstage
-     000013D9  C$mikgamesstage.c$37$2$44          mikgamesstage
+     000013D9  C$mikgamesstage.c$36$2$44          mikgamesstage
      000013DC  A$mikgamesstage$129                mikgamesstage
 ASxxxx Linker V03.00 + NoICE + sdld,  page 54.
 Hexadecimal  [32-Bits]
@@ -3176,7 +3176,7 @@ _CODE                               00000200    00002811 =       10257. bytes (R
      000013E3  A$mikgamesstage$135                mikgamesstage
      000013E6  A$mikgamesstage$136                mikgamesstage
      000013E7  A$mikgamesstage$141                mikgamesstage
-     000013E7  C$mikgamesstage.c$40$2$44          mikgamesstage
+     000013E7  C$mikgamesstage.c$39$2$44          mikgamesstage
      000013EA  A$mikgamesstage$142                mikgamesstage
      000013EB  A$mikgamesstage$143                mikgamesstage
      000013EC  A$mikgamesstage$144                mikgamesstage
@@ -3186,19 +3186,19 @@ _CODE                               00000200    00002811 =       10257. bytes (R
      000013F5  A$mikgamesstage$148                mikgamesstage
      000013F8  A$mikgamesstage$149                mikgamesstage
      000013F9  A$mikgamesstage$153                mikgamesstage
-     000013F9  C$mikgamesstage.c$42$3$45          mikgamesstage
+     000013F9  C$mikgamesstage.c$41$3$45          mikgamesstage
      000013FA  A$mikgamesstage$157                mikgamesstage
-     000013FA  C$mikgamesstage.c$46$2$44          mikgamesstage
+     000013FA  C$mikgamesstage.c$45$2$44          mikgamesstage
      000013FC  A$mikgamesstage$158                mikgamesstage
      00001400  A$mikgamesstage$159                mikgamesstage
      00001403  A$mikgamesstage$160                mikgamesstage
      00001405  A$mikgamesstage$161                mikgamesstage
      00001408  A$mikgamesstage$165                mikgamesstage
-     00001408  C$mikgamesstage.c$48$3$46          mikgamesstage
+     00001408  C$mikgamesstage.c$47$3$46          mikgamesstage
      00001409  A$mikgamesstage$169                mikgamesstage
-     00001409  C$mikgamesstage.c$52$2$44          mikgamesstage
+     00001409  C$mikgamesstage.c$51$2$44          mikgamesstage
      0000140C  A$mikgamesstage$174                mikgamesstage
-     0000140C  C$mikgamesstage.c$54$1$43          mikgamesstage
+     0000140C  C$mikgamesstage.c$53$1$43          mikgamesstage
      0000140C  XG$InitMikGamesStage$0$0           mikgamesstage
      0000140E  A$powerup$59                       powerup
      0000140E  C$powerup.c$3$0$0                  powerup

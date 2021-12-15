@@ -5,10 +5,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-void map_foo()
-{
-}
-
 unsigned char getTileAt( unsigned char x, unsigned char y )
 {
 	unsigned int nl;
