@@ -38,13 +38,13 @@ S A$main$96 Def0021
 S A$main$78 Def0010
 S A$main$79 Def0011
 S C$main.c$10$1$111 Def000D
-S C$main.c$24$2$112 Def0015
-S C$main.c$25$2$112 Def001B
-S C$main.c$47$1$111 Def0029
-S C$main.c$18$2$112 Def000D
+S C$main.c$30$2$112 Def0023
+S C$main.c$25$2$112 Def0015
+S C$main.c$26$2$112 Def001B
 S G$main$0$0 Def0000
-S C$main.c$28$2$112 Def001E
-S C$main.c$29$2$112 Def0023
+S C$main.c$48$1$111 Def0029
+S C$main.c$19$2$112 Def000D
+S C$main.c$29$2$112 Def001E
 S A$main$100 Def0023
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
@@ -60,7 +60,7 @@ T 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03
 R 00 00 00 00 02 03 01 00 02 06 02 00 02 0B 03 00
 T 0D 00
 R 00 00 00 00
-T 0D 00 3E 02 F5 33 CD 00 00 33 3A 00 00 3D 20 03
+T 0D 00 3E 03 F5 33 CD 00 00 33 3A 00 00 3D 20 03
 R 00 00 00 00 02 07 07 00 02 0B 05 00
 T 1B 00 CD 00 00
 R 00 00 00 00 02 03 08 00

@@ -124,25 +124,25 @@ _CODE                               00000200    00002AE6 =       10982. bytes (R
      00000215  A$main$68                          main
      00000217  A$main$76                          main
      00000217  C$main.c$10$1$111                  main
-     00000217  C$main.c$18$2$112                  main
+     00000217  C$main.c$19$2$112                  main
      00000219  A$main$77                          main
      0000021A  A$main$78                          main
      0000021B  A$main$79                          main
      0000021E  A$main$80                          main
      0000021F  A$main$84                          main
-     0000021F  C$main.c$24$2$112                  main
+     0000021F  C$main.c$25$2$112                  main
      00000222  A$main$85                          main
      00000223  A$main$86                          main
      00000225  A$main$90                          main
-     00000225  C$main.c$25$2$112                  main
+     00000225  C$main.c$26$2$112                  main
      00000228  A$main$95                          main
-     00000228  C$main.c$28$2$112                  main
+     00000228  C$main.c$29$2$112                  main
      0000022B  A$main$96                          main
      0000022D  A$main$100                         main
-     0000022D  C$main.c$29$2$112                  main
+     0000022D  C$main.c$30$2$112                  main
      00000230  A$main$101                         main
      00000233  A$main$106                         main
-     00000233  C$main.c$47$1$111                  main
+     00000233  C$main.c$48$1$111                  main
      00000233  XG$main$0$0                        main
      00000235  _PSGStop                           PSGlib
      0000025C  _PSGResume                         PSGlib
