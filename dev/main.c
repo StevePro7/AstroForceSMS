@@ -15,7 +15,7 @@ void main()
 		// Game intro
 		//InitIntroStage( 1 );		// TODO updateenemy function
 		//InitIntroStage( 4 );
-		//InitIntroStage( 2 );
+		InitIntroStage( 2 );
 
 		// Logo
 		//InitLogoStage();
@@ -24,11 +24,11 @@ void main()
 		if( dojukebox == 1 )
 			InitJukeboxStage();
 
-		//// Init stage and players
-		//stagenum = 1;
-		//numplayers = gamestock;
+		// Init stage and players
+		stagenum = 1;
+		numplayers = gamestock;
 
-		//// Selector
+		// Selector
 		//InitSelectorStage();
 
 		//// Stage looping

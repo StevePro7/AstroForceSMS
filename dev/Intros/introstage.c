@@ -1,6 +1,7 @@
 #include "introstage.h"
 #include "../Enemies/enemy.h"
 #include "../General/explosion.h"
+#include "../General/finishstage.h"
 #include "../General/scripter.h"
 #include "../General/timeredlabel.h"
 #include "../Intros/intro1stage.h"
@@ -63,7 +64,9 @@ void InitIntroStage(unsigned char intronum)
 	case 2:
 		InitIntro2Stage(); 
 		break;
-		//	case 3:InitFinishStage(); break;
+	case 3:
+		InitFinishStage(); 
+		break;
 	case 4:
 		InitIntro3Stage(); 
 		break;

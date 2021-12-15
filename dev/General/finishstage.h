@@ -3,6 +3,6 @@
 
 void finishstage_foo();
 
-//void InitFinishStage();
+void InitFinishStage();
 
 #endif//_FINISHSTAGE_H_
