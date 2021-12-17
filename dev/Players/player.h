@@ -8,7 +8,7 @@ void player_foo();
 //unsigned char CheckPlayerEnemyshootCollision();
 //void UpdatePlayerIndicators();
 //void InitPlayer();
-//void InitPlayerSprite();
+void InitPlayerSprite();
 //void DrawPlayer();
 //void MovePlayer();
 //void CheckShootPlayer();

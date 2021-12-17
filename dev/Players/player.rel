@@ -1,41 +1,61 @@
 ;!FILE player.asm
 XL3
-H 9 areas 20 global symbols
+H 9 areas 34 global symbols
 M player
 O -mz80
+S _LoadSprite Ref000000
 S _playershootcounter Ref000000
 S .__.ABS. Def000000
 S _playershootmax Ref000000
 S _playercounter Ref000000
 S _playershootlevel Ref000000
+S _player_psgcompr Ref000000
 S _playerspeed Ref000000
-A _CODE size 19 flags 0 addr 0
-S A$player$91 Def000010
-S A$player$73 Def000001
-S A$player$92 Def000012
-S A$player$83 Def00000B
-S A$player$74 Def000003
-S A$player$93 Def000015
-S A$player$84 Def00000D
-S C$player.c$290$1_0$6 Def000010
-S C$player.c$291$1_0$6 Def000010
+A _CODE size 2C flags 0 addr 0
+S A$player$82 Def00000D
+S A$player$83 Def000010
+S A$player$93 Def000013
+S A$player$84 Def000011
+S A$player$75 Def000001
+S A$player$85 Def000012
+S A$player$76 Def000003
 S G$player_foo$0$0 Def000000
-S C$player.c$292$1_0$6 Def000018
-S A$player$78 Def000006
-S C$player.c$285$0_0$6 Def000001
+S A$player$77 Def000004
+S A$player$78 Def000005
 S A$player$79 Def000008
-S C$player.c$287$1_0$6 Def000001
-S C$player.c$288$1_0$6 Def000006
-S C$player.c$289$1_0$6 Def00000B
+S G$InitPlayerSprite$0$0 Def000001
 S _player_foo Def000000
-S G$InitPlayerConstants$0$0 Def000001
-S C$player.c$4$0_0$5 Def000000
+S G$InitPlayerConstants$0$0 Def000014
+S C$player.c$7$0_0$19 Def000000
+S C$player.c$9$0_0$19 Def000000
+S _InitPlayerSprite Def000001
 S XG$player_foo$0$0 Def000000
-S C$player.c$6$0_0$5 Def000000
-S _InitPlayerConstants Def000001
-S A$player$101 Def000018
-S XG$InitPlayerConstants$0$0 Def000018
-S A$player$60 Def000000
+S _InitPlayerConstants Def000014
+S XG$InitPlayerSprite$0$0 Def000013
+S C$player.c$110$1_0$20 Def000001
+S C$player.c$111$1_0$20 Def000013
+S A$player$111 Def000019
+S XG$InitPlayerConstants$0$0 Def00002B
+S A$player$112 Def00001B
+S C$player.c$108$0_0$20 Def000001
+S A$player$124 Def000023
+S A$player$106 Def000014
+S A$player$134 Def00002B
+S A$player$125 Def000025
+S A$player$116 Def00001E
+S A$player$107 Def000016
+S A$player$126 Def000028
+S A$player$117 Def000020
+S C$player.c$290$1_0$21 Def000014
+S C$player.c$291$1_0$21 Def000019
+S C$player.c$292$1_0$21 Def00001E
+S C$player.c$293$1_0$21 Def000023
+S C$player.c$294$1_0$21 Def000023
+S C$player.c$295$1_0$21 Def00002B
+S C$player.c$288$1_0$21 Def000014
+S A$player$80 Def000009
+S A$player$62 Def000000
+S A$player$81 Def00000C
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -50,7 +70,13 @@ T 00 00 00 C9
 R 00 00 00 00
 T 01 00 00
 R 00 00 00 00
-T 01 00 00 3E 02 32 00 00 3E 00 32 00 00 3E 02 32
-R 00 00 00 00 02 06 05 00 02 0B 04 00
-T 0E 00 00 00 00 3E 00 32 00 00 32 00 00 C9
-R 00 00 00 00 02 03 02 00 02 08 03 00 02 0B 00 00
+T 01 00 00 3E 0E F5 33 21 00 01 E5 21 00 00 E5 CD
+R 00 00 00 00 02 0C 06 00
+T 0E 00 00 00 00 F1 F1 33 C9
+R 00 00 00 00 02 03 00 00
+T 14 00 00
+R 00 00 00 00
+T 14 00 00 3E 02 32 00 00 3E 00 32 00 00 3E 02 32
+R 00 00 00 00 02 06 07 00 02 0B 05 00
+T 21 00 00 00 00 3E 00 32 00 00 32 00 00 C9
+R 00 00 00 00 02 03 03 00 02 08 04 00 02 0B 01 00

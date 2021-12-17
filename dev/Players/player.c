@@ -1,5 +1,8 @@
 #include "player.h"
+#include "../banks/bank14.h"
+#include "../funcs.h"
 #include "../vars.h"
+
 
 void player_foo()
 {
@@ -100,13 +103,13 @@ void player_foo()
 //	playertype = 1;
 //	playercounter = 0;
 //}
-//
-//// Load player sprite
-//void InitPlayerSprite()
-//{
-//	LoadSprite( player_psgcompr, PLAYERBASE, player_psgcompr_bank );
-//}
-//
+
+// Load player sprite
+void InitPlayerSprite()
+{
+	LoadSprite( player_psgcompr, PLAYERBASE, player_psgcompr_bank );
+}
+
 //// Draw player sprite
 //void DrawPlayer()
 //{

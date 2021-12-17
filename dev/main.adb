@@ -263,5 +263,7 @@ S:G$setIntroStageGraphics$0_0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroStage$0_0$0({2}DF,SV:S),C,0,0
 S:G$UpdateSelectorMarks$0_0$0({2}DF,SV:S),C,0,0
 S:G$InitSelectorStage$0_0$0({2}DF,SV:S),C,0,0
+S:G$InitCustomStageData$0_0$0({2}DF,SV:S),C,0,0
+S:G$InitStageData$0_0$0({2}DF,SV:S),C,0,0
 S:G$InitPlayStage$0_0$0({2}DF,SV:S),C,0,0
 S:G$main$0_0$0({2}DF,SV:S),C,0,0

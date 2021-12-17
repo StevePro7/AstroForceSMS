@@ -33,6 +33,7 @@ void main()
 		// Selector
 		//InitSelectorStage();
 
+		InitPlayStage();
 		
 		// Stage looping
 		while( stagenum < 10 )

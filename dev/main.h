@@ -8,6 +8,12 @@
 #include "devkit/_sms_manager.h"
 #include "devkit/_snd_manager.h"
 
+// warning 126: unreachable code
+#ifdef _CONSOLE
+#else
+#pragma disable_warning 110
+#endif
+
 // LIBRARIES.
 #include "defines.h"					// DONE
 //#include "Banks/fixedbank.h"			// DONE
