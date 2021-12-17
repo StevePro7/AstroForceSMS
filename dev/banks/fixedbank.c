@@ -20,6 +20,7 @@
 #ifdef _CONSOLE
 #pragma warning(disable: 4047)
 #else
+#pragma disable_warning 158
 #endif
 
 // Player shoots speeds

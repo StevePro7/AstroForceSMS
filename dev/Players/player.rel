@@ -1,42 +1,41 @@
 ;!FILE player.asm
-XL2
-H 9 areas 21 global symbols
+XL3
+H 9 areas 20 global symbols
 M player
 O -mz80
-S _playershootcounter Ref0000
-S .__.ABS. Def0000
-S _playershootmax Ref0000
-S _playercounter Ref0000
-S _playershootlevel Ref0000
-S _playerspeed Ref0000
-A _CODE size 1B flags 0 addr 0
-S A$player$73 Def0001
-S A$player$83 Def000B
-S A$player$74 Def0004
-S A$player$93 Def0015
-S A$player$84 Def000E
-S A$player$94 Def0018
-S G$player_foo$0$0 Def0000
-S A$player$78 Def0006
-S C$player.c$4$0$0 Def0000
-S A$player$88 Def0010
-S A$player$79 Def0009
-S A$player$89 Def0013
-S C$player.c$6$0$0 Def0000
-S A$player$99 Def001A
-S _player_foo Def0000
-S G$InitPlayerConstants$0$0 Def0001
-S XG$player_foo$0$0 Def0000
-S _InitPlayerConstants Def0001
-S XG$InitPlayerConstants$0$0 Def001A
-S C$player.c$285$0$0 Def0001
-S C$player.c$290$1$5 Def0010
-S C$player.c$291$1$5 Def0015
-S C$player.c$292$1$5 Def001A
-S C$player.c$287$1$5 Def0001
-S C$player.c$288$1$5 Def0006
-S C$player.c$289$1$5 Def000B
-S A$player$60 Def0000
+S _playershootcounter Ref000000
+S .__.ABS. Def000000
+S _playershootmax Ref000000
+S _playercounter Ref000000
+S _playershootlevel Ref000000
+S _playerspeed Ref000000
+A _CODE size 19 flags 0 addr 0
+S A$player$91 Def000010
+S A$player$73 Def000001
+S A$player$92 Def000012
+S A$player$83 Def00000B
+S A$player$74 Def000003
+S A$player$93 Def000015
+S A$player$84 Def00000D
+S C$player.c$290$1_0$6 Def000010
+S C$player.c$291$1_0$6 Def000010
+S G$player_foo$0$0 Def000000
+S C$player.c$292$1_0$6 Def000018
+S A$player$78 Def000006
+S C$player.c$285$0_0$6 Def000001
+S A$player$79 Def000008
+S C$player.c$287$1_0$6 Def000001
+S C$player.c$288$1_0$6 Def000006
+S C$player.c$289$1_0$6 Def00000B
+S _player_foo Def000000
+S G$InitPlayerConstants$0$0 Def000001
+S C$player.c$4$0_0$5 Def000000
+S XG$player_foo$0$0 Def000000
+S C$player.c$6$0_0$5 Def000000
+S _InitPlayerConstants Def000001
+S A$player$101 Def000018
+S XG$InitPlayerConstants$0$0 Def000018
+S A$player$60 Def000000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -45,13 +44,13 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00
+T 00 00 00
 R 00 00 00 00
-T 00 00 C9
+T 00 00 00 C9
 R 00 00 00 00
-T 01 00
+T 01 00 00
 R 00 00 00 00
-T 01 00 21 00 00 36 02 21 00 00 36 00 21 00 00 36
-R 00 00 00 00 02 03 05 00 02 08 04 00 02 0D 02 00
-T 0F 00 02 21 00 00 36 00 21 00 00 36 00 C9
-R 00 00 00 00 02 04 03 00 02 09 00 00
+T 01 00 00 3E 02 32 00 00 3E 00 32 00 00 3E 02 32
+R 00 00 00 00 02 06 05 00 02 0B 04 00
+T 0E 00 00 00 00 3E 00 32 00 00 32 00 00 C9
+R 00 00 00 00 02 03 02 00 02 08 03 00 02 0B 00 00
