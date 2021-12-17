@@ -101,7 +101,7 @@
 //#include "Players/playershoot.h"		// DONE
 //#include "General/powerup.h"			// DONE
 //#include "Players/player.h"				// DONE
-//#include "Players/playstage.h"			// DONE
+#include "Players/playstage.h"			// DONE
 
 
 // FOLDERS complete

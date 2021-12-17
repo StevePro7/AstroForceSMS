@@ -1,6 +1,6 @@
 ;!FILE main.asm
 XL3
-H 9 areas 21 global symbols
+H 9 areas 33 global symbols
 M main
 O -mz80
 S _stagenum Ref000000
@@ -8,34 +8,52 @@ S _InitConsole Ref000000
 S _gamelevel Ref000000
 S _gamestock Ref000000
 S .__.ABS. Def000000
-S _InitSelectorStage Ref000000
+S _dojukebox Ref000000
 S _numplayers Ref000000
+S _InitPlayStage Ref000000
 S _InitJukeboxStage Ref000000
-A _CODE size 20 flags 0 addr 0
-S C$main.c$30$2_0$123 Def000010
-S C$main.c$31$2_0$123 Def000015
+A _CODE size 3E flags 0 addr 0
+S A$main$101 Def00002A
+S A$main$111 Def000032
+S A$main$112 Def000035
+S A$main$113 Def000037
+S C$main.c$30$2_0$123 Def000016
+S A$main$105 Def00002C
+S C$main.c$31$2_0$123 Def00001B
 S _main Def000000
-S C$main.c$54$1_0$122 Def00001E
-S C$main.c$34$2_0$123 Def00001B
-S C$main.c$26$3_0$124 Def00000D
-S XG$main$0$0 Def00001E
+S A$main$106 Def00002F
+S A$main$125 Def00003C
+S A$main$107 Def000030
+S C$main.c$24$2_0$123 Def00000D
+S A$main$117 Def000039
+S C$main.c$40$3_0$125 Def00002C
+S C$main.c$55$1_0$122 Def00003C
+S C$main.c$26$3_0$124 Def000013
+S C$main.c$44$3_0$125 Def000032
+S C$main.c$38$2_0$123 Def000021
+S C$main.c$51$4_0$128 Def000039
+S XG$main$0$0 Def00003C
 S C$main.c$3$0_0$122 Def000000
 S C$main.c$5$1_0$122 Def000000
 S C$main.c$7$1_0$122 Def000003
-S A$main$80 Def000010
 S A$main$62 Def000003
 S C$main.c$8$1_0$122 Def000008
-S A$main$90 Def00001B
-S A$main$81 Def000013
 S A$main$63 Def000006
-S A$main$85 Def000015
+S A$main$82 Def000013
+S A$main$92 Def00001B
+S A$main$93 Def00001E
 S A$main$76 Def00000D
 S A$main$67 Def000008
 S A$main$58 Def000000
-S A$main$86 Def000018
+S A$main$77 Def000010
 S A$main$68 Def00000B
-S A$main$98 Def00001E
+S A$main$87 Def000016
+S A$main$78 Def000011
+S A$main$88 Def000019
+S A$main$98 Def000021
+S A$main$99 Def000025
 S G$main$0$0 Def000000
+S A$main$100 Def000028
 S C$main.c$10$1_0$122 Def00000D
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
@@ -51,7 +69,17 @@ T 00 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03
 R 00 00 00 00 02 04 01 00 02 07 02 00 02 0C 03 00
 T 0D 00 00
 R 00 00 00 00
-T 0D 00 00 CD 00 00 21 00 00 36 01 3A 00 00 32
-R 00 00 00 00 02 04 07 00 02 07 00 00 02 0C 03 00
-T 19 00 00 00 00 CD 00 00 18 ED
-R 00 00 00 00 02 03 06 00 02 06 05 00
+T 0D 00 00 3A 00 00 3D 20 03 CD 00 00
+R 00 00 00 00 02 04 05 00 02 0A 08 00
+T 16 00 00
+R 00 00 00 00
+T 16 00 00 21 00 00 36 01 3A 00 00 32 00 00
+R 00 00 00 00 02 04 00 00 02 09 03 00 02 0C 06 00
+T 21 00 00
+R 00 00 00 00
+T 21 00 00 FD 21 00 00 FD 7E 00 D6 0A 30 E1 FD 7E
+R 00 00 00 00 02 05 00 00
+T 2E 00 00 00 B7 28 EF FD 7E 00 D6 09 28 E8 CD
+R 00 00 00 00
+T 3A 00 00 00 00 18 E3
+R 00 00 00 00 02 03 07 00

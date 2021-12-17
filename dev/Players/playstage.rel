@@ -1,16 +1,41 @@
 ;!FILE playstage.asm
-XL2
-H 9 areas 7 global symbols
+XL3
+H 9 areas 20 global symbols
 M playstage
 O -mz80
-S .__.ABS. Def0000
-A _CODE size 1 flags 0 addr 0
-S G$playstage_foo$0$0 Def0000
-S A$playstage$59 Def0000
-S C$playstage.c$3$0$0 Def0000
-S C$playstage.c$5$0$0 Def0000
-S _playstage_foo Def0000
-S XG$playstage_foo$0$0 Def0000
+S _stagenum Ref000000
+S _InitEnemyshoots Ref000000
+S _InitBarrom Ref000000
+S _InitScripts Ref000000
+S .__.ABS. Def000000
+S _InitStage Ref000000
+S _devkit_SMS_displayOff Ref000000
+S _laststagenum Ref000000
+S _InitEnemies Ref000000
+S _InitScroller Ref000000
+A _CODE size 1B flags 0 addr 0
+S A$playstage$67 Def000006
+S A$playstage$87 Def000015
+S A$playstage$79 Def00000F
+S A$playstage$98 Def000018
+S XG$InitPlayStage$0$0 Def000018
+S C$playstage.c$143$0_0$51 Def000000
+S C$playstage.c$161$1_0$51 Def000012
+S C$playstage.c$152$1_0$51 Def000009
+S C$playstage.c$253$1_0$51 Def000018
+S C$playstage.c$164$1_0$51 Def000015
+S C$playstage.c$155$1_0$51 Def00000C
+S C$playstage.c$146$1_0$51 Def000000
+S G$InitPlayStage$0$0 Def000000
+S C$playstage.c$167$1_0$51 Def000018
+S C$playstage.c$158$1_0$51 Def00000F
+S C$playstage.c$149$1_0$51 Def000006
+S A$playstage$71 Def000009
+S A$playstage$62 Def000000
+S A$playstage$63 Def000003
+S _InitPlayStage Def000000
+S A$playstage$83 Def000012
+S A$playstage$75 Def00000C
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -19,7 +44,11 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00
+T 00 00 00
 R 00 00 00 00
-T 00 00 C9
-R 00 00 00 00
+T 00 00 00 3A 00 00 32 00 00 CD 00 00 CD
+R 00 00 00 00 02 04 00 00 02 07 07 00 02 0A 05 00
+T 0A 00 00 00 00 CD 00 00 CD 00 00 CD
+R 00 00 00 00 02 03 03 00 02 06 08 00 02 09 01 00
+T 13 00 00 00 00 CD 00 00 C3 00 00
+R 00 00 00 00 02 03 06 00 02 06 09 00 02 09 02 00

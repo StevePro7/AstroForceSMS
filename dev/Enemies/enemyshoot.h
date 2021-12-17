@@ -3,7 +3,7 @@
 
 void enemyshoot_foo();
 
-//void InitEnemyshootSprites();
+void InitEnemyshootSprites();
 //void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );
 //void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count );
 //void InitEnemyshootLaser( unsigned char x, unsigned char y );
@@ -12,7 +12,7 @@ void enemyshoot_foo();
 //void RemoveEnemyshoot( signed char a );
 //void UpdateEnemyshoot( unsigned int a );
 //void UpdateEnemyshoots();
-//void InitEnemyshoots();
+void InitEnemyshoots();
 //void KillEnemyshoots();
 //void TestEnemyShoot( enemy *en, unsigned char freq );
 //void TestEnemyShootOne( enemy *en, unsigned char freq );

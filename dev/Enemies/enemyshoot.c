@@ -1,15 +1,19 @@
 #include "enemyshoot.h"
+#include "../banks/bank7.h"
+#include "../defines.h"
+#include "../funcs.h"
+#include "../vars.h"
 
 void enemyshoot_foo()
 {
 }
 
-//// Load player sprite
-//void InitEnemyshootSprites()
-//{
-//	LoadSprite( enemyshoot_psgcompr, ENEMYSHOOTBASE, enemyshoot_psgcompr_bank );
-//}
-//
+// Load player sprite
+void InitEnemyshootSprites()
+{
+	LoadSprite( enemyshoot_psgcompr, ENEMYSHOOTBASE, enemyshoot_psgcompr_bank );
+}
+
 //void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy )
 //{
 //	enemyshoot *es;
@@ -188,13 +192,13 @@ void enemyshoot_foo()
 //		for( a = numenemyshoots - 1; a >= 0; a-- )
 //			UpdateEnemyshoot( a );
 //}
-//
-//void InitEnemyshoots()
-//{
-//	InitEnemyshootSprites();
-//	numenemyshoots = 0;
-//}
-//
+
+void InitEnemyshoots()
+{
+	InitEnemyshootSprites();
+	numenemyshoots = 0;
+}
+
 //void KillEnemyshoots()
 //{
 //	numenemyshoots = 0;

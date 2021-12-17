@@ -1,8 +1,14 @@
 #include "playstage.h"
-
-void playstage_foo()
-{
-}
+#include "../Enemies/enemy.h"
+#include "../Enemies/enemyshoot.h"
+#include "../General/barrom.h"
+#include "../General/map.h"
+#include "../General/scripter.h"
+#include "../General/scroller.h"
+#include "../Players/player.h"
+#include "../devkit/_sms_manager.h"
+#include "../funcs.h"
+#include "../vars.h"
 
 //void InitStageSprite( unsigned char b )
 //{
@@ -39,19 +45,19 @@ void playstage_foo()
 //	playertype = 5;
 //	playercounter = 0;
 //}
-//
-//void InitCustomStageData()
-//{
-//	// Metemos aqu� la velocidad de los disparos, ya que en alguna fase la retocamos
-//	playstageshootspeed = DEFAULTENEMYSHOOTSPEED + gamelevel;
-//
-//	// Change bank
-//	changeBank( FIXEDBANKSLOT );
-//
-//	// Custom Init
-//	( *( initstagefunctions[ playstage ] ) )( );
-//}
-//
+
+void InitCustomStageData()
+{
+	// Metemos aqu� la velocidad de los disparos, ya que en alguna fase la retocamos
+	playstageshootspeed = DEFAULTENEMYSHOOTSPEED + gamelevel;
+
+	// Change bank
+	changeBank( FIXEDBANKSLOT );
+
+	// Custom Init
+	( *( initstagefunctions[ playstage ] ) )( );
+}
+
 //void UpdatePlayStage()
 //{
 //	// Change bank
@@ -60,53 +66,54 @@ void playstage_foo()
 //	// Custom Update
 //	( *( updatestagefunctions[ playstage ] ) )( );
 //}
-//
-//void InitStageData( unsigned int i )
-//{
-//	unsigned char *palette_bin;
-//	unsigned int palette_bin_bank;
-//	unsigned char *tilemap_l;
-//	unsigned int tilemap_l_size;
-//	unsigned char *tilemap_m;
-//	unsigned char *psg;
-//	unsigned int psg_bank;
-//	unsigned char loop_psg;
-//
-//	// Prevent errors
-//	changeBank( FIXEDBANKSLOT );
-//
-//	// Update where we stay
-//	i <<= 3;
-//
-//	// Get all data
-//	palette_bin = ( unsigned char * ) stageinitdata[ i ]; i++;
-//	palette_bin_bank = ( unsigned int ) ( stageinitdata[ i ] ); i++;
-//	tilemap_l = ( unsigned char * ) stageinitdata[ i ]; i++;
-//	tilemap_l_size = ( unsigned int ) ( stageinitdata[ i ] ); i++;
-//	tilemap_m = ( unsigned char * ) stageinitdata[ i ]; i++;
-//	psg = ( unsigned char * ) stageinitdata[ i ]; i++;
-//	psg_bank = ( unsigned int ) ( stageinitdata[ i++ ] );
-//	loop_psg = ( unsigned int ) ( stageinitdata[ i ] );
-//
-//
-//	// The bank
-//	playstagebank = palette_bin_bank;
-//
-//	// Load palette
-//	LoadBGPalette( palette_bin, palette_bin_bank );
-//
-//	// The tilemap
-//	SetMapLines( tilemap_l, tilemap_l_size, tilemap_m );
-//
-//	// Init map
-//	InitMap( palette_bin_bank );
-//
-//	// Rom bank
-//	if( psg != 0 )
-//		PlayMusic( psg, psg_bank, loop_psg );
-//}
-//
-//// Pass A
+
+void InitStageData( unsigned int i )
+{
+	unsigned char *palette_bin;
+	unsigned int palette_bin_bank;
+	unsigned char *tilemap_l;
+	unsigned int tilemap_l_size;
+	unsigned char *tilemap_m;
+	unsigned char *psg;
+	unsigned int psg_bank;
+	unsigned char loop_psg;
+
+	// Prevent errors
+	changeBank( FIXEDBANKSLOT );
+
+	// Update where we stay
+	i <<= 3;
+
+	// Get all data
+	palette_bin = ( unsigned char * ) stageinitdata[ i ]; i++;
+	palette_bin_bank = ( unsigned int ) ( stageinitdata[ i ] ); i++;
+	tilemap_l = ( unsigned char * ) stageinitdata[ i ]; i++;
+	tilemap_l_size = ( unsigned int ) ( stageinitdata[ i ] ); i++;
+	tilemap_m = ( unsigned char * ) stageinitdata[ i ]; i++;
+	psg = ( unsigned char * ) stageinitdata[ i ]; i++;
+	psg_bank = ( unsigned int ) ( stageinitdata[ i++ ] );
+	loop_psg = ( unsigned int ) ( stageinitdata[ i ] );
+
+	// The bank
+	playstagebank = palette_bin_bank;
+
+	// Load palette
+	LoadBGPalette( palette_bin, palette_bin_bank );
+
+	// The tilemap
+	SetMapLines( tilemap_l, tilemap_l_size, tilemap_m );
+
+	// Init map
+	InitMap( palette_bin_bank );
+
+	// Rom bank
+	if( psg != 0 )
+	{
+		PlayMusic( psg, psg_bank, loop_psg );
+	}
+}
+
+// Pass A
 //void UpdateStagePassA()
 //{
 //	// Player indicators
@@ -127,55 +134,59 @@ void playstage_foo()
 //	// Update explosions
 //	UpdateExplosions();
 //}
-//
-//
+
+
 //void UpdateStagePassB()
 //{
 //	// Enemies!!!
 //	UpdateEnemies();
 //}
-//
-//// Pantalla de juego
-//void InitPlayStage()
-//{
-//	// Save continue stage, for continue :)
-//	laststagenum = stagenum;
-//
-//	// Init stage
-//	InitStage();
-//
-//	// Init script
-//	InitScripts();
-//
-//	// Enemies set to 0
-//	InitEnemies();
-//
-//	// And enemy shoots
-//	InitEnemyshoots();
-//
-//	// Lo volvemos a apagar
-//	devkit_SMS_displayOff();
-//
-//	// Scroller
-//	InitScroller();
-//
-//	// Barrom
-//	InitBarrom();
-//
-//	// Let's fill playstage
-//	if( stagenum < 6 )
-//		playstage = 1 + ( ( basestage + stagenum ) % 5 );
-//	else
-//		playstage = stagenum;
-//
-//	// Last but not least, load custom stage data from array data
-//	InitStageData( stagedatamarks[ playstage - 1 ] );
-//
-//	// For the stage custom code 
-//	InitCustomStageData();
-//
-//	// Init player
-//	InitPlayerSprite();
+
+// Pantalla de juego
+void InitPlayStage()
+{
+	// Save continue stage, for continue :)
+	laststagenum = stagenum;
+
+	// Init stage
+	InitStage();
+
+	// Init script
+	InitScripts();
+
+	// Enemies set to 0
+	InitEnemies();
+
+	// And enemy shoots
+	InitEnemyshoots();
+
+	// Lo volvemos a apagar
+	devkit_SMS_displayOff();
+
+	// Scroller
+	InitScroller();
+
+	// Barrom
+	InitBarrom();
+
+	// Let's fill playstage
+	if( stagenum < 6 )
+	{
+		playstage = 1 + ( ( basestage + stagenum ) % 5 );
+	}
+	else
+	{
+		playstage = stagenum;
+	}
+
+	// Last but not least, load custom stage data from array data
+	InitStageData( stagedatamarks[ playstage - 1 ] );
+
+	// For the stage custom code 
+	InitCustomStageData();
+
+	// Init player
+	InitPlayerSprite();
 //
 //	// Init player shoots
 //	InitPlayershoots();
@@ -246,4 +257,4 @@ void playstage_foo()
 //			numinterrupts = 0;
 //		}
 //	}
-//}
+}
