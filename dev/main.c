@@ -33,6 +33,7 @@ void main()
 		// Selector
 		//InitSelectorStage();
 
+		//TODO delete
 		InitPlayStage();
 		
 		// Stage looping

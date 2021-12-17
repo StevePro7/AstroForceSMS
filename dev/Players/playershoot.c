@@ -1,4 +1,7 @@
 #include "playershoot.h"
+#include "../banks/bank8.h"
+#include "../funcs.h"
+#include "../vars.h"
 
 void playershoot_foo()
 {
@@ -31,13 +34,13 @@ void playershoot_foo()
 //		else devkit_SMS_addSprite( ps->playershootx + 4, ps->playershooty, PLAYERSHOOTBASE + ps->playershoottype );
 //	}
 //}
-//
-//// Load playershootsprites
-//void InitPlayershootSprites()
-//{
-//	LoadSprite( playershoot_psgcompr, PLAYERSHOOTBASE, playershoot_psgcompr_bank );
-//}
-//
+
+// Load playershootsprites
+void InitPlayershootSprites()
+{
+	LoadSprite( playershoot_psgcompr, PLAYERSHOOTBASE, playershoot_psgcompr_bank );
+}
+
 //// Remove playershoot
 //void RemovePlayershoot( signed char a )
 //{
@@ -147,12 +150,12 @@ void playershoot_foo()
 //	ps->playershootvelx = playershootspeedsx[ t ];
 //	ps->playershootvely = playershootspeedsy[ t ];
 //}
-//
-//void InitPlayershoots()
-//{
-//	// Playershoot sprites
-//	InitPlayershootSprites();
-//
-//	// Reset counter
-//	numplayershoots = 0;
-//}
+
+void InitPlayershoots()
+{
+	// Playershoot sprites
+	InitPlayershootSprites();
+
+	// Reset counter
+	numplayershoots = 0;
+}

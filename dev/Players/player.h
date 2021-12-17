@@ -1,13 +1,11 @@
 #ifndef _PLAYER_H_
 #define _PLAYER_H_
 
-void player_foo();
-
 //void RemovePlayer();
 //unsigned char CheckPlayerEnemyCollision();
 //unsigned char CheckPlayerEnemyshootCollision();
 //void UpdatePlayerIndicators();
-//void InitPlayer();
+void InitPlayer();
 void InitPlayerSprite();
 //void DrawPlayer();
 //void MovePlayer();

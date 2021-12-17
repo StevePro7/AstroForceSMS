@@ -1,19 +1,18 @@
 #include "powerup.h"
+#include "../banks/bank10.h"
+#include "../defines.h"
+#include "../funcs.h"
 
-void powerup_foo()
+void InitPowerupSprites()
 {
+	LoadSprite( powerup_psgcompr, POWERUPBASE, powerup_psgcompr_bank );
 }
 
-//void InitPowerupSprites()
-//{
-//	LoadSprite( powerup_psgcompr, POWERUPBASE, powerup_psgcompr_bank );
-//}
-//
-//void InitPowerups()
-//{
-//	InitPowerupSprites();
-//}
-//
+void InitPowerups()
+{
+	InitPowerupSprites();
+}
+
 //void UpdatePowerup()
 //{
 //	if( powerupt != 0 )

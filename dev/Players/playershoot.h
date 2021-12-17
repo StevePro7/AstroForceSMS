@@ -9,6 +9,6 @@ void playershoot_foo();
 //void UpdatePlayershoot( unsigned int a );
 //void UpdatePlayershoots();
 //void InitPlayershoot( unsigned char x, unsigned char y, unsigned char t );
-//void InitPlayershoots();
+void InitPlayershoots();
 
 #endif//_PLAYERSHOOT_H_

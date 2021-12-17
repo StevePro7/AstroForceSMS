@@ -3,11 +3,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-
-void player_foo()
-{
-}
-
 //// warning 126: unreachable code
 //#ifdef _CONSOLE
 //#else
@@ -93,16 +88,16 @@ void player_foo()
 //	for( a = 0; a < numplayers; a++ )
 //		devkit_SMS_addSprite( 240 - a * 8, 4, PLAYERINDICATORBASE );
 //}
-//
-//// Init a player
-//void InitPlayer()
-//{
-//	// Constants
-//	playerx = 128;
-//	playery = 200;
-//	playertype = 1;
-//	playercounter = 0;
-//}
+
+// Init a player
+void InitPlayer()
+{
+	// Constants
+	playerx = 128;
+	playery = 200;
+	playertype = 1;
+	playercounter = 0;
+}
 
 // Load player sprite
 void InitPlayerSprite()

@@ -2,10 +2,13 @@
 #include "../Enemies/enemy.h"
 #include "../Enemies/enemyshoot.h"
 #include "../General/barrom.h"
+#include "../General/explosion.h"
 #include "../General/map.h"
+#include "../General/powerup.h"
 #include "../General/scripter.h"
 #include "../General/scroller.h"
 #include "../Players/player.h"
+#include "../Players/playershoot.h"
 #include "../devkit/_sms_manager.h"
 #include "../funcs.h"
 #include "../vars.h"
@@ -187,31 +190,31 @@ void InitPlayStage()
 
 	// Init player
 	InitPlayerSprite();
-//
-//	// Init player shoots
-//	InitPlayershoots();
-//
-//	// Init powerup
-//	InitPowerups();
-//
-//	// Init explosion sprite
-//	InitExplosions();
-//
-//	// Do what we have to do
-//	InitPlayer();
-//
-//	// Lo volvemos a encender
-//	devkit_SMS_displayOn();
-//
-//	// Exit stage flag
-//	exitplaystage = 0;
-//
-//	// To make update at init
-//	updateplaystage = 1;
-//
-//	// We have not pause
-//	gamepause = 0;
-//
+
+	// Init player shoots
+	InitPlayershoots();
+
+	// Init powerup
+	InitPowerups();
+
+	// Init explosion sprite
+	InitExplosions();
+
+	// Do what we have to do
+	InitPlayer();
+
+	// Lo volvemos a encender
+	devkit_SMS_displayOn();
+
+	// Exit stage flag
+	exitplaystage = 0;
+
+	// To make update at init
+	updateplaystage = 1;
+
+	// We have not pause
+	gamepause = 0;
+
 //	// Bucle
 //	while( 1 )
 //	{
