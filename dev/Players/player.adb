@@ -1,5 +1,5 @@
 M:player
-F:G$player_foo$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
+F:G$InitPlayer$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitPlayerSprite$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitPlayerConstants$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 T:Fplayer$enemy[({0}S:S$enemyposx$0_0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0_0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0_0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0_0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0_0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0_0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0_0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0_0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0_0$0({1}SC:U),Z,0,0)]

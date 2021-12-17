@@ -1,16 +1,48 @@
 ;!FILE playershoot.asm
-XL2
-H 9 areas 7 global symbols
+XL3
+H 9 areas 27 global symbols
 M playershoot
 O -mz80
-S .__.ABS. Def0000
-A _CODE size 1 flags 0 addr 0
-S XG$playershoot_foo$0$0 Def0000
-S G$playershoot_foo$0$0 Def0000
-S A$playershoot$59 Def0000
-S C$playershoot.c$3$0$0 Def0000
-S C$playershoot.c$5$0$0 Def0000
-S _playershoot_foo Def0000
+S _LoadSprite Ref000000
+S _numplayershoots Ref000000
+S .__.ABS. Def000000
+S _playershoot_psgcompr Ref000000
+A _CODE size 1D flags 0 addr 0
+S _InitPlayershoots Def000014
+S XG$InitPlayershootSprites$0$0 Def000013
+S XG$playershoot_foo$0$0 Def000000
+S XG$InitPlayershoots$0$0 Def00001C
+S A$playershoot$110 Def000017
+S A$playershoot$111 Def000019
+S C$playershoot.c$160$1_0$21 Def000017
+S C$playershoot.c$161$1_0$21 Def00001C
+S A$playershoot$106 Def000014
+S C$playershoot.c$154$1_0$21 Def000014
+S A$playershoot$119 Def00001C
+S C$playershoot.c$157$1_0$21 Def000014
+S C$playershoot.c$41$1_0$20 Def000001
+S C$playershoot.c$42$1_0$20 Def000013
+S A$playershoot$80 Def000009
+S A$playershoot$62 Def000000
+S C$playershoot.c$39$0_0$20 Def000001
+S G$InitPlayershootSprites$0$0 Def000001
+S A$playershoot$81 Def00000C
+S A$playershoot$82 Def00000D
+S A$playershoot$83 Def000010
+S A$playershoot$93 Def000013
+S A$playershoot$84 Def000011
+S A$playershoot$75 Def000001
+S A$playershoot$85 Def000012
+S A$playershoot$76 Def000003
+S G$playershoot_foo$0$0 Def000000
+S A$playershoot$77 Def000004
+S A$playershoot$78 Def000005
+S A$playershoot$79 Def000008
+S G$InitPlayershoots$0$0 Def000014
+S _InitPlayershootSprites Def000001
+S _playershoot_foo Def000000
+S C$playershoot.c$6$0_0$19 Def000000
+S C$playershoot.c$8$0_0$19 Def000000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -19,7 +51,17 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00
+T 00 00 00
 R 00 00 00 00
-T 00 00 C9
+T 00 00 00 C9
 R 00 00 00 00
+T 01 00 00
+R 00 00 00 00
+T 01 00 00 3E 08 F5 33 21 10 01 E5 21 00 00 E5 CD
+R 00 00 00 00 02 0C 03 00
+T 0E 00 00 00 00 F1 F1 33 C9
+R 00 00 00 00 02 03 00 00
+T 14 00 00
+R 00 00 00 00
+T 14 00 00 CD 01 00 3E 00 32 00 00 C9
+R 00 00 00 00 00 04 00 00 02 09 01 00
