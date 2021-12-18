@@ -1,8 +1,8 @@
 #ifndef _PLAYSTAGE_H_
 #define _PLAYSTAGE_H_
 
-//void InitStageSprite( unsigned char b );
-//void InitStageSprites( const unsigned char *spl, unsigned char num );
+void InitStageSprite( unsigned char b );
+void InitStageSprites( const unsigned char *spl, unsigned char num );
 //void InitAfterBossStage();
 void InitCustomStageData();
 //void UpdatePlayStage();

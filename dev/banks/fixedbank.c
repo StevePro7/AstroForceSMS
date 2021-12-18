@@ -15,6 +15,7 @@
 #include "../General/warning.h"
 #include "../Intros/introsideplayer.h"
 #include "../Intros/intro3object.h"
+#include "../Stages/stage5.h"
 #include "../funcs.h"
 
 #ifdef _CONSOLE
@@ -2284,8 +2285,8 @@ const MyKillEnemyFunction updatestagefunctions[] =
 const MyKillEnemyFunction initstagefunctions[] =
 {
 	0,
-//	InitStage7,
-//	InitStage5,
+	0,//	InitStage7,
+	InitStage5,
 //	InitStage4,
 //	InitStage2,
 //	InitStage8,

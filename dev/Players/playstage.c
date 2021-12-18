@@ -10,31 +10,32 @@
 #include "../Players/player.h"
 #include "../Players/playershoot.h"
 #include "../devkit/_sms_manager.h"
+#include "../banks/fixedbank.h"
 #include "../funcs.h"
 #include "../vars.h"
 
-//void InitStageSprite( unsigned char b )
-//{
-//	const unsigned char *pointer;
-//	int base;
-//	char bank;
-//
-//	pointer = imagepointers[ b ];
-//	base = imagebases[ b ];
-//	bank = imagebanks[ b ];
-//	LoadSprite( ( unsigned char * ) pointer, base, bank );
-//}
-//
-//void InitStageSprites( const unsigned char *spl, unsigned char num )
-//{
-//	unsigned char a;
-//	for( a = 0; a < num; a++ )
-//	{
-//		changeBank( FIXEDBANKSLOT );
-//		InitStageSprite( spl[ a ] );
-//	}
-//}
-//
+void InitStageSprite( unsigned char b )
+{
+	const unsigned char *pointer;
+	int base;
+	char bank;
+
+	pointer = imagepointers[ b ];
+	base = imagebases[ b ];
+	bank = imagebanks[ b ];
+	LoadSprite( ( unsigned char * ) pointer, base, bank );
+}
+
+void InitStageSprites( const unsigned char *spl, unsigned char num )
+{
+	unsigned char a;
+	for( a = 0; a < num; a++ )
+	{
+		changeBank( FIXEDBANKSLOT );
+		InitStageSprite( spl[ a ] );
+	}
+}
+
 //void InitAfterBossStage()
 //{
 //	// Destroy all enemies
