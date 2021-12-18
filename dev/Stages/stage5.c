@@ -4,13 +4,11 @@
 #include "../General/scripter.h"
 #include "../General/scroller.h"
 #include "../Players/playstage.h"
+#include "../devkit/_sms_manager.h"
 #include "../banks/bank6.h"
 #include "../banks/fixedbank.h"
 #include "../funcs.h"
-
-void stage5_foo()
-{
-}
+#include "../vars.h"
 
 void InitStage5()
 {
@@ -37,17 +35,19 @@ void InitStage5()
 	SetStaticEnemies( ( unsigned int * ) stage5_statics, stage5_statics_bank );
 }
 
-//void UpdateStage5()
-//{
-//	unsigned char a;
-//
-//	// The bank	
-//	changeBank( watertiles_bin_bank );
-//
-//	// Water Parallax
-//	devkit_UNSAFE_SMS_VRAMmemcpy32( 0, watertiles_bin + ( ( ( stageframe >> 1 ) % 8 ) << 5 ) );
-//
-//	// Clouds
-//	for( a = 0; a < MAXSTAGE5CLOUDS; a++ )
-//		UpdateStage5Cloud( &stage3stars[ a ] );
-//}
+void UpdateStage5()
+{
+	unsigned char a;
+
+	// The bank	
+	changeBank( watertiles_bin_bank );
+
+	// Water Parallax
+	devkit_UNSAFE_SMS_VRAMmemcpy32( 0, ( unsigned char * ) watertiles_bin + ( ( ( stageframe >> 1 ) % 8 ) << 5 ) );
+
+	// Clouds
+	for( a = 0; a < MAXSTAGE5CLOUDS; a++ )
+	{
+		UpdateStage5Cloud( &stage3stars[ a ] );
+	}
+}
