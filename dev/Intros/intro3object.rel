@@ -1,147 +1,158 @@
 ;!FILE intro3object.asm
-XL3
-H 9 areas 8A global symbols
+XL2
+H 9 areas 95 global symbols
 M intro3object
 O -mz80
-S _persons_bin Ref000000
-S _changeBank Ref000000
-S _devkit_SMS_setNextTileatXY Ref000000
-S .__.ABS. Def000000
-S _devkit_SMS_setTile Ref000000
-A _CODE size A5 flags 0 addr 0
-S A$intro3object$197 Def00007B
-S A$intro3object$198 Def00007E
-S A$intro3object$199 Def00007F
-S _DrawIntro3Object Def000001
-S C$intro3object.c$40$1_0$53 Def000070
-S C$intro3object.c$32$3_0$50 Def000013
-S A$intro3object$80 Def000009
-S A$intro3object$81 Def00000B
-S C$intro3object.c$42$1_0$53 Def000078
-S A$intro3object$82 Def00000C
-S A$intro3object$64 Def000000
-S C$intro3object.c$35$3_0$50 Def000048
-S C$intro3object.c$33$4_0$51 Def000045
-S C$intro3object.c$30$1_0$48 Def000011
-S C$intro3object.c$22$0_0$48 Def000001
-S _UpdateIntro3Object1 Def000070
-S A$intro3object$83 Def00000D
-S A$intro3object$74 Def000001
-S C$intro3object.c$34$4_0$51 Def000031
-S A$intro3object$93 Def000013
-S A$intro3object$84 Def000010
-S A$intro3object$75 Def000003
-S C$intro3object.c$30$2_0$49 Def00005F
-S A$intro3object$94 Def000014
-S A$intro3object$76 Def000007
-S C$intro3object.c$44$2_0$54 Def000088
-S C$intro3object.c$33$1_0$48 Def000023
-S G$intro3object_foo$0$0 Def000000
-S A$intro3object$95 Def000016
-S C$intro3object.c$45$2_0$54 Def000099
-S A$intro3object$96 Def000017
-S C$intro3object.c$48$1_0$53 Def0000A4
-S C$intro3object.c$46$2_0$54 Def0000A0
-S A$intro3object$97 Def000018
-S A$intro3object$88 Def000011
-S XG$DrawIntro3Object$0$0 Def00006F
-S C$intro3object.c$27$1_0$48 Def000009
-S A$intro3object$98 Def000019
-S C$intro3object.c$37$1_0$48 Def000065
-S A$intro3object$99 Def00001C
-S C$intro3object.c$38$1_0$48 Def00006F
-S XG$UpdateIntro3Object1$0$0 Def0000A4
-S _intro3object_foo Def000000
-S C$intro3object.c$7$0_0$46 Def000000
-S C$intro3object.c$9$0_0$46 Def000000
-S XG$intro3object_foo$0$0 Def000000
-S A$intro3object$100 Def00001D
-S A$intro3object$200 Def000080
-S A$intro3object$101 Def00001E
-S A$intro3object$210 Def000089
-S A$intro3object$201 Def000081
-S A$intro3object$120 Def000034
-S A$intro3object$111 Def00002B
-S A$intro3object$102 Def000021
-S A$intro3object$211 Def00008A
-S A$intro3object$202 Def000082
-S A$intro3object$130 Def00003F
-S A$intro3object$121 Def000035
-S A$intro3object$112 Def00002C
-S A$intro3object$103 Def000022
-S A$intro3object$212 Def00008D
-S A$intro3object$203 Def000083
-S A$intro3object$131 Def000042
-S A$intro3object$122 Def000037
-S A$intro3object$113 Def00002F
-S A$intro3object$213 Def00008E
-S A$intro3object$204 Def000084
-S A$intro3object$150 Def000054
-S A$intro3object$132 Def000043
-S A$intro3object$123 Def000038
-S A$intro3object$223 Def000099
-S A$intro3object$214 Def000091
-S A$intro3object$205 Def000086
-S A$intro3object$160 Def00005F
-S A$intro3object$151 Def000055
-S A$intro3object$133 Def000044
-S A$intro3object$124 Def00003A
-S A$intro3object$233 Def0000A0
-S A$intro3object$224 Def00009A
-S A$intro3object$215 Def000092
-S A$intro3object$170 Def000069
-S A$intro3object$161 Def000060
-S A$intro3object$152 Def000056
-S A$intro3object$143 Def000048
-S A$intro3object$107 Def000023
-S G$DrawIntro3Object$0$0 Def000001
-S A$intro3object$234 Def0000A1
-S A$intro3object$225 Def00009B
-S A$intro3object$216 Def000095
-S A$intro3object$180 Def00006F
-S A$intro3object$171 Def00006C
-S A$intro3object$162 Def000061
-S A$intro3object$153 Def000057
-S A$intro3object$144 Def00004B
-S A$intro3object$126 Def00003B
-S A$intro3object$117 Def000031
-S A$intro3object$108 Def000026
-S A$intro3object$244 Def0000A4
-S A$intro3object$226 Def00009C
-S A$intro3object$217 Def000096
-S A$intro3object$190 Def000070
-S A$intro3object$163 Def000063
-S A$intro3object$154 Def000058
-S A$intro3object$145 Def00004D
-S A$intro3object$127 Def00003C
-S A$intro3object$118 Def000032
-S A$intro3object$109 Def000029
-S A$intro3object$227 Def00009D
-S A$intro3object$218 Def000097
-S A$intro3object$209 Def000088
-S A$intro3object$191 Def000072
-S A$intro3object$155 Def000059
-S A$intro3object$146 Def00004F
-S A$intro3object$137 Def000045
-S A$intro3object$128 Def00003D
-S A$intro3object$119 Def000033
-S A$intro3object$228 Def00009E
-S A$intro3object$219 Def000098
-S A$intro3object$192 Def000076
-S A$intro3object$156 Def00005C
-S A$intro3object$147 Def000050
-S A$intro3object$138 Def000046
-S A$intro3object$129 Def00003E
-S A$intro3object$229 Def00009F
-S A$intro3object$175 Def00006D
-S A$intro3object$148 Def000051
-S A$intro3object$239 Def0000A2
-S A$intro3object$167 Def000065
-S A$intro3object$149 Def000053
-S G$UpdateIntro3Object1$0$0 Def000070
-S A$intro3object$168 Def000067
-S A$intro3object$196 Def000078
-S A$intro3object$169 Def000068
+S _persons_bin Ref0000
+S _changeBank Ref0000
+S _devkit_SMS_setNextTileatXY Ref0000
+S .__.ABS. Def0000
+S _devkit_SMS_setTile Ref0000
+A _CODE size B1 flags 0 addr 0
+S A$intro3object$197 Def007C
+S C$intro3object.c$37$1$47 Def0069
+S A$intro3object$198 Def007F
+S C$intro3object.c$38$1$47 Def0073
+S A$intro3object$199 Def0082
+S C$intro3object.c$35$3$49 Def004C
+S _DrawIntro3Object Def0001
+S A$intro3object$80 Def0009
+S A$intro3object$81 Def000B
+S A$intro3object$82 Def000C
+S A$intro3object$64 Def0000
+S _UpdateIntro3Object1 Def0074
+S A$intro3object$83 Def000D
+S A$intro3object$74 Def0001
+S A$intro3object$93 Def0013
+S A$intro3object$84 Def0010
+S A$intro3object$75 Def0003
+S A$intro3object$94 Def0014
+S A$intro3object$76 Def0007
+S G$intro3object_foo$0$0 Def0000
+S A$intro3object$95 Def0015
+S A$intro3object$96 Def0016
+S A$intro3object$97 Def0017
+S A$intro3object$88 Def0011
+S XG$DrawIntro3Object$0$0 Def0073
+S A$intro3object$98 Def0018
+S A$intro3object$99 Def0019
+S C$intro3object.c$7$0$0 Def0000
+S C$intro3object.c$9$0$0 Def0000
+S XG$UpdateIntro3Object1$0$0 Def00B0
+S _intro3object_foo Def0000
+S XG$intro3object_foo$0$0 Def0000
+S A$intro3object$100 Def001C
+S A$intro3object$200 Def0083
+S A$intro3object$110 Def0029
+S A$intro3object$101 Def001D
+S A$intro3object$210 Def008C
+S A$intro3object$201 Def0084
+S A$intro3object$120 Def0033
+S A$intro3object$102 Def001E
+S A$intro3object$220 Def009B
+S A$intro3object$211 Def008F
+S A$intro3object$202 Def0085
+S A$intro3object$130 Def003F
+S A$intro3object$121 Def0034
+S A$intro3object$112 Def002B
+S A$intro3object$103 Def0021
+S A$intro3object$230 Def00A5
+S A$intro3object$221 Def009C
+S A$intro3object$212 Def0090
+S A$intro3object$203 Def0086
+S A$intro3object$131 Def0040
+S A$intro3object$122 Def0035
+S A$intro3object$113 Def002C
+S A$intro3object$104 Def0022
+S A$intro3object$240 Def00AC
+S A$intro3object$231 Def00A6
+S A$intro3object$222 Def009E
+S A$intro3object$213 Def0091
+S A$intro3object$204 Def0087
+S A$intro3object$150 Def0053
+S A$intro3object$141 Def0049
+S A$intro3object$132 Def0041
+S A$intro3object$123 Def0036
+S A$intro3object$114 Def002F
+S A$intro3object$241 Def00AD
+S A$intro3object$232 Def00A7
+S A$intro3object$223 Def00A1
+S A$intro3object$214 Def0092
+S A$intro3object$205 Def0088
+S A$intro3object$160 Def0060
+S A$intro3object$151 Def0054
+S A$intro3object$142 Def004A
+S A$intro3object$133 Def0042
+S A$intro3object$124 Def0037
+S A$intro3object$233 Def00A8
+S A$intro3object$224 Def00A2
+S A$intro3object$215 Def0093
+S A$intro3object$206 Def008A
+S A$intro3object$152 Def0055
+S A$intro3object$134 Def0043
+S A$intro3object$125 Def0038
+S G$DrawIntro3Object$0$0 Def0001
+S A$intro3object$243 Def00AE
+S A$intro3object$234 Def00A9
+S A$intro3object$225 Def00A3
+S A$intro3object$216 Def0094
+S A$intro3object$171 Def0069
+S A$intro3object$153 Def0057
+S A$intro3object$135 Def0046
+S A$intro3object$126 Def003A
+S A$intro3object$108 Def0023
+S C$intro3object.c$42$1$52 Def007C
+S A$intro3object$235 Def00AA
+S A$intro3object$226 Def00A4
+S A$intro3object$217 Def0096
+S A$intro3object$181 Def0073
+S A$intro3object$172 Def006B
+S A$intro3object$154 Def0058
+S A$intro3object$136 Def0047
+S A$intro3object$127 Def003B
+S A$intro3object$118 Def0031
+S A$intro3object$109 Def0026
+S C$intro3object.c$33$4$50 Def0049
+S C$intro3object.c$30$1$47 Def0011
+S A$intro3object$236 Def00AB
+S A$intro3object$218 Def0097
+S A$intro3object$191 Def0074
+S A$intro3object$173 Def006C
+S A$intro3object$164 Def0063
+S A$intro3object$155 Def0059
+S A$intro3object$137 Def0048
+S A$intro3object$128 Def003C
+S A$intro3object$119 Def0032
+S C$intro3object.c$40$1$47 Def0074
+S C$intro3object.c$34$4$50 Def0031
+S A$intro3object$219 Def0098
+S A$intro3object$192 Def0076
+S A$intro3object$174 Def006D
+S A$intro3object$165 Def0064
+S A$intro3object$156 Def005A
+S A$intro3object$147 Def004C
+S A$intro3object$129 Def003E
+S C$intro3object.c$30$2$48 Def0063
+S A$intro3object$193 Def007A
+S A$intro3object$175 Def0070
+S A$intro3object$166 Def0065
+S A$intro3object$157 Def005B
+S A$intro3object$148 Def004F
+S C$intro3object.c$44$2$53 Def008C
+S C$intro3object.c$33$1$47 Def0023
+S A$intro3object$248 Def00B0
+S A$intro3object$176 Def0071
+S A$intro3object$167 Def0067
+S A$intro3object$158 Def005C
+S A$intro3object$149 Def0051
+S C$intro3object.c$45$2$53 Def00A5
+S G$UpdateIntro3Object1$0$0 Def0074
+S A$intro3object$159 Def005D
+S C$intro3object.c$48$1$52 Def00B0
+S C$intro3object.c$46$2$53 Def00AC
+S C$intro3object.c$22$0$0 Def0001
+S C$intro3object.c$32$3$49 Def0013
+S C$intro3object.c$27$1$47 Def0009
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -150,53 +161,51 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00 00
+T 00 00
 R 00 00 00 00
-T 00 00 00 C9
+T 00 00 C9
 R 00 00 00 00
-T 01 00 00
+T 01 00
 R 00 00 00 00
-T 01 00 00 DD E5 DD 21 00 00 DD 39 3E 02 F5 33 CD
+T 01 00 DD E5 DD 21 00 00 DD 39 3E 02 F5 33 CD
 R 00 00 00 00
-T 0E 00 00 00 00 33 0E 00
-R 00 00 00 00 02 03 01 00
-T 13 00 00
+T 0E 00 00 00 33 0E 00
+R 00 00 00 00 02 02 01 00
+T 13 00
 R 00 00 00 00
-T 13 00 00 79 C6 02 C5 F5 33 DD 7E 06 F5 33 CD
+T 13 00 41 04 04 C5 C5 33 DD 7E 06 F5 33 CD 00 00
+R 00 00 00 00 02 0E 02 00
+T 21 00 F1 C1 DD 46 04 DD 5E 05 16 00
 R 00 00 00 00
-T 1F 00 00 00 00 F1 C1 DD 46 04 DD 5E 05 16 00
-R 00 00 00 00 02 03 02 00
-T 2B 00 00
+T 2B 00
 R 00 00 00 00
-T 2B 00 00 7A DD 96 07 30 17 68 63 66 78 C6 02 47
+T 2B 00 7A DD 96 07 30 1B 68 63 7E 23 6E 67 78 C6
 R 00 00 00 00
-T 38 00 00 30 01 1C
+T 39 00 02 47 7B CE 00 5F C5 D5 E5 33 CD 00 00 33
+R 00 00 00 00 02 0D 04 00
+T 47 00 D1 C1 14 18 DF
 R 00 00 00 00
-T 3B 00 00
+T 4C 00
 R 00 00 00 00
-T 3B 00 00 C5 D5 E5 33 CD 00 00 33 D1 C1 14 18 E3
-R 00 00 00 00 02 08 04 00
-T 48 00 00
+T 4C 00 DD 56 07 26 00 3E 12 92 6F 3E 00 9C 67 29
 R 00 00 00 00
-T 48 00 00 DD 56 07 26 00 3E 12 92 6F 3E 00 9C 67
+T 5A 00 53 58 19 DD 75 04 DD 74 05 0C 79 D6 06 38
 R 00 00 00 00
-T 55 00 00 29 53 58 19 DD 75 04 DD 74 05 0C 79 D6
+T 68 00 AA 3E 0F F5 33 CD 00 00 33 DD E1 C9
+R 00 00 00 00 02 08 01 00
+T 74 00
 R 00 00 00 00
-T 62 00 00 06 38 AE 3E 0F F5 33 CD 00 00 33 DD E1
-R 00 00 00 00 02 0B 01 00
-T 6F 00 00 C9
+T 74 00 DD E5 DD 21 00 00 DD 39 DD 4E 04 DD 46 05
 R 00 00 00 00
-T 70 00 00
+T 82 00 59 50 13 13 13 1A D6 10 20 22 21 00 00 23
+R 00 00 00 00 02 0D 00 00
+T 90 00 23 23 23 E5 FD E1 C5 D5 21 07 06 E5 FD E5
 R 00 00 00 00
-T 70 00 00 DD E5 DD 21 00 00 DD 39 DD 4E 04 DD 46
+T 9E 00 CD 01 00 F1 F1 D1 C1 03 03 03 03 0A 3C 02
+R 00 00 00 00 00 03 00 00
+T AC 00 AF 12
 R 00 00 00 00
-T 7D 00 00 05 59 50 13 13 13 1A D6 10 20 1A C5 D5
+T AE 00
 R 00 00 00 00
-T 8A 00 00 11 07 06 D5 21 04 00 E5 CD 01 00 F1 F1
-R 00 00 00 00 02 08 00 00 00 0C 00 00
-T 97 00 00 D1 C1 03 03 03 03 0A 3C 02 AF 12
-R 00 00 00 00
-T A2 00 00
-R 00 00 00 00
-T A2 00 00 DD E1 C9
+T AE 00 DD E1 C9
 R 00 00 00 00

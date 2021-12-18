@@ -188,10 +188,10 @@ unsigned char powerupt;
 signed char powerupv;
 unsigned int powerupcounter;
 
-//// Pause music system
-//char *lastplayedmusic;
-//unsigned char lastplayedmusicbank;
-//unsigned char lastplayedmusiclooped;
+// Pause music system
+char *lastplayedmusic;
+unsigned char lastplayedmusicbank;
+unsigned char lastplayedmusiclooped;
 
 // Needed in stage 8
 unsigned char stage8phase;

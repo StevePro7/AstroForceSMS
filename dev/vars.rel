@@ -1,16 +1,17 @@
 XL2
-H 9 areas 97 global symbols
+H 9 areas 9D global symbols
 M vars
 O -mz80
 S .__.ABS. Def0000
 A _CODE size 0 flags 0 addr 0
-A _DATA size 13D flags 0 addr 0
+A _DATA size 141 flags 0 addr 0
 S G$numtimeredlabels$0$0 Def0123
 S G$playershoots$0$0 Def001C
 S G$keystatus$0$0 Def0000
 S _mapstaticscount Def00F3
 S G$basestage$0$0 Def0008
 S _disablescroll Def00FF
+S G$lastplayedmusicbank$0$0 Def013E
 S G$numinterrupts$0$0 Def0135
 S _stagenum Def000B
 S _numexplosions Def0060
@@ -33,6 +34,7 @@ S _numtimeredlabels Def0123
 S G$playershootcounter$0$0 Def0016
 S _basestage Def0008
 S _numinterrupts Def0135
+S _lastplayedmusicbank Def013E
 S G$stage4playrays$0$0 Def0134
 S G$musicbank$0$0 Def00F6
 S G$numplayershoots$0$0 Def001B
@@ -91,6 +93,7 @@ S _playery Def0013
 S _powerupt Def0138
 S G$stageframe4mod$0$0 Def0005
 S _scrollact Def00FC
+S G$lastplayedmusic$0$0 Def013C
 S G$explosions$0$0 Def0061
 S _playstageshootspeed Def005F
 S _scripts Def0103
@@ -100,6 +103,7 @@ S G$shootcount$0$0 Def002B
 S _playstage Def0009
 S _introstageposx Def012A
 S _powerupx Def0136
+S G$lastplayedmusiclooped$0$0 Def013F
 S G$sprite164anim$0$0 Def0007
 S _dojukebox Def012E
 S _powerupy Def0137
@@ -116,7 +120,7 @@ S _playertype Def0014
 S _numplayers Def000D
 S _lastbank Def00F0
 S _scrollactspeedx Def00FB
-S G$stage8phase$0$0 Def013C
+S G$stage8phase$0$0 Def0140
 S G$spawnedexplosionposx$0$0 Def012F
 S G$timeredlabels$0$0 Def0124
 S _stageframe2mod Def0004
@@ -130,11 +134,13 @@ S G$maptiles$0$0 Def00E8
 S G$stageframe$0$0 Def0002
 S _stageframe4mod Def0005
 S _explosions Def0061
+S _lastplayedmusic Def013C
 S _mapstaticsbank Def00F5
 S G$mapstaticscount$0$0 Def00F3
 S _shootcount Def002B
 S G$disablescroll$0$0 Def00FF
 S _sprite164anim Def0007
+S _lastplayedmusiclooped Def013F
 S G$numexplosions$0$0 Def0060
 S G$stagenum$0$0 Def000B
 S _laststagenum Def000C
@@ -147,7 +153,7 @@ S _mapbank Def00F7
 S _maplineslength Def00E6
 S _timeredlabels Def0124
 S _spawnedexplosionposx Def012F
-S _stage8phase Def013C
+S _stage8phase Def0140
 S _playerspeed Def0018
 S _spawnedexplosionposy Def0130
 S G$oldmappositiony$0$0 Def00EE
@@ -461,4 +467,16 @@ R 00 00 01 00
 T 3C 01
 R 00 00 01 00
 T 3C 01
+R 00 00 01 00
+T 3E 01
+R 00 00 01 00
+T 3E 01
+R 00 00 01 00
+T 3F 01
+R 00 00 01 00
+T 3F 01
+R 00 00 01 00
+T 40 01
+R 00 00 01 00
+T 40 01
 R 00 00 01 00

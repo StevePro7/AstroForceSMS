@@ -1,48 +1,125 @@
 ;!FILE playershoot.asm
-XL3
-H 9 areas 27 global symbols
+XL2
+H 9 areas 74 global symbols
 M playershoot
 O -mz80
-S _LoadSprite Ref000000
-S _numplayershoots Ref000000
-S .__.ABS. Def000000
-S _playershoot_psgcompr Ref000000
-A _CODE size 1D flags 0 addr 0
-S _InitPlayershoots Def000014
-S XG$InitPlayershootSprites$0$0 Def000013
-S XG$playershoot_foo$0$0 Def000000
-S XG$InitPlayershoots$0$0 Def00001C
-S A$playershoot$110 Def000017
-S A$playershoot$111 Def000019
-S C$playershoot.c$160$1_0$21 Def000017
-S C$playershoot.c$161$1_0$21 Def00001C
-S A$playershoot$106 Def000014
-S C$playershoot.c$154$1_0$21 Def000014
-S A$playershoot$119 Def00001C
-S C$playershoot.c$157$1_0$21 Def000014
-S C$playershoot.c$41$1_0$20 Def000001
-S C$playershoot.c$42$1_0$20 Def000013
-S A$playershoot$80 Def000009
-S A$playershoot$62 Def000000
-S C$playershoot.c$39$0_0$20 Def000001
-S G$InitPlayershootSprites$0$0 Def000001
-S A$playershoot$81 Def00000C
-S A$playershoot$82 Def00000D
-S A$playershoot$83 Def000010
-S A$playershoot$93 Def000013
-S A$playershoot$84 Def000011
-S A$playershoot$75 Def000001
-S A$playershoot$85 Def000012
-S A$playershoot$76 Def000003
-S G$playershoot_foo$0$0 Def000000
-S A$playershoot$77 Def000004
-S A$playershoot$78 Def000005
-S A$playershoot$79 Def000008
-S G$InitPlayershoots$0$0 Def000014
-S _InitPlayershootSprites Def000001
-S _playershoot_foo Def000000
-S C$playershoot.c$6$0_0$19 Def000000
-S C$playershoot.c$8$0_0$19 Def000000
+S _changeBank Ref0000
+S _playershoots Ref0000
+S _playershootspeedsx Ref0000
+S _playershootspeedsy Ref0000
+S _LoadSprite Ref0000
+S _numplayershoots Ref0000
+S .__.ABS. Def0000
+S _playershoot_psgcompr Ref0000
+A _CODE size 7D flags 0 addr 0
+S _InitPlayershoots Def0074
+S G$InitPlayershoot$0$0 Def0014
+S XG$InitPlayershootSprites$0$0 Def0013
+S XG$playershoot_foo$0$0 Def0000
+S C$playershoot.c$150$1$22 Def0050
+S C$playershoot.c$141$1$22 Def001C
+S C$playershoot.c$151$1$22 Def0062
+S C$playershoot.c$160$1$23 Def0077
+S C$playershoot.c$152$1$22 Def0073
+S C$playershoot.c$136$1$20 Def0014
+S XG$InitPlayershoots$0$0 Def007C
+S C$playershoot.c$161$1$23 Def007C
+S C$playershoot.c$144$1$22 Def0033
+S C$playershoot.c$154$1$22 Def0074
+S C$playershoot.c$145$1$22 Def0037
+S _InitPlayershoot Def0014
+S C$playershoot.c$146$1$22 Def003E
+S C$playershoot.c$157$1$23 Def0074
+S C$playershoot.c$149$1$22 Def0046
+S A$playershoot$200 Def0074
+S A$playershoot$110 Def0023
+S A$playershoot$210 Def007C
+S A$playershoot$120 Def0032
+S A$playershoot$111 Def0026
+S A$playershoot$102 Def0014
+S C$playershoot.c$41$1$20 Def0001
+S A$playershoot$130 Def0038
+S A$playershoot$112 Def0029
+S A$playershoot$103 Def0016
+S C$playershoot.c$42$1$20 Def0013
+S A$playershoot$140 Def0041
+S A$playershoot$131 Def0039
+S A$playershoot$113 Def002B
+S A$playershoot$104 Def001A
+S A$playershoot$204 Def0077
+S A$playershoot$150 Def004B
+S A$playershoot$141 Def0042
+S A$playershoot$132 Def003A
+S A$playershoot$114 Def002C
+S XG$InitPlayershoot$0$0 Def0073
+S A$playershoot$205 Def007A
+S A$playershoot$160 Def0054
+S A$playershoot$151 Def004E
+S A$playershoot$142 Def0045
+S A$playershoot$133 Def003D
+S A$playershoot$124 Def0033
+S A$playershoot$115 Def002D
+S A$playershoot$161 Def0055
+S A$playershoot$152 Def004F
+S A$playershoot$125 Def0036
+S A$playershoot$116 Def002E
+S A$playershoot$180 Def006F
+S A$playershoot$162 Def0058
+S A$playershoot$117 Def002F
+S A$playershoot$108 Def001C
+S A$playershoot$181 Def0070
+S A$playershoot$172 Def0062
+S A$playershoot$163 Def005A
+S A$playershoot$118 Def0030
+S A$playershoot$109 Def001F
+S A$playershoot$182 Def0071
+S A$playershoot$173 Def0063
+S A$playershoot$164 Def005B
+S A$playershoot$146 Def0046
+S A$playershoot$137 Def003E
+S A$playershoot$119 Def0031
+S A$playershoot$174 Def0064
+S A$playershoot$165 Def005D
+S A$playershoot$156 Def0050
+S A$playershoot$147 Def0047
+S A$playershoot$138 Def003F
+S A$playershoot$129 Def0037
+S A$playershoot$175 Def0065
+S A$playershoot$166 Def005F
+S A$playershoot$157 Def0051
+S A$playershoot$148 Def0049
+S A$playershoot$139 Def0040
+S A$playershoot$176 Def0066
+S A$playershoot$167 Def0060
+S A$playershoot$158 Def0052
+S A$playershoot$149 Def004A
+S A$playershoot$177 Def0069
+S A$playershoot$168 Def0061
+S A$playershoot$159 Def0053
+S A$playershoot$187 Def0073
+S A$playershoot$178 Def006C
+S A$playershoot$179 Def006E
+S C$playershoot.c$39$0$0 Def0001
+S A$playershoot$80 Def0005
+S G$InitPlayershootSprites$0$0 Def0001
+S A$playershoot$81 Def0008
+S A$playershoot$82 Def0009
+S A$playershoot$64 Def0000
+S A$playershoot$92 Def0013
+S A$playershoot$83 Def000C
+S A$playershoot$84 Def000D
+S A$playershoot$85 Def0010
+S G$playershoot_foo$0$0 Def0000
+S A$playershoot$86 Def0011
+S A$playershoot$77 Def0001
+S A$playershoot$87 Def0012
+S A$playershoot$78 Def0003
+S A$playershoot$79 Def0004
+S G$InitPlayershoots$0$0 Def0074
+S C$playershoot.c$6$0$0 Def0000
+S C$playershoot.c$8$0$0 Def0000
+S _InitPlayershootSprites Def0001
+S _playershoot_foo Def0000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -51,17 +128,35 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00 00
+T 00 00
 R 00 00 00 00
-T 00 00 00 C9
+T 00 00 C9
 R 00 00 00 00
-T 01 00 00
+T 01 00
 R 00 00 00 00
-T 01 00 00 3E 08 F5 33 21 10 01 E5 21 00 00 E5 CD
-R 00 00 00 00 02 0C 03 00
-T 0E 00 00 00 00 F1 F1 33 C9
+T 01 00 3E 08 F5 33 21 10 01 E5 21 00 00 E5 CD
+R 00 00 00 00 02 0B 07 00
+T 0E 00 00 00 F1 F1 33 C9
+R 00 00 00 00 02 02 04 00
+T 14 00
+R 00 00 00 00
+T 14 00 DD E5 DD 21 00 00 DD 39 01 00 00 FD 21
+R 00 00 00 00 02 0B 01 00
+T 21 00 00 00 FD 5E 00 FD 34 00 16 00 6B 62 29 29
+R 00 00 00 00 02 02 05 00
+T 2F 00 19 09 4D 44 DD 7E 04 02 59 50 13 DD 7E 05
+R 00 00 00 00
+T 3D 00 12 59 50 13 13 DD 7E 06 12 C5 3E 0F F5 33
+R 00 00 00 00
+T 4B 00 CD 00 00 33 C1 59 50 13 13 13 DD 7E 06 C6
 R 00 00 00 00 02 03 00 00
-T 14 00 00
+T 59 00 00 00 6F 3E 00 CE 00 00 67 7E 12 03 03 03
+R 00 00 00 00 0B 02 02 00 8B 08 02 00
+T 65 00 03 11 00 00 DD 6E 06 26 00 19 7E 02 DD E1
+R 00 00 00 00 02 04 03 00
+T 73 00 C9
 R 00 00 00 00
-T 14 00 00 CD 01 00 3E 00 32 00 00 C9
-R 00 00 00 00 00 04 00 00 02 09 01 00
+T 74 00
+R 00 00 00 00
+T 74 00 CD 01 00 21 00 00 36 00 C9
+R 00 00 00 00 00 03 00 00 02 06 05 00

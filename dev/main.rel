@@ -1,62 +1,62 @@
 ;!FILE main.asm
-XL3
+XL2
 H 9 areas 35 global symbols
 M main
 O -mz80
-S _stagenum Ref000000
-S _InitConsole Ref000000
-S _gamelevel Ref000000
-S _gamestock Ref000000
-S .__.ABS. Def000000
-S _dojukebox Ref000000
-S _numplayers Ref000000
-S _InitPlayStage Ref000000
-S _InitJukeboxStage Ref000000
+S _stagenum Ref0000
+S _InitConsole Ref0000
+S _gamelevel Ref0000
+S _gamestock Ref0000
+S .__.ABS. Def0000
+S _dojukebox Ref0000
+S _numplayers Ref0000
+S _InitPlayStage Ref0000
+S _InitJukeboxStage Ref0000
 A _CODE size 41 flags 0 addr 0
-S A$main$110 Def000032
-S C$main.c$10$1_0$123 Def00000D
-S A$main$111 Def000033
-S A$main$102 Def000024
-S A$main$121 Def00003C
-S A$main$103 Def000028
-S A$main$104 Def00002B
-S A$main$105 Def00002D
-S C$main.c$30$2_0$124 Def000016
-S _main Def000000
-S A$main$115 Def000035
-S C$main.c$40$2_0$124 Def000024
-S C$main.c$31$2_0$124 Def00001B
-S A$main$116 Def000038
-S A$main$117 Def00003A
-S C$main.c$24$2_0$124 Def00000D
-S A$main$109 Def00002F
-S A$main$129 Def00003F
-S C$main.c$42$3_0$126 Def00002F
-S C$main.c$57$1_0$123 Def00003F
-S C$main.c$37$2_0$124 Def000021
-S C$main.c$26$3_0$125 Def000013
-S C$main.c$46$3_0$126 Def000035
-S XG$main$0$0 Def00003F
-S C$main.c$53$4_0$129 Def00003C
-S C$main.c$3$0_0$123 Def000000
-S C$main.c$5$1_0$123 Def000000
-S A$main$62 Def000003
-S C$main.c$7$1_0$123 Def000003
-S A$main$63 Def000006
-S C$main.c$8$1_0$123 Def000008
-S A$main$82 Def000013
-S A$main$92 Def00001B
-S A$main$93 Def00001E
-S A$main$76 Def00000D
-S A$main$67 Def000008
-S A$main$58 Def000000
-S A$main$77 Def000010
-S A$main$68 Def00000B
-S A$main$87 Def000016
-S A$main$78 Def000011
-S A$main$97 Def000021
-S A$main$88 Def000019
-S G$main$0$0 Def000000
+S A$main$110 Def0032
+S A$main$111 Def0033
+S A$main$102 Def0024
+S C$main.c$46$3$119 Def0035
+S A$main$121 Def003C
+S A$main$103 Def0028
+S A$main$104 Def002B
+S A$main$105 Def002D
+S _main Def0000
+S A$main$115 Def0035
+S A$main$116 Def0038
+S A$main$126 Def003F
+S A$main$117 Def003A
+S C$main.c$5$1$116 Def0000
+S A$main$109 Def002F
+S C$main.c$7$1$116 Def0003
+S C$main.c$8$1$116 Def0008
+S XG$main$0$0 Def003F
+S A$main$62 Def0003
+S A$main$63 Def0006
+S A$main$82 Def0013
+S A$main$92 Def001B
+S A$main$93 Def001E
+S A$main$76 Def000D
+S A$main$67 Def0008
+S A$main$58 Def0000
+S A$main$77 Def0010
+S A$main$68 Def000B
+S C$main.c$3$0$0 Def0000
+S A$main$87 Def0016
+S A$main$78 Def0011
+S A$main$97 Def0021
+S A$main$88 Def0019
+S C$main.c$10$1$116 Def000D
+S C$main.c$30$2$117 Def0016
+S C$main.c$40$2$117 Def0024
+S C$main.c$31$2$117 Def001B
+S G$main$0$0 Def0000
+S C$main.c$53$4$122 Def003C
+S C$main.c$24$2$117 Def000D
+S C$main.c$42$3$119 Def002F
+S C$main.c$57$1$116 Def003F
+S C$main.c$37$2$117 Def0021
+S C$main.c$26$3$118 Def0013
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -65,25 +65,25 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00 00
+T 00 00
 R 00 00 00 00
-T 00 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03
-R 00 00 00 00 02 04 01 00 02 07 02 00 02 0C 03 00
-T 0D 00 00
+T 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03
+R 00 00 00 00 02 03 01 00 02 06 02 00 02 0B 03 00
+T 0D 00
 R 00 00 00 00
-T 0D 00 00 3A 00 00 3D 20 03 CD 00 00
-R 00 00 00 00 02 04 05 00 02 0A 08 00
-T 16 00 00
+T 0D 00 3A 00 00 3D 20 03 CD 00 00
+R 00 00 00 00 02 03 05 00 02 09 08 00
+T 16 00
 R 00 00 00 00
-T 16 00 00 21 00 00 36 01 3A 00 00 32 00 00 CD
-R 00 00 00 00 02 04 00 00 02 09 03 00 02 0C 06 00
-T 22 00 00 00 00
-R 00 00 00 00 02 03 07 00
-T 24 00 00
+T 16 00 21 00 00 36 01 3A 00 00 32 00 00 CD
+R 00 00 00 00 02 03 00 00 02 08 03 00 02 0B 06 00
+T 22 00 00 00
+R 00 00 00 00 02 02 07 00
+T 24 00
 R 00 00 00 00
-T 24 00 00 FD 21 00 00 FD 7E 00 D6 0A 30 DE FD 7E
-R 00 00 00 00 02 05 00 00
-T 31 00 00 00 B7 28 EF FD 7E 00 D6 09 28 E8 CD
+T 24 00 FD 21 00 00 FD 7E 00 D6 0A 30 DE FD 7E 00
+R 00 00 00 00 02 04 00 00
+T 32 00 B7 28 EF FD 7E 00 D6 09 28 E8 CD 00 00 18
+R 00 00 00 00 02 0D 07 00
+T 40 00 E3
 R 00 00 00 00
-T 3D 00 00 00 00 18 E3
-R 00 00 00 00 02 03 07 00

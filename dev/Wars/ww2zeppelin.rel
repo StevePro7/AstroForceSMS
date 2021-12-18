@@ -1,16 +1,16 @@
 ;!FILE ww2zeppelin.asm
-XL3
+XL2
 H 9 areas 7 global symbols
 M ww2zeppelin
 O -mz80
-S .__.ABS. Def000000
+S .__.ABS. Def0000
 A _CODE size 1 flags 0 addr 0
-S _ww2zeppelin_foo Def000000
-S C$ww2zeppelin.c$3$0_0$2 Def000000
-S C$ww2zeppelin.c$5$0_0$2 Def000000
-S XG$ww2zeppelin_foo$0$0 Def000000
-S G$ww2zeppelin_foo$0$0 Def000000
-S A$ww2zeppelin$59 Def000000
+S C$ww2zeppelin.c$5$0$0 Def0000
+S _ww2zeppelin_foo Def0000
+S XG$ww2zeppelin_foo$0$0 Def0000
+S G$ww2zeppelin_foo$0$0 Def0000
+S A$ww2zeppelin$59 Def0000
+S C$ww2zeppelin.c$3$0$0 Def0000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -19,7 +19,7 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00 00
+T 00 00
 R 00 00 00 00
-T 00 00 00 C9
+T 00 00 C9
 R 00 00 00 00

@@ -1,5 +1,4 @@
 M:map
-F:G$map_foo$0$0({2}DF,SV:S),C,0,0,0,0,0
 F:G$getTileAt$0$0({2}DF,SC:U),Z,0,0,0,0,0
 S:Lmap.getTileAt$x$1$52({1}SC:U),B,1,4
 S:Lmap.getTileAt$y$1$52({1}SC:U),B,1,5
@@ -25,8 +24,8 @@ S:Lmap.MoveMap$a$1$64({2}SI:S),R,0,0,[c,b]
 S:Lmap.MoveMap$c$1$64({2}SI:S),R,0,0,[l,h]
 S:Lmap.MoveMap$mpy2$1$64({2}SI:U),R,0,0,[l,h]
 S:Lmap.MoveMap$mpy5$1$64({2}SI:U),R,0,0,[c,b]
-S:Lmap.MoveMap$sloc0$1$0({2}SI:U),B,1,-2
-S:Lmap.MoveMap$sloc1$1$0({1}SC:U),B,1,-3
+S:Lmap.MoveMap$sloc0$1$0({2}SI:U),B,1,-3
+S:Lmap.MoveMap$sloc1$1$0({1}SC:U),B,1,-1
 T:Fmap$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fmap$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
 T:Fmap$scroll[({0}S:S$scrolllock$0$0({2}SI:S),Z,0,0)({2}S:S$scrolltimes$0$0({2}SI:S),Z,0,0)({4}S:S$scrolljump$0$0({2}SI:S),Z,0,0)({6}S:S$scrollspeedx$0$0({2}SI:S),Z,0,0)({8}S:S$scrollspeedy$0$0({2}SI:S),Z,0,0)]
@@ -34,16 +33,20 @@ T:Fmap$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$scripterscript$0$0
 T:Fmap$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fmap$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fmap$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
+S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$ww2plane_patterns$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$intro1labels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$intro3labels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$finishlabels$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$stageinitdata$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$spawners$0$0({0}DA0d,DG,SC:U),E,0,0
-S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
-S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
-S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
+S:G$imagepointers$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$monsterheadshootdirecionsx$0$0({0}DA0d,SC:S),E,0,0
+S:G$monsterheadshootdirecionsy$0$0({0}DA0d,SC:S),E,0,0
+S:G$difficultlabels$0$0({0}DA0d,DG,SC:U),E,0,0
+S:G$playerupdatefunctions$0$0({0}DA0d,DC,DF,SV:S),E,0,0
 S:G$keystatus$0$0({2}SI:U),E,0,0
 S:G$stageframe$0$0({2}SI:U),E,0,0
 S:G$stageframe2mod$0$0({1}SC:U),E,0,0
@@ -118,6 +121,9 @@ S:G$powerupy$0$0({1}SC:U),E,0,0
 S:G$powerupt$0$0({1}SC:U),E,0,0
 S:G$powerupv$0$0({1}SC:S),E,0,0
 S:G$powerupcounter$0$0({2}SI:U),E,0,0
+S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
+S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
+S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
 S:G$enemy_foo$0$0({2}DF,SV:S),C,0,0
 S:G$RemoveEnemy$0$0({2}DF,SV:S),C,0,0
@@ -177,6 +183,7 @@ S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_VDPFEATURE_LEFTCOLBLANK$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
+S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0
 S:G$DrawSpriteArray$0$0({2}DF,SV:S),C,0,0
@@ -202,4 +209,3 @@ S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$map_foo$0$0({2}DF,SV:S),C,0,0
