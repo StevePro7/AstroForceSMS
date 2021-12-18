@@ -4,12 +4,12 @@
 //void RemovePlayer();
 //unsigned char CheckPlayerEnemyCollision();
 //unsigned char CheckPlayerEnemyshootCollision();
-//void UpdatePlayerIndicators();
+void UpdatePlayerIndicators();
 void InitPlayer();
 void InitPlayerSprite();
 //void DrawPlayer();
 //void MovePlayer();
-//void CheckShootPlayer();
+void CheckShootPlayer();
 //void UpdatePlayerState6();
 //void UpdatePlayerState5();
 //void UpdatePlayerState4();

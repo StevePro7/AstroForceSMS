@@ -1,5 +1,8 @@
 #include "player.h"
+#include "playershoot.h"
+#include "../devkit/_sms_manager.h"
 #include "../banks/bank14.h"
+#include "../defines.h"
 #include "../funcs.h"
 #include "../vars.h"
 
@@ -80,14 +83,14 @@
 //		}
 //	return 0;
 //}
-//
-//// Hearts
-//void UpdatePlayerIndicators()
-//{
-//	unsigned char a;
-//	for( a = 0; a < numplayers; a++ )
-//		devkit_SMS_addSprite( 240 - a * 8, 4, PLAYERINDICATORBASE );
-//}
+
+// Hearts
+void UpdatePlayerIndicators()
+{
+	unsigned char a;
+	for( a = 0; a < numplayers; a++ )
+		devkit_SMS_addSprite( 240 - a * 8, 4, PLAYERINDICATORBASE );
+}
 
 // Init a player
 void InitPlayer()
@@ -138,40 +141,40 @@ void InitPlayerSprite()
 //		if( playery < 172 )
 //			playery += playerspeed;
 //}
-//
-//// Check if player can shoot
-//void CheckShootPlayer()
-//{
-//	// Up to counter
-//	playershootcounter++;
-//
-//	// Check side
-//	if( keystatus&devkit_PORT_A_KEY_2() )
-//	{
-//		if( playershootcounter > PLAYERSHOOTINTERVAL_SIDE )
-//		{
-//			if( numplayershoots < playershootmax - 1 )
-//			{
-//				playershootcounter = 0;
-//				InitPlayershoot( playerx - 8, playery, PLAYERSHOOT_SIDE_LEFT );
-//				InitPlayershoot( playerx + 8, playery, PLAYERSHOOT_SIDE_RIGHT );
-//			}
-//		}
-//	}
-//	// Check top
-//	else if( keystatus&devkit_PORT_A_KEY_1() )
-//	{
-//		if( playershootcounter > PLAYERSHOOTINTERVAL_NORMAL )
-//		{
-//			if( numplayershoots < playershootmax )
-//			{
-//				playershootcounter = 0;
-//				InitPlayershoot( playerx, playery, PLAYERSHOOT_NORMAL );
-//			}
-//		}
-//	}
-//}
-//
+
+// Check if player can shoot
+void CheckShootPlayer()
+{
+	// Up to counter
+	playershootcounter++;
+
+	// Check side
+	if( keystatus&devkit_PORT_A_KEY_2() )
+	{
+		if( playershootcounter > PLAYERSHOOTINTERVAL_SIDE )
+		{
+			if( numplayershoots < playershootmax - 1 )
+			{
+				playershootcounter = 0;
+				InitPlayershoot( playerx - 8, playery, PLAYERSHOOT_SIDE_LEFT );
+				InitPlayershoot( playerx + 8, playery, PLAYERSHOOT_SIDE_RIGHT );
+			}
+		}
+	}
+	// Check top
+	else if( keystatus&devkit_PORT_A_KEY_1() )
+	{
+		if( playershootcounter > PLAYERSHOOTINTERVAL_NORMAL )
+		{
+			if( numplayershoots < playershootmax )
+			{
+				playershootcounter = 0;
+				InitPlayershoot( playerx, playery, PLAYERSHOOT_NORMAL );
+			}
+		}
+	}
+}
+
 //void UpdatePlayerState6()
 //{
 //	if( playery > playercounter >> 4 )
@@ -244,7 +247,7 @@ void InitPlayerSprite()
 //	MovePlayer();
 //	DrawPlayer();
 //}
-//
+
 //void UpdatePlayerState2()
 //{
 //	if( playercounter > 64 )playertype = 3;
@@ -253,7 +256,7 @@ void InitPlayerSprite()
 //	// Blitting!!!
 //	if( ( playercounter >> 1 ) % 2 == 0 )DrawPlayer();
 //}
-//
+
 //void UpdatePlayerState1()
 //{
 //	playery--;

@@ -8,7 +8,7 @@ void playershoot_foo();
 //void RemovePlayershoot( signed char a );
 //void UpdatePlayershoot( unsigned int a );
 //void UpdatePlayershoots();
-//void InitPlayershoot( unsigned char x, unsigned char y, unsigned char t );
+void InitPlayershoot( unsigned char x, unsigned char y, unsigned char t );
 void InitPlayershoots();
 
 #endif//_PLAYERSHOOT_H_

@@ -216,49 +216,53 @@ void InitPlayStage()
 	// We have not pause
 	gamepause = 0;
 
-//	// Bucle
-//	while( 1 )
-//	{
-//		// Check for game pause
-//		checkgamepause();
-//
-//		if( gamepause == 0 )
-//		{
-//			// Update stage
-//			UpdateStage();
-//
-//			// Scroller... note this is processed ***ALWAYS*** to do a sweet effect
-//			UpdateScroller();
-//
-//			// Barrom
-//			UpdateBarrom();
-//
-//			// Alternamos
-//			if( stageframe2mod == 0 )
-//				UpdateStagePassA();
-//			else
-//				UpdateStagePassB();
-//
-//			// Scripter
-//			if( ( stageframe % 16 ) == 0 )
-//				UpdateScripts();
-//
-//			// Hay que salirse?
-//			if( exitplaystage == 1 )return;
-//
-//			// Update psg
-//			UpdatePSG();
-//		}
-//		else
-//		{
-//			// Update psg
-//			UpdatePSG();
-//
-//			// Wait
-//			devkit_SMS_waitForVBlank();
-//
-//			// Reset
-//			numinterrupts = 0;
-//		}
-//	}
+	// Bucle
+	while( 1 )
+	{
+		// Check for game pause
+		checkgamepause();
+
+		if( gamepause == 0 )
+		{
+			// Update stage
+			UpdateStage();
+
+			// Scroller... note this is processed ***ALWAYS*** to do a sweet effect
+			UpdateScroller();
+
+			// Barrom
+			UpdateBarrom();
+
+			// Alternamos
+			if( stageframe2mod == 0 )
+			{
+				//UpdateStagePassA();		// TODO
+			}
+			else
+			{
+				//UpdateStagePassB();		// TODO
+			}
+
+			// Scripter
+			if( ( stageframe % 16 ) == 0 )
+				UpdateScripts();
+
+			// Hay que salirse?
+			if( exitplaystage == 1 )return;
+
+			// Update psg
+			UpdatePSG();
+		}
+		else
+		{
+			// Update psg
+			UpdatePSG();
+
+			// Wait
+			devkit_SMS_waitForVBlank();
+
+			// Reset
+			numinterrupts = 0;
+		}
+	}
 }

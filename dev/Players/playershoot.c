@@ -131,25 +131,25 @@ void InitPlayershootSprites()
 //		for( a = numplayershoots - 1; a >= 0; a-- )
 //			UpdatePlayershoot( a );
 //}
-//
-//// Create a player shoot
-//void InitPlayershoot( unsigned char x, unsigned char y, unsigned char t )
-//{
-//	playershoot *ps;
-//
-//	// Get next item
-//	ps = &playershoots[ numplayershoots++ ];
-//
-//	// Config
-//	ps->playershootx = x;
-//	ps->playershooty = y;
-//	ps->playershoottype = t;
-//
-//	// Get speed
-//	changeBank( FIXEDBANKSLOT );
-//	ps->playershootvelx = playershootspeedsx[ t ];
-//	ps->playershootvely = playershootspeedsy[ t ];
-//}
+
+// Create a player shoot
+void InitPlayershoot( unsigned char x, unsigned char y, unsigned char t )
+{
+	playershoot *ps;
+
+	// Get next item
+	ps = &playershoots[ numplayershoots++ ];
+
+	// Config
+	ps->playershootx = x;
+	ps->playershooty = y;
+	ps->playershoottype = t;
+
+	// Get speed
+	changeBank( FIXEDBANKSLOT );
+	ps->playershootvelx = playershootspeedsx[ t ];
+	ps->playershootvely = playershootspeedsy[ t ];
+}
 
 void InitPlayershoots()
 {
