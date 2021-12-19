@@ -357,7 +357,7 @@ S:G$updatestage7middlebossfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$updatespacestationfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$updatestage2endbossfunctions$0$0({8}DA4d,DC,DF,SV:S),D,0,0
 S:G$checkcollisionfunctions$0$0({8}DA4d,DC,DF,SC:U),D,0,0
-S:G$updateintro3objectfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
+S:G$updateintro3objectfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$stage8spriteslist$0$0({7}DA7d,SC:U),D,0,0
 S:G$stage8_statics$0$0({1594}DA797d,SI:U),D,0,0
 S:G$stage8_scrollers$0$0({10}DA5d,SI:S),D,0,0

@@ -56,7 +56,9 @@ void RemoveEnemy( signed char a )
 		ea->enemyheight = eb->enemyheight;
 	}
 	// Bajamos el numero de enemys
-	if( numenemies>0 )numenemies--;
+	if( numenemies > 0 ) {
+		numenemies--;
+	}
 }
 
 void KillEnemy( unsigned char a )
@@ -65,7 +67,10 @@ void KillEnemy( unsigned char a )
 	unsigned char t;
 
 	// Security check
-	if( a >= numenemies )return;
+	if( a >= numenemies )
+	{
+		return;
+	}
 
 	// Get enemy
 	en = &enemies[ a ];
@@ -77,8 +82,9 @@ void KillEnemy( unsigned char a )
 		InitPowerup( en );
 	}
 	else
+	{
 		InitSpawnedExplosion( en->enemyposx, en->enemyposy, en->enemywidth, en->enemyheight );
-
+	}
 	// Get enemy type
 	t = en->enemytype;
 
@@ -113,7 +119,10 @@ void UpdateEnemy( unsigned char a )
 	//playershoot *ps;
 
 	// Security check
-	if( a >= numenemies )return;
+	if( a >= numenemies )
+	{
+		return;
+	}
 
 	// Get enemy
 	en = &enemies[ a ];
@@ -123,11 +132,15 @@ void UpdateEnemy( unsigned char a )
 
 	// Update
 	if( updateenemyfunctions[ en->enemytype ] != 0 )
+	{
 		erase = ( *( updateenemyfunctions[ en->enemytype ] ) )( en );
+	}
 
 	// View if have to erase
 	if( erase == 0 )
+	{
 		RemoveEnemy( a );
+	}
 	else
 	{
 		// Increase counter
