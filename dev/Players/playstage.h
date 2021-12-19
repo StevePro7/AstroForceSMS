@@ -3,9 +3,9 @@
 
 void InitStageSprite( unsigned char b );
 void InitStageSprites( const unsigned char *spl, unsigned char num );
-//void InitAfterBossStage();
+void InitAfterBossStage();
 void InitCustomStageData();
-//void UpdatePlayStage();
+//void UpdatePlayStage();	//stevepro
 void InitStageData( unsigned int i );
 void UpdateStagePassA();
 void UpdateStagePassB();

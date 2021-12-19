@@ -332,7 +332,9 @@ void UpdateStage()
 
 		// Update play stage???
 		if( updateplaystage == 1 )
+		{
 			UpdatePlayStage();
+		}
 	}
 	else
 	{

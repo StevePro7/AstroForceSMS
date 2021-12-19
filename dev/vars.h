@@ -48,7 +48,7 @@ extern unsigned char playershootmax;		// Player shoot max
 #define PLAYERSHOOTINTERVAL_NORMAL 3
 #define PLAYERSHOOTINTERVAL_SIDE 6
 
-#define MAXPLAYERSHOOTS 3						// stevepro
+#define MAXPLAYERSHOOTS 3
 extern unsigned char numplayershoots;					// Disparos actuales
 typedef struct playershoot
 {

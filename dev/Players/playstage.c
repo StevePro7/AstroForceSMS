@@ -10,6 +10,7 @@
 #include "../Players/player.h"
 #include "../Players/playershoot.h"
 #include "../devkit/_sms_manager.h"
+#include "../devkit/_snd_manager.h"
 #include "../banks/fixedbank.h"
 #include "../funcs.h"
 #include "../vars.h"
@@ -36,19 +37,19 @@ void InitStageSprites( const unsigned char *spl, unsigned char num )
 	}
 }
 
-//void InitAfterBossStage()
-//{
-//	// Destroy all enemies
-//	KillEnemyshoots();
-//	KillEnemies( 1 );
-//
-//	// Music
-//	devkit_PSGStop();
-//
-//	// Exit
-//	playertype = 5;
-//	playercounter = 0;
-//}
+void InitAfterBossStage()
+{
+	// Destroy all enemies
+	KillEnemyshoots();
+	KillEnemies( 1 );
+
+	// Music
+	devkit_PSGStop();
+
+	// Exit
+	playertype = 5;
+	playercounter = 0;
+}
 
 void InitCustomStageData()
 {
@@ -61,7 +62,7 @@ void InitCustomStageData()
 	// Custom Init
 	( *( initstagefunctions[ playstage ] ) )( );
 }
-
+//stevepro
 //void UpdatePlayStage()
 //{
 //	// Change bank
