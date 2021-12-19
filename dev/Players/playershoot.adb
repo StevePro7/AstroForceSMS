@@ -1,10 +1,10 @@
 M:playershoot
 F:G$DrawPlayerShoot$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lplayershoot.DrawPlayerShoot$ps$1$69({2}DG,STplayershoot:S),B,1,4
-S:Lplayershoot.DrawPlayerShoot$sloc0$1$0({2}DG,SC:U),B,1,-2
+S:Lplayershoot.DrawPlayerShoot$sloc0$1$0({2}DG,SC:U),B,1,-5
 S:Lplayershoot.DrawPlayerShoot$sloc1$1$0({1}SC:U),B,1,-6
-S:Lplayershoot.DrawPlayerShoot$sloc2$1$0({1}SC:U),B,1,-3
-S:Lplayershoot.DrawPlayerShoot$sloc3$1$0({2}DG,SC:U),B,1,-5
+S:Lplayershoot.DrawPlayerShoot$sloc2$1$0({1}SC:U),B,1,-1
+S:Lplayershoot.DrawPlayerShoot$sloc3$1$0({2}DG,SC:U),B,1,-3
 F:G$InitPlayershootSprites$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$RemovePlayershoot$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lplayershoot.RemovePlayershoot$a$1$77({1}SC:S),B,1,4
@@ -24,6 +24,7 @@ S:Lplayershoot.InitPlayershoot$y$1$92({1}SC:U),B,1,5
 S:Lplayershoot.InitPlayershoot$t$1$92({1}SC:U),B,1,6
 S:Lplayershoot.InitPlayershoot$ps$1$93({2}DG,STplayershoot:S),R,0,0,[c,b]
 F:G$InitPlayershoots$0$0({2}DF,SV:S),Z,0,0,0,0,0
+T:Fplayershoot$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fplayershoot$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fplayershoot$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
 T:Fplayershoot$scroll[({0}S:S$scrolllock$0$0({2}SI:S),Z,0,0)({2}S:S$scrolltimes$0$0({2}SI:S),Z,0,0)({4}S:S$scrolljump$0$0({2}SI:S),Z,0,0)({6}S:S$scrollspeedx$0$0({2}SI:S),Z,0,0)({8}S:S$scrollspeedy$0$0({2}SI:S),Z,0,0)]
@@ -31,6 +32,7 @@ T:Fplayershoot$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$scriptersc
 T:Fplayershoot$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fplayershoot$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fplayershoot$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
+S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$keystatus$0$0({2}SI:U),E,0,0
 S:G$stageframe$0$0({2}SI:U),E,0,0
 S:G$stageframe2mod$0$0({1}SC:U),E,0,0

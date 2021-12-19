@@ -6,6 +6,7 @@ S:Lintrosideplayer.UpdateIntroSidePlayer$en$1$48({2}DG,STenemy:S),B,1,4
 S:Lintrosideplayer.UpdateIntroSidePlayer$a$1$49({2}SI:U),R,0,0,[e,d]
 S:Lintrosideplayer.UpdateIntroSidePlayer$sloc0$1$0({2}DG,SC:U),B,1,-2
 S:Lintrosideplayer.UpdateIntroSidePlayer$sloc1$1$0({1}SC:U),B,1,-3
+T:Fintrosideplayer$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fintrosideplayer$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fintrosideplayer$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
 T:Fintrosideplayer$scroll[({0}S:S$scrolllock$0$0({2}SI:S),Z,0,0)({2}S:S$scrolltimes$0$0({2}SI:S),Z,0,0)({4}S:S$scrolljump$0$0({2}SI:S),Z,0,0)({6}S:S$scrollspeedx$0$0({2}SI:S),Z,0,0)({8}S:S$scrollspeedy$0$0({2}SI:S),Z,0,0)]
@@ -13,6 +14,7 @@ T:Fintrosideplayer$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$script
 T:Fintrosideplayer$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fintrosideplayer$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fintrosideplayer$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
+S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0

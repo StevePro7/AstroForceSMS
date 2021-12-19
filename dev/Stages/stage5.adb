@@ -1,8 +1,8 @@
 M:stage5
 F:G$InitStage5$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage5.InitStage5$a$1$59({1}SC:U),R,0,0,[c]
+S:Lstage5.InitStage5$a$1$60({1}SC:U),R,0,0,[c]
 F:G$UpdateStage5$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage5.UpdateStage5$a$1$61({1}SC:U),R,0,0,[c]
+S:Lstage5.UpdateStage5$a$1$62({1}SC:U),R,0,0,[c]
 T:Fstage5$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fstage5$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fstage5$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
@@ -106,6 +106,7 @@ S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
 S:G$InitStage3Star$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStarMovement$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStage3Star$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage5Cloud$0$0({2}DF,SV:S),C,0,0
 S:G$getTileAt$0$0({2}DF,SC:U),C,0,0
 S:G$SetMapLines$0$0({2}DF,SV:S),C,0,0

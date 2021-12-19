@@ -198,4 +198,16 @@ extern unsigned char lastplayedmusiclooped;
 // Needed in stage 8
 extern unsigned char stage8phase;
 
+// Stage 3 star
+#define MAXSTAGE3STARS 6
+#define MAXSTAGE5CLOUDS 2
+
+typedef struct stage3star
+{
+	unsigned char posx;
+	unsigned char posy;
+	unsigned char speed;
+}stage3star;
+extern stage3star stage3stars[ MAXSTAGE3STARS ];
+
 #endif//_VARS_H_

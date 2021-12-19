@@ -1,6 +1,6 @@
 ;!FILE main.asm
 XL2
-H 9 areas 35 global symbols
+H 9 areas 37 global symbols
 M main
 O -mz80
 S _stagenum Ref0000
@@ -13,39 +13,39 @@ S _numplayers Ref0000
 S _InitPlayStage Ref0000
 S _InitJukeboxStage Ref0000
 A _CODE size 41 flags 0 addr 0
-S A$main$110 Def0032
-S A$main$111 Def0033
-S A$main$102 Def0024
+S A$main$101 Def0021
+S A$main$120 Def0038
 S C$main.c$46$3$119 Def0035
-S A$main$121 Def003C
-S A$main$103 Def0028
-S A$main$104 Def002B
-S A$main$105 Def002D
+S A$main$130 Def003F
+S A$main$121 Def003A
+S A$main$113 Def002F
+S A$main$114 Def0032
 S _main Def0000
-S A$main$115 Def0035
-S A$main$116 Def0038
-S A$main$126 Def003F
-S A$main$117 Def003A
+S A$main$115 Def0033
+S A$main$106 Def0024
+S A$main$125 Def003C
+S A$main$107 Def0028
+S A$main$108 Def002B
 S C$main.c$5$1$116 Def0000
-S A$main$109 Def002F
+S A$main$109 Def002D
+S A$main$119 Def0035
 S C$main.c$7$1$116 Def0003
 S C$main.c$8$1$116 Def0008
 S XG$main$0$0 Def003F
-S A$main$62 Def0003
-S A$main$63 Def0006
-S A$main$82 Def0013
-S A$main$92 Def001B
-S A$main$93 Def001E
-S A$main$76 Def000D
-S A$main$67 Def0008
-S A$main$58 Def0000
-S A$main$77 Def0010
-S A$main$68 Def000B
+S A$main$80 Def000D
+S A$main$71 Def0008
+S A$main$62 Def0000
+S A$main$81 Def0010
+S A$main$72 Def000B
+S A$main$91 Def0016
+S A$main$82 Def0011
+S A$main$92 Def0019
+S A$main$66 Def0003
+S A$main$67 Def0006
+S A$main$86 Def0013
 S C$main.c$3$0$0 Def0000
-S A$main$87 Def0016
-S A$main$78 Def0011
-S A$main$97 Def0021
-S A$main$88 Def0019
+S A$main$96 Def001B
+S A$main$97 Def001E
 S C$main.c$10$1$116 Def000D
 S C$main.c$30$2$117 Def0016
 S C$main.c$40$2$117 Def0024
@@ -57,7 +57,9 @@ S C$main.c$42$3$119 Def002F
 S C$main.c$57$1$116 Def003F
 S C$main.c$37$2$117 Def0021
 S C$main.c$26$3$118 Def0013
-A _DATA size 0 flags 0 addr 0
+A _DATA size 12 flags 0 addr 0
+S G$stage3stars$0$0 Def0000
+S _stage3stars Def0000
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
 A _HOME size 0 flags 0 addr 0
@@ -65,6 +67,10 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 01 00
+T 00 00
+R 00 00 01 00
 T 00 00
 R 00 00 00 00
 T 00 00 CD 00 00 21 00 00 36 00 21 00 00 36 03

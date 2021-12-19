@@ -1,6 +1,6 @@
 ;!FILE rectship.asm
 XL2
-H 9 areas 5D global symbols
+H 9 areas 5F global symbols
 M rectship
 O -mz80
 S _sprite82anim Ref0000
@@ -9,95 +9,97 @@ S _TestEnemyShootOne Ref0000
 S _DrawQuadSprite Ref0000
 S _devkit_SMS_addSprite Ref0000
 A _CODE size 79 flags 0 addr 0
-S A$rectship$140 Def0066
-S A$rectship$131 Def005E
-S A$rectship$104 Def0045
-S A$rectship$141 Def0069
-S A$rectship$132 Def005F
-S A$rectship$114 Def004E
-S A$rectship$105 Def0046
-S A$rectship$151 Def0074
-S A$rectship$142 Def006C
-S A$rectship$133 Def0061
-S A$rectship$115 Def004F
-S A$rectship$106 Def0047
-S A$rectship$152 Def0076
-S A$rectship$143 Def006D
-S A$rectship$125 Def005A
-S A$rectship$116 Def0050
-S A$rectship$107 Def0048
+S A$rectship$122 Def0053
+S A$rectship$113 Def004C
+S A$rectship$104 Def0040
+S A$rectship$141 Def0062
+S A$rectship$123 Def0055
+S A$rectship$114 Def004D
+S A$rectship$105 Def0041
+S A$rectship$142 Def0064
+S A$rectship$124 Def0056
+S A$rectship$106 Def0043
+S A$rectship$161 Def0078
+S A$rectship$143 Def0065
+S A$rectship$125 Def0058
+S A$rectship$107 Def0044
 S C$rectship.c$10$1$56 Def0029
-S A$rectship$144 Def0070
-S A$rectship$126 Def005C
-S A$rectship$117 Def0052
-S A$rectship$108 Def004B
-S A$rectship$145 Def0071
-S A$rectship$118 Def0053
-S A$rectship$109 Def004C
+S A$rectship$153 Def0072
+S A$rectship$144 Def0066
+S A$rectship$135 Def005E
+S A$rectship$108 Def0045
+S A$rectship$145 Def0069
+S A$rectship$136 Def005F
+S A$rectship$118 Def004E
+S A$rectship$109 Def0046
 S C$rectship.c$12$1$56 Def004E
-S A$rectship$137 Def0062
-S A$rectship$119 Def0055
+S A$rectship$155 Def0074
+S A$rectship$146 Def006C
+S A$rectship$137 Def0061
+S A$rectship$119 Def004F
 S C$rectship.c$22$1$56 Def0072
 S C$rectship.c$20$2$57 Def0062
 S C$rectship.c$13$1$56 Def005A
-S A$rectship$138 Def0064
+S A$rectship$156 Def0076
+S A$rectship$147 Def006D
+S A$rectship$129 Def005A
 S C$rectship.c$23$1$56 Def0078
-S A$rectship$157 Def0078
-S A$rectship$139 Def0065
-S A$rectship$149 Def0072
+S A$rectship$148 Def0070
+S A$rectship$149 Def0071
 S C$rectship.c$17$2$57 Def005E
-S A$rectship$70 Def0019
-S A$rectship$80 Def0027
-S A$rectship$71 Def001A
-S A$rectship$62 Def0009
-S A$rectship$90 Def0035
-S A$rectship$81 Def0028
-S A$rectship$72 Def001B
-S A$rectship$63 Def000C
-S A$rectship$91 Def0036
-S A$rectship$73 Def001C
-S A$rectship$64 Def000F
-S A$rectship$55 Def0000
-S A$rectship$92 Def0038
-S A$rectship$74 Def001D
-S A$rectship$65 Def0012
-S A$rectship$56 Def0002
-S A$rectship$93 Def0039
-S A$rectship$75 Def001E
-S A$rectship$66 Def0015
-S A$rectship$57 Def0006
-S A$rectship$94 Def003A
-S A$rectship$85 Def0029
-S A$rectship$76 Def0021
-S A$rectship$67 Def0016
-S A$rectship$58 Def0008
+S A$rectship$60 Def0002
+S A$rectship$70 Def0015
+S A$rectship$61 Def0006
+S A$rectship$80 Def0021
+S A$rectship$71 Def0016
+S A$rectship$62 Def0008
+S A$rectship$90 Def002C
+S A$rectship$81 Def0022
+S A$rectship$72 Def0017
+S A$rectship$91 Def002D
+S A$rectship$82 Def0023
+S A$rectship$73 Def0018
+S A$rectship$92 Def002F
+S A$rectship$83 Def0026
+S A$rectship$74 Def0019
+S A$rectship$93 Def0033
+S A$rectship$84 Def0027
+S A$rectship$75 Def001A
+S A$rectship$66 Def0009
+S A$rectship$94 Def0035
+S A$rectship$85 Def0028
+S A$rectship$76 Def001B
+S A$rectship$67 Def000C
 S G$UpdateRectShip$0$0 Def0000
-S A$rectship$95 Def003B
-S A$rectship$86 Def002C
-S A$rectship$77 Def0022
-S A$rectship$68 Def0017
-S A$rectship$96 Def003C
-S A$rectship$87 Def002D
-S A$rectship$78 Def0023
-S A$rectship$69 Def0018
-S A$rectship$97 Def003D
-S A$rectship$88 Def002F
-S A$rectship$79 Def0026
+S A$rectship$95 Def0036
+S A$rectship$77 Def001C
+S A$rectship$68 Def000F
+S A$rectship$59 Def0000
+S A$rectship$96 Def0038
+S A$rectship$78 Def001D
+S A$rectship$69 Def0012
+S A$rectship$97 Def0039
+S A$rectship$79 Def001E
 S C$rectship.c$9$1$56 Def0009
-S A$rectship$98 Def003E
-S A$rectship$89 Def0033
-S A$rectship$99 Def003F
+S A$rectship$98 Def003A
+S A$rectship$89 Def0029
+S A$rectship$99 Def003B
 S C$rectship.c$7$0$0 Def0000
 S _UpdateRectShip Def0000
 S XG$UpdateRectShip$0$0 Def0078
-S A$rectship$100 Def0040
-S A$rectship$110 Def004D
-S A$rectship$101 Def0041
-S A$rectship$120 Def0056
-S A$rectship$102 Def0043
-S A$rectship$121 Def0058
-S A$rectship$103 Def0044
-A _DATA size 0 flags 0 addr 0
+S A$rectship$100 Def003C
+S A$rectship$110 Def0047
+S A$rectship$101 Def003D
+S A$rectship$120 Def0050
+S A$rectship$111 Def0048
+S A$rectship$102 Def003E
+S A$rectship$130 Def005C
+S A$rectship$121 Def0052
+S A$rectship$112 Def004B
+S A$rectship$103 Def003F
+A _DATA size 12 flags 0 addr 0
+S G$stage3stars$0$0 Def0000
+S _stage3stars Def0000
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
 A _HOME size 0 flags 0 addr 0
@@ -105,6 +107,10 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 01 00
+T 00 00
+R 00 00 01 00
 T 00 00
 R 00 00 00 00
 T 00 00 DD E5 DD 21 00 00 DD 39 F5 DD 7E 04 DD 77

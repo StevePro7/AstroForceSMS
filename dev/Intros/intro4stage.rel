@@ -1,6 +1,6 @@
 ;!FILE intro4stage.asm
 XL2
-H 9 areas 2B global symbols
+H 9 areas 2D global symbols
 M intro4stage
 O -mz80
 S _LoadGraphics Ref0000
@@ -17,37 +17,39 @@ S C$intro4stage.c$14$1$21 Def0018
 S C$intro4stage.c$17$1$21 Def0024
 S C$intro4stage.c$18$1$21 Def0031
 S G$InitIntro4Stage$0$0 Def0000
-S A$intro4stage$60 Def0003
-S A$intro4stage$70 Def0017
-S A$intro4stage$61 Def0004
-S A$intro4stage$62 Def0007
-S A$intro4stage$63 Def0008
-S A$intro4stage$64 Def000B
+S A$intro4stage$70 Def000F
+S A$intro4stage$80 Def001C
+S A$intro4stage$71 Def0010
+S A$intro4stage$62 Def0000
+S A$intro4stage$90 Def002B
+S A$intro4stage$81 Def001F
+S A$intro4stage$72 Def0013
+S A$intro4stage$63 Def0002
+S A$intro4stage$91 Def002C
+S A$intro4stage$82 Def0020
+S A$intro4stage$73 Def0016
+S A$intro4stage$64 Def0003
 S _InitIntro4Stage Def0000
-S A$intro4stage$83 Def0024
-S A$intro4stage$74 Def0018
-S A$intro4stage$65 Def000C
-S A$intro4stage$84 Def0027
-S A$intro4stage$75 Def001B
-S A$intro4stage$66 Def000F
-S A$intro4stage$94 Def0031
-S A$intro4stage$85 Def0028
-S A$intro4stage$76 Def001C
-S A$intro4stage$67 Def0010
-S A$intro4stage$58 Def0000
-S A$intro4stage$86 Def002B
-S A$intro4stage$77 Def001F
-S A$intro4stage$68 Def0013
-S A$intro4stage$59 Def0002
-S A$intro4stage$87 Def002C
-S A$intro4stage$78 Def0020
-S A$intro4stage$69 Def0016
-S A$intro4stage$88 Def002F
-S A$intro4stage$79 Def0023
-S A$intro4stage$89 Def0030
+S A$intro4stage$92 Def002F
+S A$intro4stage$83 Def0023
+S A$intro4stage$74 Def0017
+S A$intro4stage$65 Def0004
+S A$intro4stage$93 Def0030
+S A$intro4stage$66 Def0007
+S A$intro4stage$67 Def0008
+S A$intro4stage$68 Def000B
+S A$intro4stage$87 Def0024
+S A$intro4stage$78 Def0018
+S A$intro4stage$69 Def000C
+S A$intro4stage$88 Def0027
+S A$intro4stage$79 Def001B
+S A$intro4stage$98 Def0031
+S A$intro4stage$89 Def0028
 S C$intro4stage.c$8$0$0 Def0000
 S XG$InitIntro4Stage$0$0 Def0031
-A _DATA size 0 flags 0 addr 0
+A _DATA size 12 flags 0 addr 0
+S G$stage3stars$0$0 Def0000
+S _stage3stars Def0000
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
 A _HOME size 0 flags 0 addr 0
@@ -55,6 +57,10 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 01 00
+T 00 00
+R 00 00 01 00
 T 00 00
 R 00 00 00 00
 T 00 00 3E 0C F5 33 21 00 03 E5 21 00 00 E5 21

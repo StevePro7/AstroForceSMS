@@ -2,15 +2,15 @@ M:enemy
 F:G$checkEnemyPlayerShoot$0$0({2}DF,SC:U),Z,0,0,0,0,0
 S:Lenemy.checkEnemyPlayerShoot$en$1$50({2}DG,STenemy:S),B,1,4
 S:Lenemy.checkEnemyPlayerShoot$ps$1$50({2}DG,STplayershoot:S),B,1,6
-S:Lenemy.checkEnemyPlayerShoot$sloc0$1$0({2}DG,STenemy:S),B,1,-2
-S:Lenemy.checkEnemyPlayerShoot$sloc1$1$0({2}DG,STplayershoot:S),B,1,-4
+S:Lenemy.checkEnemyPlayerShoot$sloc0$1$0({2}DG,STenemy:S),B,1,-4
+S:Lenemy.checkEnemyPlayerShoot$sloc1$1$0({2}DG,STplayershoot:S),B,1,-2
 F:G$GetEnemyDirection$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lenemy.GetEnemyDirection$en$1$52({2}DG,STenemy:S),B,1,4
 S:Lenemy.GetEnemyDirection$dx$1$53({2}SI:S),R,0,0,[c,b]
 S:Lenemy.GetEnemyDirection$dy$1$53({2}SI:S),R,0,0,[l,h]
 S:Lenemy.GetEnemyDirection$dm$1$53({2}SI:S),R,0,0,[e,d]
-S:Lenemy.GetEnemyDirection$sloc0$1$0({2}DG,SC:U),B,1,-2
-S:Lenemy.GetEnemyDirection$sloc1$1$0({2}SI:S),B,1,-4
+S:Lenemy.GetEnemyDirection$sloc0$1$0({2}DG,SC:U),B,1,-4
+S:Lenemy.GetEnemyDirection$sloc1$1$0({2}SI:S),B,1,-2
 F:G$RemoveEnemy$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lenemy.RemoveEnemy$a$1$54({1}SC:S),B,1,4
 S:Lenemy.RemoveEnemy$ea$1$55({2}DG,STenemy:S),R,0,0,[c,b]
@@ -38,6 +38,7 @@ S:Lenemy.InitEnemy$en$1$70({2}DG,STenemy:S),R,0,0,[c,b]
 S:Lenemy.InitEnemy$sloc0$1$0({1}SC:U),B,1,-2
 S:Lenemy.InitEnemy$sloc1$1$0({1}SC:U),B,1,-1
 F:G$InitEnemies$0$0({2}DF,SV:S),Z,0,0,0,0,0
+T:Fenemy$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fenemy$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fenemy$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
 T:Fenemy$scroll[({0}S:S$scrolllock$0$0({2}SI:S),Z,0,0)({2}S:S$scrolltimes$0$0({2}SI:S),Z,0,0)({4}S:S$scrolljump$0$0({2}SI:S),Z,0,0)({6}S:S$scrollspeedx$0$0({2}SI:S),Z,0,0)({8}S:S$scrollspeedy$0$0({2}SI:S),Z,0,0)]
@@ -45,6 +46,7 @@ T:Fenemy$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$scripterscript$0
 T:Fenemy$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fenemy$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fenemy$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
+S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$keystatus$0$0({2}SI:U),E,0,0
 S:G$stageframe$0$0({2}SI:U),E,0,0
 S:G$stageframe2mod$0$0({1}SC:U),E,0,0

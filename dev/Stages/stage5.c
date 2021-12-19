@@ -7,6 +7,7 @@
 #include "../devkit/_sms_manager.h"
 #include "../banks/bank6.h"
 #include "../banks/fixedbank.h"
+#include "../defines.h"
 #include "../funcs.h"
 #include "../vars.h"
 
