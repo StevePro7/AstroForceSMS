@@ -6,10 +6,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-void gameoverstage_foo()
-{
-}
-
 void InitGameoverStage()
 {
 	// General init
