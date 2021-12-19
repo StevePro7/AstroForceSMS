@@ -11,11 +11,11 @@ S:Lplaystage.InitStageSprites$a$1$85({1}SC:U),R,0,0,[c]
 F:G$InitCustomStageData$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitStageData$0$0({2}DF,SV:S),Z,0,12,0,0,0
 S:Lplaystage.InitStageData$i$1$89({2}SI:U),B,1,4
-S:Lplaystage.InitStageData$palette_bin$1$90({2}DG,SC:U),B,1,-2
-S:Lplaystage.InitStageData$palette_bin_bank$1$90({2}SI:U),B,1,-4
-S:Lplaystage.InitStageData$tilemap_l$1$90({2}DG,SC:U),B,1,-10
-S:Lplaystage.InitStageData$tilemap_l_size$1$90({2}SI:U),B,1,-6
-S:Lplaystage.InitStageData$tilemap_m$1$90({2}DG,SC:U),B,1,-8
+S:Lplaystage.InitStageData$palette_bin$1$90({2}DG,SC:U),B,1,-4
+S:Lplaystage.InitStageData$palette_bin_bank$1$90({2}SI:U),B,1,-8
+S:Lplaystage.InitStageData$tilemap_l$1$90({2}DG,SC:U),B,1,-2
+S:Lplaystage.InitStageData$tilemap_l_size$1$90({2}SI:U),B,1,-10
+S:Lplaystage.InitStageData$tilemap_m$1$90({2}DG,SC:U),B,1,-6
 S:Lplaystage.InitStageData$psg$1$90({2}DG,SC:U),R,0,0,[c,b]
 S:Lplaystage.InitStageData$psg_bank$1$90({2}SI:U),B,1,-12
 S:Lplaystage.InitStageData$loop_psg$1$90({1}SC:U),R,0,0,[e]

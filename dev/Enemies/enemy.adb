@@ -9,8 +9,8 @@ S:Lenemy.GetEnemyDirection$en$1$52({2}DG,STenemy:S),B,1,4
 S:Lenemy.GetEnemyDirection$dx$1$53({2}SI:S),R,0,0,[c,b]
 S:Lenemy.GetEnemyDirection$dy$1$53({2}SI:S),R,0,0,[l,h]
 S:Lenemy.GetEnemyDirection$dm$1$53({2}SI:S),R,0,0,[e,d]
-S:Lenemy.GetEnemyDirection$sloc0$1$0({2}DG,SC:U),B,1,-4
-S:Lenemy.GetEnemyDirection$sloc1$1$0({2}SI:S),B,1,-2
+S:Lenemy.GetEnemyDirection$sloc0$1$0({2}DG,SC:U),B,1,-2
+S:Lenemy.GetEnemyDirection$sloc1$1$0({2}SI:S),B,1,-4
 F:G$RemoveEnemy$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lenemy.RemoveEnemy$a$1$54({1}SC:S),B,1,4
 S:Lenemy.RemoveEnemy$ea$1$55({2}DG,STenemy:S),R,0,0,[c,b]
@@ -35,8 +35,8 @@ S:Lenemy.InitEnemy$x$1$69({1}SC:U),B,1,4
 S:Lenemy.InitEnemy$y$1$69({1}SC:U),B,1,5
 S:Lenemy.InitEnemy$t$1$69({1}SC:U),B,1,6
 S:Lenemy.InitEnemy$en$1$70({2}DG,STenemy:S),R,0,0,[c,b]
-S:Lenemy.InitEnemy$sloc0$1$0({1}SC:U),B,1,-1
-S:Lenemy.InitEnemy$sloc1$1$0({1}SC:U),B,1,-2
+S:Lenemy.InitEnemy$sloc0$1$0({1}SC:U),B,1,-2
+S:Lenemy.InitEnemy$sloc1$1$0({1}SC:U),B,1,-1
 F:G$InitEnemies$0$0({2}DF,SV:S),Z,0,0,0,0,0
 T:Fenemy$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fenemy$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
