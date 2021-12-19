@@ -3,6 +3,7 @@
 #include "../General/powerup.h"
 #include "../banks/fixedbank.h"
 #include "../funcs.h"
+#include <stdlib.h>
 
 // Check collision with playershoot
 unsigned char checkEnemyPlayerShoot( enemy *en, playershoot *ps )
@@ -15,23 +16,23 @@ unsigned char checkEnemyPlayerShoot( enemy *en, playershoot *ps )
 	return 0;
 }
 
-//// Get direction to player
-//void GetEnemyDirection( enemy *en )
-//{
-//	signed int dx, dy, dm;
-//
-//	// Better granularity although faster enemy shoots
-//	dx = playerx - en->enemyposx;
-//	dy = playery - en->enemyposy;
-//	dm = abs( dx ) + abs( dy );
-//	dx *= 3;
-//	dy *= 3;
-//	dx /= dm;
-//	dy /= dm;
-//
-//	en->enemyparama = dx;
-//	en->enemyparamb = dy;
-//}
+// Get direction to player
+void GetEnemyDirection( enemy *en )
+{
+	signed int dx, dy, dm;
+
+	// Better granularity although faster enemy shoots
+	dx = playerx - en->enemyposx;
+	dy = playery - en->enemyposy;
+	dm = abs( dx ) + abs( dy );
+	dx *= 3;
+	dy *= 3;
+	dx /= dm;
+	dy /= dm;
+
+	en->enemyparama = dx;
+	en->enemyparamb = dy;
+}
 
 // Remove enemy
 void RemoveEnemy( signed char a )
@@ -92,15 +93,15 @@ void KillEnemy( unsigned char a )
 
 
 
-//void KillEnemies( unsigned char force )
-//{
-//	signed char a;
-//
-//	if( numenemies>0 )
-//		for( a = numenemies - 1; a >= 0; a-- )
-//			if( ( force == 1 ) || ( enemies[ a ].enemywidth <= 16 ) )
-//				KillEnemy( a );
-//}
+void KillEnemies( unsigned char force )
+{
+	signed char a;
+
+	if( numenemies > 0 )
+		for( a = numenemies - 1; a >= 0; a-- )
+			if( ( force == 1 ) || ( enemies[ a ].enemywidth <= 16 ) )
+				KillEnemy( a );
+}
 
 
 
