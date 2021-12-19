@@ -62,15 +62,6 @@ void InitCustomStageData()
 	// Custom Init
 	( *( initstagefunctions[ playstage ] ) )( );
 }
-//stevepro
-//void UpdatePlayStage()
-//{
-//	// Change bank
-//	changeBank( FIXEDBANKSLOT );
-//
-//	// Custom Update
-//	( *( updatestagefunctions[ playstage ] ) )( );
-//}
 
 void InitStageData( unsigned int i )
 {
@@ -128,10 +119,10 @@ void UpdateStagePassA()
 	UpdatePowerup();
 
 	// Update player
-	//UpdatePlayer();
+	UpdatePlayer();
 
 	// Update player shoots
-	//UpdatePlayershoots();
+	UpdatePlayershoots();
 
 	// Enemy shoots
 	UpdateEnemyshoots();

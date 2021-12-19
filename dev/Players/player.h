@@ -16,7 +16,7 @@ void CheckShootPlayer();
 //void UpdatePlayerState3();
 //void UpdatePlayerState2();
 //void UpdatePlayerState1();
-//void UpdatePlayer();
+void UpdatePlayer();
 void InitPlayerConstants();
 
 #endif//_PLAYER_H_

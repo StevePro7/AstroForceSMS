@@ -285,7 +285,6 @@ void checkgamepause()
 	}
 }
 
-// stevepro
 void UpdatePlayStage()
 {
 	// Change bank

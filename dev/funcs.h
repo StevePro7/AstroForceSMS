@@ -102,7 +102,6 @@ void InitStage();
 
 void checkgamepause();
 
-// stevepro
 void UpdatePlayStage();
 
 // Update stage and frames
