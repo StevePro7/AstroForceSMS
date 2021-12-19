@@ -1,11 +1,11 @@
 M:warning
 F:G$InitWarning$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lwarning.InitWarning$en$1$46({2}DG,STenemy:S),B,1,4
+S:Lwarning.InitWarning$en$1$48({2}DG,STenemy:S),B,1,4
 F:G$UpdateWarning$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lwarning.UpdateWarning$en$1$48({2}DG,STenemy:S),B,1,4
-S:Lwarning.UpdateWarning$s$1$49({2}SI:U),R,0,0,[c,b]
-S:Lwarning.UpdateWarning$x$1$49({1}SC:U),R,0,0,[l]
-S:Lwarning.UpdateWarning$y$1$49({1}SC:U),R,0,0,[e]
+S:Lwarning.UpdateWarning$en$1$50({2}DG,STenemy:S),B,1,4
+S:Lwarning.UpdateWarning$s$1$51({2}SI:U),R,0,0,[c,b]
+S:Lwarning.UpdateWarning$x$1$51({1}SC:U),R,0,0,[l]
+S:Lwarning.UpdateWarning$y$1$51({1}SC:U),R,0,0,[e]
 T:Fwarning$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fwarning$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fwarning$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
@@ -185,3 +185,8 @@ S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
+S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
+S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0

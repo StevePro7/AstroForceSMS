@@ -17,20 +17,20 @@ S _PlayMusic Ref0000
 S _LoadBGPalette Ref0000
 A _CODE size 45 flags 0 addr 0
 S A$intro3stage$100 Def0036
-S C$intro3stage.c$20$1$21 Def001F
 S A$intro3stage$110 Def0043
-S C$intro3stage.c$23$1$21 Def002A
-S C$intro3stage.c$14$1$21 Def0000
+S C$intro3stage.c$20$1$23 Def001F
 S A$intro3stage$104 Def0037
 S A$intro3stage$105 Def003A
+S C$intro3stage.c$23$1$23 Def002A
+S C$intro3stage.c$14$1$23 Def0000
 S A$intro3stage$115 Def0044
 S A$intro3stage$106 Def003B
-S C$intro3stage.c$26$1$21 Def0037
-S C$intro3stage.c$17$1$21 Def0012
 S A$intro3stage$107 Def003E
-S C$intro3stage.c$27$1$21 Def0044
 S A$intro3stage$108 Def003F
+S C$intro3stage.c$26$1$23 Def0037
+S C$intro3stage.c$17$1$23 Def0012
 S A$intro3stage$109 Def0042
+S C$intro3stage.c$27$1$23 Def0044
 S C$intro3stage.c$11$0$0 Def0000
 S G$InitIntro3Stage$0$0 Def0000
 S A$intro3stage$60 Def0000

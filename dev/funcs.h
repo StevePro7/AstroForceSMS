@@ -124,7 +124,7 @@ void UpdatePSG();
 void initenemyAssert( enemy *en );
 unsigned char updateenemyAssert( enemy *en );
 void updatestageAssert();
-
+void initstageAssert();
 void playerupdateAssert();
 
 #endif//_FUNCS_H_

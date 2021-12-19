@@ -1,13 +1,13 @@
 M:player
 F:G$RemovePlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$CheckPlayerEnemyCollision$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lplayer.CheckPlayerEnemyCollision$a$1$70({1}SC:U),R,0,0,[]
-S:Lplayer.CheckPlayerEnemyCollision$en$1$70({2}DG,STenemy:S),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyCollision$a$1$72({1}SC:U),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyCollision$en$1$72({2}DG,STenemy:S),R,0,0,[]
 F:G$CheckPlayerEnemyshootCollision$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lplayer.CheckPlayerEnemyshootCollision$a$1$74({1}SC:U),R,0,0,[]
-S:Lplayer.CheckPlayerEnemyshootCollision$es$1$74({2}DG,STenemyshoot:S),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyshootCollision$a$1$76({1}SC:U),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyshootCollision$es$1$76({2}DG,STenemyshoot:S),R,0,0,[]
 F:G$UpdatePlayerIndicators$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lplayer.UpdatePlayerIndicators$a$1$78({1}SC:U),R,0,0,[c]
+S:Lplayer.UpdatePlayerIndicators$a$1$80({1}SC:U),R,0,0,[c]
 F:G$InitPlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitPlayerSprite$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$DrawPlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
@@ -17,7 +17,7 @@ F:G$UpdatePlayerState6$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState5$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState4$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState3$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lplayer.UpdatePlayerState3$t$1$101({1}SC:U),R,0,0,[]
+S:Lplayer.UpdatePlayerState3$t$1$103({1}SC:U),R,0,0,[]
 F:G$UpdatePlayerState2$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState1$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
@@ -244,4 +244,8 @@ S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$initAssert$0$0({2}DF,SV:S),C,0,0
+S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
+S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0

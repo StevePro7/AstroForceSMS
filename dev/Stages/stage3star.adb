@@ -1,13 +1,13 @@
 M:stage3star
 F:G$InitStage3Star$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage3star.InitStage3Star$st$1$48({2}DG,STstage3star:S),B,1,4
-S:Lstage3star.InitStage3Star$speed$1$48({1}SC:U),B,1,6
+S:Lstage3star.InitStage3Star$st$1$50({2}DG,STstage3star:S),B,1,4
+S:Lstage3star.InitStage3Star$speed$1$50({1}SC:U),B,1,6
 F:G$UpdateStarMovement$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage3star.UpdateStarMovement$st$1$50({2}DG,STstage3star:S),B,1,4
+S:Lstage3star.UpdateStarMovement$st$1$52({2}DG,STstage3star:S),B,1,4
 F:G$UpdateStage3Star$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage3star.UpdateStage3Star$st$1$52({2}DG,STstage3star:S),B,1,4
+S:Lstage3star.UpdateStage3Star$st$1$54({2}DG,STstage3star:S),B,1,4
 F:G$UpdateStage5Cloud$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage3star.UpdateStage5Cloud$st$1$54({2}DG,STstage3star:S),B,1,4
+S:Lstage3star.UpdateStage5Cloud$st$1$56({2}DG,STstage3star:S),B,1,4
 T:Fstage3star$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fstage3star$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fstage3star$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
@@ -187,3 +187,8 @@ S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
+S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
+S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0

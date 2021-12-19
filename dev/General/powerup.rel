@@ -24,11 +24,11 @@ S _playerspeed Ref0000
 S _stageframe Ref0000
 S _PlaySound Ref0000
 A _CODE size 152 flags 0 addr 0
-S C$powerup.c$58$3$28 Def014C
 S XG$UpdatePowerup$0$0 Def0102
 S A$powerup$70 Def000F
 S A$powerup$71 Def0010
 S A$powerup$62 Def0000
+S C$powerup.c$9$1$21 Def0000
 S G$InitPowerupSprites$0$0 Def0000
 S A$powerup$72 Def0011
 S A$powerup$63 Def0002
@@ -40,7 +40,6 @@ S A$powerup$67 Def0008
 S A$powerup$77 Def0012
 S A$powerup$68 Def000B
 S A$powerup$69 Def000C
-S C$powerup.c$9$1$19 Def0000
 S G$InitPowerups$0$0 Def0013
 S C$powerup.c$7$0$0 Def0000
 S _InitPowerupSprites Def0000
@@ -50,19 +49,18 @@ S XG$InitPowerupSprites$0$0 Def0012
 S XG$InitPowerups$0$0 Def0013
 S _InitPowerup Def0103
 S G$UpdatePowerup$0$0 Def0016
+S C$powerup.c$10$1$21 Def0012
 S A$powerup$200 Def00A3
+S C$powerup.c$12$1$21 Def0013
 S A$powerup$300 Def0112
 S A$powerup$210 Def00B8
 S A$powerup$201 Def00A4
-S C$powerup.c$14$1$20 Def0013
 S A$powerup$310 Def0122
 S A$powerup$301 Def0115
 S A$powerup$220 Def00C6
 S A$powerup$211 Def00B9
 S A$powerup$202 Def00A7
 S A$powerup$130 Def0034
-S C$powerup.c$21$2$22 Def001B
-S C$powerup.c$15$1$20 Def0013
 S A$powerup$320 Def012C
 S A$powerup$302 Def0117
 S A$powerup$221 Def00C7
@@ -72,7 +70,7 @@ S A$powerup$140 Def0048
 S A$powerup$131 Def0038
 S A$powerup$122 Def0026
 S A$powerup$113 Def001B
-S C$powerup.c$22$2$22 Def0026
+S C$powerup.c$14$1$22 Def0013
 S A$powerup$330 Def0137
 S A$powerup$321 Def012D
 S A$powerup$231 Def00D0
@@ -85,8 +83,8 @@ S A$powerup$132 Def003B
 S A$powerup$123 Def002A
 S A$powerup$114 Def001E
 S XG$InitPowerup$0$0 Def0151
-S C$powerup.c$23$2$22 Def0034
-S C$powerup.c$17$1$20 Def0016
+S C$powerup.c$21$2$24 Def001B
+S C$powerup.c$15$1$22 Def0013
 S A$powerup$340 Def0140
 S A$powerup$331 Def0138
 S A$powerup$322 Def0130
@@ -99,9 +97,7 @@ S A$powerup$142 Def004C
 S A$powerup$133 Def003D
 S A$powerup$124 Def002D
 S A$powerup$115 Def0020
-S C$powerup.c$44$1$21 Def0102
-S C$powerup.c$24$2$22 Def005B
-S C$powerup.c$10$1$19 Def0012
+S C$powerup.c$22$2$24 Def0026
 S A$powerup$341 Def0141
 S A$powerup$332 Def0139
 S A$powerup$323 Def0131
@@ -117,6 +113,8 @@ S A$powerup$134 Def003E
 S A$powerup$125 Def0030
 S A$powerup$116 Def0022
 S A$powerup$107 Def0016
+S C$powerup.c$23$2$24 Def0034
+S C$powerup.c$17$1$22 Def0016
 S A$powerup$342 Def0142
 S A$powerup$333 Def013A
 S A$powerup$324 Def0132
@@ -132,10 +130,8 @@ S A$powerup$135 Def0041
 S A$powerup$126 Def0031
 S A$powerup$117 Def0025
 S A$powerup$108 Def0019
-S C$powerup.c$46$1$21 Def0103
-S C$powerup.c$40$4$24 Def00F5
-S C$powerup.c$19$1$21 Def0016
-S C$powerup.c$12$1$19 Def0013
+S C$powerup.c$44$1$23 Def0102
+S C$powerup.c$24$2$24 Def005B
 S _UpdatePowerup Def0016
 S A$powerup$352 Def014C
 S A$powerup$343 Def0143
@@ -155,8 +151,7 @@ S A$powerup$154 Def005B
 S A$powerup$145 Def0051
 S A$powerup$136 Def0042
 S A$powerup$109 Def001A
-S C$powerup.c$32$4$24 Def00D0
-S C$powerup.c$27$2$22 Def0067
+S C$powerup.c$54$3$30 Def0123
 S A$powerup$353 Def014F
 S A$powerup$335 Def013C
 S A$powerup$326 Def0136
@@ -174,8 +169,10 @@ S A$powerup$164 Def006B
 S A$powerup$155 Def005E
 S A$powerup$146 Def0052
 S A$powerup$137 Def0043
-S C$powerup.c$61$1$26 Def0151
-S C$powerup.c$33$4$24 Def00DD
+S C$powerup.c$55$3$30 Def0137
+S C$powerup.c$46$1$23 Def0103
+S C$powerup.c$40$4$26 Def00F5
+S C$powerup.c$19$1$23 Def0016
 S A$powerup$318 Def012A
 S A$powerup$309 Def011F
 S A$powerup$264 Def00F8
@@ -188,8 +185,9 @@ S A$powerup$165 Def006E
 S A$powerup$156 Def0060
 S A$powerup$147 Def0053
 S A$powerup$138 Def0044
-S C$powerup.c$51$2$27 Def010E
-S C$powerup.c$34$4$24 Def00EB
+S C$powerup.c$56$3$30 Def013F
+S C$powerup.c$32$4$26 Def00D0
+S C$powerup.c$27$2$24 Def0067
 S A$powerup$319 Def012B
 S A$powerup$274 Def0102
 S A$powerup$265 Def00F9
@@ -200,7 +198,9 @@ S A$powerup$166 Def0070
 S A$powerup$157 Def0062
 S A$powerup$148 Def0056
 S A$powerup$139 Def0047
-S C$powerup.c$52$2$27 Def011A
+S C$powerup.c$61$1$28 Def0151
+S C$powerup.c$57$3$30 Def0146
+S C$powerup.c$33$4$26 Def00DD
 S A$powerup$347 Def0146
 S A$powerup$293 Def0109
 S A$powerup$266 Def00FC
@@ -211,7 +211,9 @@ S A$powerup$176 Def007C
 S A$powerup$167 Def0072
 S A$powerup$158 Def0065
 S A$powerup$149 Def0059
-S C$powerup.c$29$3$23 Def0078
+S C$powerup.c$58$3$30 Def014C
+S C$powerup.c$51$2$29 Def010E
+S C$powerup.c$34$4$26 Def00EB
 S A$powerup$348 Def0149
 S A$powerup$339 Def013F
 S A$powerup$294 Def010C
@@ -221,7 +223,7 @@ S A$powerup$195 Def009C
 S A$powerup$186 Def008F
 S A$powerup$177 Def007E
 S A$powerup$168 Def0075
-S C$powerup.c$37$4$24 Def00F0
+S C$powerup.c$52$2$29 Def011A
 S A$powerup$358 Def0151
 S A$powerup$295 Def010D
 S A$powerup$268 Def0100
@@ -229,21 +231,19 @@ S A$powerup$196 Def009D
 S A$powerup$187 Def0090
 S A$powerup$178 Def0081
 S A$powerup$169 Def0077
-S C$powerup.c$48$1$26 Def0103
+S C$powerup.c$29$3$25 Def0078
 S A$powerup$287 Def0103
 S A$powerup$269 Def0101
 S A$powerup$197 Def009E
 S A$powerup$188 Def0093
 S A$powerup$179 Def0082
-S C$powerup.c$54$3$28 Def0123
-S C$powerup.c$49$1$26 Def0109
+S C$powerup.c$37$4$26 Def00F0
 S A$powerup$288 Def0106
 S A$powerup$198 Def00A1
-S C$powerup.c$55$3$28 Def0137
+S C$powerup.c$48$1$28 Def0103
 S A$powerup$289 Def0108
-S C$powerup.c$56$3$28 Def013F
+S C$powerup.c$49$1$28 Def0109
 S A$powerup$299 Def010E
-S C$powerup.c$57$3$28 Def0146
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

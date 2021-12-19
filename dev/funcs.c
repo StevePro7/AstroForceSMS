@@ -416,15 +416,23 @@ void initenemyAssert( enemy *en )
 #ifdef _CONSOLE
 	assert( 0 );
 #endif
+	en->enemyenergy = 0;
 }
 unsigned char updateenemyAssert( enemy *en )
 {
 #ifdef _CONSOLE
 	assert( 0 );
 #endif
+	en->enemyenergy = 0;
 	return 1;
 }
 void updatestageAssert()
+{
+#ifdef _CONSOLE
+	assert( 0 );
+#endif
+}
+void initstageAssert()
 {
 #ifdef _CONSOLE
 	assert( 0 );

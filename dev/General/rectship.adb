@@ -1,6 +1,6 @@
 M:rectship
 F:G$UpdateRectShip$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lrectship.UpdateRectShip$en$1$55({2}DG,STenemy:S),B,1,4
+S:Lrectship.UpdateRectShip$en$1$57({2}DG,STenemy:S),B,1,4
 S:Lrectship.UpdateRectShip$sloc0$1$0({2}DG,STenemy:S),B,1,-2
 T:Frectship$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Frectship$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
@@ -195,3 +195,8 @@ S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
+S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
+S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0

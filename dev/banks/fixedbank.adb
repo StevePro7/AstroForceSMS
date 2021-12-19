@@ -13,7 +13,7 @@ S:G$imagepointers$0$0({172}DA86d,DG,SC:U),E,0,0
 S:G$monsterheadshootdirecionsx$0$0({16}DA16d,SC:S),E,0,0
 S:G$monsterheadshootdirecionsy$0$0({16}DA16d,SC:S),E,0,0
 S:G$difficultlabels$0$0({4}DA2d,DG,SC:U),E,0,0
-S:G$playerupdatefunctions$0$0({4}DA2d,DC,DF,SV:S),E,0,0
+S:G$playerupdatefunctions$0$0({6}DA3d,DC,DF,SV:S),E,0,0
 S:G$InitWarning$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateWarning$0$0({2}DF,SC:U),C,0,0
 S:G$InitIntroSidePlayer$0$0({2}DF,SV:S),C,0,0
@@ -71,7 +71,11 @@ S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$initAssert$0$0({2}DF,SV:S),C,0,0
+S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
+S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$bigexplosion_psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$ending_psg$0$0({0}DA0d,SC:U),D,0,0
 S:G$enemybomb_psg$0$0({0}DA0d,SC:U),D,0,0
@@ -299,9 +303,9 @@ S:G$stage3scriptb$0$0({25}DA25d,SC:U),D,0,0
 S:G$stage3script$0$0({45}DA45d,SC:U),D,0,0
 S:G$stage3_statics$0$0({632}DA316d,SI:U),D,0,0
 S:G$stage7_statics$0$0({960}DA480d,SI:U),D,0,0
-S:G$initenemyfunctions$0$0({30}DA15d,DC,DF,SV:S),D,0,0
-S:G$updateenemyfunctions$0$0({30}DA15d,DC,DF,SC:U),D,0,0
-S:G$updatestagefunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
+S:G$initenemyfunctions$0$0({110}DA55d,DC,DF,SV:S),D,0,0
+S:G$updateenemyfunctions$0$0({172}DA86d,DC,DF,SC:U),D,0,0
+S:G$updatestagefunctions$0$0({18}DA9d,DC,DF,SV:S),D,0,0
 S:G$initstagefunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$killenemyfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
 S:G$stage4_scrollers$0$0({160}DA80d,SI:S),D,0,0
