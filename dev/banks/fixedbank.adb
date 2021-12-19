@@ -18,8 +18,12 @@ S:G$InitWarning$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateWarning$0$0({2}DF,SC:U),C,0,0
 S:G$InitIntroSidePlayer$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateIntroSidePlayer$0$0({2}DF,SC:U),C,0,0
-S:G$intro3object_foo$0$0({2}DF,SV:S),C,0,0
+S:G$InitIntro3Object$0$0({2}DF,SV:S),C,0,0
+S:G$DrawIntro3Object$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateIntro3Object1$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateIntro3Object2$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateIntro3Object3$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateIntro3Object$0$0({2}DF,SC:U),C,0,0
 S:G$InitStage5$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage5$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0

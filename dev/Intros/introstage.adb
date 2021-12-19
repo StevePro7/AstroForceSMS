@@ -133,7 +133,6 @@ S:G$UpdateTimeredLabel$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateTimeredLabels$0$0({2}DF,SV:S),C,0,0
 S:G$InitTimeredLabel$0$0({2}DF,SV:S),C,0,0
 S:G$InitTimeredLabels$0$0({2}DF,SV:S),C,0,0
-S:G$intro1stage_foo$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntro1Stage$0$0({2}DF,SV:S),C,0,0
 S:G$DoIntro2Scroll$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntro2Stage$0$0({2}DF,SV:S),C,0,0
