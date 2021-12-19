@@ -1,9 +1,10 @@
 #ifndef _TURNSHIP_H_
 #define _TURNSHIP_H_
 
-void turnship_foo();
+#include "../defines.h"
 
-//void InitTurnShip( enemy *en );
-//unsigned char UpdateTurnShip( enemy *en );
+// ADRIANA
+void InitTurnShip( enemy *en );
+unsigned char UpdateTurnShip( enemy *en );
 
 #endif//_TURNSHIP_H_
