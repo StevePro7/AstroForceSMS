@@ -65,9 +65,9 @@ cd Intros
 cd ..
 
 cd Monsters
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 monsterblob.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 monsterhead.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 monstermissil.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 monsterblob.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 monsterhead.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 monstermissil.c
 cd ..
 
 cd Players
@@ -83,64 +83,64 @@ sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 s
 cd ..
 
 cd Stages
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1endboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1middleboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1middlebossb.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1middlebossc.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage2.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage2endboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage2object.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3endboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3laser.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3star.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4endboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4endbossb.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4middleboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4object.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage5.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage5endboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage5missile.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6endboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6endbossb.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6object.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7endboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7middleboss.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7object.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8bossa.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8bossb.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8bossc.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8lateral.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1endboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1middleboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1middlebossb.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage1middlebossc.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage2.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage2endboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage2object.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3endboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3laser.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage3star.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4endboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4endbossb.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4middleboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage4object.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage5.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage5endboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage5missile.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6endboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6endbossb.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage6object.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7endboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7middleboss.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage7object.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8bossa.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8bossb.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8bossc.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 stage8lateral.c
 cd ..
 
 cd Vulcans
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanbird.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanlaser.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanlava.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanstation.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcantank.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanvulcan.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanbird.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanlaser.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanlava.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanstation.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcantank.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 vulcanvulcan.c
 cd ..
 
 cd Wars
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2plane.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2planeb.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2ship.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2zeppelin.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2plane.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2planeb.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2ship.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file ../peep-rules.txt --std-c99 ww2zeppelin.c
 cd ..
 
 
 
 :: echo Build main
-sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 defines.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 funcs.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 main.c
-sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 vars.c
+::::sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 defines.c
+::::sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 funcs.c
+::sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 main.c
+::::sdcc --debug -c -mz80 --opt-code-speed --peep-file peep-rules.txt --std-c99 vars.c
 
 
 :: Time build -END-

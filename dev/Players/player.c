@@ -12,11 +12,11 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-// warning 126: unreachable code
-//#ifdef _CONSOLE
-//#else
-//#pragma disable_warning 126
-//#endif
+//warning 126: unreachable code
+#ifdef _CONSOLE
+#else
+#pragma disable_warning 126
+#endif
 
 void RemovePlayer()
 {

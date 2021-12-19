@@ -125,6 +125,7 @@ S:G$UpdateScroller$0$0({2}DF,SV:S),C,0,0
 S:G$updatescrollact$0$0({2}DF,SV:S),C,0,0
 S:G$InitStageSprite$0$0({2}DF,SV:S),C,0,0
 S:G$InitStageSprites$0$0({2}DF,SV:S),C,0,0
+S:G$InitAfterBossStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitCustomStageData$0$0({2}DF,SV:S),C,0,0
 S:G$InitStageData$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStagePassA$0$0({2}DF,SV:S),C,0,0

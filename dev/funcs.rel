@@ -86,6 +86,9 @@ S A$funcs$152 Def002E
 S A$funcs$143 Def0027
 S A$funcs$134 Def0019
 S A$funcs$125 Def000C
+S C$funcs.c$333$2$99 Def03ED
+S C$funcs.c$324$2$99 Def03E4
+S C$funcs.c$291$1$97 Def0364
 S G$UpdatePlayStage$0$0 Def0364
 S C$funcs.c$282$2$96 Def0342
 S C$funcs.c$194$1$86 Def021F
@@ -113,10 +116,7 @@ S A$funcs$153 Def0032
 S A$funcs$144 Def0028
 S A$funcs$135 Def001C
 S A$funcs$126 Def000F
-S C$funcs.c$345$1$98 Def0401
-S C$funcs.c$334$2$99 Def03ED
-S C$funcs.c$325$2$99 Def03E4
-S C$funcs.c$292$1$97 Def0364
+S C$funcs.c$309$1$98 Def03A1
 S C$funcs.c$52$1$60 Def0000
 S _changeBank Def0036
 S A$funcs$802 Def0259
@@ -146,8 +146,7 @@ S A$funcs$136 Def001E
 S A$funcs$127 Def0010
 S XG$PlayMusic$0$0 Def049A
 S XG$UpdateStage$0$0 Def0407
-S C$funcs.c$346$1$98 Def0407
-S C$funcs.c$335$2$99 Def03F3
+S C$funcs.c$346$1$98 Def0401
 S C$funcs.c$286$1$95 Def0363
 S C$funcs.c$284$2$96 Def0350
 S C$funcs.c$277$1$95 Def032C
@@ -189,6 +188,10 @@ S A$funcs$146 Def002A
 S A$funcs$137 Def001F
 S A$funcs$128 Def0013
 S A$funcs$119 Def0000
+S C$funcs.c$347$1$98 Def0407
+S C$funcs.c$327$2$99 Def03E7
+S C$funcs.c$318$2$99 Def03DC
+S C$funcs.c$294$1$97 Def036C
 S G$WriteText$0$0 Def021F
 S XG$LoadBGPalette$0$0 Def019E
 S C$funcs.c$54$1$60 Def0035
@@ -230,10 +233,8 @@ S A$funcs$174 Def003B
 S A$funcs$147 Def002C
 S A$funcs$138 Def0020
 S A$funcs$129 Def0014
-S C$funcs.c$348$1$98 Def0408
-S C$funcs.c$328$2$99 Def03E7
-S C$funcs.c$319$2$99 Def03DC
-S C$funcs.c$295$1$97 Def036C
+S C$funcs.c$295$1$97 Def037E
+S C$funcs.c$288$1$95 Def0364
 S C$funcs.c$189$1$86 Def0208
 S G$LoadGraphics$0$0 Def0159
 S A$funcs$940 Def02E3
@@ -276,8 +277,7 @@ S A$funcs$184 Def0049
 S A$funcs$175 Def003F
 S A$funcs$148 Def002D
 S A$funcs$139 Def0022
-S C$funcs.c$296$1$97 Def037E
-S C$funcs.c$289$1$95 Def0364
+S C$funcs.c$349$1$98 Def0408
 S C$funcs.c$61$2$63 Def0043
 S A$funcs$950 Def02F0
 S A$funcs$941 Def02E4
@@ -382,6 +382,7 @@ S A$funcs$295 Def00BD
 S A$funcs$277 Def00AE
 S A$funcs$268 Def00A7
 S A$funcs$259 Def009C
+S C$funcs.c$299$1$97 Def0381
 S C$funcs.c$50$0$0 Def0000
 S A$funcs$971 Def02F7
 S A$funcs$953 Def02F5
@@ -566,41 +567,44 @@ S G$DrawSpriteArray$0$0 Def0057
 S XG$UpdatePlayStage$0$0 Def037E
 S G$LoadSpritePalette$0$0 Def019F
 S G$ClearScreen$0$0 Def01F4
+S C$funcs.c$400$2$110 Def04B3
 S G$InitStage$0$0 Def02F7
 S XG$WriteText$0$0 Def0264
+S C$funcs.c$401$2$110 Def04BB
 S XG$LoadGraphics$0$0 Def0189
-S C$funcs.c$340$2$100 Def03F8
-S C$funcs.c$341$2$100 Def03FE
 S G$InterruptHandler$0$0 Def01B0
-S C$funcs.c$350$1$102 Def0408
+S C$funcs.c$341$2$101 Def03F8
 S XG$WriteNumber$0$0 Def02CF
 S G$UpdatePSG$0$0 Def049B
+S C$funcs.c$342$2$101 Def03FE
 S _LoadTiles Def013F
+S C$funcs.c$360$1$103 Def0437
+S C$funcs.c$351$1$103 Def0408
 S XG$checkgamepause$0$0 Def0363
-S C$funcs.c$402$1$107 Def04BB
+S C$funcs.c$335$3$100 Def03F3
 S XG$LoadSprite$0$0 Def013E
-S C$funcs.c$400$2$109 Def04BB
-S C$funcs.c$352$2$103 Def0416
 S G$DrawQuadSprite$0$0 Def00AF
 S _DrawSpriteArray Def0057
-S C$funcs.c$353$2$103 Def041E
-S C$funcs.c$371$1$105 Def0461
-S C$funcs.c$362$1$105 Def043F
-S C$funcs.c$356$1$102 Def0436
-S C$funcs.c$354$2$103 Def042E
+S C$funcs.c$403$1$108 Def04BB
+S C$funcs.c$370$1$106 Def045A
+S C$funcs.c$353$2$104 Def0416
 S G$UpdateScroll$0$0 Def0208
 S _LoadSpritePalette Def019F
+S C$funcs.c$354$2$104 Def041E
 S _ClearScreen Def01F4
-S C$funcs.c$382$1$105 Def0490
-S C$funcs.c$373$1$105 Def0466
+S C$funcs.c$372$1$106 Def0461
+S C$funcs.c$363$1$106 Def043F
+S C$funcs.c$357$1$103 Def0436
+S C$funcs.c$355$2$104 Def042E
 S _InitStage Def02F7
-S C$funcs.c$390$1$107 Def049B
-S C$funcs.c$383$1$105 Def049A
-S C$funcs.c$365$1$105 Def0445
-S C$funcs.c$359$1$102 Def0437
 S A$funcs$1000 Def030F
+S C$funcs.c$383$1$106 Def0490
+S C$funcs.c$374$1$106 Def0466
 S A$funcs$1010 Def031B
 S A$funcs$1001 Def0312
+S C$funcs.c$391$1$108 Def049B
+S C$funcs.c$384$1$106 Def049A
+S C$funcs.c$366$1$106 Def0445
 S G$PlayMusic$0$0 Def0437
 S G$UpdateStage$0$0 Def0381
 S G$LoadFont$0$0 Def02E1
@@ -608,18 +612,12 @@ S _InterruptHandler Def01B0
 S A$funcs$1200 Def03D6
 S A$funcs$1110 Def036B
 S A$funcs$1002 Def0313
-S C$funcs.c$375$2$106 Def047B
-S C$funcs.c$368$1$105 Def0454
 S G$LoadBGPalette$0$0 Def018A
 S A$funcs$1300 Def042C
 S A$funcs$1210 Def03DF
 S A$funcs$1201 Def03D9
 S A$funcs$1120 Def037A
 S A$funcs$1003 Def0315
-S C$funcs.c$392$2$108 Def04A1
-S C$funcs.c$387$1$105 Def049B
-S C$funcs.c$376$2$106 Def0484
-S C$funcs.c$369$1$105 Def045A
 S XG$LoadTiles$0$0 Def0158
 S _UpdatePSG Def049B
 S A$funcs$1400 Def0492
@@ -628,13 +626,16 @@ S A$funcs$1211 Def03E2
 S A$funcs$1202 Def03DA
 S A$funcs$1121 Def037B
 S A$funcs$1004 Def0316
-S C$funcs.c$393$2$108 Def04AA
-S C$funcs.c$377$2$106 Def048A
+S C$funcs.c$376$2$107 Def047B
+S C$funcs.c$369$1$106 Def0454
 S A$funcs$1401 Def0493
 S A$funcs$1122 Def037C
 S A$funcs$1023 Def0326
 S A$funcs$1014 Def031E
 S A$funcs$1005 Def0319
+S C$funcs.c$393$2$109 Def04A1
+S C$funcs.c$388$1$106 Def049B
+S C$funcs.c$377$2$107 Def0484
 S A$funcs$1402 Def0494
 S A$funcs$1330 Def043F
 S A$funcs$1240 Def03FB
@@ -646,7 +647,8 @@ S A$funcs$1060 Def033C
 S A$funcs$1042 Def032C
 S A$funcs$1024 Def0329
 S A$funcs$1006 Def031A
-S C$funcs.c$397$1$107 Def04AD
+S C$funcs.c$394$2$109 Def04AA
+S C$funcs.c$378$2$107 Def048A
 S XG$DrawSpriteArray$0$0 Def00AE
 S _DrawQuadSprite Def00AF
 S A$funcs$1430 Def04A5
@@ -685,6 +687,7 @@ S A$funcs$1071 Def034D
 S A$funcs$1062 Def0340
 S A$funcs$1053 Def0335
 S A$funcs$1044 Def0330
+S C$funcs.c$398$1$108 Def04AD
 S C$funcs.c$140$1$80 Def01B0
 S XG$LoadSpritePalette$0$0 Def01AF
 S C$funcs.c$102$1$73 Def013F
@@ -750,7 +753,6 @@ S A$funcs$1119 Def0379
 S A$funcs$1083 Def0359
 S A$funcs$1056 Def033B
 S A$funcs$1029 Def032B
-S C$funcs.c$399$2$109 Def04B3
 S C$funcs.c$112$1$75 Def0159
 S C$funcs.c$105$1$73 Def014A
 S A$funcs$1444 Def04B2
@@ -816,7 +818,6 @@ S A$funcs$1158 Def039A
 S A$funcs$1149 Def038D
 S A$funcs$1086 Def035E
 S A$funcs$1068 Def0346
-S C$funcs.c$300$1$97 Def0381
 S C$funcs.c$224$1$92 Def02D0
 S C$funcs.c$215$2$91 Def0285
 S C$funcs.c$201$1$88 Def0232
@@ -860,7 +861,7 @@ S A$funcs$1178 Def03B5
 S A$funcs$1169 Def03A9
 S A$funcs$1088 Def0362
 S A$funcs$1079 Def0353
-S C$funcs.c$310$1$98 Def03A1
+S C$funcs.c$310$1$98 Def03B0
 S C$funcs.c$260$1$94 Def030F
 S C$funcs.c$251$1$94 Def0306
 S C$funcs.c$242$1$94 Def02FA
@@ -876,7 +877,8 @@ S A$funcs$1296 Def0426
 S A$funcs$1269 Def0408
 S A$funcs$1188 Def03C8
 S A$funcs$1179 Def03B7
-S C$funcs.c$311$1$98 Def03B0
+S C$funcs.c$311$1$98 Def03CB
+S C$funcs.c$302$1$98 Def0381
 S C$funcs.c$235$1$93 Def02F6
 S C$funcs.c$204$1$88 Def0264
 S C$funcs.c$172$2$83 Def01F4
@@ -889,8 +891,6 @@ S A$funcs$1297 Def0427
 S A$funcs$300 Def00C8
 S A$funcs$210 Def005D
 S A$funcs$120 Def0003
-S C$funcs.c$312$1$98 Def03CB
-S C$funcs.c$303$1$98 Def0381
 S C$funcs.c$228$1$92 Def02E1
 S G$ClearTiles$0$0 Def02D0
 S C$funcs.c$166$1$82 Def01D6
@@ -922,6 +922,9 @@ S A$funcs$230 Def0077
 S A$funcs$140 Def0023
 S A$funcs$131 Def0016
 S A$funcs$122 Def0007
+S C$funcs.c$330$2$99 Def03EA
+S C$funcs.c$321$2$99 Def03DF
+S C$funcs.c$305$1$98 Def038D
 S C$funcs.c$273$1$94 Def032B
 S C$funcs.c$238$1$93 Def02F7
 S C$funcs.c$207$1$88 Def0265
@@ -939,9 +942,8 @@ S A$funcs$231 Def0078
 S A$funcs$141 Def0024
 S A$funcs$132 Def0017
 S A$funcs$123 Def0008
-S C$funcs.c$331$2$99 Def03EA
-S C$funcs.c$322$2$99 Def03DF
-S C$funcs.c$306$1$98 Def038D
+S C$funcs.c$315$1$98 Def03D6
+S C$funcs.c$306$1$98 Def0397
 S C$funcs.c$280$2$96 Def0335
 S C$funcs.c$176$1$84 Def01F7
 S C$funcs.c$167$2$83 Def01EA
@@ -962,8 +964,6 @@ S A$funcs$223 Def0068
 S A$funcs$142 Def0025
 S A$funcs$133 Def0018
 S A$funcs$124 Def000B
-S C$funcs.c$316$1$98 Def03D6
-S C$funcs.c$307$1$98 Def0397
 S C$funcs.c$281$2$96 Def033C
 S C$funcs.c$275$1$94 Def032C
 S C$funcs.c$266$1$94 Def031E
@@ -1011,7 +1011,7 @@ T 57 00 DD E5 DD 21 00 00 DD 39 F5 0E 00
 R 00 00 00 00
 T 62 00
 R 00 00 00 00
-T 62 00 79 DD 96 09 30 42 DD 7E 07 81 DD 77 FE DD
+T 62 00 79 DD 96 09 30 42 DD 7E 07 81 DD 77 FF DD
 R 00 00 00 00
 T 70 00 5E 04 DD 56 05 06 00
 R 00 00 00 00
@@ -1019,7 +1019,7 @@ T 77 00
 R 00 00 00 00
 T 77 00 78 DD 96 08 30 21 6B 62 13 DD 7E 06 80 DD
 R 00 00 00 00
-T 85 00 77 FF C5 D5 E5 DD 66 FE DD 6E FF E5 CD
+T 85 00 77 FE C5 D5 E5 DD 66 FF DD 6E FE E5 CD
 R 00 00 00 00
 T 92 00 00 00 F1 F1 D1 C1 78 C6 08 47 18 D9
 R 00 00 00 00 02 02 34 00
