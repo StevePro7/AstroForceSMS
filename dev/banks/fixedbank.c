@@ -15,7 +15,9 @@
 #include "../General/warning.h"
 #include "../Intros/introsideplayer.h"
 #include "../Intros/intro3object.h"
+#include "../Players/player.h"
 #include "../Stages/stage5.h"
+#include "../Wars/ww2zeppelin.h"
 #include "../funcs.h"
 
 #ifdef _CONSOLE
@@ -2016,16 +2018,16 @@ const MyInitEnemyFunction initenemyfunctions[] =
 	0,
 	0,
 	InitIntroSidePlayer,
-//	InitIntroStar,
-//	InitWaveShip,
-//	0,
-//	InitTurnShip,
-//	InitBombShipLeft,
-//	InitBombShipRight,
-//	InitSpreadShip,
-//	0,
-//	0,
-//	InitWW2Zeppelin,
+	0,//	InitIntroStar,
+	0,//	InitWaveShip,
+	0,
+	0,//	InitTurnShip,
+	0,//	InitBombShipLeft,
+	0,//	InitBombShipRight,
+	0,//	InitSpreadShip,
+	0,
+	0,
+	InitWW2Zeppelin,
 //	0,
 //	InitWW2Plane,
 //	InitWW2Plane,
@@ -2168,16 +2170,16 @@ const MyUpdateEnemyFunction updateenemyfunctions[] =
 	0,//	UpdateIntroOvni,
 	0, //	UpdateIntroOvni,
 	UpdateIntroSidePlayer,
-//	UpdateIntroStar,
-//	UpdateWaveShip,
-//	UpdateRectShip,
-//	UpdateTurnShip,
-//	UpdateBombShip,
-//	UpdateBombShip,
-//	UpdateSpreadShip,
-//	UpdateStage4MiddleBoss,
-//	UpdateStage4EndBoss,
-//	UpdateWW2Zeppelin,
+	0,//	UpdateIntroStar,
+	0,//	UpdateWaveShip,
+	0,//	UpdateRectShip,
+	0,//	UpdateTurnShip,
+	0,//	UpdateBombShip,
+	0,//	UpdateBombShip,
+	0,//	UpdateSpreadShip,
+	0,//	UpdateStage4MiddleBoss,
+	0,//	UpdateStage4EndBoss,
+	UpdateWW2Zeppelin,
 //	UpdateWW2Ship,
 //	UpdateWW2Plane,
 //	UpdateWW2Plane,
@@ -2944,7 +2946,7 @@ const signed char stage8bossbshootspeedy[] = { 0,1,3,5,7,5,3,1,0,1,3,5,7,5,3,1 }
 MyKillEnemyFunction playerupdatefunctions[] =
 {
 	0,
-	//UpdatePlayerState1,
+	UpdatePlayerState1,
 	//UpdatePlayerState2,
 	//UpdatePlayerState3,
 	//UpdatePlayerState4,
