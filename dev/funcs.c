@@ -1,9 +1,11 @@
 ﻿#include "funcs.h"
+#include "defines.h"
 #include "vars.h"
 #include "devkit/_sms_manager.h"
 #include "devkit/_snd_manager.h"
 #include "banks/bank2.h"
-
+#include <assert.h>
+#include <stdlib.h>
 
 // Eah que no existen en la libreria
 //#define max(x, y) (((x) > (y)) ? (x) : (y))
@@ -409,9 +411,29 @@ void UpdatePSG()
 
 
 // stevepro
-void initAssert()
+void initenemyAssert( enemy *en )
 {
 #ifdef _CONSOLE
-#else
+	assert( 0 );
+#endif
+}
+unsigned char updateenemyAssert( enemy *en )
+{
+#ifdef _CONSOLE
+	assert( 0 );
+#endif
+	return 1;
+}
+void updatestageAssert()
+{
+#ifdef _CONSOLE
+	assert( 0 );
+#endif
+}
+
+void playerupdateAssert()
+{
+#ifdef _CONSOLE
+	assert( 0 );
 #endif
 }
