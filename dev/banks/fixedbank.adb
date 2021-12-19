@@ -1,5 +1,4 @@
 M:fixedbank
-T:Ffixedbank$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Ffixedbank$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 S:G$jukebox_songs$0$0({42}DA21d,DG,SC:U),E,0,0
 S:G$jukebox_names$0$0({42}DA21d,DG,SC:U),E,0,0
@@ -15,7 +14,6 @@ S:G$monsterheadshootdirecionsx$0$0({16}DA16d,SC:S),E,0,0
 S:G$monsterheadshootdirecionsy$0$0({16}DA16d,SC:S),E,0,0
 S:G$difficultlabels$0$0({4}DA2d,DG,SC:U),E,0,0
 S:G$playerupdatefunctions$0$0({2}DA1d,DC,DF,SV:S),E,0,0
-S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$InitWarning$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateWarning$0$0({2}DF,SC:U),C,0,0
 S:G$InitIntroSidePlayer$0$0({2}DF,SV:S),C,0,0

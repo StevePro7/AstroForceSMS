@@ -1,5 +1,5 @@
 XL2
-H A areas 1C0 global symbols
+H A areas 1BE global symbols
 M fixedbank
 O -mz80
 S _UpdateIntroSidePlayer Ref0000
@@ -104,9 +104,7 @@ S _bombship_psgcompr Ref0000
 S _ending_psg Ref0000
 S _boss_psg Ref0000
 A _CODE size 0 flags 0 addr 0
-A _DATA size 12 flags 0 addr 0
-S G$stage3stars$0$0 Def0000
-S _stage3stars Def0000
+A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 232 flags 0 addr 0
 S G$difficultlabels$0$0 Def022C
 S _stageinitdata Def00A8
@@ -460,10 +458,6 @@ S Ffixedbank$__xinit_spawners$0$0 Def0134
 S Ffixedbank$__xinit_finishlabels$0$0 Def0080
 S Ffixedbank$__xinit_imagepointers$0$0 Def0160
 A _CABS size 0 flags 8 addr 0
-T 00 00
-R 00 00 01 00
-T 00 00
-R 00 00 01 00
 T 00 00
 R 00 00 02 00
 T 00 00

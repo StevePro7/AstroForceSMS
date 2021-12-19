@@ -12,7 +12,6 @@ T:Fbarrom$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionpo
 T:Fbarrom$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
 S:G$barromx$0$0({12}DA12d,SC:S),E,0,0
 S:G$barromy$0$0({12}DA12d,SC:S),E,0,0
-S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0
@@ -105,6 +104,7 @@ S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
+S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$barromtime$0$0({1}SC:U),E,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0

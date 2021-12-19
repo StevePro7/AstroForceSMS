@@ -1,6 +1,6 @@
 ;!FILE intro1stage.asm
 XL2
-H 9 areas 41 global symbols
+H 9 areas 3F global symbols
 M intro1stage
 O -mz80
 S _LoadGraphics Ref0000
@@ -15,61 +15,59 @@ S _intro1labels Ref0000
 S _PlayMusic Ref0000
 S _introstage1tiles_psgcompr Ref0000
 A _CODE size 44 flags 0 addr 0
-S A$intro1stage$100 Def001D
-S A$intro1stage$110 Def002A
-S A$intro1stage$101 Def0020
-S A$intro1stage$120 Def0039
-S A$intro1stage$111 Def002D
-S A$intro1stage$102 Def0021
-S A$intro1stage$130 Def0043
-S A$intro1stage$121 Def003A
-S A$intro1stage$112 Def002E
-S A$intro1stage$103 Def0024
+S A$intro1stage$100 Def0025
+S A$intro1stage$110 Def0032
+S A$intro1stage$101 Def0028
+S A$intro1stage$120 Def0041
+S A$intro1stage$111 Def0035
+S A$intro1stage$121 Def0042
 S C$intro1stage.c$22$1$22 Def0029
-S A$intro1stage$122 Def003D
-S A$intro1stage$113 Def0031
-S A$intro1stage$104 Def0025
-S A$intro1stage$123 Def003E
-S A$intro1stage$114 Def0032
-S A$intro1stage$105 Def0028
-S A$intro1stage$124 Def0041
-S A$intro1stage$115 Def0035
+S A$intro1stage$105 Def0029
+S A$intro1stage$115 Def0036
+S A$intro1stage$106 Def002A
 S C$intro1stage.c$25$1$22 Def0036
 S C$intro1stage.c$16$1$22 Def0001
-S A$intro1stage$125 Def0042
+S A$intro1stage$116 Def0039
+S A$intro1stage$107 Def002D
 S C$intro1stage.c$26$1$22 Def0043
-S A$intro1stage$109 Def0029
+S A$intro1stage$126 Def0043
+S A$intro1stage$117 Def003A
+S A$intro1stage$108 Def002E
+S A$intro1stage$118 Def003D
+S A$intro1stage$109 Def0031
 S C$intro1stage.c$19$1$22 Def0019
-S A$intro1stage$119 Def0036
+S A$intro1stage$119 Def003E
 S C$intro1stage.c$11$0$0 Def0000
 S G$InitIntro1Stage$0$0 Def0001
 S C$intro1stage.c$13$0$0 Def0001
-S A$intro1stage$90 Def0011
-S A$intro1stage$81 Def0001
-S A$intro1stage$91 Def0014
-S A$intro1stage$82 Def0003
+S A$intro1stage$80 Def0005
+S A$intro1stage$81 Def0008
+S A$intro1stage$82 Def0009
+S A$intro1stage$64 Def0000
 S _InitIntro1Stage Def0001
-S A$intro1stage$92 Def0017
-S A$intro1stage$83 Def0004
-S A$intro1stage$93 Def0018
-S A$intro1stage$84 Def0005
-S A$intro1stage$85 Def0008
+S A$intro1stage$83 Def000C
+S A$intro1stage$93 Def0019
+S A$intro1stage$84 Def000D
+S A$intro1stage$94 Def001B
+S A$intro1stage$85 Def0010
 S G$intro1stage_foo$0$0 Def0000
-S A$intro1stage$86 Def0009
-S A$intro1stage$68 Def0000
-S A$intro1stage$87 Def000C
-S A$intro1stage$97 Def0019
-S A$intro1stage$88 Def000D
-S A$intro1stage$98 Def001B
-S A$intro1stage$89 Def0010
-S A$intro1stage$99 Def001C
+S A$intro1stage$95 Def001C
+S A$intro1stage$86 Def0011
+S A$intro1stage$77 Def0001
+S A$intro1stage$96 Def001D
+S A$intro1stage$87 Def0014
+S A$intro1stage$78 Def0003
+S A$intro1stage$97 Def0020
+S A$intro1stage$88 Def0017
+S A$intro1stage$79 Def0004
+S A$intro1stage$98 Def0021
+S A$intro1stage$89 Def0018
+S A$intro1stage$99 Def0024
 S C$intro1stage.c$9$0$0 Def0000
 S XG$InitIntro1Stage$0$0 Def0043
 S _intro1stage_foo Def0000
 S XG$intro1stage_foo$0$0 Def0000
-A _DATA size 12 flags 0 addr 0
-S G$stage3stars$0$0 Def0000
-S _stage3stars Def0000
+A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
 A _HOME size 0 flags 0 addr 0
@@ -77,10 +75,6 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00
-R 00 00 01 00
-T 00 00
-R 00 00 01 00
 T 00 00
 R 00 00 00 00
 T 00 00 C9

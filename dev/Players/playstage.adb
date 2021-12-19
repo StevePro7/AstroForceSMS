@@ -11,13 +11,13 @@ S:Lplaystage.InitStageSprites$a$1$85({1}SC:U),R,0,0,[c]
 F:G$InitCustomStageData$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitStageData$0$0({2}DF,SV:S),Z,0,12,0,0,0
 S:Lplaystage.InitStageData$i$1$89({2}SI:U),B,1,4
-S:Lplaystage.InitStageData$palette_bin$1$90({2}DG,SC:U),B,1,-4
-S:Lplaystage.InitStageData$palette_bin_bank$1$90({2}SI:U),B,1,-8
-S:Lplaystage.InitStageData$tilemap_l$1$90({2}DG,SC:U),B,1,-10
-S:Lplaystage.InitStageData$tilemap_l_size$1$90({2}SI:U),B,1,-12
+S:Lplaystage.InitStageData$palette_bin$1$90({2}DG,SC:U),B,1,-10
+S:Lplaystage.InitStageData$palette_bin_bank$1$90({2}SI:U),B,1,-4
+S:Lplaystage.InitStageData$tilemap_l$1$90({2}DG,SC:U),B,1,-12
+S:Lplaystage.InitStageData$tilemap_l_size$1$90({2}SI:U),B,1,-6
 S:Lplaystage.InitStageData$tilemap_m$1$90({2}DG,SC:U),B,1,-2
 S:Lplaystage.InitStageData$psg$1$90({2}DG,SC:U),R,0,0,[c,b]
-S:Lplaystage.InitStageData$psg_bank$1$90({2}SI:U),B,1,-6
+S:Lplaystage.InitStageData$psg_bank$1$90({2}SI:U),B,1,-8
 S:Lplaystage.InitStageData$loop_psg$1$90({1}SC:U),R,0,0,[e]
 F:G$UpdateStagePassA$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdateStagePassB$0$0({2}DF,SV:S),Z,0,0,0,0,0
@@ -30,7 +30,6 @@ T:Fplaystage$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$scripterscri
 T:Fplaystage$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fplaystage$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fplaystage$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
-S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$keystatus$0$0({2}SI:U),E,0,0
 S:G$stageframe$0$0({2}SI:U),E,0,0
 S:G$stageframe2mod$0$0({1}SC:U),E,0,0
@@ -109,6 +108,7 @@ S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
+S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$barromx$0$0({0}DA0d,SC:S),E,0,0
 S:G$barromy$0$0({0}DA0d,SC:S),E,0,0
 S:G$barromtime$0$0({1}SC:U),E,0,0

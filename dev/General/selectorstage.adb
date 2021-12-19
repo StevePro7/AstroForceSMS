@@ -1,12 +1,12 @@
 M:selectorstage
 F:G$UpdateSelectorMarks$0$0({2}DF,SV:S),Z,0,3,0,0,0
 S:Lselectorstage.UpdateSelectorMarks$selected_stage$1$45({1}SC:U),B,1,4
-S:Lselectorstage.UpdateSelectorMarks$a$1$46({1}SC:U),B,1,-4
+S:Lselectorstage.UpdateSelectorMarks$a$1$46({1}SC:U),B,1,-5
 S:Lselectorstage.UpdateSelectorMarks$b$1$46({1}SC:U),B,1,-3
-S:Lselectorstage.UpdateSelectorMarks$c$1$46({1}SC:U),B,1,-5
+S:Lselectorstage.UpdateSelectorMarks$c$1$46({1}SC:U),B,1,-4
 S:Lselectorstage.UpdateSelectorMarks$d$1$46({1}SC:U),R,0,0,[c]
-S:Lselectorstage.UpdateSelectorMarks$sloc0$1$0({1}SC:U),B,1,-1
-S:Lselectorstage.UpdateSelectorMarks$sloc1$1$0({1}SC:U),B,1,-2
+S:Lselectorstage.UpdateSelectorMarks$sloc0$1$0({1}SC:U),B,1,-2
+S:Lselectorstage.UpdateSelectorMarks$sloc1$1$0({1}SC:U),B,1,-1
 F:G$InitSelectorStage$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lselectorstage.InitSelectorStage$selected_stage$1$54({1}SC:U),R,0,0,[c]
 S:Lselectorstage.InitSelectorStage$keyfree$1$54({1}SC:U),R,0,0,[b]
@@ -18,7 +18,6 @@ T:Fselectorstage$script[({0}S:S$scripterpass$0$0({2}SI:U),Z,0,0)({2}S:S$scripter
 T:Fselectorstage$playershoot[({0}S:S$playershootx$0$0({1}SC:U),Z,0,0)({1}S:S$playershooty$0$0({1}SC:U),Z,0,0)({2}S:S$playershoottype$0$0({1}SC:U),Z,0,0)({3}S:S$playershootvelx$0$0({1}SC:S),Z,0,0)({4}S:S$playershootvely$0$0({1}SC:U),Z,0,0)]
 T:Fselectorstage$explosion[({0}S:S$explosionposx$0$0({1}SC:U),Z,0,0)({1}S:S$explosionposy$0$0({1}SC:U),Z,0,0)({2}S:S$explosionsprite$0$0({1}SC:U),Z,0,0)({3}S:S$explosiontype$0$0({1}SC:U),Z,0,0)]
 T:Fselectorstage$timeredlabel[({0}S:S$timeredlabely$0$0({1}SC:U),Z,0,0)({1}S:S$timeredlabelt$0$0({1}SC:U),Z,0,0)]
-S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_names$0$0({0}DA0d,DG,SC:U),E,0,0
@@ -111,6 +110,7 @@ S:G$lastplayedmusic$0$0({2}DG,SC:U),E,0,0
 S:G$lastplayedmusicbank$0$0({1}SC:U),E,0,0
 S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
+S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$UpdatePlayerIndicators$0$0({2}DF,SV:S),C,0,0
 S:G$InitPlayer$0$0({2}DF,SV:S),C,0,0
 S:G$InitPlayerSprite$0$0({2}DF,SV:S),C,0,0

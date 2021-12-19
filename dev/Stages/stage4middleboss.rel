@@ -1,52 +1,50 @@
 ;!FILE stage4middleboss.asm
 XL2
-H 9 areas 2A global symbols
+H 9 areas 28 global symbols
 M stage4middleboss
 O -mz80
 S .__.ABS. Def0000
 A _CODE size 29 flags 0 addr 0
-S A$stage4middleboss$102 Def001F
-S A$stage4middleboss$103 Def0020
-S A$stage4middleboss$104 Def0021
-S A$stage4middleboss$114 Def0028
-S A$stage4middleboss$105 Def0022
-S A$stage4middleboss$106 Def0023
-S A$stage4middleboss$107 Def0024
-S A$stage4middleboss$109 Def0026
+S A$stage4middleboss$100 Def0021
+S A$stage4middleboss$110 Def0028
+S A$stage4middleboss$101 Def0022
+S A$stage4middleboss$102 Def0023
+S A$stage4middleboss$103 Def0024
+S A$stage4middleboss$105 Def0026
 S C$stage4middleboss.c$10$1$6 Def0009
 S C$stage4middleboss.c$11$1$6 Def0015
-S A$stage4middleboss$80 Def0009
+S A$stage4middleboss$60 Def0000
+S A$stage4middleboss$70 Def0001
+S A$stage4middleboss$80 Def0011
+S A$stage4middleboss$71 Def0003
 S C$stage4middleboss.c$13$2$7 Def0019
-S A$stage4middleboss$81 Def000C
+S A$stage4middleboss$81 Def0012
+S A$stage4middleboss$72 Def0007
 S C$stage4middleboss.c$16$1$6 Def0028
 S C$stage4middleboss.c$14$2$7 Def001F
-S A$stage4middleboss$91 Def0015
-S A$stage4middleboss$82 Def000F
-S A$stage4middleboss$64 Def0000
-S A$stage4middleboss$92 Def0017
-S A$stage4middleboss$83 Def0010
-S A$stage4middleboss$74 Def0001
-S A$stage4middleboss$84 Def0011
-S A$stage4middleboss$75 Def0003
+S A$stage4middleboss$82 Def0013
+S A$stage4middleboss$92 Def0019
+S A$stage4middleboss$83 Def0014
+S A$stage4middleboss$93 Def001C
 S G$DoCommonBossAppearingFunction$0$0 Def0001
-S A$stage4middleboss$85 Def0012
-S A$stage4middleboss$76 Def0007
+S A$stage4middleboss$94 Def001D
+S A$stage4middleboss$76 Def0009
 S G$stage4middleboss_foo$0$0 Def0000
-S A$stage4middleboss$86 Def0013
-S A$stage4middleboss$96 Def0019
-S A$stage4middleboss$87 Def0014
+S A$stage4middleboss$77 Def000C
+S A$stage4middleboss$87 Def0015
+S A$stage4middleboss$78 Def000F
 S C$stage4middleboss.c$4$0$0 Def0000
-S A$stage4middleboss$97 Def001C
-S A$stage4middleboss$98 Def001D
+S A$stage4middleboss$88 Def0017
+S A$stage4middleboss$79 Def0010
+S A$stage4middleboss$98 Def001F
 S C$stage4middleboss.c$6$0$0 Def0000
+S A$stage4middleboss$99 Def0020
 S C$stage4middleboss.c$8$0$0 Def0001
 S _DoCommonBossAppearingFunction Def0001
 S _stage4middleboss_foo Def0000
 S XG$DoCommonBossAppearingFunction$0$0 Def0028
 S XG$stage4middleboss_foo$0$0 Def0000
-A _DATA size 12 flags 0 addr 0
-S G$stage3stars$0$0 Def0000
-S _stage3stars Def0000
+A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
 A _HOME size 0 flags 0 addr 0
@@ -54,10 +52,6 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00
-R 00 00 01 00
-T 00 00
-R 00 00 01 00
 T 00 00
 R 00 00 00 00
 T 00 00 C9
