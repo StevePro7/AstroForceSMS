@@ -4,7 +4,7 @@
 #include "../banks/fixedbank.h"
 #include "../defines.h"
 #include "../funcs.h"
-#include "../vars.h"
+#include <stdlib.h>
 
 // Load player sprite
 void InitEnemyshootSprites()
@@ -71,52 +71,52 @@ void InitEnemyshootSprites()
 //		PlaySound( enemylaser_psg, 1 );
 //	}
 //}
-//
-//// Create a Enemy shoot.. moved here as needed before header file
-//void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced )
-//{
-//	signed int dx, dy, dm;
-//	enemyshoot *es;
-//
-//	shootcount++;
-//
-//	if( numenemyshoots < MAXENEMYSHOOTS )
-//	{
-//		if( ( shootcount % ( ENEMYSHOOTDENSITY - gamelevel ) == 0 ) || ( forced == 1 ) )
-//		{
-//			es = &enemyshoots[ numenemyshoots ];
-//
-//			// Better granularity although faster enemy shoots
-//			dx = playerx - x;
-//			dy = playery - y;
-//			dm = abs( dx ) + abs( dy );
-//
-//			// Ahora solo dispara si est� relativamente lejos
-//			if( dm > 64 )
-//			{
-//				// Position
-//				es->enemyshootposx = x;
-//				es->enemyshootposy = y;
-//
-//				// Type
-//				es->enemyshoottype = ENEMYSHOOT_NORMAL;
-//
-//				// Speed
-//				dx *= playstageshootspeed;
-//				dy *= playstageshootspeed;
-//				dx /= dm;
-//				dy /= dm;
-//
-//				// Set velocity
-//				es->enemyshootvelx = dx;
-//				es->enemyshootvely = dy;
-//
-//				// Increment
-//				numenemyshoots++;
-//			}
-//		}
-//	}
-//}
+
+// Create a Enemy shoot.. moved here as needed before header file
+void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced )
+{
+	signed int dx, dy, dm;
+	enemyshoot *es;
+
+	shootcount++;
+
+	if( numenemyshoots < MAXENEMYSHOOTS )
+	{
+		if( ( shootcount % ( ENEMYSHOOTDENSITY - gamelevel ) == 0 ) || ( forced == 1 ) )
+		{
+			es = &enemyshoots[ numenemyshoots ];
+
+			// Better granularity although faster enemy shoots
+			dx = playerx - x;
+			dy = playery - y;
+			dm = abs( dx ) + abs( dy );
+
+			// Ahora solo dispara si est� relativamente lejos
+			if( dm > 64 )
+			{
+				// Position
+				es->enemyshootposx = x;
+				es->enemyshootposy = y;
+
+				// Type
+				es->enemyshoottype = ENEMYSHOOT_NORMAL;
+
+				// Speed
+				dx *= playstageshootspeed;
+				dy *= playstageshootspeed;
+				dx /= dm;
+				dy /= dm;
+
+				// Set velocity
+				es->enemyshootvelx = dx;
+				es->enemyshootvely = dy;
+
+				// Increment
+				numenemyshoots++;
+			}
+		}
+	}
+}
 
 // Test collision
 unsigned char CheckMapCollision( unsigned char x, unsigned char y )
@@ -197,25 +197,25 @@ void InitEnemyshoots()
 	numenemyshoots = 0;
 }
 
-//void KillEnemyshoots()
-//{
-//	numenemyshoots = 0;
-//}
-//
-//void TestEnemyShoot( enemy *en, unsigned char freq )
-//{
-//	if( en->enemyframe%freq == 2 )
-//		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
-//}
-//
-//void TestEnemyShootOne( enemy *en, unsigned char freq )
-//{
-//	if( en->enemyframe == freq )
-//		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
-//}
-//
-//void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy )
-//{
-//	if( en->enemyframe%freq == 2 )
-//		InitEnemyshoot( en->enemyposx + dx, en->enemyposy + dy, 1 );
-//}
+void KillEnemyshoots()
+{
+	numenemyshoots = 0;
+}
+
+void TestEnemyShoot( enemy *en, unsigned char freq )
+{
+	if( en->enemyframe%freq == 2 )
+		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
+}
+
+void TestEnemyShootOne( enemy *en, unsigned char freq )
+{
+	if( en->enemyframe == freq )
+		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
+}
+
+void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy )
+{
+	if( en->enemyframe%freq == 2 )
+		InitEnemyshoot( en->enemyposx + dx, en->enemyposy + dy, 1 );
+}
