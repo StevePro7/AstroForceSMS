@@ -1,9 +1,10 @@
 #ifndef _INTROSTAR_H_
 #define _INTROSTAR_H_
 
-void introstar_foo();
+#include "../defines.h"
 
-//void InitIntroStar( enemy *en );
-//unsigned char UpdateIntroStar( enemy *en );
+// ADRIANA
+void InitIntroStar( enemy *en );
+unsigned char UpdateIntroStar( enemy *en );
 
 #endif//_INTROSTAR_H_

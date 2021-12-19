@@ -6,10 +6,6 @@
 #include "../defines.h"
 #include "../funcs.h"
 
-void intro1stage_foo()
-{
-}
-
 void InitIntro1Stage()
 {
 	// Cargamos los graficos a la pantalla

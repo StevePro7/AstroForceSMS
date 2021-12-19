@@ -1,9 +1,9 @@
 #ifndef _INTROSIDEPLAYER_H_
 #define _INTROSIDEPLAYER_H_
 
-// ADRIANA
 #include "../defines.h"
 
+// ADRIANA
 void InitIntroSidePlayer( enemy *en );
 unsigned char UpdateIntroSidePlayer( enemy *en );
 
