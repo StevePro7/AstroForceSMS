@@ -1,5 +1,6 @@
 #include "enemyshoot.h"
 #include "../devkit/_sms_manager.h"
+#include "../banks/bank2.h"
 #include "../banks/bank7.h"
 #include "../banks/fixedbank.h"
 #include "../defines.h"
@@ -12,65 +13,65 @@ void InitEnemyshootSprites()
 	LoadSprite( enemyshoot_psgcompr, ENEMYSHOOTBASE, enemyshoot_psgcompr_bank );
 }
 
-//void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy )
-//{
-//	enemyshoot *es;
-//
-//	shootcount++;
-//	if( numenemyshoots < MAXENEMYSHOOTS )
-//	{
-//		es = &enemyshoots[ numenemyshoots ];
-//
-//		// Position
-//		es->enemyshootposx = x;
-//		es->enemyshootposy = y;
-//
-//		// Type
-//		es->enemyshoottype = ENEMYSHOOT_NORMAL;
-//
-//		// Set velocity
-//		es->enemyshootvelx = vx;
-//		es->enemyshootvely = vy;
-//
-//		// Increment
-//		numenemyshoots++;
-//	}
-//}
-//
-//void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count )
-//{
-//	unsigned char a;
-//	for( a = 0; a < count; a++ )
-//		InitEnemyshootDirection( x, y, vx[ a ], vy[ a ] );
-//}
-//
-//void InitEnemyshootLaser( unsigned char x, unsigned char y )
-//{
-//	enemyshoot *es;
-//
-//	shootcount++;
-//	if( numenemyshoots < MAXENEMYSHOOTS )
-//	{
-//		es = &enemyshoots[ numenemyshoots ];
-//
-//		// Position
-//		es->enemyshootposx = x;
-//		es->enemyshootposy = y;
-//
-//		// Type
-//		es->enemyshoottype = ENEMYSHOOT_LASER;
-//
-//		// Set velocity
-//		es->enemyshootvelx = 0;
-//		es->enemyshootvely = DEFAULTENEMYSHOOTLASERSPEED + ( gamelevel << 1 );
-//
-//		// Increment
-//		numenemyshoots++;
-//
-//		// Sound
-//		PlaySound( enemylaser_psg, 1 );
-//	}
-//}
+void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy )
+{
+	enemyshoot *es;
+
+	shootcount++;
+	if( numenemyshoots < MAXENEMYSHOOTS )
+	{
+		es = &enemyshoots[ numenemyshoots ];
+
+		// Position
+		es->enemyshootposx = x;
+		es->enemyshootposy = y;
+
+		// Type
+		es->enemyshoottype = ENEMYSHOOT_NORMAL;
+
+		// Set velocity
+		es->enemyshootvelx = vx;
+		es->enemyshootvely = vy;
+
+		// Increment
+		numenemyshoots++;
+	}
+}
+
+void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count )
+{
+	unsigned char a;
+	for( a = 0; a < count; a++ )
+		InitEnemyshootDirection( x, y, vx[ a ], vy[ a ] );
+}
+
+void InitEnemyshootLaser( unsigned char x, unsigned char y )
+{
+	enemyshoot *es;
+
+	shootcount++;
+	if( numenemyshoots < MAXENEMYSHOOTS )
+	{
+		es = &enemyshoots[ numenemyshoots ];
+
+		// Position
+		es->enemyshootposx = x;
+		es->enemyshootposy = y;
+
+		// Type
+		es->enemyshoottype = ENEMYSHOOT_LASER;
+
+		// Set velocity
+		es->enemyshootvelx = 0;
+		es->enemyshootvely = DEFAULTENEMYSHOOTLASERSPEED + ( gamelevel << 1 );
+
+		// Increment
+		numenemyshoots++;
+
+		// Sound
+		PlaySound( ( unsigned char * ) enemylaser_psg, 1 );
+	}
+}
 
 // Create a Enemy shoot.. moved here as needed before header file
 void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced )
