@@ -5,10 +5,6 @@
 #include "../banks/fixedbank.h"
 #include "../funcs.h"
 
-void intro3object_foo()
-{
-}
-
 #ifdef _CONSOLE
 #pragma warning(disable: 4090)
 #else

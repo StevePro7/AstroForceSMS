@@ -3014,8 +3014,8 @@ const MyCheckCollisionFunction checkcollisionfunctions[] =
 const MyInitEnemyFunction updateintro3objectfunctions[] =
 {
 	UpdateIntro3Object1,
-//	UpdateIntro3Object2,
-//	UpdateIntro3Object3
+	UpdateIntro3Object2,
+	UpdateIntro3Object3
 };
 
 ////////////////////////////////////////////////////
