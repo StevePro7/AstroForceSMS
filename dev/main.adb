@@ -252,7 +252,14 @@ S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage5endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage3endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$InitMikGamesStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitLogoStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateJukeboxInfo$0$0({2}DF,SC:U),C,0,0

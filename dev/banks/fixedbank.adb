@@ -13,7 +13,7 @@ S:G$imagepointers$0$0({172}DA86d,DG,SC:U),E,0,0
 S:G$monsterheadshootdirecionsx$0$0({16}DA16d,SC:S),E,0,0
 S:G$monsterheadshootdirecionsy$0$0({16}DA16d,SC:S),E,0,0
 S:G$difficultlabels$0$0({4}DA2d,DG,SC:U),E,0,0
-S:G$playerupdatefunctions$0$0({6}DA3d,DC,DF,SV:S),E,0,0
+S:G$playerupdatefunctions$0$0({14}DA7d,DC,DF,SV:S),E,0,0
 S:G$InitWarning$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateWarning$0$0({2}DF,SC:U),C,0,0
 S:G$InitIntroSidePlayer$0$0({2}DF,SV:S),C,0,0
@@ -75,7 +75,14 @@ S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
+S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage5endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage3endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$bigexplosion_psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$ending_psg$0$0({0}DA0d,SC:U),D,0,0
 S:G$enemybomb_psg$0$0({0}DA0d,SC:U),D,0,0
@@ -306,8 +313,8 @@ S:G$stage7_statics$0$0({960}DA480d,SI:U),D,0,0
 S:G$initenemyfunctions$0$0({110}DA55d,DC,DF,SV:S),D,0,0
 S:G$updateenemyfunctions$0$0({172}DA86d,DC,DF,SC:U),D,0,0
 S:G$updatestagefunctions$0$0({18}DA9d,DC,DF,SV:S),D,0,0
-S:G$initstagefunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
-S:G$killenemyfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
+S:G$initstagefunctions$0$0({18}DA9d,DC,DF,SV:S),D,0,0
+S:G$killenemyfunctions$0$0({38}DA19d,DC,DF,SV:S),D,0,0
 S:G$stage4_scrollers$0$0({160}DA80d,SI:S),D,0,0
 S:G$stage1_scrollers$0$0({40}DA20d,SI:S),D,0,0
 S:G$stage2_scrollers$0$0({30}DA15d,SI:S),D,0,0
@@ -326,6 +333,11 @@ S:G$stage4spriteslist$0$0({10}DA10d,SC:U),D,0,0
 S:G$stage6spriteslist$0$0({3}DA3d,SC:U),D,0,0
 S:G$stage6script$0$0({10}DA10d,SC:U),D,0,0
 S:G$stage6scriptb$0$0({10}DA10d,SC:U),D,0,0
+S:G$updatestage6endbossfunctions$0$0({14}DA7d,DC,DF,SV:S),D,0,0
+S:G$updatestage5endbossfunctions$0$0({10}DA5d,DC,DF,SV:S),D,0,0
+S:G$updatestage3endbossfunctions$0$0({10}DA5d,DC,DF,SV:S),D,0,0
+S:G$updatestage4middlebossfunctions$0$0({10}DA5d,DC,DF,SV:S),D,0,0
+S:G$updatestage4endbossfunctions$0$0({16}DA8d,DC,DF,SV:S),D,0,0
 S:G$vulcantankshootspeedx$0$0({3}DA3d,SC:S),D,0,0
 S:G$vulcantankshootspeedy$0$0({3}DA3d,SC:S),D,0,0
 S:G$vulcanstationshootspeedx$0$0({3}DA3d,SC:S),D,0,0
@@ -334,6 +346,7 @@ S:G$stage8bosscshootspeedx$0$0({16}DA16d,SC:S),D,0,0
 S:G$stage8bosscshootspeedy$0$0({15}DA15d,SC:S),D,0,0
 S:G$stage8bossbshootspeedx$0$0({16}DA16d,SC:S),D,0,0
 S:G$stage8bossbshootspeedy$0$0({16}DA16d,SC:S),D,0,0
+S:G$updatestage7middlebossfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$checkcollisionfunctions$0$0({2}DA1d,DC,DF,SC:U),D,0,0
 S:G$updateintro3objectfunctions$0$0({2}DA1d,DC,DF,SV:S),D,0,0
 S:G$stage8spriteslist$0$0({7}DA7d,SC:U),D,0,0
