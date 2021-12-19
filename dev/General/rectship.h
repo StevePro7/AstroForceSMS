@@ -1,8 +1,9 @@
 #ifndef _RECTSHIP_H_
 #define _RECTSHIP_H_
 
-void rectship_foo();
+#include "../defines.h"
 
-//unsigned char UpdateRectShip( enemy *en );
+// ADRIANA
+unsigned char UpdateRectShip( enemy *en );
 
 #endif//_RECTSHIP_H_
