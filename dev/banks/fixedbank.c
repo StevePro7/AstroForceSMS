@@ -2263,8 +2263,8 @@ const MyUpdateEnemyFunction updateenemyfunctions[] =
 const MyKillEnemyFunction updatestagefunctions[] =
 {
 	0,
-//	UpdateStage7,
-//	UpdateStage5,
+	0, //	UpdateStage7,
+	UpdateStage5,
 //	UpdateStage4,
 //	UpdateStage2,
 //	UpdateStage8,

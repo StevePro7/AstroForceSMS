@@ -1,13 +1,14 @@
 #ifndef _PLAYERSHOOT_H_
 #define _PLAYERSHOOT_H_
 
-void playershoot_foo();
+#include "../vars.h"
 
-//void DrawPlayerShoot( playershoot *ps );
-//void InitPlayershootSprites();
-//void RemovePlayershoot( signed char a );
-//void UpdatePlayershoot( unsigned int a );
-//void UpdatePlayershoots();
+// ADRIANA
+void DrawPlayerShoot( playershoot *ps );
+void InitPlayershootSprites();
+void RemovePlayershoot( signed char a );
+void UpdatePlayershoot( unsigned int a );
+void UpdatePlayershoots();
 void InitPlayershoot( unsigned char x, unsigned char y, unsigned char t );
 void InitPlayershoots();
 

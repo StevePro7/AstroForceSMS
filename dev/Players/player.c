@@ -2,6 +2,7 @@
 #include "playershoot.h"
 #include "../devkit/_sms_manager.h"
 #include "../banks/bank14.h"
+#include "../banks/fixedbank.h"
 #include "../defines.h"
 #include "../funcs.h"
 #include "../vars.h"
@@ -267,21 +268,21 @@ void CheckShootPlayer()
 //	}
 //	DrawPlayer();
 //}
-//
-//// Update player status
-//void UpdatePlayer()
-//{
-//	// Counter
-//	playercounter++;
-//
-//	// Side by default
-//	playerside = 0;
-//
-//	// State
-//	changeBank( FIXEDBANKSLOT );
-//	if( 0 != playerupdatefunctions[ playertype ] )
-//		( *( playerupdatefunctions[ playertype ] ) )( );
-//}
+
+// Update player status
+void UpdatePlayer()
+{
+	// Counter
+	playercounter++;
+
+	// Side by default
+	playerside = 0;
+
+	// State
+	changeBank( FIXEDBANKSLOT );
+	if( 0 != playerupdatefunctions[ playertype ] )
+		( *( playerupdatefunctions[ playertype ] ) )( );
+}
 
 void InitPlayerConstants()
 {

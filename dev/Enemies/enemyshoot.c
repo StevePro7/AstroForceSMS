@@ -1,5 +1,6 @@
 #include "enemyshoot.h"
 #include "../banks/bank7.h"
+#include "../banks/fixedbank.h"
 #include "../defines.h"
 #include "../funcs.h"
 #include "../vars.h"
@@ -119,20 +120,20 @@ void InitEnemyshootSprites()
 //		}
 //	}
 //}
-//
-//// Test collision
-//unsigned char CheckMapCollision( unsigned char x, unsigned char y )
-//{
-//	// Updates of stage
-//	if( stageframe2mod == 0 )
-//	{
-//		changeBank( FIXEDBANKSLOT );
-//		if( checkcollisionfunctions[ playstage ] != 0 )
-//			return ( *( checkcollisionfunctions[ playstage ] ) )( x, y );
-//	}
-//	return 0;
-//}
-//
+
+// Test collision
+unsigned char CheckMapCollision( unsigned char x, unsigned char y )
+{
+	// Updates of stage
+	if( stageframe2mod == 0 )
+	{
+		changeBank( FIXEDBANKSLOT );
+		if( checkcollisionfunctions[ playstage ] != 0 )
+			return ( *( checkcollisionfunctions[ playstage ] ) )( x, y );
+	}
+	return 0;
+}
+
 //// Remove enemyshoot
 //void RemoveEnemyshoot( signed char a )
 //{

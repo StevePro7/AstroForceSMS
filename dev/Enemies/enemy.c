@@ -1,23 +1,20 @@
 #include "enemy.h"
+#include "../General/explosion.h"
+#include "../General/powerup.h"
 #include "../banks/fixedbank.h"
 #include "../funcs.h"
-#include "../vars.h"
 
-void enemy_foo()
+// Check collision with playershoot
+unsigned char checkEnemyPlayerShoot( enemy *en, playershoot *ps )
 {
+	if( ( en->enemyposy<ps->playershooty + 12 )
+		&& ( en->enemyposy + en->enemyheight>ps->playershooty )
+		&& ( en->enemyposx<ps->playershootx + 16 )
+		&& ( en->enemyposx + en->enemywidth>ps->playershootx ) )
+		return 1;
+	return 0;
 }
 
-//// Check collision with playershoot
-//unsigned char checkEnemyPlayerShoot( enemy *en, playershoot *ps )
-//{
-//	if( ( en->enemyposy<ps->playershooty + 12 )
-//		&& ( en->enemyposy + en->enemyheight>ps->playershooty )
-//		&& ( en->enemyposx<ps->playershootx + 16 )
-//		&& ( en->enemyposx + en->enemywidth>ps->playershootx ) )
-//		return 1;
-//	return 0;
-//}
-//
 //// Get direction to player
 //void GetEnemyDirection( enemy *en )
 //{
@@ -61,40 +58,40 @@ void RemoveEnemy( signed char a )
 	if( numenemies>0 )numenemies--;
 }
 
-//void KillEnemy( unsigned char a )
-//{
-//	enemy *en;
-//	unsigned char t;
-//
-//	// Security check
-//	if( a >= numenemies )return;
-//
-//	// Get enemy
-//	en = &enemies[ a ];
-//
-//	// Type of explosion
-//	if( en->enemywidth <= 17 )
-//	{
-//		InitExplosion( en->enemyposx, en->enemyposy, 1 );
-//		InitPowerup( en );
-//	}
-//	else
-//		InitSpawnedExplosion( en->enemyposx, en->enemyposy, en->enemywidth, en->enemyheight );
-//
-//	// Get enemy type
-//	t = en->enemytype;
-//
-//	// Remove
-//	RemoveEnemy( a );
-//
-//	// Custom remove
-//	changeBank( FIXEDBANKSLOT );
-//	if( killenemyfunctions[ t ] != 0 )
-//		( *( killenemyfunctions[ t ] ) )( );
-//}
-//
-//
-//
+void KillEnemy( unsigned char a )
+{
+	enemy *en;
+	unsigned char t;
+
+	// Security check
+	if( a >= numenemies )return;
+
+	// Get enemy
+	en = &enemies[ a ];
+
+	// Type of explosion
+	if( en->enemywidth <= 17 )
+	{
+		InitExplosion( en->enemyposx, en->enemyposy, 1 );
+		InitPowerup( en );
+	}
+	else
+		InitSpawnedExplosion( en->enemyposx, en->enemyposy, en->enemywidth, en->enemyheight );
+
+	// Get enemy type
+	t = en->enemytype;
+
+	// Remove
+	RemoveEnemy( a );
+
+	// Custom remove
+	changeBank( FIXEDBANKSLOT );
+	if( killenemyfunctions[ t ] != 0 )
+		( *( killenemyfunctions[ t ] ) )( );
+}
+
+
+
 //void KillEnemies( unsigned char force )
 //{
 //	signed char a;

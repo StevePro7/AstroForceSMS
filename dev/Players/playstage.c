@@ -118,26 +118,26 @@ void InitStageData( unsigned int i )
 }
 
 // Pass A
-//void UpdateStagePassA()
-//{
-//	// Player indicators
-//	UpdatePlayerIndicators();
-//
-//	// Update powerups
-//	UpdatePowerup();
-//
-//	// Update player
-//	UpdatePlayer();
-//
-//	// Update player shoots
-//	UpdatePlayershoots();
-//
-//	// Enemy shoots
-//	UpdateEnemyshoots();
-//
-//	// Update explosions
-//	UpdateExplosions();
-//}
+void UpdateStagePassA()
+{
+	// Player indicators
+	UpdatePlayerIndicators();
+
+	// Update powerups
+	UpdatePowerup();
+
+	// Update player
+	//UpdatePlayer();
+
+	// Update player shoots
+	//UpdatePlayershoots();
+
+	// Enemy shoots
+	//UpdateEnemyshoots();
+
+	// Update explosions
+	UpdateExplosions();
+}
 
 
 //void UpdateStagePassB()
@@ -236,7 +236,7 @@ void InitPlayStage()
 			// Alternamos
 			if( stageframe2mod == 0 )
 			{
-				//UpdateStagePassA();		// TODO
+				UpdateStagePassA();
 			}
 			else
 			{
@@ -245,10 +245,15 @@ void InitPlayStage()
 
 			// Scripter
 			if( ( stageframe % 16 ) == 0 )
+			{
 				UpdateScripts();
+			}
 
 			// Hay que salirse?
-			if( exitplaystage == 1 )return;
+			if( exitplaystage == 1 )
+			{
+				return;
+			}
 
 			// Update psg
 			UpdatePSG();
