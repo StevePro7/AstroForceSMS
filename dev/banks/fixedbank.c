@@ -2289,12 +2289,12 @@ const MyKillEnemyFunction initstagefunctions[] =
 	0,
 	0,//	InitStage7,
 	InitStage5,
-//	InitStage4,
-//	InitStage2,
-//	InitStage8,
-//	InitStage3,
-//	InitStage1,
-//	InitStage6,
+	initstageAssert,//	InitStage4,
+	initstageAssert,//	InitStage2,
+	initstageAssert,//	InitStage8,
+	initstageAssert,//	InitStage3,
+	initstageAssert,//	InitStage1,
+	initstageAssert,//	InitStage6,
 };
 //
 //extern void FinishStage4MiddleBoss();
@@ -2310,91 +2310,91 @@ const MyKillEnemyFunction initstagefunctions[] =
 const MyKillEnemyFunction killenemyfunctions[] =
 {
 	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	FinishStage4MiddleBoss,
-//	InitAfterBossStage,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	InitAfterBossStage,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	FinishStage7MiddleBoss,
-//	InitAfterBossStage,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	FinishStage1MiddleBoss,
-//	InitAfterBossStage,
-//	0,
-//	FinishVulcanStation,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	InitAfterBossStage,
-//	0,
-//	0,
-//	0,
-//	0,
-//	FinishSpaceStation,
-//	0,
-//	InitAfterBossStage,
-//	FinishStage6EndBoss,
-//	0,
-//	0,
-//	0,
-//	0,
-//	InitAfterBossStage,
-//	0,
-//	InitAfterBossStage,
-//	InitAfterBossStage,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	0,
-//	InitAfterBossStage,
-//	0,
-//	0,
-//	InitAfterBossStage,
-//	FinishStage8BossC,
-//	0,
-//	0,
-//	0,
-//	0
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	FinishStage4MiddleBoss,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	FinishStage7MiddleBoss,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	FinishStage1MiddleBoss,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	killenemyAssert,//	FinishVulcanStation,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	FinishSpaceStation,
+	//	0,
+	killenemyAssert,//	InitAfterBossStage,
+	killenemyAssert,//	FinishStage6EndBoss,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	killenemyAssert,//	InitAfterBossStage,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	//	0,
+	killenemyAssert,//	InitAfterBossStage,
+	//	0,
+	//	0,
+	killenemyAssert,//	InitAfterBossStage,
+	killenemyAssert,//	FinishStage8BossC,
+	//	0,
+	//	0,
+	//	0,
+	//	0
 };
 
 // Scrollers
@@ -2845,31 +2845,31 @@ unsigned char *difficultlabels[] = { "EASY","HARD" };
 //extern void UpdateStage6EndBoss5( enemy *en );
 //extern void UpdateStage6EndBoss3A( enemy *en );
 
-//const MyInitEnemyFunction updatestage6endbossfunctions[] =
-//{
-//	UpdateStage6EndBoss0,
-//	UpdateStage6EndBoss1,
-//	UpdateStage6EndBoss2,
-//	UpdateStage6EndBoss3,
-//	UpdateStage6EndBoss4,
-//	UpdateStage6EndBoss5,
-//	UpdateStage6EndBoss3A
-//};
-//
+const MyInitEnemyFunction updatestage6endbossfunctions[] =
+{
+	updatestage6endbossAssert,//UpdateStage6EndBoss0,
+	updatestage6endbossAssert,//UpdateStage6EndBoss1,
+	updatestage6endbossAssert,//UpdateStage6EndBoss2,
+	updatestage6endbossAssert,//UpdateStage6EndBoss3,
+	updatestage6endbossAssert,//UpdateStage6EndBoss4,
+	updatestage6endbossAssert,//UpdateStage6EndBoss5,
+	updatestage6endbossAssert,//UpdateStage6EndBoss3A
+};
+
 //extern void UpdateStage5EndBoss0( enemy *en );
 //extern void UpdateStage5EndBoss1( enemy *en );
 //extern void UpdateStage5EndBoss2( enemy *en );
 //extern void UpdateStage5EndBoss3( enemy *en );
 //extern void UpdateStage5EndBoss4( enemy *en );
-//
-//const MyInitEnemyFunction updatestage5endbossfunctions[] =
-//{
-//	UpdateStage5EndBoss0,
-//	UpdateStage5EndBoss1,
-//	UpdateStage5EndBoss2,
-//	UpdateStage5EndBoss3,
-//	UpdateStage5EndBoss4
-//};
+
+const MyInitEnemyFunction updatestage5endbossfunctions[] =
+{
+	updatestage5endbossAssert,//UpdateStage5EndBoss0,
+	updatestage5endbossAssert,//UpdateStage5EndBoss1,
+	updatestage5endbossAssert,//UpdateStage5EndBoss2,
+	updatestage5endbossAssert,//UpdateStage5EndBoss3,
+	updatestage5endbossAssert,//UpdateStage5EndBoss4
+};
 
 
 //extern void	DoCommonBossAppearingFunction( enemy *en );
@@ -2877,30 +2877,30 @@ unsigned char *difficultlabels[] = { "EASY","HARD" };
 //extern void	UpdateStage3EndBoss2( enemy *en );
 //extern void	UpdateStage3EndBoss1( enemy *en );
 //extern void	UpdateStage3EndBoss2( enemy *en );
-//
-//const MyInitEnemyFunction updatestage3endbossfunctions[] =
-//{
-//	DoCommonBossAppearingFunction,
-//	UpdateStage3EndBoss1,
-//	UpdateStage3EndBoss2,
-//	UpdateStage3EndBoss1,
-//	UpdateStage3EndBoss2
-//};
-//
-//
+
+const MyInitEnemyFunction updatestage3endbossfunctions[] =
+{
+	DoCommonBossAppearingFunction,
+	updatestage3endbossAssert,//UpdateStage3EndBoss1,
+	updatestage3endbossAssert,//UpdateStage3EndBoss2,
+	updatestage3endbossAssert,//UpdateStage3EndBoss1,
+	updatestage3endbossAssert,//UpdateStage3EndBoss2
+};
+
+
 //extern void	UpdateStage4MiddleBoss1( enemy *en );
 //extern void	UpdateStage4MiddleBoss2( enemy *en );
 //extern void	UpdateStage4MiddleBoss3( enemy *en );
 //extern void	UpdateStage4MiddleBoss4( enemy *en );
-//
-//const MyInitEnemyFunction updatestage4middlebossfunctions[] =
-//{
-//	DoCommonBossAppearingFunction,
-//	UpdateStage4MiddleBoss1,
-//	UpdateStage4MiddleBoss2,
-//	UpdateStage4MiddleBoss3,
-//	UpdateStage4MiddleBoss4
-//};
+
+const MyInitEnemyFunction updatestage4middlebossfunctions[] =
+{
+	DoCommonBossAppearingFunction,
+	updatestage4middlebossAssert,//UpdateStage4MiddleBoss1,
+	updatestage4middlebossAssert,//	UpdateStage4MiddleBoss2,
+	updatestage4middlebossAssert,//UpdateStage4MiddleBoss3,
+	updatestage4middlebossAssert,//UpdateStage4MiddleBoss4
+};
 
 //extern void	DoCommonBossAppearingFunction( enemy *en );
 //extern void	UpdateStage4EndBoss1( enemy *en );
@@ -2910,18 +2910,18 @@ unsigned char *difficultlabels[] = { "EASY","HARD" };
 //extern void	UpdateStage4EndBoss5( enemy *en );
 //extern void	UpdateStage4EndBoss6( enemy *en );
 //extern void	UpdateStage4EndBoss7( enemy *en );
-//
-//const MyInitEnemyFunction updatestage4endbossfunctions[] =
-//{
-//	DoCommonBossAppearingFunction,
-//	UpdateStage4EndBoss1,
-//	UpdateStage4EndBoss2,
-//	UpdateStage4EndBoss3,
-//	UpdateStage4EndBoss4,
-//	UpdateStage4EndBoss5,
-//	UpdateStage4EndBoss6,
-//	UpdateStage4EndBoss7
-//};
+
+const MyInitEnemyFunction updatestage4endbossfunctions[] =
+{
+	DoCommonBossAppearingFunction,
+	updatestage4endbossAssert,//UpdateStage4EndBoss1,
+	updatestage4endbossAssert,//UpdateStage4EndBoss2,
+	updatestage4endbossAssert,//UpdateStage4EndBoss3,
+	updatestage4endbossAssert,//UpdateStage4EndBoss4,
+	updatestage4endbossAssert,//UpdateStage4EndBoss5,
+	updatestage4endbossAssert,//UpdateStage4EndBoss6,
+	updatestage4endbossAssert,//UpdateStage4EndBoss7
+};
 
 const signed char vulcantankshootspeedx[] = { -DEFAULTENEMYSHOOTSPEED + 2,0,DEFAULTENEMYSHOOTSPEED - 2 };
 const signed char vulcantankshootspeedy[] = { DEFAULTENEMYSHOOTSPEED - 2,DEFAULTENEMYSHOOTSPEED,DEFAULTENEMYSHOOTSPEED - 2 };
@@ -2948,24 +2948,24 @@ MyKillEnemyFunction playerupdatefunctions[] =
 	0,
 	UpdatePlayerState1,
 	playerupdateAssert,//UpdatePlayerState2,
-	//UpdatePlayerState3,
-	//UpdatePlayerState4,
-	//UpdatePlayerState5,
-	//UpdatePlayerState6
+	playerupdateAssert,//UpdatePlayerState3,
+	playerupdateAssert,//UpdatePlayerState4,
+	playerupdateAssert,//UpdatePlayerState5,
+	playerupdateAssert,//UpdatePlayerState6
 };
 
 
 //extern void UpdateStage7MiddleBoss0( enemy *en );
 //extern void UpdateStage7MiddleBoss1( enemy *en );
 //extern void UpdateStage7MiddleBoss2( enemy *en );
-//
-//const MyInitEnemyFunction updatestage7middlebossfunctions[] =
-//{
-//	UpdateStage7MiddleBoss0,
-//	UpdateStage7MiddleBoss1,
-//	UpdateStage7MiddleBoss2
-//};
-//
+
+const MyInitEnemyFunction updatestage7middlebossfunctions[] =
+{
+	updatestage7middlebossAssert,//UpdateStage7MiddleBoss0,
+	updatestage7middlebossAssert,//UpdateStage7MiddleBoss1,
+	updatestage7middlebossAssert,//UpdateStage7MiddleBoss2
+};
+
 //extern void UpdateSpaceStation1( enemy *en );
 //extern void UpdateSpaceStation2( enemy *en );
 //
