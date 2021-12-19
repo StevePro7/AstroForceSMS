@@ -3304,7 +3304,7 @@ const MyInitEnemyFunction updatestage8bossbfunctions[] =
 	DoCommonBossAppearingFunction,
 	UpdateStage8BossB1,
 	UpdateStage8BossB2,
-//	UpdateStage8BossB3
+	UpdateStage8BossB3
 };
 
 // Palette changes for stage 8
