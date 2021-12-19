@@ -497,3 +497,28 @@ void updatestage7middlebossAssert( enemy *en )
 	en->enemyenergy = 0;
 	return;
 }
+void updatespacestationAssert( enemy *en )
+{
+#ifdef _CONSOLE
+	assert( 0 );
+#endif
+	en->enemyenergy = 0;
+	return;
+}
+void updatestage2endbossAssert( enemy *en )
+{
+#ifdef _CONSOLE
+	assert( 0 );
+#endif
+	en->enemyenergy = 0;
+	return;
+}
+unsigned char checkcollisionAssert( unsigned char x, unsigned char y )
+{
+#ifdef _CONSOLE
+	assert( 0 );
+#endif
+	x = 1;
+	y = 1;
+	return 1;
+}

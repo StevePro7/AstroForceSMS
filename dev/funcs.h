@@ -133,5 +133,8 @@ void updatestage4middlebossAssert( enemy *en );
 void updatestage4endbossAssert( enemy *en );
 void playerupdateAssert();
 void updatestage7middlebossAssert( enemy *en );
+void updatespacestationAssert( enemy *en );
+void updatestage2endbossAssert( enemy *en );
+unsigned char checkcollisionAssert( unsigned char x, unsigned char y );
 
 #endif//_FUNCS_H_

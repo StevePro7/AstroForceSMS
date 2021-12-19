@@ -17,6 +17,7 @@
 #include "../Intros/intro3object.h"
 #include "../Players/player.h"
 #include "../Stages/stage5.h"
+#include "../Stages/stage8bossb.h"
 #include "../Wars/ww2zeppelin.h"
 #include "../funcs.h"
 
@@ -2968,26 +2969,26 @@ const MyInitEnemyFunction updatestage7middlebossfunctions[] =
 
 //extern void UpdateSpaceStation1( enemy *en );
 //extern void UpdateSpaceStation2( enemy *en );
-//
-//const MyInitEnemyFunction updatespacestationfunctions[] =
-//{
-//	DoCommonBossAppearingFunction,
-//	UpdateSpaceStation1,
-//	UpdateSpaceStation2
-//};
+
+const MyInitEnemyFunction updatespacestationfunctions[] =
+{
+	DoCommonBossAppearingFunction,
+	updatespacestationAssert,//UpdateSpaceStation1,
+	updatespacestationAssert,//	UpdateSpaceStation2
+};
 
 //extern void UpdateStage2EndBoss1( enemy *en );
 //extern void UpdateStage2EndBoss2( enemy *en );
 //extern void UpdateStage2EndBoss3( enemy *en );
-//
-//const MyInitEnemyFunction updatestage2endbossfunctions[] =
-//{
-//	DoCommonBossAppearingFunction,
-//	UpdateStage2EndBoss1,
-//	UpdateStage2EndBoss2,
-//	UpdateStage2EndBoss3
-//};
-//
+
+const MyInitEnemyFunction updatestage2endbossfunctions[] =
+{
+	DoCommonBossAppearingFunction,
+	updatestage2endbossAssert,//UpdateStage2EndBoss1,
+	updatestage2endbossAssert,//UpdateStage2EndBoss2,
+	updatestage2endbossAssert,//UpdateStage2EndBoss3
+};
+
 //unsigned char CheckCollisionStage7( unsigned char x, unsigned char y );
 //unsigned char CheckCollisionStage2( unsigned char x, unsigned char y );
 //unsigned char CheckCollisionStage1( unsigned char x, unsigned char y );
@@ -2996,13 +2997,13 @@ const MyInitEnemyFunction updatestage7middlebossfunctions[] =
 const MyCheckCollisionFunction checkcollisionfunctions[] =
 {
 	0,
-//	CheckCollisionStage7,
+	checkcollisionAssert,//	CheckCollisionStage7,
 //	0,
 //	0,
-//	CheckCollisionStage2,
+	checkcollisionAssert,//	CheckCollisionStage2,
 //	0,
 //	0,
-//	CheckCollisionStage1,
+	checkcollisionAssert,//	CheckCollisionStage1,
 //	0
 };
 
@@ -3301,8 +3302,8 @@ const signed int stage8_scrollers[] =
 const MyInitEnemyFunction updatestage8bossbfunctions[] =
 {
 	DoCommonBossAppearingFunction,
-//	UpdateStage8BossB1,
-//	UpdateStage8BossB2,
+	UpdateStage8BossB1,
+	UpdateStage8BossB2,
 //	UpdateStage8BossB3
 };
 

@@ -1,15 +1,17 @@
 #include "stage1endboss.h"
+#include "../Enemies/enemyshoot.h"
+#include "../banks/fixedbank.h"
 
 void stage1endboss_foo()
 {
 }
 
-//void DoStage1BossDirectionShoots( enemy *en )
-//{
-//	if( en->enemyframe % 96 == 48 )
-//		SpreadEnemyshootDirection( en->enemyposx + 20, en->enemyposy + 24, stage2endbossshootpatternx, stage2endbossshootpatterny, 6 );
-//}
-//
+void DoStage1BossDirectionShoots( enemy *en )
+{
+	if( en->enemyframe % 96 == 48 )
+		SpreadEnemyshootDirection( en->enemyposx + 20, en->enemyposy + 24, stage2endbossshootpatternx, stage2endbossshootpatterny, 6 );
+}
+
 //void UpdateStage1EndBoss1( enemy *en )
 //{
 //	// Sinus movement

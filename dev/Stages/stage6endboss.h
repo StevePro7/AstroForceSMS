@@ -1,11 +1,13 @@
 #ifndef _STAGE6ENDBOSS_H_
 #define _STAGE6ENDBOSS_H_
 
+#include "../defines.h"
+
 void stage6endboss_foo();
 
 //void FinishStage6EndBoss();
 //void ResetSkullState( enemy *en, unsigned int st, unsigned char rec );
-//void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset );
+void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset );
 //void CreateCustomBoneC( unsigned char x, unsigned char y, unsigned char vx, unsigned char vy );
 //void LaunchSkullBoneC( enemy *en, unsigned char vy );
 //void DoSkullShootDirection( enemy *en );
