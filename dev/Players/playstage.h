@@ -7,8 +7,8 @@ void InitStageSprites( const unsigned char *spl, unsigned char num );
 void InitCustomStageData();
 //void UpdatePlayStage();
 void InitStageData( unsigned int i );
-//void UpdateStagePassA();
-//void UpdateStagePassB();
+void UpdateStagePassA();
+void UpdateStagePassB();
 void InitPlayStage();
 
 #endif//_PLAYSTAGE_H_

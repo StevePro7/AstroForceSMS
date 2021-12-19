@@ -133,18 +133,18 @@ void UpdateStagePassA()
 	//UpdatePlayershoots();
 
 	// Enemy shoots
-	//UpdateEnemyshoots();
+	UpdateEnemyshoots();
 
 	// Update explosions
 	UpdateExplosions();
 }
 
 
-//void UpdateStagePassB()
-//{
-//	// Enemies!!!
-//	UpdateEnemies();
-//}
+void UpdateStagePassB()
+{
+	// Enemies!!!
+	UpdateEnemies();
+}
 
 // Pantalla de juego
 void InitPlayStage()
@@ -240,7 +240,7 @@ void InitPlayStage()
 			}
 			else
 			{
-				//UpdateStagePassB();		// TODO
+				UpdateStagePassB();
 			}
 
 			// Scripter
