@@ -1,7 +1,7 @@
 #ifndef _BARROM_H_
 #define _BARROM_H_
 
-//ADRIANA
+// ADRIANA
 extern signed char barromx[];
 extern signed char barromy[];
 extern unsigned char barromtime;

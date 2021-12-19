@@ -1,6 +1,7 @@
 #ifndef _EXPLOSION_H_
 #define _EXPLOSION_H_
 
+// ADRIANA
 void RemoveExplosion( signed char a );
 void UpdateExplosion( unsigned int a );
 void InitExplosion( unsigned char x, unsigned char y, unsigned char t );
