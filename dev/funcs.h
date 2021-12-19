@@ -120,4 +120,7 @@ void UpdatePSG();
 //extern unsigned char lastplayedmusicbank;
 //extern unsigned char lastplayedmusiclooped;
 
+// stevepro
+void initAssert();
+
 #endif//_FUNCS_H_

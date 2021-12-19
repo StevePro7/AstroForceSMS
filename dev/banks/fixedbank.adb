@@ -71,6 +71,7 @@ S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
 S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
+S:G$initAssert$0$0({2}DF,SV:S),C,0,0
 S:G$bigexplosion_psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$ending_psg$0$0({0}DA0d,SC:U),D,0,0
 S:G$enemybomb_psg$0$0({0}DA0d,SC:U),D,0,0

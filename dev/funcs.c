@@ -406,3 +406,12 @@ void UpdatePSG()
 //char *lastplayedmusic;
 //unsigned char lastplayedmusicbank;
 //unsigned char lastplayedmusiclooped;
+
+
+// stevepro
+void initAssert()
+{
+#ifdef _CONSOLE
+#else
+#endif
+}
