@@ -1,125 +1,710 @@
 ;!FILE playershoot.asm
 XL2
-H 9 areas 74 global symbols
+H 9 areas 2BD global symbols
 M playershoot
 O -mz80
 S _changeBank Ref0000
+S _enemies Ref0000
+S _CheckMapCollision Ref0000
 S _playershoots Ref0000
 S _playershootspeedsx Ref0000
+S _numenemies Ref0000
+S _checkEnemyPlayerShoot Ref0000
 S _playershootspeedsy Ref0000
 S _LoadSprite Ref0000
 S _numplayershoots Ref0000
 S .__.ABS. Def0000
 S _playershoot_psgcompr Ref0000
-A _CODE size 7D flags 0 addr 0
-S _InitPlayershoots Def0074
-S G$InitPlayershoot$0$0 Def0014
-S XG$InitPlayershootSprites$0$0 Def0013
-S XG$playershoot_foo$0$0 Def0000
-S C$playershoot.c$150$1$22 Def0050
-S C$playershoot.c$141$1$22 Def001C
-S C$playershoot.c$151$1$22 Def0062
-S C$playershoot.c$160$1$23 Def0077
-S C$playershoot.c$152$1$22 Def0073
-S C$playershoot.c$136$1$20 Def0014
-S XG$InitPlayershoots$0$0 Def007C
-S C$playershoot.c$161$1$23 Def007C
-S C$playershoot.c$144$1$22 Def0033
-S C$playershoot.c$154$1$22 Def0074
-S C$playershoot.c$145$1$22 Def0037
-S _InitPlayershoot Def0014
-S C$playershoot.c$146$1$22 Def003E
-S C$playershoot.c$157$1$23 Def0074
-S C$playershoot.c$149$1$22 Def0046
-S A$playershoot$200 Def0074
-S A$playershoot$110 Def0023
-S A$playershoot$210 Def007C
-S A$playershoot$120 Def0032
-S A$playershoot$111 Def0026
-S A$playershoot$102 Def0014
-S C$playershoot.c$41$1$20 Def0001
-S A$playershoot$130 Def0038
-S A$playershoot$112 Def0029
-S A$playershoot$103 Def0016
-S C$playershoot.c$42$1$20 Def0013
-S A$playershoot$140 Def0041
-S A$playershoot$131 Def0039
-S A$playershoot$113 Def002B
-S A$playershoot$104 Def001A
-S A$playershoot$204 Def0077
-S A$playershoot$150 Def004B
-S A$playershoot$141 Def0042
-S A$playershoot$132 Def003A
-S A$playershoot$114 Def002C
-S XG$InitPlayershoot$0$0 Def0073
-S A$playershoot$205 Def007A
-S A$playershoot$160 Def0054
-S A$playershoot$151 Def004E
-S A$playershoot$142 Def0045
-S A$playershoot$133 Def003D
-S A$playershoot$124 Def0033
-S A$playershoot$115 Def002D
-S A$playershoot$161 Def0055
-S A$playershoot$152 Def004F
-S A$playershoot$125 Def0036
-S A$playershoot$116 Def002E
-S A$playershoot$180 Def006F
-S A$playershoot$162 Def0058
-S A$playershoot$117 Def002F
-S A$playershoot$108 Def001C
-S A$playershoot$181 Def0070
-S A$playershoot$172 Def0062
-S A$playershoot$163 Def005A
-S A$playershoot$118 Def0030
-S A$playershoot$109 Def001F
-S A$playershoot$182 Def0071
-S A$playershoot$173 Def0063
-S A$playershoot$164 Def005B
-S A$playershoot$146 Def0046
-S A$playershoot$137 Def003E
-S A$playershoot$119 Def0031
-S A$playershoot$174 Def0064
-S A$playershoot$165 Def005D
-S A$playershoot$156 Def0050
-S A$playershoot$147 Def0047
-S A$playershoot$138 Def003F
-S A$playershoot$129 Def0037
-S A$playershoot$175 Def0065
-S A$playershoot$166 Def005F
-S A$playershoot$157 Def0051
-S A$playershoot$148 Def0049
-S A$playershoot$139 Def0040
-S A$playershoot$176 Def0066
-S A$playershoot$167 Def0060
-S A$playershoot$158 Def0052
-S A$playershoot$149 Def004A
-S A$playershoot$177 Def0069
-S A$playershoot$168 Def0061
-S A$playershoot$159 Def0053
-S A$playershoot$187 Def0073
-S A$playershoot$178 Def006C
-S A$playershoot$179 Def006E
-S C$playershoot.c$39$0$0 Def0001
-S A$playershoot$80 Def0005
-S G$InitPlayershootSprites$0$0 Def0001
-S A$playershoot$81 Def0008
-S A$playershoot$82 Def0009
-S A$playershoot$64 Def0000
-S A$playershoot$92 Def0013
-S A$playershoot$83 Def000C
-S A$playershoot$84 Def000D
-S A$playershoot$85 Def0010
-S G$playershoot_foo$0$0 Def0000
-S A$playershoot$86 Def0011
-S A$playershoot$77 Def0001
-S A$playershoot$87 Def0012
-S A$playershoot$78 Def0003
-S A$playershoot$79 Def0004
-S G$InitPlayershoots$0$0 Def0074
-S C$playershoot.c$6$0$0 Def0000
-S C$playershoot.c$8$0$0 Def0000
-S _InitPlayershootSprites Def0001
-S _playershoot_foo Def0000
+S _KillEnemy Ref0000
+S _stageframe2mod Ref0000
+S _playershootlevel Ref0000
+S _InitExplosion Ref0000
+S _devkit_SMS_addSprite Ref0000
+A _CODE size 373 flags 0 addr 0
+S _InitPlayershoots Def036A
+S G$InitPlayershoot$0$0 Def030A
+S G$UpdatePlayershoots$0$0 Def02EB
+S XG$InitPlayershootSprites$0$0 Def0130
+S XG$InitPlayershoots$0$0 Def0372
+S C$playershoot.c$121$1$73 Def02EA
+S _InitPlayershoot Def030A
+S C$playershoot.c$100$7$80 Def027E
+S C$playershoot.c$132$1$82 Def0308
+S C$playershoot.c$130$2$83 Def0307
+S C$playershoot.c$101$7$80 Def02A6
+S _UpdatePlayershoots Def02EB
+S C$playershoot.c$131$2$83 Def02FB
+S C$playershoot.c$124$1$73 Def02EB
+S G$UpdatePlayershoot$0$0 Def01AF
+S C$playershoot.c$140$1$85 Def0312
+S C$playershoot.c$112$7$80 Def02D8
+S C$playershoot.c$150$1$85 Def0358
+S C$playershoot.c$135$1$82 Def030A
+S C$playershoot.c$151$1$85 Def0369
+S A$playershoot$100 Def0034
+S C$playershoot.c$160$1$86 Def0372
+S C$playershoot.c$143$1$85 Def0329
+S C$playershoot.c$104$8$81 Def02AE
+S A$playershoot$200 Def009F
+S A$playershoot$110 Def003D
+S A$playershoot$101 Def0035
+S C$playershoot.c$153$1$85 Def036A
+S C$playershoot.c$144$1$85 Def032D
+S C$playershoot.c$129$1$82 Def02EB
+S C$playershoot.c$105$8$81 Def02B6
+S A$playershoot$300 Def0111
+S A$playershoot$210 Def00AD
+S A$playershoot$201 Def00A0
+S A$playershoot$120 Def0046
+S A$playershoot$102 Def0036
+S C$playershoot.c$145$1$85 Def0334
+S C$playershoot.c$119$2$74 Def02DF
+S A$playershoot$400 Def0172
+S A$playershoot$301 Def0112
+S A$playershoot$220 Def00B5
+S A$playershoot$211 Def00AE
+S A$playershoot$202 Def00A1
+S A$playershoot$130 Def0054
+S A$playershoot$121 Def0047
+S A$playershoot$103 Def0037
+S C$playershoot.c$109$7$80 Def02CF
+S A$playershoot$500 Def01C9
+S A$playershoot$401 Def0173
+S A$playershoot$302 Def0113
+S A$playershoot$230 Def00C1
+S A$playershoot$221 Def00B6
+S A$playershoot$212 Def00AF
+S A$playershoot$203 Def00A4
+S A$playershoot$140 Def005C
+S A$playershoot$131 Def0055
+S A$playershoot$122 Def004A
+S A$playershoot$104 Def0038
+S A$playershoot$600 Def022A
+S A$playershoot$510 Def01D1
+S A$playershoot$420 Def0184
+S A$playershoot$411 Def017B
+S A$playershoot$402 Def0174
+S A$playershoot$330 Def0125
+S A$playershoot$303 Def0114
+S A$playershoot$240 Def00CC
+S A$playershoot$231 Def00C2
+S A$playershoot$222 Def00B7
+S A$playershoot$204 Def00A5
+S A$playershoot$150 Def0068
+S A$playershoot$141 Def005D
+S A$playershoot$123 Def004B
+S A$playershoot$114 Def0040
+S C$playershoot.c$156$1$86 Def036A
+S XG$InitPlayershoot$0$0 Def0369
+S C$playershoot.c$148$1$85 Def033C
+S C$playershoot.c$11$1$62 Def0039
+S A$playershoot$700 Def02AC
+S A$playershoot$610 Def0236
+S A$playershoot$601 Def022B
+S A$playershoot$511 Def01D3
+S A$playershoot$430 Def018B
+S A$playershoot$421 Def0185
+S A$playershoot$412 Def017E
+S A$playershoot$403 Def0175
+S A$playershoot$331 Def0126
+S A$playershoot$313 Def011D
+S A$playershoot$304 Def0117
+S A$playershoot$250 Def00D8
+S A$playershoot$241 Def00CE
+S A$playershoot$232 Def00C5
+S A$playershoot$223 Def00B8
+S A$playershoot$205 Def00A6
+S A$playershoot$160 Def0071
+S A$playershoot$151 Def006B
+S A$playershoot$142 Def005E
+S A$playershoot$124 Def004C
+S A$playershoot$115 Def0043
+S C$playershoot.c$149$1$85 Def0346
+S C$playershoot.c$30$1$62 Def00C9
+S A$playershoot$710 Def02B5
+S A$playershoot$620 Def0241
+S A$playershoot$611 Def0237
+S A$playershoot$602 Def022C
+S A$playershoot$512 Def01D4
+S A$playershoot$440 Def0193
+S A$playershoot$431 Def018C
+S A$playershoot$422 Def0186
+S A$playershoot$404 Def0176
+S A$playershoot$341 Def0130
+S A$playershoot$332 Def0129
+S A$playershoot$305 Def0118
+S A$playershoot$260 Def00E0
+S A$playershoot$242 Def00CF
+S A$playershoot$233 Def00C6
+S A$playershoot$224 Def00B9
+S A$playershoot$206 Def00A7
+S A$playershoot$170 Def0080
+S A$playershoot$161 Def0072
+S A$playershoot$152 Def006C
+S A$playershoot$143 Def005F
+S A$playershoot$125 Def004D
+S A$playershoot$116 Def0044
+S XG$UpdatePlayershoots$0$0 Def0308
+S G$RemovePlayershoot$0$0 Def0131
+S C$playershoot.c$13$1$62 Def0021
+S G$DrawPlayerShoot$0$0 Def0000
+S A$playershoot$900 Def0359
+S A$playershoot$810 Def0306
+S A$playershoot$801 Def02FB
+S A$playershoot$720 Def02BC
+S A$playershoot$603 Def022D
+S A$playershoot$540 Def01F2
+S A$playershoot$513 Def01D5
+S A$playershoot$504 Def01CA
+S A$playershoot$450 Def019E
+S A$playershoot$441 Def0194
+S A$playershoot$432 Def018E
+S A$playershoot$423 Def0187
+S A$playershoot$405 Def0177
+S A$playershoot$360 Def013F
+S A$playershoot$351 Def0131
+S A$playershoot$333 Def012A
+S A$playershoot$270 Def00E9
+S A$playershoot$261 Def00E1
+S A$playershoot$243 Def00D2
+S A$playershoot$234 Def00C7
+S A$playershoot$225 Def00BA
+S A$playershoot$216 Def00B0
+S A$playershoot$207 Def00A8
+S A$playershoot$180 Def0088
+S A$playershoot$162 Def0074
+S A$playershoot$153 Def006D
+S A$playershoot$144 Def0062
+S A$playershoot$135 Def0056
+S A$playershoot$126 Def004E
+S A$playershoot$108 Def0039
+S C$playershoot.c$159$1$86 Def036D
+S _UpdatePlayershoot Def01AF
+S A$playershoot$901 Def035A
+S A$playershoot$802 Def02FC
+S A$playershoot$730 Def02C6
+S A$playershoot$721 Def02BD
+S A$playershoot$604 Def022E
+S A$playershoot$550 Def01F9
+S A$playershoot$541 Def01F3
+S A$playershoot$514 Def01D6
+S A$playershoot$505 Def01CB
+S A$playershoot$460 Def01A7
+S A$playershoot$451 Def019F
+S A$playershoot$442 Def0195
+S A$playershoot$433 Def018F
+S A$playershoot$406 Def0178
+S A$playershoot$370 Def014D
+S A$playershoot$361 Def0140
+S A$playershoot$352 Def0133
+S A$playershoot$334 Def012D
+S A$playershoot$307 Def0119
+S A$playershoot$280 Def00FC
+S A$playershoot$271 Def00EC
+S A$playershoot$262 Def00E2
+S A$playershoot$244 Def00D3
+S A$playershoot$226 Def00BB
+S A$playershoot$217 Def00B1
+S A$playershoot$208 Def00A9
+S A$playershoot$190 Def0097
+S A$playershoot$181 Def008A
+S A$playershoot$163 Def0075
+S A$playershoot$145 Def0063
+S A$playershoot$136 Def0057
+S A$playershoot$127 Def004F
+S A$playershoot$109 Def003C
+S C$playershoot.c$61$1$70 Def01A8
+S C$playershoot.c$13$2$63 Def0040
+S C$playershoot.c$15$1$62 Def002F
+S A$playershoot$902 Def035B
+S A$playershoot$830 Def030C
+S A$playershoot$803 Def02FD
+S A$playershoot$731 Def02C7
+S A$playershoot$722 Def02BE
+S A$playershoot$650 Def0263
+S A$playershoot$641 Def0259
+S A$playershoot$632 Def024F
+S A$playershoot$605 Def022F
+S A$playershoot$551 Def01FA
+S A$playershoot$542 Def01F4
+S A$playershoot$524 Def01E0
+S A$playershoot$515 Def01D7
+S A$playershoot$506 Def01CC
+S A$playershoot$443 Def0196
+S A$playershoot$434 Def0190
+S A$playershoot$416 Def017F
+S A$playershoot$407 Def0179
+S A$playershoot$380 Def015C
+S A$playershoot$371 Def0150
+S A$playershoot$362 Def0143
+S A$playershoot$353 Def0137
+S A$playershoot$335 Def012E
+S A$playershoot$326 Def011E
+S A$playershoot$308 Def011B
+S A$playershoot$281 Def00FE
+S A$playershoot$272 Def00EF
+S A$playershoot$263 Def00E3
+S A$playershoot$254 Def00DA
+S A$playershoot$227 Def00BC
+S A$playershoot$218 Def00B2
+S A$playershoot$209 Def00AA
+S A$playershoot$191 Def0098
+S A$playershoot$182 Def008B
+S A$playershoot$164 Def0076
+S A$playershoot$146 Def0064
+S A$playershoot$137 Def0058
+S A$playershoot$128 Def0050
+S C$playershoot.c$62$1$70 Def01AE
+S C$playershoot.c$51$2$71 Def0155
+S A$playershoot$903 Def035C
+S A$playershoot$840 Def0321
+S A$playershoot$831 Def0310
+S A$playershoot$804 Def02FE
+S A$playershoot$741 Def02CF
+S A$playershoot$732 Def02C8
+S A$playershoot$723 Def02BF
+S A$playershoot$714 Def02B6
+S A$playershoot$705 Def02AE
+S A$playershoot$660 Def026C
+S A$playershoot$651 Def0264
+S A$playershoot$642 Def025A
+S A$playershoot$633 Def0252
+S A$playershoot$615 Def0238
+S A$playershoot$606 Def0230
+S A$playershoot$570 Def020B
+S A$playershoot$552 Def01FB
+S A$playershoot$543 Def01F5
+S A$playershoot$534 Def01EC
+S A$playershoot$525 Def01E3
+S A$playershoot$516 Def01D9
+S A$playershoot$507 Def01CD
+S A$playershoot$444 Def0197
+S A$playershoot$435 Def0191
+S A$playershoot$417 Def0180
+S A$playershoot$390 Def0167
+S A$playershoot$381 Def015E
+S A$playershoot$363 Def0146
+S A$playershoot$336 Def012F
+S A$playershoot$327 Def0120
+S A$playershoot$282 Def00FF
+S A$playershoot$273 Def00F0
+S A$playershoot$264 Def00E6
+S A$playershoot$255 Def00DB
+S A$playershoot$228 Def00BF
+S A$playershoot$219 Def00B3
+S A$playershoot$192 Def0099
+S A$playershoot$183 Def008E
+S A$playershoot$174 Def0081
+S A$playershoot$165 Def0079
+S A$playershoot$147 Def0065
+S A$playershoot$138 Def0059
+S A$playershoot$129 Def0053
+S C$playershoot.c$52$2$71 Def0168
+S C$playershoot.c$35$1$62 Def011D
+S A$playershoot$931 Def036D
+S A$playershoot$904 Def035F
+S A$playershoot$841 Def0322
+S A$playershoot$814 Def0307
+S A$playershoot$805 Def02FF
+S A$playershoot$742 Def02D2
+S A$playershoot$733 Def02C9
+S A$playershoot$724 Def02C0
+S A$playershoot$715 Def02B7
+S A$playershoot$706 Def02B1
+S A$playershoot$670 Def027C
+S A$playershoot$661 Def026F
+S A$playershoot$652 Def0265
+S A$playershoot$643 Def025B
+S A$playershoot$634 Def0253
+S A$playershoot$625 Def0244
+S A$playershoot$616 Def023B
+S A$playershoot$607 Def0231
+S A$playershoot$580 Def0216
+S A$playershoot$571 Def020C
+S A$playershoot$553 Def01FC
+S A$playershoot$544 Def01F6
+S A$playershoot$535 Def01ED
+S A$playershoot$526 Def01E4
+S A$playershoot$517 Def01DB
+S A$playershoot$508 Def01CE
+S A$playershoot$490 Def01B9
+S A$playershoot$472 Def01AE
+S A$playershoot$445 Def0198
+S A$playershoot$436 Def0192
+S A$playershoot$427 Def0188
+S A$playershoot$418 Def0181
+S A$playershoot$382 Def015F
+S A$playershoot$373 Def0152
+S A$playershoot$364 Def0147
+S A$playershoot$328 Def0121
+S A$playershoot$283 Def0101
+S A$playershoot$274 Def00F2
+S A$playershoot$265 Def00E7
+S A$playershoot$256 Def00DC
+S A$playershoot$229 Def00C0
+S A$playershoot$184 Def008F
+S A$playershoot$175 Def0082
+S A$playershoot$166 Def007A
+S A$playershoot$157 Def006E
+S A$playershoot$148 Def0066
+S A$playershoot$139 Def005B
+S C$playershoot.c$22$3$65 Def009C
+S A$playershoot$932 Def0370
+S A$playershoot$914 Def0369
+S A$playershoot$905 Def0362
+S A$playershoot$860 Def0333
+S A$playershoot$851 Def0329
+S A$playershoot$842 Def0323
+S A$playershoot$806 Def0300
+S A$playershoot$761 Def02DF
+S A$playershoot$743 Def02D3
+S A$playershoot$734 Def02CA
+S A$playershoot$725 Def02C1
+S A$playershoot$716 Def02B8
+S A$playershoot$707 Def02B2
+S A$playershoot$680 Def0289
+S A$playershoot$662 Def0272
+S A$playershoot$653 Def0268
+S A$playershoot$644 Def025D
+S A$playershoot$626 Def0248
+S A$playershoot$617 Def023C
+S A$playershoot$608 Def0232
+S A$playershoot$581 Def0217
+S A$playershoot$572 Def020D
+S A$playershoot$563 Def0203
+S A$playershoot$554 Def01FD
+S A$playershoot$536 Def01EE
+S A$playershoot$527 Def01E5
+S A$playershoot$518 Def01DD
+S A$playershoot$509 Def01CF
+S A$playershoot$491 Def01BC
+S A$playershoot$482 Def01AF
+S A$playershoot$455 Def01A0
+S A$playershoot$446 Def019A
+S A$playershoot$428 Def0189
+S A$playershoot$419 Def0182
+S A$playershoot$383 Def0160
+S A$playershoot$365 Def0148
+S A$playershoot$329 Def0122
+S A$playershoot$293 Def010A
+S A$playershoot$284 Def0102
+S A$playershoot$275 Def00F6
+S A$playershoot$266 Def00E8
+S A$playershoot$257 Def00DD
+S A$playershoot$248 Def00D4
+S A$playershoot$239 Def00C9
+S A$playershoot$185 Def0090
+S A$playershoot$176 Def0083
+S A$playershoot$167 Def007B
+S A$playershoot$158 Def006F
+S A$playershoot$149 Def0067
+S C$playershoot.c$71$1$73 Def01B9
+S C$playershoot.c$65$1$70 Def01AF
+S C$playershoot.c$54$2$71 Def017B
+S C$playershoot.c$40$1$68 Def011E
+S C$playershoot.c$30$3$67 Def00DA
+S C$playershoot.c$23$3$65 Def00B0
+S C$playershoot.c$15$3$64 Def0046
+S A$playershoot$906 Def0364
+S A$playershoot$852 Def032C
+S A$playershoot$843 Def0324
+S A$playershoot$807 Def0301
+S A$playershoot$762 Def02E0
+S A$playershoot$744 Def02D4
+S A$playershoot$735 Def02CD
+S A$playershoot$726 Def02C2
+S A$playershoot$717 Def02B9
+S A$playershoot$708 Def02B3
+S A$playershoot$690 Def02A1
+S A$playershoot$681 Def028C
+S A$playershoot$663 Def0273
+S A$playershoot$654 Def0269
+S A$playershoot$645 Def025E
+S A$playershoot$636 Def0254
+S A$playershoot$627 Def024B
+S A$playershoot$618 Def023D
+S A$playershoot$609 Def0233
+S A$playershoot$591 Def0221
+S A$playershoot$582 Def0218
+S A$playershoot$573 Def020E
+S A$playershoot$564 Def0206
+S A$playershoot$555 Def01FE
+S A$playershoot$537 Def01EF
+S A$playershoot$528 Def01E8
+S A$playershoot$519 Def01DE
+S A$playershoot$492 Def01BF
+S A$playershoot$483 Def01B1
+S A$playershoot$465 Def01A8
+S A$playershoot$456 Def01A1
+S A$playershoot$447 Def019B
+S A$playershoot$429 Def018A
+S A$playershoot$384 Def0161
+S A$playershoot$366 Def0149
+S A$playershoot$357 Def0139
+S A$playershoot$294 Def010B
+S A$playershoot$285 Def0103
+S A$playershoot$276 Def00F8
+S A$playershoot$258 Def00DE
+S A$playershoot$249 Def00D7
+S A$playershoot$186 Def0091
+S A$playershoot$177 Def0084
+S A$playershoot$168 Def007E
+S A$playershoot$159 Def0070
+S C$playershoot.c$55$2$71 Def017F
+S C$playershoot.c$41$1$68 Def0130
+S C$playershoot.c$38$1$62 Def011E
+S C$playershoot.c$33$2$66 Def010A
+S C$playershoot.c$31$3$67 Def00E9
+S C$playershoot.c$16$3$64 Def0056
+S A$playershoot$907 Def0365
+S A$playershoot$844 Def0325
+S A$playershoot$835 Def0312
+S A$playershoot$808 Def0302
+S A$playershoot$763 Def02E1
+S A$playershoot$754 Def02DA
+S A$playershoot$745 Def02D7
+S A$playershoot$736 Def02CE
+S A$playershoot$727 Def02C3
+S A$playershoot$718 Def02BA
+S A$playershoot$709 Def02B4
+S A$playershoot$682 Def028E
+S A$playershoot$664 Def0274
+S A$playershoot$646 Def025F
+S A$playershoot$637 Def0256
+S A$playershoot$628 Def024C
+S A$playershoot$619 Def0240
+S A$playershoot$592 Def0222
+S A$playershoot$583 Def021B
+S A$playershoot$574 Def020F
+S A$playershoot$565 Def0207
+S A$playershoot$556 Def01FF
+S A$playershoot$538 Def01F0
+S A$playershoot$529 Def01E9
+S A$playershoot$493 Def01C2
+S A$playershoot$484 Def01B5
+S A$playershoot$466 Def01AB
+S A$playershoot$457 Def01A2
+S A$playershoot$448 Def019C
+S A$playershoot$394 Def0168
+S A$playershoot$385 Def0162
+S A$playershoot$367 Def014A
+S A$playershoot$358 Def013C
+S A$playershoot$295 Def010C
+S A$playershoot$286 Def0106
+S A$playershoot$277 Def00F9
+S A$playershoot$259 Def00DF
+S A$playershoot$187 Def0092
+S A$playershoot$178 Def0086
+S A$playershoot$169 Def007F
+S C$playershoot.c$80$2$74 Def01F7
+S C$playershoot.c$56$2$71 Def0188
+S C$playershoot.c$49$1$70 Def0139
+S C$playershoot.c$17$3$64 Def006E
+S A$playershoot$908 Def0366
+S A$playershoot$890 Def0350
+S A$playershoot$845 Def0326
+S A$playershoot$836 Def0315
+S A$playershoot$809 Def0305
+S A$playershoot$773 Def02EA
+S A$playershoot$764 Def02E2
+S A$playershoot$755 Def02DB
+S A$playershoot$728 Def02C4
+S A$playershoot$719 Def02BB
+S A$playershoot$692 Def02A3
+S A$playershoot$683 Def028F
+S A$playershoot$674 Def027E
+S A$playershoot$665 Def0277
+S A$playershoot$647 Def0260
+S A$playershoot$593 Def0223
+S A$playershoot$584 Def021C
+S A$playershoot$575 Def0210
+S A$playershoot$557 Def0200
+S A$playershoot$548 Def01F7
+S A$playershoot$539 Def01F1
+S A$playershoot$494 Def01C3
+S A$playershoot$485 Def01B7
+S A$playershoot$467 Def01AC
+S A$playershoot$458 Def01A3
+S A$playershoot$449 Def019D
+S A$playershoot$395 Def016B
+S A$playershoot$386 Def0163
+S A$playershoot$377 Def0155
+S A$playershoot$368 Def014B
+S A$playershoot$359 Def013D
+S A$playershoot$296 Def010D
+S A$playershoot$287 Def0107
+S A$playershoot$278 Def00FA
+S A$playershoot$197 Def009C
+S A$playershoot$188 Def0093
+S A$playershoot$179 Def0087
+S C$playershoot.c$74$1$73 Def01CA
+S C$playershoot.c$57$2$71 Def0193
+S C$playershoot.c$18$3$64 Def0081
+S A$playershoot$927 Def036A
+S A$playershoot$909 Def0367
+S A$playershoot$891 Def0351
+S A$playershoot$873 Def033C
+S A$playershoot$864 Def0334
+S A$playershoot$846 Def0327
+S A$playershoot$837 Def0319
+S A$playershoot$819 Def0308
+S A$playershoot$765 Def02E5
+S A$playershoot$756 Def02DC
+S A$playershoot$729 Def02C5
+S A$playershoot$684 Def0292
+S A$playershoot$675 Def0281
+S A$playershoot$666 Def0278
+S A$playershoot$648 Def0261
+S A$playershoot$594 Def0224
+S A$playershoot$585 Def021D
+S A$playershoot$576 Def0211
+S A$playershoot$558 Def0201
+S A$playershoot$549 Def01F8
+S A$playershoot$495 Def01C4
+S A$playershoot$486 Def01B8
+S A$playershoot$459 Def01A4
+S A$playershoot$396 Def016D
+S A$playershoot$387 Def0164
+S A$playershoot$378 Def0158
+S A$playershoot$369 Def014C
+S A$playershoot$297 Def010E
+S A$playershoot$288 Def0108
+S A$playershoot$279 Def00FB
+S A$playershoot$198 Def009D
+S A$playershoot$189 Def0094
+S C$playershoot.c$75$1$73 Def01E0
+S C$playershoot.c$58$2$71 Def01A0
+S C$playershoot.c$44$1$68 Def0131
+S A$playershoot$937 Def0372
+S A$playershoot$892 Def0353
+S A$playershoot$883 Def0346
+S A$playershoot$874 Def033D
+S A$playershoot$865 Def0335
+S A$playershoot$856 Def032D
+S A$playershoot$847 Def0328
+S A$playershoot$838 Def031C
+S A$playershoot$829 Def030A
+S A$playershoot$793 Def02F4
+S A$playershoot$685 Def0296
+S A$playershoot$676 Def0282
+S A$playershoot$667 Def0279
+S A$playershoot$658 Def026A
+S A$playershoot$649 Def0262
+S A$playershoot$595 Def0225
+S A$playershoot$586 Def021E
+S A$playershoot$577 Def0212
+S A$playershoot$559 Def0202
+S A$playershoot$496 Def01C5
+S A$playershoot$397 Def016E
+S A$playershoot$388 Def0165
+S A$playershoot$379 Def015B
+S A$playershoot$298 Def010F
+S A$playershoot$199 Def009E
+S C$playershoot.c$83$2$74 Def0203
+S C$playershoot.c$28$2$66 Def00D4
+S A$playershoot$893 Def0355
+S A$playershoot$884 Def0347
+S A$playershoot$875 Def033F
+S A$playershoot$866 Def0336
+S A$playershoot$857 Def032E
+S A$playershoot$839 Def031F
+S A$playershoot$794 Def02F7
+S A$playershoot$767 Def02E6
+S A$playershoot$749 Def02D8
+S A$playershoot$686 Def0297
+S A$playershoot$677 Def0283
+S A$playershoot$668 Def027A
+S A$playershoot$659 Def026B
+S A$playershoot$596 Def0226
+S A$playershoot$587 Def021F
+S A$playershoot$578 Def0213
+S A$playershoot$569 Def020A
+S A$playershoot$497 Def01C6
+S A$playershoot$398 Def016F
+S A$playershoot$389 Def0166
+S A$playershoot$299 Def0110
+S C$playershoot.c$84$2$74 Def020A
+S _RemovePlayershoot Def0131
+S _DrawPlayerShoot Def0000
+S A$playershoot$894 Def0356
+S A$playershoot$885 Def0348
+S A$playershoot$876 Def0340
+S A$playershoot$867 Def0337
+S A$playershoot$858 Def032F
+S A$playershoot$786 Def02EB
+S A$playershoot$768 Def02E8
+S A$playershoot$696 Def02A6
+S A$playershoot$687 Def029A
+S A$playershoot$678 Def0284
+S A$playershoot$669 Def027B
+S A$playershoot$597 Def0227
+S A$playershoot$579 Def0215
+S A$playershoot$498 Def01C7
+S A$playershoot$399 Def0171
+S XG$UpdatePlayershoot$0$0 Def02EA
+S A$playershoot$895 Def0357
+S A$playershoot$886 Def0349
+S A$playershoot$877 Def0341
+S A$playershoot$868 Def0338
+S A$playershoot$859 Def0330
+S A$playershoot$796 Def02F8
+S A$playershoot$787 Def02EF
+S A$playershoot$697 Def02A7
+S A$playershoot$688 Def029B
+S A$playershoot$679 Def0285
+S A$playershoot$598 Def0228
+S A$playershoot$499 Def01C8
+S A$playershoot$887 Def034A
+S A$playershoot$878 Def0344
+S A$playershoot$869 Def033B
+S A$playershoot$797 Def02FA
+S A$playershoot$788 Def02F2
+S A$playershoot$698 Def02A8
+S A$playershoot$689 Def029E
+S A$playershoot$599 Def0229
+S A$playershoot$70 Def000C
+S C$playershoot.c$93$3$76 Def0244
+S A$playershoot$888 Def034B
+S A$playershoot$879 Def0345
+S A$playershoot$789 Def02F3
+S A$playershoot$699 Def02AB
+S A$playershoot$80 Def001D
+S C$playershoot.c$86$3$75 Def0221
+S C$playershoot.c$79$2$74 Def01EC
+S G$InitPlayershootSprites$0$0 Def011E
+S A$playershoot$889 Def034E
+S A$playershoot$81 Def001E
+S C$playershoot.c$87$3$75 Def0238
+S A$playershoot$899 Def0358
+S A$playershoot$91 Def002B
+S A$playershoot$74 Def000D
+S A$playershoot$65 Def0000
+S A$playershoot$93 Def002C
+S A$playershoot$75 Def0010
+S A$playershoot$66 Def0002
+S A$playershoot$85 Def0021
+S A$playershoot$76 Def0013
+S A$playershoot$67 Def0006
+S C$playershoot.c$95$5$78 Def02DA
+S A$playershoot$86 Def0024
+S A$playershoot$77 Def0016
+S A$playershoot$68 Def0008
+S A$playershoot$87 Def0025
+S A$playershoot$78 Def0017
+S A$playershoot$69 Def000B
+S A$playershoot$97 Def002F
+S A$playershoot$88 Def0027
+S A$playershoot$79 Def001A
+S XG$RemovePlayershoot$0$0 Def01AE
+S XG$DrawPlayerShoot$0$0 Def011D
+S A$playershoot$98 Def0032
+S A$playershoot$89 Def0029
+S G$InitPlayershoots$0$0 Def036A
+S C$playershoot.c$97$6$79 Def0259
+S A$playershoot$99 Def0033
+S C$playershoot.c$98$6$79 Def026A
+S C$playershoot.c$9$0$0 Def0000
+S _InitPlayershootSprites Def011E
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -130,33 +715,209 @@ A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
-T 00 00 C9
+T 00 00 DD E5 DD 21 00 00 DD 39 21 FA FF 39 F9 DD
 R 00 00 00 00
-T 01 00
+T 0E 00 4E 04 DD 46 05 21 02 00 09 DD 75 FE DD 74
 R 00 00 00 00
-T 01 00 3E 08 F5 33 21 10 01 E5 21 00 00 E5 CD
-R 00 00 00 00 02 0B 07 00
-T 0E 00 00 00 F1 F1 33 C9
-R 00 00 00 00 02 02 04 00
-T 14 00
+T 1C 00 FF 7E DD 77 FD 3A 00 00 3D 20 04 3E 01 18
+R 00 00 00 00 02 08 0E 00
+T 2A 00 01
 R 00 00 00 00
-T 14 00 DD E5 DD 21 00 00 DD 39 01 00 00 FD 21
-R 00 00 00 00 02 0B 01 00
-T 21 00 00 00 FD 5E 00 FD 34 00 16 00 6B 62 29 29
-R 00 00 00 00 02 02 05 00
-T 2F 00 19 09 4D 44 DD 7E 04 02 59 50 13 DD 7E 05
+T 2B 00
 R 00 00 00 00
-T 3D 00 12 59 50 13 13 DD 7E 06 12 C5 3E 0F F5 33
+T 2B 00 AF
 R 00 00 00 00
-T 4B 00 CD 00 00 33 C1 59 50 13 13 13 DD 7E 06 C6
+T 2C 00
+R 00 00 00 00
+T 2C 00 DD 77 FC 21 01 00 09 E3 E1 E5 5E 0A 57 DD
+R 00 00 00 00
+T 3A 00 7E FD 3D C2 C9 00 DD 7E FC B7 28 56 C5 21
+R 00 00 00 00 00 06 00 00
+T 48 00 11 01 E5 7B F5 33 D5 33 CD 00 00 F1 F1 C1
+R 00 00 00 00 02 0B 10 00
+T 56 00 E1 E5 7E C6 08 5F 0A 57 C5 21 12 01 E5 7B
+R 00 00 00 00
+T 64 00 F5 33 D5 33 CD 00 00 F1 F1 C1 E1 E5 56 0A
+R 00 00 00 00 02 07 10 00
+T 72 00 C6 08 5F C5 21 11 01 E5 D5 CD 00 00 F1 F1
+R 00 00 00 00 02 0C 10 00
+T 80 00 C1 E1 E5 7E C6 08 5F 0A C6 08 47 21 12 01
+R 00 00 00 00
+T 8E 00 E5 7B F5 33 C5 33 CD 00 00 F1 F1 C3 19 01
+R 00 00 00 00 02 09 10 00 00 0E 00 00
+T 9C 00
+R 00 00 00 00
+T 9C 00 14 14 14 14 C5 21 11 01 E5 7B F5 33 D5 33
+R 00 00 00 00
+T AA 00 CD 00 00 F1 F1 C1 E1 E5 7E C6 08 57 0A 47
+R 00 00 00 00 02 03 10 00
+T B8 00 04 04 04 04 21 12 01 E5 58 D5 CD 00 00 F1
+R 00 00 00 00 02 0D 10 00
+T C6 00 F1 18 50
+R 00 00 00 00
+T C9 00
+R 00 00 00 00
+T C9 00 DD 6E FD 26 00 D5 11 10 01 19 D1 DD 7E FC
+R 00 00 00 00
+T D7 00 B7 28 30 15 15 C5 E5 7B F5 33 D5 33 CD
+R 00 00 00 00
+T E4 00 00 00 F1 F1 C1 DD 6E FE DD 66 FF 5E 16 00
+R 00 00 00 00 02 02 10 00
+T F2 00 FD 21 10 01 FD 19 E1 E5 56 0A C6 0A 47 FD
+R 00 00 00 00
+T 00 01 E5 58 D5 CD 00 00 F1 F1 18 0F
+R 00 00 00 00 02 06 10 00
+T 0A 01
+R 00 00 00 00
+T 0A 01 14 14 14 14 E5 7B F5 33 D5 33 CD 00 00 F1
+R 00 00 00 00 02 0D 10 00
+T 18 01 F1
+R 00 00 00 00
+T 19 01
+R 00 00 00 00
+T 19 01 DD F9 DD E1 C9
+R 00 00 00 00
+T 1E 01
+R 00 00 00 00
+T 1E 01 3E 08 F5 33 21 10 01 E5 21 00 00 E5 CD
+R 00 00 00 00 02 0B 0B 00
+T 2B 01 00 00 F1 F1 33 C9
+R 00 00 00 00 02 02 08 00
+T 31 01
+R 00 00 00 00
+T 31 01 DD E5 DD 21 00 00 DD 39 21 00 00 4E 06 00
+R 00 00 00 00 02 0B 09 00
+T 3F 01 0B DD 5E 04 DD 7E 04 17 9F 57 7B 91 7A 98
+R 00 00 00 00
+T 4D 01 E2 52 01 EE 80
+R 00 00 00 00 00 03 00 00
+T 52 01
+R 00 00 00 00
+T 52 01 F2 A8 01 11 00 00 DD 4E 04 79 CB 07 9F 47
+R 00 00 00 00 00 03 00 00 02 06 03 00
+T 60 01 69 60 29 29 09 19 4D 44 3A 00 00 C6 FF D5
+R 00 00 00 00 02 0B 09 00
+T 6E 01 5F 16 00 6B 62 29 29 19 D1 19 E5 FD E1 FD
+R 00 00 00 00
+T 7C 01 7E 00 02 59 50 13 FD E5 E1 23 7E 12 59 50
+R 00 00 00 00
+T 8A 01 13 13 FD E5 E1 23 23 7E 12 59 50 13 13 13
+R 00 00 00 00
+T 98 01 FD E5 E1 23 23 23 7E 12 03 03 03 03 FD 7E
+R 00 00 00 00
+T A6 01 04 02
+R 00 00 00 00
+T A8 01
+R 00 00 00 00
+T A8 01 21 00 00 35 DD E1 C9
+R 00 00 00 00 02 03 09 00
+T AF 01
+R 00 00 00 00
+T AF 01 DD E5 DD 21 00 00 DD 39 F5 F5 01 00 00 DD
+R 00 00 00 00 02 0D 03 00
+T BD 01 5E 04 DD 56 05 6B 62 29 29 19 09 33 33 4D
+R 00 00 00 00
+T CB 01 44 C5 03 0A D6 0A 38 0D E1 E5 5E 7B D6 07
+R 00 00 00 00
+T D9 01 38 05 3E F1 93 30 0C
+R 00 00 00 00
+T E0 01
+R 00 00 00 00
+T E0 01 DD 46 04 C5 33 CD 31 01 33 C3 E6 02
+R 00 00 00 00 00 08 00 00 00 0C 00 00
+T EC 01
+R 00 00 00 00
+T EC 01 E1 E5 23 23 23 56 7B 82 E1 E5 77 0A 5F E1
+R 00 00 00 00
+T FA 01 E5 23 23 23 23 56 7B 92 02 3A 00 00 B7 C2
+R 00 00 00 00 02 0C 0D 00
+T 08 02 DF 02 0A 57 14 14 14 14 E1 E5 7E C6 08 C5
+R 00 00 00 00 00 02 00 00
+T 16 02 5F D5 CD 00 00 F1 C1 7D B7 28 23 0A 57 14
+R 00 00 00 00 02 05 02 00
+T 24 02 14 14 14 E1 E5 46 04 04 04 04 AF F5 33 58
+R 00 00 00 00
+T 32 02 D5 CD 00 00 F1 33 DD 46 04 C5 33 CD 31 01
+R 00 00 00 00 02 04 0F 00 00 0E 00 00
+T 40 02 33 C3 DF 02
+R 00 00 00 00 00 04 00 00
+T 44 02
+R 00 00 00 00
+T 44 02 FD 21 00 00 FD 7E 00 B7 CA DF 02 FD 46 00
+R 00 00 00 00 02 04 05 00 00 0B 00 00
+T 52 02 05 48
+R 00 00 00 00
+T 54 02
+R 00 00 00 00
+T 54 02 CB 79 C2 DF 02 59 7B CB 07 9F 57 6B 62 29
+R 00 00 00 00 00 05 00 00
+T 62 02 29 29 19 11 00 00 19 EB C5 D5 DD 6E FC DD
+R 00 00 00 00 02 06 01 00
+T 70 02 66 FD E5 D5 CD 00 00 F1 F1 D1 C1 2D 20 5C
+R 00 00 00 00 02 07 06 00
+T 7E 02 21 06 00 19 EB 1A 4F FD 21 00 00 FD 6E 00
+R 00 00 00 00 02 0B 0E 00
+T 8C 02 26 00 23 DD 71 FE DD 36 FF 00 7D DD 96 FE
+R 00 00 00 00
+T 9A 02 7C DD 9E FF E2 A3 02 EE 80
+R 00 00 00 00 00 07 00 00
+T A3 02
+R 00 00 00 00
+T A3 02 FA AE 02 C5 33 CD 00 00 33 18 21
+R 00 00 00 00 00 03 00 00 02 08 0C 00
+T AE 02
+R 00 00 00 00
+T AE 02 21 00 00 46 04 79 90 12 E1 E5 23 46 04 04
+R 00 00 00 00 02 03 0E 00
+T BC 02 04 04 E1 E5 56 14 14 14 14 AF F5 33 4A C5
+R 00 00 00 00
+T CA 02 CD 00 00 F1 33
+R 00 00 00 00 02 03 0F 00
+T CF 02
+R 00 00 00 00
+T CF 02 DD 46 04 C5 33 CD 31 01 33 18 0C
+R 00 00 00 00 00 08 00 00
+T DA 02
+R 00 00 00 00
+T DA 02 0D 41 C3 54 02
+R 00 00 00 00 00 05 00 00
+T DF 02
+R 00 00 00 00
+T DF 02 E1 E5 E5 CD 00 00 F1
+R 00 00 00 00 00 06 00 00
+T E6 02
+R 00 00 00 00
+T E6 02 DD F9 DD E1 C9
+R 00 00 00 00
+T EB 02
+R 00 00 00 00
+T EB 02 FD 21 00 00 FD 7E 00 B7 C8 FD 4E 00 0D
+R 00 00 00 00 02 04 09 00
+T F8 02
+R 00 00 00 00
+T F8 02 CB 79 C0 79 5F 17 9F 57 C5 D5 CD AF 01 F1
+R 00 00 00 00 00 0D 00 00
+T 06 03 C1 0D 18 EE
+R 00 00 00 00
+T 0A 03
+R 00 00 00 00
+T 0A 03 DD E5 DD 21 00 00 DD 39 01 00 00 FD 21
+R 00 00 00 00 02 0B 03 00
+T 17 03 00 00 FD 5E 00 FD 34 00 16 00 6B 62 29 29
+R 00 00 00 00 02 02 09 00
+T 25 03 19 09 4D 44 DD 7E 04 02 59 50 13 DD 7E 05
+R 00 00 00 00
+T 33 03 12 59 50 13 13 DD 7E 06 12 C5 3E 0F F5 33
+R 00 00 00 00
+T 41 03 CD 00 00 33 C1 59 50 13 13 13 DD 7E 06 C6
 R 00 00 00 00 02 03 00 00
-T 59 00 00 00 6F 3E 00 CE 00 00 67 7E 12 03 03 03
-R 00 00 00 00 0B 02 02 00 8B 08 02 00
-T 65 00 03 11 00 00 DD 6E 06 26 00 19 7E 02 DD E1
-R 00 00 00 00 02 04 03 00
-T 73 00 C9
+T 4F 03 00 00 6F 3E 00 CE 00 00 67 7E 12 03 03 03
+R 00 00 00 00 0B 02 04 00 8B 08 04 00
+T 5B 03 03 11 00 00 DD 6E 06 26 00 19 7E 02 DD E1
+R 00 00 00 00 02 04 07 00
+T 69 03 C9
 R 00 00 00 00
-T 74 00
+T 6A 03
 R 00 00 00 00
-T 74 00 CD 01 00 21 00 00 36 00 C9
-R 00 00 00 00 00 03 00 00 02 06 05 00
+T 6A 03 CD 1E 01 21 00 00 36 00 C9
+R 00 00 00 00 00 03 00 00 02 06 09 00

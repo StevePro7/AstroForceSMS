@@ -260,5 +260,7 @@ S:G$InitStageSprite$0$0({2}DF,SV:S),C,0,0
 S:G$InitStageSprites$0$0({2}DF,SV:S),C,0,0
 S:G$InitCustomStageData$0$0({2}DF,SV:S),C,0,0
 S:G$InitStageData$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStagePassA$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStagePassB$0$0({2}DF,SV:S),C,0,0
 S:G$InitPlayStage$0$0({2}DF,SV:S),C,0,0
 S:G$main$0$0({2}DF,SV:S),C,0,0
