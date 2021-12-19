@@ -2,8 +2,8 @@ M:enemy
 F:G$checkEnemyPlayerShoot$0$0({2}DF,SC:U),Z,0,0,0,0,0
 S:Lenemy.checkEnemyPlayerShoot$en$1$52({2}DG,STenemy:S),B,1,4
 S:Lenemy.checkEnemyPlayerShoot$ps$1$52({2}DG,STplayershoot:S),B,1,6
-S:Lenemy.checkEnemyPlayerShoot$sloc0$1$0({2}DG,STenemy:S),B,1,-2
-S:Lenemy.checkEnemyPlayerShoot$sloc1$1$0({2}DG,STplayershoot:S),B,1,-4
+S:Lenemy.checkEnemyPlayerShoot$sloc0$1$0({2}DG,STenemy:S),B,1,-4
+S:Lenemy.checkEnemyPlayerShoot$sloc1$1$0({2}DG,STplayershoot:S),B,1,-2
 F:G$GetEnemyDirection$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lenemy.GetEnemyDirection$en$1$54({2}DG,STenemy:S),B,1,4
 S:Lenemy.GetEnemyDirection$dx$1$55({2}SI:S),R,0,0,[c,b]

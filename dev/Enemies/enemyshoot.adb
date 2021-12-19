@@ -36,8 +36,8 @@ S:Lenemyshoot.RemoveEnemyshoot$esb$1$95({2}DG,STenemyshoot:S),R,0,0,[]
 F:G$UpdateEnemyshoot$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lenemyshoot.UpdateEnemyshoot$a$1$97({2}SI:U),B,1,4
 S:Lenemyshoot.UpdateEnemyshoot$es$1$98({2}DG,STenemyshoot:S),R,0,0,[c,b]
-S:Lenemyshoot.UpdateEnemyshoot$sloc0$1$0({1}SC:U),B,1,-1
-S:Lenemyshoot.UpdateEnemyshoot$sloc1$1$0({1}SC:U),B,1,-2
+S:Lenemyshoot.UpdateEnemyshoot$sloc0$1$0({1}SC:U),B,1,-2
+S:Lenemyshoot.UpdateEnemyshoot$sloc1$1$0({1}SC:U),B,1,-1
 F:G$UpdateEnemyshoots$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lenemyshoot.UpdateEnemyshoots$a$1$102({1}SC:S),R,0,0,[]
 F:G$InitEnemyshoots$0$0({2}DF,SV:S),Z,0,0,0,0,0
