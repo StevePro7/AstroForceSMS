@@ -1,11 +1,11 @@
 M:warning
 F:G$InitWarning$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lwarning.InitWarning$en$1$54({2}DG,STenemy:S),B,1,4
+S:Lwarning.InitWarning$en$1$57({2}DG,STenemy:S),B,1,4
 F:G$UpdateWarning$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lwarning.UpdateWarning$en$1$56({2}DG,STenemy:S),B,1,4
-S:Lwarning.UpdateWarning$s$1$57({2}SI:U),R,0,0,[c,b]
-S:Lwarning.UpdateWarning$x$1$57({1}SC:U),R,0,0,[l]
-S:Lwarning.UpdateWarning$y$1$57({1}SC:U),R,0,0,[e]
+S:Lwarning.UpdateWarning$en$1$59({2}DG,STenemy:S),B,1,4
+S:Lwarning.UpdateWarning$s$1$60({2}SI:U),R,0,0,[c,b]
+S:Lwarning.UpdateWarning$x$1$60({1}SC:U),R,0,0,[l]
+S:Lwarning.UpdateWarning$y$1$60({1}SC:U),R,0,0,[e]
 T:Fwarning$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fwarning$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fwarning$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
@@ -197,3 +197,6 @@ S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatespacestationAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage2endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$checkcollisionAssert$0$0({2}DF,SC:U),C,0,0

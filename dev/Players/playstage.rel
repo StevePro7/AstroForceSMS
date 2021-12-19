@@ -1,6 +1,6 @@
 ;!FILE playstage.asm
 XL2
-H 9 areas 20A global symbols
+H 9 areas 20B global symbols
 M playstage
 O -mz80
 S _initstagefunctions Ref0000
@@ -63,128 +63,121 @@ S _InitScroller Ref0000
 S __modsint Ref0000
 S _stageframe Ref0000
 S _UpdatePlayerIndicators Ref0000
-A _CODE size 2AC flags 0 addr 0
+A _CODE size 2A9 flags 0 addr 0
 S A$playstage$95 Def0000
 S A$playstage$96 Def0002
-S G$UpdateStagePassA$0$0 Def01D3
+S G$UpdateStagePassA$0$0 Def01D0
 S A$playstage$97 Def0006
-S G$UpdateStagePassB$0$0 Def01E5
+S G$UpdateStagePassB$0$0 Def01E2
 S G$InitStageSprites$0$0 Def0036
-S C$playstage.c$110$1$115 Def01D2
-S XG$InitPlayStage$0$0 Def02AA
-S C$playstage.c$220$3$123 Def0272
-S C$playstage.c$113$1$115 Def01D3
-S C$playstage.c$200$1$119 Def0257
-S C$playstage.c$171$2$120 Def020A
-S C$playstage.c$215$2$122 Def0269
-S C$playstage.c$131$1$117 Def01E2
-S C$playstage.c$122$1$117 Def01D9
-S C$playstage.c$106$1$115 Def01BC
-S C$playstage.c$223$3$123 Def0275
-S C$playstage.c$132$1$117 Def01E2
-S _UpdateStagePassA Def01D3
-S C$playstage.c$251$3$123 Def029A
-S C$playstage.c$231$4$124 Def0281
-S C$playstage.c$217$2$122 Def026C
-S C$playstage.c$212$1$119 Def0269
-S C$playstage.c$203$1$119 Def025A
-S _UpdateStagePassB Def01E5
-S C$playstage.c$142$1$118 Def01E8
-S C$playstage.c$125$1$117 Def01DC
-S C$playstage.c$116$1$117 Def01D3
+S C$playstage.c$200$1$122 Def0254
+S C$playstage.c$131$1$120 Def01DF
+S C$playstage.c$122$1$120 Def01D6
+S C$playstage.c$132$1$120 Def01DF
+S XG$InitPlayStage$0$0 Def02A7
+S C$playstage.c$212$1$122 Def0266
+S C$playstage.c$203$1$122 Def0257
+S C$playstage.c$142$1$121 Def01E5
+S C$playstage.c$125$1$120 Def01D9
+S C$playstage.c$116$1$120 Def01D0
+S C$playstage.c$160$1$122 Def01F7
+S C$playstage.c$151$1$122 Def01EE
+S C$playstage.c$135$1$120 Def01E2
+S C$playstage.c$110$1$118 Def01CF
+S C$playstage.c$206$1$122 Def025C
+S C$playstage.c$128$1$120 Def01DC
+S C$playstage.c$119$1$120 Def01D3
+S C$playstage.c$220$3$126 Def026F
+S C$playstage.c$163$1$122 Def01FA
+S C$playstage.c$154$1$122 Def01F1
+S C$playstage.c$145$1$122 Def01E5
+S C$playstage.c$113$1$118 Def01D0
+S _UpdateStagePassA Def01D0
+S C$playstage.c$209$1$122 Def0261
+S C$playstage.c$191$1$122 Def024B
+S C$playstage.c$182$1$122 Def0242
+S C$playstage.c$171$2$123 Def0207
+S C$playstage.c$138$1$121 Def01E2
+S _UpdateStagePassB Def01E2
+S C$playstage.c$262$3$131 Def02A2
+S C$playstage.c$215$2$125 Def0266
+S C$playstage.c$139$1$121 Def01E2
+S C$playstage.c$106$1$118 Def01B9
 S G$InitCustomStageData$0$0 Def0079
-S C$playstage.c$226$3$123 Def0278
-S C$playstage.c$175$2$121 Def022C
-S C$playstage.c$160$1$119 Def01FA
-S C$playstage.c$151$1$119 Def01F1
-S C$playstage.c$135$1$117 Def01E5
-S C$playstage.c$108$2$116 Def01C0
+S C$playstage.c$265$1$122 Def02A7
+S C$playstage.c$223$3$126 Def0272
+S C$playstage.c$166$1$122 Def01FD
+S C$playstage.c$157$1$122 Def01F4
+S C$playstage.c$148$1$122 Def01EB
 S _InitStageSprites Def0036
-S C$playstage.c$245$3$123 Def0293
-S C$playstage.c$241$4$126 Def0290
-S C$playstage.c$206$1$119 Def025F
+S C$playstage.c$251$3$126 Def0297
+S C$playstage.c$231$4$127 Def027E
+S C$playstage.c$217$2$125 Def0269
+S C$playstage.c$194$1$122 Def024E
+S C$playstage.c$185$1$122 Def0245
 S G$InitStageSprite$0$0 Def0000
-S C$playstage.c$128$1$117 Def01DF
-S C$playstage.c$119$1$117 Def01D6
-S C$playstage.c$235$4$125 Def0286
-S C$playstage.c$229$3$123 Def027B
-S C$playstage.c$163$1$119 Def01FD
-S C$playstage.c$154$1$119 Def01F4
-S C$playstage.c$145$1$119 Def01E8
-S C$playstage.c$239$3$123 Def0289
-S C$playstage.c$209$1$119 Def0264
-S C$playstage.c$191$1$119 Def024E
-S C$playstage.c$182$1$119 Def0245
-S C$playstage.c$138$1$118 Def01E5
+S C$playstage.c$256$3$131 Def029C
+S C$playstage.c$247$4$130 Def0295
+S C$playstage.c$226$3$126 Def0275
+S C$playstage.c$175$2$124 Def0229
+S C$playstage.c$169$1$122 Def0200
+S C$playstage.c$108$2$119 Def01BD
+S C$playstage.c$30$1$110 Def0036
+S C$playstage.c$245$3$126 Def0290
+S C$playstage.c$241$4$129 Def028D
+S C$playstage.c$197$1$122 Def0251
+S C$playstage.c$188$1$122 Def0248
+S C$playstage.c$179$1$122 Def022F
 S G$InitStageData$0$0 Def009F
-S C$playstage.c$262$3$128 Def02A5
-S C$playstage.c$139$1$118 Def01E5
-S C$playstage.c$40$2$110 Def0060
-S C$playstage.c$265$1$119 Def02AA
-S C$playstage.c$166$1$119 Def0200
-S C$playstage.c$157$1$119 Def01F7
-S C$playstage.c$148$1$119 Def01EE
-S C$playstage.c$194$1$119 Def0251
-S C$playstage.c$185$1$119 Def0248
-S C$playstage.c$50$1$112 Def006E
-S C$playstage.c$33$2$110 Def005D
-S C$playstage.c$256$3$128 Def029F
-S C$playstage.c$247$4$127 Def0298
-S C$playstage.c$51$1$112 Def0073
-S C$playstage.c$169$1$119 Def0203
-S XG$UpdateStagePassA$0$0 Def01E2
-S C$playstage.c$60$1$113 Def0082
-S C$playstage.c$52$1$112 Def0078
-S C$playstage.c$43$1$112 Def0060
-S C$playstage.c$30$1$107 Def0036
-S C$playstage.c$197$1$119 Def0254
-S C$playstage.c$188$1$119 Def024B
-S C$playstage.c$179$1$119 Def0232
-S XG$UpdateStagePassB$0$0 Def01E5
-S C$playstage.c$44$1$112 Def0063
-S C$playstage.c$259$3$128 Def02A2
-S C$playstage.c$54$1$112 Def0079
-S C$playstage.c$35$3$111 Def003F
+S C$playstage.c$259$3$131 Def029F
+S C$playstage.c$235$4$128 Def0283
+S C$playstage.c$229$3$126 Def0278
+S C$playstage.c$24$1$110 Def0008
+S C$playstage.c$239$3$126 Def0286
+S C$playstage.c$25$1$110 Def0016
+S C$playstage.c$40$2$113 Def0060
+S C$playstage.c$26$1$110 Def001D
+S XG$UpdateStagePassA$0$0 Def01DF
+S C$playstage.c$27$1$110 Def0029
+S XG$UpdateStagePassB$0$0 Def01E2
+S C$playstage.c$50$1$115 Def006E
+S C$playstage.c$33$2$113 Def005D
+S C$playstage.c$28$1$110 Def0035
+S C$playstage.c$51$1$115 Def0073
 S _InitCustomStageData Def0079
-S C$playstage.c$63$1$113 Def008A
+S C$playstage.c$60$1$116 Def0082
+S C$playstage.c$52$1$115 Def0078
+S C$playstage.c$43$1$115 Def0060
 S XG$InitStageSprites$0$0 Def005E
-S C$playstage.c$38$2$110 Def005E
-S C$playstage.c$36$3$111 Def0049
-S C$playstage.c$24$1$107 Def0008
-S C$playstage.c$64$1$113 Def009C
-S C$playstage.c$47$1$112 Def006B
-S C$playstage.c$25$1$107 Def0016
+S C$playstage.c$44$1$115 Def0063
 S _InitStageSprite Def0000
-S C$playstage.c$90$1$115 Def0156
-S C$playstage.c$81$1$115 Def00B4
-S C$playstage.c$26$1$107 Def001D
-S C$playstage.c$91$1$115 Def0173
-S C$playstage.c$66$1$113 Def009F
-S C$playstage.c$57$1$113 Def0079
-S C$playstage.c$27$1$107 Def0029
-S C$playstage.c$28$1$107 Def0035
+S C$playstage.c$54$1$115 Def0079
+S C$playstage.c$35$3$114 Def003F
+S C$playstage.c$63$1$116 Def008A
+S C$playstage.c$38$2$113 Def005E
+S C$playstage.c$36$3$114 Def0049
+S C$playstage.c$64$1$116 Def009C
+S C$playstage.c$47$1$115 Def006B
 S _InitStageData Def009F
-S C$playstage.c$84$1$115 Def00C3
-S C$playstage.c$94$1$115 Def017E
-S C$playstage.c$85$1$115 Def00DF
-S C$playstage.c$86$1$115 Def00F8
+S C$playstage.c$90$1$118 Def0153
+S C$playstage.c$81$1$118 Def00B4
+S C$playstage.c$91$1$118 Def0170
+S C$playstage.c$66$1$116 Def009F
+S C$playstage.c$57$1$116 Def0079
 S G$InitAfterBossStage$0$0 Def0060
 S A$playstage$200 Def005E
 S A$playstage$101 Def0008
-S C$playstage.c$87$1$115 Def0111
-S C$playstage.c$78$1$115 Def00AC
+S C$playstage.c$84$1$118 Def00C3
 S A$playstage$102 Def000B
-S C$playstage.c$97$1$115 Def0185
-S C$playstage.c$88$1$115 Def012A
+S C$playstage.c$94$1$118 Def017B
+S C$playstage.c$85$1$118 Def00DF
 S A$playstage$310 Def00B6
 S A$playstage$301 Def00AC
 S A$playstage$220 Def0067
 S A$playstage$121 Def001D
 S A$playstage$103 Def000D
-S C$playstage.c$89$1$115 Def0143
-S A$playstage$500 Def01CE
-S A$playstage$410 Def0153
-S A$playstage$401 Def0143
+S C$playstage.c$86$1$118 Def00F5
+S A$playstage$410 Def014E
 S A$playstage$320 Def00C3
 S A$playstage$302 Def00AE
 S A$playstage$230 Def0071
@@ -193,10 +186,13 @@ S A$playstage$131 Def0029
 S A$playstage$122 Def0020
 S A$playstage$113 Def0016
 S A$playstage$104 Def000E
+S C$playstage.c$87$1$118 Def010E
+S C$playstage.c$78$1$118 Def00AC
 S XG$InitCustomStageData$0$0 Def009C
-S A$playstage$501 Def01D0
-S A$playstage$420 Def0162
-S A$playstage$402 Def0146
+S A$playstage$501 Def01CB
+S A$playstage$420 Def015C
+S A$playstage$411 Def0150
+S A$playstage$402 Def0140
 S A$playstage$330 Def00D7
 S A$playstage$321 Def00C6
 S A$playstage$312 Def00B8
@@ -207,8 +203,13 @@ S A$playstage$132 Def002A
 S A$playstage$123 Def0022
 S A$playstage$114 Def0019
 S A$playstage$105 Def000F
-S A$playstage$421 Def0163
-S A$playstage$403 Def0149
+S C$playstage.c$97$1$118 Def0182
+S C$playstage.c$88$1$118 Def0127
+S A$playstage$520 Def01D0
+S A$playstage$502 Def01CD
+S A$playstage$430 Def016D
+S A$playstage$421 Def015F
+S A$playstage$403 Def0143
 S A$playstage$340 Def00E6
 S A$playstage$331 Def00DA
 S A$playstage$322 Def00C9
@@ -219,12 +220,12 @@ S A$playstage$133 Def002B
 S A$playstage$124 Def0023
 S A$playstage$115 Def001A
 S A$playstage$106 Def0012
+S C$playstage.c$89$1$118 Def0140
 S XG$InitStageSprite$0$0 Def0035
-S A$playstage$701 Def0269
-S A$playstage$620 Def021D
-S A$playstage$602 Def0200
-S A$playstage$422 Def0165
-S A$playstage$404 Def014A
+S A$playstage$620 Def0217
+S A$playstage$440 Def017A
+S A$playstage$422 Def0160
+S A$playstage$404 Def0146
 S A$playstage$341 Def00E7
 S A$playstage$332 Def00DC
 S A$playstage$323 Def00CC
@@ -236,14 +237,15 @@ S A$playstage$134 Def002C
 S A$playstage$125 Def0025
 S A$playstage$116 Def001B
 S A$playstage$107 Def0013
-S A$playstage$711 Def0272
-S A$playstage$621 Def021E
-S A$playstage$612 Def020A
-S A$playstage$531 Def01DC
-S A$playstage$450 Def0186
-S A$playstage$423 Def0168
-S A$playstage$405 Def014B
-S A$playstage$360 Def0105
+S A$playstage$720 Def0275
+S A$playstage$702 Def0266
+S A$playstage$630 Def0227
+S A$playstage$621 Def021A
+S A$playstage$603 Def01FD
+S A$playstage$450 Def0182
+S A$playstage$423 Def0162
+S A$playstage$405 Def0147
+S A$playstage$360 Def0101
 S A$playstage$342 Def00E8
 S A$playstage$324 Def00CD
 S A$playstage$315 Def00C0
@@ -259,19 +261,17 @@ S A$playstage$135 Def002D
 S A$playstage$126 Def0027
 S A$playstage$117 Def001C
 S A$playstage$108 Def0014
-S A$playstage$730 Def0284
-S A$playstage$640 Def0232
-S A$playstage$622 Def021F
-S A$playstage$613 Def020D
-S A$playstage$523 Def01D6
-S A$playstage$460 Def0198
-S A$playstage$451 Def0187
-S A$playstage$433 Def0173
-S A$playstage$424 Def0169
-S A$playstage$415 Def0156
-S A$playstage$406 Def014C
-S A$playstage$370 Def0114
-S A$playstage$361 Def0106
+S A$playstage$730 Def027E
+S A$playstage$712 Def026F
+S A$playstage$622 Def021B
+S A$playstage$613 Def0207
+S A$playstage$532 Def01D9
+S A$playstage$460 Def0192
+S A$playstage$451 Def0183
+S A$playstage$424 Def0165
+S A$playstage$406 Def0148
+S A$playstage$370 Def010E
+S A$playstage$361 Def0102
 S A$playstage$343 Def00E9
 S A$playstage$325 Def00CE
 S A$playstage$316 Def00C1
@@ -287,26 +287,23 @@ S A$playstage$163 Def003E
 S A$playstage$136 Def0030
 S A$playstage$127 Def0028
 S A$playstage$109 Def0015
-S XG$InitStageData$0$0 Def01D2
-S A$playstage$740 Def0289
-S A$playstage$650 Def0244
-S A$playstage$641 Def0235
-S A$playstage$623 Def0222
-S A$playstage$614 Def020E
-S A$playstage$560 Def01E5
-S A$playstage$506 Def01D2
-S A$playstage$470 Def01B0
-S A$playstage$461 Def019B
-S A$playstage$452 Def0188
-S A$playstage$443 Def017E
-S A$playstage$434 Def0176
-S A$playstage$425 Def016A
-S A$playstage$416 Def0159
-S A$playstage$407 Def014D
-S A$playstage$380 Def0127
-S A$playstage$371 Def0117
-S A$playstage$362 Def0109
-S A$playstage$353 Def00F8
+S XG$InitStageData$0$0 Def01CF
+S A$playstage$731 Def0281
+S A$playstage$650 Def023E
+S A$playstage$641 Def022F
+S A$playstage$623 Def021C
+S A$playstage$614 Def020A
+S A$playstage$524 Def01D3
+S A$playstage$470 Def01AA
+S A$playstage$461 Def0195
+S A$playstage$452 Def0184
+S A$playstage$434 Def0170
+S A$playstage$425 Def0166
+S A$playstage$416 Def0153
+S A$playstage$407 Def0149
+S A$playstage$380 Def0122
+S A$playstage$371 Def0111
+S A$playstage$362 Def0103
 S A$playstage$344 Def00EA
 S A$playstage$326 Def00CF
 S A$playstage$272 Def0096
@@ -317,27 +314,28 @@ S A$playstage$191 Def005C
 S A$playstage$182 Def0050
 S A$playstage$173 Def0048
 S A$playstage$137 Def0031
-S A$playstage$741 Def028C
-S A$playstage$723 Def027B
-S A$playstage$705 Def026C
-S A$playstage$642 Def0236
-S A$playstage$624 Def0223
-S A$playstage$615 Def0210
-S A$playstage$606 Def0203
-S A$playstage$543 Def01E2
-S A$playstage$471 Def01B1
-S A$playstage$462 Def019C
-S A$playstage$453 Def0189
-S A$playstage$444 Def0181
-S A$playstage$435 Def0179
-S A$playstage$426 Def016B
-S A$playstage$417 Def015C
-S A$playstage$408 Def014E
-S A$playstage$390 Def0133
-S A$playstage$372 Def0118
-S A$playstage$363 Def010C
-S A$playstage$354 Def00FB
-S A$playstage$345 Def00ED
+S A$playstage$741 Def0286
+S A$playstage$651 Def0241
+S A$playstage$642 Def0232
+S A$playstage$624 Def021F
+S A$playstage$615 Def020B
+S A$playstage$561 Def01E2
+S A$playstage$507 Def01CF
+S A$playstage$480 Def01B8
+S A$playstage$471 Def01AD
+S A$playstage$462 Def0198
+S A$playstage$453 Def0185
+S A$playstage$444 Def017B
+S A$playstage$435 Def0173
+S A$playstage$426 Def0167
+S A$playstage$417 Def0156
+S A$playstage$408 Def014A
+S A$playstage$390 Def012F
+S A$playstage$381 Def0124
+S A$playstage$372 Def0114
+S A$playstage$363 Def0106
+S A$playstage$354 Def00F5
+S A$playstage$345 Def00EB
 S A$playstage$327 Def00D2
 S A$playstage$309 Def00B4
 S A$playstage$282 Def009C
@@ -347,32 +345,28 @@ S A$playstage$255 Def007F
 S A$playstage$219 Def0066
 S A$playstage$183 Def0051
 S A$playstage$138 Def0032
-S A$playstage$751 Def0293
-S A$playstage$742 Def028E
-S A$playstage$724 Def027E
-S A$playstage$715 Def0275
-S A$playstage$706 Def026F
-S A$playstage$670 Def0251
-S A$playstage$643 Def0238
-S A$playstage$634 Def022C
-S A$playstage$625 Def0224
-S A$playstage$616 Def0214
-S A$playstage$607 Def0206
-S A$playstage$535 Def01DF
-S A$playstage$490 Def01C3
-S A$playstage$472 Def01B2
-S A$playstage$463 Def019F
-S A$playstage$454 Def018C
-S A$playstage$445 Def0184
-S A$playstage$436 Def017A
-S A$playstage$427 Def016C
-S A$playstage$418 Def015D
-S A$playstage$409 Def0151
-S A$playstage$391 Def0136
-S A$playstage$373 Def0119
-S A$playstage$364 Def010E
-S A$playstage$355 Def00FE
-S A$playstage$346 Def00F0
+S A$playstage$742 Def0289
+S A$playstage$724 Def0278
+S A$playstage$706 Def0269
+S A$playstage$643 Def0233
+S A$playstage$625 Def0220
+S A$playstage$616 Def020D
+S A$playstage$607 Def0200
+S A$playstage$544 Def01DF
+S A$playstage$490 Def01BD
+S A$playstage$472 Def01AE
+S A$playstage$463 Def0199
+S A$playstage$454 Def0186
+S A$playstage$445 Def017E
+S A$playstage$436 Def0176
+S A$playstage$427 Def0168
+S A$playstage$418 Def0159
+S A$playstage$409 Def014B
+S A$playstage$391 Def0130
+S A$playstage$373 Def0115
+S A$playstage$364 Def0109
+S A$playstage$355 Def00F8
+S A$playstage$346 Def00EC
 S A$playstage$337 Def00DF
 S A$playstage$328 Def00D3
 S A$playstage$292 Def009F
@@ -383,56 +377,59 @@ S A$playstage$184 Def0053
 S A$playstage$157 Def0036
 S A$playstage$139 Def0033
 S _InitAfterBossStage Def0060
-S A$playstage$752 Def0296
-S A$playstage$725 Def027F
-S A$playstage$707 Def0270
-S A$playstage$662 Def024B
-S A$playstage$644 Def0239
-S A$playstage$635 Def022F
-S A$playstage$626 Def0225
-S A$playstage$617 Def0217
-S A$playstage$608 Def0208
-S A$playstage$590 Def01F7
-S A$playstage$527 Def01D9
-S A$playstage$491 Def01C4
-S A$playstage$473 Def01B3
-S A$playstage$464 Def01A2
-S A$playstage$455 Def018F
-S A$playstage$437 Def017B
-S A$playstage$428 Def016D
-S A$playstage$419 Def015F
-S A$playstage$392 Def0137
-S A$playstage$374 Def011A
-S A$playstage$356 Def00FF
-S A$playstage$347 Def00F3
+S A$playstage$752 Def0290
+S A$playstage$743 Def028B
+S A$playstage$725 Def027B
+S A$playstage$716 Def0272
+S A$playstage$707 Def026C
+S A$playstage$671 Def024E
+S A$playstage$644 Def0235
+S A$playstage$635 Def0229
+S A$playstage$626 Def0221
+S A$playstage$617 Def0211
+S A$playstage$608 Def0203
+S A$playstage$536 Def01DC
+S A$playstage$491 Def01C0
+S A$playstage$473 Def01AF
+S A$playstage$464 Def019C
+S A$playstage$455 Def0189
+S A$playstage$446 Def0181
+S A$playstage$437 Def0177
+S A$playstage$428 Def0169
+S A$playstage$419 Def015A
+S A$playstage$392 Def0133
+S A$playstage$374 Def0116
+S A$playstage$365 Def010B
+S A$playstage$356 Def00FB
+S A$playstage$347 Def00ED
 S A$playstage$338 Def00E2
 S A$playstage$329 Def00D4
 S A$playstage$293 Def00A1
 S A$playstage$275 Def0099
 S A$playstage$185 Def0054
 S A$playstage$167 Def003F
-S G$InitPlayStage$0$0 Def01E8
-S A$playstage$762 Def029A
-S A$playstage$753 Def0297
-S A$playstage$735 Def0286
-S A$playstage$654 Def0245
-S A$playstage$645 Def023C
-S A$playstage$627 Def0228
-S A$playstage$618 Def0219
-S A$playstage$582 Def01F1
-S A$playstage$573 Def01E8
-S A$playstage$519 Def01D3
-S A$playstage$492 Def01C5
-S A$playstage$483 Def01BC
-S A$playstage$474 Def01B4
-S A$playstage$465 Def01A3
-S A$playstage$456 Def0190
-S A$playstage$438 Def017C
-S A$playstage$429 Def0170
-S A$playstage$393 Def0138
-S A$playstage$375 Def011B
-S A$playstage$357 Def0100
-S A$playstage$348 Def00F5
+S G$InitPlayStage$0$0 Def01E5
+S A$playstage$753 Def0293
+S A$playstage$726 Def027C
+S A$playstage$708 Def026D
+S A$playstage$663 Def0248
+S A$playstage$645 Def0236
+S A$playstage$636 Def022C
+S A$playstage$627 Def0222
+S A$playstage$618 Def0214
+S A$playstage$609 Def0205
+S A$playstage$591 Def01F4
+S A$playstage$528 Def01D6
+S A$playstage$492 Def01C1
+S A$playstage$474 Def01B0
+S A$playstage$465 Def019F
+S A$playstage$456 Def018C
+S A$playstage$438 Def0178
+S A$playstage$429 Def016A
+S A$playstage$393 Def0134
+S A$playstage$375 Def0117
+S A$playstage$357 Def00FC
+S A$playstage$348 Def00F0
 S A$playstage$339 Def00E5
 S A$playstage$294 Def00A5
 S A$playstage$276 Def009A
@@ -441,91 +438,95 @@ S A$playstage$186 Def0055
 S A$playstage$177 Def0049
 S A$playstage$168 Def0040
 S A$playstage$159 Def0038
-S A$playstage$772 Def02A2
-S A$playstage$763 Def029D
-S A$playstage$682 Def025A
-S A$playstage$646 Def023D
-S A$playstage$628 Def0229
-S A$playstage$619 Def021A
-S A$playstage$574 Def01EB
-S A$playstage$493 Def01C6
-S A$playstage$484 Def01BD
-S A$playstage$475 Def01B5
-S A$playstage$466 Def01A6
-S A$playstage$457 Def0193
-S A$playstage$439 Def017D
-S A$playstage$394 Def013B
-S A$playstage$385 Def012A
-S A$playstage$376 Def011C
-S A$playstage$358 Def0101
+S A$playstage$763 Def0297
+S A$playstage$754 Def0294
+S A$playstage$736 Def0283
+S A$playstage$655 Def0242
+S A$playstage$646 Def0239
+S A$playstage$628 Def0225
+S A$playstage$619 Def0216
+S A$playstage$583 Def01EE
+S A$playstage$574 Def01E5
+S A$playstage$493 Def01C2
+S A$playstage$484 Def01B9
+S A$playstage$475 Def01B1
+S A$playstage$466 Def01A0
+S A$playstage$457 Def018D
+S A$playstage$439 Def0179
+S A$playstage$394 Def0135
+S A$playstage$376 Def0118
+S A$playstage$358 Def00FD
+S A$playstage$349 Def00F2
 S A$playstage$295 Def00A7
 S A$playstage$277 Def009B
 S A$playstage$268 Def008A
 S A$playstage$187 Def0056
 S A$playstage$178 Def004C
 S A$playstage$169 Def0042
-S A$playstage$782 Def02AA
-S A$playstage$746 Def0290
-S A$playstage$719 Def0278
-S A$playstage$692 Def0264
-S A$playstage$683 Def025D
-S A$playstage$674 Def0254
-S A$playstage$647 Def023E
-S A$playstage$629 Def022A
-S A$playstage$494 Def01C7
-S A$playstage$485 Def01BE
-S A$playstage$476 Def01B6
-S A$playstage$467 Def01A9
-S A$playstage$458 Def0194
-S A$playstage$449 Def0185
-S A$playstage$395 Def013E
-S A$playstage$386 Def012D
-S A$playstage$377 Def011F
-S A$playstage$359 Def0104
+S A$playstage$773 Def029F
+S A$playstage$764 Def029A
+S A$playstage$683 Def0257
+S A$playstage$647 Def023A
+S A$playstage$629 Def0226
+S A$playstage$575 Def01E8
+S A$playstage$494 Def01C3
+S A$playstage$485 Def01BA
+S A$playstage$476 Def01B2
+S A$playstage$467 Def01A3
+S A$playstage$458 Def0190
+S A$playstage$395 Def0138
+S A$playstage$386 Def0127
+S A$playstage$377 Def0119
+S A$playstage$359 Def00FE
 S A$playstage$296 Def00AA
 S A$playstage$269 Def008D
 S A$playstage$188 Def0057
 S A$playstage$179 Def004D
-S A$playstage$729 Def0281
-S A$playstage$693 Def0267
-S A$playstage$666 Def024E
-S A$playstage$648 Def0240
-S A$playstage$594 Def01FA
-S A$playstage$495 Def01C8
-S A$playstage$477 Def01B9
-S A$playstage$468 Def01AA
-S A$playstage$459 Def0195
-S A$playstage$396 Def0140
-S A$playstage$387 Def0130
-S A$playstage$378 Def0122
-S A$playstage$369 Def0111
+S A$playstage$783 Def02A7
+S A$playstage$747 Def028D
+S A$playstage$693 Def0261
+S A$playstage$684 Def025A
+S A$playstage$675 Def0251
+S A$playstage$648 Def023B
+S A$playstage$495 Def01C4
+S A$playstage$486 Def01BB
+S A$playstage$477 Def01B3
+S A$playstage$468 Def01A6
+S A$playstage$459 Def0191
+S A$playstage$396 Def013B
+S A$playstage$387 Def012A
+S A$playstage$378 Def011C
 S A$playstage$297 Def00AB
 S A$playstage$189 Def0058
-S A$playstage$757 Def0298
-S A$playstage$658 Def0248
-S A$playstage$649 Def0241
-S A$playstage$586 Def01F4
-S A$playstage$496 Def01C9
-S A$playstage$478 Def01BA
-S A$playstage$469 Def01AD
-S A$playstage$388 Def0131
-S A$playstage$379 Def0125
-S A$playstage$776 Def02A5
-S A$playstage$578 Def01EE
-S A$playstage$497 Def01CC
-S A$playstage$479 Def01BB
-S A$playstage$389 Def0132
+S A$playstage$694 Def0264
+S A$playstage$667 Def024B
+S A$playstage$649 Def023D
+S A$playstage$595 Def01F7
+S A$playstage$496 Def01C5
+S A$playstage$478 Def01B6
+S A$playstage$469 Def01A7
+S A$playstage$397 Def013D
+S A$playstage$388 Def012D
+S A$playstage$379 Def011F
+S A$playstage$758 Def0295
+S A$playstage$659 Def0245
+S A$playstage$587 Def01F1
+S A$playstage$497 Def01C6
+S A$playstage$479 Def01B7
+S A$playstage$389 Def012E
 S C$playstage.c$18$0$0 Def0000
-S A$playstage$777 Def02A8
-S A$playstage$768 Def029F
-S A$playstage$687 Def025F
-S A$playstage$678 Def0257
-S A$playstage$498 Def01CD
-S A$playstage$489 Def01C0
-S A$playstage$688 Def0262
-S A$playstage$598 Def01FD
+S A$playstage$777 Def02A2
+S A$playstage$579 Def01EB
+S A$playstage$498 Def01C9
+S A$playstage$778 Def02A5
+S A$playstage$769 Def029C
+S A$playstage$688 Def025C
+S A$playstage$679 Def0254
+S A$playstage$499 Def01CA
+S A$playstage$689 Def025F
+S A$playstage$599 Def01FA
 S XG$InitAfterBossStage$0$0 Def0078
-S _InitPlayStage Def01E8
+S _InitPlayStage Def01E5
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -590,123 +591,123 @@ T DC 00 DD 34 05
 R 00 00 00 00
 T DF 00
 R 00 00 00 00
-T DF 00 DD 6E 04 DD 66 05 29 19 4E 23 46 DD 71 F6
+T DF 00 DD 6E 04 DD 66 05 29 19 4E 23 46 33 33 C5
 R 00 00 00 00
-T ED 00 DD 70 F7 DD 34 04 20 03 DD 34 05
+T ED 00 DD 34 04 20 03 DD 34 05
 R 00 00 00 00
-T F8 00
+T F5 00
 R 00 00 00 00
-T F8 00 DD 6E 04 DD 66 05 29 19 7E DD 77 FA 23 7E
+T F5 00 DD 6E 04 DD 66 05 29 19 7E DD 77 FA 23 7E
 R 00 00 00 00
-T 06 01 DD 77 FB DD 34 04 20 03 DD 34 05
+T 03 01 DD 77 FB DD 34 04 20 03 DD 34 05
 R 00 00 00 00
-T 11 01
+T 0E 01
 R 00 00 00 00
-T 11 01 DD 6E 04 DD 66 05 29 19 4E 23 46 DD 71 FE
+T 0E 01 DD 6E 04 DD 66 05 29 19 4E 23 46 DD 71 F8
 R 00 00 00 00
-T 1F 01 DD 70 FF DD 34 04 20 03 DD 34 05
+T 1C 01 DD 70 F9 DD 34 04 20 03 DD 34 05
 R 00 00 00 00
-T 2A 01
+T 27 01
 R 00 00 00 00
-T 2A 01 DD 6E 04 DD 66 05 29 19 7E DD 77 F4 23 7E
+T 27 01 DD 6E 04 DD 66 05 29 19 7E DD 77 FE 23 7E
 R 00 00 00 00
-T 38 01 DD 77 F5 DD 34 04 20 03 DD 34 05
+T 35 01 DD 77 FF DD 34 04 20 03 DD 34 05
 R 00 00 00 00
-T 43 01
+T 40 01
 R 00 00 00 00
-T 43 01 DD 6E 04 DD 66 05 29 19 4E 23 46 DD 34 04
+T 40 01 DD 6E 04 DD 66 05 29 19 4E 23 46 DD 34 04
 R 00 00 00 00
-T 51 01 20 03 DD 34 05
+T 4E 01 20 03 DD 34 05
 R 00 00 00 00
-T 56 01
+T 53 01
 R 00 00 00 00
-T 56 01 DD 6E 04 DD 66 05 7D C6 01 DD 77 04 7C CE
+T 53 01 DD 6E 04 DD 66 05 7D C6 01 DD 77 04 7C CE
 R 00 00 00 00
-T 64 01 00 DD 77 05 29 19 7E 23 66 DD 77 F8 DD 74
+T 61 01 00 DD 77 05 29 19 7E 23 66 DD 77 F6 DD 74
 R 00 00 00 00
-T 72 01 F9 DD 6E 04 DD 66 05 29 19 5E 23 56 DD 56
+T 6F 01 F7 DD 6E 04 DD 66 05 29 19 5E 23 56 DD 56
 R 00 00 00 00
-T 80 01 F6 21 00 00 72 C5 D5 D5 33 DD 6E FC DD 66
+T 7D 01 F4 21 00 00 72 C5 D5 D5 33 DD 6E FC DD 66
 R 00 00 00 00 02 04 05 00
-T 8E 01 FD E5 CD 00 00 F1 33 DD 6E F4 DD 66 F5 E5
+T 8B 01 FD E5 CD 00 00 F1 33 DD 6E FE DD 66 FF E5
 R 00 00 00 00 02 05 36 00
-T 9C 01 DD 6E FE DD 66 FF E5 DD 6E FA DD 66 FB E5
+T 99 01 DD 6E F8 DD 66 F9 E5 DD 6E FA DD 66 FB E5
 R 00 00 00 00
-T AA 01 CD 00 00 21 06 00 39 F9 D1 D5 D5 33 CD
+T A7 01 CD 00 00 21 06 00 39 F9 D1 D5 D5 33 CD
 R 00 00 00 00 02 03 1D 00
-T B7 01 00 00 33 D1 C1 78 B1 28 0E DD 56 F8 7B F5
+T B4 01 00 00 33 D1 C1 78 B1 28 0E DD 56 F6 7B F5
 R 00 00 00 00 02 02 0F 00
-T C5 01 33 D5 33 C5 CD 00 00 F1 F1
+T C2 01 33 D5 33 C5 CD 00 00 F1 F1
 R 00 00 00 00 02 07 34 00
-T CE 01
+T CB 01
 R 00 00 00 00
-T CE 01 DD F9 DD E1 C9
+T CB 01 DD F9 DD E1 C9
 R 00 00 00 00
-T D3 01
+T D0 01
 R 00 00 00 00
-T D3 01 CD 00 00 CD 00 00 CD 00 00 CD
+T D0 01 CD 00 00 CD 00 00 CD 00 00 CD
 R 00 00 00 00 02 03 3B 00 02 06 31 00 02 09 2B 00
-T DD 01 00 00 CD 00 00 C3 00 00
+T DA 01 00 00 CD 00 00 C3 00 00
 R 00 00 00 00 02 02 0C 00 02 05 1A 00 02 08 32 00
+T E2 01
+R 00 00 00 00
+T E2 01 C3 00 00
+R 00 00 00 00 02 03 06 00
 T E5 01
 R 00 00 00 00
-T E5 01 C3 00 00
-R 00 00 00 00 02 03 06 00
-T E8 01
-R 00 00 00 00
-T E8 01 3A 00 00 32 00 00 CD 00 00 CD
+T E5 01 3A 00 00 32 00 00 CD 00 00 CD
 R 00 00 00 00 02 03 04 00 02 06 35 00 02 09 21 00
-T F2 01 00 00 CD 00 00 CD 00 00 CD
+T EF 01 00 00 CD 00 00 CD 00 00 CD
 R 00 00 00 00 02 02 18 00 02 05 37 00 02 08 0E 00
-T FB 01 00 00 CD 00 00 CD 00 00 3A
+T F8 01 00 00 CD 00 00 CD 00 00 3A
 R 00 00 00 00 02 02 23 00 02 05 38 00 02 08 13 00
-T 04 02 00 00 D6 06 30 22 21 00 00 4E 06 00 FD 21
+T 01 02 00 00 D6 06 30 22 21 00 00 4E 06 00 FD 21
 R 00 00 00 00 02 02 04 00 02 09 0A 00
-T 12 02 00 00 FD 6E 00 26 00 09 01 05 00 C5 E5 CD
+T 0F 02 00 00 FD 6E 00 26 00 09 01 05 00 C5 E5 CD
 R 00 00 00 00 02 02 04 00
-T 20 02 00 00 F1 F1 7D 21 00 00 3C 77 18 06
+T 1D 02 00 00 F1 F1 7D 21 00 00 3C 77 18 06
 R 00 00 00 00 02 02 39 00 02 08 24 00
-T 2C 02
+T 29 02
 R 00 00 00 00
-T 2C 02 3A 00 00 32 00 00
+T 29 02 3A 00 00 32 00 00
 R 00 00 00 00 02 03 04 00 02 06 24 00
-T 32 02
+T 2F 02
 R 00 00 00 00
-T 32 02 21 00 00 4E 06 00 0B 21 00 00 09 4E 06 00
+T 2F 02 21 00 00 4E 06 00 0B 21 00 00 09 4E 06 00
 R 00 00 00 00 02 03 24 00 02 0A 26 00
-T 40 02 C5 CD 9F 00 F1 CD 79 00 CD 00 00 CD
+T 3D 02 C5 CD 9F 00 F1 CD 79 00 CD 00 00 CD
 R 00 00 00 00 00 04 00 00 00 08 00 00 02 0B 16 00
-T 4C 02 00 00 CD 00 00 CD 00 00 CD
+T 49 02 00 00 CD 00 00 CD 00 00 CD
 R 00 00 00 00 02 02 01 00 02 05 17 00 02 08 20 00
-T 55 02 00 00 CD 00 00 21 00 00 36 00 21
+T 52 02 00 00 CD 00 00 21 00 00 36 00 21
 R 00 00 00 00 02 02 1B 00 02 05 09 00 02 08 1C 00
-T 60 02 00 00 36 01 21 00 00 36 00
+T 5D 02 00 00 36 01 21 00 00 36 00
 R 00 00 00 00 02 02 27 00 02 07 15 00
-T 69 02
+T 66 02
 R 00 00 00 00
-T 69 02 CD 00 00 3A 00 00 B7 20 2D CD 00 00 CD
+T 66 02 CD 00 00 3A 00 00 B7 20 2D CD 00 00 CD
 R 00 00 00 00 02 03 11 00 02 06 15 00 02 0C 33 00
-T 76 02 00 00 CD 00 00 3A 00 00 B7 20 05 CD
+T 73 02 00 00 CD 00 00 3A 00 00 B7 20 05 CD
 R 00 00 00 00 02 02 07 00 02 05 1E 00 02 08 2C 00
-T 82 02 D3 01 18 03
+T 7F 02 D0 01 18 03
 R 00 00 00 00 00 02 00 00
+T 83 02
+R 00 00 00 00
+T 83 02 CD E2 01
+R 00 00 00 00 00 03 00 00
 T 86 02
 R 00 00 00 00
-T 86 02 CD E5 01
-R 00 00 00 00 00 03 00 00
-T 89 02
-R 00 00 00 00
-T 89 02 3A 00 00 E6 0F 20 03 CD 00 00
+T 86 02 3A 00 00 E6 0F 20 03 CD 00 00
 R 00 00 00 00 02 03 3A 00 02 0A 25 00
-T 93 02
+T 90 02
 R 00 00 00 00
-T 93 02 3A 00 00 3D C8 18 00
+T 90 02 3A 00 00 3D C8 18 00
 R 00 00 00 00 02 03 1C 00
-T 9A 02
+T 97 02
 R 00 00 00 00
-T 9A 02 CD 00 00 18 CA
+T 97 02 CD 00 00 18 CA
 R 00 00 00 00 02 03 29 00
-T 9F 02
+T 9C 02
 R 00 00 00 00
-T 9F 02 CD 00 00 CD 00 00 21 00 00 36 00 18 BD
+T 9C 02 CD 00 00 CD 00 00 21 00 00 36 00 18 BD
 R 00 00 00 00 02 03 29 00 02 06 30 00 02 09 0B 00

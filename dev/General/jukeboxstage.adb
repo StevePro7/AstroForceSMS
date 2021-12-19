@@ -195,3 +195,6 @@ S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatespacestationAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage2endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$checkcollisionAssert$0$0({2}DF,SC:U),C,0,0

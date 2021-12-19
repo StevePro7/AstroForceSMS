@@ -1,10 +1,10 @@
 M:scroller
 F:G$InitScroller$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$AddScrollers$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lscroller.AddScrollers$scr$1$33({2}DG,SI:S),B,1,4
-S:Lscroller.AddScrollers$num$1$33({1}SC:U),B,1,6
+S:Lscroller.AddScrollers$scr$1$36({2}DG,SI:S),B,1,4
+S:Lscroller.AddScrollers$num$1$36({1}SC:U),B,1,6
 F:G$UpdateScroller$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lscroller.UpdateScroller$sc$1$35({2}DG,STscroll:S),R,0,0,[c,b]
+S:Lscroller.UpdateScroller$sc$1$38({2}DG,STscroll:S),R,0,0,[c,b]
 S:Lscroller.UpdateScroller$sloc0$1$0({2}SI:S),B,1,-2
 F:G$updatescrollact$0$0({2}DF,SV:S),Z,0,0,0,0,0
 T:Fscroller$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
@@ -152,3 +152,6 @@ S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatespacestationAssert$0$0({2}DF,SV:S),C,0,0
+S:G$updatestage2endbossAssert$0$0({2}DF,SV:S),C,0,0
+S:G$checkcollisionAssert$0$0({2}DF,SC:U),C,0,0
