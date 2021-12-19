@@ -1,9 +1,10 @@
 #ifndef _RSGTHING_H_
 #define _RSGTHING_H_
 
-void rsgthing_foo();
+#include "../defines.h"
 
-//unsigned char UpdateRSGThing( enemy *en );
-//void InitRSGThing( enemy *en );
+// ADRIANA
+unsigned char UpdateRSGThing( enemy *en );
+void InitRSGThing( enemy *en );
 
 #endif//_RSGTHING_H_
