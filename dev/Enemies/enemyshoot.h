@@ -5,8 +5,6 @@
 
 // ADRIANA
 void InitEnemyshootSprites();
-void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );
-void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count );
 void InitEnemyshootLaser( unsigned char x, unsigned char y );
 void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
 unsigned char CheckMapCollision( unsigned char x, unsigned char y );

@@ -5,12 +5,6 @@
 #include "../banks/fixedbank.h"
 #include "../funcs.h"
 
-void DoStage1BossDirectionShoots( enemy *en )
-{
-	if( en->enemyframe % 96 == 48 )
-		SpreadEnemyshootDirection( en->enemyposx + 20, en->enemyposy + 24, stage2endbossshootpatternx, stage2endbossshootpatterny, 6 );
-}
-
 void UpdateStage1EndBoss1( enemy *en )
 {
 	// Sinus movement

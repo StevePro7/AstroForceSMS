@@ -40,7 +40,30 @@ void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
 
 // void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
 // void InitEnemyshootLaser( unsigned char x, unsigned char y );
-// void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );
+void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy )
+{
+	enemyshoot *es;
+
+	shootcount++;
+	if( numenemyshoots < MAXENEMYSHOOTS )
+	{
+		es = &enemyshoots[ numenemyshoots ];
+
+		// Position
+		es->enemyshootposx = x;
+		es->enemyshootposy = y;
+
+		// Type
+		es->enemyshoottype = ENEMYSHOOT_NORMAL;
+
+		// Set velocity
+		es->enemyshootvelx = vx;
+		es->enemyshootvely = vy;
+
+		// Increment
+		numenemyshoots++;
+	}
+}
 // void RemovePlayer();
 // void RemovePlayershoot( signed char a );
 // void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
@@ -58,7 +81,12 @@ void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
 // void DoCommonBossAppearingFunction( enemy *en );
 // void DoEnemyWait( enemy *en, unsigned char nxt );
 // void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
-// void DoStage1BossDirectionShoots( enemy *en );
+void DoStage1BossDirectionShoots( enemy *en )
+{
+	if( en->enemyframe % 96 == 48 )
+		SpreadEnemyshootDirection( en->enemyposx + 20, en->enemyposy + 24, stage2endbossshootpatternx, stage2endbossshootpatterny, 6 );
+}
+
 // void DoSideShoot( enemy *en, unsigned char freq );
 // void KillEnemy( unsigned char a );
 // void PlaySound( char *sound, char priority );
@@ -68,7 +96,12 @@ void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
 // void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy );
 // void InitPowerup( enemy *en );
 // void InitPlayerConstants();
-// void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count );
+void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count )
+{
+	unsigned char a;
+	for( a = 0; a < count; a++ )
+		InitEnemyshootDirection( x, y, vx[ a ], vy[ a ] );
+}
 
 // Fast random package
 unsigned long state = 777;
