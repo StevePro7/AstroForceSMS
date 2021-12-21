@@ -21,7 +21,7 @@ S A$introsideplayer$144 Def0062
 S A$introsideplayer$135 Def0059
 S A$introsideplayer$126 Def004E
 S A$introsideplayer$117 Def003F
-S C$introsideplayer.c$16$1$60 Def0070
+S C$introsideplayer.c$24$1$61 Def0074
 S _UpdateIntroSidePlayer Def000D
 S A$introsideplayer$235 Def00D3
 S A$introsideplayer$226 Def00CA
@@ -34,6 +34,7 @@ S A$introsideplayer$145 Def0065
 S A$introsideplayer$136 Def005C
 S A$introsideplayer$127 Def004F
 S A$introsideplayer$118 Def0041
+S C$introsideplayer.c$16$1$61 Def0070
 S A$introsideplayer$227 Def00CB
 S A$introsideplayer$209 Def00B7
 S A$introsideplayer$191 Def009C
@@ -45,9 +46,6 @@ S A$introsideplayer$146 Def0066
 S A$introsideplayer$137 Def005D
 S A$introsideplayer$128 Def0050
 S A$introsideplayer$119 Def0042
-S C$introsideplayer.c$36$1$60 Def00D5
-S C$introsideplayer.c$33$2$62 Def00C3
-S C$introsideplayer.c$11$1$58 Def000D
 S A$introsideplayer$192 Def009D
 S A$introsideplayer$183 Def0095
 S A$introsideplayer$174 Def0089
@@ -56,21 +54,24 @@ S A$introsideplayer$156 Def0071
 S A$introsideplayer$147 Def0068
 S A$introsideplayer$138 Def005E
 S A$introsideplayer$129 Def0051
-S C$introsideplayer.c$37$1$60 Def00DB
-S C$introsideplayer.c$34$2$62 Def00CC
-S C$introsideplayer.c$26$2$61 Def0082
-S C$introsideplayer.c$19$1$60 Def0033
+S C$introsideplayer.c$36$1$61 Def00D5
+S C$introsideplayer.c$33$2$63 Def00C3
+S C$introsideplayer.c$11$1$59 Def000D
 S A$introsideplayer$193 Def009F
 S A$introsideplayer$184 Def0096
 S A$introsideplayer$175 Def008A
 S A$introsideplayer$148 Def006B
+S C$introsideplayer.c$37$1$61 Def00DB
+S C$introsideplayer.c$34$2$63 Def00CC
+S C$introsideplayer.c$26$2$62 Def0082
+S C$introsideplayer.c$19$1$61 Def0033
 S A$introsideplayer$248 Def00DB
 S A$introsideplayer$194 Def00A0
-S C$introsideplayer.c$28$2$61 Def008B
 S A$introsideplayer$195 Def00A2
-S C$introsideplayer.c$29$2$61 Def0097
+S C$introsideplayer.c$28$2$62 Def008B
 S A$introsideplayer$196 Def00A3
 S A$introsideplayer$169 Def0082
+S C$introsideplayer.c$29$2$62 Def0097
 S A$introsideplayer$197 Def00A4
 S A$introsideplayer$179 Def008B
 S A$introsideplayer$198 Def00A6
@@ -102,10 +103,10 @@ S A$introsideplayer$59 Def0001
 S A$introsideplayer$96 Def0023
 S A$introsideplayer$97 Def0024
 S A$introsideplayer$98 Def0025
-S C$introsideplayer.c$8$1$58 Def0000
 S C$introsideplayer.c$6$0$0 Def0000
 S A$introsideplayer$99 Def0026
-S C$introsideplayer.c$9$1$58 Def000C
+S C$introsideplayer.c$8$1$59 Def0000
+S C$introsideplayer.c$9$1$59 Def000C
 S G$InitIntroSidePlayer$0$0 Def0000
 S _InitIntroSidePlayer Def0000
 S G$UpdateIntroSidePlayer$0$0 Def000D
@@ -140,7 +141,6 @@ S A$introsideplayer$132 Def0055
 S A$introsideplayer$123 Def004B
 S A$introsideplayer$114 Def003A
 S A$introsideplayer$105 Def0030
-S C$introsideplayer.c$22$1$60 Def005F
 S XG$InitIntroSidePlayer$0$0 Def000C
 S A$introsideplayer$232 Def00CE
 S A$introsideplayer$223 Def00C7
@@ -152,6 +152,7 @@ S A$introsideplayer$133 Def0057
 S A$introsideplayer$124 Def004C
 S A$introsideplayer$115 Def003C
 S A$introsideplayer$106 Def0031
+S C$introsideplayer.c$22$1$61 Def005F
 S A$introsideplayer$242 Def00D7
 S A$introsideplayer$233 Def00CF
 S A$introsideplayer$224 Def00C8
@@ -164,7 +165,6 @@ S A$introsideplayer$134 Def0058
 S A$introsideplayer$125 Def004D
 S A$introsideplayer$116 Def003E
 S A$introsideplayer$107 Def0032
-S C$introsideplayer.c$24$1$60 Def0074
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

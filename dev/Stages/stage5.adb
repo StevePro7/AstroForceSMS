@@ -1,8 +1,8 @@
 M:stage5
 F:G$InitStage5$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage5.InitStage5$a$1$71({1}SC:U),R,0,0,[c]
+S:Lstage5.InitStage5$a$1$72({1}SC:U),R,0,0,[c]
 F:G$UpdateStage5$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lstage5.UpdateStage5$a$1$73({1}SC:U),R,0,0,[c]
+S:Lstage5.UpdateStage5$a$1$74({1}SC:U),R,0,0,[c]
 T:Fstage5$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fstage5$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fstage5$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
@@ -183,6 +183,7 @@ S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_VDPFEATURE_LEFTCOLBLANK$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
+S:G$DoSkullSinusMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0

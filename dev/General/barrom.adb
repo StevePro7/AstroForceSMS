@@ -106,6 +106,7 @@ S:G$lastplayedmusiclooped$0$0({1}SC:U),E,0,0
 S:G$stage8phase$0$0({1}SC:U),E,0,0
 S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$barromtime$0$0({1}SC:U),E,0,0
+S:G$DoSkullSinusMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0

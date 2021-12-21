@@ -222,6 +222,7 @@ S:G$devkit_PSGSFXFrame$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SFX_CHANNEL2$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_SFX_CHANNEL3$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_SFX_CHANNELS2AND3$0$0({2}DF,SC:U),C,0,0
+S:G$DoSkullSinusMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0

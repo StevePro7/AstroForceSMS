@@ -1,8 +1,8 @@
 M:introstar
 F:G$InitIntroStar$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lintrostar.InitIntroStar$en$1$57({2}DG,STenemy:S),B,1,4
+S:Lintrostar.InitIntroStar$en$1$58({2}DG,STenemy:S),B,1,4
 F:G$UpdateIntroStar$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lintrostar.UpdateIntroStar$en$1$59({2}DG,STenemy:S),B,1,4
+S:Lintrostar.UpdateIntroStar$en$1$60({2}DG,STenemy:S),B,1,4
 T:Fintrostar$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
@@ -70,6 +70,7 @@ S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_VDPFEATURE_LEFTCOLBLANK$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
+S:G$DoSkullSinusMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0

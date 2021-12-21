@@ -2,7 +2,6 @@
 #define _STAGE1_H_
 
 // ADRIANA
-unsigned char stage1musicreplayed;;
 void UpdateStage1();
 void InitStage1();
 unsigned char CheckCollisionStage1( unsigned char x, unsigned char y );

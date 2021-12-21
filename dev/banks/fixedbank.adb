@@ -49,6 +49,7 @@ S:G$UpdateStage8BossB2$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage8BossB3$0$0({2}DF,SV:S),C,0,0
 S:G$InitWW2Zeppelin$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateWW2Zeppelin$0$0({2}DF,SC:U),C,0,0
+S:G$DoSkullSinusMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0

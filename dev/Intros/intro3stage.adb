@@ -106,6 +106,7 @@ S:G$InitScript$0$0({2}DF,SV:S),C,0,0
 S:G$RemoveScript$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateScript$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateScripts$0$0({2}DF,SV:S),C,0,0
+S:G$DoSkullSinusMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0

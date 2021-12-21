@@ -1,9 +1,9 @@
 M:introsideplayer
 F:G$InitIntroSidePlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lintrosideplayer.InitIntroSidePlayer$en$1$57({2}DG,STenemy:S),B,1,4
+S:Lintrosideplayer.InitIntroSidePlayer$en$1$58({2}DG,STenemy:S),B,1,4
 F:G$UpdateIntroSidePlayer$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lintrosideplayer.UpdateIntroSidePlayer$en$1$59({2}DG,STenemy:S),B,1,4
-S:Lintrosideplayer.UpdateIntroSidePlayer$a$1$60({2}SI:U),R,0,0,[e,d]
+S:Lintrosideplayer.UpdateIntroSidePlayer$en$1$60({2}DG,STenemy:S),B,1,4
+S:Lintrosideplayer.UpdateIntroSidePlayer$a$1$61({2}SI:U),R,0,0,[e,d]
 S:Lintrosideplayer.UpdateIntroSidePlayer$sloc0$1$0({2}DG,SC:U),B,1,-3
 S:Lintrosideplayer.UpdateIntroSidePlayer$sloc1$1$0({1}SC:U),B,1,-1
 T:Fintrosideplayer$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
@@ -159,6 +159,7 @@ S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_VDPFEATURE_HIDEFIRSTCOL$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_VDPFEATURE_LEFTCOLBLANK$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
+S:G$DoSkullSinusMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0
