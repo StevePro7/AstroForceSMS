@@ -238,10 +238,8 @@ unsigned char TestSkullOut( enemy *en )
 {
 	return ( ( en->enemyposx < 4 ) || ( en->enemyposx > 240 ) || ( en->enemyposy < 4 ) || ( en->enemyposy > 192 ) );
 }
-
 void SkullAccelX( enemy *en )
 {
-
 	if( ( playerx > en->enemyposx ) && ( en->enemyparamb < 16 ) )en->enemyparamb++;
 	if( ( playerx < en->enemyposx ) && ( en->enemyparamb > 0 ) )en->enemyparamb--;
 }
@@ -257,7 +255,124 @@ void SkullBoneCMove( enemy *en )
 	en->enemyposy += ( en->enemyparama >> 2 ) - 2;
 }
 
-// void KillEnemies( unsigned char force );
+void InitExplosion( unsigned char x, unsigned char y, unsigned char t )
+{
+	explosion *ex;
+
+	if( numexplosions < MAXEXPLOSIONS )
+	{
+		// Get
+		ex = &explosions[ numexplosions ];
+
+		// Data
+		ex->explosionposx = x;
+		ex->explosionposy = y;
+		ex->explosionsprite = 0;
+		ex->explosiontype = t;
+
+		// Increase
+		numexplosions++;
+
+		// Sound
+		if( t != 0 )
+		{
+			PlaySound( ( unsigned char * ) explosion_psg, 1 );
+		}
+	}
+}
+void InitSpawnedExplosion( unsigned char x, unsigned char y, unsigned char w, unsigned char h )
+{
+	spawnedexplosionposx = x;
+	spawnedexplosionposy = y;
+	spawnedexplosionwidth = w - 16;
+	spawnedexplosionheight = h - 16;
+	spawnedexplosiontime = ( w + h ) >> 1;
+}
+void InitPowerup( enemy *en )
+{
+	if( playertype == 3 )
+		if( powerupt == 0 )
+		{
+			powerupcounter++;
+			if( powerupcounter == 6 )
+			{
+				powerupt = 1 + ( myRand() % 3 );
+				powerupx = en->enemyposx;
+				powerupy = en->enemyposy;
+				powerupcounter = 0;
+				powerupv = -1;
+			}
+		}
+}
+void RemoveEnemy( signed char a )
+{
+	enemy *ea, *eb;
+
+	// Remove list of sprites
+	if( a < numenemies - 1 )
+	{
+		ea = &enemies[ a ];
+		eb = &enemies[ numenemies - 1 ];
+
+		ea->enemyposx = eb->enemyposx;
+		ea->enemyposy = eb->enemyposy;
+		ea->enemytype = eb->enemytype;
+		ea->enemyframe = eb->enemyframe;
+		ea->enemyparama = eb->enemyparama;
+		ea->enemyparamb = eb->enemyparamb;
+		ea->enemyenergy = eb->enemyenergy;
+		ea->enemywidth = eb->enemywidth;
+		ea->enemyheight = eb->enemyheight;
+	}
+	// Bajamos el numero de enemys
+	if( numenemies > 0 ) {
+		numenemies--;
+	}
+}
+void KillEnemy( unsigned char a )
+{
+	enemy *en;
+	unsigned char t;
+
+	// Security check
+	if( a >= numenemies )
+	{
+		return;
+	}
+
+	// Get enemy
+	en = &enemies[ a ];
+
+	// Type of explosion
+	if( en->enemywidth <= 17 )
+	{
+		InitExplosion( en->enemyposx, en->enemyposy, 1 );
+		InitPowerup( en );
+	}
+	else
+	{
+		InitSpawnedExplosion( en->enemyposx, en->enemyposy, en->enemywidth, en->enemyheight );
+	}
+	// Get enemy type
+	t = en->enemytype;
+
+	// Remove
+	RemoveEnemy( a );
+
+	// Custom remove
+	changeBank( FIXEDBANKSLOT );
+	if( killenemyfunctions[ t ] != 0 )
+		( *( killenemyfunctions[ t ] ) )( );
+}
+void KillEnemies( unsigned char force )
+{
+	signed char a;
+
+	if( numenemies > 0 )
+		for( a = numenemies - 1; a >= 0; a-- )
+			if( ( force == 1 ) || ( enemies[ a ].enemywidth <= 16 ) )
+				KillEnemy( a );
+}
 void DoCommonBossAppearingFunction( enemy *en )
 {
 	en->enemyposy++;

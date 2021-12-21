@@ -7,6 +7,5 @@
 void InitPowerupSprites();
 void InitPowerups();
 void UpdatePowerup();
-void InitPowerup( enemy *en );
 
 #endif//_POWERUP_H_

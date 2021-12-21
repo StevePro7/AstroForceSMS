@@ -42,21 +42,3 @@ void UpdatePowerup()
 		}
 	}
 }
-
-void InitPowerup( enemy *en )
-{
-	if( playertype == 3 )
-		if( powerupt == 0 )
-		{
-			powerupcounter++;
-			if( powerupcounter == 6 )
-			{
-				powerupt = 1 + ( myRand() % 3 );
-				powerupx = en->enemyposx;
-				powerupy = en->enemyposy;
-				powerupcounter = 0;
-				powerupv = -1;
-			}
-		}
-}
-
