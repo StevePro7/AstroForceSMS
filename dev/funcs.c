@@ -201,20 +201,24 @@ void UpdatePlayStage()
 	// Custom Update
 	( *( updatestagefunctions[ playstage ] ) )( );
 }
-// void InitStageSprites( const unsigned char *spl, unsigned char num );
-// void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset );
-// unsigned char TestSkullOut( enemy *en );
-// void SkullAccelX( enemy *en );
-// void SkullAccelY( enemy *en );
-// void SkullBoneCMove( enemy *en );
-// void KillEnemies( unsigned char force );
-void DoCommonBossAppearingFunction( enemy *en )
+void InitStageSprite( unsigned char b )
 {
-	en->enemyposy++;
-	if( en->enemyposy >= 30 )
+	const unsigned char *pointer;
+	int base;
+	char bank;
+
+	pointer = imagepointers[ b ];
+	base = imagebases[ b ];
+	bank = imagebanks[ b ];
+	LoadSprite( ( unsigned char * ) pointer, base, bank );
+}
+void InitStageSprites( const unsigned char *spl, unsigned char num )
+{
+	unsigned char a;
+	for( a = 0; a < num; a++ )
 	{
-		en->enemyparama = 1;
-		en->enemyframe = 0;
+		changeBank( FIXEDBANKSLOT );
+		InitStageSprite( spl[ a ] );
 	}
 }
 void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
@@ -230,6 +234,40 @@ void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
 		if( en->enemyposx > ( 256 - en->enemywidth - 48 + offset ) )en->enemyparamb = 0;
 	}
 }
+unsigned char TestSkullOut( enemy *en )
+{
+	return ( ( en->enemyposx < 4 ) || ( en->enemyposx > 240 ) || ( en->enemyposy < 4 ) || ( en->enemyposy > 192 ) );
+}
+
+void SkullAccelX( enemy *en )
+{
+
+	if( ( playerx > en->enemyposx ) && ( en->enemyparamb < 16 ) )en->enemyparamb++;
+	if( ( playerx < en->enemyposx ) && ( en->enemyparamb > 0 ) )en->enemyparamb--;
+}
+void SkullAccelY( enemy *en )
+{
+
+	if( ( playery > en->enemyposy ) && ( en->enemyparama < 16 ) )en->enemyparama++;
+	if( ( playery < en->enemyposy ) && ( en->enemyparama > 0 ) )en->enemyparama--;
+}
+void SkullBoneCMove( enemy *en )
+{
+	en->enemyposx += ( en->enemyparamb >> 2 ) - 2;
+	en->enemyposy += ( en->enemyparama >> 2 ) - 2;
+}
+
+// void KillEnemies( unsigned char force );
+void DoCommonBossAppearingFunction( enemy *en )
+{
+	en->enemyposy++;
+	if( en->enemyposy >= 30 )
+	{
+		en->enemyparama = 1;
+		en->enemyframe = 0;
+	}
+}
+
 // void DoCommonBossAppearingFunction( enemy *en );
 // void DoEnemyWait( enemy *en, unsigned char nxt );
 // void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );

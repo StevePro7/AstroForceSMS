@@ -2,8 +2,6 @@
 #define _PLAYSTAGE_H_
 
 // ADRIANA
-void InitStageSprite( unsigned char b );
-void InitStageSprites( const unsigned char *spl, unsigned char num );
 void InitAfterBossStage();
 void InitCustomStageData();
 void InitStageData( unsigned int i );

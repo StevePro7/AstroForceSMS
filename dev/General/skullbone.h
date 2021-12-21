@@ -4,9 +4,6 @@
 #include "../defines.h"
 
 // ADRIANA
-void SkullAccelX( enemy *en );
-void SkullAccelY( enemy *en );
-void SkullBoneCMove( enemy *en );
 void InitSkullBoneA( enemy *en );
 void InitSkullBoneB( enemy *en );
 void InitSkullBoneC( enemy *en );
