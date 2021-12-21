@@ -1,926 +1,550 @@
 ;!FILE enemyshoot.asm
 XL2
-H 9 areas 395 global symbols
+H 9 areas 21D global symbols
 M enemyshoot
 O -mz80
 S _changeBank Ref0000
 S _checkcollisionfunctions Ref0000
 S _sprite82anim Ref0000
 S __moduchar Ref0000
-S _gamelevel Ref0000
-S _abs Ref0000
 S _LoadSprite Ref0000
-S __mulint Ref0000
 S _enemyshoots Ref0000
+S _InitEnemyshoot Ref0000
 S .__.ABS. Def0000
-S _playerx Ref0000
-S _playery Ref0000
-S _playstageshootspeed Ref0000
 S ___sdcc_call_hl Ref0000
 S _playstage Ref0000
 S _numenemyshoots Ref0000
 S _stageframe2mod Ref0000
 S _enemyshoot_psgcompr Ref0000
-S _shootcount Ref0000
 S _devkit_SMS_addSprite Ref0000
-S __modsint Ref0000
-S _enemylaser_psg Ref0000
-S _PlaySound Ref0000
-S __divsint Ref0000
-A _CODE size 471 flags 0 addr 0
-S A$enemyshoot$75 Def0003
-S C$enemyshoot.c$93$3$99 Def0174
-S C$enemyshoot.c$86$2$98 Def0116
-S A$enemyshoot$76 Def0004
-S A$enemyshoot$77 Def0007
-S A$enemyshoot$78 Def0008
-S C$enemyshoot.c$96$3$99 Def0187
-S A$enemyshoot$88 Def0012
-S A$enemyshoot$79 Def000B
-S XG$RemoveEnemyshoot$0$0 Def02BE
-S C$enemyshoot.c$88$3$99 Def013C
-S A$enemyshoot$98 Def0013
-S G$InitEnemyshoots$0$0 Def03C8
-S C$enemyshoot.c$100$4$100 Def019B
-S A$enemyshoot$99 Def0015
-S _CheckMapCollision Def0202
-S C$enemyshoot.c$220$1$121 Def0437
-S C$enemyshoot.c$112$4$100 Def01EE
-S C$enemyshoot.c$103$4$100 Def01A2
+A _CODE size 282 flags 0 addr 0
+S A$enemyshoot$93 Def0013
+S A$enemyshoot$75 Def000C
+S A$enemyshoot$94 Def0015
+S A$enemyshoot$76 Def000F
+S A$enemyshoot$95 Def0019
+S A$enemyshoot$77 Def0010
+S A$enemyshoot$68 Def0000
+S A$enemyshoot$78 Def0011
+S A$enemyshoot$69 Def0002
+S XG$RemoveEnemyshoot$0$0 Def00CF
+S C$enemyshoot.c$101$1$120 Def01E2
+S G$InitEnemyshoots$0$0 Def01D9
+S A$enemyshoot$99 Def001B
+S C$enemyshoot.c$102$1$120 Def01E7
+S C$enemyshoot.c$110$1$122 Def021E
+S _CheckMapCollision Def0013
+S C$enemyshoot.c$104$1$120 Def01E8
 S _InitEnemyshootSprites Def0000
-S C$enemyshoot.c$221$1$121 Def0454
-S C$enemyshoot.c$201$1$114 Def03D1
-S C$enemyshoot.c$132$1$102 Def023C
-S C$enemyshoot.c$130$2$103 Def022D
-S C$enemyshoot.c$113$4$100 Def01F3
-S G$InitEnemyshootLaser$0$0 Def00A5
-S _KillEnemyshoots Def03D1
-S C$enemyshoot.c$222$1$121 Def0470
-S C$enemyshoot.c$133$1$102 Def0240
-S _TestEnemyShoot Def03D7
-S _SpreadEnemyshootDirection Def0063
-S C$enemyshoot.c$106$4$100 Def01B0
-S XG$InitEnemyshootDirection$0$0 Def0062
-S C$enemyshoot.c$210$1$117 Def040C
-S C$enemyshoot.c$203$1$115 Def03D1
-S C$enemyshoot.c$141$1$105 Def0249
-S C$enemyshoot.c$126$1$102 Def020A
-S C$enemyshoot.c$116$4$100 Def01F9
-S C$enemyshoot.c$204$1$115 Def03D6
-S C$enemyshoot.c$171$3$110 Def0327
-S C$enemyshoot.c$136$1$102 Def0241
-S C$enemyshoot.c$212$1$117 Def040D
-S C$enemyshoot.c$190$1$112 Def03A9
-S C$enemyshoot.c$172$3$110 Def0335
-S C$enemyshoot.c$150$2$106 Def02B0
-S C$enemyshoot.c$206$1$115 Def03D7
-S C$enemyshoot.c$180$4$111 Def0395
-S C$enemyshoot.c$153$1$105 Def02B8
-S C$enemyshoot.c$154$1$105 Def02BE
-S C$enemyshoot.c$143$2$106 Def0265
-S C$enemyshoot.c$128$2$103 Def0210
-S C$enemyshoot.c$193$1$112 Def03C6
-S C$enemyshoot.c$191$2$113 Def03C5
-S C$enemyshoot.c$175$3$110 Def0344
-S C$enemyshoot.c$161$1$108 Def02D9
-S C$enemyshoot.c$144$2$106 Def0278
-S C$enemyshoot.c$129$2$103 Def0218
-S _InitEnemyshoots Def03C8
-S C$enemyshoot.c$214$1$119 Def040D
-S C$enemyshoot.c$192$2$113 Def03B9
-S C$enemyshoot.c$176$3$110 Def034E
-S C$enemyshoot.c$162$1$108 Def02F6
-S G$InitEnemyshoot$0$0 Def0100
-S C$enemyshoot.c$215$1$119 Def041E
-S C$enemyshoot.c$208$1$117 Def03D7
-S C$enemyshoot.c$195$1$112 Def03C8
-S C$enemyshoot.c$177$3$110 Def0373
-S C$enemyshoot.c$157$1$105 Def02BF
-S C$enemyshoot.c$146$2$106 Def028B
-S XG$CheckMapCollision$0$0 Def0240
-S C$enemyshoot.c$216$1$119 Def0436
-S C$enemyshoot.c$209$1$117 Def03F4
-S G$UpdateEnemyshoots$0$0 Def03A9
-S C$enemyshoot.c$147$2$106 Def028F
+S _KillEnemyshoots Def01E2
+S _TestEnemyShoot Def01E8
+S C$enemyshoot.c$112$1$124 Def021E
+S C$enemyshoot.c$120$1$126 Def0281
+S C$enemyshoot.c$113$1$124 Def022F
+S C$enemyshoot.c$106$1$122 Def01E8
+S C$enemyshoot.c$114$1$124 Def0247
+S C$enemyshoot.c$107$1$122 Def0205
+S C$enemyshoot.c$108$1$122 Def021D
+S C$enemyshoot.c$116$1$124 Def0248
+S _InitEnemyshoots Def01D9
+S C$enemyshoot.c$118$1$126 Def0248
+S XG$CheckMapCollision$0$0 Def0051
+S C$enemyshoot.c$119$1$126 Def0265
+S G$UpdateEnemyshoots$0$0 Def01BA
 S XG$InitEnemyshootSprites$0$0 Def0012
-S A$enemyshoot$1000 Def03BE
-S XG$KillEnemyshoots$0$0 Def03D6
-S C$enemyshoot.c$148$2$106 Def0298
-S _InitEnemyshootLaser Def00A5
-S A$enemyshoot$1100 Def03F9
-S A$enemyshoot$1001 Def03BF
-S C$enemyshoot.c$218$1$119 Def0437
-S G$TestEnemyShootComplex$0$0 Def0437
-S XG$TestEnemyShoot$0$0 Def040C
-S C$enemyshoot.c$184$1$108 Def03A8
-S C$enemyshoot.c$149$2$106 Def02A3
-S XG$SpreadEnemyshootDirection$0$0 Def00A3
-S A$enemyshoot$1200 Def0440
-S A$enemyshoot$1110 Def0403
-S A$enemyshoot$1101 Def03FA
-S A$enemyshoot$1002 Def03C0
-S C$enemyshoot.c$197$1$114 Def03C8
-S C$enemyshoot.c$179$4$111 Def0377
-S A$enemyshoot$1210 Def044E
-S A$enemyshoot$1201 Def0441
-S A$enemyshoot$1111 Def0404
-S A$enemyshoot$1102 Def03FB
-S A$enemyshoot$1030 Def03CB
-S A$enemyshoot$1003 Def03C3
-S C$enemyshoot.c$198$1$114 Def03CB
-S C$enemyshoot.c$186$1$108 Def03A9
-S C$enemyshoot.c$166$2$109 Def0302
-S C$enemyshoot.c$159$1$108 Def02C8
-S A$enemyshoot$1220 Def0456
-S A$enemyshoot$1211 Def044F
-S A$enemyshoot$1202 Def0442
-S A$enemyshoot$1121 Def040C
-S A$enemyshoot$1112 Def0405
-S A$enemyshoot$1103 Def03FC
-S A$enemyshoot$1031 Def03CE
-S A$enemyshoot$1013 Def03C6
-S A$enemyshoot$1004 Def03C4
-S C$enemyshoot.c$199$1$114 Def03D0
-S C$enemyshoot.c$167$2$109 Def031B
-S A$enemyshoot$1230 Def0464
-S A$enemyshoot$1221 Def0457
-S A$enemyshoot$1212 Def0450
-S A$enemyshoot$1203 Def0445
-S A$enemyshoot$1140 Def0413
-S A$enemyshoot$1113 Def0406
-S A$enemyshoot$1104 Def03FD
-S A$enemyshoot$1050 Def03D4
-S A$enemyshoot$1231 Def0465
-S A$enemyshoot$1222 Def0458
-S A$enemyshoot$1213 Def0451
-S A$enemyshoot$1204 Def0446
-S A$enemyshoot$1141 Def0414
-S A$enemyshoot$1114 Def0407
-S A$enemyshoot$1105 Def03FE
-S A$enemyshoot$1232 Def0467
-S A$enemyshoot$1223 Def045B
-S A$enemyshoot$1214 Def0453
-S A$enemyshoot$1205 Def0447
-S A$enemyshoot$1160 Def0426
-S A$enemyshoot$1142 Def0415
-S A$enemyshoot$1115 Def040A
-S A$enemyshoot$1106 Def03FF
-S A$enemyshoot$1070 Def03D9
-S A$enemyshoot$1233 Def0468
-S A$enemyshoot$1224 Def045C
-S A$enemyshoot$1206 Def0448
-S A$enemyshoot$1170 Def0430
-S A$enemyshoot$1161 Def0427
-S A$enemyshoot$1152 Def041E
-S A$enemyshoot$1143 Def0416
-S A$enemyshoot$1134 Def040D
-S A$enemyshoot$1116 Def040B
-S A$enemyshoot$1107 Def0400
-S A$enemyshoot$1080 Def03E5
-S A$enemyshoot$1071 Def03DA
-S A$enemyshoot$1026 Def03C8
-S A$enemyshoot$1008 Def03C5
-S XG$InitEnemyshoots$0$0 Def03D0
-S A$enemyshoot$1243 Def0470
-S A$enemyshoot$1234 Def0469
-S A$enemyshoot$1225 Def045D
-S A$enemyshoot$1207 Def0449
-S A$enemyshoot$1171 Def0431
-S A$enemyshoot$1162 Def0428
-S A$enemyshoot$1153 Def041F
-S A$enemyshoot$1144 Def0417
-S A$enemyshoot$1135 Def040E
-S A$enemyshoot$1108 Def0401
-S A$enemyshoot$1090 Def03F1
-S A$enemyshoot$1081 Def03E6
-S A$enemyshoot$1072 Def03DB
-S A$enemyshoot$1036 Def03D0
-S _InitEnemyshoot Def0100
-S A$enemyshoot$1235 Def046A
-S A$enemyshoot$1226 Def045E
-S A$enemyshoot$1208 Def044A
-S A$enemyshoot$1172 Def0434
-S A$enemyshoot$1163 Def0429
-S A$enemyshoot$1154 Def0420
-S A$enemyshoot$1145 Def041A
-S A$enemyshoot$1136 Def040F
-S A$enemyshoot$1109 Def0402
-S A$enemyshoot$1091 Def03F3
-S A$enemyshoot$1082 Def03E7
-S A$enemyshoot$1073 Def03DC
-S A$enemyshoot$1055 Def03D6
-S A$enemyshoot$1236 Def046B
-S A$enemyshoot$1227 Def045F
-S A$enemyshoot$1218 Def0454
-S A$enemyshoot$1209 Def044B
-S A$enemyshoot$1191 Def0437
-S A$enemyshoot$1173 Def0435
-S A$enemyshoot$1164 Def042A
-S A$enemyshoot$1155 Def0421
-S A$enemyshoot$1146 Def041B
-S A$enemyshoot$1137 Def0410
-S A$enemyshoot$1083 Def03E8
-S A$enemyshoot$1074 Def03DD
-S G$TestEnemyShootOne$0$0 Def040D
-S _UpdateEnemyshoots Def03A9
-S A$enemyshoot$1237 Def046E
-S A$enemyshoot$1228 Def0462
-S A$enemyshoot$1219 Def0455
-S A$enemyshoot$1192 Def0438
-S A$enemyshoot$1165 Def042B
-S A$enemyshoot$1156 Def0422
-S A$enemyshoot$1147 Def041C
-S A$enemyshoot$1138 Def0411
-S A$enemyshoot$1084 Def03E9
-S A$enemyshoot$1075 Def03DE
-S G$UpdateEnemyshoot$0$0 Def02BF
-S XG$InitEnemyshootLaser$0$0 Def00FF
-S A$enemyshoot$1238 Def046F
-S A$enemyshoot$1229 Def0463
-S A$enemyshoot$1193 Def0439
-S A$enemyshoot$1166 Def042C
-S A$enemyshoot$1157 Def0423
-S A$enemyshoot$1148 Def041D
-S A$enemyshoot$1139 Def0412
-S A$enemyshoot$1085 Def03EA
-S A$enemyshoot$1076 Def03DF
-S A$enemyshoot$1049 Def03D1
-S _TestEnemyShootComplex Def0437
-S A$enemyshoot$1194 Def043A
-S A$enemyshoot$1167 Def042D
-S A$enemyshoot$1158 Def0424
-S A$enemyshoot$1095 Def03F4
-S A$enemyshoot$1086 Def03EB
-S A$enemyshoot$1077 Def03E0
-S A$enemyshoot$1068 Def03D7
-S C$enemyshoot.c$120$1$97 Def0201
-S A$enemyshoot$1195 Def043B
-S A$enemyshoot$1168 Def042E
-S A$enemyshoot$1159 Def0425
-S A$enemyshoot$1096 Def03F5
-S A$enemyshoot$1087 Def03EE
-S A$enemyshoot$1078 Def03E1
-S A$enemyshoot$1069 Def03D8
-S A$enemyshoot$1196 Def043C
-S A$enemyshoot$1178 Def0436
-S A$enemyshoot$1169 Def042F
-S A$enemyshoot$1097 Def03F6
-S A$enemyshoot$1088 Def03EF
-S A$enemyshoot$1079 Def03E2
-S A$enemyshoot$100 Def0019
-S A$enemyshoot$1197 Def043D
-S A$enemyshoot$1098 Def03F7
-S A$enemyshoot$1089 Def03F0
-S A$enemyshoot$200 Def0070
-S A$enemyshoot$110 Def0023
-S C$enemyshoot.c$123$1$97 Def0202
-S C$enemyshoot.c$99$4$100 Def0195
-S A$enemyshoot$1198 Def043E
-S A$enemyshoot$1099 Def03F8
-S A$enemyshoot$210 Def0081
-S A$enemyshoot$201 Def0071
-S A$enemyshoot$120 Def0034
-S A$enemyshoot$111 Def0026
-S A$enemyshoot$1199 Def043F
-S A$enemyshoot$400 Def0142
-S A$enemyshoot$220 Def008E
-S A$enemyshoot$211 Def0082
-S A$enemyshoot$202 Def0072
-S A$enemyshoot$130 Def003B
-S A$enemyshoot$121 Def0035
-S A$enemyshoot$112 Def0028
-S C$enemyshoot.c$107$1$97 Def01C6
-S A$enemyshoot$500 Def01C1
-S A$enemyshoot$401 Def0143
-S A$enemyshoot$311 Def00E0
-S A$enemyshoot$302 Def00DA
-S A$enemyshoot$230 Def009C
-S A$enemyshoot$221 Def0091
-S A$enemyshoot$212 Def0083
-S A$enemyshoot$203 Def0073
-S A$enemyshoot$131 Def003E
-S A$enemyshoot$122 Def0036
-S A$enemyshoot$104 Def001B
-S C$enemyshoot.c$108$1$97 Def01D7
-S A$enemyshoot$510 Def01C8
-S A$enemyshoot$501 Def01C2
-S A$enemyshoot$420 Def015B
-S A$enemyshoot$402 Def0144
-S A$enemyshoot$330 Def00F3
-S A$enemyshoot$312 Def00E1
-S A$enemyshoot$303 Def00DB
-S A$enemyshoot$231 Def009F
-S A$enemyshoot$222 Def0092
-S A$enemyshoot$213 Def0086
-S A$enemyshoot$204 Def0074
-S A$enemyshoot$150 Def004D
-S A$enemyshoot$123 Def0037
-S A$enemyshoot$105 Def001E
-S XG$InitEnemyshoot$0$0 Def0201
-S C$enemyshoot.c$109$1$97 Def01E4
-S A$enemyshoot$700 Def0286
-S A$enemyshoot$610 Def0227
-S A$enemyshoot$511 Def01C9
-S A$enemyshoot$502 Def01C3
-S A$enemyshoot$430 Def0165
-S A$enemyshoot$421 Def015C
-S A$enemyshoot$403 Def0145
-S A$enemyshoot$331 Def00F4
-S A$enemyshoot$313 Def00E2
-S A$enemyshoot$304 Def00DC
-S A$enemyshoot$232 Def00A0
-S A$enemyshoot$223 Def0093
-S A$enemyshoot$214 Def0088
-S A$enemyshoot$205 Def0076
-S A$enemyshoot$160 Def0056
-S A$enemyshoot$151 Def004E
-S A$enemyshoot$124 Def0038
-S A$enemyshoot$800 Def02DA
-S A$enemyshoot$701 Def0287
-S A$enemyshoot$620 Def0233
-S A$enemyshoot$611 Def0228
-S A$enemyshoot$530 Def01E1
-S A$enemyshoot$512 Def01CC
-S A$enemyshoot$503 Def01C4
-S A$enemyshoot$431 Def0168
-S A$enemyshoot$422 Def015D
-S A$enemyshoot$413 Def014E
-S A$enemyshoot$404 Def0146
-S A$enemyshoot$332 Def00F7
-S A$enemyshoot$323 Def00EC
-S A$enemyshoot$314 Def00E3
-S A$enemyshoot$305 Def00DD
-S A$enemyshoot$242 Def00A3
-S A$enemyshoot$233 Def00A1
-S A$enemyshoot$224 Def0094
-S A$enemyshoot$215 Def0089
-S A$enemyshoot$206 Def0077
-S A$enemyshoot$170 Def0060
-S A$enemyshoot$161 Def0057
-S A$enemyshoot$152 Def004F
-S A$enemyshoot$143 Def0046
-S A$enemyshoot$125 Def0039
-S A$enemyshoot$116 Def002A
-S XG$UpdateEnemyshoots$0$0 Def03C6
-S G$RemoveEnemyshoot$0$0 Def0241
-S _TestEnemyShootOne Def040D
-S A$enemyshoot$900 Def0357
-S A$enemyshoot$810 Def02EC
-S A$enemyshoot$801 Def02DD
-S A$enemyshoot$702 Def0288
-S A$enemyshoot$630 Def023C
-S A$enemyshoot$621 Def0234
-S A$enemyshoot$612 Def0229
-S A$enemyshoot$603 Def0218
-S A$enemyshoot$540 Def01EA
-S A$enemyshoot$531 Def01E2
-S A$enemyshoot$522 Def01D7
-S A$enemyshoot$513 Def01CF
-S A$enemyshoot$504 Def01C5
-S A$enemyshoot$450 Def0185
-S A$enemyshoot$441 Def0174
-S A$enemyshoot$432 Def016A
-S A$enemyshoot$423 Def015E
-S A$enemyshoot$414 Def0151
-S A$enemyshoot$405 Def0147
-S A$enemyshoot$360 Def010A
-S A$enemyshoot$342 Def00FF
-S A$enemyshoot$333 Def00F8
-S A$enemyshoot$324 Def00EF
-S A$enemyshoot$315 Def00E4
-S A$enemyshoot$306 Def00DE
-S A$enemyshoot$270 Def00BB
-S A$enemyshoot$252 Def00A5
-S A$enemyshoot$225 Def0095
-S A$enemyshoot$216 Def008A
-S A$enemyshoot$207 Def0078
-S A$enemyshoot$162 Def0058
-S A$enemyshoot$153 Def0050
-S A$enemyshoot$144 Def0049
-S A$enemyshoot$135 Def003F
-S A$enemyshoot$126 Def003A
-S A$enemyshoot$117 Def002D
-S _UpdateEnemyshoot Def02BF
-S A$enemyshoot$910 Def0365
-S A$enemyshoot$901 Def035B
-S A$enemyshoot$820 Def02F6
-S A$enemyshoot$811 Def02ED
-S A$enemyshoot$802 Def02DF
-S A$enemyshoot$730 Def02A0
-S A$enemyshoot$712 Def028F
-S A$enemyshoot$703 Def0289
-S A$enemyshoot$622 Def0235
-S A$enemyshoot$613 Def022A
-S A$enemyshoot$604 Def021C
-S A$enemyshoot$550 Def01F1
-S A$enemyshoot$541 Def01EB
-S A$enemyshoot$532 Def01E3
-S A$enemyshoot$523 Def01D8
-S A$enemyshoot$514 Def01D0
-S A$enemyshoot$460 Def0190
-S A$enemyshoot$451 Def0186
-S A$enemyshoot$442 Def0175
-S A$enemyshoot$433 Def016B
-S A$enemyshoot$415 Def0152
-S A$enemyshoot$406 Def014A
-S A$enemyshoot$361 Def010D
-S A$enemyshoot$352 Def0100
-S A$enemyshoot$334 Def00FB
-S A$enemyshoot$316 Def00E7
-S A$enemyshoot$307 Def00DF
-S A$enemyshoot$271 Def00BF
-S A$enemyshoot$253 Def00A7
-S A$enemyshoot$226 Def0098
-S A$enemyshoot$217 Def008B
-S A$enemyshoot$208 Def007C
-S A$enemyshoot$190 Def0065
-S A$enemyshoot$163 Def0059
-S A$enemyshoot$154 Def0053
-S A$enemyshoot$145 Def004A
-S A$enemyshoot$136 Def0040
-S A$enemyshoot$118 Def0031
-S A$enemyshoot$109 Def001F
-S XG$TestEnemyShootComplex$0$0 Def0470
-S A$enemyshoot$911 Def0367
-S A$enemyshoot$902 Def035C
-S A$enemyshoot$830 Def0302
-S A$enemyshoot$821 Def02F9
-S A$enemyshoot$812 Def02EF
-S A$enemyshoot$803 Def02E1
-S A$enemyshoot$740 Def02A7
-S A$enemyshoot$731 Def02A1
-S A$enemyshoot$713 Def0290
-S A$enemyshoot$632 Def023E
-S A$enemyshoot$623 Def0236
-S A$enemyshoot$614 Def022B
-S A$enemyshoot$605 Def021F
-S A$enemyshoot$560 Def01F8
-S A$enemyshoot$551 Def01F2
-S A$enemyshoot$542 Def01EC
-S A$enemyshoot$524 Def01D9
-S A$enemyshoot$515 Def01D3
-S A$enemyshoot$443 Def0178
-S A$enemyshoot$434 Def016C
-S A$enemyshoot$416 Def0154
-S A$enemyshoot$407 Def014B
-S A$enemyshoot$380 Def0124
-S A$enemyshoot$371 Def0116
-S A$enemyshoot$353 Def0102
-S A$enemyshoot$335 Def00FC
-S A$enemyshoot$317 Def00E8
-S A$enemyshoot$290 Def00CF
-S A$enemyshoot$272 Def00C1
-S A$enemyshoot$263 Def00B1
-S A$enemyshoot$254 Def00AB
-S A$enemyshoot$227 Def0099
-S A$enemyshoot$218 Def008C
-S A$enemyshoot$209 Def007E
-S A$enemyshoot$191 Def0068
-S A$enemyshoot$164 Def005C
-S A$enemyshoot$137 Def0041
-S A$enemyshoot$119 Def0033
-S A$enemyshoot$930 Def0378
-S A$enemyshoot$912 Def0368
-S A$enemyshoot$903 Def035D
-S A$enemyshoot$840 Def030F
-S A$enemyshoot$831 Def0303
-S A$enemyshoot$822 Def02FA
-S A$enemyshoot$813 Def02F1
-S A$enemyshoot$804 Def02E3
-S A$enemyshoot$741 Def02A8
-S A$enemyshoot$732 Def02A2
-S A$enemyshoot$723 Def0298
-S A$enemyshoot$714 Def0291
-S A$enemyshoot$660 Def0257
-S A$enemyshoot$624 Def0239
-S A$enemyshoot$606 Def0221
-S A$enemyshoot$543 Def01ED
-S A$enemyshoot$525 Def01DA
-S A$enemyshoot$516 Def01D4
-S A$enemyshoot$462 Def0192
-S A$enemyshoot$444 Def0179
-S A$enemyshoot$435 Def016F
-S A$enemyshoot$417 Def0157
-S A$enemyshoot$408 Def014C
-S A$enemyshoot$390 Def0133
-S A$enemyshoot$381 Def0127
-S A$enemyshoot$372 Def0119
-S A$enemyshoot$354 Def0106
-S A$enemyshoot$318 Def00EA
-S A$enemyshoot$291 Def00D0
-S A$enemyshoot$273 Def00C2
-S A$enemyshoot$264 Def00B4
-S A$enemyshoot$237 Def00A2
-S A$enemyshoot$228 Def009A
-S A$enemyshoot$219 Def008D
-S A$enemyshoot$192 Def0069
-S A$enemyshoot$138 Def0042
-S A$enemyshoot$940 Def038D
-S A$enemyshoot$931 Def037A
-S A$enemyshoot$913 Def0369
-S A$enemyshoot$904 Def035E
-S A$enemyshoot$841 Def0310
-S A$enemyshoot$832 Def0304
-S A$enemyshoot$823 Def02FB
-S A$enemyshoot$814 Def02F3
-S A$enemyshoot$805 Def02E6
-S A$enemyshoot$751 Def02B0
-S A$enemyshoot$742 Def02AA
-S A$enemyshoot$724 Def0299
-S A$enemyshoot$715 Def0292
-S A$enemyshoot$661 Def0258
-S A$enemyshoot$625 Def023A
-S A$enemyshoot$607 Def0222
-S A$enemyshoot$526 Def01DB
-S A$enemyshoot$517 Def01D5
-S A$enemyshoot$508 Def01C6
-S A$enemyshoot$481 Def01A2
-S A$enemyshoot$445 Def017C
-S A$enemyshoot$436 Def0170
-S A$enemyshoot$427 Def015F
-S A$enemyshoot$418 Def0159
-S A$enemyshoot$409 Def014D
-S A$enemyshoot$391 Def0135
-S A$enemyshoot$382 Def0128
-S A$enemyshoot$373 Def011A
-S A$enemyshoot$355 Def0108
-S A$enemyshoot$337 Def00FD
-S A$enemyshoot$328 Def00F0
-S A$enemyshoot$319 Def00EB
-S A$enemyshoot$292 Def00D3
-S A$enemyshoot$283 Def00C9
-S A$enemyshoot$274 Def00C3
-S A$enemyshoot$265 Def00B6
-S A$enemyshoot$229 Def009B
-S A$enemyshoot$193 Def006A
-S A$enemyshoot$175 Def0062
-S A$enemyshoot$139 Def0045
+S XG$KillEnemyshoots$0$0 Def01E7
+S G$TestEnemyShootComplex$0$0 Def0248
+S XG$TestEnemyShoot$0$0 Def021D
+S C$enemyshoot.c$20$1$105 Def001B
+S C$enemyshoot.c$13$1$103 Def0000
+S C$enemyshoot.c$30$1$105 Def0052
+S C$enemyshoot.c$14$1$103 Def0012
+S C$enemyshoot.c$53$1$111 Def00D9
+S C$enemyshoot.c$22$2$106 Def0021
+S C$enemyshoot.c$17$1$103 Def0013
+S XG$InitEnemyshoots$0$0 Def01E1
+S C$enemyshoot.c$82$1$111 Def01B9
+S C$enemyshoot.c$55$1$111 Def00EA
+S C$enemyshoot.c$23$2$106 Def0029
+S C$enemyshoot.c$62$2$113 Def0113
+S C$enemyshoot.c$26$1$105 Def004D
+S C$enemyshoot.c$24$2$106 Def003E
+S C$enemyshoot.c$84$1$111 Def01BA
+S C$enemyshoot.c$51$1$108 Def00D0
+S C$enemyshoot.c$40$2$109 Def009C
+S C$enemyshoot.c$27$1$105 Def0051
+S G$TestEnemyShootOne$0$0 Def021E
+S C$enemyshoot.c$70$3$115 Def0146
+S C$enemyshoot.c$41$2$109 Def00A0
+S _UpdateEnemyshoots Def01BA
+S C$enemyshoot.c$57$2$112 Def0107
+S G$UpdateEnemyshoot$0$0 Def00D0
+S C$enemyshoot.c$42$2$109 Def00A9
+S C$enemyshoot.c$35$1$108 Def005A
+S C$enemyshoot.c$64$3$114 Def012C
+S C$enemyshoot.c$43$2$109 Def00B4
+S _TestEnemyShootComplex Def0248
+S C$enemyshoot.c$91$1$117 Def01D7
+S C$enemyshoot.c$73$3$115 Def0155
+S C$enemyshoot.c$44$2$109 Def00C1
+S C$enemyshoot.c$90$2$118 Def01CA
+S C$enemyshoot.c$74$3$115 Def015F
+S C$enemyshoot.c$47$1$108 Def00C9
+S A$enemyshoot$100 Def001E
+S C$enemyshoot.c$93$1$117 Def01D9
+S C$enemyshoot.c$75$3$115 Def0184
+S C$enemyshoot.c$48$1$108 Def00CF
+S C$enemyshoot.c$37$2$109 Def0076
+S A$enemyshoot$200 Def0089
+S A$enemyshoot$101 Def001F
+S C$enemyshoot.c$38$2$109 Def0089
+S A$enemyshoot$300 Def00E4
+S A$enemyshoot$210 Def0097
+S A$enemyshoot$201 Def008C
+S A$enemyshoot$120 Def0038
+S A$enemyshoot$400 Def0156
+S A$enemyshoot$310 Def00EB
+S A$enemyshoot$301 Def00E5
+S A$enemyshoot$211 Def0098
+S A$enemyshoot$202 Def008E
+S A$enemyshoot$130 Def0044
+S A$enemyshoot$121 Def0039
+S C$enemyshoot.c$69$3$115 Def0138
+S A$enemyshoot$500 Def01C7
+S A$enemyshoot$410 Def0168
+S A$enemyshoot$401 Def0158
+S A$enemyshoot$320 Def00FD
+S A$enemyshoot$311 Def00EE
+S A$enemyshoot$302 Def00E6
+S A$enemyshoot$212 Def0099
+S A$enemyshoot$203 Def008F
+S A$enemyshoot$140 Def004D
+S A$enemyshoot$131 Def0045
+S A$enemyshoot$122 Def003A
+S A$enemyshoot$113 Def0029
+S C$enemyshoot.c$95$1$119 Def01D9
+S C$enemyshoot.c$88$1$117 Def01BA
+S C$enemyshoot.c$77$4$116 Def0188
+S A$enemyshoot$600 Def0202
+S A$enemyshoot$510 Def01CF
+S A$enemyshoot$501 Def01C9
+S A$enemyshoot$420 Def0176
+S A$enemyshoot$411 Def016C
+S A$enemyshoot$402 Def015B
+S A$enemyshoot$330 Def0107
+S A$enemyshoot$321 Def00FE
+S A$enemyshoot$312 Def00F0
+S A$enemyshoot$303 Def00E7
+S A$enemyshoot$240 Def00B1
+S A$enemyshoot$222 Def00A0
+S A$enemyshoot$213 Def009A
+S A$enemyshoot$204 Def0090
+S A$enemyshoot$132 Def0046
+S A$enemyshoot$123 Def003B
+S A$enemyshoot$114 Def002D
+S A$enemyshoot$105 Def0021
+S C$enemyshoot.c$96$1$119 Def01DC
+S C$enemyshoot.c$78$4$116 Def01A6
+S A$enemyshoot$610 Def020A
+S A$enemyshoot$601 Def0204
+S A$enemyshoot$511 Def01D0
+S A$enemyshoot$421 Def0178
+S A$enemyshoot$412 Def016D
+S A$enemyshoot$403 Def015D
+S A$enemyshoot$340 Def0113
+S A$enemyshoot$331 Def010A
+S A$enemyshoot$322 Def0100
+S A$enemyshoot$313 Def00F2
+S A$enemyshoot$304 Def00E8
+S A$enemyshoot$250 Def00B8
+S A$enemyshoot$241 Def00B2
+S A$enemyshoot$223 Def00A1
+S A$enemyshoot$205 Def0092
+S A$enemyshoot$142 Def004F
+S A$enemyshoot$133 Def0047
+S A$enemyshoot$124 Def003C
+S A$enemyshoot$115 Def0030
+S A$enemyshoot$106 Def0023
+S C$enemyshoot.c$97$1$119 Def01E1
+S A$enemyshoot$710 Def0251
+S A$enemyshoot$701 Def0248
+S A$enemyshoot$620 Def0214
+S A$enemyshoot$611 Def020B
+S A$enemyshoot$512 Def01D1
+S A$enemyshoot$440 Def0189
+S A$enemyshoot$422 Def0179
+S A$enemyshoot$413 Def016E
+S A$enemyshoot$350 Def0120
+S A$enemyshoot$341 Def0114
+S A$enemyshoot$332 Def010B
+S A$enemyshoot$323 Def0102
+S A$enemyshoot$314 Def00F4
+S A$enemyshoot$305 Def00E9
+S A$enemyshoot$251 Def00B9
+S A$enemyshoot$242 Def00B3
+S A$enemyshoot$233 Def00A9
+S A$enemyshoot$224 Def00A2
+S A$enemyshoot$206 Def0093
+S A$enemyshoot$170 Def0068
+S A$enemyshoot$134 Def004A
+S A$enemyshoot$116 Def0032
+S A$enemyshoot$107 Def0024
+S XG$UpdateEnemyshoots$0$0 Def01D7
+S C$enemyshoot.c$89$2$118 Def01D6
+S G$RemoveEnemyshoot$0$0 Def0052
+S _TestEnemyShootOne Def021E
+S A$enemyshoot$720 Def025F
+S A$enemyshoot$711 Def0252
+S A$enemyshoot$702 Def0249
+S A$enemyshoot$621 Def0215
+S A$enemyshoot$612 Def020C
+S A$enemyshoot$540 Def01DC
+S A$enemyshoot$513 Def01D4
+S A$enemyshoot$450 Def019E
+S A$enemyshoot$441 Def018B
+S A$enemyshoot$423 Def017A
+S A$enemyshoot$414 Def016F
+S A$enemyshoot$351 Def0121
+S A$enemyshoot$342 Def0115
+S A$enemyshoot$333 Def010C
+S A$enemyshoot$324 Def0104
+S A$enemyshoot$315 Def00F7
+S A$enemyshoot$261 Def00C1
+S A$enemyshoot$252 Def00BB
+S A$enemyshoot$234 Def00AA
+S A$enemyshoot$225 Def00A3
+S A$enemyshoot$207 Def0094
+S A$enemyshoot$171 Def0069
+S A$enemyshoot$135 Def004B
+S A$enemyshoot$117 Def0033
+S A$enemyshoot$108 Def0025
+S C$enemyshoot.c$99$1$119 Def01E2
+S _UpdateEnemyshoot Def00D0
+S A$enemyshoot$730 Def0267
+S A$enemyshoot$721 Def0260
+S A$enemyshoot$712 Def0253
+S A$enemyshoot$703 Def024A
+S A$enemyshoot$631 Def021D
+S A$enemyshoot$622 Def0216
+S A$enemyshoot$613 Def020D
+S A$enemyshoot$541 Def01DF
+S A$enemyshoot$523 Def01D7
+S A$enemyshoot$514 Def01D5
+S A$enemyshoot$505 Def01CA
+S A$enemyshoot$460 Def01A7
+S A$enemyshoot$451 Def019F
+S A$enemyshoot$442 Def018E
+S A$enemyshoot$424 Def017B
+S A$enemyshoot$415 Def0171
+S A$enemyshoot$352 Def0122
+S A$enemyshoot$343 Def0116
+S A$enemyshoot$334 Def010F
+S A$enemyshoot$325 Def0105
+S A$enemyshoot$316 Def00F9
+S A$enemyshoot$271 Def00C9
+S A$enemyshoot$262 Def00C2
+S A$enemyshoot$253 Def00BC
+S A$enemyshoot$235 Def00AB
+S A$enemyshoot$226 Def00A5
+S A$enemyshoot$217 Def009C
+S A$enemyshoot$208 Def0095
+S A$enemyshoot$190 Def0082
+S A$enemyshoot$172 Def006A
+S A$enemyshoot$163 Def005A
+S A$enemyshoot$118 Def0036
+S A$enemyshoot$109 Def0028
+S XG$TestEnemyShootComplex$0$0 Def0281
+S A$enemyshoot$740 Def0275
+S A$enemyshoot$731 Def0268
+S A$enemyshoot$722 Def0261
+S A$enemyshoot$713 Def0256
+S A$enemyshoot$704 Def024B
+S A$enemyshoot$650 Def0224
+S A$enemyshoot$623 Def0217
+S A$enemyshoot$614 Def020E
+S A$enemyshoot$605 Def0205
+S A$enemyshoot$560 Def01E5
+S A$enemyshoot$506 Def01CB
+S A$enemyshoot$461 Def01A8
+S A$enemyshoot$452 Def01A2
+S A$enemyshoot$443 Def018F
+S A$enemyshoot$434 Def0184
+S A$enemyshoot$425 Def017C
+S A$enemyshoot$416 Def0172
+S A$enemyshoot$407 Def015F
+S A$enemyshoot$380 Def0144
+S A$enemyshoot$362 Def012C
+S A$enemyshoot$353 Def0125
+S A$enemyshoot$344 Def0117
+S A$enemyshoot$335 Def0110
+S A$enemyshoot$317 Def00FA
+S A$enemyshoot$290 Def00D6
+S A$enemyshoot$272 Def00CC
+S A$enemyshoot$263 Def00C3
+S A$enemyshoot$254 Def00BD
+S A$enemyshoot$236 Def00AC
+S A$enemyshoot$227 Def00A6
+S A$enemyshoot$218 Def009F
+S A$enemyshoot$209 Def0096
+S A$enemyshoot$191 Def0083
+S A$enemyshoot$173 Def006B
+S A$enemyshoot$164 Def005D
+S A$enemyshoot$128 Def003E
+S A$enemyshoot$119 Def0037
+S A$enemyshoot$741 Def0276
+S A$enemyshoot$732 Def0269
+S A$enemyshoot$723 Def0262
+S A$enemyshoot$714 Def0257
+S A$enemyshoot$705 Def024C
+S A$enemyshoot$651 Def0225
+S A$enemyshoot$624 Def0218
+S A$enemyshoot$615 Def020F
+S A$enemyshoot$606 Def0206
+S A$enemyshoot$507 Def01CC
+S A$enemyshoot$471 Def01B5
+S A$enemyshoot$462 Def01A9
+S A$enemyshoot$453 Def01A3
+S A$enemyshoot$444 Def0192
+S A$enemyshoot$435 Def0186
+S A$enemyshoot$426 Def017D
+S A$enemyshoot$417 Def0173
+S A$enemyshoot$408 Def0163
+S A$enemyshoot$390 Def014D
+S A$enemyshoot$381 Def0145
+S A$enemyshoot$372 Def0138
+S A$enemyshoot$363 Def012F
+S A$enemyshoot$354 Def0126
+S A$enemyshoot$345 Def011A
+S A$enemyshoot$318 Def00FB
+S A$enemyshoot$309 Def00EA
+S A$enemyshoot$291 Def00D8
+S A$enemyshoot$273 Def00CD
+S A$enemyshoot$264 Def00C4
+S A$enemyshoot$255 Def00BE
+S A$enemyshoot$246 Def00B4
+S A$enemyshoot$237 Def00AD
+S A$enemyshoot$228 Def00A7
+S A$enemyshoot$192 Def0084
+S A$enemyshoot$183 Def0076
+S A$enemyshoot$174 Def006C
+S A$enemyshoot$165 Def005E
+S A$enemyshoot$147 Def0051
+S A$enemyshoot$129 Def0041
+S A$enemyshoot$742 Def0278
+S A$enemyshoot$733 Def026C
+S A$enemyshoot$724 Def0264
+S A$enemyshoot$715 Def0258
+S A$enemyshoot$706 Def024D
+S A$enemyshoot$670 Def0237
+S A$enemyshoot$652 Def0226
+S A$enemyshoot$625 Def021B
+S A$enemyshoot$616 Def0210
+S A$enemyshoot$607 Def0207
+S A$enemyshoot$580 Def01EA
+S A$enemyshoot$508 Def01CD
+S A$enemyshoot$490 Def01BA
+S A$enemyshoot$472 Def01B7
+S A$enemyshoot$463 Def01AA
+S A$enemyshoot$454 Def01A4
+S A$enemyshoot$445 Def0193
+S A$enemyshoot$427 Def0180
+S A$enemyshoot$418 Def0174
+S A$enemyshoot$409 Def0166
+S A$enemyshoot$391 Def014E
+S A$enemyshoot$373 Def0139
+S A$enemyshoot$364 Def0130
+S A$enemyshoot$355 Def0127
+S A$enemyshoot$346 Def011C
+S A$enemyshoot$319 Def00FC
+S A$enemyshoot$265 Def00C5
+S A$enemyshoot$256 Def00BF
+S A$enemyshoot$247 Def00B5
+S A$enemyshoot$238 Def00AF
+S A$enemyshoot$229 Def00A8
+S A$enemyshoot$193 Def0085
+S A$enemyshoot$184 Def0079
+S A$enemyshoot$175 Def006D
+S A$enemyshoot$166 Def0060
+S A$enemyshoot$157 Def0052
 S C$enemyshoot.c$11$0$0 Def0000
-S A$enemyshoot$950 Def0396
-S A$enemyshoot$941 Def038E
-S A$enemyshoot$932 Def037D
-S A$enemyshoot$914 Def036A
-S A$enemyshoot$905 Def0360
-S A$enemyshoot$842 Def0311
-S A$enemyshoot$833 Def0305
-S A$enemyshoot$824 Def02FE
-S A$enemyshoot$815 Def02F4
-S A$enemyshoot$806 Def02E8
-S A$enemyshoot$761 Def02B8
-S A$enemyshoot$752 Def02B1
-S A$enemyshoot$743 Def02AB
-S A$enemyshoot$725 Def029A
-S A$enemyshoot$716 Def0294
-S A$enemyshoot$707 Def028B
-S A$enemyshoot$680 Def0271
-S A$enemyshoot$662 Def0259
-S A$enemyshoot$653 Def0249
-S A$enemyshoot$608 Def0225
-S A$enemyshoot$590 Def020D
-S A$enemyshoot$536 Def01E4
-S A$enemyshoot$527 Def01DE
+S A$enemyshoot$743 Def0279
+S A$enemyshoot$734 Def026D
+S A$enemyshoot$716 Def0259
+S A$enemyshoot$707 Def024E
+S A$enemyshoot$680 Def0241
+S A$enemyshoot$671 Def0238
+S A$enemyshoot$662 Def022F
+S A$enemyshoot$653 Def0227
+S A$enemyshoot$644 Def021E
+S A$enemyshoot$626 Def021C
+S A$enemyshoot$617 Def0211
+S A$enemyshoot$608 Def0208
+S A$enemyshoot$590 Def01F6
+S A$enemyshoot$581 Def01EB
+S A$enemyshoot$536 Def01D9
 S A$enemyshoot$518 Def01D6
-S A$enemyshoot$509 Def01C7
-S A$enemyshoot$491 Def01B0
-S A$enemyshoot$482 Def01A5
-S A$enemyshoot$473 Def019B
-S A$enemyshoot$455 Def0187
-S A$enemyshoot$446 Def017F
-S A$enemyshoot$437 Def0171
-S A$enemyshoot$428 Def0162
-S A$enemyshoot$419 Def015A
-S A$enemyshoot$392 Def0138
-S A$enemyshoot$383 Def012A
-S A$enemyshoot$374 Def011C
-S A$enemyshoot$365 Def010E
-S A$enemyshoot$356 Def0109
-S A$enemyshoot$329 Def00F2
-S A$enemyshoot$284 Def00CC
-S A$enemyshoot$275 Def00C4
-S A$enemyshoot$194 Def006B
+S A$enemyshoot$509 Def01CE
+S A$enemyshoot$491 Def01BE
+S A$enemyshoot$464 Def01AD
+S A$enemyshoot$455 Def01A5
+S A$enemyshoot$446 Def0194
+S A$enemyshoot$428 Def0181
+S A$enemyshoot$419 Def0175
+S A$enemyshoot$392 Def014F
+S A$enemyshoot$374 Def013C
+S A$enemyshoot$365 Def0131
+S A$enemyshoot$356 Def0128
+S A$enemyshoot$347 Def011D
+S A$enemyshoot$266 Def00C8
+S A$enemyshoot$257 Def00C0
+S A$enemyshoot$248 Def00B6
+S A$enemyshoot$239 Def00B0
+S A$enemyshoot$194 Def0086
+S A$enemyshoot$185 Def007C
+S A$enemyshoot$176 Def006E
+S A$enemyshoot$167 Def0061
 S A$enemyshoot$158 Def0054
-S A$enemyshoot$149 Def004C
-S C$enemyshoot.c$20$1$88 Def001B
-S C$enemyshoot.c$13$1$86 Def0000
-S A$enemyshoot$951 Def0397
-S A$enemyshoot$942 Def0391
-S A$enemyshoot$933 Def037E
-S A$enemyshoot$924 Def0373
-S A$enemyshoot$915 Def036B
-S A$enemyshoot$906 Def0361
-S A$enemyshoot$870 Def0333
-S A$enemyshoot$852 Def031B
-S A$enemyshoot$843 Def0314
-S A$enemyshoot$834 Def0306
-S A$enemyshoot$825 Def02FF
-S A$enemyshoot$807 Def02E9
-S A$enemyshoot$780 Def02C5
-S A$enemyshoot$762 Def02BB
-S A$enemyshoot$753 Def02B2
-S A$enemyshoot$744 Def02AC
-S A$enemyshoot$726 Def029B
-S A$enemyshoot$717 Def0295
-S A$enemyshoot$708 Def028E
-S A$enemyshoot$690 Def0278
-S A$enemyshoot$681 Def0272
-S A$enemyshoot$663 Def025A
-S A$enemyshoot$654 Def024C
-S A$enemyshoot$618 Def022D
-S A$enemyshoot$609 Def0226
-S A$enemyshoot$591 Def020E
-S A$enemyshoot$573 Def0201
-S A$enemyshoot$564 Def01F9
-S A$enemyshoot$555 Def01F3
-S A$enemyshoot$537 Def01E5
-S A$enemyshoot$528 Def01DF
-S A$enemyshoot$492 Def01B4
-S A$enemyshoot$483 Def01A7
-S A$enemyshoot$474 Def019C
-S A$enemyshoot$456 Def0189
-S A$enemyshoot$447 Def0180
-S A$enemyshoot$429 Def0163
-S A$enemyshoot$393 Def0139
-S A$enemyshoot$384 Def012B
-S A$enemyshoot$375 Def011E
-S A$enemyshoot$366 Def0111
-S A$enemyshoot$276 Def00C5
-S A$enemyshoot$258 Def00AD
-S A$enemyshoot$168 Def005D
-S A$enemyshoot$159 Def0055
-S C$enemyshoot.c$21$1$88 Def001F
-S G$InitEnemyshootDirection$0$0 Def0013
-S C$enemyshoot.c$14$1$86 Def0012
-S A$enemyshoot$961 Def03A4
-S A$enemyshoot$952 Def0398
-S A$enemyshoot$943 Def0392
-S A$enemyshoot$934 Def0381
-S A$enemyshoot$925 Def0375
-S A$enemyshoot$916 Def036C
-S A$enemyshoot$907 Def0362
-S A$enemyshoot$880 Def033C
-S A$enemyshoot$871 Def0334
-S A$enemyshoot$862 Def0327
-S A$enemyshoot$853 Def031E
-S A$enemyshoot$844 Def0315
-S A$enemyshoot$835 Def0309
-S A$enemyshoot$808 Def02EA
-S A$enemyshoot$790 Def02D3
-S A$enemyshoot$781 Def02C7
-S A$enemyshoot$763 Def02BC
-S A$enemyshoot$754 Def02B3
-S A$enemyshoot$745 Def02AD
-S A$enemyshoot$736 Def02A3
-S A$enemyshoot$727 Def029C
-S A$enemyshoot$718 Def0296
-S A$enemyshoot$691 Def027B
-S A$enemyshoot$682 Def0273
-S A$enemyshoot$673 Def0265
-S A$enemyshoot$664 Def025B
-S A$enemyshoot$655 Def024D
-S A$enemyshoot$637 Def0240
-S A$enemyshoot$619 Def0230
-S A$enemyshoot$583 Def0202
-S A$enemyshoot$565 Def01FC
-S A$enemyshoot$556 Def01F4
-S A$enemyshoot$547 Def01EE
-S A$enemyshoot$538 Def01E6
-S A$enemyshoot$529 Def01E0
-S A$enemyshoot$493 Def01B7
-S A$enemyshoot$484 Def01A8
-S A$enemyshoot$475 Def019D
-S A$enemyshoot$466 Def0195
-S A$enemyshoot$457 Def018A
-S A$enemyshoot$448 Def0183
-S A$enemyshoot$385 Def012C
-S A$enemyshoot$376 Def011F
-S A$enemyshoot$367 Def0113
-S A$enemyshoot$277 Def00C6
-S A$enemyshoot$259 Def00B0
-S C$enemyshoot.c$52$1$94 Def00AD
-S C$enemyshoot.c$44$2$92 Def00A2
-S A$enemyshoot$980 Def03A9
-S A$enemyshoot$962 Def03A6
-S A$enemyshoot$953 Def0399
-S A$enemyshoot$944 Def0393
-S A$enemyshoot$935 Def0382
-S A$enemyshoot$917 Def036F
-S A$enemyshoot$908 Def0363
-S A$enemyshoot$890 Def0345
-S A$enemyshoot$881 Def033D
-S A$enemyshoot$863 Def0328
-S A$enemyshoot$854 Def031F
-S A$enemyshoot$845 Def0316
-S A$enemyshoot$836 Def030B
-S A$enemyshoot$809 Def02EB
-S A$enemyshoot$791 Def02D4
-S A$enemyshoot$755 Def02B4
-S A$enemyshoot$746 Def02AE
-S A$enemyshoot$737 Def02A4
-S A$enemyshoot$728 Def029E
-S A$enemyshoot$719 Def0297
-S A$enemyshoot$692 Def027D
-S A$enemyshoot$683 Def0274
-S A$enemyshoot$674 Def0268
-S A$enemyshoot$665 Def025C
-S A$enemyshoot$656 Def024F
-S A$enemyshoot$647 Def0241
-S A$enemyshoot$584 Def0204
-S A$enemyshoot$557 Def01F5
-S A$enemyshoot$548 Def01EF
-S A$enemyshoot$539 Def01E7
-S A$enemyshoot$494 Def01B9
-S A$enemyshoot$485 Def01AB
-S A$enemyshoot$476 Def019E
-S A$enemyshoot$467 Def0196
-S A$enemyshoot$458 Def018C
-S A$enemyshoot$449 Def0184
-S A$enemyshoot$386 Def012F
-S A$enemyshoot$377 Def0120
-S A$enemyshoot$296 Def00D4
-S A$enemyshoot$278 Def00C7
-S A$enemyshoot$269 Def00B8
-S A$enemyshoot$188 Def0063
-S C$enemyshoot.c$53$1$94 Def00B1
-S C$enemyshoot.c$45$2$92 Def006C
-S C$enemyshoot.c$41$1$88 Def0063
-S C$enemyshoot.c$30$2$89 Def0046
-S C$enemyshoot.c$16$1$86 Def0013
-S A$enemyshoot$990 Def03B6
-S A$enemyshoot$981 Def03AD
-S A$enemyshoot$954 Def039C
-S A$enemyshoot$945 Def0394
-S A$enemyshoot$936 Def0383
-S A$enemyshoot$918 Def0370
-S A$enemyshoot$909 Def0364
-S A$enemyshoot$891 Def0347
-S A$enemyshoot$882 Def033E
-S A$enemyshoot$864 Def032B
-S A$enemyshoot$855 Def0320
-S A$enemyshoot$846 Def0317
-S A$enemyshoot$837 Def030C
-S A$enemyshoot$792 Def02D5
-S A$enemyshoot$756 Def02B7
-S A$enemyshoot$747 Def02AF
-S A$enemyshoot$738 Def02A5
-S A$enemyshoot$729 Def029F
-S A$enemyshoot$693 Def027E
-S A$enemyshoot$684 Def0275
-S A$enemyshoot$675 Def026B
-S A$enemyshoot$666 Def025D
-S A$enemyshoot$657 Def0250
-S A$enemyshoot$648 Def0243
-S A$enemyshoot$585 Def0208
-S A$enemyshoot$567 Def01FD
-S A$enemyshoot$558 Def01F6
-S A$enemyshoot$549 Def01F0
-S A$enemyshoot$495 Def01BA
-S A$enemyshoot$486 Def01AD
-S A$enemyshoot$477 Def01A1
-S A$enemyshoot$468 Def0197
-S A$enemyshoot$459 Def018D
-S A$enemyshoot$387 Def0130
-S A$enemyshoot$378 Def0122
-S A$enemyshoot$297 Def00D7
-S A$enemyshoot$288 Def00CD
-S A$enemyshoot$279 Def00C8
-S A$enemyshoot$198 Def006C
-S C$enemyshoot.c$46$2$92 Def00A3
-S A$enemyshoot$991 Def03B8
-S A$enemyshoot$982 Def03B0
-S A$enemyshoot$955 Def039D
-S A$enemyshoot$937 Def0386
-S A$enemyshoot$919 Def0371
-S A$enemyshoot$892 Def034A
-S A$enemyshoot$883 Def033F
-S A$enemyshoot$865 Def032C
-S A$enemyshoot$856 Def0323
-S A$enemyshoot$847 Def0318
-S A$enemyshoot$838 Def030D
-S A$enemyshoot$793 Def02D6
-S A$enemyshoot$739 Def02A6
-S A$enemyshoot$694 Def027F
-S A$enemyshoot$685 Def0276
-S A$enemyshoot$676 Def026C
-S A$enemyshoot$667 Def0260
-S A$enemyshoot$658 Def0253
-S A$enemyshoot$649 Def0247
-S A$enemyshoot$595 Def0210
-S A$enemyshoot$568 Def01FF
-S A$enemyshoot$559 Def01F7
-S A$enemyshoot$496 Def01BB
-S A$enemyshoot$487 Def01AE
-S A$enemyshoot$469 Def019A
-S A$enemyshoot$388 Def0131
-S A$enemyshoot$379 Def0123
-S A$enemyshoot$298 Def00D8
-S A$enemyshoot$289 Def00CE
-S A$enemyshoot$199 Def006F
-S C$enemyshoot.c$62$2$95 Def00D4
-S C$enemyshoot.c$23$2$89 Def002A
-S A$enemyshoot$983 Def03B1
-S A$enemyshoot$956 Def039E
-S A$enemyshoot$938 Def0387
-S A$enemyshoot$929 Def0377
-S A$enemyshoot$893 Def034C
-S A$enemyshoot$884 Def0342
-S A$enemyshoot$875 Def0335
-S A$enemyshoot$866 Def032D
-S A$enemyshoot$857 Def0324
-S A$enemyshoot$848 Def0319
-S A$enemyshoot$839 Def030E
-S A$enemyshoot$794 Def02D7
-S A$enemyshoot$785 Def02C8
-S A$enemyshoot$695 Def0281
-S A$enemyshoot$686 Def0277
-S A$enemyshoot$677 Def026E
-S A$enemyshoot$659 Def0256
-S A$enemyshoot$596 Def0212
-S A$enemyshoot$497 Def01BC
-S A$enemyshoot$398 Def013C
-S A$enemyshoot$389 Def0132
-S XG$TestEnemyShootOne$0$0 Def0436
-S C$enemyshoot.c$74$1$94 Def00FF
-S C$enemyshoot.c$72$2$95 Def00F0
-S C$enemyshoot.c$48$2$92 Def00A5
-S C$enemyshoot.c$33$2$89 Def004C
-S _RemoveEnemyshoot Def0241
-S A$enemyshoot$957 Def039F
-S A$enemyshoot$939 Def038A
-S A$enemyshoot$885 Def0343
-S A$enemyshoot$876 Def0336
-S A$enemyshoot$867 Def032E
-S A$enemyshoot$795 Def02D8
-S A$enemyshoot$786 Def02CB
-S A$enemyshoot$768 Def02BE
-S A$enemyshoot$696 Def0282
-S A$enemyshoot$678 Def026F
-S A$enemyshoot$669 Def0262
-S A$enemyshoot$597 Def0213
-S A$enemyshoot$498 Def01BD
-S A$enemyshoot$399 Def0140
-S XG$UpdateEnemyshoot$0$0 Def03A8
-S C$enemyshoot.c$55$2$95 Def00B8
-S C$enemyshoot.c$34$2$89 Def0054
-S A$enemyshoot$967 Def03A8
-S A$enemyshoot$958 Def03A2
-S A$enemyshoot$949 Def0395
-S A$enemyshoot$877 Def0339
-S A$enemyshoot$868 Def032F
-S A$enemyshoot$787 Def02CE
-S A$enemyshoot$778 Def02BF
-S A$enemyshoot$697 Def0283
-S A$enemyshoot$679 Def0270
-S A$enemyshoot$598 Def0214
-S A$enemyshoot$589 Def020A
-S A$enemyshoot$499 Def01C0
-S C$enemyshoot.c$82$1$97 Def010A
-S C$enemyshoot.c$65$2$95 Def00DA
-S C$enemyshoot.c$26$2$89 Def003B
-S A$enemyshoot$995 Def03B9
-S A$enemyshoot$959 Def03A3
-S A$enemyshoot$878 Def033A
-S A$enemyshoot$869 Def0330
-S A$enemyshoot$788 Def02D1
-S A$enemyshoot$779 Def02C1
-S A$enemyshoot$698 Def0284
-S A$enemyshoot$599 Def0217
-S G$CheckMapCollision$0$0 Def0202
-S C$enemyshoot.c$77$1$94 Def0100
-S C$enemyshoot.c$66$2$95 Def00E0
-S C$enemyshoot.c$27$2$89 Def003F
-S A$enemyshoot$996 Def03BA
-S A$enemyshoot$987 Def03B2
-S A$enemyshoot$897 Def034E
-S A$enemyshoot$879 Def033B
-S A$enemyshoot$789 Def02D2
-S A$enemyshoot$699 Def0285
-S A$enemyshoot$80 Def000C
-S C$enemyshoot.c$84$1$97 Def010E
-S C$enemyshoot.c$58$2$95 Def00C9
-S C$enemyshoot.c$39$1$88 Def0062
-S C$enemyshoot.c$37$2$89 Def005D
+S A$enemyshoot$753 Def0281
+S A$enemyshoot$744 Def027A
+S A$enemyshoot$735 Def026E
+S A$enemyshoot$717 Def025A
+S A$enemyshoot$708 Def024F
+S A$enemyshoot$681 Def0242
+S A$enemyshoot$672 Def0239
+S A$enemyshoot$663 Def0230
+S A$enemyshoot$654 Def0228
+S A$enemyshoot$645 Def021F
+S A$enemyshoot$618 Def0212
+S A$enemyshoot$609 Def0209
+S A$enemyshoot$591 Def01F7
+S A$enemyshoot$582 Def01EC
+S A$enemyshoot$546 Def01E1
+S A$enemyshoot$492 Def01C1
+S A$enemyshoot$465 Def01AE
+S A$enemyshoot$447 Def0197
+S A$enemyshoot$429 Def0182
+S A$enemyshoot$393 Def0150
+S A$enemyshoot$375 Def013D
+S A$enemyshoot$366 Def0134
+S A$enemyshoot$357 Def0129
+S A$enemyshoot$348 Def011E
+S A$enemyshoot$249 Def00B7
+S A$enemyshoot$195 Def0087
+S A$enemyshoot$186 Def007D
+S A$enemyshoot$177 Def0071
+S A$enemyshoot$168 Def0064
+S A$enemyshoot$159 Def0058
+S A$enemyshoot$745 Def027B
+S A$enemyshoot$736 Def026F
+S A$enemyshoot$718 Def025B
+S A$enemyshoot$709 Def0250
+S A$enemyshoot$682 Def0245
+S A$enemyshoot$673 Def023A
+S A$enemyshoot$664 Def0231
+S A$enemyshoot$655 Def022B
+S A$enemyshoot$646 Def0220
+S A$enemyshoot$619 Def0213
+S A$enemyshoot$592 Def01F8
+S A$enemyshoot$583 Def01ED
+S A$enemyshoot$565 Def01E7
+S A$enemyshoot$493 Def01C2
+S A$enemyshoot$466 Def01AF
+S A$enemyshoot$448 Def0198
+S A$enemyshoot$439 Def0188
+S A$enemyshoot$394 Def0153
+S A$enemyshoot$385 Def0146
+S A$enemyshoot$376 Def013E
+S A$enemyshoot$367 Def0135
+S A$enemyshoot$358 Def012A
+S A$enemyshoot$349 Def011F
+S A$enemyshoot$295 Def00D9
+S A$enemyshoot$196 Def0088
+S A$enemyshoot$187 Def007F
+S A$enemyshoot$169 Def0067
+S A$enemyshoot$746 Def027C
+S A$enemyshoot$737 Def0270
+S A$enemyshoot$728 Def0265
+S A$enemyshoot$719 Def025C
+S A$enemyshoot$683 Def0246
+S A$enemyshoot$674 Def023B
+S A$enemyshoot$665 Def0232
+S A$enemyshoot$656 Def022C
+S A$enemyshoot$647 Def0221
+S A$enemyshoot$593 Def01F9
+S A$enemyshoot$584 Def01EE
+S A$enemyshoot$467 Def01B0
+S A$enemyshoot$449 Def019B
+S A$enemyshoot$395 Def0154
+S A$enemyshoot$386 Def0147
+S A$enemyshoot$377 Def013F
+S A$enemyshoot$296 Def00DC
+S A$enemyshoot$278 Def00CF
+S A$enemyshoot$188 Def0080
+S A$enemyshoot$179 Def0073
+S A$enemyshoot$747 Def027F
+S A$enemyshoot$738 Def0273
+S A$enemyshoot$729 Def0266
+S A$enemyshoot$675 Def023C
+S A$enemyshoot$666 Def0233
+S A$enemyshoot$657 Def022D
+S A$enemyshoot$648 Def0222
+S A$enemyshoot$594 Def01FA
+S A$enemyshoot$585 Def01EF
+S A$enemyshoot$477 Def01B9
+S A$enemyshoot$468 Def01B3
+S A$enemyshoot$459 Def01A6
+S A$enemyshoot$387 Def014A
+S A$enemyshoot$378 Def0140
+S A$enemyshoot$297 Def00DF
+S A$enemyshoot$288 Def00D0
+S A$enemyshoot$189 Def0081
+S A$enemyshoot$748 Def0280
+S A$enemyshoot$739 Def0274
+S A$enemyshoot$676 Def023D
+S A$enemyshoot$667 Def0234
+S A$enemyshoot$658 Def022E
+S A$enemyshoot$649 Def0223
+S A$enemyshoot$595 Def01FB
+S A$enemyshoot$586 Def01F0
+S A$enemyshoot$559 Def01E2
+S A$enemyshoot$469 Def01B4
+S A$enemyshoot$388 Def014B
+S A$enemyshoot$379 Def0141
+S A$enemyshoot$298 Def00E2
+S A$enemyshoot$289 Def00D2
+S A$enemyshoot$677 Def023E
+S A$enemyshoot$668 Def0235
+S A$enemyshoot$596 Def01FC
+S A$enemyshoot$587 Def01F1
+S A$enemyshoot$578 Def01E8
+S A$enemyshoot$497 Def01C3
+S A$enemyshoot$389 Def014C
+S A$enemyshoot$299 Def00E3
+S XG$TestEnemyShootOne$0$0 Def0247
+S _RemoveEnemyshoot Def0052
+S A$enemyshoot$678 Def023F
+S A$enemyshoot$669 Def0236
+S A$enemyshoot$597 Def01FF
+S A$enemyshoot$588 Def01F2
+S A$enemyshoot$579 Def01E9
+S A$enemyshoot$498 Def01C6
+S A$enemyshoot$399 Def0155
+S XG$UpdateEnemyshoot$0$0 Def01B9
+S A$enemyshoot$688 Def0247
+S A$enemyshoot$679 Def0240
+S A$enemyshoot$598 Def0200
+S A$enemyshoot$589 Def01F3
+S A$enemyshoot$599 Def0201
+S A$enemyshoot$70 Def0003
+S G$CheckMapCollision$0$0 Def0013
+S A$enemyshoot$71 Def0004
 S G$InitEnemyshootSprites$0$0 Def0000
-S A$enemyshoot$997 Def03BB
-S A$enemyshoot$988 Def03B5
-S A$enemyshoot$898 Def0352
-S A$enemyshoot$889 Def0344
-S A$enemyshoot$799 Def02D9
-S A$enemyshoot$81 Def000F
-S G$KillEnemyshoots$0$0 Def03D1
-S C$enemyshoot.c$59$2$95 Def00CD
-S A$enemyshoot$998 Def03BC
-S A$enemyshoot$899 Def0355
-S A$enemyshoot$82 Def0010
-S A$enemyshoot$73 Def0000
-S G$TestEnemyShoot$0$0 Def03D7
-S C$enemyshoot.c$91$3$99 Def014E
-S C$enemyshoot.c$69$2$95 Def00EC
-S G$SpreadEnemyshootDirection$0$0 Def0063
-S A$enemyshoot$999 Def03BD
-S A$enemyshoot$83 Def0011
-S A$enemyshoot$74 Def0002
-S C$enemyshoot.c$92$3$99 Def015F
-S _InitEnemyshootDirection Def0013
+S A$enemyshoot$72 Def0007
+S G$KillEnemyshoots$0$0 Def01E2
+S A$enemyshoot$73 Def0008
+S G$TestEnemyShoot$0$0 Def01E8
+S A$enemyshoot$83 Def0012
+S A$enemyshoot$74 Def000B
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -932,256 +556,152 @@ A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
 T 00 00 3E 07 F5 33 21 35 01 E5 21 00 00 E5 CD
-R 00 00 00 00 02 0B 11 00
+R 00 00 00 00 02 0B 0C 00
 T 0D 00 00 00 F1 F1 33 C9
-R 00 00 00 00 02 02 06 00
+R 00 00 00 00 02 02 04 00
 T 13 00
 R 00 00 00 00
-T 13 00 DD E5 DD 21 00 00 DD 39 21 00 00 34 FD 21
-R 00 00 00 00 02 0B 12 00
-T 21 00 00 00 FD 7E 00 D6 0A 30 36 01 00 00 ED 5B
-R 00 00 00 00 02 02 0F 00 02 0C 08 00
-T 2F 00 00 00 16 00 6B 62 29 29 19 09 4D 44 DD 7E
-R 00 00 00 00 02 02 0F 00
-T 3D 00 04 02 59 50 13 DD 7E 05 12 21 04 00 09 36
-R 00 00 00 00
-T 4B 00 02 59 50 13 13 DD 7E 06 12 03 03 03 60 69
-R 00 00 00 00
-T 59 00 DD 7E 07 77 FD 34 00
-R 00 00 00 00
-T 60 00
-R 00 00 00 00
-T 60 00 DD E1 C9
-R 00 00 00 00
-T 63 00
-R 00 00 00 00
-T 63 00 0E 00
-R 00 00 00 00
-T 65 00
-R 00 00 00 00
-T 65 00 21 08 00 39 79 96 D0 21 06 00 39 7E 23 66
-R 00 00 00 00
-T 73 00 6F 06 00 09 46 FD 21 04 00 FD 39 FD 7E 00
-R 00 00 00 00
-T 81 00 81 5F FD 7E 01 CE 00 57 1A 57 C5 4A C5 21
-R 00 00 00 00
-T 8F 00 07 00 39 7E F5 33 21 07 00 39 7E F5 33 CD
-R 00 00 00 00
-T 9D 00 13 00 F1 F1 C1 0C 18 C0
-R 00 00 00 00 00 02 00 00
-T A5 00
-R 00 00 00 00
-T A5 00 DD E5 DD 21 00 00 DD 39 21 00 00 34 3A
-R 00 00 00 00 02 0B 12 00
-T B2 00 00 00 D6 0A 30 45 01 00 00 ED 5B 00 00 16
-R 00 00 00 00 02 02 0F 00 02 09 08 00 02 0D 0F 00
-T C0 00 00 6B 62 29 29 19 09 4D 44 DD 7E 04 02 59
-R 00 00 00 00
-T CE 00 50 13 DD 7E 05 12 21 04 00 09 36 03 59 50
-R 00 00 00 00
-T DC 00 13 13 AF 12 03 03 03 60 3A 00 00 87 C6 07
-R 00 00 00 00 02 0B 04 00
-T EA 00 69 77 21 00 00 34 3E 01 F5 33 21 00 00 E5
-R 00 00 00 00 02 05 0F 00 02 0D 15 00
-T F8 00 CD 00 00 F1 33
-R 00 00 00 00 02 03 16 00
-T FD 00
-R 00 00 00 00
-T FD 00 DD E1 C9
-R 00 00 00 00
-T 00 01
-R 00 00 00 00
-T 00 01 DD E5 DD 21 00 00 DD 39 F5 F5 21 00 00 34
-R 00 00 00 00 02 0D 12 00
-T 0E 01 3A 00 00 D6 0A D2 FD 01 21 00 00 4E 06 00
-R 00 00 00 00 02 03 0F 00 00 08 00 00 02 0B 04 00
-T 1C 01 3E 04 91 4F 3E 00 98 47 21 00 00 5E 16 00
-R 00 00 00 00 02 0B 12 00
-T 2A 01 C5 D5 CD 00 00 F1 F1 7C B5 28 07 DD 7E 06
-R 00 00 00 00 02 05 14 00
-T 38 01 3D C2 FD 01
-R 00 00 00 00 00 04 00 00
-T 3C 01
-R 00 00 00 00
-T 3C 01 ED 4B 00 00 06 00 69 60 29 29 09 11 00 00
-R 00 00 00 00 02 04 0F 00 02 0E 08 00
-T 4A 01 19 33 33 E5 21 00 00 4E 06 00 DD 5E 04 16
-R 00 00 00 00 02 07 0A 00
-T 58 01 00 79 93 4F 78 9A 47 21 00 00 5E 16 00 DD
-R 00 00 00 00 02 0A 0B 00
-T 66 01 6E 05 26 00 7B 95 DD 77 FE 7A 9C DD 77 FF
-R 00 00 00 00
-T 74 01 C5 CD 00 00 E3 DD 6E FE DD 66 FF E5 CD
-R 00 00 00 00 02 04 05 00
-T 81 01 00 00 F1 D1 19 EB 3E 40 BB 3E 00 9A E2
-R 00 00 00 00 02 02 05 00
-T 8E 01 92 01 EE 80
-R 00 00 00 00 00 02 00 00
-T 92 01
-R 00 00 00 00
-T 92 01 F2 FD 01 E1 E5 DD 7E 04 77 E1 E5 23 DD 7E
-R 00 00 00 00 00 03 00 00
-T A0 01 05 77 DD 7E FC C6 04 6F DD 7E FD CE 00 67
-R 00 00 00 00
-T AE 01 36 02 FD 21 00 00 FD 6E 00 26 00 E5 D5 E5
-R 00 00 00 00 02 06 0C 00
-T BC 01 C5 CD 00 00 F1 F1 4D 44 D1 E1 C5 D5 E5 DD
-R 00 00 00 00 02 04 07 00
-T CA 01 6E FE DD 66 FF E5 CD 00 00 F1 F1 D1 C1 E5
-R 00 00 00 00 02 09 07 00
-T D8 01 D5 D5 C5 CD 00 00 F1 F1 4D 44 D1 E1 C5 D5
-R 00 00 00 00 02 06 17 00
-T E6 01 E5 CD 00 00 F1 F1 5D C1 E1 E5 23 23 71 E1
-R 00 00 00 00 02 04 17 00
-T F4 01 E5 23 23 23 73 21 00 00 34
-R 00 00 00 00 02 08 0F 00
-T FD 01
-R 00 00 00 00
-T FD 01 DD F9 DD E1 C9
-R 00 00 00 00
-T 02 02
-R 00 00 00 00
-T 02 02 DD E5 DD 21 00 00 DD 39 3A 00 00 B7 20 2C
-R 00 00 00 00 02 0B 10 00
-T 10 02 3E 0F F5 33 CD 00 00 33 FD 21 00 00 FD 6E
-R 00 00 00 00 02 07 00 00 02 0C 0E 00
-T 1E 02 00 26 00 29 11 00 00 19 4E 23 46 78 B1 28
+T 13 00 DD E5 DD 21 00 00 DD 39 3A 00 00 B7 20 2C
+R 00 00 00 00 02 0B 0B 00
+T 21 00 3E 0F F5 33 CD 00 00 33 FD 21 00 00 FD 6E
+R 00 00 00 00 02 07 00 00 02 0C 09 00
+T 2F 00 00 26 00 29 11 00 00 19 4E 23 46 78 B1 28
 R 00 00 00 00 02 07 01 00
-T 2C 02 0F DD 66 05 DD 6E 04 E5 69 60 CD 00 00 F1
-R 00 00 00 00 02 0D 0D 00
-T 3A 02 18 02
+T 3D 00 0F DD 66 05 DD 6E 04 E5 69 60 CD 00 00 F1
+R 00 00 00 00 02 0D 08 00
+T 4B 00 18 02
 R 00 00 00 00
-T 3C 02
+T 4D 00
 R 00 00 00 00
-T 3C 02 2E 00
+T 4D 00 2E 00
 R 00 00 00 00
-T 3E 02
+T 4F 00
 R 00 00 00 00
-T 3E 02 DD E1 C9
+T 4F 00 DD E1 C9
 R 00 00 00 00
-T 41 02
+T 52 00
 R 00 00 00 00
-T 41 02 DD E5 DD 21 00 00 DD 39 21 00 00 4E 06 00
-R 00 00 00 00 02 0B 0F 00
-T 4F 02 0B DD 5E 04 DD 7E 04 17 9F 57 7B 91 7A 98
+T 52 00 DD E5 DD 21 00 00 DD 39 21 00 00 4E 06 00
+R 00 00 00 00 02 0B 0A 00
+T 60 00 0B DD 5E 04 DD 7E 04 17 9F 57 7B 91 7A 98
 R 00 00 00 00
-T 5D 02 E2 62 02 EE 80
+T 6E 00 E2 73 00 EE 80
 R 00 00 00 00 00 03 00 00
-T 62 02
+T 73 00
 R 00 00 00 00
-T 62 02 F2 B8 02 11 00 00 DD 4E 04 79 CB 07 9F 47
-R 00 00 00 00 00 03 00 00 02 06 08 00
-T 70 02 69 60 29 29 09 19 4D 44 3A 00 00 C6 FF D5
-R 00 00 00 00 02 0B 0F 00
-T 7E 02 5F 16 00 6B 62 29 29 19 D1 19 E5 FD E1 FD
+T 73 00 F2 C9 00 11 00 00 DD 4E 04 79 CB 07 9F 47
+R 00 00 00 00 00 03 00 00 02 06 05 00
+T 81 00 69 60 29 29 09 19 4D 44 3A 00 00 C6 FF D5
+R 00 00 00 00 02 0B 0A 00
+T 8F 00 5F 16 00 6B 62 29 29 19 D1 19 E5 FD E1 FD
 R 00 00 00 00
-T 8C 02 7E 00 02 59 50 13 FD E5 E1 23 7E 12 59 50
+T 9D 00 7E 00 02 59 50 13 FD E5 E1 23 7E 12 59 50
 R 00 00 00 00
-T 9A 02 13 13 FD E5 E1 23 23 7E 12 59 50 13 13 13
+T AB 00 13 13 FD E5 E1 23 23 7E 12 59 50 13 13 13
 R 00 00 00 00
-T A8 02 FD E5 E1 23 23 23 7E 12 03 03 03 03 FD 7E
+T B9 00 FD E5 E1 23 23 23 7E 12 03 03 03 03 FD 7E
 R 00 00 00 00
-T B6 02 04 02
+T C7 00 04 02
 R 00 00 00 00
-T B8 02
+T C9 00
 R 00 00 00 00
-T B8 02 21 00 00 35 DD E1 C9
-R 00 00 00 00 02 03 0F 00
-T BF 02
+T C9 00 21 00 00 35 DD E1 C9
+R 00 00 00 00 02 03 0A 00
+T D0 00
 R 00 00 00 00
-T BF 02 DD E5 DD 21 00 00 DD 39 F5 01 00 00 DD 5E
-R 00 00 00 00 02 0C 08 00
-T CD 02 04 DD 56 05 6B 62 29 29 19 09 4D 44 0A DD
+T D0 00 DD E5 DD 21 00 00 DD 39 F5 01 00 00 DD 5E
+R 00 00 00 00 02 0C 05 00
+T DE 00 04 DD 56 05 6B 62 29 29 19 09 4D 44 0A DD
 R 00 00 00 00
-T DB 02 77 FE D6 08 38 15 3E F7 DD 96 FE 38 0E 59
+T EC 00 77 FE D6 08 38 15 3E F7 DD 96 FE 38 0E 59
 R 00 00 00 00
-T E9 02 50 13 1A 67 D6 08 38 05 3E B7 94 30 0C
+T FA 00 50 13 1A 67 D6 08 38 05 3E B7 94 30 0C
 R 00 00 00 00
-T F6 02
+T 07 01
 R 00 00 00 00
-T F6 02 DD 46 04 C5 33 CD 41 02 33 C3 A4 03
+T 07 01 DD 46 04 C5 33 CD 52 00 33 C3 B5 01
 R 00 00 00 00 00 08 00 00 00 0C 00 00
-T 02 03
+T 13 01
 R 00 00 00 00
-T 02 03 24 24 24 24 DD 7E FE C6 04 C5 D5 E5 33 F5
+T 13 01 24 24 24 24 DD 7E FE C6 04 C5 D5 E5 33 F5
 R 00 00 00 00
-T 10 03 33 CD 02 02 F1 D1 C1 7D B7 28 0C DD 46 04
+T 21 01 33 CD 13 00 F1 D1 C1 7D B7 28 0C DD 46 04
 R 00 00 00 00 00 04 00 00
-T 1E 03 C5 33 CD 41 02 33 C3 A4 03
+T 2F 01 C5 33 CD 52 00 33 C3 B5 01
 R 00 00 00 00 00 05 00 00 00 09 00 00
-T 27 03
+T 38 01
 R 00 00 00 00
-T 27 03 0A DD 77 FE 69 60 23 23 6E DD 7E FE 85 02
+T 38 01 0A DD 77 FE 69 60 23 23 6E DD 7E FE 85 02
 R 00 00 00 00
-T 35 03 1A DD 77 FE 69 60 23 23 23 6E DD 7E FE 85
+T 46 01 1A DD 77 FE 69 60 23 23 23 6E DD 7E FE 85
 R 00 00 00 00
-T 43 03 12 C5 FD E1 FD 7E 04 FE 02 20 25 FD 21
+T 54 01 12 C5 FD E1 FD 7E 04 FE 02 20 25 FD 21
 R 00 00 00 00
-T 50 03 00 00 FD 6E 00 26 00 FD 21 35 01 C5 4D 44
+T 61 01 00 00 FD 6E 00 26 00 FD 21 35 01 C5 4D 44
 R 00 00 00 00 02 02 02 00
-T 5E 03 FD 09 C1 1A 5F 0A 47 FD E5 7B F5 33 C5 33
+T 6F 01 FD 09 C1 1A 5F 0A 47 FD E5 7B F5 33 C5 33
 R 00 00 00 00
-T 6C 03 CD 00 00 F1 F1 18 31
-R 00 00 00 00 02 03 13 00
-T 73 03
+T 7D 01 CD 00 00 F1 F1 18 31
+R 00 00 00 00 02 03 0D 00
+T 84 01
 R 00 00 00 00
-T 73 03 D6 03 20 2D 1A C6 F8 DD 77 FE 0A DD 77 FF
+T 84 01 D6 03 20 2D 1A C6 F8 DD 77 FE 0A DD 77 FF
 R 00 00 00 00
-T 81 03 C5 D5 21 37 01 E5 DD 66 FE DD 6E FF E5 CD
+T 92 01 C5 D5 21 37 01 E5 DD 66 FE DD 6E FF E5 CD
 R 00 00 00 00
-T 8F 03 00 00 F1 F1 D1 C1 1A 57 0A 47 21 38 01 E5
-R 00 00 00 00 02 02 13 00
-T 9D 03 58 D5 CD 00 00 F1 F1
-R 00 00 00 00 02 05 13 00
-T A4 03
+T A0 01 00 00 F1 F1 D1 C1 1A 57 0A 47 21 38 01 E5
+R 00 00 00 00 02 02 0D 00
+T AE 01 58 D5 CD 00 00 F1 F1
+R 00 00 00 00 02 05 0D 00
+T B5 01
 R 00 00 00 00
-T A4 03 DD F9 DD E1 C9
+T B5 01 DD F9 DD E1 C9
 R 00 00 00 00
-T A9 03
+T BA 01
 R 00 00 00 00
-T A9 03 FD 21 00 00 FD 7E 00 B7 C8 FD 4E 00 0D
-R 00 00 00 00 02 04 0F 00
-T B6 03
+T BA 01 FD 21 00 00 FD 7E 00 B7 C8 FD 4E 00 0D
+R 00 00 00 00 02 04 0A 00
+T C7 01
 R 00 00 00 00
-T B6 03 CB 79 C0 79 5F 17 9F 57 C5 D5 CD BF 02 F1
+T C7 01 CB 79 C0 79 5F 17 9F 57 C5 D5 CD D0 00 F1
 R 00 00 00 00 00 0D 00 00
-T C4 03 C1 0D 18 EE
+T D5 01 C1 0D 18 EE
 R 00 00 00 00
-T C8 03
+T D9 01
 R 00 00 00 00
-T C8 03 CD 00 00 21 00 00 36 00 C9
-R 00 00 00 00 00 03 00 00 02 06 0F 00
-T D1 03
+T D9 01 CD 00 00 21 00 00 36 00 C9
+R 00 00 00 00 00 03 00 00 02 06 0A 00
+T E2 01
 R 00 00 00 00
-T D1 03 21 00 00 36 00 C9
-R 00 00 00 00 02 03 0F 00
-T D7 03
+T E2 01 21 00 00 36 00 C9
+R 00 00 00 00 02 03 0A 00
+T E8 01
 R 00 00 00 00
-T D7 03 D1 C1 C5 D5 69 60 23 23 23 56 C5 21 06 00
+T E8 01 D1 C1 C5 D5 69 60 23 23 23 56 C5 21 06 00
 R 00 00 00 00
-T E5 03 39 7E F5 33 D5 33 CD 00 00 F1 C1 7D D6 02
+T F6 01 39 7E F5 33 D5 33 CD 00 00 F1 C1 7D D6 02
 R 00 00 00 00 02 09 03 00
-T F3 03 C0 69 60 23 56 14 14 14 14 0A 47 04 04 04
+T 04 02 C0 69 60 23 56 14 14 14 14 0A 47 04 04 04
 R 00 00 00 00
-T 01 04 04 AF F5 33 58 D5 CD 00 01 F1 33 C9
-R 00 00 00 00 00 09 00 00
-T 0D 04
+T 12 02 04 AF F5 33 58 D5 CD 00 00 F1 33 C9
+R 00 00 00 00 02 09 06 00
+T 1E 02
 R 00 00 00 00
-T 0D 04 D1 C1 C5 D5 69 60 23 23 23 5E 21 04 00 39
+T 1E 02 D1 C1 C5 D5 69 60 23 23 23 5E 21 04 00 39
 R 00 00 00 00
-T 1B 04 7E 93 C0 69 60 23 56 14 14 14 14 0A 47 04
+T 2C 02 7E 93 C0 69 60 23 56 14 14 14 14 0A 47 04
 R 00 00 00 00
-T 29 04 04 04 04 AF F5 33 58 D5 CD 00 01 F1 33 C9
-R 00 00 00 00 00 0B 00 00
-T 37 04
+T 3A 02 04 04 04 AF F5 33 58 D5 CD 00 00 F1 33 C9
+R 00 00 00 00 02 0B 06 00
+T 48 02
 R 00 00 00 00
-T 37 04 D1 C1 C5 D5 69 60 23 23 23 56 C5 21 06 00
+T 48 02 D1 C1 C5 D5 69 60 23 23 23 56 C5 21 06 00
 R 00 00 00 00
-T 45 04 39 7E F5 33 D5 33 CD 00 00 F1 C1 7D D6 02
+T 56 02 39 7E F5 33 D5 33 CD 00 00 F1 C1 7D D6 02
 R 00 00 00 00 02 09 03 00
-T 53 04 C0 69 60 23 7E 21 06 00 39 86 57 0A 21
+T 64 02 C0 69 60 23 7E 21 06 00 39 86 57 0A 21
 R 00 00 00 00
-T 60 04 05 00 39 86 47 3E 01 F5 33 58 D5 CD 00 01
-R 00 00 00 00 00 0E 00 00
-T 6E 04 F1 33 C9
+T 71 02 05 00 39 86 47 3E 01 F5 33 58 D5 CD 00 00
+R 00 00 00 00 02 0E 06 00
+T 7F 02 F1 33 C9
 R 00 00 00 00
