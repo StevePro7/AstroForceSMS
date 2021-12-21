@@ -40,27 +40,6 @@ void InitPlayershootSprites()
 	LoadSprite( playershoot_psgcompr, PLAYERSHOOTBASE, playershoot_psgcompr_bank );
 }
 
-// Remove playershoot
-void RemovePlayershoot( signed char a )
-{
-	playershoot *psa, *psb;
-
-	// Remove list of sprites
-	if( a < numplayershoots - 1 )
-	{
-		psa = &playershoots[ a ];
-		psb = &playershoots[ numplayershoots - 1 ];
-
-		psa->playershootx = psb->playershootx;
-		psa->playershooty = psb->playershooty;
-		psa->playershoottype = psb->playershoottype;
-		psa->playershootvelx = psb->playershootvelx;
-		psa->playershootvely = psb->playershootvely;
-	}
-	// Bajamos el numero de player shoots
-	numplayershoots--;
-}
-
 // Update player shoot
 void UpdatePlayershoot( unsigned int a )
 {

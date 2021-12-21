@@ -15,28 +15,6 @@
 
 
 // Declarations needed
-void DoCommonBossAppearingFunction( enemy *en )
-{
-	en->enemyposy++;
-	if( en->enemyposy >= 30 )
-	{
-		en->enemyparama = 1;
-		en->enemyframe = 0;
-	}
-}
-void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
-{
-	if( en->enemyparamb == 0 )
-	{
-		en->enemyposx -= dv;
-		if( en->enemyposx < 24 + offset )en->enemyparamb = 1;
-	}
-	else
-	{
-		en->enemyposx += dv;
-		if( en->enemyposx > ( 256 - en->enemywidth - 48 + offset ) )en->enemyparamb = 0;
-	}
-}
 void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced )
 {
 	signed int dx, dy, dm;
@@ -132,9 +110,56 @@ void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, 
 		numenemyshoots++;
 	}
 }
-// void RemovePlayer();
-//void RemoveEnemyshoot( signed char a );
-// void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
+void RemovePlayershoot( signed char a )
+{
+	playershoot *psa, *psb;
+
+	// Remove list of sprites
+	if( a < numplayershoots - 1 )
+	{
+		psa = &playershoots[ a ];
+		psb = &playershoots[ numplayershoots - 1 ];
+
+		psa->playershootx = psb->playershootx;
+		psa->playershooty = psb->playershooty;
+		psa->playershoottype = psb->playershoottype;
+		psa->playershootvelx = psb->playershootvelx;
+		psa->playershootvely = psb->playershootvely;
+	}
+	// Bajamos el numero de player shoots
+	numplayershoots--;
+}
+void InitEnemy( unsigned char x, unsigned char y, unsigned char t )
+{
+	enemy *en;
+
+	if( numenemies < MAXENEMIES )
+	{
+		// Get enemy
+		en = &enemies[ numenemies ];
+
+		// Data
+		en->enemyposx = x;
+		en->enemyposy = y;
+		en->enemytype = t;
+		en->enemyframe = 0;
+		en->enemyparama = 0;
+		en->enemyparamb = 0;
+		en->enemywidth = enemieswidth[ t ];
+		en->enemyheight = enemiesheight[ t ];
+		en->enemyenergy = enemiesenergy[ t ];
+
+		// Easy fix
+		if( ( en->enemyenergy > 100 ) && ( en->enemyenergy < 255 ) && ( gamelevel == 0 ) )en->enemyenergy -= 30;
+
+		// Increase
+		numenemies++;
+
+		// Init
+		if( initenemyfunctions[ t ] != 0 )
+			( *( initenemyfunctions[ t ] ) )( en );
+	}
+}
 // void InitScript( unsigned char *scripter, unsigned char **labels );
 // void InitAfterBossStage();
 // void GetEnemyDirection( enemy *en );
@@ -146,6 +171,28 @@ void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, 
 // void SkullAccelY( enemy *en );
 // void SkullBoneCMove( enemy *en );
 // void KillEnemies( unsigned char force );
+void DoCommonBossAppearingFunction( enemy *en )
+{
+	en->enemyposy++;
+	if( en->enemyposy >= 30 )
+	{
+		en->enemyparama = 1;
+		en->enemyframe = 0;
+	}
+}
+void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
+{
+	if( en->enemyparamb == 0 )
+	{
+		en->enemyposx -= dv;
+		if( en->enemyposx < 24 + offset )en->enemyparamb = 1;
+	}
+	else
+	{
+		en->enemyposx += dv;
+		if( en->enemyposx > ( 256 - en->enemywidth - 48 + offset ) )en->enemyparamb = 0;
+	}
+}
 // void DoCommonBossAppearingFunction( enemy *en );
 // void DoEnemyWait( enemy *en, unsigned char nxt );
 // void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
