@@ -5,9 +5,9 @@ F:G$DoSkullSinusMovement$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lfuncs.DoSkullSinusMovement$en$1$96({2}DG,STenemy:S),B,1,4
 S:Lfuncs.DoSkullSinusMovement$dv$1$96({1}SC:U),B,1,6
 S:Lfuncs.DoSkullSinusMovement$offset$1$96({1}SC:U),B,1,7
-S:Lfuncs.DoSkullSinusMovement$sloc0$1$0({2}DG,STenemy:S),B,1,-6
-S:Lfuncs.DoSkullSinusMovement$sloc1$1$0({2}DG,SC:U),B,1,-4
-S:Lfuncs.DoSkullSinusMovement$sloc2$1$0({1}SC:U),B,1,-7
+S:Lfuncs.DoSkullSinusMovement$sloc0$1$0({2}DG,STenemy:S),B,1,-7
+S:Lfuncs.DoSkullSinusMovement$sloc1$1$0({2}DG,SC:U),B,1,-5
+S:Lfuncs.DoSkullSinusMovement$sloc2$1$0({1}SC:U),B,1,-3
 S:Lfuncs.DoSkullSinusMovement$sloc3$1$0({1}SC:U),B,1,-8
 S:Lfuncs.DoSkullSinusMovement$sloc4$1$0({2}SI:S),B,1,-2
 F:G$myRand$0$0({2}DF,SC:U),Z,0,0,0,0,0
@@ -21,8 +21,8 @@ S:Lfuncs.DrawSpriteArray$tx$1$104({1}SC:U),B,1,8
 S:Lfuncs.DrawSpriteArray$ty$1$104({1}SC:U),B,1,9
 S:Lfuncs.DrawSpriteArray$x$1$105({1}SC:U),R,0,0,[b]
 S:Lfuncs.DrawSpriteArray$y$1$105({1}SC:U),R,0,0,[c]
-S:Lfuncs.DrawSpriteArray$sloc0$1$0({1}SC:U),B,1,-1
-S:Lfuncs.DrawSpriteArray$sloc1$1$0({1}SC:U),B,1,-2
+S:Lfuncs.DrawSpriteArray$sloc0$1$0({1}SC:U),B,1,-2
+S:Lfuncs.DrawSpriteArray$sloc1$1$0({1}SC:U),B,1,-1
 F:G$DrawQuadSprite$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lfuncs.DrawQuadSprite$x$1$108({1}SC:U),B,1,4
 S:Lfuncs.DrawQuadSprite$y$1$108({1}SC:U),B,1,5

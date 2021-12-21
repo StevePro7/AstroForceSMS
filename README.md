@@ -1,4 +1,12 @@
 # AstroForceSMS
+21/12/2021
+
+Run code directly
+assert fires
+Retry
+code will stop at crash
+call stack to see what triggered the assert!
+
 
 playerstage.c
 InitCustomStageData()
