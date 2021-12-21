@@ -16,24 +16,6 @@ unsigned char checkEnemyPlayerShoot( enemy *en, playershoot *ps )
 	return 0;
 }
 
-// Get direction to player
-void GetEnemyDirection( enemy *en )
-{
-	signed int dx, dy, dm;
-
-	// Better granularity although faster enemy shoots
-	dx = playerx - en->enemyposx;
-	dy = playery - en->enemyposy;
-	dm = abs( dx ) + abs( dy );
-	dx *= 3;
-	dy *= 3;
-	dx /= dm;
-	dy /= dm;
-
-	en->enemyparama = dx;
-	en->enemyparamb = dy;
-}
-
 // Remove enemy
 void RemoveEnemy( signed char a )
 {

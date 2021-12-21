@@ -160,10 +160,47 @@ void InitEnemy( unsigned char x, unsigned char y, unsigned char t )
 			( *( initenemyfunctions[ t ] ) )( en );
 	}
 }
-// void InitScript( unsigned char *scripter, unsigned char **labels );
-// void InitAfterBossStage();
-// void GetEnemyDirection( enemy *en );
-// void UpdatePlayStage();
+void InitScript( unsigned char *scripter, unsigned char **labels )
+{
+	script *sc;
+
+	if( numscripts < MAXSCRIPTS )
+	{
+		// Get script
+		sc = &scripts[ numscripts++ ];
+
+		// Data
+		sc->scripterpass = 0;
+		sc->scripterframe = 0;
+		sc->scripterscript = scripter;
+		sc->scripterlabels = labels;
+		sc->scripterloop = -1;
+	}
+}
+void GetEnemyDirection( enemy *en )
+{
+	signed int dx, dy, dm;
+
+	// Better granularity although faster enemy shoots
+	dx = playerx - en->enemyposx;
+	dy = playery - en->enemyposy;
+	dm = abs( dx ) + abs( dy );
+	dx *= 3;
+	dy *= 3;
+	dx /= dm;
+	dy /= dm;
+
+	en->enemyparama = dx;
+	en->enemyparamb = dy;
+}
+void UpdatePlayStage()
+{
+	// Change bank
+	changeBank( FIXEDBANKSLOT );
+
+	// Custom Update
+	( *( updatestagefunctions[ playstage ] ) )( );
+}
 // void InitStageSprites( const unsigned char *spl, unsigned char num );
 // void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset );
 // unsigned char TestSkullOut( enemy *en );
@@ -457,14 +494,7 @@ void checkgamepause()
 	}
 }
 
-void UpdatePlayStage()
-{
-	// Change bank
-	changeBank(FIXEDBANKSLOT);
 
-	// Custom Update
-	(*(updatestagefunctions[playstage]))();
-}
 
 // Update stage and frames
 void UpdateStage()

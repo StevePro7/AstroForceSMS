@@ -16,10 +16,9 @@ void InitEnemyshootLaser( unsigned char x, unsigned char y );
 void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );
 void RemovePlayershoot( signed char a );
 void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
-//void InitScript( unsigned char *scripter, unsigned char **labels );
-//void InitAfterBossStage();
-//void GetEnemyDirection( enemy *en );
-//void UpdatePlayStage();
+void InitScript( unsigned char *scripter, unsigned char **labels );
+void GetEnemyDirection( enemy *en );
+void UpdatePlayStage();
 //void InitStageSprites( const unsigned char *spl, unsigned char num );
 void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset );
 //unsigned char TestSkullOut( enemy *en );
@@ -100,8 +99,6 @@ void LoadFont();
 void InitStage();
 
 void checkgamepause();
-
-void UpdatePlayStage();
 
 // Update stage and frames
 void UpdateStage();
