@@ -11,11 +11,11 @@
 
 
 // Declarations needed
-//void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
-//void InitEnemyshootLaser( unsigned char x, unsigned char y );
+void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
+void InitEnemyshootLaser( unsigned char x, unsigned char y );
 void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );
 //void RemovePlayer();
-//void RemovePlayershoot( signed char a );
+void RemovePlayershoot( signed char a );
 //void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
 //void InitScript( unsigned char *scripter, unsigned char **labels );
 //void InitAfterBossStage();

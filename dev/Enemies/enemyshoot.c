@@ -13,80 +13,6 @@ void InitEnemyshootSprites()
 	LoadSprite( enemyshoot_psgcompr, ENEMYSHOOTBASE, enemyshoot_psgcompr_bank );
 }
 
-void InitEnemyshootLaser( unsigned char x, unsigned char y )
-{
-	enemyshoot *es;
-
-	shootcount++;
-	if( numenemyshoots < MAXENEMYSHOOTS )
-	{
-		es = &enemyshoots[ numenemyshoots ];
-
-		// Position
-		es->enemyshootposx = x;
-		es->enemyshootposy = y;
-
-		// Type
-		es->enemyshoottype = ENEMYSHOOT_LASER;
-
-		// Set velocity
-		es->enemyshootvelx = 0;
-		es->enemyshootvely = DEFAULTENEMYSHOOTLASERSPEED + ( gamelevel << 1 );
-
-		// Increment
-		numenemyshoots++;
-
-		// Sound
-		PlaySound( ( unsigned char * ) enemylaser_psg, 1 );
-	}
-}
-
-// Create a Enemy shoot.. moved here as needed before header file
-void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced )
-{
-	signed int dx, dy, dm;
-	enemyshoot *es;
-
-	shootcount++;
-
-	if( numenemyshoots < MAXENEMYSHOOTS )
-	{
-		if( ( shootcount % ( ENEMYSHOOTDENSITY - gamelevel ) == 0 ) || ( forced == 1 ) )
-		{
-			es = &enemyshoots[ numenemyshoots ];
-
-			// Better granularity although faster enemy shoots
-			dx = playerx - x;
-			dy = playery - y;
-			dm = abs( dx ) + abs( dy );
-
-			// Ahora solo dispara si est� relativamente lejos
-			if( dm > 64 )
-			{
-				// Position
-				es->enemyshootposx = x;
-				es->enemyshootposy = y;
-
-				// Type
-				es->enemyshoottype = ENEMYSHOOT_NORMAL;
-
-				// Speed
-				dx *= playstageshootspeed;
-				dy *= playstageshootspeed;
-				dx /= dm;
-				dy /= dm;
-
-				// Set velocity
-				es->enemyshootvelx = dx;
-				es->enemyshootvely = dy;
-
-				// Increment
-				numenemyshoots++;
-			}
-		}
-	}
-}
-
 // Test collision
 unsigned char CheckMapCollision( unsigned char x, unsigned char y )
 {
@@ -127,12 +53,16 @@ void UpdateEnemyshoot( unsigned int a )
 	enemyshoot *es = &enemyshoots[ a ];
 
 	if( ( es->enemyshootposx < 8 ) || ( es->enemyshootposx > 247 ) || ( es->enemyshootposy < 8 ) || ( es->enemyshootposy > 183 ) )
+	{
 		RemoveEnemyshoot( a );
+	}
 	else
 	{
 		// Collision
 		if( CheckMapCollision( es->enemyshootposx + 4, es->enemyshootposy + 4 ) )
+		{
 			RemoveEnemyshoot( a );
+		}
 		else
 		{
 			// Movement

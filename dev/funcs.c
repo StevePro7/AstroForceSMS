@@ -13,6 +13,7 @@
 //#define sign(x) (x > 0) ? 1 : ((x < 0) ? -1 : 0)
 //#define sinus(x) (sinustable[(x)%256]-128)
 
+
 // Declarations needed
 void DoCommonBossAppearingFunction( enemy *en )
 {
@@ -23,7 +24,6 @@ void DoCommonBossAppearingFunction( enemy *en )
 		en->enemyframe = 0;
 	}
 }
-
 void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
 {
 	if( en->enemyparamb == 0 )
@@ -37,9 +37,77 @@ void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
 		if( en->enemyposx > ( 256 - en->enemywidth - 48 + offset ) )en->enemyparamb = 0;
 	}
 }
+void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced )
+{
+	signed int dx, dy, dm;
+	enemyshoot *es;
 
-// void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
-// void InitEnemyshootLaser( unsigned char x, unsigned char y );
+	shootcount++;
+
+	if( numenemyshoots < MAXENEMYSHOOTS )
+	{
+		if( ( shootcount % ( ENEMYSHOOTDENSITY - gamelevel ) == 0 ) || ( forced == 1 ) )
+		{
+			es = &enemyshoots[ numenemyshoots ];
+
+			// Better granularity although faster enemy shoots
+			dx = playerx - x;
+			dy = playery - y;
+			dm = abs( dx ) + abs( dy );
+
+			// Ahora solo dispara si est� relativamente lejos
+			if( dm > 64 )
+			{
+				// Position
+				es->enemyshootposx = x;
+				es->enemyshootposy = y;
+
+				// Type
+				es->enemyshoottype = ENEMYSHOOT_NORMAL;
+
+				// Speed
+				dx *= playstageshootspeed;
+				dy *= playstageshootspeed;
+				dx /= dm;
+				dy /= dm;
+
+				// Set velocity
+				es->enemyshootvelx = dx;
+				es->enemyshootvely = dy;
+
+				// Increment
+				numenemyshoots++;
+			}
+		}
+	}
+}
+void InitEnemyshootLaser( unsigned char x, unsigned char y )
+{
+	enemyshoot *es;
+
+	shootcount++;
+	if( numenemyshoots < MAXENEMYSHOOTS )
+	{
+		es = &enemyshoots[ numenemyshoots ];
+
+		// Position
+		es->enemyshootposx = x;
+		es->enemyshootposy = y;
+
+		// Type
+		es->enemyshoottype = ENEMYSHOOT_LASER;
+
+		// Set velocity
+		es->enemyshootvelx = 0;
+		es->enemyshootvely = DEFAULTENEMYSHOOTLASERSPEED + ( gamelevel << 1 );
+
+		// Increment
+		numenemyshoots++;
+
+		// Sound
+		PlaySound( ( unsigned char * ) enemylaser_psg, 1 );
+	}
+}
 void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy )
 {
 	enemyshoot *es;
@@ -65,7 +133,7 @@ void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, 
 	}
 }
 // void RemovePlayer();
-// void RemovePlayershoot( signed char a );
+//void RemoveEnemyshoot( signed char a );
 // void InitEnemy( unsigned char x, unsigned char y, unsigned char t );
 // void InitScript( unsigned char *scripter, unsigned char **labels );
 // void InitAfterBossStage();
