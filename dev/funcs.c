@@ -14,6 +14,30 @@
 //#define sinus(x) (sinustable[(x)%256]-128)
 
 // Declarations needed
+void DoCommonBossAppearingFunction( enemy *en )
+{
+	en->enemyposy++;
+	if( en->enemyposy >= 30 )
+	{
+		en->enemyparama = 1;
+		en->enemyframe = 0;
+	}
+}
+
+void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
+{
+	if( en->enemyparamb == 0 )
+	{
+		en->enemyposx -= dv;
+		if( en->enemyposx < 24 + offset )en->enemyparamb = 1;
+	}
+	else
+	{
+		en->enemyposx += dv;
+		if( en->enemyposx > ( 256 - en->enemywidth - 48 + offset ) )en->enemyparamb = 0;
+	}
+}
+
 // void InitEnemyshoot( unsigned char x, unsigned char y, unsigned char forced );
 // void InitEnemyshootLaser( unsigned char x, unsigned char y );
 // void InitEnemyshootDirection( unsigned char x, unsigned char y, signed char vx, signed char vy );

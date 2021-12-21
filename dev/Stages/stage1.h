@@ -1,6 +1,7 @@
 #ifndef _STAGE1_H_
 #define _STAGE1_H_
 
+// ADRIANA
 unsigned char stage1musicreplayed;;
 void UpdateStage1();
 void InitStage1();

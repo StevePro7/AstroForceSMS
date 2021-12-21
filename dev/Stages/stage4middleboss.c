@@ -5,15 +5,7 @@ void stage4middleboss_foo()
 {
 }
 
-void DoCommonBossAppearingFunction( enemy *en )
-{
-	en->enemyposy++;
-	if( en->enemyposy >= 30 )
-	{
-		en->enemyparama = 1;
-		en->enemyframe = 0;
-	}
-}
+
 
 //void UpdateStage4MiddleBoss1( enemy *en )
 //{

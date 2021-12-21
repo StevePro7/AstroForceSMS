@@ -24,19 +24,20 @@ void stage6endboss_foo()
 //	en->enemyframe = 0;
 //}
 
-void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
-{
-	if( en->enemyparamb == 0 )
-	{
-		en->enemyposx -= dv;
-		if( en->enemyposx < 24 + offset )en->enemyparamb = 1;
-	}
-	else
-	{
-		en->enemyposx += dv;
-		if( en->enemyposx > ( 256 - en->enemywidth - 48 + offset ) )en->enemyparamb = 0;
-	}
-}
+//stevepro
+//void DoSkullSinusMovement( enemy *en, unsigned char dv, unsigned char offset )
+//{
+//	if( en->enemyparamb == 0 )
+//	{
+//		en->enemyposx -= dv;
+//		if( en->enemyposx < 24 + offset )en->enemyparamb = 1;
+//	}
+//	else
+//	{
+//		en->enemyposx += dv;
+//		if( en->enemyposx > ( 256 - en->enemywidth - 48 + offset ) )en->enemyparamb = 0;
+//	}
+//}
 
 //void CreateCustomBoneC( unsigned char x, unsigned char y, unsigned char vx, unsigned char vy )
 //{
