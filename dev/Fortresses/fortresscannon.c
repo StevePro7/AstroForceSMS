@@ -4,23 +4,7 @@ void fortresscannon_foo()
 {
 }
 
-//void DoSideShoot( enemy *en, unsigned char freq )
-//{
-//	if( en->enemyframe%freq == 0 )
-//	{
-//		if( en->enemyparama == 0 )
-//		{
-//			if( playerx < en->enemyposx )
-//				InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
-//		}
-//		else
-//		{
-//			if( playerx > en->enemyposx )
-//				InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
-//		}
-//	}
-//}
-//
+
 //void InitFortressCannonRight( enemy *en )
 //{
 //	en->enemyparama = 8;

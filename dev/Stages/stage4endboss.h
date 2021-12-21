@@ -3,7 +3,6 @@
 
 void stage4endboss_foo();
 
-//void DoEnemyWait( enemy *en, unsigned char nxt );
 //void DoStage4EndBossSinusMovementVert( enemy *en );
 //void UpdateStage4EndBoss1( enemy *en );
 //void UpdateStage4EndBoss2( enemy *en );

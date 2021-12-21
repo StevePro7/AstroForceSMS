@@ -3,16 +3,6 @@
 void stage4endboss_foo()
 {
 }
-
-//void DoEnemyWait( enemy *en, unsigned char nxt )
-//{
-//	if( en->enemyframe >= 30 )
-//	{
-//		en->enemyparama = nxt;
-//		en->enemyframe = 0;
-//	}
-//}
-//
 //void DoStage4EndBossSinusMovementVert( enemy *en )
 //{
 //	if( en->enemyparamb == 0 )

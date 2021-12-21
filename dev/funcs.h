@@ -33,17 +33,15 @@ void RemoveEnemy( signed char a );
 void KillEnemy( unsigned char a );
 void KillEnemies( unsigned char force );
 void DoCommonBossAppearingFunction( enemy *en );
-//void DoEnemyWait( enemy *en, unsigned char nxt );
-//void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
+void DoEnemyWait( enemy *en, unsigned char nxt );
+void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
 void DoStage1BossDirectionShoots( enemy *en );
-//void DoSideShoot( enemy *en, unsigned char freq );
-//void KillEnemy( unsigned char a );
-//void PlaySound( char *sound, char priority );
-//void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
+void DoSideShoot( enemy *en, unsigned char freq );
+void PlaySound( char *sound, char priority );
+void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
 //void TestEnemyShoot( enemy *en, unsigned char freq );
 //void TestEnemyShootOne( enemy *en, unsigned char freq );
 //void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy );
-//void InitPowerup( enemy *en );
 //void InitPlayerConstants();
 void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count );
 
@@ -108,11 +106,6 @@ void checkgamepause();
 
 // Update stage and frames
 void UpdateStage();
-
-void PlaySound( char *sound, char priority );
-
-// Prepare stage for music!!!
-void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
 
 // Update sound
 void UpdatePSG();

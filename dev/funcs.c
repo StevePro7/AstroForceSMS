@@ -382,24 +382,85 @@ void DoCommonBossAppearingFunction( enemy *en )
 		en->enemyframe = 0;
 	}
 }
+void DoEnemyWait( enemy *en, unsigned char nxt )
+{
+	if( en->enemyframe >= 30 )
+	{
+		en->enemyparama = nxt;
+		en->enemyframe = 0;
+	}
+}
+void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt )
+{
+	// Move
+	en->enemyposx += mx[ en->enemyparamb ] - 4;
+	en->enemyposy += my[ en->enemyparamb ] - 4;
 
-// void DoCommonBossAppearingFunction( enemy *en );
-// void DoEnemyWait( enemy *en, unsigned char nxt );
-// void DoAracPatternMovement( enemy *en, const unsigned char *mx, const unsigned char *my, const unsigned int *mt );
+	if( en->enemyframe >= mt[ en->enemyparamb ] )
+	{
+		en->enemyparama++;
+		en->enemyframe = 0;
+		en->enemyparamb++;
+		en->enemyparamb %= 8;
+	}
+}
 void DoStage1BossDirectionShoots( enemy *en )
 {
 	if( en->enemyframe % 96 == 48 )
 		SpreadEnemyshootDirection( en->enemyposx + 20, en->enemyposy + 24, stage2endbossshootpatternx, stage2endbossshootpatterny, 6 );
 }
+void DoSideShoot( enemy *en, unsigned char freq )
+{
+	if( en->enemyframe%freq == 0 )
+	{
+		if( en->enemyparama == 0 )
+		{
+			if( playerx < en->enemyposx )
+				InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
+		}
+		else
+		{
+			if( playerx > en->enemyposx )
+				InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
+		}
+	}
+}
+void PlaySound( char *sound, char priority )
+{
+	if( ( priority == 1 ) || ( !devkit_PSGSFXGetStatus() ) )
+	{
+		changeBank( SOUNDBANK );
+		devkit_PSGSFXPlay( sound, devkit_SFX_CHANNEL3() );
+		changeBank( FIXEDBANKSLOT );
+	}
+}
+void PlayMusic( char *music, unsigned char mbank, unsigned char looped )
+{
+	// Save banks
+	musicbank = mbank;
 
-// void DoSideShoot( enemy *en, unsigned char freq );
-// void KillEnemy( unsigned char a );
-// void PlaySound( char *sound, char priority );
-// void PlayMusic( char *music, unsigned char mbank, unsigned char looped );
+	// Init Music
+	changeBank( musicbank );
+
+	// Loop???
+	if( looped == 1 )
+		devkit_PSGPlay( music );
+	else
+		devkit_PSGPlayNoRepeat( music );
+
+	if( ( music != pause_psg ) && ( mbank != pause_psg_bank ) )
+	{
+		lastplayedmusic = music;
+		lastplayedmusicbank = mbank;
+		lastplayedmusiclooped = looped;
+	}
+
+	// Back to routine
+	changeBank( FIXEDBANKSLOT );
+}
 // void TestEnemyShoot( enemy *en, unsigned char freq );
 // void TestEnemyShootOne( enemy *en, unsigned char freq );
 // void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy );
-// void InitPowerup( enemy *en );
 // void InitPlayerConstants();
 void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count )
 {
@@ -701,41 +762,7 @@ void UpdateStage()
 	keystatus = devkit_SMS_getKeysStatus();
 }
 
-void PlaySound(char *sound, char priority)
-{
-	if ((priority == 1) || (!devkit_PSGSFXGetStatus()))
-	{
-		changeBank(SOUNDBANK);
-		devkit_PSGSFXPlay(sound, devkit_SFX_CHANNEL3());
-		changeBank(FIXEDBANKSLOT);
-	}
-}
 
-// Prepare stage for music!!!
-void PlayMusic(char *music, unsigned char mbank, unsigned char looped)
-{
-	// Save banks
-	musicbank = mbank;
-
-	// Init Music
-	changeBank(musicbank);
-
-	// Loop???
-	if (looped == 1)
-		devkit_PSGPlay(music);
-	else
-		devkit_PSGPlayNoRepeat(music);
-
-	if ((music != pause_psg) && (mbank != pause_psg_bank))
-	{
-		lastplayedmusic = music;
-		lastplayedmusicbank = mbank;
-		lastplayedmusiclooped = looped;
-	}
-
-	// Back to routine
-	changeBank(FIXEDBANKSLOT);
-}
 
 // Update sound
 void UpdatePSG()
