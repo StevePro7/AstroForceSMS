@@ -458,10 +458,29 @@ void PlayMusic( char *music, unsigned char mbank, unsigned char looped )
 	// Back to routine
 	changeBank( FIXEDBANKSLOT );
 }
-// void TestEnemyShoot( enemy *en, unsigned char freq );
-// void TestEnemyShootOne( enemy *en, unsigned char freq );
-// void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy );
-// void InitPlayerConstants();
+void TestEnemyShoot( enemy *en, unsigned char freq )
+{
+	if( en->enemyframe%freq == 2 )
+		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
+}
+void TestEnemyShootOne( enemy *en, unsigned char freq )
+{
+	if( en->enemyframe == freq )
+		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
+}
+void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy )
+{
+	if( en->enemyframe%freq == 2 )
+		InitEnemyshoot( en->enemyposx + dx, en->enemyposy + dy, 1 );
+}
+void InitPlayerConstants()
+{
+	playerspeed = DEFAULTPLAYERSPEED;
+	playershootlevel = 0;
+	playershootmax = MAXPLAYERSHOOTS - 1;
+	playercounter = 0;
+	playershootcounter = 0;
+}
 void SpreadEnemyshootDirection( unsigned char x, unsigned char y, const signed char *vx, const signed char *vy, unsigned char count )
 {
 	unsigned char a;

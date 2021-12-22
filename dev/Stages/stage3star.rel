@@ -42,7 +42,7 @@ S A$stage3star$142 Def0055
 S A$stage3star$133 Def0049
 S A$stage3star$124 Def003A
 S A$stage3star$106 Def0034
-S C$stage3star.c$10$1$82 Def002F
+S C$stage3star.c$20$1$90 Def0073
 S A$stage3star$242 Def00AE
 S A$stage3star$233 Def009D
 S A$stage3star$224 Def0091
@@ -51,7 +51,6 @@ S A$stage3star$152 Def005D
 S A$stage3star$134 Def004B
 S A$stage3star$125 Def003E
 S A$stage3star$107 Def0035
-S C$stage3star.c$11$1$82 Def0037
 S _UpdateStage5Cloud Def008D
 S A$stage3star$234 Def009E
 S A$stage3star$225 Def0092
@@ -67,8 +66,6 @@ S A$stage3star$190 Def0079
 S A$stage3star$163 Def006D
 S A$stage3star$154 Def0061
 S A$stage3star$136 Def004F
-S C$stage3star.c$20$1$84 Def0073
-S C$stage3star.c$13$1$82 Def0038
 S A$stage3star$236 Def00A2
 S A$stage3star$227 Def0094
 S A$stage3star$191 Def007A
@@ -76,6 +73,8 @@ S A$stage3star$164 Def006F
 S A$stage3star$155 Def0063
 S A$stage3star$146 Def0058
 S A$stage3star$137 Def0050
+S C$stage3star.c$22$1$92 Def0073
+S C$stage3star.c$15$1$90 Def0040
 S A$stage3star$237 Def00A3
 S A$stage3star$228 Def0095
 S A$stage3star$192 Def007B
@@ -83,6 +82,8 @@ S A$stage3star$156 Def0064
 S A$stage3star$147 Def005A
 S A$stage3star$138 Def0051
 S A$stage3star$129 Def0040
+S C$stage3star.c$30$1$94 Def00AF
+S C$stage3star.c$16$1$90 Def0058
 S A$stage3star$247 Def00AF
 S A$stage3star$238 Def00A6
 S A$stage3star$229 Def0096
@@ -91,32 +92,31 @@ S A$stage3star$184 Def0073
 S A$stage3star$166 Def0070
 S A$stage3star$157 Def0065
 S A$stage3star$139 Def0052
+S C$stage3star.c$24$1$92 Def008C
+S C$stage3star.c$17$1$90 Def005C
+S C$stage3star.c$10$1$88 Def002F
 S _UpdateStarMovement Def0038
 S A$stage3star$239 Def00A9
 S A$stage3star$194 Def007D
 S A$stage3star$185 Def0074
 S A$stage3star$158 Def0066
-S C$stage3star.c$22$1$86 Def0073
-S C$stage3star.c$15$1$84 Def0040
+S C$stage3star.c$18$1$90 Def0072
+S C$stage3star.c$11$1$88 Def0037
 S G$InitStage3Star$0$0 Def0000
 S A$stage3star$195 Def007E
 S A$stage3star$186 Def0075
 S A$stage3star$159 Def0067
-S C$stage3star.c$30$1$88 Def00AF
-S C$stage3star.c$16$1$84 Def0058
+S C$stage3star.c$26$1$92 Def008D
 S A$stage3star$196 Def0081
 S A$stage3star$187 Def0076
-S C$stage3star.c$24$1$86 Def008C
-S C$stage3star.c$17$1$84 Def005C
+S C$stage3star.c$13$1$88 Def0038
 S A$stage3star$197 Def0082
 S A$stage3star$188 Def0077
-S C$stage3star.c$18$1$84 Def0072
 S A$stage3star$198 Def0083
 S A$stage3star$189 Def0078
-S C$stage3star.c$26$1$86 Def008D
 S A$stage3star$199 Def0086
+S C$stage3star.c$28$1$94 Def008D
 S XG$UpdateStage5Cloud$0$0 Def00AF
-S C$stage3star.c$28$1$88 Def008D
 S A$stage3star$70 Def000C
 S A$stage3star$61 Def0000
 S A$stage3star$71 Def000D
@@ -147,18 +147,18 @@ S A$stage3star$95 Def002A
 S A$stage3star$86 Def001C
 S A$stage3star$77 Def0015
 S A$stage3star$68 Def0009
-S C$stage3star.c$8$1$82 Def0000
 S A$stage3star$96 Def002B
 S A$stage3star$87 Def001D
 S A$stage3star$78 Def0017
 S A$stage3star$69 Def000B
-S C$stage3star.c$9$1$82 Def0018
 S A$stage3star$97 Def002C
 S A$stage3star$88 Def0020
 S A$stage3star$98 Def002D
 S A$stage3star$89 Def0021
 S C$stage3star.c$6$0$0 Def0000
 S A$stage3star$99 Def002E
+S C$stage3star.c$8$1$88 Def0000
+S C$stage3star.c$9$1$88 Def0018
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

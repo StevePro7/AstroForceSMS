@@ -1,6 +1,6 @@
 M:introovni
 F:G$UpdateIntroOvni$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lintroovni.UpdateIntroOvni$en$1$52({2}DG,STenemy:S),B,1,4
+S:Lintroovni.UpdateIntroOvni$en$1$58({2}DG,STenemy:S),B,1,4
 T:Fintroovni$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 S:G$selectornamestage$0$0({0}DA0d,DG,SC:U),E,0,0
 S:G$jukebox_songs$0$0({0}DA0d,DG,SC:U),E,0,0
@@ -38,7 +38,16 @@ S:G$RemoveEnemy$0$0({2}DF,SV:S),C,0,0
 S:G$KillEnemy$0$0({2}DF,SV:S),C,0,0
 S:G$KillEnemies$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
+S:G$DoEnemyWait$0$0({2}DF,SV:S),C,0,0
+S:G$DoAracPatternMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoStage1BossDirectionShoots$0$0({2}DF,SV:S),C,0,0
+S:G$DoSideShoot$0$0({2}DF,SV:S),C,0,0
+S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
+S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
+S:G$TestEnemyShoot$0$0({2}DF,SV:S),C,0,0
+S:G$TestEnemyShootOne$0$0({2}DF,SV:S),C,0,0
+S:G$TestEnemyShootComplex$0$0({2}DF,SV:S),C,0,0
+S:G$InitPlayerConstants$0$0({2}DF,SV:S),C,0,0
 S:G$SpreadEnemyshootDirection$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0
@@ -61,8 +70,6 @@ S:G$LoadFont$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
-S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
-S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0

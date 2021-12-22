@@ -40,7 +40,6 @@ S:G$UpdatePlayerState3$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayerState2$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayerState1$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayer$0$0({2}DF,SV:S),C,0,0
-S:G$InitPlayerConstants$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage5$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage5$0$0({2}DF,SV:S),C,0,0
 S:G$stage8bossb_foo$0$0({2}DF,SV:S),C,0,0
@@ -71,7 +70,16 @@ S:G$RemoveEnemy$0$0({2}DF,SV:S),C,0,0
 S:G$KillEnemy$0$0({2}DF,SV:S),C,0,0
 S:G$KillEnemies$0$0({2}DF,SV:S),C,0,0
 S:G$DoCommonBossAppearingFunction$0$0({2}DF,SV:S),C,0,0
+S:G$DoEnemyWait$0$0({2}DF,SV:S),C,0,0
+S:G$DoAracPatternMovement$0$0({2}DF,SV:S),C,0,0
 S:G$DoStage1BossDirectionShoots$0$0({2}DF,SV:S),C,0,0
+S:G$DoSideShoot$0$0({2}DF,SV:S),C,0,0
+S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
+S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
+S:G$TestEnemyShoot$0$0({2}DF,SV:S),C,0,0
+S:G$TestEnemyShootOne$0$0({2}DF,SV:S),C,0,0
+S:G$TestEnemyShootComplex$0$0({2}DF,SV:S),C,0,0
+S:G$InitPlayerConstants$0$0({2}DF,SV:S),C,0,0
 S:G$SpreadEnemyshootDirection$0$0({2}DF,SV:S),C,0,0
 S:G$myRand$0$0({2}DF,SC:U),C,0,0
 S:G$changeBank$0$0({2}DF,SV:S),C,0,0
@@ -94,8 +102,6 @@ S:G$LoadFont$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
-S:G$PlaySound$0$0({2}DF,SV:S),C,0,0
-S:G$PlayMusic$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0

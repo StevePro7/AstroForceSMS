@@ -101,20 +101,4 @@ void KillEnemyshoots()
 	numenemyshoots = 0;
 }
 
-void TestEnemyShoot( enemy *en, unsigned char freq )
-{
-	if( en->enemyframe%freq == 2 )
-		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
-}
 
-void TestEnemyShootOne( enemy *en, unsigned char freq )
-{
-	if( en->enemyframe == freq )
-		InitEnemyshoot( en->enemyposx + 4, en->enemyposy + 4, 0 );
-}
-
-void TestEnemyShootComplex( enemy *en, unsigned char freq, unsigned char dx, unsigned char dy )
-{
-	if( en->enemyframe%freq == 2 )
-		InitEnemyshoot( en->enemyposx + dx, en->enemyposy + dy, 1 );
-}
