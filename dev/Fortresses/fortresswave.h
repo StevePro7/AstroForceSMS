@@ -1,8 +1,9 @@
 #ifndef _FORTRESSWAVE_H_
 #define _FORTRESSWAVE_H_
 
-void fortresswave_foo();
+#include "../defines.h"
 
-//unsigned char UpdateFortressWave( enemy *en );
+// ADRIANA
+unsigned char UpdateFortressWave( enemy *en );
 
 #endif//_FORTRESSWAVE_H_

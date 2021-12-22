@@ -1,8 +1,9 @@
 #ifndef _FORTRESSSEARCHER_H_
 #define _FORTRESSSEARCHER_H_
 
-void fortresssearcher_foo();
+#include "../defines.h"
 
-//unsigned char UpdateFortressSearcher( enemy *en );
+// ADRIANA
+unsigned char UpdateFortressSearcher( enemy *en );
 
 #endif//_FORTRESSSEARCHER_H_

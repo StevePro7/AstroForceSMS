@@ -216,15 +216,15 @@ extern unsigned char *difficultlabels[];
 extern const MyKillEnemyFunction initstagefunctions[];
 extern const MyKillEnemyFunction updatestagefunctions[];
 
-//// Bosses
-//extern const MyInitEnemyFunction updatestage6endbossfunctions[];
-//extern const MyInitEnemyFunction updatestage5endbossfunctions[];
-//extern const MyInitEnemyFunction updatestage3endbossfunctions[];
-//extern const MyInitEnemyFunction updatestage4middlebossfunctions[];
-//extern const MyInitEnemyFunction updatestage4endbossfunctions[];
-//extern const MyInitEnemyFunction updatestage7middlebossfunctions[];
+// Bosses
+extern const MyInitEnemyFunction updatestage6endbossfunctions[];
+extern const MyInitEnemyFunction updatestage5endbossfunctions[];
+extern const MyInitEnemyFunction updatestage3endbossfunctions[];
+extern const MyInitEnemyFunction updatestage4middlebossfunctions[];
+extern const MyInitEnemyFunction updatestage4endbossfunctions[];
+extern const MyInitEnemyFunction updatestage7middlebossfunctions[];
 extern const MyInitEnemyFunction updatespacestationfunctions[];
-//extern const MyInitEnemyFunction updatestage2endbossfunctions[];
+extern const MyInitEnemyFunction updatestage2endbossfunctions[];
 
 extern const signed char vulcantankshootspeedx[];
 extern const signed char vulcantankshootspeedy[];

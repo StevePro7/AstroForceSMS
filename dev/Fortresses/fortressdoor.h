@@ -1,8 +1,9 @@
 #ifndef _FORTRESSDOOR_H_
 #define _FORTRESSDOOR_H_
 
-void fortressdoor_foo();
+#include "../defines.h"
 
-//unsigned char UpdateFortressDoor( enemy *en );
+// ADRIANA
+unsigned char UpdateFortressDoor( enemy *en );
 
 #endif//_FORTRESSDOOR_H_
