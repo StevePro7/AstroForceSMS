@@ -223,7 +223,7 @@ extern const MyKillEnemyFunction updatestagefunctions[];
 //extern const MyInitEnemyFunction updatestage4middlebossfunctions[];
 //extern const MyInitEnemyFunction updatestage4endbossfunctions[];
 //extern const MyInitEnemyFunction updatestage7middlebossfunctions[];
-//extern const MyInitEnemyFunction updatespacestationfunctions[];
+extern const MyInitEnemyFunction updatespacestationfunctions[];
 //extern const MyInitEnemyFunction updatestage2endbossfunctions[];
 
 extern const signed char vulcantankshootspeedx[];

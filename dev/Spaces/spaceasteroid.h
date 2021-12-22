@@ -1,9 +1,10 @@
 #ifndef _SPACEASTEROID_H_
 #define _SPACEASTEROID_H_
 
-void spaceasteroid_foo();
+#include "../defines.h"
 
-//void InitSpaceAsteroid( enemy *en );
-//unsigned char UpdateSpaceAsteroid( enemy *en );
+// ADRIANA
+void InitSpaceAsteroid( enemy *en );
+unsigned char UpdateSpaceAsteroid( enemy *en );
 
 #endif//_SPACEASTEROID_H_

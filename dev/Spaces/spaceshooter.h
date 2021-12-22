@@ -1,8 +1,9 @@
 #ifndef _SPACESHOOTER_H_
 #define _SPACESHOOTER_H_
 
-void spaceshooter_foo();
+#include "../defines.h"
 
-//unsigned char UpdateSpaceShooter( enemy *en );
+// ADRIANA
+unsigned char UpdateSpaceShooter( enemy *en );
 
 #endif//_SPACESHOOTER_H_
