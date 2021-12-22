@@ -1,8 +1,9 @@
 #ifndef _VULCANVULCAN_H_
 #define _VULCANVULCAN_H_
 
-void vulcanvulcan_foo();
+#include "../defines.h"
 
-//unsigned char UpdateVulcanVulcan( enemy *en );
+// ADRIANA
+unsigned char UpdateVulcanVulcan( enemy *en );
 
 #endif//_VULCANVULCAN_H_
