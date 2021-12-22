@@ -2,15 +2,10 @@
 #include "stage1endboss.h"
 #include "stage6endboss.h"
 #include "../Enemies/enemy.h"
-#include "../Enemies/enemyshoot.h"
 #include "../banks/fixedbank.h"
 #include "../defines.h"
 #include "../funcs.h"
 #include "../vars.h"
-
-void stage8bossb_foo()
-{
-}
 
 void UpdateStage8BossB1( enemy *en )
 {

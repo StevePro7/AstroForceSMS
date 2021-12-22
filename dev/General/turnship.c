@@ -1,5 +1,4 @@
 #include "turnship.h"
-#include "../Enemies/enemyshoot.h"
 #include "../funcs.h"
 #include "../vars.h"
 

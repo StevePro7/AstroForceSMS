@@ -1,6 +1,5 @@
 #include "player.h"
 #include "playershoot.h"
-#include "../Enemies/enemy.h"
 #include "../Enemies/enemyshoot.h"
 #include "../General/barrom.h"
 #include "../General/explosion.h"

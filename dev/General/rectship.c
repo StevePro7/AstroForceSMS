@@ -1,5 +1,4 @@
 #include "rectship.h"
-#include "../Enemies/enemyshoot.h"
 #include "../devkit/_sms_manager.h"
 #include "../funcs.h"
 #include "../vars.h"

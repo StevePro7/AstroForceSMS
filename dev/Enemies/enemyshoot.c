@@ -100,5 +100,3 @@ void KillEnemyshoots()
 {
 	numenemyshoots = 0;
 }
-
-

@@ -1,11 +1,6 @@
 #include "waveship.h"
-#include "../Enemies/enemyshoot.h"
 #include "../funcs.h"
 #include "../vars.h"
-
-void waveship_foo()
-{
-}
 
 void InitWaveShip( enemy *en )
 {

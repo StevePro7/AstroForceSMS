@@ -3,8 +3,6 @@
 
 #include "../defines.h"
 
-void stage8bossb_foo();
-
 void UpdateStage8BossB1( enemy *en );
 void UpdateStage8BossB2( enemy *en );
 void UpdateStage8BossB3( enemy *en );

@@ -1,7 +1,6 @@
 #include "stage1endboss.h"
 #include "stage1endboss.h"
 #include "../Enemies/enemy.h"
-#include "../Enemies/enemyshoot.h"
 #include "../banks/fixedbank.h"
 #include "../funcs.h"
 

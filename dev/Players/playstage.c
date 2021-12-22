@@ -15,8 +15,6 @@
 #include "../funcs.h"
 #include "../vars.h"
 
-
-
 void InitAfterBossStage()
 {
 	// Destroy all enemies

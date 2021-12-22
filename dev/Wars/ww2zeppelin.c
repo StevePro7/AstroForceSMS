@@ -1,5 +1,4 @@
 #include "ww2zeppelin.h"
-#include "../Enemies/enemyshoot.h"
 #include "../devkit/_sms_manager.h"
 #include "../defines.h"
 #include "../funcs.h"
