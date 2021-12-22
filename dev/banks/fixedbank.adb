@@ -42,7 +42,6 @@ S:G$UpdatePlayerState1$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayer$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage5$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage5$0$0({2}DF,SV:S),C,0,0
-S:G$stage8bossb_foo$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage8BossB1$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage8BossB2$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage8BossB3$0$0({2}DF,SV:S),C,0,0
