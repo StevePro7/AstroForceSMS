@@ -1,9 +1,10 @@
 #ifndef _MONSTERMISSIL_H_
 #define _MONSTERMISSIL_H_
 
-void monstermissil_foo();
+#include "../defines.h"
 
-//void InitMonsterMissilLeft( enemy *en );
-//unsigned char UpdateMonsterMissil( enemy *en );
+// ADRIANA
+void InitMonsterMissilLeft( enemy *en );
+unsigned char UpdateMonsterMissil( enemy *en );
 
 #endif//_MONSTERMISSIL_H_
