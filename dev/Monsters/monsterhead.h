@@ -1,8 +1,9 @@
 #ifndef _MONSTERHEAD_H_
 #define _MONSTERHEAD_H_
 
-void monsterhead_foo();
+#include "../defines.h"
 
-//unsigned char UpdateMonsterHead( enemy *en );
+// ADRIANA
+unsigned char UpdateMonsterHead( enemy *en );
 
 #endif//_MONSTERHEAD_H_
