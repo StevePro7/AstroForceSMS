@@ -1,15 +1,13 @@
 #ifndef _STAGE6ENDBOSS_H_
 #define _STAGE6ENDBOSS_H_
 
-void stage6endboss_foo();
-
-//#include "../defines.h"
+#include "../defines.h"
 
 // ADRIANA
 //void FinishStage6EndBoss();
 //void ResetSkullState( enemy *en, unsigned int st, unsigned char rec );
-//void CreateCustomBoneC( unsigned char x, unsigned char y, unsigned char vx, unsigned char vy );
-//void LaunchSkullBoneC( enemy *en, unsigned char vy );
+void CreateCustomBoneC( unsigned char x, unsigned char y, unsigned char vx, unsigned char vy );
+void LaunchSkullBoneC( enemy *en, unsigned char vy );
 //void DoSkullShootDirection( enemy *en );
 //void DoSkullShootDirectionB( enemy *en );
 //void UpdateStage6EndBoss0( enemy *en );

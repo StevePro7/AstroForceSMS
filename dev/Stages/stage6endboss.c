@@ -1,7 +1,7 @@
 #include "stage6endboss.h"
 //#include "../devkit/_snd_manager.h"
-//#include "../funcs.h"
-//#include "../vars.h"
+#include "../funcs.h"
+#include "../vars.h"
 //
 void stage6endboss_foo()
 {
@@ -26,26 +26,26 @@ void stage6endboss_foo()
 //	en->enemyparamb = st;
 //	en->enemyframe = 0;
 //}
-//
-//void CreateCustomBoneC( unsigned char x, unsigned char y, unsigned char vx, unsigned char vy )
-//{
-//	enemy *enm;
-//	InitEnemy( x, y, SKULLBONEC );
-//	enm = &enemies[ numenemies - 1 ];
-//	enm->enemyparama = vx;
-//	enm->enemyparamb = vy;
-//}
-//
-//void LaunchSkullBoneC( enemy *en, unsigned char vy )
-//{
-//	if( numenemies < 4 )
-//		if( en->enemyframe % 80 == 0 )
-//		{
-//			CreateCustomBoneC( en->enemyposx - 16, en->enemyposy + 20, 0, vy );
-//			CreateCustomBoneC( en->enemyposx + 40, en->enemyposy + 20, 16, vy );
-//		}
-//}
-//
+
+void CreateCustomBoneC( unsigned char x, unsigned char y, unsigned char vx, unsigned char vy )
+{
+	enemy *enm;
+	InitEnemy( x, y, SKULLBONEC );
+	enm = &enemies[ numenemies - 1 ];
+	enm->enemyparama = vx;
+	enm->enemyparamb = vy;
+}
+
+void LaunchSkullBoneC( enemy *en, unsigned char vy )
+{
+	if( numenemies < 4 )
+		if( en->enemyframe % 80 == 0 )
+		{
+			CreateCustomBoneC( en->enemyposx - 16, en->enemyposy + 20, 0, vy );
+			CreateCustomBoneC( en->enemyposx + 40, en->enemyposy + 20, 16, vy );
+		}
+}
+
 //void DoSkullShootDirection( enemy *en )
 //{
 //	if( en->enemyframe % 64 == 32 )

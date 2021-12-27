@@ -242,8 +242,12 @@ S:G$UpdateStage5EndBoss$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateStage5Missile$0$0({2}DF,SC:U),C,0,0
 S:G$InitStage6$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage6$0$0({2}DF,SV:S),C,0,0
-S:G$stage6endboss_foo$0$0({2}DF,SV:S),C,0,0
-S:G$stage6endbossb_foo$0$0({2}DF,SV:S),C,0,0
+S:G$CreateCustomBoneC$0$0({2}DF,SV:S),C,0,0
+S:G$LaunchSkullBoneC$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStage6EndBossB0$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStage6EndBossB1$0$0({2}DF,SV:S),C,0,0
+S:G$InitStage6EndBossB$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStage6EndBossB$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateStage6Object$0$0({2}DF,SC:U),C,0,0
 S:G$CheckStage7PlayerMovement$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage7$0$0({2}DF,SV:S),C,0,0
