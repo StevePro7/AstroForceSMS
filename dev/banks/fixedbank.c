@@ -2354,7 +2354,7 @@ const MyKillEnemyFunction updatestagefunctions[] =
 const MyKillEnemyFunction initstagefunctions[] =
 {
 	0,
-	0,//	InitStage7,
+	InitStage7,
 	InitStage5,
 	InitStage4,
 	InitStage2,
@@ -2981,13 +2981,13 @@ const MyInitEnemyFunction updatestage4middlebossfunctions[] =
 const MyInitEnemyFunction updatestage4endbossfunctions[] =
 {
 	DoCommonBossAppearingFunction,
-	updatestage4endbossAssert,//UpdateStage4EndBoss1,
-	updatestage4endbossAssert,//UpdateStage4EndBoss2,
-	updatestage4endbossAssert,//UpdateStage4EndBoss3,
-	updatestage4endbossAssert,//UpdateStage4EndBoss4,
-	updatestage4endbossAssert,//UpdateStage4EndBoss5,
-	updatestage4endbossAssert,//UpdateStage4EndBoss6,
-	updatestage4endbossAssert,//UpdateStage4EndBoss7
+	UpdateStage4EndBoss1,
+	UpdateStage4EndBoss2,
+	UpdateStage4EndBoss3,
+	UpdateStage4EndBoss4,
+	UpdateStage4EndBoss5,
+	UpdateStage4EndBoss6,
+	UpdateStage4EndBoss7
 };
 
 const signed char vulcantankshootspeedx[] = { -DEFAULTENEMYSHOOTSPEED + 2,0,DEFAULTENEMYSHOOTSPEED - 2 };
@@ -3063,14 +3063,14 @@ const MyInitEnemyFunction updatestage2endbossfunctions[] =
 const MyCheckCollisionFunction checkcollisionfunctions[] =
 {
 	0,
-	checkcollisionAssert,//	CheckCollisionStage7,
-0,
-0,
-	checkcollisionAssert,//	CheckCollisionStage2,
-0,
-0,
-	checkcollisionAssert,//	CheckCollisionStage1,
-//	0
+	CheckCollisionStage7,
+	0,
+	0,
+	CheckCollisionStage2,
+	0,
+	0,
+	CheckCollisionStage1,
+	0
 };
 
 //void UpdateIntro3Object1( enemy *en );

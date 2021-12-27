@@ -851,30 +851,30 @@ void updatestage6endbossAssert( enemy *en )
 	en->enemyenergy = 0;
 	return;
 }
-void updatestage5endbossAssert( enemy *en )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	en->enemyenergy = 0;
-	return;
-}
-void updatestage3endbossAssert( enemy *en )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	en->enemyenergy = 0;
-	return;
-}
-void updatestage4middlebossAssert( enemy *en )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	en->enemyenergy = 0;
-	return;
-}
+//void updatestage5endbossAssert( enemy *en )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	en->enemyenergy = 0;
+//	return;
+//}
+//void updatestage3endbossAssert( enemy *en )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	en->enemyenergy = 0;
+//	return;
+//}
+//void updatestage4middlebossAssert( enemy *en )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	en->enemyenergy = 0;
+//	return;
+//}
 void updatestage4endbossAssert( enemy *en )
 {
 #ifdef _CONSOLE
