@@ -17,6 +17,7 @@ S _finishscript Ref0000
 S _PlayMusic Ref0000
 S _ending_psg Ref0000
 A _CODE size 5A flags 0 addr 0
+S C$finishstage.c$29$1$49 Def0054
 S A$finishstage$60 Def0002
 S A$finishstage$70 Def0016
 S A$finishstage$61 Def0003
@@ -58,26 +59,25 @@ S A$finishstage$102 Def003B
 S A$finishstage$121 Def0054
 S A$finishstage$112 Def004A
 S A$finishstage$103 Def003E
-S C$finishstage.c$20$1$51 Def002A
 S A$finishstage$122 Def0057
 S A$finishstage$113 Def004B
 S A$finishstage$104 Def003F
-S C$finishstage.c$30$1$51 Def0059
 S A$finishstage$114 Def004E
 S A$finishstage$105 Def0042
 S A$finishstage$115 Def004F
 S A$finishstage$106 Def0043
-S C$finishstage.c$23$1$51 Def003A
-S C$finishstage.c$14$1$51 Def0000
 S A$finishstage$116 Def0052
 S A$finishstage$107 Def0046
 S A$finishstage$117 Def0053
 S A$finishstage$127 Def0059
-S C$finishstage.c$26$1$51 Def0047
-S C$finishstage.c$17$1$51 Def0018
-S C$finishstage.c$29$1$51 Def0054
+S C$finishstage.c$20$1$49 Def002A
+S C$finishstage.c$30$1$49 Def0059
 S C$finishstage.c$11$0$0 Def0000
+S C$finishstage.c$23$1$49 Def003A
+S C$finishstage.c$14$1$49 Def0000
 S G$InitFinishStage$0$0 Def0000
+S C$finishstage.c$26$1$49 Def0047
+S C$finishstage.c$17$1$49 Def0018
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

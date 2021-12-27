@@ -11,25 +11,23 @@ S _PlaySound Ref0000
 A _CODE size 4F flags 0 addr 0
 S A$vulcanlaser$124 Def0045
 S A$vulcanlaser$115 Def0036
+S C$vulcanlaser.c$31$1$52 Def004E
+S C$vulcanlaser.c$15$1$50 Def0000
 S A$vulcanlaser$125 Def0048
 S A$vulcanlaser$116 Def0037
-S C$vulcanlaser.c$30$1$54 Def004A
-S C$vulcanlaser.c$21$1$54 Def0016
+S C$vulcanlaser.c$16$1$50 Def000D
 S A$vulcanlaser$126 Def0049
 S A$vulcanlaser$117 Def0038
-S C$vulcanlaser.c$31$1$54 Def004E
-S C$vulcanlaser.c$15$1$52 Def0000
+S C$vulcanlaser.c$24$1$52 Def0029
 S A$vulcanlaser$118 Def003B
 S A$vulcanlaser$109 Def0032
-S C$vulcanlaser.c$16$1$52 Def000D
+S C$vulcanlaser.c$25$1$52 Def0032
+S C$vulcanlaser.c$18$1$50 Def000E
 S A$vulcanlaser$137 Def004E
 S A$vulcanlaser$119 Def003C
-S C$vulcanlaser.c$24$1$54 Def0029
-S C$vulcanlaser.c$25$1$54 Def0032
-S C$vulcanlaser.c$18$1$52 Def000E
+S C$vulcanlaser.c$28$1$52 Def0036
 S C$vulcanlaser.c$12$0$0 Def0000
 S G$InitVulcanLaser$0$0 Def0000
-S C$vulcanlaser.c$28$1$54 Def0036
 S A$vulcanlaser$60 Def0003
 S A$vulcanlaser$70 Def000D
 S A$vulcanlaser$61 Def0004
@@ -71,6 +69,8 @@ S A$vulcanlaser$104 Def002E
 S A$vulcanlaser$132 Def004C
 S A$vulcanlaser$123 Def0042
 S A$vulcanlaser$105 Def0030
+S C$vulcanlaser.c$30$1$52 Def004A
+S C$vulcanlaser.c$21$1$52 Def0016
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

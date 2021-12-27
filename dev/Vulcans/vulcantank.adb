@@ -1,13 +1,13 @@
 M:vulcantank
 F:G$UpdateVulcanTankCommon$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lvulcantank.UpdateVulcanTankCommon$en$1$53({2}DG,STenemy:S),B,1,4
+S:Lvulcantank.UpdateVulcanTankCommon$en$1$51({2}DG,STenemy:S),B,1,4
 F:G$UpdateVulcanTankLeft$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lvulcantank.UpdateVulcanTankLeft$en$1$56({2}DG,STenemy:S),B,1,4
+S:Lvulcantank.UpdateVulcanTankLeft$en$1$54({2}DG,STenemy:S),B,1,4
 F:G$UpdateVulcanTankRight$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lvulcantank.UpdateVulcanTankRight$en$1$58({2}DG,STenemy:S),B,1,4
+S:Lvulcantank.UpdateVulcanTankRight$en$1$56({2}DG,STenemy:S),B,1,4
 F:G$UpdateVulcanTankStop$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lvulcantank.UpdateVulcanTankStop$en$1$60({2}DG,STenemy:S),B,1,4
-S:Lvulcantank.UpdateVulcanTankStop$a$1$61({1}SC:U),R,0,0,[h]
+S:Lvulcantank.UpdateVulcanTankStop$en$1$58({2}DG,STenemy:S),B,1,4
+S:Lvulcantank.UpdateVulcanTankStop$a$1$59({1}SC:U),R,0,0,[h]
 S:Lvulcantank.UpdateVulcanTankStop$sloc0$1$0({1}SC:U),B,1,-1
 S:Lvulcantank.UpdateVulcanTankStop$sloc1$1$0({1}SC:U),B,1,-2
 T:Fvulcantank$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
@@ -166,8 +166,4 @@ S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
-S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0

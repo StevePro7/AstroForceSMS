@@ -12,11 +12,11 @@ S _silence_psg Ref0000
 S _PlayMusic Ref0000
 S _introstage3tiles_psgcompr Ref0000
 A _CODE size 32 flags 0 addr 0
-S C$intro4stage.c$11$1$51 Def0000
-S C$intro4stage.c$14$1$51 Def0018
-S C$intro4stage.c$17$1$51 Def0024
-S C$intro4stage.c$18$1$51 Def0031
+S C$intro4stage.c$11$1$49 Def0000
+S C$intro4stage.c$14$1$49 Def0018
 S G$InitIntro4Stage$0$0 Def0000
+S C$intro4stage.c$17$1$49 Def0024
+S C$intro4stage.c$18$1$49 Def0031
 S A$intro4stage$60 Def0003
 S A$intro4stage$70 Def0017
 S A$intro4stage$61 Def0004

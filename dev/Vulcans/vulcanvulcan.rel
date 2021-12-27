@@ -40,10 +40,10 @@ S A$vulcanvulcan$78 Def001D
 S A$vulcanvulcan$69 Def0017
 S A$vulcanvulcan$97 Def0034
 S A$vulcanvulcan$79 Def001E
+S C$vulcanvulcan.c$8$1$75 Def0009
 S A$vulcanvulcan$98 Def0036
 S C$vulcanvulcan.c$6$0$0 Def0000
 S A$vulcanvulcan$99 Def0037
-S C$vulcanvulcan.c$8$1$77 Def0009
 S _UpdateVulcanVulcan Def0000
 S XG$UpdateVulcanVulcan$0$0 Def0078
 S A$vulcanvulcan$100 Def0039
@@ -80,26 +80,26 @@ S A$vulcanvulcan$135 Def0060
 S A$vulcanvulcan$126 Def0059
 S A$vulcanvulcan$117 Def0052
 S A$vulcanvulcan$108 Def0046
+S C$vulcanvulcan.c$10$1$75 Def001B
 S A$vulcanvulcan$163 Def0078
 S A$vulcanvulcan$145 Def006A
 S A$vulcanvulcan$136 Def0061
 S A$vulcanvulcan$109 Def0048
+S C$vulcanvulcan.c$20$1$75 Def0078
+S C$vulcanvulcan.c$11$1$75 Def0023
 S A$vulcanvulcan$155 Def0072
 S A$vulcanvulcan$146 Def006B
 S A$vulcanvulcan$137 Def0063
-S C$vulcanvulcan.c$10$1$77 Def001B
 S A$vulcanvulcan$147 Def006C
-S C$vulcanvulcan.c$20$1$77 Def0078
-S C$vulcanvulcan.c$11$1$77 Def0023
+S C$vulcanvulcan.c$13$1$75 Def0027
 S A$vulcanvulcan$157 Def0074
 S A$vulcanvulcan$148 Def006D
 S A$vulcanvulcan$158 Def0076
 S A$vulcanvulcan$149 Def0070
-S C$vulcanvulcan.c$13$1$77 Def0027
-S C$vulcanvulcan.c$16$1$77 Def0053
-S C$vulcanvulcan.c$17$1$77 Def005B
-S C$vulcanvulcan.c$18$1$77 Def0065
-S C$vulcanvulcan.c$19$1$77 Def0072
+S C$vulcanvulcan.c$16$1$75 Def0053
+S C$vulcanvulcan.c$17$1$75 Def005B
+S C$vulcanvulcan.c$18$1$75 Def0065
+S C$vulcanvulcan.c$19$1$75 Def0072
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

@@ -1,13 +1,13 @@
 M:player
 F:G$RemovePlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$CheckPlayerEnemyCollision$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lplayer.CheckPlayerEnemyCollision$a$1$84({1}SC:U),R,0,0,[]
-S:Lplayer.CheckPlayerEnemyCollision$en$1$84({2}DG,STenemy:S),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyCollision$a$1$82({1}SC:U),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyCollision$en$1$82({2}DG,STenemy:S),R,0,0,[]
 F:G$CheckPlayerEnemyshootCollision$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lplayer.CheckPlayerEnemyshootCollision$a$1$88({1}SC:U),R,0,0,[]
-S:Lplayer.CheckPlayerEnemyshootCollision$es$1$88({2}DG,STenemyshoot:S),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyshootCollision$a$1$86({1}SC:U),R,0,0,[]
+S:Lplayer.CheckPlayerEnemyshootCollision$es$1$86({2}DG,STenemyshoot:S),R,0,0,[]
 F:G$UpdatePlayerIndicators$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lplayer.UpdatePlayerIndicators$a$1$92({1}SC:U),R,0,0,[c]
+S:Lplayer.UpdatePlayerIndicators$a$1$90({1}SC:U),R,0,0,[c]
 F:G$InitPlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitPlayerSprite$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$DrawPlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
@@ -17,7 +17,7 @@ F:G$UpdatePlayerState6$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState5$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState4$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState3$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lplayer.UpdatePlayerState3$t$1$115({1}SC:U),R,0,0,[]
+S:Lplayer.UpdatePlayerState3$t$1$113({1}SC:U),R,0,0,[]
 F:G$UpdatePlayerState2$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayerState1$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$UpdatePlayer$0$0({2}DF,SV:S),Z,0,0,0,0,0
@@ -253,8 +253,4 @@ S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
-S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0

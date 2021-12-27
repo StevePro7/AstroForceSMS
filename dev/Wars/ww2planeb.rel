@@ -21,7 +21,6 @@ S A$ww2planeb$91 Def0034
 S A$ww2planeb$73 Def0020
 S A$ww2planeb$64 Def0011
 S A$ww2planeb$55 Def0006
-S C$ww2planeb.c$8$1$51 Def0009
 S A$ww2planeb$74 Def0021
 S A$ww2planeb$65 Def0012
 S A$ww2planeb$56 Def0008
@@ -43,21 +42,22 @@ S A$ww2planeb$69 Def0018
 S A$ww2planeb$88 Def002F
 S A$ww2planeb$79 Def0028
 S A$ww2planeb$89 Def0031
+S C$ww2planeb.c$8$1$49 Def0009
 S C$ww2planeb.c$6$0$0 Def0000
 S _UpdateWW2PlaneB Def0000
 S XG$UpdateWW2PlaneB$0$0 Def0043
 S A$ww2planeb$110 Def0041
 S A$ww2planeb$101 Def003A
 S A$ww2planeb$102 Def003B
-S C$ww2planeb.c$10$1$51 Def002A
 S A$ww2planeb$103 Def003D
-S C$ww2planeb.c$20$1$51 Def003E
-S C$ww2planeb.c$11$1$51 Def0036
-S C$ww2planeb.c$21$1$51 Def0043
 S A$ww2planeb$115 Def0043
 S A$ww2planeb$107 Def003E
+S C$ww2planeb.c$15$2$50 Def003A
 S A$ww2planeb$109 Def0040
-S C$ww2planeb.c$15$2$52 Def003A
+S C$ww2planeb.c$10$1$49 Def002A
+S C$ww2planeb.c$20$1$49 Def003E
+S C$ww2planeb.c$11$1$49 Def0036
+S C$ww2planeb.c$21$1$49 Def0043
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

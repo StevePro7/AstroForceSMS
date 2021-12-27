@@ -2,8 +2,8 @@ M:stage1
 F:G$UpdateStage1$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitStage1$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$CheckCollisionStage1$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lstage1.CheckCollisionStage1$x$1$107({1}SC:U),B,1,4
-S:Lstage1.CheckCollisionStage1$y$1$107({1}SC:U),B,1,5
+S:Lstage1.CheckCollisionStage1$x$1$105({1}SC:U),B,1,4
+S:Lstage1.CheckCollisionStage1$y$1$105({1}SC:U),B,1,5
 T:Fstage1$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fstage1$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
 T:Fstage1$enemyshoot[({0}S:S$enemyshootposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyshootposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemyshootvelx$0$0({1}SC:S),Z,0,0)({3}S:S$enemyshootvely$0$0({1}SC:S),Z,0,0)({4}S:S$enemyshoottype$0$0({1}SC:U),Z,0,0)]
@@ -252,8 +252,4 @@ S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
-S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
