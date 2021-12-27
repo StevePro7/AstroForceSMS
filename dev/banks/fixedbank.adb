@@ -45,6 +45,8 @@ S:G$UpdateStage5$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage8BossB1$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage8BossB2$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage8BossB3$0$0({2}DF,SV:S),C,0,0
+S:G$InitStage8BossB$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStage8BossB$0$0({2}DF,SC:U),C,0,0
 S:G$InitWW2Zeppelin$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateWW2Zeppelin$0$0({2}DF,SC:U),C,0,0
 S:G$InitEnemyshoot$0$0({2}DF,SV:S),C,0,0

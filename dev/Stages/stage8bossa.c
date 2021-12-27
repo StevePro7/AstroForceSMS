@@ -6,6 +6,7 @@ void InitStage8BossA( enemy *en )
 {
 	// Stop scroll
 	disablescroll = 1;
+	en->enemyenergy *= 1;
 }
 
 unsigned char UpdateStage8BossA( enemy *en )

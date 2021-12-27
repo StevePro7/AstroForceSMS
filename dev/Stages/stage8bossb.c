@@ -71,6 +71,8 @@ void InitStage8BossB( enemy *en )
 
 	// Change stage 8 phase
 	stage8phase = 3;
+
+	en->enemyenergy *= 1;
 }
 
 unsigned char UpdateStage8BossB( enemy *en )
