@@ -1,9 +1,10 @@
 #ifndef _STAGE1MIDDLEBOSSB_H_
 #define _STAGE1MIDDLEBOSSB_H_
 
-void stage1middlebossb_foo();
+#include "../defines.h"
 
-//void InitStage1MiddleBossB( enemy *en );
-//unsigned char UpdateStage1MiddleBossB( enemy *en );
+// ADRIANA
+void InitStage1MiddleBossB( enemy *en );
+unsigned char UpdateStage1MiddleBossB( enemy *en );
 
 #endif//_STAGE1MIDDLEBOSSB_H_
