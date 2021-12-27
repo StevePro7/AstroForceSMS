@@ -1,7 +1,7 @@
 #ifndef _SCRIPTER_H_
 #define _SCRIPTER_H_
 
-//ADRIANA
+// ADRIANA
 void InitScripts();
 void RemoveScript( signed char a );
 void UpdateScript( unsigned char a );

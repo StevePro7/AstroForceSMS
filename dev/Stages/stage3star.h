@@ -3,6 +3,7 @@
 
 #include "../vars.h"
 
+// ADRIANA
 void InitStage3Star( stage3star *st, unsigned char speed );
 void UpdateStarMovement( stage3star *st );
 void UpdateStage3Star( stage3star *st );
