@@ -102,11 +102,15 @@ S:G$stage8phase$0$0({1}SC:U),E,0,0
 S:G$stage3stars$0$0({18}DA6d,STstage3star:S),E,0,0
 S:G$InitFortressCannonRight$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateFortressCannon$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateFortressDoor$0$0({2}DF,SC:U),C,0,0
 S:G$InitFortressPhantom$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateFortressPhantom$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateFortressSearcher$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateFortressWave$0$0({2}DF,SC:U),C,0,0
 S:G$InitBombShipLeft$0$0({2}DF,SV:S),C,0,0
 S:G$InitBombShipRight$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateBombShip$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateRectShip$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateRSGThing$0$0({2}DF,SC:U),C,0,0
 S:G$InitRSGThing$0$0({2}DF,SV:S),C,0,0
 S:G$InitSkullBoneA$0$0({2}DF,SV:S),C,0,0
@@ -142,6 +146,8 @@ S:G$setIntroStageGraphics$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroStar$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateIntroStar$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateMonsterBlob$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateMonsterHead$0$0({2}DF,SC:U),C,0,0
 S:G$InitMonsterMissilLeft$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateMonsterMissil$0$0({2}DF,SC:U),C,0,0
 S:G$RemovePlayer$0$0({2}DF,SV:S),C,0,0
@@ -162,6 +168,11 @@ S:G$UpdatePlayerState1$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayer$0$0({2}DF,SV:S),C,0,0
 S:G$InitSpaceAsteroid$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateSpaceAsteroid$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateSpaceShooter$0$0({2}DF,SC:U),C,0,0
+S:G$UpdateSpaceStation1$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateSpaceStation2$0$0({2}DF,SV:S),C,0,0
+S:G$FinishSpaceStation$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateSpaceStation$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateStage1$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage1$0$0({2}DF,SV:S),C,0,0
 S:G$CheckCollisionStage1$0$0({2}DF,SC:U),C,0,0
@@ -234,6 +245,7 @@ S:G$InitStage7$0$0({2}DF,SV:S),C,0,0
 S:G$CheckCollisionStage7$0$0({2}DF,SC:U),C,0,0
 S:G$stage7endboss_foo$0$0({2}DF,SV:S),C,0,0
 S:G$stage7middleboss_foo$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStage7Object$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateStage8$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage8$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage8BossA$0$0({2}DF,SV:S),C,0,0

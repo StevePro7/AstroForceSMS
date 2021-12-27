@@ -7,10 +7,10 @@ S:Lscripter.RemoveScript$sb$1$98({2}DG,STscript:S),R,0,0,[e,d]
 S:Lscripter.RemoveScript$sloc0$1$0({2}SI:U),B,1,-2
 F:G$UpdateScript$0$0({2}DF,SV:S),Z,0,5,0,0,0
 S:Lscripter.UpdateScript$a$1$100({1}SC:U),B,1,4
-S:Lscripter.UpdateScript$sf$1$101({1}SC:U),B,1,-9
-S:Lscripter.UpdateScript$ss$1$101({2}DG,SC:U),B,1,-12
-S:Lscripter.UpdateScript$sa$1$101({1}SC:U),B,1,-10
-S:Lscripter.UpdateScript$sb$1$101({1}SC:U),B,1,-13
+S:Lscripter.UpdateScript$sf$1$101({1}SC:U),B,1,-12
+S:Lscripter.UpdateScript$ss$1$101({2}DG,SC:U),B,1,-10
+S:Lscripter.UpdateScript$sa$1$101({1}SC:U),B,1,-13
+S:Lscripter.UpdateScript$sb$1$101({1}SC:U),B,1,-11
 S:Lscripter.UpdateScript$sc$1$101({1}SC:U),R,0,0,[e]
 S:Lscripter.UpdateScript$sp$1$101({2}SI:U),R,0,0,[]
 S:Lscripter.UpdateScript$scr$1$101({2}DG,STscript:S),R,0,0,[c,b]
