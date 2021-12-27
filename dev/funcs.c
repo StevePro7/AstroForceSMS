@@ -807,13 +807,13 @@ void UpdatePSG()
 // unsigned char lastplayedmusiclooped;
 
 // stevepro
-void initenemyAssert(enemy *en)
-{
-#ifdef _CONSOLE
-	assert(0);
-#endif
-	en->enemyenergy = 0;
-}
+//void initenemyAssert(enemy *en)
+//{
+//#ifdef _CONSOLE
+//	assert(0);
+//#endif
+//	en->enemyenergy = 0;
+//}
 unsigned char updateenemyAssert(enemy *en)
 {
 #ifdef _CONSOLE
@@ -829,13 +829,13 @@ void updatestageAssert()
 #endif
 	return;
 }
-void initstageAssert()
-{
-#ifdef _CONSOLE
-	assert(0);
-#endif
-	return;
-}
+//void initstageAssert()
+//{
+//#ifdef _CONSOLE
+//	assert(0);
+//#endif
+//	return;
+//}
 void killenemyAssert()
 {
 #ifdef _CONSOLE
@@ -875,21 +875,21 @@ void updatestage6endbossAssert( enemy *en )
 //	en->enemyenergy = 0;
 //	return;
 //}
-void updatestage4endbossAssert( enemy *en )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	en->enemyenergy = 0;
-	return;
-}
-void playerupdateAssert()
-{
-#ifdef _CONSOLE
-	assert(0);
-#endif
-	return;
-}
+//void updatestage4endbossAssert( enemy *en )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	en->enemyenergy = 0;
+//	return;
+//}
+//void playerupdateAssert()
+//{
+//#ifdef _CONSOLE
+//	assert(0);
+//#endif
+//	return;
+//}
 void updatestage7middlebossAssert( enemy *en )
 {
 #ifdef _CONSOLE
@@ -898,28 +898,28 @@ void updatestage7middlebossAssert( enemy *en )
 	en->enemyenergy = 0;
 	return;
 }
-void updatespacestationAssert( enemy *en )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	en->enemyenergy = 0;
-	return;
-}
-void updatestage2endbossAssert( enemy *en )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	en->enemyenergy = 0;
-	return;
-}
-unsigned char checkcollisionAssert( unsigned char x, unsigned char y )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	x = 1;
-	y = 1;
-	return 1;
-}
+//void updatespacestationAssert( enemy *en )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	en->enemyenergy = 0;
+//	return;
+//}
+//void updatestage2endbossAssert( enemy *en )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	en->enemyenergy = 0;
+//	return;
+//}
+//unsigned char checkcollisionAssert( unsigned char x, unsigned char y )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	x = 1;
+//	y = 1;
+//	return 1;
+//}
