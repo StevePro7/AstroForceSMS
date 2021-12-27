@@ -7,20 +7,20 @@ S .__.ABS. Def0000
 S _DrawQuadSprite Ref0000
 A _CODE size 59 flags 0 addr 0
 S A$introovni$102 Def003B
+S C$introovni.c$10$1$51 Def003D
 S A$introovni$103 Def003C
-S C$introovni.c$10$1$52 Def003D
+S C$introovni.c$20$1$51 Def0054
 S A$introovni$140 Def0058
 S A$introovni$113 Def0042
-S C$introovni.c$20$1$52 Def0054
+S C$introovni.c$21$1$51 Def0058
 S A$introovni$114 Def0043
-S C$introovni.c$21$1$52 Def0058
 S A$introovni$124 Def004C
 S A$introovni$115 Def0045
+S C$introovni.c$12$2$52 Def0042
 S A$introovni$134 Def0054
 S A$introovni$125 Def004E
 S A$introovni$116 Def0047
 S A$introovni$107 Def003D
-S C$introovni.c$12$2$53 Def0042
 S A$introovni$135 Def0056
 S A$introovni$126 Def004F
 S A$introovni$117 Def0048
@@ -31,7 +31,7 @@ S A$introovni$109 Def0040
 S A$introovni$128 Def0052
 S A$introovni$119 Def004A
 S A$introovni$129 Def0053
-S C$introovni.c$16$2$54 Def004C
+S C$introovni.c$16$2$53 Def004C
 S A$introovni$60 Def000B
 S A$introovni$70 Def0018
 S A$introovni$61 Def000E
@@ -44,11 +44,11 @@ S A$introovni$81 Def0029
 S A$introovni$72 Def001B
 S A$introovni$63 Def0010
 S A$introovni$54 Def0002
+S C$introovni.c$7$1$51 Def003B
 S A$introovni$82 Def002A
 S A$introovni$73 Def001D
 S A$introovni$64 Def0011
 S A$introovni$55 Def0006
-S C$introovni.c$7$1$52 Def003B
 S A$introovni$83 Def002B
 S A$introovni$74 Def001E
 S A$introovni$65 Def0012

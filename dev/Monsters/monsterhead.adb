@@ -1,6 +1,6 @@
 M:monsterhead
 F:G$UpdateMonsterHead$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lmonsterhead.UpdateMonsterHead$en$1$51({2}DG,STenemy:S),B,1,4
+S:Lmonsterhead.UpdateMonsterHead$en$1$50({2}DG,STenemy:S),B,1,4
 S:Lmonsterhead.UpdateMonsterHead$sloc0$1$0({2}DG,STenemy:S),B,1,-2
 S:Lmonsterhead.UpdateMonsterHead$sloc1$1$0({1}SC:U),B,1,-3
 S:Lmonsterhead.UpdateMonsterHead$sloc2$1$0({1}SC:S),B,1,-5
@@ -161,7 +161,6 @@ S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0

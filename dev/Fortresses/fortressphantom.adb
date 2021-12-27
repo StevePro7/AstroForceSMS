@@ -1,8 +1,8 @@
 M:fortressphantom
 F:G$InitFortressPhantom$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lfortressphantom.InitFortressPhantom$en$1$52({2}DG,STenemy:S),B,1,4
+S:Lfortressphantom.InitFortressPhantom$en$1$51({2}DG,STenemy:S),B,1,4
 F:G$UpdateFortressPhantom$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lfortressphantom.UpdateFortressPhantom$en$1$54({2}DG,STenemy:S),B,1,4
+S:Lfortressphantom.UpdateFortressPhantom$en$1$53({2}DG,STenemy:S),B,1,4
 S:Lfortressphantom.UpdateFortressPhantom$sloc0$1$0({1}SC:U),B,1,-1
 S:Lfortressphantom.UpdateFortressPhantom$sloc1$1$0({1}SC:U),B,1,-2
 T:Ffortressphantom$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
@@ -161,7 +161,6 @@ S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0

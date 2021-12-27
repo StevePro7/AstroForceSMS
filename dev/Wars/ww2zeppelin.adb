@@ -1,8 +1,8 @@
 M:ww2zeppelin
 F:G$InitWW2Zeppelin$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Lww2zeppelin.InitWW2Zeppelin$en$1$78({2}DG,STenemy:S),B,1,4
+S:Lww2zeppelin.InitWW2Zeppelin$en$1$77({2}DG,STenemy:S),B,1,4
 F:G$UpdateWW2Zeppelin$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lww2zeppelin.UpdateWW2Zeppelin$en$1$80({2}DG,STenemy:S),B,1,4
+S:Lww2zeppelin.UpdateWW2Zeppelin$en$1$79({2}DG,STenemy:S),B,1,4
 S:Lww2zeppelin.UpdateWW2Zeppelin$sloc0$1$0({2}DG,STenemy:S),B,1,-2
 S:Lww2zeppelin.UpdateWW2Zeppelin$sloc1$1$0({1}SC:U),B,1,-3
 T:Fww2zeppelin$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
@@ -213,7 +213,6 @@ S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0

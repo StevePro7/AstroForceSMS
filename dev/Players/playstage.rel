@@ -64,98 +64,100 @@ S A$playstage$95 Def0000
 S G$UpdateStagePassA$0$0 Def0170
 S G$UpdateStagePassB$0$0 Def0182
 S A$playstage$99 Def0003
-S C$playstage.c$141$1$120 Def019A
-S C$playstage.c$132$1$120 Def0191
-S C$playstage.c$123$1$120 Def0185
 S XG$InitPlayStage$0$0 Def0247
-S C$playstage.c$160$1$120 Def01E2
-S C$playstage.c$100$1$118 Def0176
-S C$playstage.c$243$1$120 Def0247
-S C$playstage.c$201$3$124 Def0212
-S C$playstage.c$144$1$120 Def019D
-S C$playstage.c$135$1$120 Def0194
-S C$playstage.c$126$1$120 Def018B
-S C$playstage.c$110$1$118 Def017F
-S C$playstage.c$190$1$120 Def0206
-S C$playstage.c$181$1$120 Def01F7
-S C$playstage.c$172$1$120 Def01EE
-S C$playstage.c$163$1$120 Def01E5
-S C$playstage.c$120$1$119 Def0185
-S C$playstage.c$103$1$118 Def0179
-S C$playstage.c$204$3$124 Def0215
-S C$playstage.c$153$2$122 Def01C9
-S C$playstage.c$147$1$120 Def01A0
-S C$playstage.c$138$1$120 Def0197
-S C$playstage.c$129$1$120 Def018E
-S C$playstage.c$113$1$118 Def0182
+S C$playstage.c$100$1$117 Def0176
+S C$playstage.c$201$3$123 Def0212
+S C$playstage.c$110$1$117 Def017F
+S C$playstage.c$120$1$118 Def0185
+S C$playstage.c$103$1$117 Def0179
+S C$playstage.c$204$3$123 Def0215
+S C$playstage.c$153$2$121 Def01C9
+S C$playstage.c$113$1$117 Def0182
+S C$playstage.c$223$3$123 Def0230
 S _UpdateStagePassA Def0170
-S C$playstage.c$223$3$124 Def0230
-S C$playstage.c$184$1$120 Def01FC
-S C$playstage.c$175$1$120 Def01F1
-S C$playstage.c$166$1$120 Def01E8
-S C$playstage.c$157$1$120 Def01CF
+S C$playstage.c$106$1$117 Def017C
 S _UpdateStagePassB Def0182
-S C$playstage.c$106$1$118 Def017C
+S C$playstage.c$213$4$125 Def0223
+S C$playstage.c$207$3$123 Def0218
+S C$playstage.c$141$1$119 Def019A
+S C$playstage.c$132$1$119 Def0191
+S C$playstage.c$123$1$119 Def0185
 S G$InitCustomStageData$0$0 Def0019
-S C$playstage.c$213$4$126 Def0223
-S C$playstage.c$207$3$124 Def0218
-S C$playstage.c$217$3$124 Def0226
-S C$playstage.c$187$1$120 Def0201
-S C$playstage.c$178$1$120 Def01F4
-S C$playstage.c$169$1$120 Def01EB
-S C$playstage.c$149$2$121 Def01A7
-S C$playstage.c$116$1$119 Def0182
-S C$playstage.c$240$3$129 Def0242
-S C$playstage.c$193$2$123 Def0206
-S C$playstage.c$117$1$119 Def0182
-S C$playstage.c$109$1$118 Def017F
-S C$playstage.c$229$3$124 Def0237
-S C$playstage.c$209$4$125 Def021E
-S C$playstage.c$195$2$123 Def0209
+S C$playstage.c$217$3$123 Def0226
+S C$playstage.c$160$1$119 Def01E2
+S C$playstage.c$149$2$120 Def01A7
+S C$playstage.c$116$1$118 Def0182
+S C$playstage.c$240$3$128 Def0242
+S C$playstage.c$193$2$122 Def0206
+S C$playstage.c$117$1$118 Def0182
+S C$playstage.c$109$1$117 Def017F
+S C$playstage.c$243$1$119 Def0247
+S C$playstage.c$144$1$119 Def019D
+S C$playstage.c$135$1$119 Def0194
+S C$playstage.c$126$1$119 Def018B
+S C$playstage.c$229$3$123 Def0237
+S C$playstage.c$209$4$124 Def021E
+S C$playstage.c$195$2$122 Def0209
+S C$playstage.c$190$1$119 Def0206
+S C$playstage.c$181$1$119 Def01F7
+S C$playstage.c$172$1$119 Def01EE
+S C$playstage.c$163$1$119 Def01E5
+S C$playstage.c$234$3$128 Def023C
+S C$playstage.c$225$4$127 Def0235
 S G$InitStageData$0$0 Def003F
-S C$playstage.c$234$3$129 Def023C
-S C$playstage.c$225$4$128 Def0235
-S C$playstage.c$30$1$113 Def0018
-S C$playstage.c$21$1$113 Def0000
-S C$playstage.c$219$4$127 Def022D
-S C$playstage.c$22$1$113 Def0003
-S C$playstage.c$237$3$129 Def023F
-S C$playstage.c$32$1$113 Def0019
-S C$playstage.c$198$3$124 Def020F
+S C$playstage.c$147$1$119 Def01A0
+S C$playstage.c$138$1$119 Def0197
+S C$playstage.c$129$1$119 Def018E
+S C$playstage.c$30$1$112 Def0018
+S C$playstage.c$21$1$112 Def0000
+S C$playstage.c$219$4$126 Def022D
+S C$playstage.c$184$1$119 Def01FC
+S C$playstage.c$175$1$119 Def01F1
+S C$playstage.c$166$1$119 Def01E8
+S C$playstage.c$157$1$119 Def01CF
+S C$playstage.c$22$1$112 Def0003
+S C$playstage.c$237$3$128 Def023F
+S C$playstage.c$32$1$112 Def0019
+S C$playstage.c$198$3$123 Def020F
+S C$playstage.c$41$1$113 Def002A
+S C$playstage.c$187$1$119 Def0201
+S C$playstage.c$178$1$119 Def01F4
+S C$playstage.c$169$1$119 Def01EB
 S XG$UpdateStagePassA$0$0 Def017F
-S C$playstage.c$41$1$114 Def002A
+S C$playstage.c$42$1$113 Def003C
+S C$playstage.c$25$1$112 Def000B
 S XG$UpdateStagePassB$0$0 Def0182
-S C$playstage.c$42$1$114 Def003C
-S C$playstage.c$25$1$113 Def000B
+S C$playstage.c$44$1$113 Def003F
+S C$playstage.c$35$1$113 Def0019
 S _InitCustomStageData Def0019
-S C$playstage.c$44$1$114 Def003F
-S C$playstage.c$35$1$114 Def0019
-S C$playstage.c$28$1$113 Def000E
-S C$playstage.c$62$1$116 Def0063
-S C$playstage.c$29$1$113 Def0013
-S C$playstage.c$72$1$116 Def011B
-S C$playstage.c$63$1$116 Def007F
-S C$playstage.c$38$1$114 Def0022
-S C$playstage.c$91$1$116 Def0170
-S C$playstage.c$64$1$116 Def0095
+S C$playstage.c$28$1$112 Def000E
+S C$playstage.c$62$1$115 Def0063
+S C$playstage.c$29$1$112 Def0013
+S C$playstage.c$72$1$115 Def011B
+S C$playstage.c$63$1$115 Def007F
+S C$playstage.c$38$1$113 Def0022
+S C$playstage.c$91$1$115 Def0170
+S C$playstage.c$64$1$115 Def0095
+S C$playstage.c$65$1$115 Def00AE
+S C$playstage.c$56$1$115 Def004C
 S _InitStageData Def003F
-S C$playstage.c$65$1$116 Def00AE
-S C$playstage.c$56$1$116 Def004C
-S C$playstage.c$84$1$116 Def0159
-S C$playstage.c$75$1$116 Def0122
-S C$playstage.c$66$1$116 Def00C7
+S C$playstage.c$84$1$115 Def0159
+S C$playstage.c$75$1$115 Def0122
+S C$playstage.c$66$1$115 Def00C7
+S C$playstage.c$67$1$115 Def00E0
 S A$playstage$100 Def0005
-S C$playstage.c$67$1$116 Def00E0
+S C$playstage.c$68$1$115 Def00F3
+S C$playstage.c$59$1$115 Def0054
 S G$InitAfterBossStage$0$0 Def0000
 S A$playstage$101 Def0006
-S C$playstage.c$68$1$116 Def00F3
-S C$playstage.c$59$1$116 Def0054
+S C$playstage.c$94$1$117 Def0170
+S C$playstage.c$69$1$115 Def0110
 S A$playstage$300 Def00F9
 S A$playstage$210 Def0073
 S A$playstage$111 Def000E
 S A$playstage$102 Def0007
-S C$playstage.c$94$1$118 Def0170
-S C$playstage.c$69$1$116 Def0110
+S C$playstage.c$88$1$115 Def016F
+S C$playstage.c$86$2$116 Def015D
 S A$playstage$310 Def0109
 S A$playstage$301 Def00FA
 S A$playstage$220 Def0082
@@ -163,8 +165,6 @@ S A$playstage$211 Def0074
 S A$playstage$202 Def0063
 S A$playstage$112 Def0011
 S A$playstage$103 Def000A
-S C$playstage.c$88$1$116 Def016F
-S C$playstage.c$86$2$117 Def015D
 S A$playstage$500 Def01B4
 S A$playstage$410 Def0176
 S A$playstage$320 Def0118
@@ -175,6 +175,7 @@ S A$playstage$221 Def0085
 S A$playstage$212 Def0077
 S A$playstage$203 Def0066
 S A$playstage$122 Def0018
+S C$playstage.c$97$1$117 Def0173
 S XG$InitCustomStageData$0$0 Def003C
 S A$playstage$510 Def01C5
 S A$playstage$501 Def01B6
@@ -188,7 +189,6 @@ S A$playstage$222 Def0086
 S A$playstage$213 Def007A
 S A$playstage$204 Def0069
 S A$playstage$150 Def002A
-S C$playstage.c$97$1$118 Def0173
 S A$playstage$511 Def01C6
 S A$playstage$502 Def01B7
 S A$playstage$340 Def0130
@@ -490,21 +490,21 @@ T 8D 00 DD 34 04 20 03 DD 34 05
 R 00 00 00 00
 T 95 00
 R 00 00 00 00
-T 95 00 DD 6E 04 DD 66 05 29 19 7E DD 77 FA 23 7E
+T 95 00 DD 6E 04 DD 66 05 29 19 7E DD 77 FE 23 7E
 R 00 00 00 00
-T A3 00 DD 77 FB DD 34 04 20 03 DD 34 05
+T A3 00 DD 77 FF DD 34 04 20 03 DD 34 05
 R 00 00 00 00
 T AE 00
 R 00 00 00 00
-T AE 00 DD 6E 04 DD 66 05 29 19 4E 23 46 DD 71 FE
+T AE 00 DD 6E 04 DD 66 05 29 19 4E 23 46 DD 71 FC
 R 00 00 00 00
-T BC 00 DD 70 FF DD 34 04 20 03 DD 34 05
+T BC 00 DD 70 FD DD 34 04 20 03 DD 34 05
 R 00 00 00 00
 T C7 00
 R 00 00 00 00
-T C7 00 DD 6E 04 DD 66 05 29 19 7E DD 77 FC 23 7E
+T C7 00 DD 6E 04 DD 66 05 29 19 7E DD 77 F8 23 7E
 R 00 00 00 00
-T D5 00 DD 77 FD DD 34 04 20 03 DD 34 05
+T D5 00 DD 77 F9 DD 34 04 20 03 DD 34 05
 R 00 00 00 00
 T E0 00
 R 00 00 00 00
@@ -516,19 +516,19 @@ T F3 00
 R 00 00 00 00
 T F3 00 DD 6E 04 DD 66 05 7D C6 01 DD 77 04 7C CE
 R 00 00 00 00
-T 01 01 00 DD 77 05 29 19 7E 23 66 DD 77 F8 DD 74
+T 01 01 00 DD 77 05 29 19 7E 23 66 DD 77 FA DD 74
 R 00 00 00 00
-T 0F 01 F9 DD 6E 04 DD 66 05 29 19 5E 23 56 DD 56
+T 0F 01 FB DD 6E 04 DD 66 05 29 19 5E 23 56 DD 56
 R 00 00 00 00
 T 1D 01 F4 21 00 00 72 C5 D5 D5 33 DD 6E F6 DD 66
 R 00 00 00 00 02 04 05 00
-T 2B 01 F7 E5 CD 00 00 F1 33 DD 6E FC DD 66 FD E5
+T 2B 01 F7 E5 CD 00 00 F1 33 DD 6E F8 DD 66 F9 E5
 R 00 00 00 00 02 05 32 00
-T 39 01 DD 6E FE DD 66 FF E5 DD 6E FA DD 66 FB E5
+T 39 01 DD 6E FC DD 66 FD E5 DD 6E FE DD 66 FF E5
 R 00 00 00 00
 T 47 01 CD 00 00 21 06 00 39 F9 D1 D5 D5 33 CD
 R 00 00 00 00 02 03 1B 00
-T 54 01 00 00 33 D1 C1 78 B1 28 0E DD 56 F8 7B F5
+T 54 01 00 00 33 D1 C1 78 B1 28 0E DD 56 FA 7B F5
 R 00 00 00 00 02 02 0F 00
 T 62 01 33 D5 33 C5 CD 00 00 F1 F1
 R 00 00 00 00 02 07 2F 00

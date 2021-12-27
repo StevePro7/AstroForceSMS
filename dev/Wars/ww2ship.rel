@@ -17,19 +17,19 @@ S A$ww2ship$53 Def0000
 S A$ww2ship$72 Def001D
 S A$ww2ship$63 Def0010
 S A$ww2ship$54 Def0002
+S C$ww2ship.c$7$1$51 Def0009
 S A$ww2ship$73 Def0020
 S A$ww2ship$64 Def0011
 S A$ww2ship$55 Def0006
-S C$ww2ship.c$7$1$52 Def0009
 S A$ww2ship$92 Def002F
 S A$ww2ship$74 Def0021
 S A$ww2ship$65 Def0012
 S A$ww2ship$56 Def0008
+S C$ww2ship.c$9$1$51 Def002A
 S A$ww2ship$93 Def0031
 S A$ww2ship$84 Def002A
 S A$ww2ship$75 Def0022
 S A$ww2ship$66 Def0013
-S C$ww2ship.c$9$1$52 Def002A
 S A$ww2ship$94 Def0032
 S A$ww2ship$85 Def002B
 S A$ww2ship$76 Def0023
@@ -47,11 +47,11 @@ S A$ww2ship$79 Def0028
 S C$ww2ship.c$5$0$0 Def0000
 S G$UpdateWW2Ship$0$0 Def0000
 S A$ww2ship$101 Def0038
+S C$ww2ship.c$10$1$51 Def002F
 S A$ww2ship$103 Def003A
-S C$ww2ship.c$10$1$52 Def002F
+S C$ww2ship.c$11$1$51 Def0038
 S A$ww2ship$104 Def003B
-S C$ww2ship.c$11$1$52 Def0038
-S C$ww2ship.c$12$1$52 Def003D
+S C$ww2ship.c$12$1$51 Def003D
 S _UpdateWW2Ship Def0000
 S A$ww2ship$109 Def003D
 A _DATA size 0 flags 0 addr 0

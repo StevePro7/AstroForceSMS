@@ -26,13 +26,13 @@ S A$skullbone$92 Def0026
 S A$skullbone$83 Def001E
 S A$skullbone$74 Def0012
 S A$skullbone$65 Def0002
+S C$skullbone.c$8$1$61 Def0008
 S _InitSkullBoneA Def0000
 S A$skullbone$93 Def0027
 S A$skullbone$84 Def001F
 S A$skullbone$66 Def0006
-S C$skullbone.c$8$1$62 Def0008
+S C$skullbone.c$9$1$61 Def0013
 S _InitSkullBoneB Def002A
-S C$skullbone.c$9$1$62 Def0013
 S _InitSkullBoneC Def005B
 S A$skullbone$78 Def0013
 S A$skullbone$88 Def0020
@@ -62,6 +62,7 @@ S A$skullbone$301 Def00DA
 S A$skullbone$211 Def008E
 S A$skullbone$130 Def004D
 S A$skullbone$121 Def0041
+S C$skullbone.c$10$1$61 Def0020
 S A$skullbone$311 Def00E6
 S A$skullbone$302 Def00DB
 S A$skullbone$230 Def00A0
@@ -71,7 +72,7 @@ S A$skullbone$203 Def0082
 S A$skullbone$140 Def0058
 S A$skullbone$131 Def004E
 S A$skullbone$122 Def0042
-S C$skullbone.c$10$1$62 Def0020
+S C$skullbone.c$11$1$61 Def0029
 S A$skullbone$411 Def014F
 S A$skullbone$330 Def00F5
 S A$skullbone$312 Def00E7
@@ -83,7 +84,6 @@ S A$skullbone$204 Def0085
 S A$skullbone$132 Def004F
 S A$skullbone$123 Def0044
 S A$skullbone$114 Def0032
-S C$skullbone.c$11$1$62 Def0029
 S A$skullbone$340 Def00F6
 S A$skullbone$313 Def00E8
 S A$skullbone$250 Def00B1
@@ -95,6 +95,7 @@ S A$skullbone$160 Def005D
 S A$skullbone$133 Def0051
 S A$skullbone$124 Def0045
 S A$skullbone$115 Def0035
+S C$skullbone.c$13$1$61 Def002A
 S A$skullbone$404 Def014B
 S A$skullbone$350 Def0108
 S A$skullbone$341 Def00F8
@@ -109,7 +110,6 @@ S A$skullbone$206 Def0089
 S A$skullbone$161 Def005E
 S A$skullbone$125 Def0046
 S A$skullbone$116 Def0038
-S C$skullbone.c$13$1$62 Def002A
 S A$skullbone$360 Def0111
 S A$skullbone$351 Def0109
 S A$skullbone$342 Def00FC
@@ -128,6 +128,7 @@ S A$skullbone$162 Def005F
 S A$skullbone$126 Def0047
 S A$skullbone$117 Def003B
 S A$skullbone$108 Def002A
+S C$skullbone.c$51$1$70 Def00F0
 S A$skullbone$406 Def014D
 S A$skullbone$370 Def0122
 S A$skullbone$361 Def0114
@@ -149,7 +150,8 @@ S A$skullbone$145 Def005A
 S A$skullbone$127 Def0048
 S A$skullbone$118 Def003C
 S A$skullbone$109 Def002C
-S C$skullbone.c$51$1$71 Def00F0
+S C$skullbone.c$52$1$70 Def00F5
+S C$skullbone.c$21$1$65 Def005B
 S A$skullbone$380 Def012F
 S A$skullbone$371 Def0123
 S A$skullbone$362 Def0117
@@ -169,8 +171,9 @@ S A$skullbone$164 Def0063
 S A$skullbone$137 Def0052
 S A$skullbone$128 Def004B
 S A$skullbone$119 Def003D
-S C$skullbone.c$52$1$71 Def00F5
-S C$skullbone.c$21$1$66 Def005B
+S C$skullbone.c$44$1$70 Def00D0
+S C$skullbone.c$22$1$65 Def0065
+S C$skullbone.c$15$1$63 Def0032
 S A$skullbone$390 Def013D
 S A$skullbone$381 Def0130
 S A$skullbone$372 Def0124
@@ -188,9 +191,9 @@ S A$skullbone$228 Def009E
 S A$skullbone$192 Def007B
 S A$skullbone$138 Def0055
 S A$skullbone$129 Def004C
-S C$skullbone.c$44$1$71 Def00D0
-S C$skullbone.c$22$1$66 Def0065
-S C$skullbone.c$15$1$64 Def0032
+S C$skullbone.c$60$1$73 Def0111
+S C$skullbone.c$54$1$70 Def00F6
+S C$skullbone.c$16$1$63 Def0052
 S A$skullbone$391 Def013E
 S A$skullbone$382 Def0131
 S A$skullbone$373 Def0125
@@ -205,9 +208,7 @@ S A$skullbone$238 Def00A8
 S A$skullbone$229 Def009F
 S A$skullbone$193 Def007C
 S A$skullbone$139 Def0056
-S C$skullbone.c$60$1$74 Def0111
-S C$skullbone.c$54$1$71 Def00F6
-S C$skullbone.c$16$1$64 Def0052
+S C$skullbone.c$17$1$63 Def005A
 S A$skullbone$392 Def013F
 S A$skullbone$383 Def0132
 S A$skullbone$374 Def0126
@@ -218,7 +219,8 @@ S A$skullbone$257 Def00BD
 S A$skullbone$248 Def00AF
 S A$skullbone$239 Def00A9
 S A$skullbone$158 Def005B
-S C$skullbone.c$17$1$64 Def005A
+S C$skullbone.c$41$1$67 Def00D0
+S C$skullbone.c$25$1$65 Def0066
 S A$skullbone$393 Def0141
 S A$skullbone$384 Def0133
 S A$skullbone$375 Def0127
@@ -228,8 +230,9 @@ S A$skullbone$258 Def00BE
 S A$skullbone$249 Def00B0
 S A$skullbone$186 Def006F
 S A$skullbone$159 Def005C
-S C$skullbone.c$41$1$68 Def00D0
-S C$skullbone.c$25$1$66 Def0066
+S C$skullbone.c$63$1$73 Def011C
+S C$skullbone.c$46$2$71 Def00DD
+S C$skullbone.c$19$1$63 Def005B
 S G$InitSkullBoneA$0$0 Def0000
 S A$skullbone$394 Def0142
 S A$skullbone$385 Def0137
@@ -239,9 +242,7 @@ S A$skullbone$295 Def00D4
 S A$skullbone$259 Def00BF
 S A$skullbone$187 Def0072
 S A$skullbone$169 Def0065
-S C$skullbone.c$63$1$74 Def011C
-S C$skullbone.c$46$2$72 Def00DD
-S C$skullbone.c$19$1$64 Def005B
+S C$skullbone.c$32$2$68 Def0082
 S G$InitSkullBoneB$0$0 Def002A
 S A$skullbone$395 Def0143
 S A$skullbone$386 Def0139
@@ -252,7 +253,7 @@ S A$skullbone$278 Def00CF
 S A$skullbone$197 Def007E
 S A$skullbone$188 Def0075
 S A$skullbone$179 Def0066
-S C$skullbone.c$32$2$69 Def0082
+S C$skullbone.c$33$2$68 Def0095
 S G$InitSkullBoneC$0$0 Def005B
 S A$skullbone$396 Def0144
 S A$skullbone$387 Def013A
@@ -261,23 +262,22 @@ S A$skullbone$369 Def011F
 S A$skullbone$297 Def00D6
 S A$skullbone$198 Def0080
 S A$skullbone$189 Def0076
-S C$skullbone.c$33$2$69 Def0095
+S C$skullbone.c$66$1$73 Def014B
+S C$skullbone.c$57$1$73 Def00FE
+S C$skullbone.c$27$1$67 Def006F
 S A$skullbone$397 Def0145
 S A$skullbone$388 Def013B
 S A$skullbone$379 Def012D
 S A$skullbone$298 Def00D7
-S C$skullbone.c$66$1$74 Def014B
-S C$skullbone.c$57$1$74 Def00FE
-S C$skullbone.c$27$1$68 Def006F
+S C$skullbone.c$67$1$73 Def014F
+S C$skullbone.c$28$1$67 Def007E
 S A$skullbone$398 Def0146
 S A$skullbone$389 Def013C
 S A$skullbone$299 Def00D8
-S C$skullbone.c$67$1$74 Def014F
-S C$skullbone.c$28$1$68 Def007E
+S C$skullbone.c$38$1$67 Def00C9
+S C$skullbone.c$36$2$68 Def00AB
 S A$skullbone$399 Def0149
-S C$skullbone.c$38$1$68 Def00C9
-S C$skullbone.c$36$2$69 Def00AB
-S C$skullbone.c$39$1$68 Def00CF
+S C$skullbone.c$39$1$67 Def00CF
 S A$skullbone$70 Def0008
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0

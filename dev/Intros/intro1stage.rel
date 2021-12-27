@@ -19,12 +19,12 @@ S A$intro1stage$100 Def003C
 S A$intro1stage$101 Def003D
 S A$intro1stage$102 Def0040
 S A$intro1stage$103 Def0041
-S C$intro1stage.c$21$1$52 Def0035
-S C$intro1stage.c$12$1$52 Def0000
-S C$intro1stage.c$22$1$52 Def0042
+S C$intro1stage.c$21$1$51 Def0035
+S C$intro1stage.c$12$1$51 Def0000
+S C$intro1stage.c$22$1$51 Def0042
+S C$intro1stage.c$15$1$51 Def0018
 S A$intro1stage$108 Def0042
-S C$intro1stage.c$15$1$52 Def0018
-S C$intro1stage.c$18$1$52 Def0028
+S C$intro1stage.c$18$1$51 Def0028
 S G$InitIntro1Stage$0$0 Def0000
 S A$intro1stage$60 Def0002
 S A$intro1stage$70 Def0016

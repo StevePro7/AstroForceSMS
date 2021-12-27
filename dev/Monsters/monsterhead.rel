@@ -18,15 +18,14 @@ S A$monsterhead$175 Def00A4
 S A$monsterhead$166 Def0094
 S A$monsterhead$157 Def008F
 S A$monsterhead$139 Def007A
-S C$monsterhead.c$17$2$53 Def0086
 S A$monsterhead$194 Def00C6
 S A$monsterhead$176 Def00A7
 S A$monsterhead$167 Def0097
+S C$monsterhead.c$19$2$52 Def00EE
 S A$monsterhead$195 Def00C7
 S A$monsterhead$186 Def00B7
 S A$monsterhead$177 Def00A9
 S A$monsterhead$168 Def0099
-S C$monsterhead.c$19$2$53 Def00EE
 S A$monsterhead$196 Def00C8
 S A$monsterhead$187 Def00BA
 S A$monsterhead$178 Def00AC
@@ -49,18 +48,18 @@ S A$monsterhead$82 Def0029
 S A$monsterhead$73 Def0020
 S A$monsterhead$64 Def000B
 S A$monsterhead$55 Def0000
+S C$monsterhead.c$8$1$51 Def0090
 S A$monsterhead$92 Def0037
 S A$monsterhead$83 Def002A
 S A$monsterhead$74 Def0021
 S A$monsterhead$65 Def000E
 S A$monsterhead$56 Def0002
-S C$monsterhead.c$8$1$52 Def0090
+S C$monsterhead.c$9$1$51 Def0023
 S A$monsterhead$93 Def0038
 S A$monsterhead$84 Def002C
 S A$monsterhead$75 Def0022
 S A$monsterhead$66 Def0011
 S A$monsterhead$57 Def0006
-S C$monsterhead.c$9$1$52 Def0023
 S A$monsterhead$94 Def003B
 S A$monsterhead$85 Def002E
 S A$monsterhead$67 Def0014
@@ -101,6 +100,7 @@ S A$monsterhead$131 Def006F
 S A$monsterhead$122 Def0063
 S A$monsterhead$113 Def0055
 S A$monsterhead$104 Def0048
+S C$monsterhead.c$12$1$51 Def0031
 S A$monsterhead$222 Def00EF
 S A$monsterhead$213 Def00E7
 S A$monsterhead$204 Def00DA
@@ -109,7 +109,7 @@ S A$monsterhead$132 Def0072
 S A$monsterhead$123 Def0066
 S A$monsterhead$114 Def0056
 S A$monsterhead$105 Def0049
-S C$monsterhead.c$12$1$52 Def0031
+S C$monsterhead.c$20$2$52 Def00F1
 S A$monsterhead$241 Def00FA
 S A$monsterhead$223 Def00F0
 S A$monsterhead$214 Def00E8
@@ -120,7 +120,6 @@ S A$monsterhead$133 Def0073
 S A$monsterhead$124 Def0069
 S A$monsterhead$115 Def0059
 S A$monsterhead$106 Def004A
-S C$monsterhead.c$20$2$53 Def00F1
 S A$monsterhead$233 Def00F4
 S A$monsterhead$215 Def00EB
 S A$monsterhead$206 Def00DC
@@ -132,6 +131,8 @@ S A$monsterhead$134 Def0074
 S A$monsterhead$125 Def006A
 S A$monsterhead$116 Def005A
 S A$monsterhead$107 Def004B
+S C$monsterhead.c$24$1$51 Def00F4
+S C$monsterhead.c$15$1$51 Def006C
 S A$monsterhead$216 Def00EC
 S A$monsterhead$207 Def00DF
 S A$monsterhead$180 Def00AF
@@ -143,8 +144,7 @@ S A$monsterhead$135 Def0075
 S A$monsterhead$126 Def006B
 S A$monsterhead$117 Def005D
 S A$monsterhead$108 Def004F
-S C$monsterhead.c$24$1$52 Def00F4
-S C$monsterhead.c$15$1$52 Def006C
+S C$monsterhead.c$25$1$51 Def00FA
 S A$monsterhead$235 Def00F6
 S A$monsterhead$217 Def00ED
 S A$monsterhead$208 Def00E2
@@ -156,7 +156,6 @@ S A$monsterhead$145 Def0082
 S A$monsterhead$136 Def0076
 S A$monsterhead$118 Def005E
 S A$monsterhead$109 Def0050
-S C$monsterhead.c$25$1$52 Def00FA
 S A$monsterhead$236 Def00F8
 S A$monsterhead$227 Def00F1
 S A$monsterhead$209 Def00E3
@@ -166,6 +165,7 @@ S A$monsterhead$155 Def008B
 S A$monsterhead$146 Def0083
 S A$monsterhead$137 Def0077
 S A$monsterhead$119 Def005F
+S C$monsterhead.c$18$1$51 Def0094
 S A$monsterhead$228 Def00F3
 S A$monsterhead$192 Def00C1
 S A$monsterhead$183 Def00B2
@@ -173,7 +173,7 @@ S A$monsterhead$174 Def00A2
 S A$monsterhead$156 Def008E
 S A$monsterhead$147 Def0084
 S A$monsterhead$138 Def0079
-S C$monsterhead.c$18$1$52 Def0094
+S C$monsterhead.c$17$2$52 Def0086
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

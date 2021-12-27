@@ -12,24 +12,24 @@ S A$fortressdoor$101 Def0045
 S A$fortressdoor$120 Def005D
 S A$fortressdoor$111 Def004D
 S A$fortressdoor$102 Def0046
+S C$fortressdoor.c$10$1$51 Def0023
 S A$fortressdoor$121 Def0060
 S A$fortressdoor$112 Def004F
 S A$fortressdoor$103 Def0047
-S C$fortressdoor.c$10$1$52 Def0023
 S A$fortressdoor$122 Def0061
 S A$fortressdoor$113 Def0050
+S C$fortressdoor.c$12$1$51 Def0027
 S A$fortressdoor$114 Def0053
-S C$fortressdoor.c$12$1$52 Def0027
+S C$fortressdoor.c$13$1$51 Def0048
 S A$fortressdoor$115 Def0054
-S C$fortressdoor.c$13$1$52 Def0048
+S C$fortressdoor.c$14$1$51 Def0062
 S A$fortressdoor$134 Def0068
 S A$fortressdoor$116 Def0055
 S A$fortressdoor$107 Def0048
-S C$fortressdoor.c$14$1$52 Def0062
+S C$fortressdoor.c$15$1$51 Def0068
 S A$fortressdoor$126 Def0062
 S A$fortressdoor$117 Def0056
 S A$fortressdoor$108 Def0049
-S C$fortressdoor.c$15$1$52 Def0068
 S A$fortressdoor$118 Def0059
 S A$fortressdoor$109 Def004B
 S A$fortressdoor$128 Def0064
@@ -45,19 +45,19 @@ S A$fortressdoor$81 Def0025
 S A$fortressdoor$72 Def0018
 S A$fortressdoor$63 Def0010
 S A$fortressdoor$54 Def0002
+S C$fortressdoor.c$7$1$51 Def0009
 S A$fortressdoor$91 Def002F
 S A$fortressdoor$73 Def0019
 S A$fortressdoor$64 Def0011
 S A$fortressdoor$55 Def0006
-S C$fortressdoor.c$7$1$52 Def0009
 S A$fortressdoor$92 Def0032
 S A$fortressdoor$74 Def001C
 S A$fortressdoor$65 Def0012
 S A$fortressdoor$56 Def0008
+S C$fortressdoor.c$9$1$51 Def0018
 S A$fortressdoor$93 Def0033
 S A$fortressdoor$75 Def001E
 S A$fortressdoor$66 Def0013
-S C$fortressdoor.c$9$1$52 Def0018
 S A$fortressdoor$94 Def0036
 S A$fortressdoor$76 Def0021
 S A$fortressdoor$67 Def0014
@@ -87,15 +87,15 @@ T 00 00
 R 00 00 00 00
 T 00 00 DD E5 DD 21 00 00 DD 39 F5 DD 4E 04 DD 46
 R 00 00 00 00
-T 0E 00 05 59 50 13 1A 3C DD 77 FE 12 1A DD 77 FF
+T 0E 00 05 59 50 13 1A 3C DD 77 FF 12 1A DD 77 FE
 R 00 00 00 00
-T 1C 00 3E C0 DD 96 FE 30 04 2E 00 18 3D
+T 1C 00 3E C0 DD 96 FF 30 04 2E 00 18 3D
 R 00 00 00 00
 T 27 00
 R 00 00 00 00
-T 27 00 0A C6 F8 DD 77 FE C5 D5 21 20 08 E5 DD 66
+T 27 00 0A C6 F8 DD 77 FF C5 D5 21 20 08 E5 DD 66
 R 00 00 00 00
-T 35 00 FF DD 6E FE E5 21 5F 01 E5 CD 00 00 21
+T 35 00 FE DD 6E FF E5 21 5F 01 E5 CD 00 00 21
 R 00 00 00 00 02 0C 01 00
 T 42 00 06 00 39 F9 D1 C1 1A C6 08 57 0A C6 F8 47
 R 00 00 00 00

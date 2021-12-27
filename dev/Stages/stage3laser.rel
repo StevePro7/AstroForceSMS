@@ -14,7 +14,6 @@ S A$stage3laser$171 Def0086
 S A$stage3laser$162 Def007C
 S A$stage3laser$144 Def0065
 S A$stage3laser$135 Def005E
-S C$stage3laser.c$22$1$81 Def0089
 S A$stage3laser$208 Def00B7
 S A$stage3laser$190 Def00A0
 S A$stage3laser$163 Def007D
@@ -26,41 +25,41 @@ S A$stage3laser$164 Def007E
 S A$stage3laser$146 Def0068
 S A$stage3laser$137 Def0061
 S A$stage3laser$128 Def0050
+S C$stage3laser.c$25$1$80 Def0099
 S A$stage3laser$192 Def00A6
 S A$stage3laser$183 Def0097
 S A$stage3laser$165 Def007F
 S A$stage3laser$147 Def006A
 S A$stage3laser$129 Def0053
-S C$stage3laser.c$25$1$81 Def0099
+S C$stage3laser.c$17$1$80 Def0050
+S C$stage3laser.c$10$1$78 Def0009
 S A$stage3laser$193 Def00A7
 S A$stage3laser$175 Def0089
 S A$stage3laser$166 Def0080
 S A$stage3laser$157 Def0073
 S A$stage3laser$148 Def006C
-S C$stage3laser.c$17$1$81 Def0050
-S C$stage3laser.c$10$1$79 Def0009
+S C$stage3laser.c$18$1$80 Def0062
+S C$stage3laser.c$11$1$78 Def002E
 S A$stage3laser$194 Def00A8
 S A$stage3laser$176 Def008C
 S A$stage3laser$167 Def0081
 S A$stage3laser$158 Def0074
 S A$stage3laser$149 Def006D
-S C$stage3laser.c$18$1$81 Def0062
-S C$stage3laser.c$11$1$79 Def002E
+S C$stage3laser.c$28$1$80 Def00B7
+S C$stage3laser.c$12$1$78 Def0047
 S G$InitStage3Laser$0$0 Def0000
 S A$stage3laser$195 Def00A9
 S A$stage3laser$177 Def008E
 S A$stage3laser$168 Def0082
 S A$stage3laser$159 Def0076
-S C$stage3laser.c$28$1$81 Def00B7
-S C$stage3laser.c$12$1$79 Def0047
+S C$stage3laser.c$29$1$80 Def00BB
 S A$stage3laser$196 Def00AB
 S A$stage3laser$178 Def0090
 S A$stage3laser$169 Def0083
-S C$stage3laser.c$29$1$81 Def00BB
+S C$stage3laser.c$14$1$78 Def0048
 S A$stage3laser$197 Def00AC
 S A$stage3laser$188 Def0099
 S A$stage3laser$179 Def0092
-S C$stage3laser.c$14$1$79 Def0048
 S A$stage3laser$198 Def00AD
 S A$stage3laser$189 Def009D
 S A$stage3laser$199 Def00AE
@@ -135,6 +134,7 @@ S A$stage3laser$142 Def0063
 S A$stage3laser$133 Def0059
 S A$stage3laser$124 Def004E
 S A$stage3laser$106 Def0043
+S C$stage3laser.c$21$1$80 Def0073
 S A$stage3laser$215 Def00BB
 S A$stage3laser$170 Def0085
 S A$stage3laser$161 Def007B
@@ -142,7 +142,7 @@ S A$stage3laser$152 Def0071
 S A$stage3laser$143 Def0064
 S A$stage3laser$134 Def005B
 S A$stage3laser$107 Def0045
-S C$stage3laser.c$21$1$81 Def0073
+S C$stage3laser.c$22$1$80 Def0089
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
