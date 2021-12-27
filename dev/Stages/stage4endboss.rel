@@ -19,27 +19,26 @@ S G$UpdateStage4EndBoss4$0$0 Def013C
 S G$UpdateStage4EndBoss5$0$0 Def01DD
 S G$UpdateStage4EndBoss6$0$0 Def01F7
 S G$UpdateStage4EndBoss7$0$0 Def023C
-S C$stage4endboss.c$110$1$81 Def0256
-S C$stage4endboss.c$100$1$76 Def023B
+S C$stage4endboss.c$100$1$74 Def023B
+S C$stage4endboss.c$102$1$74 Def023C
 S _UpdateStage4EndBoss1 Def003F
-S C$stage4endboss.c$114$1$81 Def028A
 S _UpdateStage4EndBoss2 Def00E5
-S C$stage4endboss.c$115$1$81 Def029E
-S C$stage4endboss.c$102$1$76 Def023C
 S _UpdateStage4EndBoss3 Def00F7
 S G$UpdateStage4EndBoss$0$0 Def024E
 S _UpdateStage4EndBoss4 Def013C
+S C$stage4endboss.c$110$1$79 Def0256
 S _UpdateStage4EndBoss5 Def01DD
-S C$stage4endboss.c$118$1$81 Def02A3
+S C$stage4endboss.c$104$1$77 Def023C
 S _UpdateStage4EndBoss6 Def01F7
-S C$stage4endboss.c$119$1$81 Def02A7
+S C$stage4endboss.c$105$1$77 Def024D
 S _UpdateStage4EndBoss7 Def023C
-S C$stage4endboss.c$104$1$79 Def023C
-S C$stage4endboss.c$105$1$79 Def024D
+S C$stage4endboss.c$114$1$79 Def028A
+S C$stage4endboss.c$107$1$77 Def024E
 S A$stage4endboss$300 Def00F1
 S A$stage4endboss$210 Def0098
 S A$stage4endboss$201 Def008A
 S A$stage4endboss$120 Def0036
+S C$stage4endboss.c$115$1$79 Def029E
 S A$stage4endboss$400 Def0142
 S A$stage4endboss$301 Def00F4
 S A$stage4endboss$220 Def00A6
@@ -48,8 +47,6 @@ S A$stage4endboss$202 Def008B
 S A$stage4endboss$121 Def0037
 S A$stage4endboss$112 Def002F
 S A$stage4endboss$103 Def0026
-S C$stage4endboss.c$107$1$79 Def024E
-S C$stage4endboss.c$10$2$60 Def0026
 S A$stage4endboss$410 Def0150
 S A$stage4endboss$401 Def0144
 S A$stage4endboss$302 Def00F5
@@ -75,7 +72,9 @@ S A$stage4endboss$141 Def003F
 S A$stage4endboss$123 Def003A
 S A$stage4endboss$114 Def0032
 S A$stage4endboss$105 Def002A
+S C$stage4endboss.c$118$1$79 Def02A3
 S XG$UpdateStage4EndBoss1$0$0 Def00E4
+S C$stage4endboss.c$21$1$61 Def0049
 S A$stage4endboss$601 Def0205
 S A$stage4endboss$520 Def01C9
 S A$stage4endboss$511 Def01C4
@@ -92,7 +91,9 @@ S A$stage4endboss$151 Def004F
 S A$stage4endboss$142 Def0041
 S A$stage4endboss$115 Def0033
 S A$stage4endboss$106 Def002C
+S C$stage4endboss.c$119$1$79 Def02A7
 S XG$UpdateStage4EndBoss2$0$0 Def00F6
+S C$stage4endboss.c$31$1$61 Def00C6
 S A$stage4endboss$710 Def0259
 S A$stage4endboss$620 Def021A
 S A$stage4endboss$611 Def0210
@@ -118,7 +119,6 @@ S A$stage4endboss$143 Def0045
 S A$stage4endboss$125 Def003B
 S A$stage4endboss$107 Def002D
 S XG$UpdateStage4EndBoss3$0$0 Def013B
-S C$stage4endboss.c$21$1$63 Def0049
 S A$stage4endboss$720 Def0265
 S A$stage4endboss$711 Def025C
 S A$stage4endboss$630 Def0225
@@ -149,8 +149,7 @@ S A$stage4endboss$153 Def0051
 S A$stage4endboss$144 Def0047
 S A$stage4endboss$126 Def003C
 S XG$UpdateStage4EndBoss4$0$0 Def01DC
-S C$stage4endboss.c$31$1$63 Def00C6
-S C$stage4endboss.c$14$2$61 Def002F
+S C$stage4endboss.c$24$1$61 Def006D
 S _UpdateStage4EndBoss Def024E
 S A$stage4endboss$730 Def0276
 S A$stage4endboss$721 Def0266
@@ -186,8 +185,8 @@ S A$stage4endboss$163 Def005D
 S A$stage4endboss$154 Def0052
 S A$stage4endboss$145 Def0048
 S XG$UpdateStage4EndBoss5$0$0 Def01F6
-S C$stage4endboss.c$60$1$71 Def0145
-S C$stage4endboss.c$15$2$61 Def0034
+S C$stage4endboss.c$40$1$64 Def00E5
+S C$stage4endboss.c$25$1$61 Def008A
 S A$stage4endboss$740 Def0287
 S A$stage4endboss$731 Def0279
 S A$stage4endboss$722 Def0267
@@ -229,8 +228,9 @@ S A$stage4endboss$164 Def005E
 S A$stage4endboss$155 Def0053
 S A$stage4endboss$119 Def0034
 S XG$UpdateStage4EndBoss6$0$0 Def023B
-S C$stage4endboss.c$70$1$71 Def01B5
-S C$stage4endboss.c$24$1$63 Def006D
+S C$stage4endboss.c$41$1$64 Def00F6
+S C$stage4endboss.c$33$2$62 Def00D1
+S C$stage4endboss.c$10$2$58 Def0026
 S G$DoStage4EndBossSinusMovementVert$0$0 Def0000
 S A$stage4endboss$750 Def0292
 S A$stage4endboss$741 Def0288
@@ -274,9 +274,8 @@ S A$stage4endboss$174 Def006B
 S A$stage4endboss$165 Def005F
 S A$stage4endboss$156 Def0054
 S XG$UpdateStage4EndBoss7$0$0 Def024D
-S C$stage4endboss.c$80$1$71 Def01DD
-S C$stage4endboss.c$40$1$66 Def00E5
-S C$stage4endboss.c$25$1$63 Def008A
+S C$stage4endboss.c$36$1$61 Def00E4
+S C$stage4endboss.c$34$2$62 Def00D8
 S A$stage4endboss$751 Def0293
 S A$stage4endboss$742 Def0289
 S A$stage4endboss$733 Def027B
@@ -313,9 +312,9 @@ S A$stage4endboss$184 Def0078
 S A$stage4endboss$175 Def006C
 S A$stage4endboss$166 Def0060
 S A$stage4endboss$157 Def0056
-S C$stage4endboss.c$63$1$71 Def0156
-S C$stage4endboss.c$41$1$66 Def00F6
-S C$stage4endboss.c$33$2$64 Def00D1
+S C$stage4endboss.c$50$1$66 Def0126
+S C$stage4endboss.c$43$1$64 Def00F7
+S C$stage4endboss.c$28$1$61 Def00B5
 S A$stage4endboss$770 Def02A5
 S A$stage4endboss$752 Def0296
 S A$stage4endboss$734 Def027C
@@ -353,9 +352,7 @@ S A$stage4endboss$185 Def0079
 S A$stage4endboss$167 Def0061
 S A$stage4endboss$158 Def0058
 S A$stage4endboss$149 Def0049
-S C$stage4endboss.c$73$1$71 Def01C6
-S C$stage4endboss.c$36$1$63 Def00E4
-S C$stage4endboss.c$34$2$64 Def00D8
+S C$stage4endboss.c$38$1$61 Def00E5
 S A$stage4endboss$762 Def029E
 S A$stage4endboss$753 Def0297
 S A$stage4endboss$735 Def027D
@@ -387,9 +384,6 @@ S A$stage4endboss$195 Def0086
 S A$stage4endboss$186 Def007A
 S A$stage4endboss$168 Def0063
 S A$stage4endboss$159 Def0059
-S C$stage4endboss.c$50$1$68 Def0126
-S C$stage4endboss.c$43$1$66 Def00F7
-S C$stage4endboss.c$28$1$63 Def00B5
 S A$stage4endboss$763 Def029F
 S A$stage4endboss$754 Def0298
 S A$stage4endboss$736 Def027E
@@ -421,8 +415,10 @@ S A$stage4endboss$259 Def00D2
 S A$stage4endboss$196 Def0087
 S A$stage4endboss$187 Def007C
 S A$stage4endboss$169 Def0064
-S C$stage4endboss.c$66$1$71 Def015D
-S C$stage4endboss.c$38$1$63 Def00E5
+S C$stage4endboss.c$83$1$72 Def01DD
+S C$stage4endboss.c$75$2$70 Def01CD
+S C$stage4endboss.c$17$1$57 Def003E
+S C$stage4endboss.c$14$2$59 Def002F
 S A$stage4endboss$764 Def02A2
 S A$stage4endboss$755 Def0299
 S A$stage4endboss$746 Def028A
@@ -450,7 +446,10 @@ S A$stage4endboss$269 Def00DB
 S A$stage4endboss$197 Def0088
 S A$stage4endboss$188 Def007D
 S A$stage4endboss$179 Def006D
-S C$stage4endboss.c$67$1$71 Def0176
+S C$stage4endboss.c$76$2$70 Def01D4
+S C$stage4endboss.c$60$1$69 Def0145
+S C$stage4endboss.c$52$2$67 Def0130
+S C$stage4endboss.c$15$2$59 Def0034
 S A$stage4endboss$756 Def029A
 S A$stage4endboss$747 Def028B
 S A$stage4endboss$738 Def0281
@@ -470,9 +469,12 @@ S A$stage4endboss$468 Def0191
 S A$stage4endboss$459 Def0186
 S A$stage4endboss$297 Def00EE
 S A$stage4endboss$189 Def007E
-S C$stage4endboss.c$83$1$74 Def01DD
-S C$stage4endboss.c$75$2$72 Def01CD
-S C$stage4endboss.c$17$1$59 Def003E
+S C$stage4endboss.c$92$1$74 Def01FF
+S C$stage4endboss.c$70$1$69 Def01B5
+S C$stage4endboss.c$55$1$66 Def013B
+S C$stage4endboss.c$53$2$67 Def0137
+S C$stage4endboss.c$46$1$66 Def00FF
+S C$stage4endboss.c$19$1$57 Def003F
 S A$stage4endboss$775 Def02A7
 S A$stage4endboss$757 Def029B
 S A$stage4endboss$748 Def028D
@@ -488,9 +490,8 @@ S A$stage4endboss$478 Def019E
 S A$stage4endboss$469 Def0192
 S A$stage4endboss$388 Def013B
 S A$stage4endboss$298 Def00EF
-S C$stage4endboss.c$78$1$71 Def01DC
-S C$stage4endboss.c$76$2$72 Def01D4
-S C$stage4endboss.c$52$2$69 Def0130
+S C$stage4endboss.c$86$1$72 Def01EC
+S C$stage4endboss.c$80$1$69 Def01DD
 S A$stage4endboss$758 Def029C
 S A$stage4endboss$749 Def0290
 S A$stage4endboss$686 Def0248
@@ -500,39 +501,37 @@ S A$stage4endboss$578 Def01F5
 S A$stage4endboss$488 Def01A9
 S A$stage4endboss$398 Def013C
 S A$stage4endboss$299 Def00F0
-S C$stage4endboss.c$92$1$76 Def01FF
-S C$stage4endboss.c$55$1$68 Def013B
-S C$stage4endboss.c$53$2$69 Def0137
-S C$stage4endboss.c$46$1$68 Def00FF
-S C$stage4endboss.c$19$1$59 Def003F
+S C$stage4endboss.c$94$1$74 Def0210
+S C$stage4endboss.c$87$1$72 Def01F6
+S C$stage4endboss.c$63$1$69 Def0156
+S C$stage4endboss.c$57$1$66 Def013C
 S A$stage4endboss$687 Def024B
 S A$stage4endboss$678 Def023E
 S A$stage4endboss$489 Def01AA
 S A$stage4endboss$399 Def013E
 S XG$UpdateStage4EndBoss$0$0 Def02A7
-S C$stage4endboss.c$86$1$74 Def01EC
+S C$stage4endboss.c$95$1$74 Def0226
+S C$stage4endboss.c$73$1$69 Def01C6
+S C$stage4endboss.c$49$1$66 Def0110
 S A$stage4endboss$769 Def02A3
 S A$stage4endboss$688 Def024C
 S A$stage4endboss$679 Def023F
-S C$stage4endboss.c$94$1$76 Def0210
-S C$stage4endboss.c$87$1$74 Def01F6
-S C$stage4endboss.c$57$1$68 Def013C
+S C$stage4endboss.c$89$1$72 Def01F7
 S A$stage4endboss$599 Def01FF
 S A$stage4endboss$70 Def0008
-S C$stage4endboss.c$95$1$76 Def0226
-S C$stage4endboss.c$49$1$68 Def0110
+S C$stage4endboss.c$66$1$69 Def015D
 S _DoStage4EndBossSinusMovementVert Def0000
 S A$stage4endboss$80 Def0015
-S C$stage4endboss.c$89$1$74 Def01F7
+S C$stage4endboss.c$67$1$69 Def0176
 S A$stage4endboss$81 Def0016
+S C$stage4endboss.c$97$2$75 Def0230
 S A$stage4endboss$91 Def001C
+S C$stage4endboss.c$98$2$75 Def0237
+S C$stage4endboss.c$78$1$69 Def01DC
 S A$stage4endboss$92 Def001F
 S A$stage4endboss$74 Def0009
-S C$stage4endboss.c$97$2$77 Def0230
 S A$stage4endboss$93 Def0020
 S A$stage4endboss$75 Def000C
-S C$stage4endboss.c$98$2$77 Def0237
-S C$stage4endboss.c$9$2$60 Def0022
 S A$stage4endboss$85 Def0019
 S A$stage4endboss$76 Def000F
 S A$stage4endboss$67 Def0000
@@ -542,14 +541,15 @@ S A$stage4endboss$68 Def0002
 S A$stage4endboss$87 Def001B
 S A$stage4endboss$78 Def0013
 S A$stage4endboss$69 Def0006
+S C$stage4endboss.c$7$1$57 Def001C
 S A$stage4endboss$97 Def0022
 S A$stage4endboss$79 Def0014
 S C$stage4endboss.c$5$0$0 Def0000
 S A$stage4endboss$98 Def0023
-S C$stage4endboss.c$7$1$59 Def001C
+S C$stage4endboss.c$9$1$57 Def0019
 S A$stage4endboss$99 Def0025
 S XG$DoStage4EndBossSinusMovementVert$0$0 Def003E
-S C$stage4endboss.c$9$1$59 Def0019
+S C$stage4endboss.c$9$2$58 Def0022
 S G$UpdateStage4EndBoss1$0$0 Def003F
 S G$UpdateStage4EndBoss2$0$0 Def00E5
 S G$UpdateStage4EndBoss3$0$0 Def00F7
@@ -593,13 +593,13 @@ T 5D 00
 R 00 00 00 00
 T 5D 00 C5 D5 E5 33 3E 03 F5 33 C5 CD 00 00 F1 F1
 R 00 00 00 00 02 0C 0A 00
-T 6B 00 D1 C1 21 03 00 09 DD 75 FD DD 74 FE 66 C5
+T 6B 00 D1 C1 21 03 00 09 DD 75 FE DD 74 FF 66 C5
 R 00 00 00 00
 T 79 00 D5 3E 26 F5 33 E5 33 CD 00 00 F1 D1 C1 7D
 R 00 00 00 00 02 0A 01 00
-T 87 00 B7 20 2B 69 60 23 7E C6 28 DD 77 FF 0A DD
+T 87 00 B7 20 2B 69 60 23 7E C6 28 DD 77 FC 0A DD
 R 00 00 00 00
-T 95 00 77 FC 1A D6 0D 20 03 5F 18 02
+T 95 00 77 FD 1A D6 0D 20 03 5F 18 02
 R 00 00 00 00
 T 9F 00
 R 00 00 00 00
@@ -607,7 +607,7 @@ T 9F 00 1E 10
 R 00 00 00 00
 T A1 00
 R 00 00 00 00
-T A1 00 DD 7E FC 83 57 C5 DD 7E FF F5 33 D5 33 CD
+T A1 00 DD 7E FD 83 57 C5 DD 7E FC F5 33 D5 33 CD
 R 00 00 00 00
 T AF 00 00 00 F1 C1 18 11
 R 00 00 00 00 02 02 02 00
@@ -619,9 +619,9 @@ T C3 00 F1 33 C1
 R 00 00 00 00
 T C6 00
 R 00 00 00 00
-T C6 00 DD 6E FD DD 66 FE 7E D6 A5 20 0F 03 03 03
+T C6 00 DD 6E FE DD 66 FF 7E D6 A5 20 0F 03 03 03
 R 00 00 00 00
-T D4 00 03 0A 3C 02 DD 6E FD DD 66 FE 36 00
+T D4 00 03 0A 3C 02 DD 6E FE DD 66 FF 36 00
 R 00 00 00 00
 T E0 00
 R 00 00 00 00

@@ -1,31 +1,27 @@
 #include "stage6endboss.h"
-//#include "../devkit/_snd_manager.h"
+#include "../devkit/_snd_manager.h"
 #include "../funcs.h"
 #include "../vars.h"
-//
-void stage6endboss_foo()
+
+void FinishStage6EndBoss()
 {
+	// Stop music
+	devkit_PSGStop();
+
+	// Nos cargamos las ara�illas
+	KillEnemies( 1 );
+
+	// Metemos un enemigo que retrase esto
+	InitEnemy( 0, 0, STAGE6OBJECT );
 }
 
-//void FinishStage6EndBoss()
-//{
-//	// Stop music
-//	devkit_PSGStop();
-//
-//	// Nos cargamos las ara�illas
-//	KillEnemies( 1 );
-//
-//	// Metemos un enemigo que retrase esto
-//	InitEnemy( 0, 0, STAGE6OBJECT );
-//}
-//
-//void ResetSkullState( enemy *en, unsigned int st, unsigned char rec )
-//{
-//	if( rec == 1 )en->enemyenergy = 70;
-//	en->enemyparama = 6;
-//	en->enemyparamb = st;
-//	en->enemyframe = 0;
-//}
+void ResetSkullState( enemy *en, unsigned int st, unsigned char rec )
+{
+	if( rec == 1 )en->enemyenergy = 70;
+	en->enemyparama = 6;
+	en->enemyparamb = st;
+	en->enemyframe = 0;
+}
 
 void CreateCustomBoneC( unsigned char x, unsigned char y, unsigned char vx, unsigned char vy )
 {
@@ -46,21 +42,21 @@ void LaunchSkullBoneC( enemy *en, unsigned char vy )
 		}
 }
 
-//void DoSkullShootDirection( enemy *en )
-//{
-//	if( en->enemyframe % 64 == 32 )
-//		SpreadEnemyshootDirection( en->enemyposx + 16, en->enemyposy + 56, skullshootvelx, skullshootvely, 7 );
-//}
-//
-//void DoSkullShootDirectionB( enemy *en )
-//{
-//	unsigned char a;
-//
-//	if( en->enemyframe % 24 == 0 )
-//		for( a = 0; a < 2; a++ )
-//			InitEnemyshoot( en->enemyposx + ( myRand() % 32 ), en->enemyposy + ( myRand() % 48 ), 1 );
-//}
-//
+void DoSkullShootDirection( enemy *en )
+{
+	if( en->enemyframe % 64 == 32 )
+		SpreadEnemyshootDirection( en->enemyposx + 16, en->enemyposy + 56, skullshootvelx, skullshootvely, 7 );
+}
+
+void DoSkullShootDirectionB( enemy *en )
+{
+	unsigned char a;
+
+	if( en->enemyframe % 24 == 0 )
+		for( a = 0; a < 2; a++ )
+			InitEnemyshoot( en->enemyposx + ( myRand() % 32 ), en->enemyposy + ( myRand() % 48 ), 1 );
+}
+
 //void UpdateStage6EndBoss0( enemy *en )
 //{
 //	en->enemyposy++;
@@ -186,17 +182,17 @@ void LaunchSkullBoneC( enemy *en, unsigned char vy )
 //		InitEnemyshootDirection( en->enemyposx + 20, en->enemyposy + 28, skullbshootvelx[ a ], skullbshootvely[ a ] );
 //	}
 //}
-//
-//unsigned char UpdateStage6EndBoss( enemy *en )
-//{
-//	// Draw
-//	DrawSpriteArray( STAGE6ENDBOSSBASE, en->enemyposx, en->enemyposy, 40, 56 );
-//
-//	// Call custom function
-//	//changeBank(FIXEDBANKSLOT);
-//	if ( 0 != updatestage6endbossfunctions[ en->enemyparama ] )
-//	( *( updatestage6endbossfunctions[ en->enemyparama ] ) )( en );
-//
-//	// Exit
-//	return 1;
-//}
+
+unsigned char UpdateStage6EndBoss( enemy *en )
+{
+	// Draw
+	DrawSpriteArray( STAGE6ENDBOSSBASE, en->enemyposx, en->enemyposy, 40, 56 );
+
+	// Call custom function
+	//changeBank(FIXEDBANKSLOT);
+	if ( 0 != updatestage6endbossfunctions[ en->enemyparama ] )
+	( *( updatestage6endbossfunctions[ en->enemyparama ] ) )( en );
+
+	// Exit
+	return 1;
+}

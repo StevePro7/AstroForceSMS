@@ -2290,7 +2290,7 @@ const MyUpdateEnemyFunction updateenemyfunctions[] =
 	UpdateSpaceStation,
 	UpdateSpaceShooter,
 	UpdateStage3EndBoss,
-	updateenemyAssert,//	UpdateStage6EndBoss,
+	UpdateStage6EndBoss,
 	UpdateSkullBoneAB,
 	UpdateSkullBoneAB,
 	UpdateSkullBoneC,
@@ -2434,7 +2434,7 @@ const MyKillEnemyFunction killenemyfunctions[] =
 	FinishSpaceStation,
 	0,
 	InitAfterBossStage,
-	killenemyAssert,//	FinishStage6EndBoss,
+	FinishStage6EndBoss,
 	0,
 	0,
 	0,
@@ -3028,9 +3028,9 @@ MyKillEnemyFunction playerupdatefunctions[] =
 
 const MyInitEnemyFunction updatestage7middlebossfunctions[] =
 {
-	updatestage7middlebossAssert,//UpdateStage7MiddleBoss0,
-	updatestage7middlebossAssert,//UpdateStage7MiddleBoss1,
-	updatestage7middlebossAssert,//UpdateStage7MiddleBoss2
+	UpdateStage7MiddleBoss0,
+	UpdateStage7MiddleBoss1,
+	UpdateStage7MiddleBoss2
 };
 
 //extern void UpdateSpaceStation1( enemy *en );

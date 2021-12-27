@@ -242,8 +242,13 @@ S:G$UpdateStage5EndBoss$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateStage5Missile$0$0({2}DF,SC:U),C,0,0
 S:G$InitStage6$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage6$0$0({2}DF,SV:S),C,0,0
+S:G$FinishStage6EndBoss$0$0({2}DF,SV:S),C,0,0
+S:G$ResetSkullState$0$0({2}DF,SV:S),C,0,0
 S:G$CreateCustomBoneC$0$0({2}DF,SV:S),C,0,0
 S:G$LaunchSkullBoneC$0$0({2}DF,SV:S),C,0,0
+S:G$DoSkullShootDirection$0$0({2}DF,SV:S),C,0,0
+S:G$DoSkullShootDirectionB$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStage6EndBoss$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateStage6EndBossB0$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage6EndBossB1$0$0({2}DF,SV:S),C,0,0
 S:G$InitStage6EndBossB$0$0({2}DF,SV:S),C,0,0
@@ -354,11 +359,7 @@ S:G$InitStage$0$0({2}DF,SV:S),C,0,0
 S:G$checkgamepause$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
-S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
-S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
 S:G$bigexplosion_psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$ending_psg$0$0({0}DA0d,SC:U),D,0,0
 S:G$enemybomb_psg$0$0({0}DA0d,SC:U),D,0,0

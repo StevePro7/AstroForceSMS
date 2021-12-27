@@ -814,21 +814,21 @@ void UpdatePSG()
 //#endif
 //	en->enemyenergy = 0;
 //}
-unsigned char updateenemyAssert(enemy *en)
-{
-#ifdef _CONSOLE
-	assert(0);
-#endif
-	en->enemyenergy = 0;
-	return 1;
-}
-void updatestageAssert()
-{
-#ifdef _CONSOLE
-	assert(0);
-#endif
-	return;
-}
+//unsigned char updateenemyAssert(enemy *en)
+//{
+//#ifdef _CONSOLE
+//	assert(0);
+//#endif
+//	en->enemyenergy = 0;
+//	return 1;
+//}
+//void updatestageAssert()
+//{
+//#ifdef _CONSOLE
+//	assert(0);
+//#endif
+//	return;
+//}
 //void initstageAssert()
 //{
 //#ifdef _CONSOLE
@@ -836,13 +836,13 @@ void updatestageAssert()
 //#endif
 //	return;
 //}
-void killenemyAssert()
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	return;
-}
+//void killenemyAssert()
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	return;
+//}
 void updatestage6endbossAssert( enemy *en )
 {
 #ifdef _CONSOLE
@@ -890,14 +890,14 @@ void updatestage6endbossAssert( enemy *en )
 //#endif
 //	return;
 //}
-void updatestage7middlebossAssert( enemy *en )
-{
-#ifdef _CONSOLE
-	assert( 0 );
-#endif
-	en->enemyenergy = 0;
-	return;
-}
+//void updatestage7middlebossAssert( enemy *en )
+//{
+//#ifdef _CONSOLE
+//	assert( 0 );
+//#endif
+//	en->enemyenergy = 0;
+//	return;
+//}
 //void updatespacestationAssert( enemy *en )
 //{
 //#ifdef _CONSOLE

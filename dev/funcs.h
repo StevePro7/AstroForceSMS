@@ -117,17 +117,17 @@ void UpdatePSG();
 
 // stevepro
 //void initenemyAssert( enemy *en );
-unsigned char updateenemyAssert( enemy *en );
-void updatestageAssert();
+//unsigned char updateenemyAssert( enemy *en );
+//void updatestageAssert();
 //void initstageAssert();
-void killenemyAssert();
+//void killenemyAssert();
 void updatestage6endbossAssert( enemy *en );	// stevepro
 //void updatestage5endbossAssert( enemy *en );
 //void updatestage3endbossAssert( enemy *en );
 //void updatestage4middlebossAssert( enemy *en );
 //void updatestage4endbossAssert( enemy *en );
 //void playerupdateAssert();
-void updatestage7middlebossAssert( enemy *en );	// stevepro
+//void updatestage7middlebossAssert( enemy *en );	// stevepro
 //void updatespacestationAssert( enemy *en );
 //void updatestage2endbossAssert( enemy *en );
 //unsigned char checkcollisionAssert( unsigned char x, unsigned char y );
