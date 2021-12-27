@@ -14,8 +14,8 @@ S:Lscripter.UpdateScript$sb$1$101({1}SC:U),B,1,-9
 S:Lscripter.UpdateScript$sc$1$101({1}SC:U),R,0,0,[e]
 S:Lscripter.UpdateScript$sp$1$101({2}SI:U),R,0,0,[]
 S:Lscripter.UpdateScript$scr$1$101({2}DG,STscript:S),R,0,0,[c,b]
-S:Lscripter.UpdateScript$sloc0$1$0({2}DG,SC:U),B,1,-4
-S:Lscripter.UpdateScript$sloc1$1$0({2}SI:U),B,1,-2
+S:Lscripter.UpdateScript$sloc0$1$0({2}DG,SC:U),B,1,-2
+S:Lscripter.UpdateScript$sloc1$1$0({2}SI:U),B,1,-4
 S:Lscripter.UpdateScript$sloc2$1$0({2}DG,DG,DG,SC:U),B,1,-6
 S:Lscripter.UpdateScript$sloc3$1$0({2}SI:S),B,1,-8
 F:G$UpdateScripts$0$0({2}DF,SV:S),Z,0,0,0,0,0

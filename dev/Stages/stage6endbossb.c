@@ -31,6 +31,7 @@ void UpdateStage6EndBossB1( enemy *en )
 void InitStage6EndBossB( enemy *en )
 {
 	LoadSprite( skullb_psgcompr, STAGE6ENDBOSSBASE, skullb_psgcompr_bank );
+	en->enemyenergy *= 1;
 }
 
 unsigned char UpdateStage6EndBossB( enemy *en )
