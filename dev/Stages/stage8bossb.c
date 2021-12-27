@@ -2,6 +2,7 @@
 #include "stage1endboss.h"
 #include "stage6endboss.h"
 #include "../Enemies/enemy.h"
+#include "../banks/bank13.h"
 #include "../banks/fixedbank.h"
 #include "../defines.h"
 #include "../funcs.h"
@@ -60,28 +61,28 @@ void UpdateStage8BossB3( enemy *en )
 	DoStage1BossDirectionShoots( en );
 }
 
-//void InitStage8BossB( enemy *en )
-//{
-//	// Load sprite... a big trouble here
-//	LoadSprite( stage8bossb_psgcompr, STAGE8BOSSBBASE, stage8bossb_psgcompr_bank );
-//
-//	// Stop scroll
-//	disablescroll = 1;
-//
-//	// Change stage 8 phase
-//	stage8phase = 3;
-//}
-//
-//unsigned char UpdateStage8BossB( enemy *en )
-//{
-//	if( en->enemyparama == 0 )
-//		DrawSpriteArray( STAGE8BOSSBBASE + 60, en->enemyposx, en->enemyposy, 32, 40 );
-//
-//	// Call custom function
-//	//changeBank(FIXEDBANKSLOT);
-//	if( 0 != updatestage8bossbfunctions[ en->enemyparama ] )
-//		( *( updatestage8bossbfunctions[ en->enemyparama ] ) )( en );
-//
-//	// Return
-//	return 1;
-//}
+void InitStage8BossB( enemy *en )
+{
+	// Load sprite... a big trouble here
+	LoadSprite( stage8bossb_psgcompr, STAGE8BOSSBBASE, stage8bossb_psgcompr_bank );
+
+	// Stop scroll
+	disablescroll = 1;
+
+	// Change stage 8 phase
+	stage8phase = 3;
+}
+
+unsigned char UpdateStage8BossB( enemy *en )
+{
+	if( en->enemyparama == 0 )
+		DrawSpriteArray( STAGE8BOSSBBASE + 60, en->enemyposx, en->enemyposy, 32, 40 );
+
+	// Call custom function
+	//changeBank(FIXEDBANKSLOT);
+	if( 0 != updatestage8bossbfunctions[ en->enemyparama ] )
+		( *( updatestage8bossbfunctions[ en->enemyparama ] ) )( en );
+
+	// Return
+	return 1;
+}
