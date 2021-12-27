@@ -292,6 +292,7 @@ S:G$setIntroStageGraphics$0$0({2}DF,SV:S),C,0,0
 S:G$InitIntroStage$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateSelectorMarks$0$0({2}DF,SV:S),C,0,0
 S:G$InitSelectorStage$0$0({2}DF,SV:S),C,0,0
+S:G$InitGameoverStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitAfterBossStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitCustomStageData$0$0({2}DF,SV:S),C,0,0
 S:G$InitStageData$0$0({2}DF,SV:S),C,0,0

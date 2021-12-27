@@ -7,8 +7,8 @@ S:Lstage7endboss.InitStage7EndBoss$a$1$57({1}SC:U),B,1,-3
 S:Lstage7endboss.InitStage7EndBoss$sloc0$1$0({2}DG,SC:U),B,1,-2
 F:G$DoWormMovement$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstage7endboss.DoWormMovement$en$1$59({2}DG,STenemy:S),B,1,4
-S:Lstage7endboss.DoWormMovement$sloc0$1$0({2}DG,SC:U),B,1,-3
-S:Lstage7endboss.DoWormMovement$sloc1$1$0({1}SC:U),B,1,-1
+S:Lstage7endboss.DoWormMovement$sloc0$1$0({2}DG,SC:U),B,1,-2
+S:Lstage7endboss.DoWormMovement$sloc1$1$0({1}SC:U),B,1,-3
 F:G$UpdateStage7EndBoss$0$0({2}DF,SC:U),Z,0,0,0,0,0
 S:Lstage7endboss.UpdateStage7EndBoss$en$1$61({2}DG,STenemy:S),B,1,4
 S:Lstage7endboss.UpdateStage7EndBoss$sloc0$1$0({1}SC:U),B,1,-1
