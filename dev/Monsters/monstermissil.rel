@@ -9,7 +9,7 @@ S _playery Ref0000
 S _DrawQuadSprite Ref0000
 A _CODE size 6D flags 0 addr 0
 S A$monstermissil$149 Def0066
-S C$monstermissil.c$19$2$63 Def002D
+S C$monstermissil.c$19$2$56 Def002D
 S A$monstermissil$60 Def0002
 S A$monstermissil$61 Def0003
 S A$monstermissil$80 Def000D
@@ -17,14 +17,14 @@ S A$monstermissil$62 Def0004
 S A$monstermissil$90 Def001C
 S A$monstermissil$81 Def0011
 S A$monstermissil$63 Def0007
-S C$monstermissil.c$7$1$60 Def0000
 S G$InitMonsterMissilLeft$0$0 Def0000
 S A$monstermissil$91 Def001D
 S A$monstermissil$82 Def0013
 S A$monstermissil$64 Def0008
-S C$monstermissil.c$8$1$60 Def000A
 S A$monstermissil$92 Def001E
+S C$monstermissil.c$7$1$53 Def0000
 S A$monstermissil$93 Def001F
+S C$monstermissil.c$8$1$53 Def000A
 S A$monstermissil$94 Def0020
 S A$monstermissil$58 Def0000
 S G$UpdateMonsterMissil$0$0 Def000B
@@ -46,13 +46,13 @@ S A$monstermissil$100 Def0026
 S A$monstermissil$101 Def0027
 S A$monstermissil$120 Def0040
 S A$monstermissil$111 Def002D
-S C$monstermissil.c$10$1$60 Def000B
 S A$monstermissil$130 Def004E
 S A$monstermissil$121 Def0042
 S A$monstermissil$112 Def002E
 S A$monstermissil$131 Def004F
 S A$monstermissil$122 Def0044
 S A$monstermissil$113 Def0030
+S C$monstermissil.c$10$1$53 Def000B
 S A$monstermissil$132 Def0050
 S A$monstermissil$114 Def0033
 S A$monstermissil$105 Def0029
@@ -60,7 +60,6 @@ S A$monstermissil$133 Def0051
 S A$monstermissil$124 Def0046
 S A$monstermissil$115 Def0035
 S A$monstermissil$106 Def002B
-S C$monstermissil.c$12$1$62 Def0014
 S A$monstermissil$161 Def006C
 S A$monstermissil$143 Def005D
 S A$monstermissil$134 Def0053
@@ -70,26 +69,27 @@ S A$monstermissil$144 Def005F
 S A$monstermissil$135 Def0056
 S A$monstermissil$126 Def0048
 S A$monstermissil$117 Def0039
-S C$monstermissil.c$14$1$62 Def0024
+S C$monstermissil.c$12$1$55 Def0014
 S A$monstermissil$145 Def0060
 S A$monstermissil$136 Def0057
 S A$monstermissil$127 Def004A
 S A$monstermissil$118 Def003A
-S C$monstermissil.c$24$1$62 Def0067
-S C$monstermissil.c$22$2$63 Def005D
-S C$monstermissil.c$15$1$62 Def0029
 S A$monstermissil$155 Def0069
 S A$monstermissil$146 Def0061
 S A$monstermissil$137 Def005A
 S A$monstermissil$128 Def004B
 S A$monstermissil$119 Def003D
-S C$monstermissil.c$25$1$62 Def006C
+S C$monstermissil.c$14$1$55 Def0024
 S A$monstermissil$156 Def006A
 S A$monstermissil$147 Def0062
 S A$monstermissil$138 Def005B
 S A$monstermissil$129 Def004C
+S C$monstermissil.c$24$1$55 Def0067
+S C$monstermissil.c$22$2$56 Def005D
+S C$monstermissil.c$15$1$55 Def0029
 S A$monstermissil$148 Def0065
 S A$monstermissil$139 Def005C
+S C$monstermissil.c$25$1$55 Def006C
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0

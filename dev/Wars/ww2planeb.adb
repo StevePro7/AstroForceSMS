@@ -1,6 +1,6 @@
 M:ww2planeb
 F:G$UpdateWW2PlaneB$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lww2planeb.UpdateWW2PlaneB$en$1$58({2}DG,STenemy:S),B,1,4
+S:Lww2planeb.UpdateWW2PlaneB$en$1$51({2}DG,STenemy:S),B,1,4
 S:Lww2planeb.UpdateWW2PlaneB$sloc0$1$0({1}SC:U),B,1,-1
 T:Fww2planeb$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
 T:Fww2planeb$enemy[({0}S:S$enemyposx$0$0({1}SC:U),Z,0,0)({1}S:S$enemyposy$0$0({1}SC:U),Z,0,0)({2}S:S$enemytype$0$0({1}SC:U),Z,0,0)({3}S:S$enemyframe$0$0({1}SC:U),Z,0,0)({4}S:S$enemyparama$0$0({1}SC:U),Z,0,0)({5}S:S$enemyparamb$0$0({1}SC:U),Z,0,0)({6}S:S$enemyenergy$0$0({1}SC:U),Z,0,0)({7}S:S$enemywidth$0$0({1}SC:U),Z,0,0)({8}S:S$enemyheight$0$0({1}SC:U),Z,0,0)]
@@ -161,15 +161,6 @@ S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage5endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage3endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatespacestationAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage2endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$checkcollisionAssert$0$0({2}DF,SC:U),C,0,0

@@ -1,6 +1,6 @@
 M:fortressdoor
 F:G$UpdateFortressDoor$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lfortressdoor.UpdateFortressDoor$en$1$58({2}DG,STenemy:S),B,1,4
+S:Lfortressdoor.UpdateFortressDoor$en$1$51({2}DG,STenemy:S),B,1,4
 S:Lfortressdoor.UpdateFortressDoor$sloc0$1$0({1}SC:U),B,1,-1
 S:Lfortressdoor.UpdateFortressDoor$sloc1$1$0({1}SC:U),B,1,-2
 T:Ffortressdoor$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
@@ -162,15 +162,6 @@ S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage5endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage3endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatespacestationAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage2endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$checkcollisionAssert$0$0({2}DF,SC:U),C,0,0

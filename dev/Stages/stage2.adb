@@ -1,8 +1,8 @@
 M:stage2
 F:G$CheckCollisionStage2$0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lstage2.CheckCollisionStage2$x$1$90({1}SC:U),B,1,4
-S:Lstage2.CheckCollisionStage2$y$1$90({1}SC:U),B,1,5
-S:Lstage2.CheckCollisionStage2$l$1$91({1}SC:U),R,0,0,[]
+S:Lstage2.CheckCollisionStage2$x$1$83({1}SC:U),B,1,4
+S:Lstage2.CheckCollisionStage2$y$1$83({1}SC:U),B,1,5
+S:Lstage2.CheckCollisionStage2$l$1$84({1}SC:U),R,0,0,[]
 F:G$UpdateStage2$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$InitStage2$0$0({2}DF,SV:S),Z,0,0,0,0,0
 T:Fstage2$stage3star[({0}S:S$posx$0$0({1}SC:U),Z,0,0)({1}S:S$posy$0$0({1}SC:U),Z,0,0)({2}S:S$speed$0$0({1}SC:U),Z,0,0)]
@@ -226,15 +226,6 @@ S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage5endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage3endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatespacestationAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage2endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$checkcollisionAssert$0$0({2}DF,SC:U),C,0,0

@@ -343,18 +343,9 @@ S:G$UpdatePSG$0$0({2}DF,SV:S),C,0,0
 S:G$initenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updateenemyAssert$0$0({2}DF,SC:U),C,0,0
 S:G$updatestageAssert$0$0({2}DF,SV:S),C,0,0
-S:G$initstageAssert$0$0({2}DF,SV:S),C,0,0
 S:G$killenemyAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage6endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage5endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage3endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage4endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$playerupdateAssert$0$0({2}DF,SV:S),C,0,0
 S:G$updatestage7middlebossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatespacestationAssert$0$0({2}DF,SV:S),C,0,0
-S:G$updatestage2endbossAssert$0$0({2}DF,SV:S),C,0,0
-S:G$checkcollisionAssert$0$0({2}DF,SC:U),C,0,0
 S:G$bigexplosion_psgcompr$0$0({0}DA0d,SC:U),D,0,0
 S:G$ending_psg$0$0({0}DA0d,SC:U),D,0,0
 S:G$enemybomb_psg$0$0({0}DA0d,SC:U),D,0,0
@@ -621,7 +612,7 @@ S:G$stage8bossbshootspeedy$0$0({16}DA16d,SC:S),D,0,0
 S:G$updatestage7middlebossfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$updatespacestationfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$updatestage2endbossfunctions$0$0({8}DA4d,DC,DF,SV:S),D,0,0
-S:G$checkcollisionfunctions$0$0({16}DA8d,DC,DF,SC:U),D,0,0
+S:G$checkcollisionfunctions$0$0({18}DA9d,DC,DF,SC:U),D,0,0
 S:G$updateintro3objectfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$stage8spriteslist$0$0({7}DA7d,SC:U),D,0,0
 S:G$stage8_statics$0$0({1594}DA797d,SI:U),D,0,0

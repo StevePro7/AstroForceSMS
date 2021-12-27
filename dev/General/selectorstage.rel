@@ -32,11 +32,14 @@ S _LoadBGPalette Ref0000
 S _devkit_PORT_A_KEY_LEFT Ref0000
 A _CODE size 1B9 flags 0 addr 0
 S _UpdateSelectorMarks Def0000
-S C$selectorstage.c$101$2$94 Def017E
-S C$selectorstage.c$114$1$93 Def01A2
-S C$selectorstage.c$112$2$94 Def019D
-S C$selectorstage.c$104$2$94 Def0180
+S C$selectorstage.c$106$3$90 Def0196
+S C$selectorstage.c$101$2$87 Def017E
+S C$selectorstage.c$107$3$90 Def019A
 S XG$UpdateSelectorMarks$0$0 Def00ED
+S C$selectorstage.c$114$1$86 Def01A2
+S C$selectorstage.c$112$2$87 Def019D
+S C$selectorstage.c$108$3$90 Def019A
+S C$selectorstage.c$104$2$87 Def0180
 S A$selectorstage$200 Def0099
 S A$selectorstage$110 Def002E
 S A$selectorstage$101 Def0020
@@ -62,7 +65,6 @@ S A$selectorstage$140 Def004E
 S A$selectorstage$131 Def0046
 S A$selectorstage$122 Def003B
 S A$selectorstage$104 Def0028
-S C$selectorstage.c$106$3$97 Def0196
 S A$selectorstage$420 Def0186
 S A$selectorstage$411 Def017E
 S A$selectorstage$330 Def0133
@@ -76,7 +78,6 @@ S A$selectorstage$141 Def004F
 S A$selectorstage$132 Def0047
 S A$selectorstage$123 Def003D
 S A$selectorstage$105 Def002A
-S C$selectorstage.c$107$3$97 Def019A
 S A$selectorstage$421 Def0187
 S A$selectorstage$340 Def013C
 S A$selectorstage$313 Def0121
@@ -90,7 +91,6 @@ S A$selectorstage$142 Def0051
 S A$selectorstage$133 Def004A
 S A$selectorstage$124 Def003F
 S A$selectorstage$115 Def0030
-S C$selectorstage.c$108$3$97 Def019A
 S A$selectorstage$431 Def0196
 S A$selectorstage$422 Def018B
 S A$selectorstage$350 Def014F
@@ -170,6 +170,7 @@ S A$selectorstage$155 Def0063
 S A$selectorstage$146 Def0058
 S A$selectorstage$128 Def0043
 S A$selectorstage$119 Def0037
+S C$selectorstage.c$32$3$80 Def006C
 S A$selectorstage$444 Def019D
 S A$selectorstage$426 Def0193
 S A$selectorstage$417 Def0181
@@ -189,6 +190,7 @@ S A$selectorstage$183 Def007F
 S A$selectorstage$174 Def0077
 S A$selectorstage$156 Def0064
 S A$selectorstage$129 Def0044
+S C$selectorstage.c$24$3$80 Def0017
 S C$selectorstage.c$10$0$0 Def0000
 S A$selectorstage$445 Def019E
 S A$selectorstage$427 Def0194
@@ -209,6 +211,7 @@ S A$selectorstage$184 Def0081
 S A$selectorstage$157 Def0065
 S A$selectorstage$148 Def005A
 S A$selectorstage$139 Def004D
+S C$selectorstage.c$21$5$82 Def0013
 S A$selectorstage$446 Def01A1
 S A$selectorstage$419 Def0185
 S A$selectorstage$383 Def016B
@@ -219,10 +222,7 @@ S A$selectorstage$293 Def00FC
 S A$selectorstage$257 Def00E1
 S A$selectorstage$194 Def008F
 S A$selectorstage$185 Def0084
-S C$selectorstage.c$50$1$85 Def00EE
 S G$InitSelectorStage$0$0 Def00EE
-S C$selectorstage.c$21$2$86 Def00C9
-S C$selectorstage.c$40$5$91 Def00B8
 S A$selectorstage$384 Def016C
 S A$selectorstage$375 Def015C
 S A$selectorstage$348 Def014B
@@ -233,7 +233,7 @@ S A$selectorstage$258 Def00E4
 S A$selectorstage$249 Def00D4
 S A$selectorstage$195 Def0090
 S A$selectorstage$168 Def006C
-S C$selectorstage.c$51$1$85 Def00EE
+S C$selectorstage.c$25$4$81 Def0066
 S A$selectorstage$439 Def019A
 S A$selectorstage$394 Def0174
 S A$selectorstage$385 Def016F
@@ -245,7 +245,9 @@ S A$selectorstage$259 Def00E5
 S A$selectorstage$196 Def0091
 S A$selectorstage$178 Def0078
 S A$selectorstage$169 Def006E
-S C$selectorstage.c$35$4$90 Def00BF
+S C$selectorstage.c$50$1$78 Def00EE
+S C$selectorstage.c$21$2$79 Def00C9
+S C$selectorstage.c$40$5$84 Def00B8
 S A$selectorstage$395 Def0175
 S A$selectorstage$386 Def0170
 S A$selectorstage$377 Def0160
@@ -254,67 +256,65 @@ S A$selectorstage$296 Def0103
 S A$selectorstage$287 Def00F1
 S A$selectorstage$197 Def0094
 S A$selectorstage$179 Def007B
-S C$selectorstage.c$54$1$93 Def00F1
+S C$selectorstage.c$51$1$78 Def00EE
+S C$selectorstage.c$25$5$82 Def0020
 S A$selectorstage$396 Def0177
 S A$selectorstage$378 Def0161
 S A$selectorstage$369 Def0158
 S A$selectorstage$297 Def0104
 S A$selectorstage$288 Def00F2
 S A$selectorstage$198 Def0095
-S C$selectorstage.c$45$1$85 Def00D4
-S C$selectorstage.c$35$5$91 Def0078
-S C$selectorstage.c$32$3$87 Def006C
-S C$selectorstage.c$18$1$85 Def000B
+S C$selectorstage.c$35$4$83 Def00BF
 S A$selectorstage$379 Def0162
 S A$selectorstage$298 Def0105
 S A$selectorstage$289 Def00F5
 S A$selectorstage$199 Def0096
-S C$selectorstage.c$81$2$94 Def0134
-S C$selectorstage.c$46$1$85 Def00ED
-S C$selectorstage.c$24$3$87 Def0017
+S C$selectorstage.c$54$1$86 Def00F1
+S C$selectorstage.c$27$5$82 Def0030
 S A$selectorstage$299 Def0107
-S C$selectorstage.c$75$1$93 Def012F
-S C$selectorstage.c$38$1$85 Def009B
-S C$selectorstage.c$37$5$91 Def0088
-S C$selectorstage.c$21$5$89 Def0013
-S C$selectorstage.c$48$1$85 Def00EE
-S C$selectorstage.c$93$2$94 Def015C
-S C$selectorstage.c$25$4$88 Def0066
+S C$selectorstage.c$45$1$78 Def00D4
+S C$selectorstage.c$35$5$84 Def0078
+S C$selectorstage.c$28$5$82 Def004D
+S C$selectorstage.c$18$1$78 Def000B
+S C$selectorstage.c$81$2$87 Def0134
+S C$selectorstage.c$46$1$78 Def00ED
+S C$selectorstage.c$75$1$86 Def012F
+S C$selectorstage.c$38$1$78 Def009B
+S C$selectorstage.c$37$5$84 Def0088
 S A$selectorstage$70 Def0002
-S C$selectorstage.c$38$6$92 Def00AE
+S C$selectorstage.c$48$1$78 Def00EE
 S A$selectorstage$80 Def000E
 S A$selectorstage$71 Def0006
-S C$selectorstage.c$39$6$92 Def00A2
-S C$selectorstage.c$25$5$89 Def0020
+S C$selectorstage.c$93$2$87 Def015C
 S A$selectorstage$81 Def000F
 S A$selectorstage$72 Def0008
-S C$selectorstage.c$78$2$94 Def012F
+S C$selectorstage.c$38$6$85 Def00AE
 S A$selectorstage$91 Def0017
 S A$selectorstage$82 Def0012
 S A$selectorstage$73 Def0009
-S C$selectorstage.c$86$3$95 Def0151
-S C$selectorstage.c$27$5$89 Def0030
+S C$selectorstage.c$39$6$85 Def00A2
 S _InitSelectorStage Def00EE
 S A$selectorstage$92 Def001A
 S A$selectorstage$74 Def000A
-S C$selectorstage.c$95$3$96 Def0172
-S C$selectorstage.c$87$3$95 Def0153
-S C$selectorstage.c$28$5$89 Def004D
+S C$selectorstage.c$78$2$87 Def012F
 S A$selectorstage$93 Def001B
-S C$selectorstage.c$96$3$96 Def0174
-S C$selectorstage.c$88$3$95 Def0157
+S C$selectorstage.c$86$3$88 Def0151
 S A$selectorstage$94 Def001C
-S C$selectorstage.c$97$3$96 Def0179
-S C$selectorstage.c$89$3$95 Def0158
+S C$selectorstage.c$95$3$89 Def0172
+S C$selectorstage.c$87$3$88 Def0153
 S A$selectorstage$95 Def001D
 S A$selectorstage$86 Def0013
-S C$selectorstage.c$98$3$96 Def017A
+S C$selectorstage.c$96$3$89 Def0174
+S C$selectorstage.c$88$3$88 Def0157
 S A$selectorstage$96 Def001E
 S A$selectorstage$78 Def000B
 S A$selectorstage$69 Def0000
 S Fselectorstage$__str_0$0$0 Def01A4
+S C$selectorstage.c$97$3$89 Def0179
+S C$selectorstage.c$89$3$88 Def0158
 S A$selectorstage$97 Def001F
 S A$selectorstage$79 Def000D
+S C$selectorstage.c$98$3$89 Def017A
 S XG$InitSelectorStage$0$0 Def01A2
 S G$UpdateSelectorMarks$0$0 Def0000
 A _DATA size 0 flags 0 addr 0
@@ -365,21 +365,21 @@ T 5C 00 C5 D5 D5 33 CD 00 00 33 D1 C1 1C 7B D6 04
 R 00 00 00 00 02 07 15 00
 T 6A 00 38 C4 3E 00 00 DD 86 FC 6F 3E 00 00 CE 00
 R 00 00 00 00 0B 05 0A 00 8B 0C 0A 00
-T 76 00 67 4E DD 7E FC 5F 87 83 87 C6 02 DD 77 FF
+T 76 00 67 4E DD 7E FC 5F 87 83 87 C6 02 DD 77 FE
 R 00 00 00 00
 T 84 00 DD 36 FD 00
 R 00 00 00 00
 T 88 00
 R 00 00 00 00
-T 88 00 DD 7E FD C6 0A 47 C5 C5 33 DD 7E FF F5 33
+T 88 00 DD 7E FD C6 0A 47 C5 C5 33 DD 7E FE F5 33
 R 00 00 00 00
-T 96 00 CD 00 00 F1 C1 DD 71 FE DD 36 FB 00
+T 96 00 CD 00 00 F1 C1 DD 71 FF DD 36 FB 00
 R 00 00 00 00 02 03 09 00
 T A2 00
 R 00 00 00 00
-T A2 00 DD 46 FE DD 34 FE C5 33 CD 00 00 33 DD 34
+T A2 00 DD 46 FF DD 34 FF C5 33 CD 00 00 33 DD 34
 R 00 00 00 00 02 0B 15 00
-T B0 00 FB DD 7E FB D6 04 38 EA DD 4E FE 0C 0C 0C
+T B0 00 FB DD 7E FB D6 04 38 EA DD 4E FF 0C 0C 0C
 R 00 00 00 00
 T BE 00 0C DD 34 FD DD 7E FD D6 04 38 BF DD 34 FC
 R 00 00 00 00

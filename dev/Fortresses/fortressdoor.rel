@@ -15,26 +15,26 @@ S A$fortressdoor$102 Def0046
 S A$fortressdoor$121 Def0060
 S A$fortressdoor$112 Def004F
 S A$fortressdoor$103 Def0047
+S C$fortressdoor.c$10$1$52 Def0023
 S A$fortressdoor$122 Def0061
 S A$fortressdoor$113 Def0050
 S A$fortressdoor$114 Def0053
+S C$fortressdoor.c$12$1$52 Def0027
 S A$fortressdoor$115 Def0054
+S C$fortressdoor.c$13$1$52 Def0048
 S A$fortressdoor$134 Def0068
 S A$fortressdoor$116 Def0055
 S A$fortressdoor$107 Def0048
+S C$fortressdoor.c$14$1$52 Def0062
 S A$fortressdoor$126 Def0062
 S A$fortressdoor$117 Def0056
 S A$fortressdoor$108 Def0049
+S C$fortressdoor.c$15$1$52 Def0068
 S A$fortressdoor$118 Def0059
 S A$fortressdoor$109 Def004B
 S A$fortressdoor$128 Def0064
 S A$fortressdoor$119 Def005A
-S C$fortressdoor.c$10$1$59 Def0023
 S A$fortressdoor$129 Def0066
-S C$fortressdoor.c$12$1$59 Def0027
-S C$fortressdoor.c$13$1$59 Def0048
-S C$fortressdoor.c$14$1$59 Def0062
-S C$fortressdoor.c$15$1$59 Def0068
 S A$fortressdoor$60 Def0009
 S A$fortressdoor$61 Def000C
 S A$fortressdoor$80 Def0023
@@ -49,6 +49,7 @@ S A$fortressdoor$91 Def002F
 S A$fortressdoor$73 Def0019
 S A$fortressdoor$64 Def0011
 S A$fortressdoor$55 Def0006
+S C$fortressdoor.c$7$1$52 Def0009
 S A$fortressdoor$92 Def0032
 S A$fortressdoor$74 Def001C
 S A$fortressdoor$65 Def0012
@@ -56,6 +57,7 @@ S A$fortressdoor$56 Def0008
 S A$fortressdoor$93 Def0033
 S A$fortressdoor$75 Def001E
 S A$fortressdoor$66 Def0013
+S C$fortressdoor.c$9$1$52 Def0018
 S A$fortressdoor$94 Def0036
 S A$fortressdoor$76 Def0021
 S A$fortressdoor$67 Def0014
@@ -70,9 +72,7 @@ S A$fortressdoor$88 Def002A
 S C$fortressdoor.c$5$0$0 Def0000
 S A$fortressdoor$98 Def003E
 S A$fortressdoor$89 Def002D
-S C$fortressdoor.c$7$1$59 Def0009
 S A$fortressdoor$99 Def0041
-S C$fortressdoor.c$9$1$59 Def0018
 S _UpdateFortressDoor Def0000
 S XG$UpdateFortressDoor$0$0 Def0068
 A _DATA size 0 flags 0 addr 0

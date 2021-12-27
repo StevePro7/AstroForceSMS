@@ -47,6 +47,7 @@ S A$stage4middleboss$131 Def0058
 S A$stage4middleboss$122 Def004F
 S A$stage4middleboss$113 Def0043
 S A$stage4middleboss$104 Def0038
+S C$stage4middleboss.c$30$1$60 Def00BE
 S A$stage4middleboss$510 Def01BF
 S A$stage4middleboss$501 Def01B6
 S A$stage4middleboss$420 Def0172
@@ -81,8 +82,8 @@ S A$stage4middleboss$205 Def009A
 S A$stage4middleboss$142 Def0061
 S A$stage4middleboss$115 Def0045
 S A$stage4middleboss$106 Def003A
+S C$stage4middleboss.c$32$1$60 Def00BF
 S XG$UpdateStage4MiddleBoss2$0$0 Def00BE
-S C$stage4middleboss.c$10$1$64 Def0009
 S _FinishStage4MiddleBoss Def0185
 S A$stage4middleboss$512 Def01C4
 S A$stage4middleboss$503 Def01B8
@@ -103,9 +104,6 @@ S A$stage4middleboss$170 Def0076
 S A$stage4middleboss$143 Def0062
 S A$stage4middleboss$107 Def003B
 S XG$UpdateStage4MiddleBoss3$0$0 Def015D
-S C$stage4middleboss.c$40$2$70 Def0148
-S C$stage4middleboss.c$20$1$64 Def0070
-S C$stage4middleboss.c$11$1$64 Def0019
 S A$stage4middleboss$531 Def01D3
 S A$stage4middleboss$513 Def01C5
 S A$stage4middleboss$423 Def0176
@@ -128,9 +126,9 @@ S A$stage4middleboss$135 Def005A
 S A$stage4middleboss$117 Def0046
 S A$stage4middleboss$108 Def003C
 S XG$UpdateStage4MiddleBoss4$0$0 Def0184
-S C$stage4middleboss.c$41$2$70 Def014C
-S C$stage4middleboss.c$21$1$64 Def0073
-S C$stage4middleboss.c$12$1$64 Def0035
+S C$stage4middleboss.c$50$1$62 Def015E
+S C$stage4middleboss.c$41$1$62 Def0144
+S C$stage4middleboss.c$10$1$57 Def0009
 S _UpdateStage4MiddleBoss Def0192
 S A$stage4middleboss$532 Def01D5
 S A$stage4middleboss$523 Def01CD
@@ -154,8 +152,10 @@ S A$stage4middleboss$136 Def005D
 S A$stage4middleboss$127 Def0054
 S A$stage4middleboss$118 Def0048
 S A$stage4middleboss$109 Def003D
-S C$stage4middleboss.c$22$1$64 Def008C
-S C$stage4middleboss.c$13$1$64 Def0054
+S C$stage4middleboss.c$70$1$70 Def019A
+S C$stage4middleboss.c$40$2$63 Def0148
+S C$stage4middleboss.c$20$1$57 Def0070
+S C$stage4middleboss.c$11$1$57 Def0019
 S A$stage4middleboss$524 Def01CE
 S A$stage4middleboss$515 Def01C7
 S A$stage4middleboss$461 Def018B
@@ -178,7 +178,10 @@ S A$stage4middleboss$155 Def006B
 S A$stage4middleboss$137 Def005E
 S A$stage4middleboss$128 Def0055
 S A$stage4middleboss$119 Def004A
-S C$stage4middleboss.c$23$1$64 Def0091
+S C$stage4middleboss.c$41$2$63 Def014C
+S C$stage4middleboss.c$34$1$62 Def00CA
+S C$stage4middleboss.c$21$1$57 Def0073
+S C$stage4middleboss.c$12$1$57 Def0035
 S A$stage4middleboss$525 Def01CF
 S A$stage4middleboss$516 Def01C8
 S A$stage4middleboss$507 Def01B9
@@ -201,8 +204,10 @@ S A$stage4middleboss$174 Def007B
 S A$stage4middleboss$156 Def006C
 S A$stage4middleboss$147 Def0064
 S A$stage4middleboss$129 Def0056
-S C$stage4middleboss.c$30$1$67 Def00BE
-S C$stage4middleboss.c$24$1$64 Def00A9
+S C$stage4middleboss.c$35$1$62 Def010D
+S C$stage4middleboss.c$28$1$60 Def00AA
+S C$stage4middleboss.c$22$1$57 Def008C
+S C$stage4middleboss.c$13$1$57 Def0054
 S A$stage4middleboss$526 Def01D2
 S A$stage4middleboss$517 Def01C9
 S A$stage4middleboss$508 Def01BC
@@ -225,8 +230,8 @@ S A$stage4middleboss$184 Def0089
 S A$stage4middleboss$175 Def007D
 S A$stage4middleboss$157 Def006D
 S A$stage4middleboss$148 Def0067
-S C$stage4middleboss.c$61$1$73 Def0185
-S C$stage4middleboss.c$52$1$73 Def015E
+S C$stage4middleboss.c$29$1$60 Def00B7
+S C$stage4middleboss.c$23$1$57 Def0091
 S A$stage4middleboss$518 Def01CA
 S A$stage4middleboss$509 Def01BD
 S A$stage4middleboss$491 Def01A4
@@ -248,11 +253,8 @@ S A$stage4middleboss$176 Def007E
 S A$stage4middleboss$167 Def0073
 S A$stage4middleboss$158 Def006F
 S A$stage4middleboss$149 Def0068
-S C$stage4middleboss.c$53$1$73 Def016D
-S C$stage4middleboss.c$44$3$71 Def0150
-S C$stage4middleboss.c$32$1$67 Def00BF
-S C$stage4middleboss.c$26$1$64 Def00AA
-S C$stage4middleboss.c$15$2$65 Def005A
+S C$stage4middleboss.c$74$1$70 Def01B9
+S C$stage4middleboss.c$24$1$57 Def00A9
 S A$stage4middleboss$537 Def01D7
 S A$stage4middleboss$519 Def01CB
 S A$stage4middleboss$492 Def01A5
@@ -268,9 +270,9 @@ S A$stage4middleboss$249 Def00B8
 S A$stage4middleboss$186 Def008B
 S A$stage4middleboss$177 Def007F
 S A$stage4middleboss$168 Def0074
-S C$stage4middleboss.c$45$3$71 Def0152
-S C$stage4middleboss.c$38$2$70 Def0129
-S C$stage4middleboss.c$16$2$65 Def0060
+S C$stage4middleboss.c$75$1$70 Def01CD
+S C$stage4middleboss.c$61$1$66 Def0185
+S C$stage4middleboss.c$52$1$66 Def015E
 S A$stage4middleboss$493 Def01A6
 S A$stage4middleboss$457 Def0185
 S A$stage4middleboss$439 Def0182
@@ -281,11 +283,11 @@ S A$stage4middleboss$286 Def00E1
 S A$stage4middleboss$259 Def00BE
 S A$stage4middleboss$178 Def0080
 S A$stage4middleboss$169 Def0075
-S C$stage4middleboss.c$50$1$69 Def015E
-S C$stage4middleboss.c$41$1$69 Def0144
-S C$stage4middleboss.c$39$2$70 Def013D
-S C$stage4middleboss.c$19$1$64 Def006A
-S C$stage4middleboss.c$17$2$65 Def0064
+S C$stage4middleboss.c$53$1$66 Def016D
+S C$stage4middleboss.c$48$1$62 Def015D
+S C$stage4middleboss.c$44$3$64 Def0150
+S C$stage4middleboss.c$26$1$57 Def00AA
+S C$stage4middleboss.c$15$2$58 Def005A
 S A$stage4middleboss$494 Def01A7
 S A$stage4middleboss$485 Def019A
 S A$stage4middleboss$458 Def0188
@@ -297,7 +299,9 @@ S A$stage4middleboss$278 Def00CA
 S A$stage4middleboss$269 Def00BF
 S A$stage4middleboss$197 Def0091
 S A$stage4middleboss$179 Def0082
-S C$stage4middleboss.c$70$1$77 Def019A
+S C$stage4middleboss.c$45$3$64 Def0152
+S C$stage4middleboss.c$38$2$63 Def0129
+S C$stage4middleboss.c$16$2$58 Def0060
 S A$stage4middleboss$495 Def01AA
 S A$stage4middleboss$486 Def019D
 S A$stage4middleboss$459 Def0189
@@ -306,8 +310,10 @@ S A$stage4middleboss$297 Def00F9
 S A$stage4middleboss$288 Def00E7
 S A$stage4middleboss$279 Def00CD
 S A$stage4middleboss$198 Def0092
-S C$stage4middleboss.c$64$1$75 Def0185
-S C$stage4middleboss.c$34$1$69 Def00CA
+S C$stage4middleboss.c$78$1$70 Def01D3
+S C$stage4middleboss.c$39$2$63 Def013D
+S C$stage4middleboss.c$19$1$57 Def006A
+S C$stage4middleboss.c$17$2$58 Def0064
 S A$stage4middleboss$496 Def01AB
 S A$stage4middleboss$487 Def01A0
 S A$stage4middleboss$469 Def0191
@@ -316,28 +322,24 @@ S A$stage4middleboss$379 Def0156
 S A$stage4middleboss$298 Def00FC
 S A$stage4middleboss$289 Def00EA
 S A$stage4middleboss$199 Def0093
+S C$stage4middleboss.c$79$1$70 Def01D7
 S XG$FinishStage4MiddleBoss$0$0 Def0191
-S C$stage4middleboss.c$65$1$75 Def0191
-S C$stage4middleboss.c$56$2$74 Def0177
-S C$stage4middleboss.c$35$1$69 Def010D
-S C$stage4middleboss.c$28$1$67 Def00AA
 S A$stage4middleboss$497 Def01AC
 S A$stage4middleboss$488 Def01A1
 S A$stage4middleboss$479 Def0192
 S A$stage4middleboss$299 Def00FD
-S C$stage4middleboss.c$59$1$73 Def0184
-S C$stage4middleboss.c$57$2$74 Def017D
-S C$stage4middleboss.c$29$1$67 Def00B7
+S C$stage4middleboss.c$64$1$68 Def0185
 S A$stage4middleboss$498 Def01AF
 S A$stage4middleboss$489 Def01A2
 S XG$UpdateStage4MiddleBoss$0$0 Def01D7
-S C$stage4middleboss.c$74$1$77 Def01B9
-S C$stage4middleboss.c$67$1$75 Def0192
+S C$stage4middleboss.c$65$1$68 Def0191
+S C$stage4middleboss.c$56$2$67 Def0177
 S A$stage4middleboss$499 Def01B0
-S C$stage4middleboss.c$75$1$77 Def01CD
+S C$stage4middleboss.c$59$1$66 Def0184
+S C$stage4middleboss.c$57$2$67 Def017D
 S A$stage4middleboss$70 Def000F
 S A$stage4middleboss$61 Def0000
-S C$stage4middleboss.c$48$1$69 Def015D
+S C$stage4middleboss.c$67$1$68 Def0192
 S A$stage4middleboss$80 Def0019
 S A$stage4middleboss$71 Def0012
 S A$stage4middleboss$62 Def0002
@@ -345,12 +347,10 @@ S A$stage4middleboss$90 Def0027
 S A$stage4middleboss$81 Def001A
 S A$stage4middleboss$72 Def0013
 S A$stage4middleboss$63 Def0006
-S C$stage4middleboss.c$78$1$77 Def01D3
 S A$stage4middleboss$91 Def002A
 S A$stage4middleboss$82 Def001B
 S A$stage4middleboss$73 Def0014
 S A$stage4middleboss$64 Def0008
-S C$stage4middleboss.c$79$1$77 Def01D7
 S A$stage4middleboss$92 Def002B
 S A$stage4middleboss$83 Def001C
 S A$stage4middleboss$74 Def0015
@@ -433,15 +433,15 @@ T BF 00 DD E5 DD 21 00 00 DD 39 F5 F5 3B 3A 00 00
 R 00 00 00 00 02 0E 05 00
 T CD 00 DD 77 FE DD 36 FF 00 DD 7E FE C6 10 DD 77
 R 00 00 00 00
-T DB 00 FB DD 7E FF CE 00 DD 77 FC DD 4E 04 DD 46
+T DB 00 FC DD 7E FF CE 00 DD 77 FD DD 4E 04 DD 46
 R 00 00 00 00
-T E9 00 05 0A DD 77 FD 5F 16 00 21 18 00 19 DD 7E
+T E9 00 05 0A DD 77 FB 5F 16 00 21 18 00 19 DD 7E
 R 00 00 00 00
-T F7 00 FB 95 DD 7E FC 9C E2 02 01 EE 80
+T F7 00 FC 95 DD 7E FD 9C E2 02 01 EE 80
 R 00 00 00 00 00 09 00 00
 T 02 01
 R 00 00 00 00
-T 02 01 F2 0D 01 DD 7E FD C6 FC 02 18 4C
+T 02 01 F2 0D 01 DD 7E FB C6 FC 02 18 4C
 R 00 00 00 00 00 03 00 00
 T 0D 01
 R 00 00 00 00
@@ -451,11 +451,11 @@ T 1A 01 1E 01 EE 80
 R 00 00 00 00 00 02 00 00
 T 1E 01
 R 00 00 00 00
-T 1E 01 F2 29 01 DD 7E FD C6 04 02 18 30
+T 1E 01 F2 29 01 DD 7E FB C6 04 02 18 30
 R 00 00 00 00 00 03 00 00
 T 29 01
 R 00 00 00 00
-T 29 01 69 60 23 7E C6 20 57 DD 7E FD C6 10 C5 5F
+T 29 01 69 60 23 7E C6 20 57 DD 7E FB C6 10 C5 5F
 R 00 00 00 00
 T 37 01 D5 CD 00 00 F1 C1 21 05 00 09 5E 1D 73 21
 R 00 00 00 00 02 04 00 00
