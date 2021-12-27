@@ -38,6 +38,7 @@
 #include "../Monsters/monsterhead.h"
 #include "../Monsters/monstermissil.h"
 #include "../Players/player.h"
+#include "../Players/playstage.h"
 #include "../Spaces/spaceasteroid.h"
 #include "../Spaces/spaceshooter.h"
 #include "../Spaces/spacestation.h"
@@ -2331,14 +2332,14 @@ const MyUpdateEnemyFunction updateenemyfunctions[] =
 const MyKillEnemyFunction updatestagefunctions[] =
 {
 	0,
-	updatestageAssert,//	UpdateStage7,
+	UpdateStage7,
 	UpdateStage5,
-	updatestageAssert,//	UpdateStage4,
-	updatestageAssert,//	UpdateStage2,
-	updatestageAssert,//	UpdateStage8,
-	updatestageAssert,//	UpdateStage3,
-	updatestageAssert,//	UpdateStage1,
-	updatestageAssert,//	UpdateStage6
+	UpdateStage4,
+	UpdateStage2,
+	UpdateStage8,
+	UpdateStage3,
+	UpdateStage1,
+	UpdateStage6
 };
 
 //extern void InitStage7();
@@ -2355,12 +2356,12 @@ const MyKillEnemyFunction initstagefunctions[] =
 	0,
 	0,//	InitStage7,
 	InitStage5,
-	initstageAssert,//	InitStage4,
-	initstageAssert,//	InitStage2,
-	initstageAssert,//	InitStage8,
-	initstageAssert,//	InitStage3,
-	initstageAssert,//	InitStage1,
-	initstageAssert,//	InitStage6,
+	InitStage4,
+	InitStage2,
+	InitStage8,
+	InitStage3,
+	InitStage1,
+	InitStage6,
 };
 //
 //extern void FinishStage4MiddleBoss();
@@ -2387,8 +2388,8 @@ const MyKillEnemyFunction killenemyfunctions[] =
 	0,
 	0,
 	0,
-	killenemyAssert,//	FinishStage4MiddleBoss,
-	killenemyAssert,//	InitAfterBossStage,
+	FinishStage4MiddleBoss,
+	InitAfterBossStage,
 	0,
 	0,
 	0,
@@ -2399,25 +2400,14 @@ const MyKillEnemyFunction killenemyfunctions[] =
 	0,
 	0,
 	0,
-	killenemyAssert,//	InitAfterBossStage,
+	InitAfterBossStage,
 	0,
 	0,
 	0,
 	0,
 	0,
-	killenemyAssert,//	FinishStage7MiddleBoss,
-	killenemyAssert,//	InitAfterBossStage,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	killenemyAssert,//	FinishStage1MiddleBoss,
-	killenemyAssert,//	InitAfterBossStage,
-	0,
-	killenemyAssert,//	FinishVulcanStation,
+	killenemyAssert,//	FinishStage7MiddleBoss
+	InitAfterBossStage,
 	0,
 	0,
 	0,
@@ -2425,25 +2415,34 @@ const MyKillEnemyFunction killenemyfunctions[] =
 	0,
 	0,
 	0,
-	killenemyAssert,//	InitAfterBossStage,
+	FinishStage1MiddleBoss,
+	InitAfterBossStage,
+	0,
+	FinishVulcanStation,
 	0,
 	0,
 	0,
 	0,
-	killenemyAssert,//	FinishSpaceStation,
 	0,
-	killenemyAssert,//	InitAfterBossStage,
+	0,
+	0,
+	InitAfterBossStage,
+	0,
+	0,
+	0,
+	0,
+	FinishSpaceStation,
+	0,
+	InitAfterBossStage,
 	killenemyAssert,//	FinishStage6EndBoss,
 	0,
 	0,
 	0,
 	0,
-	killenemyAssert,//	InitAfterBossStage,
+	InitAfterBossStage,
 	0,
-	killenemyAssert,//	InitAfterBossStage,
-	killenemyAssert,//	InitAfterBossStage,
-	0,
-	0,
+	InitAfterBossStage,
+	InitAfterBossStage,
 	0,
 	0,
 	0,
@@ -2452,11 +2451,13 @@ const MyKillEnemyFunction killenemyfunctions[] =
 	0,
 	0,
 	0,
-	killenemyAssert,//	InitAfterBossStage,
 	0,
 	0,
-	killenemyAssert,//	InitAfterBossStage,
-	killenemyAssert,//	FinishStage8BossC,
+	InitAfterBossStage,
+	0,
+	0,
+	InitAfterBossStage,
+	FinishStage8BossC,
 	0,
 	0,
 	0,
@@ -2947,10 +2948,10 @@ const MyInitEnemyFunction updatestage5endbossfunctions[] =
 const MyInitEnemyFunction updatestage3endbossfunctions[] =
 {
 	DoCommonBossAppearingFunction,
-	updatestage3endbossAssert,//UpdateStage3EndBoss1,
-	updatestage3endbossAssert,//UpdateStage3EndBoss2,
-	updatestage3endbossAssert,//UpdateStage3EndBoss1,
-	updatestage3endbossAssert,//UpdateStage3EndBoss2
+	UpdateStage3EndBoss1,
+	UpdateStage3EndBoss2,
+	UpdateStage3EndBoss1,
+	UpdateStage3EndBoss2
 };
 
 
@@ -2962,10 +2963,10 @@ const MyInitEnemyFunction updatestage3endbossfunctions[] =
 const MyInitEnemyFunction updatestage4middlebossfunctions[] =
 {
 	DoCommonBossAppearingFunction,
-	updatestage4middlebossAssert,//UpdateStage4MiddleBoss1,
-	updatestage4middlebossAssert,//	UpdateStage4MiddleBoss2,
-	updatestage4middlebossAssert,//UpdateStage4MiddleBoss3,
-	updatestage4middlebossAssert,//UpdateStage4MiddleBoss4
+	UpdateStage4MiddleBoss1,
+	UpdateStage4MiddleBoss2,
+	UpdateStage4MiddleBoss3,
+	UpdateStage4MiddleBoss4
 };
 
 //extern void	DoCommonBossAppearingFunction( enemy *en );
@@ -3038,8 +3039,8 @@ const MyInitEnemyFunction updatestage7middlebossfunctions[] =
 const MyInitEnemyFunction updatespacestationfunctions[] =
 {
 	DoCommonBossAppearingFunction,
-	updatespacestationAssert,//UpdateSpaceStation1,
-	updatespacestationAssert,//	UpdateSpaceStation2
+	UpdateSpaceStation1,
+	UpdateSpaceStation2
 };
 
 //extern void UpdateStage2EndBoss1( enemy *en );
@@ -3049,9 +3050,9 @@ const MyInitEnemyFunction updatespacestationfunctions[] =
 const MyInitEnemyFunction updatestage2endbossfunctions[] =
 {
 	DoCommonBossAppearingFunction,
-	updatestage2endbossAssert,//UpdateStage2EndBoss1,
-	updatestage2endbossAssert,//UpdateStage2EndBoss2,
-	updatestage2endbossAssert,//UpdateStage2EndBoss3
+	UpdateStage2EndBoss1,
+	UpdateStage2EndBoss2,
+	UpdateStage2EndBoss3
 };
 
 //unsigned char CheckCollisionStage7( unsigned char x, unsigned char y );
