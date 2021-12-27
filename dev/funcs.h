@@ -116,7 +116,7 @@ void UpdatePSG();
 //extern unsigned char lastplayedmusiclooped;
 
 // stevepro
-void initenemyAssert( enemy *en );
+//void initenemyAssert( enemy *en );
 unsigned char updateenemyAssert( enemy *en );
 void updatestageAssert();
 //void initstageAssert();
