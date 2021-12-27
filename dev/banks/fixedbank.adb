@@ -564,11 +564,11 @@ S:G$stage3scriptb$0$0({25}DA25d,SC:U),D,0,0
 S:G$stage3script$0$0({45}DA45d,SC:U),D,0,0
 S:G$stage3_statics$0$0({632}DA316d,SI:U),D,0,0
 S:G$stage7_statics$0$0({960}DA480d,SI:U),D,0,0
-S:G$initenemyfunctions$0$0({110}DA55d,DC,DF,SV:S),D,0,0
+S:G$initenemyfunctions$0$0({172}DA86d,DC,DF,SV:S),D,0,0
 S:G$updateenemyfunctions$0$0({172}DA86d,DC,DF,SC:U),D,0,0
 S:G$updatestagefunctions$0$0({18}DA9d,DC,DF,SV:S),D,0,0
 S:G$initstagefunctions$0$0({18}DA9d,DC,DF,SV:S),D,0,0
-S:G$killenemyfunctions$0$0({38}DA19d,DC,DF,SV:S),D,0,0
+S:G$killenemyfunctions$0$0({170}DA85d,DC,DF,SV:S),D,0,0
 S:G$stage4_scrollers$0$0({160}DA80d,SI:S),D,0,0
 S:G$stage1_scrollers$0$0({40}DA20d,SI:S),D,0,0
 S:G$stage2_scrollers$0$0({30}DA15d,SI:S),D,0,0
@@ -603,7 +603,7 @@ S:G$stage8bossbshootspeedy$0$0({16}DA16d,SC:S),D,0,0
 S:G$updatestage7middlebossfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$updatespacestationfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$updatestage2endbossfunctions$0$0({8}DA4d,DC,DF,SV:S),D,0,0
-S:G$checkcollisionfunctions$0$0({8}DA4d,DC,DF,SC:U),D,0,0
+S:G$checkcollisionfunctions$0$0({16}DA8d,DC,DF,SC:U),D,0,0
 S:G$updateintro3objectfunctions$0$0({6}DA3d,DC,DF,SV:S),D,0,0
 S:G$stage8spriteslist$0$0({7}DA7d,SC:U),D,0,0
 S:G$stage8_statics$0$0({1594}DA797d,SI:U),D,0,0
