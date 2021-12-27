@@ -8,6 +8,7 @@ stage6endbossb
 stage7endboss
 stage7middleboss
 
+LATEST	0x7928
 
 21/12/2021
 
