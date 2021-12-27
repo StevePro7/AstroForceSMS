@@ -166,6 +166,12 @@ S:G$UpdatePlayerState3$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayerState2$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayerState1$0$0({2}DF,SV:S),C,0,0
 S:G$UpdatePlayer$0$0({2}DF,SV:S),C,0,0
+S:G$InitAfterBossStage$0$0({2}DF,SV:S),C,0,0
+S:G$InitCustomStageData$0$0({2}DF,SV:S),C,0,0
+S:G$InitStageData$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStagePassA$0$0({2}DF,SV:S),C,0,0
+S:G$UpdateStagePassB$0$0({2}DF,SV:S),C,0,0
+S:G$InitPlayStage$0$0({2}DF,SV:S),C,0,0
 S:G$InitSpaceAsteroid$0$0({2}DF,SV:S),C,0,0
 S:G$UpdateSpaceAsteroid$0$0({2}DF,SC:U),C,0,0
 S:G$UpdateSpaceShooter$0$0({2}DF,SC:U),C,0,0

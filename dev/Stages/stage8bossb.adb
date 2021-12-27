@@ -2,10 +2,10 @@ M:stage8bossb
 F:G$UpdateStage8BossB1$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstage8bossb.UpdateStage8BossB1$en$1$69({2}DG,STenemy:S),B,1,4
 S:Lstage8bossb.UpdateStage8BossB1$a$1$70({1}SC:U),R,0,0,[e]
-S:Lstage8bossb.UpdateStage8BossB1$sloc0$1$0({2}DG,SC:U),B,1,-2
-S:Lstage8bossb.UpdateStage8BossB1$sloc1$1$0({2}DG,SC:U),B,1,-5
-S:Lstage8bossb.UpdateStage8BossB1$sloc2$1$0({1}SC:U),B,1,-3
-S:Lstage8bossb.UpdateStage8BossB1$sloc3$1$0({1}SC:U),B,1,-6
+S:Lstage8bossb.UpdateStage8BossB1$sloc0$1$0({2}DG,SC:U),B,1,-6
+S:Lstage8bossb.UpdateStage8BossB1$sloc1$1$0({2}DG,SC:U),B,1,-3
+S:Lstage8bossb.UpdateStage8BossB1$sloc2$1$0({1}SC:U),B,1,-4
+S:Lstage8bossb.UpdateStage8BossB1$sloc3$1$0({1}SC:U),B,1,-1
 F:G$UpdateStage8BossB2$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstage8bossb.UpdateStage8BossB2$en$1$73({2}DG,STenemy:S),B,1,4
 F:G$UpdateStage8BossB3$0$0({2}DF,SV:S),Z,0,0,0,0,0

@@ -8,7 +8,11 @@ stage6endbossb
 stage7endboss
 stage7middleboss
 
-LATEST	0x7928
+LATEST	
+0x7928
+0x7940
+0x7910
+
 
 21/12/2021
 
