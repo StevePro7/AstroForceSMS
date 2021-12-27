@@ -148,7 +148,7 @@ void MovePlayer()
 }
 
 // Check if player can shoot
-void CheckShootPlayer()
+void CheckShootPlayer()		// stevepro
 {
 	// Up to counter
 	playershootcounter++;
@@ -167,7 +167,7 @@ void CheckShootPlayer()
 		}
 	}
 	// Check top
-	else if( keystatus&devkit_PORT_A_KEY_1() )
+	if( keystatus&devkit_PORT_A_KEY_1() )
 	{
 		if( playershootcounter > PLAYERSHOOTINTERVAL_NORMAL )
 		{
