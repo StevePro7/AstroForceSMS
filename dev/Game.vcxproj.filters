@@ -85,6 +85,12 @@
     <Filter Include="Source Files\Spaces">
       <UniqueIdentifier>{8f085376-5a7c-413b-962f-c5be0d1059c2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{87d33f64-9f2b-40ed-a9c4-0fc7780ca417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{26aed8f5-1b89-4da4-a110-b126deee07ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -140,15 +146,6 @@
     </ClCompile>
     <ClCompile Include="banks\bank15.c">
       <Filter>Source Files\banks</Filter>
-    </ClCompile>
-    <ClCompile Include="vars.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="defines.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="funcs.c">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="General\mikgamesstage.c">
       <Filter>Source Files\General</Filter>
@@ -417,6 +414,18 @@
     <ClCompile Include="Wars\ww2zeppelin.c">
       <Filter>Source Files\Wars</Filter>
     </ClCompile>
+    <ClCompile Include="defines.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="funcs.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="vars.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat">
@@ -480,15 +489,6 @@
     </ClInclude>
     <ClInclude Include="banks\fixedbank.h">
       <Filter>Header Files\banks</Filter>
-    </ClInclude>
-    <ClInclude Include="defines.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="vars.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="funcs.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="General\mikgamesstage.h">
       <Filter>Header Files\General</Filter>
@@ -756,6 +756,15 @@
     </ClInclude>
     <ClInclude Include="Wars\ww2zeppelin.h">
       <Filter>Header Files\Wars</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="funcs.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="vars.h">
+      <Filter>Header Files\common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -10,53 +10,38 @@ void main()
 	while( 1 )
 	{
 		// Mikgames
-		//InitMikGamesStage();		// TODO uncomment
+		InitMikGamesStage();
 
 		// Game intro
-		//InitIntroStage( 1 );		// TODO updateenemy function
-		//InitIntroStage( 4 );
-		//InitIntroStage( 2 );
+		InitIntroStage( 1 );
+		InitIntroStage( 4 );
+		InitIntroStage( 2 );
 
 		// Logo
-		//InitLogoStage();
+		InitLogoStage();
 
 		// If we have jukebox before play
 		if( dojukebox == 1 )
-		{
 			InitJukeboxStage();
-		}
 
 		// Init stage and players
 		stagenum = 1;
 		numplayers = gamestock;
 
 		// Selector
-		//InitSelectorStage();
+		InitSelectorStage();
 
-		// stevepro - this is set on selector stage exit
-		//basestage = 0;
-		InitPlayerConstants();
-
-
-		//TODO delete
-		InitPlayStage();
-		
 		// Stage looping
 		while( stagenum < 10 )
 		{
 			if( stagenum == 0 )
-			{
-		////		InitGameoverStage();
-			}
+				InitGameoverStage();
 			else if( stagenum == 9 )
 			{
-		//		InitIntroStage( 5 );
-		//		InitIntroStage( 3 );
+				InitIntroStage( 5 );
+				InitIntroStage( 3 );
 			}
-			else
-			{
-				InitPlayStage();
-			}
+			else InitPlayStage();
 		}
 	}
 }

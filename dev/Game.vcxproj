@@ -161,6 +161,7 @@
     <ClCompile Include="Fortresses\fortresssearcher.c" />
     <ClCompile Include="Fortresses\fortresswave.c" />
     <ClCompile Include="funcs.c" />
+    <ClCompile Include="game.c" />
     <ClCompile Include="General\barrom.c" />
     <ClCompile Include="General\bombship.c" />
     <ClCompile Include="General\explosion.c" />
