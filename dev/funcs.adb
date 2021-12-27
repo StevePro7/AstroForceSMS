@@ -103,9 +103,9 @@ S:Lfuncs.DoAracPatternMovement$mx$1$189({2}DG,SC:U),B,1,6
 S:Lfuncs.DoAracPatternMovement$my$1$189({2}DG,SC:U),B,1,8
 S:Lfuncs.DoAracPatternMovement$mt$1$189({2}DG,SI:U),B,1,10
 S:Lfuncs.DoAracPatternMovement$sloc0$1$0({2}DG,SC:U),B,1,-4
-S:Lfuncs.DoAracPatternMovement$sloc1$1$0({1}SC:U),B,1,-2
-S:Lfuncs.DoAracPatternMovement$sloc2$1$0({1}SC:U),B,1,-1
-S:Lfuncs.DoAracPatternMovement$sloc3$1$0({2}DG,SC:U),B,1,-6
+S:Lfuncs.DoAracPatternMovement$sloc1$1$0({1}SC:U),B,1,-5
+S:Lfuncs.DoAracPatternMovement$sloc2$1$0({1}SC:U),B,1,-6
+S:Lfuncs.DoAracPatternMovement$sloc3$1$0({2}DG,SC:U),B,1,-2
 F:G$DoStage1BossDirectionShoots$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lfuncs.DoStage1BossDirectionShoots$en$1$192({2}DG,STenemy:S),B,1,4
 F:G$DoSideShoot$0$0({2}DF,SV:S),Z,0,0,0,0,0

@@ -3015,9 +3015,9 @@ MyKillEnemyFunction playerupdatefunctions[] =
 	UpdatePlayerState1,
 	UpdatePlayerState2,
 	UpdatePlayerState3,
-	playerupdateAssert,//UpdatePlayerState4,
-	playerupdateAssert,//UpdatePlayerState5,
-	playerupdateAssert,//UpdatePlayerState6
+	UpdatePlayerState4,
+	UpdatePlayerState5,
+	UpdatePlayerState6
 };
 
 

@@ -33,6 +33,11 @@ void main()
 		// Selector
 		//InitSelectorStage();
 
+		// stevepro - this is set on selector stage exit
+		//basestage = 0;
+		InitPlayerConstants();
+
+
 		//TODO delete
 		InitPlayStage();
 		
