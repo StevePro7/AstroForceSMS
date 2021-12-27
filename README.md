@@ -1,4 +1,14 @@
 # AstroForceSMS
+27/12/2021
+TOO much code!
+I have had to comment out:
+
+stage6endboss
+stage6endbossb
+stage7endboss
+stage7middleboss
+
+
 21/12/2021
 
 Run code directly

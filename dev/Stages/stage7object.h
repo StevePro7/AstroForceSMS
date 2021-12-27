@@ -4,6 +4,6 @@
 #include "../defines.h"
 
 // ADRIANA
-unsigned char UpdateStage7Object( enemy *en );
+//unsigned char UpdateStage7Object( enemy *en );
 
 #endif//_STAGE7OBJECT_H_

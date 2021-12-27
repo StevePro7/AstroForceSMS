@@ -8,8 +8,8 @@ A _CODE size 1 flags 0 addr 0
 S XG$stage7endboss_foo$0$0 Def0000
 S G$stage7endboss_foo$0$0 Def0000
 S A$stage7endboss$59 Def0000
-S C$stage7endboss.c$3$0$0 Def0000
 S C$stage7endboss.c$5$0$0 Def0000
+S C$stage7endboss.c$7$0$0 Def0000
 S _stage7endboss_foo Def0000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0

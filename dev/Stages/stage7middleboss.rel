@@ -7,8 +7,8 @@ S .__.ABS. Def0000
 A _CODE size 1 flags 0 addr 0
 S G$stage7middleboss_foo$0$0 Def0000
 S A$stage7middleboss$59 Def0000
-S C$stage7middleboss.c$3$0$0 Def0000
 S C$stage7middleboss.c$5$0$0 Def0000
+S C$stage7middleboss.c$7$0$0 Def0000
 S _stage7middleboss_foo Def0000
 S XG$stage7middleboss_foo$0$0 Def0000
 A _DATA size 0 flags 0 addr 0
