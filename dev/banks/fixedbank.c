@@ -12,12 +12,69 @@
 #include "bank12.h"
 #include "bank13.h"
 #include "bank14.h"
+#include "../Fortresses/fortresscannon.h"
+#include "../Fortresses/fortressphantom.h"
+#include "../General/bombship.h"
+#include "../General/rsgthing.h"
+#include "../General/skullbone.h"
+#include "../General/spreadship.h"
+#include "../General/turnship.h"
 #include "../General/warning.h"
-#include "../Intros/introsideplayer.h"
+#include "../General/waveship.h"	
+#include "../Intros/intro1stage.h"
+#include "../Intros/intro2stage.h"
 #include "../Intros/intro3object.h"
+#include "../Intros/intro3stage.h"
+#include "../Intros/intro4stage.h"
+#include "../Intros/introovni.h"
+#include "../Intros/introsideplayer.h"
+#include "../Intros/introstage.h"
+#include "../Intros/introstar.h"
+#include "../Monsters/monstermissil.h"
 #include "../Players/player.h"
+#include "../Spaces/spaceasteroid.h"
+#include "../Stages/stage1.h"
+#include "../Stages/stage1endboss.h"
+#include "../Stages/stage1middleboss.h"
+#include "../Stages/stage1middlebossb.h"
+#include "../Stages/stage1middlebossc.h"
+#include "../Stages/stage2.h"
+#include "../Stages/stage2endboss.h"
+#include "../Stages/stage2object.h"
+#include "../Stages/stage3.h"
+#include "../Stages/stage3endboss.h"
+#include "../Stages/stage3laser.h"
+#include "../Stages/stage3star.h"
+#include "../Stages/stage4.h"
+#include "../Stages/stage4endboss.h"
+#include "../Stages/stage4endbossb.h"
+#include "../Stages/stage4middleboss.h"
+#include "../Stages/stage4object.h"
 #include "../Stages/stage5.h"
+#include "../Stages/stage5endboss.h"
+#include "../Stages/stage5missile.h"
+#include "../Stages/stage6.h"
+#include "../Stages/stage6endboss.h"
+#include "../Stages/stage6endbossb.h"
+#include "../Stages/stage6object.h"
+#include "../Stages/stage7.h"
+#include "../Stages/stage7endboss.h"
+#include "../Stages/stage7middleboss.h"
+#include "../Stages/stage7object.h"
+#include "../Stages/stage8.h"
+#include "../Stages/stage8bossa.h"
 #include "../Stages/stage8bossb.h"
+#include "../Stages/stage8bossc.h"
+#include "../Stages/stage8lateral.h"
+#include "../Vulcans/vulcanstation.h"
+#include "../Vulcans/vulcantank.h"
+#include "../Vulcans/vulcanvulcan.h"
+#include "../Vulcans/vulcanlava.h"
+#include "../Vulcans/vulcanbird.h"
+#include "../Vulcans/vulcanlaser.h"
+#include "../Wars/ww2plane.h"
+#include "../Wars/ww2planeb.h"
+#include "../Wars/ww2ship.h"
 #include "../Wars/ww2zeppelin.h"
 #include "../funcs.h"
 
@@ -2019,87 +2076,87 @@ const MyInitEnemyFunction initenemyfunctions[] =
 	0,
 	0,
 	InitIntroSidePlayer,
-	initenemyAssert,//	InitIntroStar,
-	initenemyAssert,//	InitWaveShip,
+	InitIntroStar,
+	InitWaveShip,
 	0,
-	initenemyAssert,//	InitTurnShip,
-	initenemyAssert,//	InitBombShipLeft,
-	initenemyAssert,//	InitBombShipRight,
-	initenemyAssert,//	InitSpreadShip,
+	InitTurnShip,
+	InitBombShipLeft,
+	InitBombShipRight,
+	InitSpreadShip,
 	0,
 	0,
 	InitWW2Zeppelin,
 	0,
-	initenemyAssert,//	InitWW2Plane,
-	initenemyAssert,//InitWW2Plane,
-	initenemyAssert,//	InitWW2Plane,
-	initenemyAssert,//	InitWW2Plane,
-	initenemyAssert,//	InitWW2Plane,
-	initenemyAssert,//	InitWW2Plane,
-	//	0,
-	//	0,
-	//	0,
-	initenemyAssert,//	InitIntro3Object,
-	//	0,
-	//	0,
-	initenemyAssert,//	InitMonsterMissilLeft,
-	//	0,
+	InitWW2Plane,
+	InitWW2Plane,
+	InitWW2Plane,
+	InitWW2Plane,
+	InitWW2Plane,
+	InitWW2Plane,
+	0,
+	0,
+	0,
+	InitIntro3Object,
+	0,
+	0,
+	InitMonsterMissilLeft,
+	0,
 	initenemyAssert,//	InitStage7MiddleBoss,
 	initenemyAssert,//	InitStage7EndBoss,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	initenemyAssert,//	InitFortressPhantom,
-	//	0,
-	initenemyAssert,//	InitFortressCannonRight,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	initenemyAssert,//	InitVulcanBird,
-	initenemyAssert,//	InitVulcanLaser,
-	initenemyAssert,//	InitVulcanLava,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	initenemyAssert,//	InitSpaceAsteroid,
-	initenemyAssert,//	InitSpaceAsteroid,
-	initenemyAssert,//	InitSpaceAsteroid,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	initenemyAssert,//	InitSkullBoneA,
-	initenemyAssert,//	InitSkullBoneB,
-	initenemyAssert,//	InitSkullBoneC,
-	//	0,
+	0,
+	0,
+	0,
+	0,
+	InitFortressPhantom,
+	0,
+	InitFortressCannonRight,
+	0,
+	0,
+	0,
+	0,
+	0,
+	InitVulcanBird,
+	InitVulcanLaser,
+	InitVulcanLava,
+	0,
+	0,
+	0,
+	0,
+	0,
+	InitSpaceAsteroid,
+	InitSpaceAsteroid,
+	InitSpaceAsteroid,
+	0,
+	0,
+	0,
+	0,
+	InitSkullBoneA,
+	InitSkullBoneB,
+	InitSkullBoneC,
+	0,
 	initenemyAssert,//	InitStage7EndBossB,
-	initenemyAssert,//	InitStage4EndBossB,
-	//	0,
-	//	0,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage3Laser,
-	initenemyAssert,//	InitStage1MiddleBossB,
-	initenemyAssert,//	InitStage1MiddleBossC,
+	InitStage4EndBossB,
+	0,
+	0,
+	InitStage3Laser,
+	InitStage3Laser,
+	InitStage3Laser,
+	InitStage3Laser,
+	InitStage3Laser,
+	InitStage3Laser,
+	InitStage3Laser,
+	InitStage3Laser,
+	InitStage1MiddleBossB,
+	InitStage1MiddleBossC,
 	initenemyAssert,//	InitStage6EndBossB,
-	//	0,
-	initenemyAssert,//	InitStage8BossA,
-	initenemyAssert,//	InitStage8BossB,
-	initenemyAssert,//	InitStage8BossC,
-	//	0,
-	initenemyAssert,//	InitRSGThing,
-	//	0,
-	initenemyAssert,//	InitStage8Lateral,
+	0,
+	InitStage8BossA,
+	InitStage8BossB,
+	InitStage8BossC,
+	0,
+	InitRSGThing,
+	0,
+	InitStage8Lateral,
 };
 
 //extern unsigned char UpdateWarning( enemy *en );
@@ -2311,90 +2368,90 @@ const MyKillEnemyFunction initstagefunctions[] =
 const MyKillEnemyFunction killenemyfunctions[] =
 {
 	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	FinishStage4MiddleBoss,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	FinishStage7MiddleBoss,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	FinishStage1MiddleBoss,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
+	0,
 	killenemyAssert,//	FinishVulcanStation,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	FinishSpaceStation,
-	//	0,
+	0,
 	killenemyAssert,//	InitAfterBossStage,
 	killenemyAssert,//	FinishStage6EndBoss,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
+	0,
 	killenemyAssert,//	InitAfterBossStage,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	killenemyAssert,//	InitAfterBossStage,
-	//	0,
-	//	0,
+	0,
+	0,
 	killenemyAssert,//	InitAfterBossStage,
 	killenemyAssert,//	FinishStage8BossC,
-	//	0,
-	//	0,
-	//	0,
+	0,
+	0,
+	0,
 	//	0
 };
 
@@ -2998,11 +3055,11 @@ const MyCheckCollisionFunction checkcollisionfunctions[] =
 {
 	0,
 	checkcollisionAssert,//	CheckCollisionStage7,
-//	0,
-//	0,
+0,
+0,
 	checkcollisionAssert,//	CheckCollisionStage2,
-//	0,
-//	0,
+0,
+0,
 	checkcollisionAssert,//	CheckCollisionStage1,
 //	0
 };
