@@ -2930,11 +2930,11 @@ const MyInitEnemyFunction updatestage6endbossfunctions[] =
 
 const MyInitEnemyFunction updatestage5endbossfunctions[] =
 {
-	updatestage5endbossAssert,//UpdateStage5EndBoss0,
-	updatestage5endbossAssert,//UpdateStage5EndBoss1,
-	updatestage5endbossAssert,//UpdateStage5EndBoss2,
-	updatestage5endbossAssert,//UpdateStage5EndBoss3,
-	updatestage5endbossAssert,//UpdateStage5EndBoss4
+	UpdateStage5EndBoss0,
+	UpdateStage5EndBoss1,
+	UpdateStage5EndBoss2,
+	UpdateStage5EndBoss3,
+	UpdateStage5EndBoss4
 };
 
 
